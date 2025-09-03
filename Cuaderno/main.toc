@@ -1,0 +1,49 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Cosmological Backgrounds of Gravitational Waves}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Introduction. Gravitational waves, probe of the early universe}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Definition of gravitational waves}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Linearized theory in vacuum: the transverse-treceless gauge}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Linearized theory in matter: scalar-vector-tensor decomposition}{4}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Gravitational waves in a curved background}{6}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Propagation of gravitational waves in expanding backgrounds}{7}{subsubsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.3}Cosmological (ergo stochastic) gravitational wave backgrounds}{8}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Stochastic nature of cosmological backgrounds}{8}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Characterization of a stochastic gravitational wave background}{9}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Propagation of gravitational waves through cosmic history}{10}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}Gravitational wave spectrum by a generic stochastic source}{10}{subsubsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.4}Bounds and detectors}{12}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Constraints on the gravitational wave background energy density}{12}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Constraints from Cosmic Microwave Background anisotropies}{12}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}Pulsar timing (arrays)}{13}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}Gravitational waves interferometers}{14}{subsubsection.1.4.4}%
+\contentsline {paragraph}{\numberline {1.4.4.1}Principles of detection of a stochastic background}{14}{paragraph.1.4.4.1}%
+\contentsline {subsection}{\numberline {1.5}Inflationary period, part I: irreducible GW background}{15}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}Irreducible GW background: amplification of vacuum fluctuations}{16}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}Evolution of the inflationary background after inflation}{18}{subsubsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.6}Preheating and other non-perturbative phenomena}{19}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}Parametric resonance of Bosons.}{19}{subsubsection.1.6.1}%
+\contentsline {paragraph}{\numberline {1.6.1.1}Anisotropies in the gravitational wave background}{21}{paragraph.1.6.1.1}%
+\contentsline {section}{\numberline {2}Cosmic Inflation (Mishra)}{21}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Post-inflationary inflaton dynamics and reheating (cap. 8)}{21}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Coherently oscillating scalar field}{21}{subsubsection.2.1.1}%
+\contentsline {paragraph}{\numberline {2.1.1.1}Time-averaged equation of state}{22}{paragraph.2.1.1.1}%
+\contentsline {paragraph}{\numberline {2.1.1.2}Period of an anharmonic oscillator}{23}{paragraph.2.1.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2}External coupling and decay of the inflaton condensate}{24}{subsubsection.2.1.2}%
+\contentsline {paragraph}{\numberline {2.1.2.1}Perturbative reheating}{24}{paragraph.2.1.2.1}%
+\contentsline {paragraph}{\numberline {2.1.2.2}Non-perturbative reheating}{25}{paragraph.2.1.2.2}%
+\contentsline {section}{\numberline {3}Preheating and gravitational waves in large-field hilltop inflation}{29}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The Background Universe}{29}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Cosmolattice}{30}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Convenciones}{30}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Inicialización}{31}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Comandos importantes}{31}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}04/07/2025}{31}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Modelo}{31}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Condiciones iniciales}{33}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Levantar los espectros}{34}{subsubsection.4.4.3}%
+\contentsline {section}{\numberline {5}Charlas con Nahue}{36}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Vacío de Bunch-Davies y la cuantización de las ondas en inflación}{36}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Función de transferencia de modos subhorizonte}{40}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Ecuación de Mathieu}{41}{subsection.5.3}%
+\contentsline {section}{\numberline {6}RAFA 2025}{44}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Resumen RAFA}{44}{subsection.6.1}%

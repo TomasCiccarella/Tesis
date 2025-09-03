@@ -1,0 +1,488 @@
+Esta sección busco que sea un diario de lo que voy aprendiendo a usar de este programa
+
+\subsection{Convenciones}
+
+El programa de CosmoLattice según el \href{https://arxiv.org/pdf/2102.01031}{manual} utiliza la siguiente lista de convenciones:
+
+\begin{itemize}
+    \item Unidades naturales $(c = 1, \ \hbar = 1)$.
+
+    \item La signatura en la métrica es negativa para la parte temporal.
+
+    \item Se usa la constante de gravitación $G$, la masa de Planck $M_p \simeq 1.22 \times 10^{19}$ GeV y la masa de Planck reducida $m_p \simeq 2.44 \times 10^{18}$ GeV, relacionadas a partir de $M_p^2 = 8 \pi m_p^2 = G^{-1}$.
+
+    \item Los índices latinos son para las dimensiones espaciales, mientras que los griegos para las espacio-temporales. Pero salvo que se indique lo contrario, los índices repetidos no representan sumas.
+
+    \item La métrica FLRW se considera como $ds^2 = - a^{2 \alpha} (\eta) \ d\eta^2 + a^2(\eta) \ \delta_{ij} \ dx^i \ dx^j$ con $\alpha$ un valor positivo y tal que $\alpha = 0$ es el tiempo coordenado y $\alpha = 1$ es el tiempo propio.
+
+    \item La notación con punto para la derivada es para el tiempo cósmico mientras que la notación con apóstrofe es para derivadas respecto un tiempo de $\alpha$ arbitrario.
+
+    \item El momento físico se representa con \textbf{p} mientras que el comovil se representa con \textbf{k}. A su vez, el parámetro de Hubble está dado por $\displaystyle \mathcal{H} = \frac{a^\prime}{a}$.
+
+    \item Los parámetros cosmológicos son los que se obtienen del CMB en los experimentos de Planck.
+
+    \item La convención de la transformada de Fourier es de la forma
+
+    \begin{equation}
+        f(\textbf{x}) = \frac{1}{(2\pi)^3} \int f(\textbf{k}) e^{ikx} \ d^3 k \hspace{2.5cm} f(\textbf{k}) = \int f(\textbf{x}) e^{-i k x} \ d^3 x
+    \end{equation}
+
+    \item La transformada de Fourier discreta (DFT) tiene por convención
+
+    \begin{equation}
+        f(\textbf{n}) =   \frac{1}{N^3} \sum_{\tilde{n}} \exp{\displaystyle i \frac{2 \pi}{N} \textbf{n} \textbf{$\tilde{n}$}} f(\textbf{$\tilde{n}$}) \hspace{2.5cm} f(\textbf{$\tilde{n}$}) =   \frac{1}{N^3} \sum_{n} \exp{- \displaystyle i \frac{2 \pi}{N} \textbf{n} \textbf{$\tilde{n}$}} f(\textbf{n})   
+    \end{equation}
+\end{itemize}
+
+\subsection{Inicialización}
+
+Por un lado, para la utilización armamos un \textit{conda environment} que llamaremos \textit{cosmolattice}, y que será creado a partir del archivo \textcolor{blue}{\href{https://drive.google.com/uc?export=download&id=1OmMo4wB7_Z4u8-0nX-I4SRWY4rsiE0yj}{\texttt{.yml}}} que me pasó Nahue con los paquetes necesarios para que corra correctamente.
+
+Ahora, para usar CosmoLattice debemos comenzar clonando el repositorio del git como
+
+\begin{lstlisting}[style = bashStyle]
+git clone https://github.com/cosmolattice/cosmolattice.git
+\end{lstlisting}
+
+\noindent
+dentro de este repositorio tendremos como carpetas las siguientes: \textit{dependencies} y \textit{src}, la primera tendrá los métodos que se usan para generar los cálculos, mientras que la segunda tiene los parámetros iniciales y los modelos físicos. Estos últimos están a su vez dentro de la carpeta \textit{models} y esta carpeta tiene por un lado los modelos que serán los ``.h'' y dentro de esta carpeta está la carpeta que dice \textit{parameter-files} que contiene los parámetros iniciales en los ``.in''.
+
+\subsection{Comandos importantes}
+
+\begin{infobox}[cyan]{Comentario}
+    Dejo en mayúsculas MODELO y ARCHIVO para acordarme que ahí pongo lo que corresponda.
+\end{infobox}
+
+Primero hay que activar el entorno
+
+\begin{lstlisting}[style = bashStyle]
+conda activate cosmolattice
+\end{lstlisting}
+
+Creamos una carpeta dónde vamos a pedir que se generen los archivos
+
+\begin{lstlisting}[style = bashStyle]
+mkdir build_MODELO
+\end{lstlisting}
+
+Cargo el modelo a usar y crea el ejecutable al que hay que darle los parámetros iniciales
+
+\begin{lstlisting}[style = bashStyle]
+cmake -DMODEL=MODELO ../
+make cosmolattice
+\end{lstlisting}
+
+Le doy condiciones iniciales al ejecutable y hago la simulación
+
+\begin{lstlisting}[style = bashStyle]
+./lphi4 input=../src/models/parameter-files/ARCHIVO.in
+\end{lstlisting}
+
+\subsection{04/07/2025}
+
+Una vez hecho todo lo anterior empezamos a buscar entender cómo se arman los modelos y las condiciones iniciales a partir del modelo $\lambda \phi^4$ (archivos de nombre lphi4), entonces para entender un poco como funciona cada parte de estos archivos dejo asentado ésto
+
+\subsubsection{Modelo}
+
+Las líneas
+
+\begin{lstlisting}[style = cppStyle]
+#ifndef LPHI4_H
+#define LPHI4_H
+\end{lstlisting}
+
+\noindent
+se utilizan para evitar la inclusión múltiple del archivo. Si \texttt{LPHI4\_H} no está definido, se define; de lo contrario, se ignora el contenido para evitar que el archivo se incluya más de una vez, lo que podría causar errores. Esta protección se cierra con la instrucción \texttt{\#endif}.
+
+Después, agregamos las dependencias con
+
+\begin{lstlisting}[style = cppStyle]
+#include "CosmoInterface/cosmointerface.h"
+\end{lstlisting}
+
+\noindent
+que tiene las funciones básicas del código.
+
+Las líneas
+
+\begin{lstlisting}[style = cppStyle]
+struct ModelPars : public TempLat::DefaultModelPars {
+    static constexpr size_t NScalars = 2;
+    static constexpr size_t NPotTerms = 2;
+};
+\end{lstlisting}
+
+\noindent
+marcan cuantos campos escalares tenemos (\texttt{NScalars}) y cuantos términos de potenciales tenemos (\texttt{NPotTerms}). Es importante recordar que los términos cinéticos los agrega por sí solos, sólo los potenciales debemos agregar nosotros.
+
+Las líneas
+
+\begin{lstlisting}[style = cppStyle]
+#define MODELNAME lphi4
+
+template<class R> 
+using Model = MakeModel(R, ModelPars);
+\end{lstlisting}
+
+\noindent
+permiten darle nombre al modelo con los parámetros definidos arriba.
+
+Para definir las variables que nos van a ser de interés como los valores de las constantes de interacción usamos
+
+\begin{lstlisting}[style = cppStyle]
+private:
+    double g, lambda, q;
+\end{lstlisting}
+
+\noindent
+dónde las ponemos privadas para que sólo se usen dentro de este archivo. A su vez, vamos a usar
+
+\begin{lstlisting}[style = cppStyle]
+lambda = parser.get<double>("lambda");
+q = parser.get<double>("q");
+\end{lstlisting}
+
+\noindent
+en el modelo para decir que le doy el valor en un archivo externo.
+
+El modelo va a ser creado a partir de
+
+\begin{lstlisting}[style = cppStyle]
+MODELNAME(ParameterParser& parser, RunParameters<double>& runPar, std::shared_ptr<MemoryToolBox> toolBox):
+    Model<MODELNAME>(parser,runPar.getLatParams(), toolBox, runPar.dt, STRINGIFY(MODELLABEL))
+{
+    // inicializacion de parametros leyendo del archivo de entrada
+    lambda = parser.get<double>("lambda");
+    q = parser.get<double>("q");
+    g = sqrt(q*lambda);
+
+    // inicializacion de condiciones iniciales para campos y momentos
+    fldS0 = parser.get<double, 2>("initial_amplitudes");
+    piS0 = parser.get<double, 2>("initial_momenta", {0, 0});
+
+    // parametros de reescalado
+    alpha = 1;
+    fStar = fldS0[0];
+    omegaStar = sqrt(lambda) * fStar;
+
+    setInitialPotentialAndMassesFromPotential();
+}
+
+\end{lstlisting}
+
+\noindent
+dónde \texttt{fStar}, \texttt{alpha} y \texttt{omegaStar} son parámetros para reescalar el tiempo y los campos a unidades internas del programa; por otro lado \texttt{fldSO} y \texttt{piSO} arreglos con las condiciones iniciales de los campos y sus momentos.
+
+Los términos potenciales los definimos a partir de
+
+\begin{lstlisting}[style = cppStyle]
+auto potentialTerms(Tag<0>) {
+    return 0.25 * pow<4>(fldS(0_c));
+}
+
+auto potentialTerms(Tag<1>) {
+    return 0.5 * q * pow<2>(fldS(0_c) * fldS(1_c));
+}
+
+\end{lstlisting}
+
+\noindent
+en este caso los términos potenciales son $\displaystyle \frac{1}{4} \phi^4$ y $\displaystyle \frac{g}{2} \phi^2 \chi^2$. A su vez, también debemos definir las derivadas primera y segunda de este potencial porque no las puede calcular solas y eso lo hacemos con
+
+\begin{lstlisting}[style = cppStyle]
+auto potDeriv(Tag<0>) {
+    return pow<3>(fldS(0_c)) + q * fldS(0_c) * pow<2>(fldS(1_c));
+}
+
+auto potDeriv(Tag<1>) {
+    return q * fldS(1_c) * pow<2>(fldS(0_c));
+}
+
+auto potDeriv2(Tag<0>) {
+    return 3 * pow<2>(fldS(0_c)) + q * pow<2>(fldS(1_c));
+}
+
+auto potDeriv2(Tag<1>) {
+    return q * pow<2>(fldS(0_c));
+}
+\end{lstlisting}
+
+\subsubsection{Condiciones iniciales}
+
+La línea
+
+\begin{lstlisting}[style = cppStyle]
+outputfile = ./
+\end{lstlisting}
+
+\noindent
+sirven para definir el lugar dónde se guardarán los datos, en este caso es el directorio actual.
+
+Las líneas
+
+\begin{lstlisting}[style = cppStyle]
+expansion = true
+evolver = VV2
+\end{lstlisting}
+
+\noindent
+sirven para prender la evolución temporal y \texttt{VV2} es el tipo de integrador que usará para calcular el factor de escala.
+
+Los parámetros no independientes entre sí que nos darán de cierto modo la resolución del Lattice son
+
+\begin{lstlisting}[style = cppStyle]
+N = 32
+dt = 0.05
+kIR = 0.2
+\end{lstlisting}
+
+\noindent
+dónde \texttt{N} son las divisiones en la caja, al ponerle 32 le estamos diciendo que cada dimensión la separe en 32 divisiones, \texttt{dt} es el paso de integración y \texttt{kIR} es el valor de corte para el número de onda infrarroja, o sea el mínimo $k$ al que podrá trabajar.
+
+Cada cuanto guardo los datos estará dado por
+
+\begin{lstlisting}[style = cppStyle]
+tOutputFreq = 0.1
+tOutputInfreq = 1
+tMax = 300
+\end{lstlisting}
+
+\noindent
+dónde \texttt{tOutputFreq} es la frecuencia en que guardo tiempos de cosas ligeras (campos, energías, entre otros), \texttt{tOutputInfreq} es el intervalo de tiempo en que guardo cosas más pesadas (tensores, espectros, entre otros), y \texttt{tMax} es el tiempo máximo al que llegará la simulación.
+
+Cosas que no vamos a cambiar son
+
+\begin{lstlisting}[style = cppStyle]
+PS_type = 1
+PS_version = 1
+\end{lstlisting}
+
+\noindent
+que es la forma en la que calcula el espectro de potencias.
+
+Para prender que dé un espectro de salidas de ondas gravitatorias tenemos
+
+\begin{lstlisting}
+GWprojectorType = 1
+withGWs = true
+\end{lstlisting}
+
+\noindent
+dónde \texttt{true} prende esta salida y el \texttt{GWprojectorType} es la forma en la que aplica el proyector TT para obtener la parte tensorial de las perturbaciones.
+
+Para setear las condiciones iniciales tenemos
+
+\begin{lstlisting}[style = cppStyle]
+kCutOff = 4
+initial_amplitudes = 5.6964e18 0   # en GeV
+initial_momenta = -4.86735e30 0    # en GeV^2
+\end{lstlisting}
+
+\noindent
+dónde \texttt{kCutOff} es el valor máximo de $k$ y la otra parte permite crear un arreglo de amplitudes iniciales y momentos iniciales.
+
+Finalmente, el código define valores para $\lambda$ y $q$ a partir de
+
+\begin{lstlisting}[style = cppStyle]
+lambda = 9e-14
+q = 0
+\end{lstlisting}
+
+\subsubsection{Levantar los espectros}
+
+El CosmoLattice deja archivos con todas las cuentas hechas para entender la evolución en recalentamiento pero para visualizarlos debemos usar Python.
+
+Hoy usamos el código que me pasó Nahue, pero falta sentarse a entenderlo línea por línea.
+
+Para empezar, las librerías que usaremos y los parámetros para los gráficos los tendremos en las siguientes líneas:
+
+\begin{lstlisting}[style = pythonStyle]
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+%matplotlib inline       
+
+mpl.rc('text', usetex = True)
+mpl.rc('font', family = 'serif')
+mpl.rc('font', size = '14')
+mpl.rc('xtick', labelsize=14) 
+mpl.rc('ytick', labelsize=14) 
+
+dir = "./"
+\end{lstlisting}
+
+El archivo \texttt{average\_scale\_factor.txt} que formamos con CosmoLattice tienen las siguientes columnas: 
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+        $\eta$ & $a$ & $a^\prime$ & $\displaystyle \frac{a^\prime}{a}$  \\
+    \end{tabular}
+\end{center}
+
+\noindent
+para leer este archivo y poder usarlo después usamos
+
+\begin{lstlisting}[style = pythonStyle]
+expansion = True
+
+if expansion == True:
+    # load the file in aDat
+    aDat = np.loadtxt(dir + "average_scale_factor.txt")
+    
+    #plot a
+    plt.figure(0)
+    plt.plot(aDat[:,0], aDat[:,1])
+    plt.ylabel("$a$")
+    plt.xlabel('$\\tilde\eta$')
+    
+    #plot a'
+    plt.figure(1)
+    plt.plot(aDat[:,0], aDat[:,2])
+    plt.ylabel("$a'$")
+    plt.xlabel('$\\tilde\eta$')
+    
+    
+    #plot a'/a
+    plt.figure(2)
+    plt.plot(aDat[:,0], aDat[:,3])
+    plt.ylabel("$a'/a$")
+    plt.xlabel("$\\tilde\eta$");
+
+else:
+    aDat = None
+\end{lstlisting}
+
+El resto de los archivos de promedios sobre los campos tienen en sus columnas la siguiente información:
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        $\eta$ & $\langle \tilde\phi_n \rangle$ & $\langle \tilde\phi'_n \rangle$ & $\langle \tilde\phi^2_n \rangle$ & $\langle \tilde\phi^{'2}_n \rangle$ & $\mathrm{rms}(\tilde\phi_n) $ & $\mathrm{rms}(\tilde\phi'_n) $
+    \end{tabular}
+\end{center}
+
+\noindent
+para graficar estos archivos, se define la función de graficar como
+
+\begin{lstlisting}[style = pythonStyle]
+def plot_fld(fldDat, fldNum="", aDat=None):
+    plt.figure(0)
+    plt.plot(fldDat[:,0], fldDat[:,1])
+    plt.xlabel("$\\tilde\eta$")
+    plt.ylabel("$\langle\phi_"+ fldNum +"\\rangle$")
+    
+    if aDat is not None:
+        plt.figure(1)
+        plt.plot(fldDat[:,0], aDat[:,1] * fldDat[:,1])
+        plt.xlabel("$\\tilde\eta$")
+        plt.ylabel("$a\cdot\langle\phi_"+ fldNum +" \\rangle$")
+    
+        plt.figure(2)
+        plt.plot(fldDat[:,0], aDat[:,1] * fldDat[:,5])
+        plt.xlabel("$\\tilde\eta$")
+        plt.ylabel("$a\cdot\mathrm{rms}(\phi_"+ fldNum +")$")
+        plt.yscale('log')
+\end{lstlisting}
+
+Para ver la conservación de energía, los archivos están compuestos por
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+        $\tilde\eta$ & $\frac{\langle LHS - RHS\rangle}{\langle LHS + RHS\rangle}$ & $\langle LHS \rangle$ & $\langle RHS \rangle$
+    \end{tabular}
+\end{center}
+
+Para la densidad de energía, los archivos son de la forma
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+        $\tilde\eta$ & $\tilde E_K^{(0)}$ & $\tilde E_G^{(0)}$ & $\dots$ & $\tilde E_K^{(N_s-1)}$ & $\tilde E_G^{(N_s-1)}$ &  $\tilde E_V^{(0)}$ & $\dots$ &  $\tilde E_V^{(N_p-1)}$ & $\langle \tilde \rho \rangle$
+    \end{tabular}
+\end{center}
+
+\noindent
+para este último archivo, podemos graficar según si tenemos expansión del universo o no de la siguiente forma
+
+\begin{lstlisting}[style = pythonStyle]
+enDat = np.loadtxt(dir + "average_energies.txt")
+
+nColumns = np.shape(enDat)[1]
+
+# set explicitly different colors, so we know who is who
+colors = ["tab:blue", "tab:orange", "tab:green", 
+          "tab:red", "tab:purple", "tab:brown", "tab:pink"]
+
+if expansion == True:
+    plt.figure(0)
+    for i in range(1,nColumns):
+        plt.plot(enDat[:,0], aDat[:,1]**4 * enDat[:,i], color = colors[i-1])
+        plt.yscale('log')
+        plt.xlabel("$\\tilde \eta$")
+        plt.ylabel("$\langle \\rho's\\rangle$")
+        
+    plt.figure(1)
+    for i in range(1,nColumns):
+        plt.plot(enDat[:,0], aDat[:,1]**4 * enDat[:,i], color = colors[i-1])
+        plt.xlabel("$\\tilde \eta$")
+        plt.ylabel("$\langle \\rho's\\rangle$")
+else:
+    plt.figure(0)
+    for i in range(1,nColumns):
+        plt.plot(enDat[:,0], enDat[:,i], color = colors[i-1])
+        plt.yscale('log')
+        plt.xlabel("$\\tilde \eta$")
+        plt.ylabel("$\langle \\rho's\\rangle$")
+        
+    plt.figure(1)
+    for i in range(1,nColumns):
+        plt.plot(enDat[:,0], enDat[:,i], color = colors[i-1])
+        plt.xlabel("$\\tilde \eta$")
+        plt.ylabel("$\langle \\rho's\\rangle$")
+\end{lstlisting}
+
+Los archivos de los espectros se forman así:
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+        $\tilde k$ & $\tilde\Delta_{\tilde\phi}$ & $\tilde\Delta_{\tilde\phi'}$ & $\tilde n_{\tilde\phi}$ & bin multiplicity
+    \end{tabular}
+\end{center}
+
+\noindent
+el archivo también define a las funciones que leen y grafican al espectro como
+
+\begin{lstlisting}[style = pythonStyle]
+def load_spectrum(filename, comment = '#'):
+    # The next few lines open the file and count
+    # how many bins in one spectrum
+    file = open(filename)
+    nBins = 0
+    # read first line
+    line = file.readline()
+    # while no blank we continue
+    while line != "\n":
+        # if not a comment line (header for instance)
+        # we count one line
+        if(line[0] != comment):
+            nBins +=1
+        # read next line
+        line = file.readline()
+    file.close()
+
+    # now we know nBins. We still need to actually read the data.
+    fileSp = np.loadtxt(filename, comments=comment)
+
+    # find how many spectra are in the files
+    nSpectra = len(fileSp) / nBins
+
+    return fileSp, int(nBins), int(nSpectra)
+
+
+def plot_spectrum(spectra, column, nBins, nSpectra, colormap = 'plasma'):
+    colors = plt.get_cmap(colormap)
+    for i in range(nSpectra):
+        plt.plot(spectra[i*nBins:(i+1)*nBins,0], spectra[i*nBins:(i+1)*nBins,column], color=colors(i/nSpectra))
+    plt.xscale('log')
+    plt.yscale('log')
+    plt.xlabel('$\\tilde k$')
+\end{lstlisting}

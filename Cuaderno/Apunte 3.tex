@@ -1,0 +1,42 @@
+\subsection{The Background Universe}
+
+Consideraremos la métrica FLRW como métrica de fondo
+
+\begin{equation}
+    \bar{g}_{\mu\nu} = - dt^2 + a^2 \ \delta_{ij} \ dx^i \ dx^j
+\end{equation}
+
+\noindent
+y junto con esta métrica, consideraremos que durante inflación, el universo está dominado por el tensor de energía-momento del inflatón el cual es de la forma
+
+\begin{equation}
+    T_{\mu\nu} = \begin{pmatrix}
+        \displaystyle - \frac{\dot{\phi}^2}{2} + V(\phi) & 0 & 0 & 0\\
+        0 & \displaystyle \frac{\dot{\phi}^2}{2} + V(\phi) & 0 & 0\\
+        0 & 0 & \displaystyle \frac{\dot{\phi}^2}{2} + V(\phi) & 0\\
+        0 & 0 & 0 & \displaystyle \frac{\dot{\phi}^2}{2} + V(\phi)
+    \end{pmatrix}
+\end{equation}
+
+Para que el modelo post-inflacionario se pueda acoplar con el modelo estándar de partículas de hoy en día, se necesita que el potencial tenga un término de la forma $\displaystyle \frac{1}{2} \xi^2 \chi^2 \phi^2$ siendo $\xi$ la constante de acoplamiento, es decir lo que nos dirá que tan fuerte es el acoplamiento entre el campo del inflatón y el campo hijo $\chi$. A partir de esta idea, la acción que usaremos para modelizar \textit{reheating} será de la forma
+
+\begin{equation}
+    S [g_{\mu\nu}, \phi, \chi] = \int \sqrt{- g} \left[ \frac{m_p^2}{2} R - \frac{1}{2} \partial_\mu \phi \ \partial^\mu \phi - \frac{1}{2} \partial_\mu \chi \ \partial^\mu \chi - V (\phi) - \frac{1}{2} \xi^2 \chi^2 \phi^2 \right] \ d^4 x
+\end{equation}
+
+\noindent
+dónde $R$ es el escalar de curvatura y nos dará la interacción gravitatoria, $g$ es el determinante de la métrica, los términos $\displaystyle \frac{1}{2} \partial_\mu \phi \ \partial^\mu \phi$ y $\displaystyle \frac{1}{2} \partial_\mu \chi \ \partial^\mu \chi$ son los términos cinéticos de los campos $\phi$ y $\chi$ respectivamente, luego $V(\phi)$ es el potencial que domina la dinámica del campo $\phi$ y el último es el término de acoplamiento que mencionamos previamente. A partir de variar la acción respecto los campos podemos obtener sus ecuaciones de movimiento, y a partir de variar la acción respecto la métrica obtendremos la ecuación de Einstein de la cual podemos obtener las ecuaciones de Friedmann
+
+\begin{equation}
+    H^2 = \frac{1}{3 m_p^2} \left[ \frac{\ddot{\phi}^2}{2} + V(\phi) \right]
+\end{equation}
+
+\begin{equation}
+    \dot{H} = - \frac{\dot{\phi}^2}{2 m^2_p}
+\end{equation}
+
+Consideraremos, además, el potencial de \textit{hill top} el cual es de la forma
+
+\begin{equation}
+    V(\phi) = V_0 + \sum_{n = 2}^{q} \frac{a_n}{n!} \left( \frac{\phi}{\phi_0} \right)^n
+\end{equation}

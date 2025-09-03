@@ -1,0 +1,174 @@
+\usepackage{csquotes} % Proporciona soporte para citas con formato adecuado, útil para trabajar con citas en diferentes idiomas
+
+\usepackage[spanish,es-tabla]{babel} % Adapta el documento para el idioma español, incluyendo la adaptación de tablas y otros elementos lingüísticos
+
+\usepackage[a4paper, margin=2cm, marginparwidth=3cm]{geometry} % Configura el tamaño del papel y los márgenes del documento
+
+\usepackage{amsmath} % Ofrece soporte avanzado para la escritura de fórmulas matemáticas
+
+\usepackage{graphicx} % Permite incluir y manipular imágenes en el documento
+
+\usepackage{float} % Mejora la gestión de ubicaciones para figuras y tablas
+
+\usepackage[colorlinks=true, allcolors=black]{hyperref} % Configura enlaces dentro del documento y en bibliografías con colores personalizables
+
+\usepackage[export]{adjustbox} % Permite ajustar y recortar imágenes, y también usar herramientas como "frame" para enmarcar elementos
+
+\usepackage[font=small, labelfont=bf]{caption} % Modifica la apariencia de los títulos de las figuras y tablas, cambiando el tamaño de la fuente y el formato de las etiquetas
+
+\usepackage{subcaption} % Permite la creación de subfiguras y subtables dentro de figuras y tablas principales
+
+\usepackage{physics} % Ofrece comandos para la notación matemática usada en física, como derivadas y operadores
+
+\usepackage[table,xcdraw,x11names]{xcolor} % Permite el uso de colores en tablas y gráficos, facilitando la mejora de la apariencia de las tablas
+
+\usepackage{booktabs} % Mejora el diseño de las tablas con líneas horizontales de diferentes grosores y estilos
+
+\usepackage{todonotes} % Permite agregar notas y comentarios dentro del documento para su revisión
+
+\usepackage{setspace} % Proporciona comandos para ajustar el espaciado entre líneas
+
+\setuptodonotes{inline, size=\footnotesize, color=blue!20, bordercolor=none} % Configura cómo se mostrarán las notas de la biblioteca "todonotes" (en línea, tamaño pequeño, con color azul claro)
+
+\usepackage{multicol} % Permite la creación de entornos multicolumna
+
+\setlength\columnsep{18pt} % Especifica la separación entre columnas en entornos multicolumna
+
+\usepackage{bigints} % Proporciona integrales grandes para su uso en ecuaciones matemáticas
+
+\usepackage{tocloft} % Permite la personalización del índice (table of contents), listas de figuras y listas de tablas
+
+\usepackage{wrapfig} % Permite envolver texto alrededor de figuras, ideal para mejorar la presentación de imágenes
+
+\usepackage{fancyhdr} % Permite personalizar los encabezados y pies de página del documento
+
+\usepackage{lastpage} % Permite hacer referencia a la última página del documento, útil para numeración de páginas
+
+\pagestyle{fancy} % Activa el estilo de página personalizado definido por el paquete "fancyhdr"
+\fancyhf{} % Limpia los encabezados y pies de página predeterminados
+
+\fancyhead[R]{\rightmark} % Muestra el nombre de la sección en el lado derecho
+
+\cfoot{\thepage \hspace{1pt} de \pageref{LastPage}} % Define el formato del pie de página como "Página X de Y"
+
+\usepackage{pdfpages} % Permite la inclusión de documentos PDF completos dentro del documento principal
+
+\usepackage{bbold} % Proporciona una fuente para los números y caracteres en negrita doble (a menudo usada en matemáticas)
+
+\usepackage{amssymb} % Proporciona símbolos matemáticos adicionales
+
+\usepackage{enumitem} % Permite la personalización de listas enumeradas y con viñetas
+
+\usepackage{amsmath,tikz} % Repite "amsmath" para fórmulas matemáticas avanzadas, y "tikz" para gráficos y diagramas vectoriales
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1.5pt] (char) {#1};}} % Define un nuevo comando para crear números o caracteres dentro de círculos usando TikZ
+
+\usepackage{circuitikz} % Permite dibujar circuitos eléctricos y electrónicos usando una sintaxis sencilla
+
+\usepackage{tikz} % Permite crear gráficos y diagramas complejos en el documento usando una sintaxis versátil
+
+\numberwithin{equation}{section} % Hace que las ecuaciones sean sección.numero de ecuación
+
+\rhead{\leftmark} % Coloca el índice en el encabezado derecho
+
+\setlength{\headheight}{14pt} % Aumenta la altura del encabezado
+
+\fancyhead[L]{\hyperlink{toc}{Índice}} % Agrega el enlace al índice en el encabezado
+
+\usepackage{fontawesome} % Permite insertar emojis y símbolos de Font Awesome
+
+% Definir cómo se actualizan las marcas de subsección para los encabezados
+\addto\captionsspanish{\renewcommand{\subsectionmark}[1]{\markright{#1}}} % Asegura que las subsecciones actualicen correctamente el encabezado
+
+\usepackage{yfonts} %pone letras góticas con \textfrak
+
+\usepackage[most]{tcolorbox}
+\usepackage{lipsum} % Solo para texto de ejemplo
+
+\newtcolorbox{infobox}[2][blue]{
+    colback=#1!5!white,
+    colframe=#1!75!black,
+    title={#2},
+    fonttitle=\bfseries,
+    coltitle=black,
+    boxrule=0.8pt,
+    arc=4pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    breakable
+}
+\usepackage{cancel}
+\newcommand{\colorcancel}[2]{\textcolor{#1}{\cancel{\textcolor{black}{#2}}}}
+
+\usepackage{titlesec}
+
+% Formato para párrafos como si fueran subtítulos normales
+\titleformat{\paragraph}[block]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\usepackage{listings}
+
+\lstdefinelanguage{custombash}{
+    language=bash,
+    morekeywords={conda, activate, mkdir, cd, cmake, make, git, sudo},
+    sensitive=true
+}
+
+\lstdefinestyle{bashStyle}{
+    language=custombash,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{teal}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{orange},
+    identifierstyle=\color{black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=10pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    captionpos=b
+}
+
+\lstdefinestyle{pythonStyle}{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,       % palabras clave
+    commentstyle=\color{gray}\itshape,        % comentarios
+    stringstyle=\color{orange},               % strings
+    identifierstyle=\color{black},            % nombres de variables
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=10pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    captionpos=b
+}
+
+\lstdefinestyle{cppStyle}{
+    language=C++,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=10pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    captionpos=b
+}

@@ -1,0 +1,388 @@
+Las ondas gravitatorias las podemos dividir según su origen en dos tipos: astrofísicas y cosmológicas. Las ondas gravitatorias astrofísicas son aquellas que se producen como consecuencia de fenómenos astrofísicos tal como la unión de agujeros negros, las producidas al tener sistema binarios, las producidas por supernovas o púlsares. Por otro lado, tenemos las ondas gravitatorias cosmológicas que se producen por efectos cosmológicos tal como el Big Bang o distintos eventos históricos cosmológicos (entre los cuales entra el recalentamiento, alguna ruptura instantánea de simetría o alguna transición de fase), a las del primer tipo las llamaremos primordiales, mientras que las otras no tienen un nombre particular.
+
+Otra distinción que se puede hacer a la hora de hablar de ondas gravitatorias es entre ondas coherentes e incoherentes. Las ondas coherentes son aquellas que cuando las medimos, podemos identificar cuál es su fuente; en cambio, las ondas incoherente son aquellas que forman un fondo estocástico, ésto implica que se pueden medir viendo correlaciones entre los sensores, pero al tener la medición no podemos identificar o clasificar las ondas que se dan por un fenómeno en particular.
+
+Es importante tener en cuenta que los fenómenos cosmológicos sólo forman ondas incoherentes, mientras que los fenómenos astrofísicos pueden formar tanto ondas coherentes como incoherentes. Ésto genera una dificultad extra a la hora de querer identificar ondas de origen puramente cosmológico.
+
+\subsection{Vacío de Bunch-Davies y la cuantización de las ondas en inflación}
+
+A partir de la acción
+
+\begin{equation*}
+    \begin{split} 
+        S^{(2)}_g &= - \frac{m_P^2}{8} \int a^2 (\eta) \ \eta^{\mu \nu} \partial_\mu h_{ij} \partial_\nu h_{ij} \ d^3 x \ d\eta\\
+        &= \frac{m^2_P}{4 (2 \pi)^3} \int a^2 (\eta) \left[ \left| h'_r (\textbf{k}, \eta) \right| - k^2 h_r (\textbf{k}, \eta) \right] \ d^3 k \ d \eta\\
+        &= \frac{1}{2 (2 \pi)^3} \sum_{r = +, \times} \int \left[ \left| v'_r (\textbf{k}, \eta) \right|^2 + \left( \frac{a^{\prime \prime}}{a} - k^2 \right) \left| v_r (\textbf{k}, \eta) \right|^2 \right] 
+    \end{split}
+\end{equation*}
+
+\noindent
+dónde $\displaystyle v_r = \frac{m_P}{\sqrt{2}} a h_r$. Podemos plantear un lagrangiano de la forma
+
+\begin{equation}
+    \mathcal{L} = \left( v^\prime_r \right)^2 + \left( \frac{a^{\prime \prime}}{a} - k^2 \right) v^2_r
+\end{equation}
+
+\noindent
+ahora usemos las ecuaciones de Euler-Lagrange
+
+\begin{equation}
+    \frac{d}{d\eta} \left( \frac{\partial \mathcal{L}}{\partial v^\prime_r} \right) - \frac{\partial \mathcal{L}}{\partial v_r} = 0
+\end{equation}
+
+\begin{equation}\label{eqn:euler_lagrange_v}
+    v^{\prime \prime}_r - \left( \frac{a^{\prime \prime}}{a} - k^2 \right) v_r = 0
+\end{equation}
+
+Esta es una ecuación de oscilador armónico de frecuencia $\displaystyle \omega^2 = k^2 - \frac{a^{\prime \prime}}{a}$, de modo tal que si esta frecuencia es negativa tendremos un antioscilador, mientras que si es positiva tendremos un oscilador. Se puede ver que para un universo de DeSitter $\displaystyle \frac{a^{\prime \prime}}{a} = \frac{2}{\eta^2}$ lo que implica que si $k \eta \ll 1$ (dentro del horizonte) la frecuencia será negativa y tendremos la amplificación de las perturbaciones y si $k \eta \gg 1$ (fuera del horizonte) tendremos frecuencia positiva y las perturbaciones no serán amplificadas. Esta ecuación, también nos permite escribir a los modos $v_r$ de forma de operador usando operadores de creación $\left( \hat{a}^\dagger \right)$ y de destrucción $\left( \hat{a} \right)$ como los osciladores armónicos
+
+\begin{equation}\label{eqn:v_cuantizado}
+    \hat{v}_r = \frac{1}{(2 \pi)^3} \int \left[ v_k \ e^{i k x} \ \hat{a}_{kr} + v_k^* \ e^{-ikx} \ \hat{a}_{kr}^\dagger \right] \ d^3 k
+\end{equation}
+
+\noindent
+al cuantizar el campo debemos definir las condiciones de conmutación que en nuestro caso serán:
+
+\begin{equation}
+    \left[ \hat{v}_r \left( \textbf{x}, \eta \right), \hat{\pi}_{r'} \left( \textbf{x}', \eta \right) \right] = i \delta_{rr'} \delta \left( \textbf{x} - \textbf{x}' \right) \hspace{1cm} \left[ \hat{v}_r \left( \textbf{x}, \eta \right), \hat{v}_{r'} \left( \textbf{x}', \eta \right) \right] = \left[ \hat{\pi}_r \left( \textbf{x}, \eta \right), \hat{\pi}_{r'} \left( \textbf{x}', \eta \right) \right] = 0
+\end{equation}
+
+\begin{equation}
+    \left[ \hat{a}_{kr}, \hat{a}^\dagger_{k'r'} \right] = (2 \pi)^3 \delta_{rr'} \delta \left( \textbf{k} - \textbf{k}' \right) \hspace{3cm} \left[ \hat{a}_{kr}, \hat{a}_{k'r'} \right] = \left[ \hat{a}^\dagger_{kr}, \hat{a}^\dagger_{k'r'} \right] = 0
+\end{equation}
+
+\noindent
+dónde $\hat{\pi} = \hat{v}^\prime$ es el momento conjugado de $\hat{v}$. Entonces combinando estas condiciones junto con (\ref{eqn:v_cuantizado}) podemos obtener la condición de normalización
+
+\begin{equation*}
+    \hat{\pi}_k = \hat{v}'_k = \frac{1}{(2\pi)^3} \int \left\{ \left(v^\prime_k + i k v_k \right) e^{i k x} \hat{a}_{kr} + \left( v_k^{\prime *} - i k v^*_k \right) e^{- i k x} \hat{a}_{kr}^\dagger \right\} \ d^3 k
+\end{equation*}
+
+\begin{equation*}
+    \begin{split}
+        \left[ \hat{v}_{r}, \hat{\pi}_r \right] &= i \ \delta(k - k')\\
+        \frac{1}{(2 \pi)^6} \int \left\{ v_k \left( v^{\prime *}_{k'} - i k' v_{k'}^{*} \right) e^{i (k - k') x} \left[ \hat{a}_{kr}, \hat{a}^\dagger_{k'r} \right] + v^*_k \left( v^{\prime}_{k'} - i k' v_{k'} \right) e^{-i (k - k') x} \left[ \hat{a}^{\dagger}_{kr}, \hat{a}_{k'r} \right] \right\} \ d^3 k \ d^3 k^\prime &= i \ \delta (k - k')\\
+        \frac{1}{(2 \pi)^3} \int \left\{ v_k \left( v^{\prime *}_{k'} - i k' v_{k'}^{*} \right) e^{i (k - k') x} \delta (k - k') - v^*_k \left( v^{\prime}_{k'} - i k' v_{k'} \right) e^{-i (k - k') x} \delta (k - k') \right\} \ d^3 k \ d^3 k^\prime &= i \ \delta (k - k')\\
+        \frac{1}{(2 \pi)^3} \int \left\{ v_k \left( v^{\prime *}_{k} - \colorcancel{red}{i k v_{k}^{*}} \right) - v^*_k \left( v^{\prime}_{k} - \colorcancel{red}{i k v_{k}} \right) \right\} \ d^3 k &= i\\
+        \frac{1}{(2 \pi)^3} \int \left( v_k v_k^{\prime *} - v_k^* v_k^\prime \right) \ d^3 k &= i
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    v_k v^{\prime *}_k - v_k^* v_k^\prime = i
+\end{equation}
+
+\noindent
+que es la condición de normalización.
+
+Volviendo a la ecuación (\ref{eqn:euler_lagrange_v}) tenemos que para $\eta \rightarrow -\infty$ se obtiene un oscilador armónico que tiene por solución
+
+\begin{equation}
+    v_k = C_+ e^{-i k x} + C_- e^{i k x}
+\end{equation}
+
+\noindent
+notemos que esta ecuación se obtiene también cuando se plantea un universo del tipo Minkowski (con $a = cte$). Y como quiero que la condición inicial en el vacío de Minkowski nos dé $\displaystyle v (\eta \rightarrow - \infty) \propto e^{- i k \eta}$, obtenemos $C_- = 0$ y $C_+$ la obtenemos de la condición de normalización:
+
+\begin{equation*}
+    \begin{split}
+        v_k v^{\prime *}_k - v_k^* v_k^\prime &= i\\
+        C_+ e^{-ikx} \cdot i k C_+^* e^{ikx} - C_+^* e^{i k x} \cdot (-ik) C_+ e^{-i k x} &= i\\
+        i k \left| C_+ \right|^2 + i k \left| C_+ \right|^2 &= i\\
+        2 k \left| C_+ \right|^2 &= 1\\
+        C_+ &= \frac{1}{\sqrt{2k}}
+    \end{split}
+\end{equation*}
+
+\noindent
+en conclusión para un universo de DeSitter (con $\epsilon = 0$) tenemos que la solución de las funciones de modo cuando estamos fuera del horizonte $(k \eta \gg 1)$ es
+
+\begin{equation}
+    v_k = \frac{e^{-i k x}}{\sqrt{2 k}}
+\end{equation}
+
+Ahora cuando consideramos la frecuencia completa (con la parte del factor de escala) podemos escribir la solución general de la ecuación (\ref{eqn:euler_lagrange_v}) con las funciones de Hankel de primer y segunda especie como
+
+\begin{equation}
+    v_k = \sqrt{- \eta} \left[ c_1 H_{3/2}^{(1)} (-k\eta) + c_2 H_{3/2}^{(2)} (-k\eta) \right]
+\end{equation}
+
+\noindent
+estas funciones de Hankel se pueden desarrollar para $k \eta \gg 1$ como $\displaystyle H_{\nu}^{(1)} (x \gg 1) \simeq \sqrt{\frac{2}{\pi x}} \exp \left[ i \left(x - \nu - \frac{\pi}{4} \right) \right]$ y $\displaystyle H_{\nu}^{(2)} (x \gg 1) \simeq \sqrt{\frac{2}{\pi x}} \exp \left[ -i \left(x - \nu - \frac{\pi}{4} \right) \right]$, nuevamente vamos a querer matchear la solución con el momento vacío de Bunch-Davies (la condición de $v_k (\eta \rightarrow -\infty) \propto e^{- i k x}$), al hacer ésto debemos considerar 
+
+\begin{equation*}
+    \frac{e^{-i k x}}{\sqrt{2k}} = \sqrt{- \eta} \left\{ c_1 \sqrt{-\frac{2}{\pi k \eta}} \exp \left[ -i \left(k\eta + \frac{3}{2} + \frac{\pi}{4} \right) \right] + c_2 \sqrt{- \frac{2}{\pi k \eta}} \exp \left[ i \left(k\eta + \frac{3}{2} + \frac{\pi}{4} \right) \right] \right\}
+\end{equation*}
+
+\begin{equation}
+    \begin{cases}
+        \displaystyle c_1 = \frac{\sqrt{\pi}}{2} \exp \left[ i \left( \frac{3}{2} + \frac{\pi}{4} \right) \right] \\
+        \displaystyle c_2 = 0
+    \end{cases}
+\end{equation}
+
+\noindent
+con ésto nos queda
+
+\begin{equation}
+    v_k = \sqrt{- \eta} \frac{\sqrt{\pi}}{2} \exp \left[ i \left( \frac{3}{2} + \frac{\pi}{4} \right) \right] H_{3/2}^{(1)} (- k \eta)
+\end{equation}
+
+\noindent
+la función de Hankel de primera especie para $\displaystyle \nu = \frac{3}{2}$ es $\displaystyle H^{(1)}_{3/2} (x) = -i \sqrt{\frac{2}{\pi x}} \left( 1 + \frac{i}{x} \right) e^{ix}$ entonces tenemos
+
+\begin{equation*}
+    \begin{split}
+        v_k &= - i\sqrt{- \eta} \frac{\sqrt{\pi}}{2} \sqrt{\frac{2}{-\pi k \eta }} \left( 1 + \frac{i}{- k \eta} \right) \exp \left[ i \left( \frac{3}{2} + \frac{\pi}{4} \right) \right] e^{-i k \eta}\\
+        &= \underbrace{- i}_{\displaystyle \exp \left( -\frac{\pi}{2} i \right)} \frac{e^{- i k \eta}}{\sqrt{2k}} \left( 1 - \frac{i}{k \eta} \right) \exp \left[ i \left( \frac{3}{2} + \frac{\pi}{4} \right) \right]\\
+        &= \frac{e^{- i k \eta}}{\sqrt{2 k}} \left( 1 - \frac{i}{k \eta} \right) \exp \left[ i \left( \frac{3}{2} - \frac{\pi}{4} \right) \right]
+    \end{split}
+\end{equation*}
+
+Ahora, usando que $\displaystyle v_r = \frac{m_p}{\sqrt{2}} a h_r$ y la ecuación (\ref{eqn:v_cuantizado}) tenemos
+
+\begin{equation}
+    h_k = \frac{e^{- i k \eta}}{m_p a \sqrt{k}} \left( 1 - \frac{i}{k \eta} \right) \exp \left[ i \left( \frac{3}{2} - \frac{\pi}{4} \right) \right]
+\end{equation}
+
+A partir de lo hallado, tendremos que el tensor de ondas gravitacionales es
+
+\begin{equation}
+    \hat{h}_{ij} (\textbf{x}, \eta) = \sum_{r = +, \times} \int \frac{1}{(2 \pi)^{3}} \left[ h_k (\eta) e^{ikx} \hat{a}_{kr} + h^*_k (\eta) e^{-ikx} \hat{a}^\dagger_{kr} \right] e_{ij}^r (\textbf{k}) \ d^3 k
+\end{equation}
+
+\noindent
+con ésto podemos encontrar el espectro de potencias adimensional como
+
+\begin{equation}
+    \bra{0} \hat{h}_{ij} (\textbf{x},\eta) \ \hat{h}_{ij} (\textbf{x}, \eta) \ket{0} = \int \mathcal{P}_h (k) \frac{dk}{k} 
+\end{equation}
+
+\noindent
+entonces
+
+\begin{equation*}
+    \begin{split}
+        \bra{0} \hat{h}_{ij} (\textbf{x},\eta) \ \hat{h}_{ij} (\textbf{x}, \eta) \ket{0} =& \bra{0} \sum_{r = +, \times} \int \frac{1}{(2 \pi)^{3}} \left[ h_k e^{ikx} \hat{a}_{kr} + h^*_k e^{-ikx} \hat{a}^\dagger_{kr} \right] e_{ij}^r \ d^3 k \\
+        &\sum_{r^\prime = +, \times} \int \frac{1}{(2 \pi)^{3}} \left[ h_{k^\prime} e^{ik^\prime x} \hat{a}_{k^\prime r^\prime} + h^*_{k^\prime} e^{-ik^\prime x} \hat{a}^\dagger_{k^\prime r^\prime} \right] e_{ij}^{r^\prime} \ d^3 k^\prime \ket{0}\\
+        \bra{0} \hat{h}_{ij} (\textbf{x},\eta) \ \hat{h}_{ij} (\textbf{x}, \eta) \ket{0} =& \frac{1}{(2\pi)^6} \sum_{r,r^\prime = +, \times} \int h_k h_{k^\prime} e^{i (k + k^\prime) x} \underbrace{\bra{0} \hat{a}_{kr} \hat{a}_{k^\prime r^\prime} \ket{0}}_{\displaystyle = 0} e_{ij}^r e_{ij}^{r^\prime} \ d^3 k \ d^3 k^\prime\\
+        &+ \frac{1}{(2\pi)^6} \sum_{r,r^\prime = +, \times} \int h_k h_{k^\prime}^* e^{i (k - k^\prime) x} \bra{0} \hat{a}_{kr} \hat{a}^\dagger_{k^\prime r^\prime} \ket{0} e_{ij}^r e_{ij}^{r^\prime} \ d^3 k \ d^3 k^\prime\\
+        &+ \frac{1}{(2\pi)^6} \sum_{r,r^\prime = +, \times} \int h^*_k h_{k^\prime} e^{-i (k - k^\prime) x} \underbrace{\bra{0} \hat{a}^\dagger_{kr} \hat{a}_{k^\prime r^\prime} \ket{0}}_{\displaystyle = 0} e_{ij}^r e_{ij}^{r^\prime} \ d^3 k \ d^3 k^\prime\\
+        &+ \frac{1}{(2\pi)^6} \sum_{r,r^\prime = +, \times} \int h^*_k h^*_{k^\prime} e^{-i (k + k^\prime) x} \underbrace{\bra{0} \hat{a}^\dagger_{kr} \hat{a}_{k^\prime r^\prime}^\dagger \ket{0}}_{\displaystyle = 0} e_{ij}^r e_{ij}^{r^\prime} \ d^3 k \ d^3 k^\prime\\
+        \bra{0} \hat{h}_{ij} (\textbf{x},\eta) \ \hat{h}_{ij} (\textbf{x}, \eta) \ket{0} =& \frac{1}{(2\pi)^6} \sum_{r,r^\prime = +, \times} \int h_k h_{k^\prime}^* e^{i (k - k^\prime) x} \bra{0} \left\{ \left[ \hat{a}_{kr}, \hat{a}^\dagger_{k^\prime r^\prime} \right] + \hat{a}^\dagger_{k^\prime r^\prime} \hat{a}_{kr} \right\} \ket{0} e_{ij}^r e_{ij}^{r^\prime} \ d^3 k \ d^3 k^\prime\\
+        \bra{0} \hat{h}_{ij} (\textbf{x},\eta) \ \hat{h}_{ij} (\textbf{x}, \eta) \ket{0} =& \frac{1}{(2\pi)^6} \sum_{r, r^\prime = +, \times} \int h_k h_{k^\prime}^* e^{i (k - k^\prime) x} (2\pi)^3 \delta (\textbf{k} - \textbf{k}^\prime) \delta_{r r\prime} e_{ij}^r e_{ij}^{r^\prime} \ d^3 k \ d^3 k^\prime\\
+        \bra{0} \hat{h}_{ij} (\textbf{x},\eta) \ \hat{h}_{ij} (\textbf{x}, \eta) \ket{0} =& \frac{1}{(2\pi)^3} \int \left| h_k \right|^2 \underbrace{\sum_{r = +, \times} e_{ij}^r e_{ij}^{r^\prime}}_{\displaystyle = 4} \ d^3 k\\
+        \bra{0} \hat{h}_{ij} (\textbf{x},\eta) \ \hat{h}_{ij} (\textbf{x}, \eta) \ket{0} =& \frac{1}{2 \pi^3} \int \left| h_k \right|^2 \ k^2 \ dk \ d\Omega\\
+        \bra{0} \hat{h}_{ij} (\textbf{x},\eta) \ \hat{h}_{ij} (\textbf{x}, \eta) \ket{0} =& \frac{2}{\pi^2} \int k^2 \left| \frac{e^{-ik\eta}}{m_p a \sqrt{k}} \left( 1 - \frac{i}{k \eta} \right) \exp \left[ i \left(\frac{3}{2} - \frac{\pi}{4} \right) \right] \right|^2 \ d k\\
+        \bra{0} \hat{h}_{ij} (\textbf{x},\eta) \ \hat{h}_{ij} (\textbf{x}, \eta) \ket{0} =& \frac{2}{\pi^2} \int \frac{k}{m_p^2 a^2} \left( 1 + \frac{1}{k^2 \eta^2} \right) \ dk
+    \end{split}
+\end{equation*}
+
+\noindent
+usemos que $k \eta \ll 1$ para despreciar el $1$ dentro del paréntesis, además tenemos que en esta etapa se cumple $a = (H \eta)^{-1}$
+
+\begin{equation*}
+    \begin{split}
+        \bra{0} \hat{h}_{ij} (\textbf{x},\eta) \ \hat{h}_{ij} (\textbf{x}, \eta) \ket{0} =& \int \frac{2}{\pi^2 m_p^2 a^2 k \eta^2} \ dk\\
+        \bra{0} \hat{h}_{ij} (\textbf{x},\eta) \ \hat{h}_{ij} (\textbf{x}, \eta) \ket{0} =& \int \frac{2 H^2}{\pi^2 m_p^2} \ \frac{dk}{k}
+    \end{split}
+\end{equation*}
+
+En conclusión, el espectro de potencia nos queda
+
+\begin{equation}
+    \mathcal{P}_h = \frac{2 H^2}{\pi^2 m_p^2}
+\end{equation}
+
+\subsection{Función de transferencia de modos subhorizonte}
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[-{Latex}, very thick] (-4,0) -- (10,0) node [below] {$a^{-1}$};
+        \draw[-{Latex}, very thick] (0,0) -- (0,10) node [right] {$H^{-1}$};
+        \draw[very thick] (-4,2) -- (4,2);
+        \draw[very thick] (4,2) -- (7, 8);
+        \draw[very thick] (7,8) -- (9,10);
+        \draw[color = blue, very thick] (-3.5,1) -- (9,28/3) node[right] {$k_{eq}$};
+        \draw[color = teal, very thick] (-4,1) -- (9,29/3) node[right] {$k_1$};
+        \draw[color = red, very thick] (-3,1) -- (9,9) node [right] {$k_2$};
+        \draw[-{Latex}, very thick] (10.5, 9) -- (10.5, 7) node [midway, right] {$\vec{k}$};
+        \draw[dashed, very thick] (4,2) -- (4,0) node [below] {EOI};
+        \draw[dashed, very thick] (7,8) -- (7,0) node [below] {$a_{eq}$};
+        \draw[dashed, very thick] (9,10) -- (9,0) node [below] {$a_0$};
+    \end{tikzpicture}
+\end{center}
+
+La densidad de energía de las ondas gravitatorias es de la forma $\rho_{GW} \sim a^{-4}$ mientras que la densidad crítica es de la forma $\displaystyle \rho_{c} \sim \begin{cases}
+    a^{-4} \hspace{0.5cm} &\text{radiación}\\
+    a^{-3} \hspace{0.5cm} &\text{materia}
+\end{cases}$, entonces el parámetro de densidad $\Omega$ para los distintos modos va a está dado por
+
+\begin{equation}
+    \Omega_{GW} = \frac{\rho_{GW}}{\rho_c} \sim \begin{cases}
+        \displaystyle \text{cte} \hspace{0.5cm} &\text{radiación}\\
+        a^{-1} \hspace{0.5cm} &\text{materia}
+    \end{cases}
+\end{equation}
+
+Vemos entonces, que las ondas en radiación no se ven afectadas mientras que en materia se ven suprimidas como $a^{-1}$. Ésto nos indica que para $k > k_{eq}$ tenemos que para $a < a_{eq}$ su espectro es constante.
+
+Los modos subhorizonte evolucionan como
+
+\begin{equation*}
+    \begin{cases}
+        \displaystyle \Omega_{GW} (k_1, a_0) = \Omega_{GW} (k_1, a_1) \cdot \frac{a_1}{a_0}\\
+        \displaystyle \Omega_{GW} (k_{eq}, a_0) = \Omega_{GW} (k_{eq}, a_{eq}) \cdot \frac{a_{eq}}{a_0}\\
+        \displaystyle \Omega_{GW} (k_{2}, a_0) = \Omega_{GW} (k_2, a_{eq}) \cdot \frac{a_{eq}}{a_0} = \Omega_{GW} (k_2, a_2) \cdot \frac{a_{eq}}{a_0}
+    \end{cases}
+\end{equation*}
+
+\noindent
+dónde $a_{1,2}$ es el valor de $a$ cuando el modo correspondiente entra al horizonte. A su vez, cuando un modo entra al horizonte tenemos $k = a H$, y en materia tenemos $\displaystyle H_m (a) = H_0 \left( \frac{a}{a_{0}} \right)^{\displaystyle - \frac{3}{2}}$, lo que implica que 
+
+\begin{equation*}
+    \begin{split}
+        k &= a \cdot H_0 \left( \frac{a}{a_0} \right)^{\displaystyle - \frac{3}{2}}\\
+        k &= H_0 a^{3/2}_0 a^{-1/2}\\
+        a &= \frac{1}{H_0^2 a^3_0 k^2}
+    \end{split}
+\end{equation*}
+
+Entonces, veamos qué pasa cuando juntamos esto último con la evolución de los modos
+
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+        \hline Entran en materia & Entra en \textit{equality} & Entran en radiación \\
+        \hline & & \\ 
+        $\displaystyle \Omega_{GW} (k_1, a_0) = \Omega_{GW} (k_1, a_1) \cdot \frac{a_1}{a_0}$ & $\displaystyle \Omega_{GW} (k_{eq}, a_0) = \Omega_{GW} (k_{eq}, a_{eq}) \cdot \frac{a_{eq}}{a_0}$& $\displaystyle \Omega_{GW} (k_{2}, a_0) = \Omega_{GW} (k_{2}, a_{eq}) \cdot \frac{a_{eq}}{a_0}$\\
+        & & \\
+        $\displaystyle \Omega_{GW} (k_1, a_0) = \frac{\Omega_{GW} (k_1, a_1)}{H_0^2 a_0^4 k^2_1}$ & $\displaystyle \Omega_{GW} (k_{eq}, a_0) = \frac{\Omega_{GW} (k_{eq}, a_{eq})}{H_0^2 a_0^4 k^2_{eq}}$ & $\displaystyle \Omega_{GW} (k_{2}, a_{0}) = \frac{\Omega_{GW} (k_{2}, a_{2})}{H_0^2 a_0^4 k^2_{eq}}$\\
+        \hline
+    \end{tabular}
+\end{center}
+
+\begin{multicols}{2}
+    \begin{equation*}
+        \begin{split}
+            \frac{\Omega_{GW} (k_1, a_0)}{\Omega_{GW} (k_{eq}, a_0)} &= \frac{\displaystyle \frac{\colorcancel{red}{\Omega_{GW} (k_{1}, a_{eq})}}{\colorcancel{green}{H_0^2 a_0^4} k^2_{1}}}{\displaystyle \frac{\colorcancel{red}{\Omega_{GW} (k_{eq}, a_{eq})}}{\colorcancel{green}{H_0^2 a_0^4} k^2_{eq}}}
+        \end{split}
+    \end{equation*}
+    
+    \begin{equation}
+        \frac{\Omega_{GW} (k_1, a_0)}{\Omega_{GW} (k_{eq}, a_0)} = \left( \frac{k_{eq}}{k_1} \right)^2
+    \end{equation}
+
+    \columnbreak
+
+    \begin{equation*}
+        \begin{split}
+            \frac{\Omega_{GW} (k_2, a_0)}{\Omega_{GW} (k_{eq}, a_0)} &= \frac{\displaystyle \frac{\colorcancel{red}{\Omega_{GW} (k_{2}, a_{2})}}{\colorcancel{green}{H_0^2 a_0^4} \colorcancel{yellow}{k^2_{eq}}}}{\displaystyle \frac{\colorcancel{red}{\Omega_{GW} (k_{eq}, a_{eq})}}{\colorcancel{green}{H_0^2 a_0^4} \colorcancel{yellow}{k^2_{eq}}}}
+        \end{split}
+    \end{equation*}
+    
+    \begin{equation}
+        \frac{\Omega_{GW} (k_2, a_0)}{\Omega_{GW} (k_{eq}, a_0)} = 1
+    \end{equation}
+\end{multicols}
+
+En conclusión, la función de transferencia es de la forma
+
+\begin{equation}
+    \mathcal{T} (k) = \begin{cases}
+        1 \hspace{1cm} & k \gg k_{eq}\\
+        \displaystyle \left( \frac{k_{eq}}{k} \right)^2 \hspace{1cm} & k \ll k_{eq}
+    \end{cases}
+\end{equation}
+
+Acá está comparado con el $k_{eq}$, pero no estoy considerando el decaimiento de los grados de libertad relativistas. Y falta ver el nivel dónde están los espectros para el espectro de potencias.
+
+\subsection{Ecuación de Mathieu}
+
+A partir de todo lo que entendimos de cómo llegar a la ecuación de Mathieu en \textit{Cosmic Inflation: Reheating} de Mishra, armamos un script de Python que pueda replicar las figuras 20 y 21 de este texto con el fin de entender cómo se pueden obtener los coeficientes de Floquet y cómo son las soluciones de la ecuación de Mathieu. Estos scripts los subo en GitHub: \url{https://github.com/TomasCiccarella/Tesis}.
+
+A partir de ese código pudimos recuperar una tabla de inestabilidades para la ecuación de Mathieu para valores de $q$ entre 0 y 5, y valores de $A_k$ entre 0 y 15 que es la misma que llega el texto (imagen de la izquierda), y además lo expandimos para tener un rango de $q$ entre 0 y 200, y valores de $A_k$ entre 0 y 100 (imagen de la derecha). Con ésto podemos ver qué valores pueden tener las inestabilidades para tener una resonancia de la forma ancha o estrecha.
+
+\begin{minipage}{0.45\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{Imagenes//Nahue/Mathieu_1.png}
+        \caption{en esta imagen podemos ver cómo son las bandas para valores de $q$ entre 0 y 5, y valores de $A_k$ entre 0 y 15. Esta imagen es la misma que aparece en el texto de Mishra.}
+        \label{fig:Mathieu1}
+    \end{figure}
+\end{minipage} \hfill
+\begin{minipage}{0.45\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{Imagenes//Nahue/Mathieu_2.png}
+        \caption{en esta imagen podemos ver cómo son las bandas para valores de $q$ entre 0 y 200, y valores de $A_k$ entre 0 y 100.}
+        \label{fig:Mathieu2}
+    \end{figure}
+\end{minipage}
+
+Ya que tenemos las bandas dónde hay inestabilidad, utilizando que $\displaystyle A_k = \left( \frac{k}{m} \right)^2  + 2 q$ podemos fijar $q$ y variar el modo para ver cómo se comporta la oscilación para distintos modos y ver qué tipo de resonancia tenemos, ésto lo podemos ver en las figuras \ref{fig:Mathieu3} y \ref{fig:Mathieu4}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Imagenes//Nahue/Mathieu_3.png}
+    \caption{\centering en esta imagen vemos cómo evolucionan las soluciones de la ecuación de Mathieu para distintos modos con $q = 0.1$ (narrow resonance).}
+    \label{fig:Mathieu3}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Imagenes//Nahue/Mathieu_4.png}
+    \caption{\centering en esta imagen vemos cómo evolucionan las soluciones de la ecuación de Mathieu para distintos modos con $q = 200$ (broad resonance).}
+    \label{fig:Mathieu4}
+\end{figure}
+
+De las figuras \ref{fig:Mathieu3} y \ref{fig:Mathieu4} podemos buscar quedarnos con un gráfico de cada uno para ver cómo son los tipos de resonancias, en particular por la forma en que evolucionan los modos del campo hijo tomemos para $q = 0.1$ el valor de $A_k = 1.03$ y para $q = 200$ el valor de $A_k = 401$. Estos dos gráficos los podemos poner en \ref{fig:Mathieu5} y \ref{fig:Mathieu6} respectivamente.
+
+\begin{minipage}{0.45\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{Imagenes//Nahue/Mathieu_5.png}
+        \caption{en esta imagen tenemos la evolución del modo con $q = 0.1$ y $A_k = 1.03$ lo que nos da una narrow resonance}
+        \label{fig:Mathieu5}
+    \end{figure}
+\end{minipage} \hfill
+\begin{minipage}{0.45\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{Imagenes//Nahue/Mathieu_6.png}
+        \caption{en esta imagen tenemos la evolución del modo con $q = 200$ y $A_k = 401$ lo que nos da una narrow resonance}
+        \label{fig:Mathieu6}
+    \end{figure}
+\end{minipage}
+
+Con estos valores de $q$ y $A_k$ podemos calcular el número de partículas producidas, lo cual lo haremos usando 
+
+\begin{equation}
+    n_\chi (k) = \frac{1}{2 \Omega_\chi} \left( \left| \frac{d \chi_k}{dT} \right|^2 + \Omega^2_\chi \left| \chi_k \right|^2 \right) - \frac{1}{2}
+\end{equation}
+
+\noindent
+siendo
+
+\begin{equation}
+    \Omega_\chi^2 (k, t) = \frac{k^2}{a^2} + g^2 \phi^2 (t)
+\end{equation}
+
+\noindent
+y el campo $\phi (t) = \phi_0 \sin (T)$. Entonces debemos definir parámetros para $g$, $a$ y $\phi_0$ y con ésto obtenemos las figuras \ref{fig:Mathieu7} para narrow resonance y \ref{fig:Mathieu8} para broad resonance. Para estos gráficos tomamos $a = 1$, $g = 10^{-14}$ y $\phi_0 = 1$.
+
+\begin{minipage}{0.45\textwidth}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Imagenes//Nahue/Mathieu_7.png}
+    \caption{número de partículas para narrow resonance. Para esta figura tomamos $q = 0.1$ y $A_k = 1.03$.}
+    \label{fig:Mathieu7}
+\end{figure}
+\end{minipage} \hfill
+\begin{minipage}{0.45\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{Imagenes//Nahue/Mathieu_8.png}
+        \caption{número de partículas para broad resonance. Para esta figura tomamos $q = 200$ y $A_k = 401$.}
+        \label{fig:Mathieu8}
+    \end{figure}
+\end{minipage}

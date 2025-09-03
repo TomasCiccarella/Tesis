@@ -1,0 +1,1677 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  3 SEP 2025 12:21
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex
+(/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:1: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \usepackage{
+                csquotes} % Proporciona soporte para citas con formato adecu...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:3: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \usepackage[spanish,es-tabla]{
+                                  babel} % Adapta el documento para el idiom...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:5: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...e[a4paper, margin=2cm, marginparwidth=3cm]{
+                                                  geometry} % Configura el t...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:7: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \usepackage{
+                amsmath} % Ofrece soporte avanzado para la escritura de fór...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:9: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \usepackage{
+                graphicx} % Permite incluir y manipular imágenes en el docu...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:11: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \usepackage{
+                 float} % Mejora la gestión de ubicaciones para figuras y t...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:13: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ...package[colorlinks=true, allcolors=black]{
+                                                  hyperref} % Configura enla...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:15: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \usepackage[export]{
+                         adjustbox} % Permite ajustar y recortar imágenes, ...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:17: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \usepackage[font=small, labelfont=bf]{
+                                           caption} % Modifica la apariencia...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:19: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \usepackage{
+                 subcaption} % Permite la creación de subfiguras y subtable...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:21: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \usepackage{
+                 physics} % Ofrece comandos para la notación matemática us...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:23: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \usepackage[table,xcdraw,x11names]{
+                                        xcolor} % Permite el uso de colores ...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:25: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \usepackage{
+                 booktabs} % Mejora el diseño de las tablas con líneas hor...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:27: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \usepackage{
+                 todonotes} % Permite agregar notas y comentarios dentro del...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:29: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \usepackage{
+                 setspace} % Proporciona comandos para ajustar el espaciado ...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:31: Undefined control sequence.
+l.31 \setuptodonotes
+                    {inline, size=\footnotesize, color=blue!20, bordercolor=...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:31: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \setuptodonotes{i
+                      nline, size=\footnotesize, color=blue!20, bordercolor=...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:31: Undefined control sequence.
+l.31 \setuptodonotes{inline, size=\footnotesize
+                                               , color=blue!20, bordercolor=...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 31--32
+[]
+ []
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:33: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \usepackage{
+                 multicol} % Permite la creación de entornos multicolumna
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:37: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \usepackage{
+                 bigints} % Proporciona integrales grandes para su uso en ec...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:39: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \usepackage{
+                 tocloft} % Permite la personalización del índice (table o...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:41: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 \usepackage{
+                 wrapfig} % Permite envolver texto alrededor de figuras, ide...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:43: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \usepackage{
+                 fancyhdr} % Permite personalizar los encabezados y pies de ...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:45: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \usepackage{
+                 lastpage} % Permite hacer referencia a la última página d...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:47: Undefined control sequence.
+<argument> \undefinedpagestyle 
+                               
+l.47 \pagestyle{fancy}
+                       % Activa el estilo de página personalizado definido ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:48: Undefined control sequence.
+l.48 \fancyhf
+             {} % Limpia los encabezados y pies de página predeterminados
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:50: Undefined control sequence.
+l.50 \fancyhead
+               [R]{\rightmark} % Muestra el nombre de la sección en el lado...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:50: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \fancyhead[
+                R]{\rightmark} % Muestra el nombre de la sección en el lado...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 50--51
+[] 
+ []
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:52: Undefined control sequence.
+l.52 \cfoot
+           {\thepage \hspace{1pt} de \pageref{LastPage}} % Define el formato...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:52: Undefined control sequence.
+l.52 \cfoot{\thepage
+                     \hspace{1pt} de \pageref{LastPage}} % Define el formato...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:52: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \cfoot{\thepage \hspace{1pt}
+                                  de \pageref{LastPage}} % Define el formato...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:52: Undefined control sequence.
+<write> ... Reference `LastPage' on page \thepage 
+                                                  \space undefined\on@line .
+l.52 ...thepage \hspace{1pt} de \pageref{LastPage}
+                                                  } % Define el formato del ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `LastPage' on page  undefined on input line 52.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 52--53
+[]
+ []
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 52--53
+[] 
+ []
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:54: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \usepackage{
+                 pdfpages} % Permite la inclusión de documentos PDF complet...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:56: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \usepackage{
+                 bbold} % Proporciona una fuente para los números y caracte...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:58: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \usepackage{
+                 amssymb} % Proporciona símbolos matemáticos adicionales
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:60: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \usepackage{
+                 enumitem} % Permite la personalización de listas enumerada...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:62: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \usepackage{
+                 amsmath,tikz} % Repite "amsmath" para fórmulas matemática...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:66: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \usepackage{
+                 circuitikz} % Permite dibujar circuitos eléctricos y elect...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:68: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \usepackage{
+                 tikz} % Permite crear gráficos y diagramas complejos en el...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:70: Undefined control sequence.
+l.70 \numberwithin
+                  {equation}{section} % Hace que las ecuaciones sean secció...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:70: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \numberwithin{e
+                    quation}{section} % Hace que las ecuaciones sean secció...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 70--71
+[] 
+ []
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:72: Undefined control sequence.
+l.72 \rhead
+           {\leftmark} % Coloca el índice en el encabezado derecho
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:76: Undefined control sequence.
+l.76 \fancyhead
+               [L]{\hyperlink{toc}{Índice}} % Agrega el enlace al índice e...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:76: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \fancyhead[
+                L]{\hyperlink{toc}{Índice}} % Agrega el enlace al índice e...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no ] in font nullfont!
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:76: Undefined control sequence.
+l.76 \fancyhead[L]{\hyperlink
+                             {toc}{Índice}} % Agrega el enlace al índice e...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+LaTeX Font Info:    Trying to load font information for +cmr on input line 76.
+LaTeX Font Info:    No file cmr.fd. on input line 76.
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 76.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:76: Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.76 \fancyhead[L]{\hyperlink{toc}{Í
+                                     ndice}} % Agrega el enlace al índice e...
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 76.
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (28.61113pt too wide) in paragraph at lines 76--77
+[]\/cmr/m/n/10 ^^SI 
+ []
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:78: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \usepackage{
+                 fontawesome} % Permite insertar emojis y símbolos de Font ...
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:81: Undefined control sequence.
+l.81 \addto
+           \captionsspanish{\renewcommand{\subsectionmark}[1]{\markright{#1}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:81: Undefined control sequence.
+l.81 \addto\captionsspanish
+                           {\renewcommand{\subsectionmark}[1]{\markright{#1}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:83: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \usepackage{
+                 yfonts} %pone letras góticas con \textfrak
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:85: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \usepackage[most]{
+                       tcolorbox}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:86: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \usepackage{
+                 lipsum} % Solo para texto de ejemplo
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:88: Undefined control sequence.
+l.88 \newtcolorbox
+                  {infobox}[2][blue]{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:88: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \newtcolorbox{i
+                    nfobox}[2][blue]{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no = in font nullfont!
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:89: You can't use `macro parameter character #' in horizontal mode.
+l.89     colback=#
+                  1!5!white,
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:90: You can't use `macro parameter character #' in horizontal mode.
+l.90     colframe=#
+                   1!75!black,
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:91: You can't use `macro parameter character #' in horizontal mode.
+l.91     title={#
+                 2},
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:102: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 \usepackage{
+                  cancel}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 88--104
+[]
+ []
+
+
+Overfull \hbox (3.19443pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 ,
+ []
+
+
+Overfull \hbox (25.55542pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 colti-
+ []
+
+
+Overfull \hbox (51.11082pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 tle=black,
+ []
+
+
+Overfull \hbox (75.49268pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 boxrule=0.8pt,
+ []
+
+
+Overfull \hbox (44.18726pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 arc=4pt,
+ []
+
+
+Overfull \hbox (45.20116pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 left=6pt,
+ []
+
+
+Overfull \hbox (52.97195pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 right=6pt,
+ []
+
+
+Overfull \hbox (45.36087pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 top=6pt,
+ []
+
+
+Overfull \hbox (20.76378pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 bot-
+ []
+
+
+Overfull \hbox (48.5553pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 tom=6pt,
+ []
+
+
+Overfull \hbox (31.88872pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 break-
+ []
+
+
+Overfull \hbox (20.44432pt too wide) in paragraph at lines 88--104
+\OT1/cmr/bx/n/10 able
+ []
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:105: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \usepackage{
+                  titlesec}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:108: Undefined control sequence.
+l.108 \titleformat
+                  {\paragraph}[block]{\normalfont\normalsize\bfseries}{\thep...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:108: Undefined control sequence.
+l.108 \titleformat{\paragraph
+                             }[block]{\normalfont\normalsize\bfseries}{\thep...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:108: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108 \titleformat{\paragraph}[
+                               block]{\normalfont\normalsize\bfseries}{\thep...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:108: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108 ...\paragraph}[block]{\normalfont\normalsize
+                                                  \bfseries}{\theparagraph}{...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:108: Undefined control sequence.
+l.108 ...alfont\normalsize\bfseries}{\theparagraph
+                                                  }{1em}{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 108--111
+[]
+ []
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:112: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \usepackage{
+                  listings}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:114: Undefined control sequence.
+l.114 \lstdefinelanguage
+                        {custombash}{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:114: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 \lstdefinelanguage{c
+                          ustombash}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 114--119
+[]
+ []
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:120: Undefined control sequence.
+l.120 \lstdefinestyle
+                     {bashStyle}{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:120: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \lstdefinestyle{b
+                       ashStyle}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:122: Undefined control sequence.
+l.122     basicstyle=\ttfamily\small
+                                    ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:123: Undefined control sequence.
+l.123     keywordstyle=\color
+                             {teal}\bfseries,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 123.
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:124: Undefined control sequence.
+l.124     commentstyle=\color
+                             {gray}\itshape,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/it' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/it' tried instead on input line 124.
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:125: Undefined control sequence.
+l.125     stringstyle=\color
+                            {orange},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:126: Undefined control sequence.
+l.126     identifierstyle=\color
+                                {black},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:128: Undefined control sequence.
+l.128     numberstyle=\tiny
+                           \color{gray},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:128: Undefined control sequence.
+l.128     numberstyle=\tiny\color
+                                 {gray},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:131: Undefined control sequence.
+l.131     backgroundcolor=\color
+                                {white},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 120--138
+[]
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/n/10 ,
+ []
+
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/n/10 keywordstyle=teal,
+ []
+
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/n/10 commentstyle=gray\OT1/cmtt/m/it/10 ,
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 stringstyle=orange,
+ []
+
+
+Overfull \hbox (115.499pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 identifierstyle=black,
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 numbers=left,
+ []
+
+
+Overfull \hbox (89.24922pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 numberstyle=gray,
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 stepnumber=1,
+ []
+
+
+Overfull \hbox (78.74931pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 numbersep=10pt,
+ []
+
+
+Overfull \hbox (115.499pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 backgroundcolor=white,
+ []
+
+
+Overfull \hbox (89.24922pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 showspaces=false,
+ []
+
+
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 showstringspaces=false,
+ []
+
+
+Overfull \hbox (83.99927pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 breaklines=true,
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 frame=single,
+ []
+
+
+Overfull \hbox (62.99945pt too wide) in paragraph at lines 120--138
+\OT1/cmtt/m/it/10 captionpos=b
+ []
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:139: Undefined control sequence.
+l.139 \lstdefinestyle
+                     {pythonStyle}{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:139: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 \lstdefinestyle{p
+                       ythonStyle}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no p in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:141: Undefined control sequence.
+l.141     basicstyle=\ttfamily\small
+                                    ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:142: Undefined control sequence.
+l.142     keywordstyle=\color
+                             {blue}\bfseries,       % palabras clave
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:143: Undefined control sequence.
+l.143     commentstyle=\color
+                             {gray}\itshape,        % comentarios
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:144: Undefined control sequence.
+l.144     stringstyle=\color
+                            {orange},               % strings
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:145: Undefined control sequence.
+l.145     identifierstyle=\color
+                                {black},            % nombres de variables
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:147: Undefined control sequence.
+l.147     numberstyle=\tiny
+                           \color{gray},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:147: Undefined control sequence.
+l.147     numberstyle=\tiny\color
+                                 {gray},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:150: Undefined control sequence.
+l.150     backgroundcolor=\color
+                                {white},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 139--157
+[]
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/n/10 ,
+ []
+
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/n/10 keywordstyle=blue,
+ []
+
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/n/10 commentstyle=gray\OT1/cmtt/m/it/10 ,
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 stringstyle=orange,
+ []
+
+
+Overfull \hbox (115.499pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 identifierstyle=black,
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 numbers=left,
+ []
+
+
+Overfull \hbox (89.24922pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 numberstyle=gray,
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 stepnumber=1,
+ []
+
+
+Overfull \hbox (78.74931pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 numbersep=10pt,
+ []
+
+
+Overfull \hbox (115.499pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 backgroundcolor=white,
+ []
+
+
+Overfull \hbox (89.24922pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 showspaces=false,
+ []
+
+
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 showstringspaces=false,
+ []
+
+
+Overfull \hbox (83.99927pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 breaklines=true,
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 frame=single,
+ []
+
+
+Overfull \hbox (62.99945pt too wide) in paragraph at lines 139--157
+\OT1/cmtt/m/it/10 captionpos=b
+ []
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:158: Undefined control sequence.
+l.158 \lstdefinestyle
+                     {cppStyle}{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:158: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 \lstdefinestyle{c
+                       ppStyle}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:160: Undefined control sequence.
+l.160     basicstyle=\ttfamily\small
+                                    ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:161: Undefined control sequence.
+l.161     keywordstyle=\color
+                             {blue}\bfseries,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:162: Undefined control sequence.
+l.162     commentstyle=\color
+                             {gray}\itshape,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:163: Undefined control sequence.
+l.163     stringstyle=\color
+                            {red},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:165: Undefined control sequence.
+l.165     numberstyle=\tiny
+                           \color{gray},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:165: Undefined control sequence.
+l.165     numberstyle=\tiny\color
+                                 {gray},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/Librerias.tex:168: Undefined control sequence.
+l.168     backgroundcolor=\color
+                                {white},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+! Emergency stop.
+<*> ...esktop/UBA/Tesis/Git/Cuaderno/Librerias.tex
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 43 strings out of 474222
+ 763 string characters out of 5748734
+ 1923975 words of memory out of 5000000
+ 22393 multiletter control sequences out of 15000+600000
+ 558713 words of font info for 39 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,2n,32p,290b,137s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
