@@ -1,0 +1,132 @@
+% Idioma
+\usepackage[spanish, es-tabla]{babel}
+
+% Codificación
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{qrcode}
+
+% Paquetes matemáticos
+\usepackage{amsmath, amssymb, physics, bigints, cancel}
+\usepackage{stmaryrd}
+
+% Colores y cuadros
+\usepackage[table, xcdraw, x11names]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
+\newtcolorbox{infobox}[2][blue]{
+    colback=#1!5!white,
+    colframe=#1!75!black,
+    title={#2},
+    fonttitle=\bfseries,
+    coltitle=black,
+    boxrule=0.8pt,
+    arc=4pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    breakable
+}
+
+% TikZ para diagramas y circuitos
+\usepackage{tikz}
+\usetikzlibrary{patterns, decorations.pathreplacing}
+\usepackage{circuitikz}
+
+% Figuras
+\usepackage{graphicx}
+\usepackage{float} % no siempre necesario, pero puede ayudar
+
+% Tablas pro
+\usepackage{booktabs}
+
+% Listados de código
+\usepackage{listings}
+
+% Bash personalizado
+\lstdefinelanguage{custombash}{
+    language=bash,
+    morekeywords={conda, activate, mkdir, cd, cmake, make, git, sudo},
+    sensitive=true
+}
+
+\lstdefinestyle{bashStyle}{
+    language=custombash,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{teal}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{orange},
+    identifierstyle=\color{black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=10pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    captionpos=b
+}
+
+% Python
+\lstdefinestyle{pythonStyle}{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{orange},
+    identifierstyle=\color{black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=10pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    captionpos=b
+}
+
+% C++
+\lstdefinestyle{cppStyle}{
+    language=C++,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=10pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    captionpos=b
+}
+
+% Fuente doble negrita
+\usepackage{bbold}
+
+% Íconos FontAwesome
+\usepackage{fontawesome}
+
+% Para texto de ejemplo
+\usepackage{lipsum}
+
+% Comando para tachado en color
+\newcommand{\colorcancel}[2]{\textcolor{#1}{\cancel{\textcolor{black}{#2}}}}
+
+% Comando para círculos con texto
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+  \node[shape=circle,draw,inner sep=1.5pt] (char) {#1};}}
+
+% Pie de página
+\setbeamertemplate{footline}[frame number]

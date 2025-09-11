@@ -8,6 +8,7 @@
 \catcode `<\active 
 \catcode `>\active 
 \@nameuse{es@quoting}
+\ifx\qr@savematrix\@undefined\def\qr@savematrix{\begingroup\let\do\@makeother\dospecials\catcode`\{=1\catcode`\}=2\relax \qr@savematrix@int}\def\qr@savematrix@int#1#2#3#4{\endgroup}\fi
 \babel@aux{spanish}{}
 \@writefile{nav}{\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}}
 \@writefile{nav}{\headcommand {\beamer@framepages {1}{1}}}

@@ -1,28 +1,225 @@
 \documentclass[final]{beamer}
-\usepackage[size=a1,scale=1.4]{beamerposter} % Tamaño A1 y escala ajustable
-
-% Paquetes útiles
+\usepackage[orientation=portrait, size=a1, scale=1.4]{beamerposter}
+\usepackage[spanish, es-tabla]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{qrcode}
+
+% Paquetes matemáticos
+\usepackage{amsmath, amssymb, physics, bigints, cancel}
+\usepackage{stmaryrd}
+
+% Colores y cuadros
+\usepackage[table, xcdraw, x11names]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[absolute,overlay]{textpos}
+\usefonttheme[onlymath]{serif}
+
+\definecolor{ForestGreen}{rgb}{0.13, 0.55, 0.13}
+\definecolor{esmerald}{RGB}{80, 200, 120}
+\definecolor{gold}{RGB}{212, 175, 55}
+\definecolor{silver}{RGB}{192, 192, 192}
+\definecolor{lightorange}{RGB}{255, 147, 0}
+
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
+\newtcolorbox{infobox}[2][blue]{
+    colback=#1!5!white,
+    colframe=#1!75!black,
+    title={#2},
+    fonttitle=\bfseries,
+    coltitle=black,
+    boxrule=0.8pt,
+    arc=4pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    breakable
+}
+
+% TikZ para diagramas y circuitos
+\usepackage{tikz}
+\usetikzlibrary{patterns, decorations.pathreplacing}
+\usepackage{circuitikz}
+
+% Figuras
 \usepackage{graphicx}
-\usepackage{amsmath}
+\usepackage{float} % no siempre necesario, pero puede ayudar
+
+% Tablas pro
 \usepackage{booktabs}
 
-% Tema y colores (puedes personalizar)
-%\usetheme{ConfPoster}
-\usecolortheme{dolphin}
+% Fuente doble negrita
+\usepackage{bbold}
 
-% Información del póster
-\title{Producción de ondas gravitacionales en el universo temprano}
-\author{Tomás Ciccarella, Nahuel Mirón Granese}
-\institute{Universidad de Buenos Aires (UBA), CONICET}
-\date{}
+% Íconos FontAwesome
+\usepackage{fontawesome}
+
+% Para texto de ejemplo
+\usepackage{lipsum}
+
+% Comando para tachado en color
+\newcommand{\colorcancel}[2]{\textcolor{#1}{\cancel{\textcolor{black}{#2}}}}
+
+% Comando para círculos con texto
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+  \node[shape=circle,draw,inner sep=1.5pt] (char) {#1};}}
+
+% Pie de página
+\setbeamertemplate{footline}[frame number]
+
+% Definir colores y estilo para el póster
+\setbeamertemplate{background canvas}[vertical shading][bottom=white,top=white]
+\setbeamercolor{structure}{fg=black}
+\setbeamercolor{block title}{bg=black,fg=white}
+\setbeamercolor{block body}{bg=white}
 
 \begin{document}
 
 \begin{frame}[t]{}
 
-\maketitle
+    \begin{center}
+    
+        \Huge{Producción de ondas gravitacionales en el universo temprano}
+    
+        \vspace{1cm}
+        
+        \Large{Tomás A. Ciccarella\textsuperscript{1}, Nahuel Mirón Granese\textsuperscript{1,2}}
+
+        \vspace{0.5cm}
+
+        \small{\textit{\textsuperscript{1}Universidad de Buenos Aires (UBA), Facultad de Ciencias Exactas y Naturales (FCEN), Departamento de Física; \textsuperscript{2}Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET)}}
+    \end{center}
+
+    \begin{textblock*}{5cm}(4cm,2cm) % {ancho} (posición x,y)
+        \includegraphics[scale=0.7]{logo_df.png}
+    \end{textblock*}
+    \begin{textblock*}{5cm}(51cm,1.5cm) % {ancho} (posición x,y)
+        \includegraphics[scale=0.55]{logo_uba.png}
+    \end{textblock*}
+
+    \begin{columns}[t]
+        \begin{column}{0.6\textwidth}
+            \begin{infobox}[cyan]{\centering ¿Qué son las Ondas Gravitacionales?}
+                \begin{columns}
+                    \begin{column}{0.6\linewidth}
+                        \begin{itemize}
+                            \item[\textcolor{brown}{$\bullet$}] Las ondas gravitacionales (GW) son perturbaciones tensoriales del espacio-tiempo que se propagan a la velocidad de la luz.
+                            
+                            \begin{equation*}
+                                g_{\mu \nu} = \bar{g}_{\mu \nu} + h_{\mu \nu}, \quad |h_{\mu \nu}| \ll |\bar{g}_{\mu \nu}|
+                            \end{equation*}
+
+                            \item[\textcolor{brown}{$\bullet$}] Tienen dos polarizaciones independientes, $h_{+}$ y $h_{\times}$.
+                            
+                            \item[\textcolor{brown}{$\bullet$}] La dinámica de estas ondas está dada por 
+                            
+                            \begin{equation*}
+                                \ddot{h}_{ij} + 3H\dot{h}_{ij} - \frac{1}{a^2}\nabla^2 h_{ij} = \frac{16\pi G}{a^2}\Pi_{ij}^{TT}
+                            \end{equation*}
+                        \end{itemize}
+                    \end{column} \hspace{-2cm}
+                    \begin{column}{0.3\linewidth}
+                        \begin{figure}[H]
+                            \begin{tikzpicture}
+                                \draw (0,0) circle (0.5cm);
+                                \draw (5,0) circle (0.5cm);
+                                \draw (5,-5) circle (0.5cm);
+                                \draw (0,-5) circle (0.5cm);
+                                \draw (2.5,0) circle (0.5cm);
+                                \draw (2.5,-5) circle (0.5cm);
+                                \draw (0,-2.5) circle (0.5cm);
+                                \draw (5,-2.5) circle (0.5cm);
+
+                                \draw[-{Latex}, thick, color = red] (0,0) -- (-1,1);
+                                \draw[-{Latex}, thick, color = red] (0,0) -- (1,-1);
+                                \draw[-{Latex}, thick, color = red] (5,-5) -- ++(-1,1);
+                                \draw[-{Latex}, thick, color = red] (5,-5) -- ++(1,-1);
+                                \draw[-{Latex}, thick, color = red] (5,0) -- ++(1,1);
+                                \draw[-{Latex}, thick, color = red] (5,0) -- ++(-1,-1);
+                                \draw[-{Latex}, thick, color = red] (0,-5) -- ++(1,1);
+                                \draw[-{Latex}, thick, color = red] (0,-5) -- ++(-1,-1);
+
+                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,0) -- ++(0,1);
+                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,0) -- ++(0,-1);
+                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,-5) -- ++(0,1);
+                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,-5) -- ++(0,-1);
+                                \draw[-{Latex}, thick, color = ForestGreen] (0,-2.5) -- ++(1,0);
+                                \draw[-{Latex}, thick, color = ForestGreen] (0,-2.5) -- ++(-1,0);
+                                \draw[-{Latex}, thick, color = ForestGreen] (5,-2.5) -- ++(1,0);
+                                \draw[-{Latex}, thick, color = ForestGreen] (5,-2.5) -- ++(-1,0);
+
+                                \draw (8,0) rectangle (10,-2);
+                                \node at (9,-0.5) {\textcolor{red}{$h_{\times}$}};
+                                \node at (9,-1.5) {\textcolor{ForestGreen}{$h_{+}$}};
+                            \end{tikzpicture}
+                        \end{figure}
+                    \end{column}
+                \end{columns}
+            \end{infobox}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = \linewidth]{GW_fuentes.png}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+    \begin{columns}
+        \begin{column}{0.6\linewidth}
+            \begin{infobox}[lightorange]{\centering Evolución de los modos}
+                \begin{columns}
+                    \begin{column}{0.45\linewidth}
+                        \hspace{3cm} 
+                        \begin{figure}[H]
+                            \centering
+                            \includegraphics[width = 0.9\linewidth]{evolucion_modos.png}
+                        \end{figure}
+                    \end{column}
+                    \begin{column}{0.4\linewidth}
+                        \begin{itemize}
+                            \item[\textcolor{brown}{$\bullet$}] Fuera del horizonte los modos se congelan, mientras que dentro del mismo oscilan y decaen.
+                            \item[\textcolor{brown}{$\bullet$}] El espectro que se puede medir hoy de las ondas está afectado por el momento en que entró al horizonte y se puede ver a partir de la función de transferencia: 
+                            
+                                \begin{equation*}
+                                    \mathcal{T}(k) = \begin{cases}
+                                        1 \hspace{1cm} & k \gg k_{eq}\\
+                                        \displaystyle \left( \frac{k_{eq}}{k} \right)^2 \hspace{1cm} & k \ll k_{eq}
+                                    \end{cases}        
+                                \end{equation*}
+                        \end{itemize}
+                    \end{column}
+                \end{columns}
+            \end{infobox}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{infobox}[green]{\centering Reheating}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}]
+                \end{itemize}
+            \end{infobox}
+        \end{column}
+    \end{columns}
+
+    \begin{columns}[b]
+        \begin{column}{0.5\textwidth}
+            \begin{infobox}[silver]{\centering Ecuación de Mathieu (Buscar mejor nombre)}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}]
+                \end{itemize}
+            \end{infobox}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{infobox}[gold]{\centering Cosmolattice}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}]
+                \end{itemize}
+            \end{infobox}
+        \end{column}
+    \end{columns}
 
 \end{frame}
 
