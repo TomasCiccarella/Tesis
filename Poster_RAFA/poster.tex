@@ -101,13 +101,15 @@
     \end{textblock*}
 
     \begin{columns}[t]
-        \begin{column}{0.6\textwidth}
+        \begin{column}{0.7\textwidth}
             \begin{infobox}[cyan]{\centering ¿Qué son las Ondas Gravitacionales?}
                 \begin{columns}
                     \begin{column}{0.6\linewidth}
                         \begin{itemize}
                             \item[\textcolor{brown}{$\bullet$}] Las ondas gravitacionales (GW) son perturbaciones tensoriales del espacio-tiempo que se propagan a la velocidad de la luz.
                             
+                            \vspace{-1cm}
+
                             \begin{equation*}
                                 g_{\mu \nu} = \bar{g}_{\mu \nu} + h_{\mu \nu}, \quad |h_{\mu \nu}| \ll |\bar{g}_{\mu \nu}|
                             \end{equation*}
@@ -116,11 +118,13 @@
                             
                             \item[\textcolor{brown}{$\bullet$}] La dinámica de estas ondas está dada por 
                             
+                            \vspace{-0.5cm}
+
                             \begin{equation*}
                                 \ddot{h}_{ij} + 3H\dot{h}_{ij} - \frac{1}{a^2}\nabla^2 h_{ij} = \frac{16\pi G}{a^2}\Pi_{ij}^{TT}
                             \end{equation*}
                         \end{itemize}
-                    \end{column} \hspace{-2cm}
+                    \end{column} \hspace{-3cm}
                     \begin{column}{0.3\linewidth}
                         \begin{figure}[H]
                             \begin{tikzpicture}
@@ -142,14 +146,14 @@
                                 \draw[-{Latex}, thick, color = red] (0,-5) -- ++(1,1);
                                 \draw[-{Latex}, thick, color = red] (0,-5) -- ++(-1,-1);
 
-                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,0) -- ++(0,1);
-                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,0) -- ++(0,-1);
-                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,-5) -- ++(0,1);
-                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,-5) -- ++(0,-1);
-                                \draw[-{Latex}, thick, color = ForestGreen] (0,-2.5) -- ++(1,0);
-                                \draw[-{Latex}, thick, color = ForestGreen] (0,-2.5) -- ++(-1,0);
-                                \draw[-{Latex}, thick, color = ForestGreen] (5,-2.5) -- ++(1,0);
-                                \draw[-{Latex}, thick, color = ForestGreen] (5,-2.5) -- ++(-1,0);
+                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,0) -- ++(0,1.5);
+                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,0) -- ++(0,-1.5);
+                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,-5) -- ++(0,1.5);
+                                \draw[-{Latex}, thick, color = ForestGreen] (2.5,-5) -- ++(0,-1.5);
+                                \draw[-{Latex}, thick, color = ForestGreen] (0,-2.5) -- ++(1.5,0);
+                                \draw[-{Latex}, thick, color = ForestGreen] (0,-2.5) -- ++(-1.5,0);
+                                \draw[-{Latex}, thick, color = ForestGreen] (5,-2.5) -- ++(1.5,0);
+                                \draw[-{Latex}, thick, color = ForestGreen] (5,-2.5) -- ++(-1.5,0);
 
                                 \draw (8,0) rectangle (10,-2);
                                 \node at (9,-0.5) {\textcolor{red}{$h_{\times}$}};
@@ -160,7 +164,8 @@
                 \end{columns}
             \end{infobox}
         \end{column}
-        \begin{column}{0.4\textwidth}
+        \begin{column}{0.3\textwidth}
+            \vspace{0.75cm}
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = \linewidth]{GW_fuentes.png}
@@ -168,59 +173,96 @@
         \end{column}
     \end{columns}
 
-    \begin{columns}
-        \begin{column}{0.6\linewidth}
-            \begin{infobox}[lightorange]{\centering Evolución de los modos}
+    \begin{columns}[t]
+        \begin{column}{0.5\textwidth}
+            \begin{infobox}[lightorange]{\centering Evolución de los modos tensoriales}
                 \begin{columns}
-                    \begin{column}{0.45\linewidth}
-                        \hspace{3cm} 
+                    \begin{column}{0.5\linewidth}
                         \begin{figure}[H]
                             \centering
                             \includegraphics[width = 0.9\linewidth]{evolucion_modos.png}
                         \end{figure}
                     \end{column}
-                    \begin{column}{0.4\linewidth}
+                    \begin{column}{0.5\linewidth}
                         \begin{itemize}
-                            \item[\textcolor{brown}{$\bullet$}] Fuera del horizonte los modos se congelan, mientras que dentro del mismo oscilan y decaen.
-                            \item[\textcolor{brown}{$\bullet$}] El espectro que se puede medir hoy de las ondas está afectado por el momento en que entró al horizonte y se puede ver a partir de la función de transferencia: 
+                            \item[\textcolor{brown}{$\bullet$}] Fuera del horizonte, los modos se congelan y su amplitud permanece constante.
                             
-                                \begin{equation*}
-                                    \mathcal{T}(k) = \begin{cases}
-                                        1 \hspace{1cm} & k \gg k_{eq}\\
-                                        \displaystyle \left( \frac{k_{eq}}{k} \right)^2 \hspace{1cm} & k \ll k_{eq}
-                                    \end{cases}        
-                                \end{equation*}
+                            \item[\textcolor{brown}{$\bullet$}] Dentro del horizonte, los modos oscilan y su amplitud decrece con la expansión del universo.
+                            
+                            \item[\textcolor{brown}{$\bullet$}] Los modos que se miden hoy se ven afectados por la historia del universo, y se pueden ver en la función de transferencia:
                         \end{itemize}
+
+                        \begin{equation*}
+                            \hspace{-2cm} \mathcal{T}(k) = \begin{cases}
+                                1 \hspace{1cm} & k \gg k_{eq}\\
+                                \displaystyle \left( \frac{k_{eq}}{k} \right)^2 \hspace{1cm} & k \ll k_{eq}
+                            \end{cases}        
+                        \end{equation*}
                     \end{column}
                 \end{columns}
             \end{infobox}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{infobox}[green]{\centering Reheating}
-                \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}]
-                \end{itemize}
+                \begin{columns}
+                    \begin{column}{0.5\linewidth}
+                        \begin{itemize}
+                            \item[\textcolor{brown}{$\bullet$}] Luego de inflación, el universo tiene un período de transición hacia una época de radiación, conocido como \textit{reheating}.
+                            
+                            \item[\textcolor{brown}{$\bullet$}] Se utiliza como condición inicial para reheating la ruptura del \textit{slow-roll} inflacionario.  
+                        \end{itemize}
+                    \end{column}
+                    \begin{column}{0.5\linewidth}
+                        \begin{itemize}
+                            \item[\textcolor{brown}{$\bullet$}] Durante este período, el inflatón oscila alrededor del mínimo del potencial, transfiriendo su energía a otras partículas.
+                            
+                            \item[\textcolor{brown}{$\bullet$}] Este proceso puede ser de forma perturbativa o no perturbativa, siendo este último conocido como \textit{preheating}.
+                        \end{itemize}
+                    \end{column}
+                \end{columns}
+                \begin{figure}[H]
+                    \includegraphics[width = 0.75\linewidth]{alpha_attractor.png}
+                \end{figure}
             \end{infobox}
         \end{column}
     \end{columns}
 
-    \begin{columns}[b]
-        \begin{column}{0.5\textwidth}
-            \begin{infobox}[silver]{\centering Ecuación de Mathieu (Buscar mejor nombre)}
-                \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}]
-                \end{itemize}
-            \end{infobox}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \begin{infobox}[gold]{\centering Cosmolattice}
-                \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}]
-                \end{itemize}
-            \end{infobox}
-        \end{column}
-    \end{columns}
+    \begin{infobox}[silver]{\centering Evolución lineal de los campos en preheating}
+        \begin{itemize}
+            \item[\textcolor{brown}{$\bullet$}]
+        \end{itemize}
+    \end{infobox}
 
+    \begin{infobox}[gold]{\centering Cosmolattice}
+        \begin{itemize}
+            \item[\textcolor{brown}{$\bullet$}] CosmoLattice es un paquete de simulaciones de tipo \textit{lattice} para simular la dinámica de campos cuando se tiene expansión del universo.
+            
+            \item[\textcolor{brown}{$\bullet$}] Resulta una herramienta numérica para poder trabajar con la física del universo temprano.
+            
+            \item[\textcolor{brown}{$\bullet$}] Se propone usar CosmoLattice para poder estudiar distintos modelos de preheating y su producción de ondas gravitacionales.
+        \end{itemize}
+
+        \begin{columns}
+            \begin{column}{0.3\linewidth}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = 0.9\linewidth]{cosmolattice_1.png}
+                \end{figure}
+            \end{column}
+            \begin{column}{0.3\linewidth}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = 0.9\linewidth]{cosmolattice_2.png}
+                \end{figure}
+            \end{column}
+            \begin{column}{0.3\linewidth}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = 0.9\linewidth]{cosmolattice_GW.png}
+                \end{figure}
+            \end{column}
+        \end{columns}
+    \end{infobox}
 \end{frame}
 
 \end{document}

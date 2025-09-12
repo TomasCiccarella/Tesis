@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  11 SEP 2025 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  12 SEP 2025 00:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1076,54 +1076,64 @@ LaTeX Info: Redefining \% on input line 79.
  (./poster.nav)
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <61.3> not available
-(Font)              size <51.59> substituted on input line 224.
+(Font)              size <51.59> substituted on input line 266.
 
-LaTeX Font Info:    Calculating math sizes for size <35.47> on input line 224.
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 224.
+LaTeX Font Info:    Calculating math sizes for size <35.47> on input line 266.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 266.
 (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 
 LaTeX Font Warning: Font shape `U/stmry/m/n' in size <35.47> not available
-(Font)              size <24.88> substituted on input line 224.
+(Font)              size <24.88> substituted on input line 266.
 
 
 LaTeX Font Warning: Font shape `U/stmry/m/n' in size <17.735> not available
-(Font)              size <17.28> substituted on input line 224.
+(Font)              size <17.28> substituted on input line 266.
 
-LaTeX Font Info:    Calculating math sizes for size <20.53> on input line 224.
+LaTeX Font Info:    Calculating math sizes for size <20.53> on input line 266.
 <logo_df.png, id=51, 146.5475pt x 146.5475pt>
 File: logo_df.png Graphic file (type png)
 <use logo_df.png>
-Package pdftex.def Info: logo_df.png  used on input line 224.
+Package pdftex.def Info: logo_df.png  used on input line 266.
 (pdftex.def)             Requested size: 102.58253pt x 102.58253pt.
 <logo_uba.png, id=52, 233.4321pt x 233.9139pt>
 File: logo_uba.png Graphic file (type png)
 <use logo_uba.png>
-Package pdftex.def Info: logo_uba.png  used on input line 224.
+Package pdftex.def Info: logo_uba.png  used on input line 266.
 (pdftex.def)             Requested size: 128.38805pt x 128.65303pt.
-LaTeX Font Info:    Calculating math sizes for size <24.63> on input line 224.
-
-Overfull \hbox (25.38757pt too wide) in paragraph at lines 224--224
- [] 
- []
-
+LaTeX Font Info:    Calculating math sizes for size <24.63> on input line 266.
 <GW_fuentes.png, id=54, 963.6pt x 542.025pt>
 File: GW_fuentes.png Graphic file (type png)
 <use GW_fuentes.png>
-Package pdftex.def Info: GW_fuentes.png  used on input line 224.
-(pdftex.def)             Requested size: 653.26524pt x 367.47212pt.
+Package pdftex.def Info: GW_fuentes.png  used on input line 266.
+(pdftex.def)             Requested size: 489.96138pt x 275.60202pt.
 <evolucion_modos.png, id=55, 760.8425pt x 565.11125pt>
 File: evolucion_modos.png Graphic file (type png)
 <use evolucion_modos.png>
-Package pdftex.def Info: evolucion_modos.png  used on input line 224.
-(pdftex.def)             Requested size: 389.05077pt x 288.97035pt.
-
-Overfull \hbox (106.42326pt too wide) detected at line 224
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
+Package pdftex.def Info: evolucion_modos.png  used on input line 266.
+(pdftex.def)             Requested size: 358.78412pt x 266.49048pt.
+<alpha_attractor.png, id=56, 932.48375pt x 306.14375pt>
+File: alpha_attractor.png Graphic file (type png)
+<use alpha_attractor.png>
+Package pdftex.def Info: alpha_attractor.png  used on input line 266.
+(pdftex.def)             Requested size: 597.9776pt x 196.32838pt.
+<cosmolattice_1.png, id=57, 435.0654pt x 317.988pt>
+File: cosmolattice_1.png Graphic file (type png)
+<use cosmolattice_1.png>
+Package pdftex.def Info: cosmolattice_1.png  used on input line 266.
+(pdftex.def)             Requested size: 435.75378pt x 318.49182pt.
+<cosmolattice_2.png, id=58, 434.3427pt x 320.8788pt>
+File: cosmolattice_2.png Graphic file (type png)
+<use cosmolattice_2.png>
+Package pdftex.def Info: cosmolattice_2.png  used on input line 266.
+(pdftex.def)             Requested size: 435.75378pt x 321.94048pt.
+<cosmolattice_GW.png, id=59, 431.4519pt x 322.3242pt>
+File: cosmolattice_GW.png Graphic file (type png)
+<use cosmolattice_GW.png>
+Package pdftex.def Info: cosmolattice_GW.png  used on input line 266.
+(pdftex.def)             Requested size: 435.75378pt x 325.54486pt.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./GW_fuentes.png> <./evolucion_modos.png> <./logo_df.png> <./logo_uba.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./GW_fuentes.png> <./evolucion_modos.png> <./alpha_attractor.png> <./cosmolattice_1.png> <./cosmolattice_2.png> <./cosmolattice_GW.png> <./logo_df.png> <./logo_uba.png>]
 \tf@nav=\write6
 \openout6 = `poster.nav'.
 
@@ -1150,18 +1160,18 @@ Package rerunfilecheck Info: File `poster.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 56578 strings out of 474222
- 1303332 string characters out of 5748734
- 2092273 words of memory out of 5000000
- 78019 multiletter control sequences out of 15000+600000
- 581632 words of font info for 108 fonts, out of 8000000 for 9000
+ 56610 strings out of 474222
+ 1304105 string characters out of 5748734
+ 2114889 words of memory out of 5000000
+ 78050 multiletter control sequences out of 15000+600000
+ 582458 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,123p,493b,1621s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss3583.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb>
-Output written on poster.pdf (1 page, 1126608 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss3583.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb>
+Output written on poster.pdf (1 page, 1443040 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 153 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
