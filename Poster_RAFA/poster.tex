@@ -20,6 +20,8 @@
 \definecolor{gold}{RGB}{212, 175, 55}
 \definecolor{silver}{RGB}{192, 192, 192}
 \definecolor{lightorange}{RGB}{255, 147, 0}
+\definecolor{darkorange}{HTML}{D46137}
+\definecolor{lightblue}{HTML}{37AAD4}
 
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
@@ -66,9 +68,6 @@
 % Comando para círculos con texto
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
   \node[shape=circle,draw,inner sep=1.5pt] (char) {#1};}}
-
-% Pie de página
-\setbeamertemplate{footline}[frame number]
 
 % Definir colores y estilo para el póster
 \setbeamertemplate{background canvas}[vertical shading][bottom=white,top=white]
@@ -227,13 +226,85 @@
         \end{column}
     \end{columns}
 
-    \begin{infobox}[silver]{\centering Evolución lineal de los campos en preheating}
-        \begin{itemize}
-            \item[\textcolor{brown}{$\bullet$}]
-        \end{itemize}
+    \begin{infobox}[esmerald]{\centering Evolución lineal de los campos en preheating}
+        \begin{columns}
+            \begin{column}{0.32\linewidth}
+                \begin{infobox}[gold]{Tabla de inestabilidades de Mathieu}
+                    \begin{figure}[H]
+                        \includegraphics[width = 0.95\linewidth]{Mathieu_tabla.png}
+                    \end{figure}
+
+                    \begin{itemize}
+                        \item[\textcolor{brown}{$\bullet$}] La ecuación de Mathieu da una resonancia paramétrica que sirve para ver cómo evoluciona un campo hijo $\chi$ acoplado a un campo inflatón $\phi$.
+                        
+                        \begin{equation*}
+                            \frac{d^2 \chi_k}{dT^2} + \left[ A_k - 2q \cos(2T) \right] \chi_k = 0
+                        \end{equation*}
+
+                        \item[\textcolor{brown}{$\bullet$}] Dependiendo de los parámetros $A_k$ y $q$, se pueden encontrar regiones de estabilidad e inestabilidad. Y eso se puede leer en la tabla de inestabilidades.
+                    \end{itemize}
+                \end{infobox}
+            \end{column}
+            \begin{column}{0.32\linewidth}
+                \begin{infobox}[lightblue]{Tipos de resonancia}
+                    \begin{itemize}
+                        \item[\textcolor{brown}{$\bullet$}] La ecuación de Mathieu tiene por solución algo de la forma $\chi_k = \mathcal{M} e^{\mu_k T}$, donde $\mu_k$ es el exponente de Floquet y $\mathcal{M}$ es una función periódica.
+                    \end{itemize} 
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width = 0.72\linewidth]{narrow_resonance.png}
+                    \end{figure}
+
+                    \vspace{-0.5cm}
+                    \centering \small{Narrow resonance: $q \ll 1$. La resonancia ocurre en bandas estrechas de $k$.}
+
+                    \vspace{1cm}
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width = 0.72\linewidth]{broad_resonance.png}
+                    \end{figure}
+
+                    \vspace{-0.5cm}
+                    \centering \small{Broad resonance: $q \gg 1$. La resonancia ocurre en un rango amplio de $k$.}
+                \end{infobox}
+            \end{column}
+            \begin{column}{0.32\linewidth}
+                \begin{infobox}[darkorange]{Evolución de los campos con expansión}
+                    \begin{itemize}
+                        \item[\textcolor{brown}{$\bullet$}] La dinámica de los campos cuando tenemos expansión del universo está regida por el siguiente sistema de ecuaciones: 
+                        
+                        \small{\begin{equation*}
+                            \begin{cases}
+                                \displaystyle \tilde{\phi}^{\prime \prime} + \frac{3}{a} a^\prime \tilde{\phi}^\prime + \tilde{\phi}^3 &= 0 \\
+                                \displaystyle a^{\prime \prime} + \frac{a}{3} \left( \tilde{\phi}^{\prime 2} - \frac{\tilde{\phi}^4}{4} \right) &= 0
+                            \end{cases}
+                        \end{equation*}
+
+                        \begin{equation*}
+                            \begin{cases}
+                                \displaystyle \delta \tilde{\phi}_k^{\prime \prime} + \frac{3}{a} a^\prime \delta \tilde{\phi}_k^\prime + \left( \frac{\tilde{k}^2}{a^2} + 3 \tilde{\phi}^2 \right) \delta \tilde{\phi}_k = 0\\
+                                \displaystyle \tilde{\chi}_k^{\prime \prime} + \frac{3}{a} a^\prime \tilde{\chi}_k^\prime + \left( \frac{\tilde{k}^2}{a^2} + g^2 \tilde{\phi}^2 \right) \tilde{\chi}_k = 0
+                            \end{cases}
+                        \end{equation*}}
+                    \end{itemize}
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width = 0.82\linewidth]{Mathieu_background.png}
+                    \end{figure}
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width = 0.82\linewidth]{Mathieu_pert.png}
+                    \end{figure}
+                \end{infobox}
+            \end{column}
+        \end{columns}
     \end{infobox}
 
-    \begin{infobox}[gold]{\centering Cosmolattice}
+    \begin{infobox}[silver]{\centering Cosmolattice}
         \begin{itemize}
             \item[\textcolor{brown}{$\bullet$}] CosmoLattice es un paquete de simulaciones de tipo \textit{lattice} para simular la dinámica de campos cuando se tiene expansión del universo.
             
@@ -246,20 +317,30 @@
             \begin{column}{0.3\linewidth}
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width = 0.9\linewidth]{cosmolattice_1.png}
+                    \includegraphics[width = 0.7\linewidth]{cosmolattice_1.png}
                 \end{figure}
+
+                \vspace{-0.5cm}
+                \centering \small{Dinámica del campo inflatón utilizando un modelo $\lambda \phi^4$}
+
             \end{column}
             \begin{column}{0.3\linewidth}
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width = 0.9\linewidth]{cosmolattice_2.png}
+                    \includegraphics[width = 0.7\linewidth]{cosmolattice_2.png}
                 \end{figure}
+
+                \vspace{-0.5cm}
+                \centering \small{Dinámica del campo hijo utilizando un modelo $\lambda \phi^4$}
             \end{column}
             \begin{column}{0.3\linewidth}
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width = 0.9\linewidth]{cosmolattice_GW.png}
+                    \includegraphics[width = 0.7\linewidth]{cosmolattice_GW.png}
                 \end{figure}
+
+                \vspace{-0.5cm}
+                \centering \small{Espectro de GW hoy utilizando un modelo $\lambda \phi^4$}
             \end{column}
         \end{columns}
     \end{infobox}
