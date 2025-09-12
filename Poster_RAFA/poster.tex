@@ -5,6 +5,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{qrcode}
 
+%% Librerías y paquetes %%
 % Paquetes matemáticos
 \usepackage{amsmath, amssymb, physics, bigints, cancel}
 \usepackage{stmaryrd}
@@ -49,23 +50,12 @@
 % Figuras
 \usepackage{graphicx}
 \usepackage{float} % no siempre necesario, pero puede ayudar
-
-% Tablas pro
 \usepackage{booktabs}
 
-% Fuente doble negrita
-\usepackage{bbold}
-
-% Íconos FontAwesome
+% Formatos 
 \usepackage{fontawesome}
-
-% Para texto de ejemplo
-\usepackage{lipsum}
-
-% Comando para tachado en color
 \newcommand{\colorcancel}[2]{\textcolor{#1}{\cancel{\textcolor{black}{#2}}}}
-
-% Comando para círculos con texto
+\usepackage{bbold}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
   \node[shape=circle,draw,inner sep=1.5pt] (char) {#1};}}
 
@@ -77,28 +67,32 @@
 
 \begin{document}
 
+% Título y autores
 \begin{frame}[t]{}
 
     \begin{center}
     
         \Huge{Producción de ondas gravitacionales en el universo temprano}
     
-        \vspace{1cm}
+        \vspace{0.25cm}
         
-        \Large{Tomás A. Ciccarella\textsuperscript{1}, Nahuel Mirón Granese\textsuperscript{1,2}}
+        \Large{Tomás A. Ciccarella\textsuperscript{1}, Nahuel Mirón Granese\textsuperscript{1,2,3}}
 
         \vspace{0.5cm}
 
-        \small{\textit{\textsuperscript{1}Universidad de Buenos Aires (UBA), Facultad de Ciencias Exactas y Naturales (FCEN), Departamento de Física; \textsuperscript{2}Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET)}}
+        \small{\textit{\textsuperscript{1}Universidad de Buenos Aires (UBA), Facultad de Ciencias Exactas y Naturales (FCEN), Departamento de Física; \textsuperscript{2}Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET), \textsuperscript{3}Universidad Nacional de La Plata, Facultad de Ciencias Astronómicas y Geofísicas}}
     \end{center}
 
-    \begin{textblock*}{5cm}(4cm,2cm) % {ancho} (posición x,y)
+    \begin{textblock*}{5cm}(3cm,1cm) 
         \includegraphics[scale=0.7]{logo_df.png}
     \end{textblock*}
-    \begin{textblock*}{5cm}(51cm,1.5cm) % {ancho} (posición x,y)
+    \begin{textblock*}{5cm}(52cm,0.75cm)
         \includegraphics[scale=0.55]{logo_uba.png}
     \end{textblock*}
 
+    \vspace{-1.5cm}
+
+    % Introducción teórica
     \begin{columns}[t]
         \begin{column}{0.7\textwidth}
             \begin{infobox}[cyan]{\centering ¿Qué son las Ondas Gravitacionales?}
@@ -120,7 +114,7 @@
                             \vspace{-0.5cm}
 
                             \begin{equation*}
-                                \ddot{h}_{ij} + 3H\dot{h}_{ij} - \frac{1}{a^2}\nabla^2 h_{ij} = \frac{16\pi G}{a^2}\Pi_{ij}^{TT}
+                                \ddot{h}_{ij}^{TT} + 3H\dot{h}_{ij}^{TT} - \frac{1}{a^2}\nabla^2 h_{ij}^{TT} = \frac{16\pi G}{a^2}\Pi_{ij}^{TT}
                             \end{equation*}
                         \end{itemize}
                     \end{column} \hspace{-3cm}
@@ -172,37 +166,12 @@
         \end{column}
     \end{columns}
 
+    \vspace{-0.5cm}
+
+    % Explicación de reheating y producción de GW
     \begin{columns}[t]
         \begin{column}{0.5\textwidth}
-            \begin{infobox}[lightorange]{\centering Evolución de los modos tensoriales}
-                \begin{columns}
-                    \begin{column}{0.5\linewidth}
-                        \begin{figure}[H]
-                            \centering
-                            \includegraphics[width = 0.9\linewidth]{evolucion_modos.png}
-                        \end{figure}
-                    \end{column}
-                    \begin{column}{0.5\linewidth}
-                        \begin{itemize}
-                            \item[\textcolor{brown}{$\bullet$}] Fuera del horizonte, los modos se congelan y su amplitud permanece constante.
-                            
-                            \item[\textcolor{brown}{$\bullet$}] Dentro del horizonte, los modos oscilan y su amplitud decrece con la expansión del universo.
-                            
-                            \item[\textcolor{brown}{$\bullet$}] Los modos que se miden hoy se ven afectados por la historia del universo, y se pueden ver en la función de transferencia:
-                        \end{itemize}
-
-                        \begin{equation*}
-                            \hspace{-2cm} \mathcal{T}(k) = \begin{cases}
-                                1 \hspace{1cm} & k \gg k_{eq}\\
-                                \displaystyle \left( \frac{k_{eq}}{k} \right)^2 \hspace{1cm} & k \ll k_{eq}
-                            \end{cases}        
-                        \end{equation*}
-                    \end{column}
-                \end{columns}
-            \end{infobox}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \begin{infobox}[green]{\centering Reheating}
+            \begin{infobox}[lightorange]{\centering Reheating}
                 \begin{columns}
                     \begin{column}{0.5\linewidth}
                         \begin{itemize}
@@ -220,12 +189,68 @@
                     \end{column}
                 \end{columns}
                 \begin{figure}[H]
-                    \includegraphics[width = 0.75\linewidth]{alpha_attractor.png}
+                    \centering
+                    \includegraphics[width = 0.8\linewidth]{reheating}
+                \end{figure}
+            \end{infobox}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{infobox}[green]{\centering Producción de GW en el universo temprano}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Algunos mecanismos de producción de GW son:
+                    \begin{itemize}
+                        \item[\textcolor{blue}{$\centerdot$}] Fluctuaciones cuánticas durante inflación.
+                        \item[\textcolor{blue}{$\centerdot$}] Transiciones de fase.
+                        \item[\textcolor{blue}{$\centerdot$}] Dinámica de campos de materia.
+                    \end{itemize}
+
+                    \item[\textcolor{brown}{$\bullet$}] En este trabajo, nos enfocamos en la producción de GW durante el período de \textit{reheating} posterior a la inflación a partir de la dinámica de campos de materia.
+                    
+                    \vspace{-0.65cm}
+                    
+                    \begin{equation*}
+                        \Pi^{TT}_{ij} = \left\{ \partial_i \phi \partial_j \phi + \partial_i \chi \partial_j \chi \right\}^{TT}
+                    \end{equation*}
+
+                    \begin{itemize}
+                        \item[\textcolor{blue}{$\Rightarrow$}] Ésto funciona como fuente de GW. Y utilizando la ecuación de Einstein podemos estudiar la producción y evolución de las mismas.
+                    \end{itemize}
+                \end{itemize}
+
+                \vspace{-0.35cm}
+
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \filldraw[color = esmerald, opacity = 0.5] (0,-3.25) rectangle (4,3.25);
+                        \filldraw[color = orange, opacity = 0.3] (4,-3.25) rectangle (16,3.25);
+                        \filldraw[color = violet, opacity = 0.3] (16,-3.25) rectangle (20,3.25);
+                        \draw[-{Latex}] (-1,0) -- (21,0) node[right] {$t$};
+
+                        \draw[-{Latex}, very thick] (4,3.75) -- (0,3.75);
+                        \node at (2,4.25) {Inflación};
+                        \draw[decorate,decoration={brace,amplitude=10pt}] (4,3.55) -- (16,3.55) node[midway,above=10pt]{Reheating};
+                        \draw[-{Latex}, very thick] (16,3.75) -- (20,3.75);
+                        \node at (18,4.25) {Radiación};
+
+                        \draw[-{Latex}] (4.5,-2.5) -- (4.5,0);
+                        \draw (4.5,-2.5) -- (5,-2.5) node[right] {\shortstack{\small{Producción de partículas}\\ \small{(\textit{preheating})}}};
+                        \draw[-{Latex}, color = blue, very thick] (6.5,2.5) -- (6.5,0);
+                        \draw[color = blue, very thick] (6.5,2.5) -- (7,2.5) node[right, color = black] {\textbf{\small{Producción de GW}}};
+                        \draw[-{Latex}] (9.5,-1) -- (9.5,0);
+                        \draw (9.5,-1) -- (10,-1) node[right] {\shortstack{\small{Turbulencia}\\ \small{(efectos no lineales)}}};
+                        \draw[-{Latex}] (15.5,1) -- (15.5,0);
+                        \draw (15.5,1) -- (15,1) node[left] {\small{Termalización}};
+
+                        \draw[-{Latex}] (17.5,1) -- (17.5,0);
+                        \draw (17.5,1) -- (18,1) node[right] {\small{BBN}};
+                    \end{tikzpicture}
                 \end{figure}
             \end{infobox}
         \end{column}
     \end{columns}
 
+    % Mathieu
     \begin{infobox}[esmerald]{\centering Evolución lineal de los campos en preheating}
         \begin{columns}
             \begin{column}{0.32\linewidth}
@@ -273,44 +298,47 @@
             \begin{column}{0.32\linewidth}
                 \begin{infobox}[darkorange]{Evolución de los campos con expansión}
                     \begin{itemize}
-                        \item[\textcolor{brown}{$\bullet$}] La dinámica de los campos cuando tenemos expansión del universo está regida por el siguiente sistema de ecuaciones: 
+                        \item[\textcolor{brown}{$\bullet$}] La dinámica de los campos con un modelo $\lambda \phi^4$ cuando tenemos expansión del universo está regida por el siguiente sistema de ecuaciones: 
                         
                         \small{\begin{equation*}
                             \begin{cases}
-                                \displaystyle \tilde{\phi}^{\prime \prime} + \frac{3}{a} a^\prime \tilde{\phi}^\prime + \tilde{\phi}^3 &= 0 \\
-                                \displaystyle a^{\prime \prime} + \frac{a}{3} \left( \tilde{\phi}^{\prime 2} - \frac{\tilde{\phi}^4}{4} \right) &= 0
+                                \displaystyle \ddot{\phi} + 3 H \dot{\phi} + V_{,\phi} (\phi) = 0 \vspace{0.3cm}\\
+                                \displaystyle \frac{\ddot{a}}{a} = - \frac{1}{3 m_p^2} \left[ \dot{\phi}^2 - V (\phi) \right]
                             \end{cases}
                         \end{equation*}
 
                         \begin{equation*}
                             \begin{cases}
-                                \displaystyle \delta \tilde{\phi}_k^{\prime \prime} + \frac{3}{a} a^\prime \delta \tilde{\phi}_k^\prime + \left( \frac{\tilde{k}^2}{a^2} + 3 \tilde{\phi}^2 \right) \delta \tilde{\phi}_k = 0\\
-                                \displaystyle \tilde{\chi}_k^{\prime \prime} + \frac{3}{a} a^\prime \tilde{\chi}_k^\prime + \left( \frac{\tilde{k}^2}{a^2} + g^2 \tilde{\phi}^2 \right) \tilde{\chi}_k = 0
+                                \displaystyle \delta \ddot{\phi}_k + 3 H ~ \delta \dot{\phi}_k + \left[ \frac{k^2}{a^2} + V_{,\phi \phi} (\phi) \right] \delta \phi_k = 0 \vspace{0.3cm}\\
+                                \displaystyle \ddot{\chi}_k + 3 H \dot{\chi}_k + \left( \frac{k^2}{a^2} + g^2 \phi^2 \right) \chi_k = 0
                             \end{cases}
                         \end{equation*}}
                     \end{itemize}
 
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width = 0.82\linewidth]{Mathieu_background.png}
+                        \includegraphics[width = 0.88\linewidth]{Mathieu_background.png}
                     \end{figure}
 
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width = 0.82\linewidth]{Mathieu_pert.png}
+                        \includegraphics[width = 0.88\linewidth]{Mathieu_pert.png}
                     \end{figure}
                 \end{infobox}
             \end{column}
         \end{columns}
     \end{infobox}
 
+    \vspace{-0.5cm}
+
+    % Cosmolattice
     \begin{infobox}[silver]{\centering Cosmolattice}
         \begin{itemize}
             \item[\textcolor{brown}{$\bullet$}] CosmoLattice es un paquete de simulaciones de tipo \textit{lattice} para simular la dinámica de campos cuando se tiene expansión del universo.
             
             \item[\textcolor{brown}{$\bullet$}] Resulta una herramienta numérica para poder trabajar con la física del universo temprano.
             
-            \item[\textcolor{brown}{$\bullet$}] Se propone usar CosmoLattice para poder estudiar distintos modelos de preheating y su producción de ondas gravitacionales.
+            \item[\textcolor{brown}{$\bullet$}] Se propone usar CosmoLattice para poder estudiar distintos modelos de reheating y su producción de ondas gravitacionales.
         \end{itemize}
 
         \begin{columns}
