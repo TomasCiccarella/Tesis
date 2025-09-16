@@ -21,8 +21,10 @@
 \definecolor{gold}{RGB}{212, 175, 55}
 \definecolor{silver}{RGB}{192, 192, 192}
 \definecolor{lightorange}{RGB}{255, 147, 0}
-\definecolor{darkorange}{HTML}{D46137}
+\definecolor{darkorange}{HTML}{D96642}
 \definecolor{lightblue}{HTML}{37AAD4}
+\definecolor{c1}{HTML}{FF5050}
+\definecolor{c2}{HTML}{1289FF}
 
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
@@ -204,7 +206,7 @@
                         \item[\textcolor{blue}{$\centerdot$}] Dinámica de campos de materia.
                     \end{itemize}
 
-                    \item[\textcolor{brown}{$\bullet$}] En este trabajo, nos enfocamos en la producción de GW durante el período de \textit{reheating} posterior a la inflación a partir de la dinámica de campos de materia.
+                    \item[\textcolor{brown}{$\bullet$}] En este trabajo, nos enfocamos en la producción de GW durante el período de \textit{reheating} a partir de la dinámica de campos de materia.
                     
                     \vspace{-0.65cm}
                     
@@ -229,7 +231,7 @@
 
                         \draw[-{Latex}, very thick] (4,3.75) -- (0,3.75);
                         \node at (2,4.25) {Inflación};
-                        \draw[decorate,decoration={brace,amplitude=10pt}] (4,3.55) -- (16,3.55) node[midway,above=10pt]{Reheating};
+                        \draw[decorate,decoration={brace,amplitude=10pt}, very thick] (4,3.55) -- (16,3.55) node[midway,above=10pt]{Reheating};
                         \draw[-{Latex}, very thick] (16,3.75) -- (20,3.75);
                         \node at (18,4.25) {Radiación};
 
@@ -239,8 +241,8 @@
                         \draw[color = blue, very thick] (6.5,2.5) -- (7,2.5) node[right, color = black] {\textbf{\small{Producción de GW}}};
                         \draw[-{Latex}] (9.5,-1) -- (9.5,0);
                         \draw (9.5,-1) -- (10,-1) node[right] {\shortstack{\small{Turbulencia}\\ \small{(efectos no lineales)}}};
-                        \draw[-{Latex}] (15.5,1) -- (15.5,0);
-                        \draw (15.5,1) -- (15,1) node[left] {\small{Termalización}};
+                        \draw[-{Latex}] (16,1) -- (16,0);
+                        \draw (16,1) -- (15.5,1) node[left] {\small{Termalización}};
 
                         \draw[-{Latex}] (17.5,1) -- (17.5,0);
                         \draw (17.5,1) -- (18,1) node[right] {\small{BBN}};
@@ -252,78 +254,103 @@
 
     % Mathieu
     \begin{infobox}[esmerald]{\centering Evolución lineal de los campos en preheating}
+        \vspace{-0.6cm}
         \begin{columns}
             \begin{column}{0.32\linewidth}
-                \begin{infobox}[gold]{Tabla de inestabilidades de Mathieu}
+                \begin{infobox}[darkorange]{\centering Evolución de los campos con expansión}
+                    \begin{itemize}
+                        \item[\textcolor{brown}{$\bullet$}] La dinámica del background está dada por 
+                    \end{itemize}
+
+                    \small{\begin{equation*}
+                        \begin{cases}
+                            \displaystyle \ddot{\phi} + 3 H \dot{\phi} + V_{,\phi} (\phi) = 0 \vspace{0.3cm}\\
+                            \displaystyle \frac{\ddot{a}}{a} = - \frac{1}{3 m_p^2} \left[ \dot{\phi}^2 - V (\phi) \right]
+                        \end{cases}
+                    \end{equation*}}
+
                     \begin{figure}[H]
-                        \includegraphics[width = 0.95\linewidth]{Mathieu_tabla.png}
+                        \centering
+                        \includegraphics[width = \linewidth]{Mathieu_background.png}
                     \end{figure}
 
                     \begin{itemize}
-                        \item[\textcolor{brown}{$\bullet$}] La ecuación de Mathieu da una resonancia paramétrica que sirve para ver cómo evoluciona un campo hijo $\chi$ acoplado a un campo inflatón $\phi$.
+                        \item[\textcolor{brown}{$\bullet$}] Para las perturbaciones del campo hijo $\chi$, tenemos
+                    \end{itemize}
+
+                    \begin{equation*}
+                        \ddot{\chi}_k + 3 ~ H(t) ~ \dot{\chi}_k + \omega^2 (t) ~ \chi_k = 0 \tag{$\bigstar$}
+                    \end{equation*}
+
+                    \begin{itemize}
+                        \item[\empty]
+                        \begin{itemize} 
+                            \item[\textcolor{blue}{$\Rightarrow$}] Con $\displaystyle \omega^2 (t) = \frac{k^2}{a^2} + g^2 \phi^2 (t)$.
+                        \end{itemize}
+                    \end{itemize}
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width = 0.9\linewidth]{Mathieu_pert.png}
+                    \end{figure}
+                \end{infobox}
+            \end{column}
+            \begin{column}{0.32\linewidth}
+                \begin{infobox}[gold]{\centering Tabla de inestabilidades de Mathieu}
+                    \begin{figure}[H]
+                        \includegraphics[width = 0.98\linewidth]{Mathieu_tabla.png}
+                    \end{figure}
+
+                    \begin{itemize}
+                        \item[\textcolor{brown}{$\bullet$}] La ecuación ($\bigstar$) para un potencial $m^2 \phi^2$ y sin expansión dá la ecuación de Mathieu
                         
+                        \vspace{-0.5cm}
+
                         \begin{equation*}
                             \frac{d^2 \chi_k}{dT^2} + \left[ A_k - 2q \cos(2T) \right] \chi_k = 0
                         \end{equation*}
 
-                        \item[\textcolor{brown}{$\bullet$}] Dependiendo de los parámetros $A_k$ y $q$, se pueden encontrar regiones de estabilidad e inestabilidad. Y eso se puede leer en la tabla de inestabilidades.
+                        \vspace{0.5cm}
+
+                        \begin{itemize}
+                            \item[\textcolor{blue}{$\Rightarrow$}] Con $T = mt$, $\displaystyle A_k = \frac{k^2}{m^2} + 2q$ y $\displaystyle q = \frac{g^2 \Phi^2}{4 m^2}$.
+                            
+                            \vspace{0.3cm}
+
+                            \item[\textcolor{blue}{$\Rightarrow$}] La solución es de la forma $\displaystyle \chi_k \propto e^{\mu_k T}$, donde $\mu_k$ es el exponente de Floquet.
+                            
+                            \vspace{0.3cm}
+
+                            \item[\textcolor{blue}{$\Rightarrow$}] Si $\Re(\mu_k) \neq 0$, el modo $k$ es inestable y crece exponencialmente.
+                        \end{itemize}
                     \end{itemize}
                 \end{infobox}
             \end{column}
             \begin{column}{0.32\linewidth}
-                \begin{infobox}[lightblue]{Tipos de resonancia}
-                    \begin{itemize}
-                        \item[\textcolor{brown}{$\bullet$}] La ecuación de Mathieu tiene por solución algo de la forma $\chi_k = \mathcal{M} e^{\mu_k T}$, donde $\mu_k$ es el exponente de Floquet y $\mathcal{M}$ es una función periódica.
-                    \end{itemize} 
+                \begin{infobox}[lightblue]{\centering Tipos de resonancia}
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width = 1\linewidth]{Narrow_resonance.png}
+                    \end{figure}
+
+                    \vspace{-0.75cm}
+                    \centering \small{Narrow resonance: $q \ll 1$ (bandas estrechas de $k$).}
 
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width = 0.72\linewidth]{narrow_resonance.png}
+                        \includegraphics[width = 1\linewidth]{Broad_resonance.png}
                     \end{figure}
 
-                    \vspace{-0.5cm}
-                    \centering \small{Narrow resonance: $q \ll 1$. La resonancia ocurre en bandas estrechas de $k$.}
-
-                    \vspace{1cm}
+                    \vspace{-0.75cm}
+                    \centering \small{Broad resonance: $q \gg 1$ (bandas anchas de $k$).}
 
                     \begin{figure}[H]
                         \centering
-                        \includegraphics[width = 0.72\linewidth]{broad_resonance.png}
+                        \includegraphics[width = 1\linewidth]{stochastic_resonance.png}
                     \end{figure}
 
-                    \vspace{-0.5cm}
-                    \centering \small{Broad resonance: $q \gg 1$. La resonancia ocurre en un rango amplio de $k$.}
-                \end{infobox}
-            \end{column}
-            \begin{column}{0.32\linewidth}
-                \begin{infobox}[darkorange]{Evolución de los campos con expansión}
-                    \begin{itemize}
-                        \item[\textcolor{brown}{$\bullet$}] La dinámica de los campos cuando se tiene expansión del universo está regida por el siguiente sistema de ecuaciones: 
-                        
-                        \small{\begin{equation*}
-                            \begin{cases}
-                                \displaystyle \ddot{\phi} + 3 H \dot{\phi} + V_{,\phi} (\phi) = 0 \vspace{0.3cm}\\
-                                \displaystyle \frac{\ddot{a}}{a} = - \frac{1}{3 m_p^2} \left[ \dot{\phi}^2 - V (\phi) \right]
-                            \end{cases}
-                        \end{equation*}
-
-                        \begin{equation*}
-                            \begin{cases}
-                                \displaystyle \delta \ddot{\phi}_k + 3 H ~ \delta \dot{\phi}_k + \left[ \frac{k^2}{a^2} + V_{,\phi \phi} (\phi) \right] \delta \phi_k = 0 \vspace{0.3cm}\\
-                                \displaystyle \ddot{\chi}_k + 3 H \dot{\chi}_k + \left( \frac{k^2}{a^2} + g^2 \phi^2 \right) \chi_k = 0
-                            \end{cases}
-                        \end{equation*}}
-                    \end{itemize}
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width = 0.88\linewidth]{Mathieu_background.png}
-                    \end{figure}
-
-                    \begin{figure}[H]
-                        \centering
-                        \includegraphics[width = 0.88\linewidth]{Mathieu_pert.png}
-                    \end{figure}
+                    \vspace{-0.75cm}
+                    \centering \small{Stochastic resonance: resonancia + expansión.}
                 \end{infobox}
             \end{column}
         \end{columns}
@@ -334,41 +361,61 @@
     % Cosmolattice
     \begin{infobox}[silver]{\centering CosmoLattice}
         \begin{itemize}
-            \item[\textcolor{brown}{$\bullet$}] CosmoLattice es un paquete de simulaciones de tipo \textit{lattice} para simular la dinámica de campos cuando se tiene expansión del universo.
-            
-            \item[\textcolor{brown}{$\bullet$}] Resulta una herramienta numérica para poder trabajar con la física del universo temprano.
+            \item[\textcolor{brown}{$\bullet$}] CosmoLattice es un paquete de simulaciones de tipo \textit{lattice} para simular la dinámica de campos en un universo temprano con expansión del universo.
             
             \item[\textcolor{brown}{$\bullet$}] Se propone usar CosmoLattice para poder estudiar distintos modelos de reheating y su producción de ondas gravitacionales.
         \end{itemize}
 
+        \vspace{-0.5cm}
+
         \begin{columns}
-            \begin{column}{0.3\linewidth}
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width = 0.7\linewidth]{cosmolattice_1.png}
-                \end{figure}
+            \begin{column}{0.45\linewidth}
+                \begin{infobox}[c1]{\centering Modelo $\lambda \phi^4$}
+                    \begin{columns}
+                        \begin{column}{0.5\linewidth}
+                            \begin{figure}[H]
+                                \centering
+                                \includegraphics[width = 0.9\linewidth]{cosmolattice_lphi4_chi.png}
+                            \end{figure}
 
-                \vspace{-0.5cm}
-                \centering \small{Dinámica del campo inflatón utilizando un modelo $m^2 \phi^2$}
+                            \vspace{-0.5cm}
+                            \centering \small{Espectro del campo hijo}
+                        \end{column}
+                        \begin{column}{0.5\linewidth}
+                            \begin{figure}[H]
+                                \centering
+                                \includegraphics[width = 0.9\linewidth]{cosmolattice_lphi4_GW.png}
+                            \end{figure}
 
+                            \vspace{-0.5cm}
+                            \centering \small{Espectro de GW}
+                        \end{column}
+                    \end{columns}
+                \end{infobox}
             \end{column}
-            \begin{column}{0.3\linewidth}
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width = 0.7\linewidth]{cosmolattice_2.png}
-                \end{figure}
+            \begin{column}{0.45\linewidth}
+                \begin{infobox}[c2]{\centering Modelo $m^2 \phi^2$}
+                    \begin{columns}
+                        \begin{column}{0.5\linewidth}
+                            \begin{figure}[H]
+                                \centering
+                                \includegraphics[width = 0.9\linewidth]{cosmolattice_2.png}
+                            \end{figure}
 
-                \vspace{-0.5cm}
-                \centering \small{Dinámica del campo hijo utilizando un modelo $m^2 \phi^2$}
-            \end{column}
-            \begin{column}{0.3\linewidth}
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width = 0.7\linewidth]{cosmolattice_GW.png}
-                \end{figure}
+                            \vspace{-0.5cm}
+                            \centering \small{Espectro del campo hijo}
+                        \end{column}
+                        \begin{column}{0.5\linewidth}
+                            \begin{figure}[H]
+                                \centering
+                                \includegraphics[width = 0.9\linewidth]{cosmolattice_GW.png}
+                            \end{figure}
 
-                \vspace{-0.5cm}
-                \centering \small{Espectro de GW hoy utilizando un modelo $m^2 \phi^2$}
+                            \vspace{-0.5cm}
+                            \centering \small{Espectro de GW}
+                        \end{column}
+                    \end{columns}
+                \end{infobox}
             \end{column}
         \end{columns}
     \end{infobox}

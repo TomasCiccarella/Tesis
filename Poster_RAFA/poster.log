@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  15 SEP 2025 00:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  15 SEP 2025 22:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -973,24 +973,24 @@ LaTeX Info: Redefining \% on input line 12.
 )
 \openout1 = `poster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1045,7 +1045,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 68.
+Package hyperref Info: Link coloring OFF on input line 70.
  (./poster.out) (./poster.out)
 \@outlinefile=\write5
 \openout5 = `poster.out'.
@@ -1063,94 +1063,104 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 68.
-LaTeX Info: Redefining \% on input line 68.
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
 \c@lstlisting=\count417
  (./poster.nav)
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <61.3> not available
-(Font)              size <51.59> substituted on input line 375.
+(Font)              size <51.59> substituted on input line 422.
 
-LaTeX Font Info:    Calculating math sizes for size <35.47> on input line 375.
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 375.
+LaTeX Font Info:    Calculating math sizes for size <35.47> on input line 422.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 422.
 (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 
 LaTeX Font Warning: Font shape `U/stmry/m/n' in size <35.47> not available
-(Font)              size <24.88> substituted on input line 375.
+(Font)              size <24.88> substituted on input line 422.
 
 
 LaTeX Font Warning: Font shape `U/stmry/m/n' in size <17.735> not available
-(Font)              size <17.28> substituted on input line 375.
+(Font)              size <17.28> substituted on input line 422.
 
-LaTeX Font Info:    Calculating math sizes for size <20.53> on input line 375.
+LaTeX Font Info:    Calculating math sizes for size <20.53> on input line 422.
 <logo_df.png, id=51, 146.5475pt x 146.5475pt>
 File: logo_df.png Graphic file (type png)
 <use logo_df.png>
-Package pdftex.def Info: logo_df.png  used on input line 375.
+Package pdftex.def Info: logo_df.png  used on input line 422.
 (pdftex.def)             Requested size: 102.58253pt x 102.58253pt.
 <logo_uba.png, id=52, 233.4321pt x 233.9139pt>
 File: logo_uba.png Graphic file (type png)
 <use logo_uba.png>
-Package pdftex.def Info: logo_uba.png  used on input line 375.
+Package pdftex.def Info: logo_uba.png  used on input line 422.
 (pdftex.def)             Requested size: 128.38805pt x 128.65303pt.
-LaTeX Font Info:    Calculating math sizes for size <24.63> on input line 375.
+LaTeX Font Info:    Calculating math sizes for size <24.63> on input line 422.
 <GW_fuentes.png, id=54, 963.6pt x 542.025pt>
 File: GW_fuentes.png Graphic file (type png)
 <use GW_fuentes.png>
-Package pdftex.def Info: GW_fuentes.png  used on input line 375.
+Package pdftex.def Info: GW_fuentes.png  used on input line 422.
 (pdftex.def)             Requested size: 489.96138pt x 275.60202pt.
 <reheating.png, id=55, 1806.75pt x 722.7pt>
 File: reheating.png Graphic file (type png)
 <use reheating.png>
-Package pdftex.def Info: reheating.png  used on input line 375.
+Package pdftex.def Info: reheating.png  used on input line 422.
 (pdftex.def)             Requested size: 637.84521pt x 255.14325pt.
-<Mathieu_tabla.png, id=56, 505.89pt x 433.62pt>
-File: Mathieu_tabla.png Graphic file (type png)
-<use Mathieu_tabla.png>
-Package pdftex.def Info: Mathieu_tabla.png  used on input line 375.
-(pdftex.def)             Requested size: 472.30853pt x 404.84378pt.
-<narrow_resonance.png, id=57, 867.24pt x 578.16pt>
-File: narrow_resonance.png Graphic file (type png)
-<use narrow_resonance.png>
-Package pdftex.def Info: narrow_resonance.png  used on input line 375.
-(pdftex.def)             Requested size: 357.96191pt x 238.6439pt.
-<broad_resonance.png, id=58, 867.24pt x 578.16pt>
-File: broad_resonance.png Graphic file (type png)
-<use broad_resonance.png>
-Package pdftex.def Info: broad_resonance.png  used on input line 375.
-(pdftex.def)             Requested size: 357.96191pt x 238.6439pt.
-<Mathieu_background.png, id=59, 1300.86pt x 578.16pt>
+<Mathieu_background.png, id=56, 1300.86pt x 578.16pt>
 File: Mathieu_background.png Graphic file (type png)
 <use Mathieu_background.png>
-Package pdftex.def Info: Mathieu_background.png  used on input line 375.
-(pdftex.def)             Requested size: 437.5107pt x 194.4457pt.
-<Mathieu_pert.png, id=60, 1300.86pt x 578.16pt>
+Package pdftex.def Info: Mathieu_background.png  used on input line 422.
+(pdftex.def)             Requested size: 497.16849pt x 220.96463pt.
+<Mathieu_pert.png, id=57, 1300.86pt x 578.16pt>
 File: Mathieu_pert.png Graphic file (type png)
 <use Mathieu_pert.png>
-Package pdftex.def Info: Mathieu_pert.png  used on input line 375.
-(pdftex.def)             Requested size: 437.5107pt x 194.4457pt.
-<cosmolattice_1.png, id=61, 462.52798pt x 346.89601pt>
-File: cosmolattice_1.png Graphic file (type png)
-<use cosmolattice_1.png>
-Package pdftex.def Info: cosmolattice_1.png  used on input line 375.
-(pdftex.def)             Requested size: 338.92043pt x 254.20064pt.
-<cosmolattice_2.png, id=62, 462.52798pt x 346.89601pt>
+Package pdftex.def Info: Mathieu_pert.png  used on input line 422.
+(pdftex.def)             Requested size: 447.4486pt x 198.86551pt.
+<Mathieu_tabla.png, id=58, 505.89pt x 433.62pt>
+File: Mathieu_tabla.png Graphic file (type png)
+<use Mathieu_tabla.png>
+Package pdftex.def Info: Mathieu_tabla.png  used on input line 422.
+(pdftex.def)             Requested size: 487.22299pt x 417.62686pt.
+<Narrow_resonance.png, id=59, 1300.86pt x 578.16pt>
+File: Narrow_resonance.png Graphic file (type png)
+<use Narrow_resonance.png>
+Package pdftex.def Info: Narrow_resonance.png  used on input line 422.
+(pdftex.def)             Requested size: 497.16849pt x 220.96463pt.
+<Broad_resonance.png, id=60, 1300.86pt x 578.16pt>
+File: Broad_resonance.png Graphic file (type png)
+<use Broad_resonance.png>
+Package pdftex.def Info: Broad_resonance.png  used on input line 422.
+(pdftex.def)             Requested size: 497.16849pt x 220.96463pt.
+<stochastic_resonance.png, id=61, 1300.86pt x 578.16pt>
+File: stochastic_resonance.png Graphic file (type png)
+<use stochastic_resonance.png>
+Package pdftex.def Info: stochastic_resonance.png  used on input line 422.
+(pdftex.def)             Requested size: 497.16849pt x 220.96463pt.
+<cosmolattice_lphi4_chi.png, id=62, 462.52798pt x 346.89601pt>
+File: cosmolattice_lphi4_chi.png Graphic file (type png)
+<use cosmolattice_lphi4_chi.png>
+Package pdftex.def Info: cosmolattice_lphi4_chi.png  used on input line 422.
+(pdftex.def)             Requested size: 318.12912pt x 238.60686pt.
+<cosmolattice_lphi4_GW.png, id=63, 462.52798pt x 346.89601pt>
+File: cosmolattice_lphi4_GW.png Graphic file (type png)
+<use cosmolattice_lphi4_GW.png>
+Package pdftex.def Info: cosmolattice_lphi4_GW.png  used on input line 422.
+(pdftex.def)             Requested size: 318.12912pt x 238.60686pt.
+<cosmolattice_2.png, id=64, 462.52798pt x 346.89601pt>
 File: cosmolattice_2.png Graphic file (type png)
 <use cosmolattice_2.png>
-Package pdftex.def Info: cosmolattice_2.png  used on input line 375.
-(pdftex.def)             Requested size: 338.92043pt x 254.20064pt.
-<cosmolattice_GW.png, id=63, 462.52798pt x 346.89601pt>
+Package pdftex.def Info: cosmolattice_2.png  used on input line 422.
+(pdftex.def)             Requested size: 318.12912pt x 238.60686pt.
+<cosmolattice_GW.png, id=65, 462.52798pt x 346.89601pt>
 File: cosmolattice_GW.png Graphic file (type png)
 <use cosmolattice_GW.png>
-Package pdftex.def Info: cosmolattice_GW.png  used on input line 375.
-(pdftex.def)             Requested size: 338.92043pt x 254.20064pt.
+Package pdftex.def Info: cosmolattice_GW.png  used on input line 422.
+(pdftex.def)             Requested size: 318.12912pt x 238.60686pt.
 
-Overfull \vbox (8.05405pt too high) detected at line 375
+Overfull \vbox (6.55014pt too high) detected at line 422
  []
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./GW_fuentes.png> <./reheating.png> <./Mathieu_tabla.png> <./narrow_resonance.png> <./broad_resonance.png> <./Mathieu_background.png> <./Mathieu_pert.png> <./cosmolattice_1.png> <./cosmolattice_2.png> <./cosmolattice_GW.png> <./logo_df.png> <./logo_uba.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./GW_fuentes.png> <./reheating.png> <./Mathieu_background.png> <./Mathieu_pert.png> <./Mathieu_tabla.png> <./Narrow_resonance.png> <./Broad_resonance.png> <./stochastic_resonance.png> <./cosmolattice_lphi4_chi.png> <./cosmolattice_lphi4_GW.png> <./cosmolattice_2.png> <./cosmolattice_GW.png> <./logo_df.png> <./logo_uba.png>]
 \tf@nav=\write6
 \openout6 = `poster.nav'.
 
@@ -1177,18 +1187,18 @@ Package rerunfilecheck Info: File `poster.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 56288 strings out of 474222
- 1296350 string characters out of 5748734
- 2086433 words of memory out of 5000000
- 77739 multiletter control sequences out of 15000+600000
+ 56305 strings out of 474222
+ 1296875 string characters out of 5748734
+ 2097322 words of memory out of 5000000
+ 77756 multiletter control sequences out of 15000+600000
  583232 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,18n,123p,493b,1621s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss3583.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb>
-Output written on poster.pdf (1 page, 1888175 bytes).
+ 128i,18n,123p,493b,1724s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss3583.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb>
+Output written on poster.pdf (1 page, 2063466 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
+ 447 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
  3 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 words of extra memory for PDF output out of 10000 (max. 10000000)
 
