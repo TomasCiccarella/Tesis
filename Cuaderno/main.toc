@@ -33,17 +33,20 @@
 \contentsline {paragraph}{\numberline {2.1.2.2}Non-perturbative reheating}{25}{paragraph.2.1.2.2}%
 \contentsline {section}{\numberline {3}Preheating and gravitational waves in large-field hilltop inflation}{29}{section.3}%
 \contentsline {subsection}{\numberline {3.1}The Background Universe}{29}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Cosmolattice}{30}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Convenciones}{30}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Inicialización}{31}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Comandos importantes}{31}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}04/07/2025}{31}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Modelo}{31}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Condiciones iniciales}{33}{subsubsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.3}Levantar los espectros}{34}{subsubsection.4.4.3}%
-\contentsline {section}{\numberline {5}Charlas con Nahue}{36}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Vacío de Bunch-Davies y la cuantización de las ondas en inflación}{36}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Función de transferencia de modos subhorizonte}{40}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Ecuación de Mathieu}{41}{subsection.5.3}%
-\contentsline {section}{\numberline {6}RAFA 2025}{44}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Resumen RAFA}{44}{subsection.6.1}%
+\contentsline {subsection}{\numberline {3.2}Slow-roll}{30}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Linear Preheating}{31}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Cosmolattice}{31}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Convenciones}{31}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Inicialización}{32}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Comandos importantes}{32}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}04/07/2025}{32}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Modelo}{32}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Condiciones iniciales}{34}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Levantar los espectros}{35}{subsubsection.4.4.3}%
+\contentsline {section}{\numberline {5}Charlas con Nahue}{37}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Vacío de Bunch-Davies y la cuantización de las ondas en inflación}{37}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Función de transferencia de modos subhorizonte}{41}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Ecuación de Mathieu}{42}{subsection.5.3}%
+\contentsline {section}{\numberline {6}RAFA 2025}{45}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Resumen RAFA}{45}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Poster}{47}{subsection.6.2}%

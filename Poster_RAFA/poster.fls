@@ -604,11 +604,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm
-INPUT ./GW_fuentes.png
-INPUT ./GW_fuentes.png
-INPUT ./GW_fuentes.png
-INPUT ./GW_fuentes.png
-INPUT ./GW_fuentes.png
+INPUT ./gwb-constraints.pdf
+INPUT ./gwb-constraints.pdf
+INPUT ./gwb-constraints.pdf
+INPUT ./gwb-constraints.pdf
+INPUT ./gwb-constraints.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsi2488.tfm
 INPUT ./reheating.png
 INPUT ./reheating.png
@@ -682,6 +682,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb
