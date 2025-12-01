@@ -544,6 +544,9 @@ INPUT ./Apunte 3.tex
 INPUT ./Apunte 3.tex
 INPUT ./Apunte 3.tex
 INPUT Apunte 3.tex
+INPUT ./Apunte 4.tex
+INPUT ./Apunte 4.tex
+INPUT Apunte 4.tex
 INPUT ./CosmoLattice.tex
 INPUT ./CosmoLattice.tex
 INPUT ./CosmoLattice.tex
@@ -612,16 +615,24 @@ INPUT ./Imagenes//Nahue/Mathieu_6.png
 INPUT ./Imagenes//Nahue/Mathieu_6.png
 INPUT ./Imagenes//Nahue/Mathieu_6.png
 INPUT ./Imagenes//Nahue/Mathieu_6.png
-INPUT ./Imagenes//Nahue/Mathieu_7.png
-INPUT ./Imagenes//Nahue/Mathieu_7.png
-INPUT ./Imagenes//Nahue/Mathieu_7.png
-INPUT ./Imagenes//Nahue/Mathieu_7.png
-INPUT ./Imagenes//Nahue/Mathieu_7.png
-INPUT ./Imagenes//Nahue/Mathieu_8.png
-INPUT ./Imagenes//Nahue/Mathieu_8.png
-INPUT ./Imagenes//Nahue/Mathieu_8.png
-INPUT ./Imagenes//Nahue/Mathieu_8.png
-INPUT ./Imagenes//Nahue/Mathieu_8.png
+INPUT ./Imagenes//Nahue/Narrow_resonance.pdf
+INPUT ./Imagenes//Nahue/Narrow_resonance.pdf
+INPUT ./Imagenes//Nahue/Narrow_resonance.pdf
+INPUT ./Imagenes//Nahue/Narrow_resonance.pdf
+INPUT ./Imagenes//Nahue/Narrow_resonance.pdf
+INPUT ./Imagenes//Nahue/Broad_resonance.pdf
+INPUT ./Imagenes//Nahue/Broad_resonance.pdf
+INPUT ./Imagenes//Nahue/Broad_resonance.pdf
+INPUT ./Imagenes//Nahue/Broad_resonance.pdf
+INPUT ./Imagenes//Nahue/Broad_resonance.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/bbold/bbold12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/bbold/bbold8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT ./RAFA.tex
 INPUT ./RAFA.tex
 INPUT ./RAFA.tex
@@ -660,6 +671,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb

@@ -1,0 +1,275 @@
+\subsection{Introduction}
+
+La inflación es una fase de expansión cuasi-exponencial, y esta época permite explicar las condiciones iniciales del universo. Para poder explicar esta época típicamente se parametriza en términos de un camp escalar conocido como inflatón. A su vez, la inflación vale mientras se cumpla el régimen de \textit{slow-roll} en el cual la energía potencial del campo domina sobre la energía cinética, y como consecuencia de ésto tenemos la expansión del universo mientras el inflaton rueda sobre su potencial y cuando la energía cinética es significante frente a la potencial consideramos que se termina la inflación y arranca el período conocido como \textit{reheating}. Durante inflación, el campo oscila alrededor de su mínimo de potencial transformando la energía del campo en partículas de diferentes especies dando por origen a la mayor parte de la materia en el universo. Luego de que se crean las partículas, eventualmente el universo termaliza y el universo entra en una era dominada por la radiación.
+
+Si el potencial del inflatón durante \textit{reheating} tiene forma monomial, el inflatón oscila alrededor de este mínimo con una amplitud grande. Estas oscilaciones dan lugar a la resonancia paramétrica, la cual a partir del acople del inflatón con las partículas permite el fenómeno de creación de partículas. En el caso de especies bosónicas, la producción de partículas es resonante y la transferencia de energía crece exponencialmente; en cambio, en el caso de los fermiones, el principio de exclusión de Pauli previene el desarrollo de la resonancia bloqueando en parte la transferencia de energía. La producción de partículas tanto bosónicas como fermiónicas se conoce como \textit{preheating}.
+
+Independientemente del contexto, cuando tenemos una resonancia paramétrica, al campo de fondo que oscila lo conocemos como campo padre, mientras que a los campos derivados y las partículas creadas los llamaremos campos hijos. La creación de partículas a través de la resonancia paramétrica resulta un fenómeno no perturbativo, no lineal y fuera del equilibrio, por tanto como consecuencia se producen perturbaciones escalares en la métrica así como perturbaciones tensoriales en ésta (onda gravitationales).
+
+\subsection{Gravitational waves from parametric resonance. Analytic estimation}
+
+Para describir la resonancia paramétrica vamos a considerar que los campos padre e hijo están acoplados por un término de la forma $g^2 \phi^2 \chi^2$ por lo que las ecuaciones de movimiento cuando el inflatón oscila alrededor del mínimo de potencial son las siguientes:
+
+\begin{equation}
+    \ddot{\phi} - \frac{1}{a^2} \nabla^2 \phi + 3 H \dot{\phi} + g^2 \phi^2 \chi^2 + \frac{d V (\phi)}{d \phi} = 0
+\end{equation}
+
+\begin{equation}
+    \ddot{\chi} - \frac{1}{a^2} \nabla^2 \chi + 3 H \dot{\chi} + g^2 \phi^2 \chi^2 = 0
+\end{equation}
+
+\noindent
+consideraremos que el campo $\phi$ es homogéneo por lo que podemos tirar el término con $\nabla^2 \phi$ y vamos a considerar que inicialmente no hay backreaction entre $\phi$ y $\chi$ lo que nos permite tirar este término en la ecuación de movimiento para $\phi$, lo que implica que la ecuación del inflatón nos queda de la forma
+
+\begin{equation}
+    \ddot{\phi} + 3 H \dot{\phi} + \frac{d V (\phi)}{d \phi} = 0
+\end{equation}
+
+\noindent
+este tipo de ecuación para un potencial monomial de la forma $\displaystyle V(\phi) = \frac{\lambda}{n} M^{4 - n} \phi^n$ tiene por solución la multiplicación de una función cuya amplitud decrece $(\Phi(t))$ y una función oscilatoria $(F(t))$ (solo es periódica para $n = 2$), es decir tenemos algo de la forma $\phi(t) \simeq \Phi(t) \cdot F(t)$. La frecuencia de oscilación es de la forma $\Omega_{osc} = \sqrt{\frac{d^2 V(\phi)}{d\phi^2}} = \omega_i \left( \frac{t}{t_i} \right)^{1 - 2/n}$ con $\omega_* = \sqrt{\lambda} M^{2 - 2/n} \Phi_i^{n/2 - 1}$.
+
+Podemos definir nuevas variables
+
+\begin{equation}
+    \vec{y} = \omega_* \vec{x}, \quad \quad \quad z = \omega_* \tau, \quad \quad \quad \tau = \int \frac{dt}{a(t)}, \quad \quad \quad \varphi = a(t) ~ \frac{\phi}{\Phi_i}, \quad \quad \quad \chi_c = a(t) ~ \chi
+\end{equation}
+
+\noindent
+de modo tal que podemos escribir la ecuación de movimiento del campo hijo en términos de parámetros adimensionales que nos queda algo de la forma
+
+\begin{equation}
+    \frac{d^2 \chi_c}{dz^2} + (q \phi^2 - \nabla_y^2) \chi_c = \frac{1}{a} \frac{d^2 a}{d z^2} \chi_c 
+\end{equation}
+
+\noindent
+dónde $q$ se conoce como el parámetro de resonancia y se define como $\displaystyle q = \frac{g^2 \Phi_i^2}{\omega_*^2}$.
+
+En las consideraciones que haremos para la resonancia paramétrica tenemos que el campo del inflatón lo consideraremos como inicialmente homogéneo y clásico, mientras que el campo hijo lo consideraremos como cuántico e inicialmente en su estado de vacío.Con esta idea en mente podemos pensar en una cuantización canónica para el campo $\chi$ tal que es de la forma
+
+\begin{equation}
+    \chi_c = \int \frac{1}{(2 \pi)^3} \left[ \hat{a}_k \chi^{(c)}_k (t) + \hat{a}^\dagger_{-k} \chi^{(c) *}_k (t) \right] ~ e^{- i k x} ~ d^3 k
+\end{equation}
+
+\noindent
+dónde los operadores de creación y destrucción cumplen la relación de conmutación $\displaystyle \left[ \hat{a}_{k}, \hat{a}_{k^\prime}^\dagger \right] = (2\pi)^3 ~ \delta (k - k^\prime)$. A partir de ésto podemos escribir las ecuaciones de movimiento para los modos del campo $\chi$ como
+
+\begin{equation}
+    \frac{d^2 \chi_k^{(c)}}{dz^2} + \left( q \phi^2 + \kappa^2 \right) \chi_k^{(c)} = 0 
+\end{equation}
+
+\noindent
+dónde podemos notar que como el inflatón tiene una forma oscilatoria entonces podemos ver que el campo $\chi_k^{(c)} \sim e^{\mu_q (k) ~ z}$ con $\mu_k$ es el coeficiente de Floquet, y eso significa que existen ciertos valores de $\{ q, \kappa \}$ tenemos que $\Re{\mu_k} > 0$ dándo un grecimiento exponencial de los modos del campo. Estos valores generan bandas de inestabilidades, dónde se tiene resonancia y por tanto son los parámetros dónde se tiene resistencia paramétrica. 
+
+\subsection{Spectrum of gravitational waves}
+
+Para la producción de ondas gravitatorias debemos ver las perturbaciones tensoriales en la métrica que pensando en la métrica de fondo como FLRW tenemos que la métrica nos queda de la forma
+
+\begin{equation}
+    ds^2 = a^2 (\tau) ~ \left[ - d\tau^2 + \left( \delta_{ij} + h_{ij} \right) ~ dx^i ~ dx^j \right]
+\end{equation}
+
+\noindent
+dónde $h_{ij}$ es transversal $(\partial_i h_{ij} = 0)$ y sin traza $(h^i_i = 0)$ y representan las ondas gravitacionales.
+
+A partir de linealizar las ecuaciones de Einstein y ver sólo la parte tensorial podemos notar que las ondas gravitacionales deben cumplir la siguiente ecuación de movimiento
+
+\begin{equation}
+    h^{\prime \prime}_{ij} + 2 \mathcal{H} h^\prime_{ij} - \nabla^2 h_{ij} = \frac{2}{m_p^2} \Pi_{ij}^{TT}
+\end{equation}
+
+\noindent
+dónde $\displaystyle \mathcal{H} = \frac{a^\prime}{a}$ y la derivada notada con un primado es la derivada respecto el tiempo conforme. Y para la parte de las fuentes de las ondas gravitacionales podemos definir al tensor de energía-momento en su proyección TT como 
+
+\begin{equation}
+    \Pi^{TT}_{ij} = \left\{ \partial_i \chi, \partial_j \chi \right\}^{TT} = \frac{1}{a^2} \left\{ \partial_i \chi_c, \partial_j \chi_c \right\}^{TT}
+\end{equation}
+
+\noindent
+pasando al espacio de Fourier y definiendo $\Pi_{ij}^{TT} (k, \tau) = \Lambda_{ij,lm} \left( \hat{k} \right) ~ \Pi_{lm} (k, \tau)$ como la proyección tensorial del tensor de impulso-momento en el espacio de los momentos podemos escribir la ecuación de movimiento de las ondas
+
+\begin{equation}\label{eqn:GWs_equation}
+    h^{\prime \prime}_{ij} + 2 \mathcal{H} h^\prime_{ij} - k^2 h_{ij} = \frac{2}{m_p^2} \Pi_{ij}^{TT}
+\end{equation}
+
+\noindent
+con el proyector definido a partir de
+
+\begin{equation}
+    \Lambda_{ij,lm} \left( \hat{k} \right) = P_{il} \left( \hat{k} \right) ~ P_{jm} \left( \hat{k} \right) - \frac{1}{2} P_{ij} \left( \hat{k} \right) ~ P_{lm} \left( \hat{k} \right) \hspace{2cm} P_{ij} = \delta_{ij} - \hat{k}_i \hat{k}_j
+\end{equation}
+
+Por otro lado, la densidad de energía de las ondas gravitacionales para un fondo estocástico la podemos calcular a partir de conocer el espectro de potencias $\mathcal{P}_h \left( k, \tau \right)$ como
+
+\begin{equation}
+    \frac{d \rho_{GW}}{d \log k} = \frac{k^3 m_p^3}{8 \pi^2 a^2} \mathcal{P}_{h^\prime} (k, \tau)
+\end{equation}
+
+\noindent
+ahora usando $\langle h^\prime (k, \tau) ~ h^{* \prime} (k^\prime, \tau) \rangle = (2\pi)^3 \mathcal{P}_{h^\prime} (k, \tau) ~ \delta (k - k^\prime)$ podemos obtener el espectro de potencias para las ondas gravitacionales. Para poder hacer ésto hay que poder resolver la ecuación (\ref{eqn:GWs_equation}) lo cual lo podemos hacer a partir de la función de Green como
+
+\begin{equation}
+    h_{ij}^{TT} (k, \tau) = \frac{1}{a(\tau) ~ m_p^2} \int_{\tau_i}^{\tau} a(\tau^\prime) ~ \mathcal{G} (k, \tau, \tau^\prime) ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime
+\end{equation}
+
+\noindent
+siendo $\mathcal{G} (k, \tau, \tau^\prime) = k^{-1} \sin \left[k \left( \tau - \tau^\prime \right) \right]$, lo que implica que las ondas se escriben como
+
+\begin{equation}
+    h_{ij}^{TT} (k, \tau) = \frac{1}{a(\tau) ~ m_p^2} \int_{\tau_i}^{\tau} \frac{a \left( \tau^\prime \right)}{k} ~ \sin \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime
+\end{equation}
+
+\noindent
+cómo para calcular el espectro requiero las derivadas en tiempo propio entonces calculemos esto último
+
+\begin{equation*}
+    \begin{split}
+        h^\prime_{ij} =& \frac{dh_{ij}}{d\tau}\\
+        =& -\mathcal{H} h_{ij} + \frac{1}{a(\tau) ~ m_p^2} \frac{d}{d\tau} \left\{ \int_{\tau_i}^{\tau} \frac{a \left( \tau^\prime \right)}{k} ~ \sin \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime \right\}\\
+        =& -\mathcal{H} h_{ij} + \frac{1}{a(\tau) ~ m_p^2} \frac{d}{d\tau} \left\{ \int_{\tau_i}^{\tau} \frac{a \left( \tau^\prime \right)}{k} ~ \left[ \sin (k \tau) \cos \left( k \tau^\prime \right) - \cos (k \tau) \sin \left( k \tau^\prime \right) \right] ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime \right\}\\
+        =& -\mathcal{H} h_{ij} + \frac{1}{a(\tau) ~ m_p^2} \frac{d}{d\tau} \left[ \sin (k \tau) \int_{\tau_i}^{\tau} \frac{a \left( \tau^\prime \right)}{k} ~ \cos \left( k \tau^\prime \right) ~ \Pi^{TT}_{ij} \left( k, \tau^\prime \right) ~ d\tau^\prime \right]\\
+        &- \frac{1}{a(\tau) ~ m_p^2} \frac{d}{d\tau} \left[ \cos (k \tau) \int_{\tau_i}^\tau \frac{a \left( \tau^\prime \right)}{k} \sin \left( k \tau^\prime \right) ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime \right]\\
+        =& -\mathcal{H} h_{ij} + \frac{1}{a(\tau) ~ m_p^2} \cos (k \tau) \int_{\tau_i}^{\tau} a \left( \tau^\prime \right) ~ \cos \left( k \tau^\prime \right) ~ \Pi^{TT}_{ij} \left( k, \tau^\prime \right) ~ d\tau^\prime + \colorcancel{red}{\frac{1}{k m_p^2} ~ \sin (k \tau) ~ \cos \left( k \tau \right) ~ \Pi^{TT}_{ij} \left( k, \tau \right)}\\
+        &+ \frac{1}{a(\tau) ~ m_p^2} \sin (k \tau) \int_{\tau_i}^\tau a \left( \tau^\prime \right) \sin \left( k \tau^\prime \right) ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime - \colorcancel{red}{\frac{1}{k m_p^2} ~ \cos (k \tau) ~ \sin \left( k \tau \right) ~ \Pi^{TT}_{ij} \left( k, \tau \right)}\\
+        =& -\mathcal{H} h_{ij} + \frac{1}{a(\tau) ~ m_p^2} \int_{\tau_i}^{\tau} a \left( \tau^\prime \right) ~ \cos \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi^{TT}_{ij} \left( k, \tau^\prime \right) ~ d\tau^\prime
+    \end{split}
+\end{equation*}
+
+\noindent
+para modos subhorizonte tenemos que $\mathcal{H} \sim 1/\tau$ y la integral va como $\sim k$ y como estamos debajo del horizonte $k\tau \gg 1$ lo que nos permite notar que el segundo término pesa mucho más que el primero, por tanto
+
+\begin{equation}
+    h^\prime_{ij} = \frac{1}{a(\tau) ~ m_p^2} \int_{\tau_i}^{\tau} a \left( \tau^\prime \right) ~ \cos \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi^{TT}_{ij} \left( k, \tau^\prime \right) ~ d\tau^\prime
+\end{equation}
+
+\noindent
+y con ésto podemos calcular el espectro de potencias del campo para lo cual podemos usar la propiedad $\displaystyle \cos(a) \cos(b) = \frac{1}{2} \left[ \cos(a + b) + \cos(a - b) \right]$ junto con definir $\displaystyle \left\langle \Pi^{TT}_{ij} \left( k, \tau^{\prime} \right) \Pi^{*TT}_{ij} \left( k^\prime, \tau^{\prime \prime} \right) \right\rangle  = (2\pi)^3 \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ \delta \left( k - k^\prime \right)$
+
+\begin{equation*}
+    \begin{split}
+        \langle h^\prime \left( k, \tau \right) h^{* \prime} \left( k^\prime, \tau \right) \rangle &= \frac{1}{a^2 (\tau) m_p^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) a \left( \tau^{\prime \prime} \right) \cos \left[ k \left( \tau - \tau^\prime \right) \right] ~ \cos \left[ k^\prime \left( \tau - \tau^{\prime \prime} \right) \right] ~ \left\langle \Pi^{TT}_{ij} \left( k, \tau^{\prime} \right) \Pi^{*TT}_{ij} \left( k^\prime, \tau^{\prime \prime} \right) \right\rangle ~ d\tau^\prime ~ d\tau^{\prime \prime}\\
+        &= \frac{(2 \pi)^3}{a^2 (\tau) ~ m_p^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau - \tau^\prime \right) \right] ~ \cos \left[ k^\prime \left( \tau - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ \delta \left( k - k^\prime \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}\\
+        &= \frac{(2 \pi)^3}{a^2 (\tau) ~ m_p^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau - \tau^\prime \right) \right] ~ \cos \left[ k \left( \tau - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}\\
+        &= \frac{4 \pi^3}{a^2 (\tau) ~ m_p^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \left\{ \cos \left[ k \left( 2 \tau - \tau^\prime - \tau^{\prime \prime} \right) \right] + \cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right] \right\} ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}
+    \end{split}
+\end{equation*}
+
+\noindent
+tomando un promedio de tiempo $\delta t = 2\pi / k$ podemos descartar $\cos \left[ k \left( 2 \tau - \tau^\prime - \tau^{\prime \prime} \right) \right]$ por sobre $\cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right]$ por oscilar de forma más rápida
+
+\begin{equation*}
+    \begin{split}
+        \left\langle \left| h^\prime \left( k, \tau \right) \right|^2 \right\rangle &= \frac{4 \pi^3}{a^2 (\tau) ~ m_p^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}
+    \end{split}
+\end{equation*}
+
+\noindent
+y entonces el espectro de potencias que nos servirá para calcular la densidad de energía para las ondas gravitaciones nos quedan de la forma
+
+
+\begin{equation*}
+    \mathcal{P}_{h^\prime} (k, \tau) = \frac{1}{2 m_p^4 ~ a^2 (\tau)} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}
+\end{equation*}
+
+\noindent
+por tanto la densidad de energía de las ondas gravitaciones cumple
+
+\begin{equation}
+    \frac{d\rho_{GW}}{d \log k} = \frac{k^3}{16 m_p \pi^2 a^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}
+\end{equation}
+
+La pregunta ahora, para poder obtener la densidad de ondas gravitaciones es ¿quién es $\Pi^2 \left( k, t^\prime, t^{\prime \prime} \right)$? Para eso, debemos usar la expansión en modos del campo hijo, junto con que $\displaystyle \Pi_{ij}^{TT} = \frac{1}{a^2} \left\{ \partial_i X_c ~ \partial_j X_c \right\}^{TT} = \frac{\Lambda_{ij,lm} \left( \hat{k} \right)}{a^2} \left\{ \partial_i \chi_c ~ \partial_j \chi_c \right\}$, entonces tenemos
+
+\begin{equation}
+    \chi_c (x) = \int \frac{1}{(2 \pi)^3} \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] ~ e^{- i \vec{p} \cdot \vec{x}} ~ d^3 p
+\end{equation}
+
+\begin{equation}
+    \partial_i \chi_c (x) = \int \frac{(-i p_i)}{(2 \pi)^3} \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] ~ e^{- i \vec{p} \cdot \vec{x}} ~ d^3 p
+\end{equation}
+
+\noindent
+ahora calculemos la proyección TT del tensor de energía-impulso para lo cual podemos usar la idea de que la multiplicación de dos transformadas de Fourier es la convolución de las funciones, por tanto
+
+\begin{equation*}
+    \begin{split}
+        \Pi^{TT} (k,\tau) =& \frac{\Lambda_{ij,lm} (\hat{k})}{a^2} \left\{ \partial_l \chi_c (k) ~ \partial_m \chi_c (k) \right\}\\
+        =& \frac{\Lambda_{ij,lm} (\hat{k})}{a^2} \left\{ \partial_l \chi_c (x) * \partial_m \chi_c (x) \right\}\\
+        =& \frac{\Lambda_{ij,lm} (\hat{k})}{a^2} \int \partial_l \chi_c (x) ~ \partial_m \chi_c (x) ~ e^{i \vec{k} \cdot \vec{x}} ~ d^3 x\\
+        =& \frac{\Lambda_{ij,lm} (\hat{k})}{a^2} \int \left\{ \int \frac{(-i p_l)}{(2 \pi)^3} \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] ~ e^{- i \vec{p} \cdot \vec{x}} ~ d^3 p \right\} \\
+        & \left\{ \int \frac{(-i q_m)}{(2 \pi)^3} \left[ \hat{a}_q \chi^{(c)}_q (t) + \hat{a}^\dagger_{-q} \chi^{(c) *}_q (t) \right] ~ e^{- i \vec{q} \cdot \vec{x}} ~ d^3 q \right\} e^{i \vec{k} \cdot \vec{x}} ~ d^3 x\\
+        =& - \frac{\Lambda_{ij,lm} (\hat{k})}{(2 \pi)^6 a^2} \iint p_l q_m \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] \left[ \hat{a}_q \chi^{(c)}_q (t) + \hat{a}^\dagger_{-q} \chi^{(c) *}_q (t) \right] \underbrace{\left[\int e^{i \left( \vec{k} - \vec{p} - \vec{q} \right) \cdot \vec{x}} ~ d^3 x \right]}_{\displaystyle (2\pi)^3 \delta \left( \vec{k} - \vec{p} - \vec{q} \right)} ~ d^3 q ~ d^3 p
+    \end{split}
+\end{equation*}
+
+\begin{equation*}
+    \begin{split}
+        \Pi^{TT} (k,\tau) =& - \frac{\Lambda_{ij,lm} (\hat{k})}{(2 \pi)^3 a^2} \iint p_l q_m \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] \left[ \hat{a}_q \chi^{(c)}_q (t) + \hat{a}^\dagger_{-q} \chi^{(c) *}_q (t) \right] \delta \left( \vec{k} - \vec{p} - \vec{q} \right) ~ d^3 q ~ d^3 p\\
+        =& - \frac{\Lambda_{ij,lm} (\hat{k})}{(2 \pi)^3 a^2} \int p_l (k_m - p_m) \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] \left[ \hat{a}_{k - p} \chi^{(c)}_{k - p} (t) + \hat{a}^\dagger_{-(k - p)} \chi^{(c) *}_{k - p} (t) \right] ~ d^3 p
+    \end{split}
+\end{equation*}
+
+\noindent
+usemos que $\Lambda(\hat{k})$ es el proyector TT y por ser una proyección transversal $\Lambda_{ij,lm} (\hat{k}) ~ k_m = 0$ tenemos
+
+\begin{equation}
+    \Pi^{TT} (k,\tau) = \frac{\Lambda_{ij,lm} (\hat{k})}{(2 \pi)^3 a^2} \int p_l p_m \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] \left[ \hat{a}_{k - p} \chi^{(c)}_{k - p} (t) + \hat{a}^\dagger_{-(k - p)} \chi^{(c) *}_{k - p} (t) \right] ~ d^3 p
+\end{equation}
+
+Con ésto, podemos obtener $\Pi^2 \left( k, t^\prime, t^{\prime \prime} \right)$ a partir de $\displaystyle \left\langle \Pi^{TT}_{ij} \left( k, \tau^{\prime} \right) \Pi^{*TT}_{ij} \left( k^\prime, \tau^{\prime \prime} \right) \right\rangle  = (2\pi)^3 \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ \delta \left( k - k^\prime \right)$ para lo cual necesitaremos tener en cuenta que las únicas multiplicaciones de los operadores de creación y destrucción no nula es 
+
+\begin{equation}
+    \begin{cases}
+        \displaystyle \bra{0} \hat{a}_p \hat{a}_{k - p} \hat{a}^\dagger_q \hat{a}^\dagger_{k^\prime - q} \ket{0} = (2\pi)^6 ~ \left[ \delta (k - p - q) + \delta (p - q) \right] \delta \left( k - k^\prime  \right)\\
+        \displaystyle \bra{0} \hat{a}_p \hat{a}^\dagger_{-(k-p)} \hat{a}_q \hat{a}^{\prime}_{-\left( k^\prime - q \right)} \ket{0} = (2\pi)^6 ~ \delta (k) ~ \delta \left( k^\prime - k \right)
+    \end{cases}
+\end{equation}
+
+\noindent
+dónde el segundo bracketeo no nos interesa porque nos daría ondas de momento nulo, entonces tenemos que lo único que nos sobrevive, teniendo en cuenta que $\Lambda$ es un proyector y por tanto $\Lambda^2 = \Lambda$, es
+
+\begin{equation*}
+    \begin{split}
+        \left\langle \Pi^{TT}_{ij} \left( k, \tau^{\prime} \right) \Pi^{*TT}_{ij} \left( k^\prime, \tau^{\prime \prime} \right) \right\rangle  =& \frac{\Lambda_{ij,lm} (\hat{k})}{(2 \pi)^6 a^2 \left( \tau^\prime \right) a^2 \left( \tau^{\prime \prime} \right)} \int p_l p_m \left[ \hat{a}_p \chi^{(c)}_p (\tau) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (\tau) \right] \left[ \hat{a}_{k - p} \chi^{(c)}_{k - p} (\tau) + \hat{a}^\dagger_{-(k - p)} \chi^{(c) *}_{k - p} (\tau) \right] ~ d^3 p \\
+        & \int q_i q_j \left[ \hat{a}_q^\dagger \chi^{(c) *}_q \left( \tau^\prime \right) + \hat{a}_{-q} \chi^{(c)}_q \left( \tau^\prime \right) \right] \left[ \hat{a}^\dagger_{k - q} \chi^{(c) *}_{k - q} \left( \tau^\prime \right) + \hat{a}_{-(k^\prime - q)} \chi^{(c)}_{k^\prime - q} \left( \tau^\prime \right) \right] ~ d^3 q\\
+        =& \frac{\Lambda_{ij,lm} (\hat{k})}{a^2 \left( \tau^\prime \right) a^2 \left( \tau^{\prime \prime} \right)} \int p_l p_m q_i q_j \left[ \delta (k - p - q) + \delta (p - q) \right] \delta \left( k - k^\prime  \right)\\
+        & \chi^{(c)}_{p} (\tau) ~ \chi_{k - p}^{(c) *} (\tau) ~ \chi^{(c) *}_{q} (\tau^\prime) ~ \chi^{(c)}_{k^\prime - q} (\tau^\prime)  ~ d^3 p ~ d^3 q\\
+        =& \frac{\Lambda_{ij,lm} (\hat{k})}{a^2 \left( \tau^\prime \right) a^2 \left( \tau^{\prime \prime} \right)} \int p_l p_m \left[ (k_i - p_i)(k_j - p_j) ~ \chi^{(c) *}_{k - p} (\tau^\prime) ~ \chi^{(c)}_{p} (\tau^\prime) + p_i p_j ~ \chi^{(c) *}_{p} (\tau^\prime) ~ \chi^{(c)}_{k - p} (\tau^\prime) \right] \\
+        & \chi^{(c)}_{p} (\tau) ~ \chi_{k - p}^{(c) *} (\tau) ~ d^3 p\\
+        =& \frac{\Lambda_{ij,lm} (\hat{k})}{a^2 \left( \tau^\prime \right) a^2 \left( \tau^{\prime \prime} \right)} \int p_l p_m \left[ p_i p_j ~ \chi^{(c) *}_{k - p} (\tau^\prime) ~ \chi^{(c)}_{p} (\tau^\prime) + p_i p_j ~ \chi^{(c) *}_{p} (\tau^\prime) ~ \chi^{(c)}_{k - p} (\tau^\prime) \right] \chi^{(c)}_{p} (\tau) ~ \chi_{k - p}^{(c) *} (\tau) ~ d^3 p\\
+        =& \frac{2 \Lambda_{ij,lm} (\hat{k})}{a^2 \left( \tau^\prime \right) a^2 \left( \tau^{\prime \prime} \right)} \int p_l p_m p_i p_j \chi^{(c)}_{p} (\tau) ~ \chi_{k - p}^{(c) *} (\tau) ~ \chi^{(c) *}_{k - p} (\tau^\prime) ~ \chi^{(c)}_{p} (\tau^\prime) ~ d^3 p\\
+        =& \frac{1}{a^2 \left( \tau^\prime \right) a^2 \left( \tau^{\prime \prime} \right)} \int p^4 \sin^4 \theta \chi^{(c)}_{p} (\tau) ~ \chi_{k - p}^{(c) *} (\tau) ~ \chi^{(c) *}_{k - p} (\tau^\prime) ~ \chi^{(c)}_{p} (\tau^\prime) ~ d^3 p\\
+        =& \frac{2\pi}{a^2 \left( \tau^\prime \right) a^2 \left( \tau^{\prime \prime} \right)} \int p^6 \sin^5 \theta ~ \chi^{(c)}_{p} (\tau) ~ \chi_{k - p}^{(c) *} (\tau) ~ \chi^{(c) *}_{k - p} (\tau^\prime) ~ \chi^{(c)}_{p} (\tau^\prime) ~ dp ~ d\theta
+    \end{split}
+\end{equation*}
+
+Con todo ésto tenemos que $\Pi^2 \left( k, t^\prime, t^{\prime \prime} \right)$ vale
+
+\begin{equation}
+    \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) = \frac{1}{4 \pi^2 a^2 \left( \tau^\prime \right) a^2 \left( \tau^{\prime \prime} \right)} \int p^6 \sin^5 \theta ~ \chi^{(c)}_{p} (\tau) ~ \chi_{k - p}^{(c) *} (\tau) ~ \chi^{(c) *}_{k - p} (\tau^\prime) ~ \chi^{(c)}_{p} (\tau^\prime) ~ dp ~ d\theta
+\end{equation}
+
+Finalmente, volvamos a la densidad de energía de las ondas gravitationales que son de la forma
+
+\begin{equation*}
+    \begin{split}
+        \frac{d \rho_{GW}}{d \log k} =& \frac{k^3}{4 m_p^2 \pi^2 a^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}\\
+        =& \frac{k^3}{16 m_p^2 \pi^4 a^4} \int \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau \frac{1}{a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right)} ~ \cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right] p^6 \sin^5 \theta ~ \chi^{(c)}_{p} (\tau^\prime) ~ \chi_{k - p}^{(c) *} (\tau^\prime) ~ \chi^{(c) *}_{k - p} (\tau^{\prime \prime}) ~ \chi^{(c)}_{p} (\tau^{\prime \prime}) ~ dp ~ d\theta ~ d\tau^\prime ~ d\tau^{\prime \prime}\\
+        =& \frac{k^3}{16 m_p^2 \pi^4 a^4} \int \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau \frac{\cos(k\tau^\prime) \cos (k\tau^{\prime \prime})}{a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right)} p^6 \sin^5 \theta ~ \chi^{(c)}_{p} (\tau^\prime) ~ \chi_{k - p}^{(c) *} (\tau^\prime) ~ \chi^{(c) *}_{k - p} (\tau^{\prime \prime}) ~ \chi^{(c)}_{p} (\tau^{\prime \prime}) ~ dp ~ d\theta ~ d\tau^\prime ~ d\tau^{\prime \prime}\\
+        &+ \frac{k^3}{16 m_p^2 \pi^4 a^4} \int \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau \frac{\sin (k\tau^\prime) \sin (k\tau^{\prime \prime})}{a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right)} p^6 \sin^5 \theta ~ \chi^{(c)}_{p} (\tau^\prime) ~ \chi_{k - p}^{(c) *} (\tau^\prime) ~ \chi^{(c) *}_{k - p} (\tau^{\prime \prime}) ~ \chi^{(c)}_{p} (\tau^{\prime \prime}) ~ dp ~ d\theta ~ d\tau^\prime ~ d\tau^{\prime \prime}
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    \frac{d \rho_{GW}}{d \log k} = \frac{k^3}{16 \pi^4 m_p^2 a^4} \int p^6 \sin^5 \theta ~ \left\{ \left[ I_{(c)} (k, p, \theta, \tau)  \right]^2 + \left[ I_{(s)} (k, p, \theta, \tau)  \right]^2 \right\} ~ dp ~ d\theta
+\end{equation}
+
+\noindent
+con
+
+\begin{equation}
+    I_{(c)} (k, p, \theta, \tau) = \int_{\tau_{i}}^\tau  \frac{\cos (k\tau^\prime)}{a \left( \tau^\prime \right)} ~ \chi^{(c)}_{p} (\tau^\prime) ~ \chi_{k - p}^{(c) *} (\tau^\prime) ~ d\tau^\prime
+\end{equation}
+
+\begin{equation}
+    I_{(s)} (k, p, \theta, \tau) = \int_{\tau_{i}}^\tau  \frac{\sin (k\tau^\prime)}{a \left( \tau^\prime \right)} ~ \chi^{(c)}_{p} (\tau^\prime) ~ \chi_{k - p}^{(c) *} (\tau^\prime) ~ d\tau^\prime
+\end{equation}

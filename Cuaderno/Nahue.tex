@@ -373,7 +373,7 @@ y el campo $\phi (t) = \phi_0 \sin (T)$. Entonces debemos definir parámetros pa
 \begin{minipage}{0.45\textwidth}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Imagenes//Nahue/Mathieu_7.png}
+    \includegraphics[width=1\linewidth]{Imagenes//Nahue/Narrow_resonance.pdf}
     \caption{número de partículas para narrow resonance. Para esta figura tomamos $q = 0.1$ y $A_k = 1.03$.}
     \label{fig:Mathieu7}
 \end{figure}
@@ -381,8 +381,110 @@ y el campo $\phi (t) = \phi_0 \sin (T)$. Entonces debemos definir parámetros pa
 \begin{minipage}{0.45\textwidth}
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\linewidth]{Imagenes//Nahue/Mathieu_8.png}
+        \includegraphics[width=1\linewidth]{Imagenes//Nahue/Broad_resonance.pdf}
         \caption{número de partículas para broad resonance. Para esta figura tomamos $q = 200$ y $A_k = 401$.}
         \label{fig:Mathieu8}
     \end{figure}
 \end{minipage}
+
+\subsection{Modelo de $m^2 \phi^2$ con expansión}
+
+Cuando tenemos que el universo se expande, ya no vale la ecuación de Mathieu, pero se puede resolver el sistema de ecuaciones de forma numérica que es de la forma
+
+\begin{equation}
+    \begin{cases}
+        \displaystyle \ddot{\phi} + 3 H \dot{\phi} + V_{,\phi} (\phi) = 0\\ \\
+        \displaystyle \delta \ddot{\phi}_k + 3 H ~ \delta \dot{\phi}_k + \left[ \frac{k^2}{a^2} + V_{,\phi \phi} (\phi) \right] \delta \phi_k = 0\\ \\
+        \displaystyle \ddot{\chi}_k + 3 H \dot{\chi}_k + \left( \frac{k^2}{a^2} + g^2 \phi^2 \right) \chi_k = 0
+    \end{cases}
+\end{equation}
+
+\noindent
+dónde además debemos agregar la segunda ecuación de Friedmann para poder modelar la expansión del universo que al tener en cuenta que $\displaystyle \rho = \frac{1}{2} \dot{\phi}^2 + V (\phi)$ y la presión $\displaystyle P = \frac{1}{2} \dot{\phi}^2 - V (\phi)$ se puede escribir ésta como
+
+
+\begin{equation}
+    \frac{\ddot{a}}{a} = - \frac{1}{3 m_p^2} \left[ \dot{\phi}^2 - V (\phi) \right]
+\end{equation}
+
+Para todas estas ecuaciones podemos tomar por válida y mirar sólo las bandas de resonancia que nos marcan la ecuación de Mathieu y las bandas de inestabilidades, pero nos falta establecer condiciones iniciales, por tanto consideremos que tenemos un período inflacionario regido por un potencial de la forma $V(\phi) = m^2 \phi^2$; entonces, pidiendo que \textit{reheating} empieza cuando termina inflación y que ésto ocurre cuando el parámetro $\epsilon \simeq 1$ o lo que es mismo cuando la energía cinética y la potencial son comparables, podemos encontrar condiciones iniciales para $\phi$ y para su velocidad que serían de la siguiente forma
+
+\begin{equation*}
+    \begin{split}
+        \frac{m_p^2}{16 \pi} \left( \frac{m^2 \phi_0}{\displaystyle \frac{1}{2} m^2 \phi_0^2} \right)^2 &\approx 1\\
+        \frac{m_p^2}{16 \pi} \cdot \frac{4}{\phi_0^2} &\approx 1\\
+        \phi_0^2 \approx \frac{m_p^2}{4 \pi}
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    \phi_0 \approx \frac{m_p}{2 \sqrt{\pi}}
+\end{equation}
+
+\begin{equation*}
+    \begin{split}
+        \frac{1}{2} \dot{\phi}^2_0 &\approx V(\phi_0)\\
+        \dot{\phi}^2_0 &\approx m^2 \phi_0^2
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    \dot{\phi}_0 \approx m \phi_0
+\end{equation}
+
+\noindent
+para el caso de las condiciones iniciales para la expansión del universo como $a$ está definida de forma comparativa por tanto podemos considerar $a_{reh} = 1$ y $\dot{a}_{reh}$ saldrá de ver la primera ecuación de Friedmann entonces tenemos
+
+\begin{equation*}
+    \begin{split}
+        \frac{\dot{a}_{reh}^2}{a_{reh}^2} &= \frac{1}{3 m_p^2} \left[ \frac{1}{2} \dot{\phi}^2_0 + V(\phi_0) \right]\\
+        \dot{a}_{reh}^2 &= \frac{a_{reh}^2}{3 m_p^2} \cdot m^2 \phi^2_0
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    \dot{a}_{reh} \approx \frac{a_{reh} m}{\sqrt{3} m_p} \phi_0
+\end{equation}
+
+A la hora de la incorporación al código nos encontramos con un problema con las unidades por lo que debemos adimensionalizar las ecuaciones, ésto lo podemos hacer tomando.
+
+\subsection{Modelo de $\lambda \phi^4$}
+
+Ahora las condiciones iniciales para $V(\phi) = \lambda \phi^4$ las podemos calcular a partir de la misma idea y nos van a quedar que para los campos tenemos:
+
+\begin{equation*}
+    \begin{split}
+        \frac{m_p^2}{16 \pi} \left( \frac{\lambda \phi_0^3}{\displaystyle \frac{1}{4} \lambda \phi_0^4} \right)^2 &\approx 1\\
+        \frac{m_p^2}{16 \pi} \cdot \frac{16}{\phi_0^2} &\approx 1\\
+        \phi_0^2 \approx \frac{m_p^2}{\pi}
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    \phi_0 \approx \frac{m_p}{\sqrt{\pi}}
+\end{equation}
+
+\begin{equation*}
+    \begin{split}
+        \frac{1}{2} \dot{\phi}^2_0 &\approx V(\phi_0)\\
+        \dot{\phi}^2_0 &\approx \frac{1}{2} \lambda \phi_0^4
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    \dot{\phi}_0 \approx \sqrt{\frac{\lambda}{2}} \phi_0^2
+\end{equation}
+
+\noindent
+para el caso de las condiciones iniciales para la expansión del universo como $a$ está definida de forma comparativa por tanto podemos considerar $a_{reh} = 1$ y $\dot{a}_{reh}$ saldrá de ver la primera ecuación de Friedmann entonces tenemos
+
+\begin{equation*}
+    \begin{split}
+        \frac{\dot{a}_{reh}^2}{a_{reh}^2} &= \frac{1}{3 m_p^2} \left[ \frac{1}{2} \dot{\phi}^2_0 + V(\phi_0) \right]\\
+        \dot{a}_{reh}^2 &= \frac{a_{reh}^2}{3 m_p^2} \cdot \frac{1}{2} \lambda \phi^4_0
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    \dot{a}_{reh} \approx \frac{\lambda a_{reh}}{\sqrt{6} m_p} \phi_0^2    
+\end{equation}
