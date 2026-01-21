@@ -1,0 +1,45 @@
+Parameters: 
+Important parameters:
+
+                tMax       200                 
+                  dt       1e-4                
+                   N       32                  
+             withGWs       true                
+             evolver       VV2                 
+           expansion       true                
+       tOutputInfreq       1                   
+             kCutOff       4                   
+                  t0       0                   
+     tOutputRareFreq       0.1                 
+                 kIR       0.2                 
+         tOutputFreq       1                   
+
+
+Other parameters:
+
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+          PS_version       1                   
+            baseSeed       4356597             
+          outputfile       ./data/             
+     fixedBackground       false               
+     initial_momenta       -4.86735e30 0       
+                   m       1e-6                
+             PS_type       1                   
+               input       ../src/models/parameter-files/m2phi2.in
+       appendToFiles       false               
+     GWprojectorType       1                   
+                   q       1e6                 
+  initial_amplitudes       5.6964e18 0         
+         tBackupFreq       -1                  
+         tOutputVerb       0.01                
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       false               
+    spectraVerbosity       0                   
+           deltaKBin       1                   
+
+The simulation started on the d14 m9 y2025 around h13m54.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d14 m9 y2025 around h17m28.
+The timer indicates that it ran for 12830.474s.
+As it ran on 1 cores, this corresponds to 3.56402 core hours.

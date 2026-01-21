@@ -1,0 +1,1 @@
+/usr/bin/c++   -DNOMPI -DNOPFFT -DNOFFTFLOAT  -DMODELTYPE=m2phi2 -DMODELINCLUDE=models/m2phi2.h -DMODELLABEL=m2phi2 -Ofast  -Wall -Wshadow  -rdynamic -Wl,--dependency-file=CMakeFiles/cosmolattice.dir/link.d CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o -o m2phi2  -lfftw3_threads -lfftw3
