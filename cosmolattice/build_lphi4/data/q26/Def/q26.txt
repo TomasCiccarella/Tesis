@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/q26/Def/
+outputfile = ./data/q26/Def
 
 #Evolution
 expansion = false
