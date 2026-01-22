@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/q0.5/Def/
+outputfile = ./data/q5050/Def
 
 #Evolution
 expansion = false
@@ -31,4 +31,4 @@ initial_momenta = -6.2969e30 0 # homogeneous amplitudes in GeV2
 
 #Model Parameters
 lambda = 9e-14
-q = 0.5
+q = 5050

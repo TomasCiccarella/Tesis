@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/q0.5/Def/
+outputfile = ./data/q5050/Def
 
 #Evolution
 expansion = false
@@ -8,7 +8,7 @@ evolver = VV2
 #Lattice
 N = 256
 dt = 0.01
-kIR = 0.05
+kIR = 0.1
 
 #Times
 tOutputFreq = 0.1
@@ -31,4 +31,4 @@ initial_momenta = -6.2969e30 0 # homogeneous amplitudes in GeV2
 
 #Model Parameters
 lambda = 9e-14
-q = 0.5
+q = 5050

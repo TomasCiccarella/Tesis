@@ -8,7 +8,7 @@ evolver = VV2
 #Lattice
 N = 256
 dt = 0.01
-kIR = 0.05
+kIR = 0.1
 
 #Times
 tOutputFreq = 0.1
