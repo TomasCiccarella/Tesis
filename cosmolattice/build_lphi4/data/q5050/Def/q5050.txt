@@ -25,7 +25,7 @@ GWprojectorType = 1
 withGWs = true
 
 #IC
-kCutOff = 4
+kCutOff = 100
 initial_amplitudes = 7.42675e18 0 # homogeneous amplitudes in GeV
 initial_momenta = -6.2969e30 0 # homogeneous amplitudes in GeV2
 
