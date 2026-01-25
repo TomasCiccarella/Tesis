@@ -1,12 +1,12 @@
 #Output
-outputfile = ./data/q5050/DefN128/
+outputfile = ./data/q5050/DefN256/
 
 #Evolution
 expansion = false
 evolver = VV2
 
 #Lattice
-N = 128
+N = 256
 dt = 0.01
 kIR = 0.2
 
