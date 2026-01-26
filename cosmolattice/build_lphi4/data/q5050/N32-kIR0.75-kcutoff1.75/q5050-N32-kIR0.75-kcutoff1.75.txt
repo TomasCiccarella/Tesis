@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/1/
+outputfile = ./data/N32-kIR0.75-kcutoff1.75/
 
 #Evolution
 expansion = false

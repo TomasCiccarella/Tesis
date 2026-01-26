@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/q5050/tlargo/
+outputfile = ./data/q5050/N256-kIR0.8-kcutoff100/
 
 #Evolution
 expansion = false

@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/q5050/DefN128/
+outputfile = ./data/q5050/N128-kIR0.2-kcutoff100/
 
 #Evolution
 expansion = false

@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/q5050/Def
+outputfile = ./data/q5050/N64-kIR0.1-kcutoff4/
 
 #Evolution
 expansion = false
