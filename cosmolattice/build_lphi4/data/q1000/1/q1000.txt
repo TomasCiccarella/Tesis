@@ -1,19 +1,19 @@
 #Output
-outputfile = ./data/q5050/tlargo/
+outputfile = ./data/q1000/1/
 
 #Evolution
 expansion = false
 evolver = VV2
 
 #Lattice
-N = 64
+N = 256
 dt = 0.01
-kIR = 0.75
+kIR = 0.1
 
 #Times
 tOutputFreq = 0.1
 tOutputInfreq = 1
-tMax = 1000
+tMax = 30
 
 #Spectra options
 PS_type = 1
@@ -31,4 +31,4 @@ initial_momenta = -6.2969e30 0 # homogeneous amplitudes in GeV2
 
 #Model Parameters
 lambda = 9e-14
-q = 5050
+q = 1000
