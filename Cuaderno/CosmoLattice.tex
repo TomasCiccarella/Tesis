@@ -486,3 +486,99 @@ def plot_spectrum(spectra, column, nBins, nSpectra, colormap = 'plasma'):
     plt.yscale('log')
     plt.xlabel('$\\tilde k$')
 \end{lstlisting}
+
+\subsection{$\lambda \phi^4$ sin expansión}
+
+Para empezar a entender cómo funciona CosmoLattice vamos a aprender cómo varía el espectro de potencias para el inflatón y para el campo hijo como a su vez cómo cambia el espectro de ondas gravitacionales.
+
+Hay que tener en cuenta a la hora de cambiar parámetros que nos va a interesar cómo cambian estos espectro con el tiempo, con $N$ (el número de puntos), $k_{IR}$ (el valor más bajo de $k$ que pueda calcular), $k_{cutoff}$ (el valor más alto de modos con condiciones iniciales no nulas) y el tiempo de simulación. Además, el determinar $N$ y $k_{IR}$ fuerza a que el máximo valor de $k$ que pueda calcular va a estar dado por 
+
+\begin{equation}
+    k_{max} = \frac{\sqrt{3}}{2} N k_{IR}
+\end{equation}
+
+\noindent
+y cuando corramos una simulación tenemos que tener en cuenta que el incremento en pasos temporales y espaciales deben cumplir la relación de estabilidad de Courant para que sea fiable, esta relación nos indica
+
+\begin{equation}
+    \frac{\delta \eta}{\delta x} < \frac{1}{\sqrt{N_{dims}}}
+\end{equation}
+
+\noindent
+$\delta \eta$ se puede encontrar en el código .in, pero $\delta x$ lo podemos encontrar usando $k_{IR}$ a partir de 
+
+\begin{equation}
+    \delta x = \frac{2 \pi}{N k_{IR}}
+\end{equation}
+
+A partir de todas las consideraciones anteriores, vamos a querer empezar a caracterizar los espectros para algún $q$ fijo y ver cómo cambian respecto a $N$, en el sentido de querer comparar con los códigos armados de $\lambda \phi^4$ en el régimen lineal, entonces vamos a utilizar $q = 5050$ y $k_{cutoff} = 100$ y buscar cómo cambia la posición de los picos del espectro cuando cambio $N$ en $64$, $128$ y $256$, hay que tener en cuenta que $k_{IR}$ hay que dejarlo fijo para mantener la mayor fidelidad por tanto para poder comparar tomamos $k_{IR} = 0.02$ y obtenemos los espectros que se observan en la figura \ref{fig:cosmolattice_varN}. En los espectros obtenidos podemos notar que aumenta el $k_{max}$ obtenido, además aumenta la resolución con el aumento de $N$ junto a eso se puede ver que para valores grandes de $k$ se forma una panza independiente del $N$ lo que nos indica que al final de los valores de $k$ siempre tendremos ésto; al igual que ocurre para modos chicos que hay otra panza independiente del $N$.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/cosmolattice/varN_inflaton.png}
+        \caption{espectro de potencias del inflatón}
+    \end{subfigure}
+    \begin{subfigure}[t]{\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/cosmolattice/varN_hijo.png}
+        \caption{espectro de potencias del campo hijo}
+    \end{subfigure}
+    \begin{subfigure}[b]{\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/cosmolattice/varN_GW.png}
+        \caption{espectro de potencias de las ondas gravitacionales}
+    \end{subfigure}
+    \caption{espectros obtenidos al variar $N$}
+    \label{fig:cosmolattice_varN}
+\end{figure}
+
+Ahora, hagamos el mismo análisis dejando $N = 256$ para tener la máxima resolución en $k$'s pero variemos $k_{IR}$ para ver cómo depende el programa con este parámetro, ésto lo podemos ver en la figura \ref{fig:cosmolattice_varkIR}. Podemos nuevamente encontrar los mismos objetos extraños que antes, hay dos panzas que parecería pensar que para tiempos cortos no resuelve bien el código: una para $k$ chicos y otra para $k$ grandes. A su vez podemos ver que el pico a menos de algunos corrimientos se encuentra en la zona de amplificación que calculamos con Floquet.
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/cosmolattice/varkIR_inflaton.png}
+        \caption{espectro de potencias del inflatón}
+    \end{subfigure}
+    \begin{subfigure}[t]{\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/cosmolattice/varkIR_hijo.png}
+        \caption{espectro de potencias del campo hijo}
+    \end{subfigure}
+    \begin{subfigure}[b]{\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/cosmolattice/varkIR_GW.png}
+        \caption{espectro de potencias de las ondas gravitacionales}
+    \end{subfigure}
+    \caption{espectros obtenidos al variar $kIR$}
+    \label{fig:cosmolattice_varkIR}
+\end{figure}
+
+Finalmente, lo último que podemos variar para ver cómo cambia la idea de comparar el pico de ondas gravitacionales y los espectros de potencia en función con el análisis de Floquet, para eso variamos $q$ dejando $k_{IR} = 0.2$, $k_{cutoff} = 100$ y $N = 256$ fijos. Estas comparaciones las podemos ver en la figuras \ref{fig:cosmolattice_varq_inf}, \ref{fig:cosmolattice_varq_chi} y \ref{fig:cosmolattice_varq_GW} dónde podemos notar que las figuras del inflatón son similares lo que nos indica que está bien, el espectro del campo hijo podemos encontrarnos nuevamente con las panzas al igual que con GW y eso genera que para algunos $q$'s no podamos identificar los picos en los espectros no pudiendo comparar con el modelo de Floquet propuesto.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/cosmolattice/varq_inflaton.png}
+    \caption{espectro del inflatón para distintos $q$.}
+    \label{fig:cosmolattice_varq_inf}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/cosmolattice/varq_hijo.png}
+    \caption{espectro del campo hijo para distintos $q$.}
+    \label{fig:cosmolattice_varq_chi}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/cosmolattice/varq_GW.png}
+    \caption{espectro de ondas gravitacionales para distintos $q$.}
+    \label{fig:cosmolattice_varq_GW}
+\end{figure}
+
+En estos últimos espectros podemos notar que el pico de resonancia dónde se amplifica fuertemente el espectro, tenemos que dónde ocurre una narrow resonance ($q$ chicos) el pico casi no se nota y se homogeniza rápido el espectro, mientras que cuando ocurre broad resonance ($q$ grandes) el pico se nota amplificado y coincide con la posición esperada del pico. 

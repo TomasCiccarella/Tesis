@@ -387,68 +387,66 @@ y el campo $\phi (t) = \phi_0 \sin (T)$. Entonces debemos definir parámetros pa
     \end{figure}
 \end{minipage}
 
-\subsection{Modelo de $m^2 \phi^2$ con expansión}
+\subsection{Floquet}
 
-Cuando tenemos que el universo se expande, ya no vale la ecuación de Mathieu, pero se puede resolver el sistema de ecuaciones de forma numérica que es de la forma
+Un análisis de Floquet nos permite ver las bandas dónde la resonancia paramétrica dá inestabilidades, este análisis lo podemos hacer a partir de la matriz de monodromía que se encuentra descripta en el paper arXiv:1410.3808. A partir de esto mismo se armaron los códigos que se encuentran en \href{https://github.com/TomasCiccarella/Tesis/blob/master/Floquet/Floquet.ipynb}{Floquet.ipynb} y se armaron las figuras \ref{fig:Floquet_m2phi2} y \ref{fig:Floquet_lphi4}. Estas figuras se pueden comparar con la tabla de inestabilidades de Mathieu que armamos previamente y con la tabla de inestabilidades que se puede observar en \textit{Parametric Resonance in the Early Universe - A Fitting Analysis} viendo que efectivamente el código que armamos es correcto.
+
+Para armar la matriz de monodromía es necesario definir un período de oscilación que lo podemos obtener a partir de la conservación de la energía y lo realizado en \ref{Periodo_Floquet}.
+
+\begin{figure}[H]
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/Floquet_m2phi2.pdf}
+        \caption{$m^2 \phi^2$}
+        \label{fig:Floquet_m2phi2}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/Floquet_lphi4.pdf}
+        \caption{$\lambda \phi^4$}
+        \label{fig:Floquet_lphi4}
+    \end{subfigure}
+    \caption{tabla de inestabilidades de Floquet, armados a partir de la ecuación de Mathieu y Lamé.}
+\end{figure}
+
+Una vez que tenemos las tablas de inestabilidades, podemos dejar fijo un valor de $q$ y vér cómo se comporta en $k$ ya que más adelante nos gustaría poder comparar si la banda de amplificación que obtenemos con el análisis por Floquet es la banda de amplificación para el espectro de potencias y para el espectro de ondas gravitacionales, entonces con esta idea en mente armamos las figuras \ref{fig:mu_m2phi2} y \ref{fig:mu_lphi4} que representan cómo varía el parámetro de Floquet $\mu_k$ con respecto al número de onda $k$ para un $q$ fijo.
+
+\begin{figure}[H]
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/mu_m2phi2.png}
+        \caption{$m^2 \phi^2$}
+        \label{fig:mu_m2phi2}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/mu_lphi4.png}
+        \caption{$\lambda \phi^4$}
+        \label{fig:mu_lphi4}
+    \end{subfigure}
+    \caption{variación del parámetro de Floquet con el número de onda.}
+\end{figure}
+
+\subsection{Modelo de $\lambda \phi^4$}
+
+Para un modelo $\lambda \phi^4$, las ecuaciones lineales que describen la dinámica de los campos son:
 
 \begin{equation}
     \begin{cases}
-        \displaystyle \ddot{\phi} + 3 H \dot{\phi} + V_{,\phi} (\phi) = 0\\ \\
-        \displaystyle \delta \ddot{\phi}_k + 3 H ~ \delta \dot{\phi}_k + \left[ \frac{k^2}{a^2} + V_{,\phi \phi} (\phi) \right] \delta \phi_k = 0\\ \\
-        \displaystyle \ddot{\chi}_k + 3 H \dot{\chi}_k + \left( \frac{k^2}{a^2} + g^2 \phi^2 \right) \chi_k = 0
+        \displaystyle \frac{d^2 \tilde{\phi}}{d \tilde{t}^2} + \frac{3}{a} \frac{d a}{d \tilde{t}} \frac{d \tilde{\phi}}{d \tilde{t}} + \tilde{\phi}^3 &= 0  \\ \\
+        \displaystyle \frac{d^2 a}{d \tilde{t}^2} + \frac{a}{3} \left[ \left( \frac{d \tilde{\phi}}{d \tilde{t}} \right)^2 - \frac{\tilde{\phi}^4}{4} \right] &= 0
+    \end{cases}
+\end{equation}
+
+\begin{equation}
+  \begin{cases}
+    \displaystyle \frac{d^2 \delta \tilde{\phi}_k}{d \tilde{t}^2} + \frac{3}{a} \frac{d a}{d \tilde{t}} \frac{d \tilde{\phi}_k}{d \tilde{t}} + \left( \frac{\tilde{k}^2}{a^2} + 3 \tilde{\phi}^2 \right) \delta \tilde{\phi}_k &= 0\\ \\
+    \displaystyle \frac{d^2 \tilde{\chi}_k}{d \tilde{t}^2} + \frac{3}{a} \frac{d a}{d \tilde{t}} \frac{d \tilde{\chi}_k}{d \tilde{t}} + \left( \frac{\tilde{k}^2}{a^2} + g^2 \tilde{\phi}^2 \right) \tilde{\chi}_k &= 0
     \end{cases}
 \end{equation}
 
 \noindent
-dónde además debemos agregar la segunda ecuación de Friedmann para poder modelar la expansión del universo que al tener en cuenta que $\displaystyle \rho = \frac{1}{2} \dot{\phi}^2 + V (\phi)$ y la presión $\displaystyle P = \frac{1}{2} \dot{\phi}^2 - V (\phi)$ se puede escribir ésta como
-
-
-\begin{equation}
-    \frac{\ddot{a}}{a} = - \frac{1}{3 m_p^2} \left[ \dot{\phi}^2 - V (\phi) \right]
-\end{equation}
-
-Para todas estas ecuaciones podemos tomar por válida y mirar sólo las bandas de resonancia que nos marcan la ecuación de Mathieu y las bandas de inestabilidades, pero nos falta establecer condiciones iniciales, por tanto consideremos que tenemos un período inflacionario regido por un potencial de la forma $V(\phi) = m^2 \phi^2$; entonces, pidiendo que \textit{reheating} empieza cuando termina inflación y que ésto ocurre cuando el parámetro $\epsilon \simeq 1$ o lo que es mismo cuando la energía cinética y la potencial son comparables, podemos encontrar condiciones iniciales para $\phi$ y para su velocidad que serían de la siguiente forma
-
-\begin{equation*}
-    \begin{split}
-        \frac{m_p^2}{16 \pi} \left( \frac{m^2 \phi_0}{\displaystyle \frac{1}{2} m^2 \phi_0^2} \right)^2 &\approx 1\\
-        \frac{m_p^2}{16 \pi} \cdot \frac{4}{\phi_0^2} &\approx 1\\
-        \phi_0^2 \approx \frac{m_p^2}{4 \pi}
-    \end{split}
-\end{equation*}
-
-\begin{equation}
-    \phi_0 \approx \frac{m_p}{2 \sqrt{\pi}}
-\end{equation}
-
-\begin{equation*}
-    \begin{split}
-        \frac{1}{2} \dot{\phi}^2_0 &\approx V(\phi_0)\\
-        \dot{\phi}^2_0 &\approx m^2 \phi_0^2
-    \end{split}
-\end{equation*}
-
-\begin{equation}
-    \dot{\phi}_0 \approx m \phi_0
-\end{equation}
-
-\noindent
-para el caso de las condiciones iniciales para la expansión del universo como $a$ está definida de forma comparativa por tanto podemos considerar $a_{reh} = 1$ y $\dot{a}_{reh}$ saldrá de ver la primera ecuación de Friedmann entonces tenemos
-
-\begin{equation*}
-    \begin{split}
-        \frac{\dot{a}_{reh}^2}{a_{reh}^2} &= \frac{1}{3 m_p^2} \left[ \frac{1}{2} \dot{\phi}^2_0 + V(\phi_0) \right]\\
-        \dot{a}_{reh}^2 &= \frac{a_{reh}^2}{3 m_p^2} \cdot m^2 \phi^2_0
-    \end{split}
-\end{equation*}
-
-\begin{equation}
-    \dot{a}_{reh} \approx \frac{a_{reh} m}{\sqrt{3} m_p} \phi_0
-\end{equation}
-
-A la hora de la incorporación al código nos encontramos con un problema con las unidades por lo que debemos adimensionalizar las ecuaciones, ésto lo podemos hacer tomando.
-
-\subsection{Modelo de $\lambda \phi^4$}
+siendo las primeras las ecuaciones para el background y las últimas para las perturbaciones
 
 Ahora las condiciones iniciales para $V(\phi) = \lambda \phi^4$ las podemos calcular a partir de la misma idea y nos van a quedar que para los campos tenemos:
 
@@ -488,3 +486,167 @@ para el caso de las condiciones iniciales para la expansión del universo como $
 \begin{equation}
     \dot{a}_{reh} \approx \frac{\lambda a_{reh}}{\sqrt{6} m_p} \phi_0^2    
 \end{equation}
+
+\subsubsection{Sin expansión}
+
+A partir de estas condiciones iniciales y el diagrama de Floquet que armamos en la subsección pasada podemos analizar cómo es la dinámica para distintos parámetros $(k,q)$ obteniendo la resonancias narrow y broad que podemos ver en las figuras \ref{fig:lphi4_narrow} y \ref{fig:lphi4_broad} que se obtenieron a partir de armar gráficos del estilo \ref{fig:mu_lphi4} y buscar el valor máximo para $k$. Nuevamente, estas figuras las podemos comparar con \textit{Parametric Resonance in the Early Universe - A Fitting Analysis} para poder ver que el código funciona correctamente.
+
+\begin{figure}[H]
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/lphi4_narrow.png}
+        \caption{narrow resonance: $q = 0.5$ y $k = 0.8277856966198477$}
+        \label{fig:lphi4_narrow}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/lphi4_broad.png}
+        \caption{broad resonance: $q = 5050$ y $k = 6.4686076615463275$}
+        \label{fig:lphi4_broad}
+    \end{subfigure}
+    \caption{evolución de las resonancias en el tiempo.}
+\end{figure}
+
+Ya con la evolución de las perturbaciones podemos graficar el número de ocupación del campo que lo podemos calcular a partir de 
+
+\begin{equation}
+    n_\chi (k) = \frac{1}{2 \Omega_\chi} \left( \left| \frac{d \chi_k}{dT} \right|^2 + \Omega^2_\chi \left| \chi_k \right|^2 \right)
+\end{equation}
+
+\noindent
+dónde $\displaystyle \Omega_\chi^2 (k, t) = \frac{k^2}{a^2} + g^2 \phi^2 (t)$ y depende del tipo de resonancia que tenemos se espera que el número de particulas oscile teniendo un comportamiento mayormente creciente (narrow resonance) o un número de partículas que oscile alrededor de una constante y que cada ciertos momentos tiene un \textit{burst} de partículas generando un salto abrupto en este valor. Ésto mismo lo podemos ver en las figuras \ref{fig:n_narrow} y \ref{fig:n_broad}, viendo que ocurre lo esperado.
+
+\begin{figure}[H]
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/n_narrow.png}
+        \caption{narrow resonance: $q = 0.5$ y $k = 0.8277856966198477$}
+        \label{fig:n_narrow}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/n_broad.png}
+        \caption{broad resonance: $q = 5050$ y $k = 6.4686076615463275$}
+        \label{fig:n_broad}
+    \end{subfigure}
+    \caption{evolución del número de partículas en el tiempo.}
+\end{figure}
+
+En este mismo código podemos armarnos un espectro de potencias que lo que hace es calcular el valor cuadrado de $\chi_k$ y podemos ver que este espectro para $q = 5050$ crece como $k^3$ por tanto para poder ver el espectro lineal y comparar si existe un pico para las frecuencias dónde tenemos una banda de resonancia. Ésto se puede ver en la figura \ref{fig:Pchi_lphi4} dónde vemos que es muy ruidoso el espectro de potencias y se puede deber a la resolución que se le asigna al espectro. También, en la figura \ref{fig:Pchi_lphi4_vart} podemos ver cómo evoluciona este espectro en el tiempo en el cual podemos ver que a medida que aumenta el tiempo el pico crece y el ruido se homogeniza.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/Nahue/Pchi.png}
+    \caption{espectro de potencias lineal para las fluctuaciones del campo hijo.}
+    \label{fig:Pchi_lphi4}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/Nahue/Pchi_vart.png}
+    \caption{espectro de potencias lineal para las fluctuaciones del campo hijo para distintos tiempos.}
+    \label{fig:Pchi_lphi4_vart}
+\end{figure}
+
+Finalmente, una vez que armamos el espectro de potencias, podemos armar el espectro de ondas gravitacionales que es el que se puede observar en la figura \ref{fig:GW_lphi4}, en la misma podemos ver que efectivamente en la banda de resonancia de Floquet se observa una amplificación en la densidad de energía, pero el label nos indica que lo que graficamos es $\Omega_{GW}$ aunque ésto es incorrecto ya que nos está dando mayor que $1$ lo que no tiene sentido físico, además le falta dividir por la densidad de energía crítica, pero sí debería decir $\displaystyle \frac{d \rho_{GW}}{d \ln k}$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/Nahue/lphi4_GW.png}
+    \caption{distribución en $k$ para la densidad de energía de ondas.}
+    \label{fig:GW_lphi4}
+\end{figure}
+
+El espectro de ondas gravitacionales lo podemos calcular a partir de las fluctuaciones del campo hijo a partir de la expresión derivada previamente que es de la forma
+
+\begin{equation}
+    \frac{d \rho_{\text{GW}}}{d \ln k} = \frac{k^3}{16 \pi^4 m_p^2 a^4} \int p^6 \sin^5 \theta ~ \left[ \left| I_{(c)} (k, p, \theta, \tau)  \right|^2 + \left| I_{(s)} (k, p, \theta, \tau)  \right|^2 \right] ~ dp ~ d\theta
+\end{equation}
+
+\noindent
+dónde $I_{(s)}$ e $I_{(c)}$ están definidas a partir de
+
+$$I_{(c)} (k, p, \theta, \tau) = \int_{\tau_{i}}^\tau  \frac{\cos (k\tau^\prime)}{a \left( \tau^\prime \right)} ~ \chi^{(c)}_{p} (\tau^\prime) ~ \chi_{k - p}^{(c)} (\tau^\prime) ~ d\tau^\prime$$
+
+$$I_{(s)} (k, p, \theta, \tau) = \int_{\tau_{i}}^\tau  \frac{\sin (k\tau^\prime)}{a \left( \tau^\prime \right)} ~ \chi^{(c)}_{p} (\tau^\prime) ~ \chi_{k - p}^{(c)} (\tau^\prime) ~ d\tau^\prime$$
+
+\noindent
+y los $\chi_k^{(c)}$ es la dinámica del campo hijo que conseguimos previamente.
+
+\subsubsection{Con expansión}
+
+Si agregamos expansión a lo que hicimos anteriormente, podemos graficar cómo es el background en la figura \ref{fig:lphi4_background} dónde vemos cómo evoluciona el inflatón (\ref{fig:inf_lphi4}), el parámetro de escala (\ref{fig:a_lphi4}) y el de Hubble (\ref{fig:H_lphi4}) en el tiempo. Podemos ver que efectivamente el inflatón decae en el tiempo por consecuencia de la expansión del universo, mientras que el universo se expande como se espera y el parámetro de Hubble decae abruptamente como conseciencia de la caída en la velocidad de expansión del universo que ocurre por el decaimiento del inflatón.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.6\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/inflaton_lphi4.png}
+        \caption{evolución del inflatón en el tiempo}
+        \label{fig:inf_lphi4}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/a_lphi4.png}
+        \caption{evolución del parámetro de escala en el tiempo}
+        \label{fig:a_lphi4}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/H_lphi4.png}
+        \caption{evolución del parámetro de Hubble en el tiempo}
+        \label{fig:H_lphi4}
+    \end{subfigure}
+    \caption{evolución del background para el modelo $\lambda \phi^4$.}
+    \label{fig:lphi4_background}
+\end{figure}
+
+Luego, se reutilizaron los valores de $k$ y $q$ para formar la narrow y broad resonance volviendo a obtener gráficos similares a los que obtuvimos sin expansión y por tanto consistentes a lo esperado. Éstos gráficos con las dinámicas se pueden observar en las figuras \ref{fig:lphi4_narrow_exp} y \ref{fig:lphi4_broad_exp}. Además, en las figuras \ref{fig:n_narrow_exp} y \ref{fig:n_broad_exp} podemos ver cómo es la evolución del número de ocupación en el tiempo, en estas figuras podemos notar un comportamiento que decae como consecuencia de la expansión del universo mientras podemos notar también un comportamiento no esperado si comparamos con una resonancia estocástica.
+
+\begin{figure}[H]
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/lphi4_narrow_exp.png}
+        \caption{narrow resonance: $q = 0.5$ y $k = 0.8277856966198477$}
+        \label{fig:lphi4_narrow_exp}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/lphi4_broad_exp.png}
+        \caption{broad resonance: $q = 5050$ y $k = 6.4686076615463275$}
+        \label{fig:lphi4_broad_exp}
+    \end{subfigure}
+    \caption{evolución de las resonancias en el tiempo.}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/n_narrow_exp.png}
+        \caption{narrow resonance: $q = 0.5$ y $k = 0.8277856966198477$}
+        \label{fig:n_narrow_exp}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.5\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{Imagenes/Nahue/n_broad_exp.png}
+        \caption{broad resonance: $q = 5050$ y $k = 6.4686076615463275$}
+        \label{fig:n_broad_exp}
+    \end{subfigure}
+    \caption{evolución del número de partículas en el tiempo.}
+\end{figure}
+
+Una vez estudiada la dinámica y el número de partículas para cada tipo de resonancia, podemos armar el espectro de potencias para el campo con expansión para $q = 5050$ y verlo en la figura \ref{fig:Pchi_lphi4_exp} y variando en el tiempo en \ref{fig:Pchi_lphi4_vart_exp}, dónde comparado al espectro sin expansión podemos notar que no existe el pico de resonancia, ésto dá a pensar que hay un error en el código pero aún no logro encontrarlo.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/Nahue/Pchi_exp.png}
+    \caption{espectro de potencias lineal para las fluctuaciones del campo hijo.}
+    \label{fig:Pchi_lphi4_exp}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/Nahue/Pchi_vart_exp.png}
+    \caption{espectro de potencias lineal para las fluctuaciones del campo hijo para distintos tiempos.}
+    \label{fig:Pchi_lphi4_vart_exp}
+\end{figure}

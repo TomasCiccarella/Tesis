@@ -47,12 +47,15 @@
 \contentsline {subsubsection}{\numberline {5.4.1}Modelo}{38}{subsubsection.5.4.1}%
 \contentsline {subsubsection}{\numberline {5.4.2}Condiciones iniciales}{39}{subsubsection.5.4.2}%
 \contentsline {subsubsection}{\numberline {5.4.3}Levantar los espectros}{40}{subsubsection.5.4.3}%
-\contentsline {section}{\numberline {6}Charlas con Nahue}{43}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Vacío de Bunch-Davies y la cuantización de las ondas en inflación}{43}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Función de transferencia de modos subhorizonte}{47}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Ecuación de Mathieu}{48}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Modelo de $m^2 \phi ^2$ con expansión}{51}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Modelo de $\lambda \phi ^4$}{52}{subsection.6.5}%
-\contentsline {section}{\numberline {7}RAFA 2025}{53}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Resumen RAFA}{53}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Poster}{54}{subsection.7.2}%
+\contentsline {subsection}{\numberline {5.5}$\lambda \phi ^4$ sin expansión}{43}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Charlas con Nahue}{49}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Vacío de Bunch-Davies y la cuantización de las ondas en inflación}{49}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Función de transferencia de modos subhorizonte}{53}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Ecuación de Mathieu}{54}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Floquet}{57}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Modelo de $\lambda \phi ^4$}{58}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Sin expansión}{59}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}Con expansión}{62}{subsubsection.6.5.2}%
+\contentsline {section}{\numberline {7}RAFA 2025}{65}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Resumen RAFA}{65}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Poster}{66}{subsection.7.2}%
