@@ -1,0 +1,45 @@
+Parameters: 
+Important parameters:
+
+                tMax       690                 
+                  dt       0.01                
+                   N       256                 
+             withGWs       true                
+             evolver       VV2                 
+           expansion       true                
+       tOutputInfreq       10                  
+             kCutOff       100                 
+                  t0       0                   
+     tOutputRareFreq       10                  
+                 kIR       0.1                 
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+           deltaKBin       1                   
+          PS_version       1                   
+     fixedBackground       false               
+     initial_momenta       -6.2969e30 0        
+             PS_type       1                   
+          outputfile       /home/nahue-ofi/Nextcloud/data_cosmolattice/q500/N256-kIR0.1-kcutoff100-tmax690/
+              lambda       9e-14               
+            baseSeed       1804611374          
+               input       ../src/models/parameter-files/lphi4_4.in
+       appendToFiles       false               
+     GWprojectorType       1                   
+                   q       500                 
+  initial_amplitudes       7.42675e18 0        
+         tBackupFreq       -1                  
+         tOutputVerb       1                   
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       false               
+    spectraVerbosity       0                   
+
+The simulation started on the d4 m2 y2026 around h19m26.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d6 m2 y2026 around h13m49.
+The timer indicates that it ran for 152681.022s.
+As it ran on 1 cores, this corresponds to 42.4114 core hours.

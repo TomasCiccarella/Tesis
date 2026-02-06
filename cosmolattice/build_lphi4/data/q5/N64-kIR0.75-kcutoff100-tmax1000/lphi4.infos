@@ -2,7 +2,7 @@ Parameters:
 Important parameters:
 
                 tMax       1000                
-                  dt       0.1                 
+                  dt       0.01                
                    N       64                  
              withGWs       true                
              evolver       VV2                 
@@ -10,7 +10,7 @@ Important parameters:
        tOutputInfreq       1                   
              kCutOff       100                 
                   t0       0                   
-     tOutputRareFreq       100                 
+     tOutputRareFreq       10                  
                  kIR       0.75                
          tOutputFreq       0.1                 
 
@@ -27,19 +27,17 @@ Other parameters:
              PS_type       1                   
           outputfile       ./data/q5/N64-kIR0.75-kcutoff100-tmax1000/
               lambda       9e-14               
-            baseSeed       2412391005          
+            baseSeed       1336891003          
                input       ../src/models/parameter-files/lphi4.in
        appendToFiles       false               
      GWprojectorType       1                   
                    q       5                   
   initial_amplitudes       7.42675e18 0        
          tBackupFreq       -1                  
-         tOutputVerb       10                  
+         tOutputVerb       1                   
      energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
              OccNumb       false               
     spectraVerbosity       0                   
 
-The simulation started on the d3 m2 y2026 around h20m58.
-It will be running on a grid of (1,1,1) cores.The simulation finished on the d3 m2 y2026 around h21m20.
-The timer indicates that it ran for 1314.886s.
-As it ran on 1 cores, this corresponds to 0.365246 core hours.
+The simulation started on the d4 m2 y2026 around h17m40.
+It will be running on a grid of (1,1,1) cores.

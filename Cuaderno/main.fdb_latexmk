@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1770054366.0518 "/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/main.tex" "main.pdf" "main" 1770054410.41466 0
+["pdflatex"] 1770169448.98855 "/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/main.tex" "main.pdf" "main" 1770169462.93871 0
   "/etc/texmf/web2c/texmf.cnf" 1754028040.36857 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/main.tex" 1769984667.93667 695 23573535ca84cb975730392107310b44 ""
+  "/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/main.tex" 1770168288.65882 691 aabf082f755cfb1e148ac05d00be6c49 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tctt0900.tfm" 1136768653 1536 bda3e6bf9784a4cc572c754e0c3eeb00 ""
@@ -355,7 +355,7 @@
   "Apunte 1.tex" 1756923532 85482 b3cae9e7e23891545da210f660499489 ""
   "Apunte 2.tex" 1769955030.57708 29288 55ee0c48290295b43e6b1cd64d545ed7 ""
   "Apunte 3.tex" 1758861795.09554 6571 a8f043054a91d83db4ece1501cbf38ea ""
-  "Apunte 4.tex" 1764559956.24741 26804 0b4c9b4c783f7d9f88047c468bbaf4d2 ""
+  "Apunte 4.tex" 1770169434.56985 26957 535be40aea39aedef44ff5c1d10cf486 ""
   "Caratula.tex" 1762512918.86364 683 6a64a7e5f1de89d0b0463fff237b4dca ""
   "CosmoLattice.tex" 1770054320.12615 23294 e9ace157ec40d23ce473ed779dec4f1e ""
   "GW_fuentes.png" 1757603138.22582 332353 d375868fc81272e299824c3f8701c76f ""
@@ -402,10 +402,10 @@
   "Nahue.tex" 1769998675.55993 40409 08e0fd36923e77b902853cdfc4fbbcbd ""
   "Portada.png" 1744512137.87731 982398 f367fcf69b808f2fc124990fa720436d ""
   "RAFA.tex" 1758854208.74749 2887 2e694a21cdb9b41c2027ae2b32d360a7 ""
-  "main.aux" 1770054409.60053 22049 139c414eca9ec31b1c331c2b75c3aaea "pdflatex"
-  "main.out" 1770054409.61453 14935 f15ca33f707e9e261ecdc27a6ccd7236 "pdflatex"
-  "main.tex" 1769984667.93667 695 23573535ca84cb975730392107310b44 ""
-  "main.toc" 1770054409.61641 6390 efc453d926d4e79caede3eb55edbde9c "pdflatex"
+  "main.aux" 1770169462.64693 22395 80b98b710e953718a1eb0795549a195b "pdflatex"
+  "main.out" 1770169462.65193 15697 247eed9c69a0d2a92b211c7adc29e132 "pdflatex"
+  "main.tex" 1770168288.65882 691 aabf082f755cfb1e148ac05d00be6c49 ""
+  "main.toc" 1770169462.65245 6654 6a6ea1fa4c48e0c707997dc895ca6747 "pdflatex"
   "poster.pdf" 1758032727.87745 1883826 fb44e609ae5ec4d3b81eced3647e8933 ""
   (generated)
   "main.aux"

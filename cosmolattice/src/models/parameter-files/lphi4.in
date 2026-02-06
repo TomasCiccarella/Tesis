@@ -1,8 +1,8 @@
 #Output
-outputfile = ./data/q5050/tlargo/
+outputfile = ./data/q5/N64-kIR0.75-kcutoff100-tmax1000/
 
 #Evolution
-expansion = false
+expansion = true
 evolver = VV2
 
 #Lattice
@@ -31,4 +31,4 @@ initial_momenta = -6.2969e30 0 # homogeneous amplitudes in GeV2
 
 #Model Parameters
 lambda = 9e-14
-q = 5050
+q = 5
