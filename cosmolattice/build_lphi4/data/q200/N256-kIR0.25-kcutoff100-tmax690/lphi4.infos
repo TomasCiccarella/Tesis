@@ -1,0 +1,43 @@
+Parameters: 
+Important parameters:
+
+                tMax       690                 
+                  dt       0.01                
+                   N       256                 
+             withGWs       true                
+             evolver       VV2                 
+           expansion       true                
+       tOutputInfreq       10                  
+             kCutOff       100                 
+                  t0       0                   
+     tOutputRareFreq       10                  
+                 kIR       0.25                
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+           deltaKBin       1                   
+          PS_version       1                   
+     fixedBackground       false               
+     initial_momenta       -6.2969e30 0        
+             PS_type       1                   
+          outputfile       /home/nahue-ofi/Nextcloud/data_cosmolattice/q200/N256-kIR0.25-kcutoff100-tmax690/
+              lambda       9e-14               
+            baseSeed       3562438995          
+               input       ../src/models/parameter-files/lphi4_3.in
+       appendToFiles       false               
+     GWprojectorType       1                   
+                   q       200                 
+  initial_amplitudes       7.42675e18 0        
+         tBackupFreq       -1                  
+         tOutputVerb       1                   
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       false               
+    spectraVerbosity       0                   
+
+The simulation started on the d6 m2 y2026 around h18m59.
+It will be running on a grid of (1,1,1) cores.
