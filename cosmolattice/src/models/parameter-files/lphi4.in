@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/q5/N64-kIR0.75-kcutoff100-tmax1000/
+outputfile = ./data/q5050/var_lambda/lambda_1e-13/
 
 #Evolution
 expansion = true
@@ -12,8 +12,8 @@ kIR = 0.75
 
 #Times
 tOutputFreq = 0.1
-tOutputInfreq = 1
-tMax = 1000
+tOutputInfreq = 10
+tMax = 690
 
 #Spectra options
 PS_type = 1
@@ -30,5 +30,5 @@ initial_amplitudes = 7.42675e18 0 # homogeneous amplitudes in GeV
 initial_momenta = -6.2969e30 0 # homogeneous amplitudes in GeV2
 
 #Model Parameters
-lambda = 9e-14
-q = 5
+lambda = 1e-13
+q = 5050
