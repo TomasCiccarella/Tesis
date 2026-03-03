@@ -1,0 +1,1 @@
+/usr/bin/c++   -DNOMPI -DNOPFFT -DNOFFTFLOAT  -DMODELTYPE=starobinsky -DMODELINCLUDE=models/starobinsky.h -DMODELLABEL=starobinsky -Ofast  -Wall -Wshadow  -rdynamic -Wl,--dependency-file=CMakeFiles/cosmolattice.dir/link.d CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o -o starobinsky  -lfftw3_threads -lfftw3

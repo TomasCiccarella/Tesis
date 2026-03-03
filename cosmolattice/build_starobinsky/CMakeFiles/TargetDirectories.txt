@@ -1,0 +1,4 @@
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_starobinsky/CMakeFiles/cosmolattice.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_starobinsky/CMakeFiles/clean-cmake.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_starobinsky/CMakeFiles/edit_cache.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_starobinsky/CMakeFiles/rebuild_cache.dir

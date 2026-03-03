@@ -1,0 +1,34 @@
+#Output
+outputfile = ./data/N256/
+
+#Evolution
+expansion = true
+evolver = VV2
+
+#Lattice
+N = 256
+dt = 0.01
+kIR = 0.75
+
+#Times
+tOutputFreq = 0.1
+tOutputInfreq = 10
+tMax = 100
+
+#Spectra options
+PS_type = 1
+PS_version = 1
+projectorType = 1
+
+#GWs
+GWprojectorType = 1
+withGWs = true
+
+#IC
+kCutOff = 100
+initial_amplitudes = 0.9402 0       # Homogeneous amplitudes in M_Pl
+initial_momenta = -5.357e-6 0      # Homogeneous momenta in M_Pl^2
+
+#Model Parameters
+alpha_star = 1e-10
+q = 5050

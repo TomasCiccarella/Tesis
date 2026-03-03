@@ -1,0 +1,43 @@
+Parameters: 
+Important parameters:
+
+                tMax       100                 
+                  dt       0.01                
+                   N       256                 
+             withGWs       true                
+             evolver       VV2                 
+           expansion       true                
+       tOutputInfreq       10                  
+             kCutOff       100                 
+                  t0       0                   
+     tOutputRareFreq       10                  
+                 kIR       0.75                
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+           deltaKBin       1                   
+          PS_version       1                   
+     fixedBackground       false               
+     initial_momenta       -5.357e-6 0         
+          alpha_star       1e-10               
+             PS_type       1                   
+          outputfile       ./data/N256/        
+            baseSeed       703395729           
+               input       ../src/models/parameter-files/starobinsky.in
+       appendToFiles       false               
+     GWprojectorType       1                   
+                   q       5050                
+  initial_amplitudes       0.9402 0            
+         tBackupFreq       -1                  
+         tOutputVerb       1                   
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       false               
+    spectraVerbosity       0                   
+
+The simulation started on the d3 m3 y2026 around h11m48.
+It will be running on a grid of (1,1,1) cores.
