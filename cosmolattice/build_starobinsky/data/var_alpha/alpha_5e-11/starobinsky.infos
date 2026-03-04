@@ -1,0 +1,45 @@
+Parameters: 
+Important parameters:
+
+                   N       64                  
+             evolver       VV2                 
+           expansion       true                
+                  dt       0.01                
+                tMax       100                 
+       tOutputInfreq       10                  
+             withGWs       true                
+             kCutOff       100                 
+                  t0       0                   
+     tOutputRareFreq       10                  
+                 kIR       0.75                
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+           deltaKBin       1                   
+     initial_momenta       -3.78814e-06 0      
+                   q       5e-09               
+       appendToFiles       false               
+     GWprojectorType       1                   
+     fixedBackground       false               
+          outputfile       ./data/var_alpha/alpha_5e-11/
+            baseSeed       3941990483          
+               input       ../src/models/parameter-files/starobinsky.in
+          alpha_star       5e-11               
+             PS_type       1                   
+          PS_version       1                   
+  initial_amplitudes       0.9402 0            
+         tBackupFreq       -1                  
+         tOutputVerb       1                   
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       false               
+    spectraVerbosity       0                   
+
+The simulation started on the d3 m3 y2026 around h24m16.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d3 m3 y2026 around h24m25.
+The timer indicates that it ran for 516.147s.
+As it ran on 1 cores, this corresponds to 0.143374 core hours.

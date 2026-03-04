@@ -3,38 +3,33 @@
 # Ruta al archivo de parámetros
 param_file="../src/models/parameter-files/starobinsky.in"
 
-# Valores de alpha_star y q
-alphas=(0.01 1 20 50 100)
-qs=(5050)
+# Valores de alpha_star a testear
+alphas=(1e-11 5e-11 1e-10 5e-10 1e-9)
+
+# Fijamos el régimen de resonancia (q / alpha_star) para mantener la estabilidad
+q_eff=100
 
 for alpha in "${alphas[@]}"
 do
-    for q in "${qs[@]}"
-    do
-        # 1. Definimos la carpeta exacta
-        output_folder="./data/var_alpha/alpha_${alpha}/"
+    # 1. Calculamos el q proporcional para no romper el dt
+    q=$(awk -v a="$alpha" -v qe="$q_eff" 'BEGIN {print a * qe}')
 
-        echo "=============================================="
-        echo "Ejecutando para alpha_star = $alpha, q = $q"
-        echo "Configurando output en: $output_folder"
-        echo "=============================================="
+    # 2. Calculamos el momento inicial físico exacto para este alpha
+    pi0=$(awk -v a="$alpha" 'BEGIN {print -sqrt(0.287 * a)}')
 
-        # 2. Creamos el directorio (mkdir -p crea toda la ruta si no existe)
-        mkdir -p "$output_folder"
+    output_folder="./data/var_alpha/alpha_${alpha}/"
+    
+    echo "=============================================="
+    echo "Ejecutando para alpha_star = $alpha"
+    echo "q ajustado = $q (Mantiene q_eff = $q_eff)"
+    echo "Momento inicial = $pi0"
+    echo "=============================================="
 
-        # 3. Modificamos el archivo .in
-        sed -i "s|^outputfile *= *.*|outputfile = $output_folder|" "$param_file"
+    mkdir -p "$output_folder"
 
-        # Modificamos alpha_star (¡Acá estaba el error!)
-        sed -i "s/^alpha_star *= *.*/alpha_star = $alpha/" "$param_file"
+    # 3. Sobrescribimos TODO desde la terminal
+    ./starobinsky input="$param_file" outputfile="$output_folder" alpha_star="$alpha" q="$q" initial_momenta="$pi0 0"
 
-        # Modificamos q
-        sed -i "s/^q *= *.*/q = $q/" "$param_file"
-
-        # 4. Ejecutamos CosmoLattice
-        ./starobinsky input="$param_file"
-
-        echo "✔️ Terminado."
-        echo ""
-    done
+    echo "✔️ Terminado."
+    echo ""
 done

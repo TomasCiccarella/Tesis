@@ -1,13 +1,13 @@
 Parameters: 
 Important parameters:
 
-                tMax       100                 
-                  dt       0.01                
                    N       64                  
-             withGWs       true                
              evolver       VV2                 
            expansion       true                
+                  dt       0.01                
+                tMax       100                 
        tOutputInfreq       10                  
+             withGWs       true                
              kCutOff       100                 
                   t0       0                   
      tOutputRareFreq       10                  
@@ -21,17 +21,17 @@ Other parameters:
        print_headers       false               
          hdf5Spectra       false               
            deltaKBin       1                   
-          PS_version       1                   
-     fixedBackground       false               
-     initial_momenta       -5.357e-6 0         
-          alpha_star       0.01                
-             PS_type       1                   
-          outputfile       ./data/var_alpha/alpha_0.01/
-            baseSeed       1043811716          
-               input       ../src/models/parameter-files/starobinsky.in
+     initial_momenta       -0.0535724 0        
+                   q       1                   
        appendToFiles       false               
      GWprojectorType       1                   
-                   q       5050                
+     fixedBackground       false               
+          outputfile       ./data/var_alpha/alpha_0.01/
+            baseSeed       974912328           
+               input       ../src/models/parameter-files/starobinsky.in
+          alpha_star       0.01                
+             PS_type       1                   
+          PS_version       1                   
   initial_amplitudes       0.9402 0            
          tBackupFreq       -1                  
          tOutputVerb       1                   
@@ -39,7 +39,7 @@ Other parameters:
              OccNumb       false               
     spectraVerbosity       0                   
 
-The simulation started on the d3 m3 y2026 around h11m1.
-It will be running on a grid of (1,1,1) cores.The simulation finished on the d3 m3 y2026 around h11m9.
-The timer indicates that it ran for 472.506s.
-As it ran on 1 cores, this corresponds to 0.131252 core hours.
+The simulation started on the d3 m3 y2026 around h23m5.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d3 m3 y2026 around h23m17.
+The timer indicates that it ran for 719.122s.
+As it ran on 1 cores, this corresponds to 0.199756 core hours.
