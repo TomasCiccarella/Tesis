@@ -40,4 +40,6 @@ Other parameters:
     spectraVerbosity       0                   
 
 The simulation started on the d3 m3 y2026 around h11m48.
-It will be running on a grid of (1,1,1) cores.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d3 m3 y2026 around h21m44.
+The timer indicates that it ran for 35958.809s.
+As it ran on 1 cores, this corresponds to 9.98856 core hours.
