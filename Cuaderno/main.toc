@@ -50,14 +50,15 @@
 \contentsline {subsubsection}{\numberline {5.4.2}Condiciones iniciales}{39}{subsubsection.5.4.2}%
 \contentsline {subsubsection}{\numberline {5.4.3}Levantar los espectros}{40}{subsubsection.5.4.3}%
 \contentsline {subsection}{\numberline {5.5}$\lambda \phi ^4$ sin expansión}{43}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Charlas con Nahue}{49}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Vacío de Bunch-Davies y la cuantización de las ondas en inflación}{49}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Función de transferencia de modos subhorizonte}{53}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Ecuación de Mathieu}{54}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Floquet}{57}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Modelo de $\lambda \phi ^4$}{58}{subsection.6.5}%
-\contentsline {subsubsection}{\numberline {6.5.1}Sin expansión}{59}{subsubsection.6.5.1}%
-\contentsline {subsubsection}{\numberline {6.5.2}Con expansión}{62}{subsubsection.6.5.2}%
-\contentsline {section}{\numberline {7}RAFA 2025}{65}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Resumen RAFA}{65}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Poster}{66}{subsection.7.2}%
+\contentsline {subsection}{\numberline {5.6}Modelo de Starobinsky}{49}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Charlas con Nahue}{52}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Vacío de Bunch-Davies y la cuantización de las ondas en inflación}{52}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Función de transferencia de modos subhorizonte}{55}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Ecuación de Mathieu}{56}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Floquet}{60}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Modelo de $\lambda \phi ^4$}{61}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Sin expansión}{62}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}Con expansión}{65}{subsubsection.6.5.2}%
+\contentsline {section}{\numberline {7}RAFA 2025}{68}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Resumen RAFA}{68}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Poster}{69}{subsection.7.2}%

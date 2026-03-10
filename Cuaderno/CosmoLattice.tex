@@ -582,3 +582,177 @@ Finalmente, lo último que podemos variar para ver cómo cambia la idea de compa
 \end{figure}
 
 En estos últimos espectros podemos notar que el pico de resonancia dónde se amplifica fuertemente el espectro, tenemos que dónde ocurre una narrow resonance ($q$ chicos) el pico casi no se nota y se homogeniza rápido el espectro, mientras que cuando ocurre broad resonance ($q$ grandes) el pico se nota amplificado y coincide con la posición esperada del pico. 
+
+\todo[inline]{Escribir sobre variaciones de $\lambda$}
+
+\subsection{Modelo de Starobinsky}
+
+El modelo de Starobinsky lo podemos pensar como el siguiente potencial:
+
+\begin{equation}
+    V(\phi) = \frac{3}{4} M^2 M^2_{Pl} \left[ 1 - \exp \left( - \sqrt{\frac{2}{3}} \frac{\phi}{M_{pl}} \right) \right]^2
+\end{equation}
+
+\noindent
+por tanto si queremos adimensionalizar este potencial vamos a tener que definir un $\tilde{\phi} = \phi/M_{pl}$ lo que hará que el potencial nos quede:
+
+\begin{equation}
+    V(\phi) = \frac{3}{4} M^2 M^2_{Pl} \left[ 1 - \exp \left( - \sqrt{\frac{2}{3}} \tilde{\phi} \right) \right]^2
+\end{equation}
+
+\noindent
+luego, nos falta adimensionalizar la amplitud del potencial para ello podemos notar que nuestra escala de energía típica es $M^2 M_{Pl}^2$ entonces podemos definir un potencial adimensional de la siguiente forma:
+
+\begin{equation}
+    \tilde{V} (\phi) = \frac{3}{4} \left[ 1 - \exp \left( - \sqrt{\frac{2}{3}} \tilde{\phi} \right) \right]^2
+\end{equation}
+
+Comparando con los archivos de CosmoLattice, ésto implica que vamos a necesitar tomar $f_* = M_{Pl}$ y $\omega_* = M$. Y con ello en mente, podemos armarnos nuestro \texttt{.h}, pero siguiendo la línea de \url{https://arxiv.org/pdf/2409.05615} vamos a definir dos parámetros $\kappa$ y $\gamma$ para variar en nuestro modelo (los llamo así para que no tenga problemas con las variables de CosmoLattice) tal que el potencial queda:
+
+\begin{equation}
+    \tilde{V} (\phi) = \kappa \left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right]^2
+\end{equation}
+
+\begin{infobox}[ForestGreen]{Calculos Auxiliares}
+    \begin{equation*}
+        \begin{split}
+            \tilde{V}^\prime \left( \tilde{\phi} \right) &= 2 \kappa \left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right] \cdot \left[ - \sqrt{\frac{2}{3 \gamma}} \exp \left( - \frac{2}{3 \gamma} \tilde{\phi} \right) \right]\\
+            \tilde{V}^\prime \left( \tilde{\phi} \right) &= - 2 \sqrt{\frac{2}{3 \gamma}} \kappa \left[ \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) - \exp \left( - 2 \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right]
+        \end{split}
+    \end{equation*}
+
+    \begin{equation*}
+        \begin{split}
+            V^{\prime \prime} \left( \tilde{\phi} \right) &= - 2 \sqrt{\frac{2}{3 \gamma}} \kappa \left[ - \sqrt{\frac{2}{3 \gamma}} \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) + 2 \sqrt{\frac{2}{3 \gamma}} \exp \left( - 2 \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right]\\
+            V^{\prime \prime} \left( \tilde{\phi} \right) &= \frac{4 \kappa}{3 \gamma} \left[ \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) - 2 \exp \left( - 2 \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right] 
+        \end{split}
+    \end{equation*}
+\end{infobox}
+
+\noindent
+con todo ésto, el \texttt{.h} queda:
+
+\begin{lstlisting}[style = cppStyle]
+#ifndef STAROBINSKY_H
+#define STAROBINSKY_H
+
+#include "CosmoInterface/cosmointerface.h"
+
+namespace TempLat
+{
+    struct ModelPars : public TempLat::DefaultModelPars {
+        static constexpr size_t NScalars = 2;
+        static constexpr size_t NPotTerms = 2;
+    };
+
+    #define MODELNAME starobinsky
+
+    template<class R>
+    using Model = MakeModel(R, ModelPars);
+
+    class MODELNAME : public Model<MODELNAME>
+    {
+    private:
+        double q, kappa, gamma;
+
+    public:
+        MODELNAME(ParameterParser& parser, RunParameters<double>& runPar, std::shared_ptr<MemoryToolBox> toolBox): 
+        Model<MODELNAME>(parser,runPar.getLatParams(), toolBox, runPar.dt, STRINGIFY(MODELLABEL))
+        {
+            /////////
+            // Independent parameters of the model
+            /////////
+            q = parser.get<double>("q");
+            kappa = parser.get<double>("kappa");
+            gamma = parser.get<double>("gamma");
+
+            /////////
+            // Initial homogeneous components of the fields
+            /////////
+            fldS0 = parser.get<double, 2>("initial_amplitudes");
+            piS0 = parser.get<double, 2>("initial_momenta", {0, 0});
+            
+            /////////
+            // Rescaling for program variables
+            /////////
+            alpha = 1.0; 
+            fStar = fldS0[0];
+            omegaStar = sqrt(kappa)*fStar;
+
+            setInitialPotentialAndMassesFromPotential();
+        }
+
+        /////////
+        // Program potential
+        /////////
+        auto potentialTerms(Tag<0>) // Inflaton potential energy
+        {
+            double k = sqrt(2.0 / (3.0 * gamma));
+            auto exp_term = exp(-k * fldS(0_c));
+            return kappa * pow<2>(1.0 - exp_term);
+        }
+
+        auto potentialTerms(Tag<1>) // Interaction energy
+        {
+            return 0.5 * (q / kappa) * pow<2>(fldS(0_c)) * pow<2>(fldS(1_c));
+        }
+   
+        /////////
+        // Derivatives of the program potential with respect fields
+        /////////
+        auto potDeriv(Tag<0>) // Derivative with respect to the inflaton
+        {
+            double k = sqrt(2.0 / (3.0 * gamma));
+            auto exp1 = exp(-k * fldS(0_c));
+            auto exp2 = exp(-2.0 * k * fldS(0_c));
+            
+            return 2.0 * kappa * k * (exp1 - exp2) + (q / kappa) * fldS(0_c) * pow<2>(fldS(1_c));
+        }
+
+        auto potDeriv(Tag<1>)  // Derivative with respect to the daughter field
+        {
+            return (q / kappa) * fldS(1_c) * pow<2>(fldS(0_c));
+        }
+   
+        /////////
+        // Second derivatives of the program potential with respect fields
+        /////////
+        auto potDeriv2(Tag<0>) // Second derivative with respect inflaton
+        {
+            double k = sqrt(2.0 / (3.0 * gamma));
+            auto exp1 = exp(-k * fldS(0_c));
+            auto exp2 = exp(-2.0 * k * fldS(0_c));
+            
+            return 2.0 * kappa * pow<2>(k) * (2.0 * exp2 - exp1) + (q / kappa) * pow<2>(fldS(1_c));
+        }
+
+        auto potDeriv2(Tag<1>) // Second derivative with respect daughter field
+        {
+            return (q / kappa) * pow<2>(fldS(0_c));
+        }
+    };
+}
+
+#endif //STAROBINSKY_H
+\end{lstlisting}
+
+Calculemos las condiciones iniciales para este potencial, para ello, veamos que la condición inicial del campo estará dada por pedir que el parámetro $\epsilon$ de slow-roll valga 1
+
+\begin{equation*}
+    \begin{split}
+        \epsilon &= 1\\
+        \frac{M_p^2}{2} \left[ \frac{\partial_\phi V(\phi)}{V(\phi)} \right]^2 &= 1\\
+        \frac{M_p^2}{2} \left[ \frac{\partial_{\phi} \tilde{\phi} \cdot \partial_{\tilde{\phi}} V(\tilde{\phi})}{V(\tilde{\phi})} \right]^2 &= 1\\
+        \frac{\colorcancel{red}{M_p^2}}{2} \left\{ \frac{1}{\colorcancel{red}{M_p}} \cdot \frac{- 2 \sqrt{\frac{2}{3 \gamma}} \colorcancel{ForestGreen}{\kappa} \left[ \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) - \exp \left( - 2 \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right]}{\colorcancel{ForestGreen}{\kappa} \left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right]^2} \right\}^2 &= 1\\
+        \left\{ \frac{- 2 \sqrt{\frac{2}{3 \gamma}} \colorcancel{violet}{\left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right]} \cdot \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right)}{\left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right]^{\colorcancel{violet}{2}}} \right\}^2 &= 2\\
+        \frac{4}{3 \gamma} \left[ \frac{\colorcancel{blue}{\exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right)}}{\colorcancel{blue}{\exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right)} \left[ \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) - 1 \right]} \right]^2 &= 2\\
+        \frac{1}{\left[ \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) - 1 \right]^2} &= \frac{3}{2} \gamma\\
+        \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) - 1 &= \sqrt{\frac{2}{3 \gamma}}\\
+        \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) &= \sqrt{\frac{2}{3 \gamma}} + 1\\
+        \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} &= \ln \left( \sqrt{\frac{2}{3 \gamma}} + 1 \right)\\
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    \tilde{\phi}_0 = \sqrt{\frac{3}{2} \gamma} \ln \left( \sqrt{\frac{2}{3 \gamma}} + 1 \right)
+\end{equation}
