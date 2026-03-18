@@ -1,0 +1,46 @@
+Parameters: 
+Important parameters:
+
+                  dt       0.01                
+                   N       64                  
+             evolver       VV2                 
+           expansion       true                
+     tOutputRareFreq       10                  
+                  t0       0                   
+                 kIR       0.75                
+       tOutputInfreq       10                  
+                tMax       100                 
+             withGWs       true                
+             kCutOff       100                 
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+           deltaKBin       1                   
+             OccNumb       false               
+    spectraVerbosity       0                   
+     initial_momenta       0.962714 0          
+                   q       0.05                
+       appendToFiles       false               
+     GWprojectorType       1                   
+  initial_amplitudes       0.127388 0          
+               gamma       1e-3                
+         tBackupFreq       -1                  
+               kappa       0.5                 
+          outputfile       ./data/var_params/gamma_1e-3_kappa_0.5/
+            baseSeed       1164663757          
+               input       ../src/models/parameter-files/starobinsky.in
+     fixedBackground       false               
+             PS_type       1                   
+          PS_version       1                   
+         tOutputVerb       1                   
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+
+The simulation started on the d13 m3 y2026 around h12m20.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d13 m3 y2026 around h12m30.
+The timer indicates that it ran for 611.148s.
+As it ran on 1 cores, this corresponds to 0.169763 core hours.

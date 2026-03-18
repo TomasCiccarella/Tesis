@@ -741,18 +741,35 @@ Calculemos las condiciones iniciales para este potencial, para ello, veamos que 
 \begin{equation*}
     \begin{split}
         \epsilon &= 1\\
-        \frac{M_p^2}{2} \left[ \frac{\partial_\phi V(\phi)}{V(\phi)} \right]^2 &= 1\\
-        \frac{M_p^2}{2} \left[ \frac{\partial_{\phi} \tilde{\phi} \cdot \partial_{\tilde{\phi}} V(\tilde{\phi})}{V(\tilde{\phi})} \right]^2 &= 1\\
-        \frac{\colorcancel{red}{M_p^2}}{2} \left\{ \frac{1}{\colorcancel{red}{M_p}} \cdot \frac{- 2 \sqrt{\frac{2}{3 \gamma}} \colorcancel{ForestGreen}{\kappa} \left[ \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) - \exp \left( - 2 \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right]}{\colorcancel{ForestGreen}{\kappa} \left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right]^2} \right\}^2 &= 1\\
-        \left\{ \frac{- 2 \sqrt{\frac{2}{3 \gamma}} \colorcancel{violet}{\left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right]} \cdot \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right)}{\left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) \right]^{\colorcancel{violet}{2}}} \right\}^2 &= 2\\
-        \frac{4}{3 \gamma} \left[ \frac{\colorcancel{blue}{\exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right)}}{\colorcancel{blue}{\exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right)} \left[ \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) - 1 \right]} \right]^2 &= 2\\
-        \frac{1}{\left[ \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) - 1 \right]^2} &= \frac{3}{2} \gamma\\
-        \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) - 1 &= \sqrt{\frac{2}{3 \gamma}}\\
-        \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} \right) &= \sqrt{\frac{2}{3 \gamma}} + 1\\
-        \sqrt{\frac{2}{3 \gamma}} \tilde{\phi} &= \ln \left( \sqrt{\frac{2}{3 \gamma}} + 1 \right)\\
+        \frac{M_p^2}{2} \left[ \frac{\partial_\phi V(\phi_0)}{V(\phi_0)} \right]^2 &= 1\\
+        \frac{M_p^2}{2} \left[ \frac{\partial_{\phi} \tilde{\phi} \cdot \partial_{\tilde{\phi}} V(\tilde{\phi}_0)}{V(\tilde{\phi}_0)} \right]^2 &= 1\\
+        \frac{\colorcancel{red}{M_p^2}}{2} \left\{ \frac{1}{\colorcancel{red}{M_p}} \cdot \frac{- 2 \sqrt{\frac{2}{3 \gamma}} \colorcancel{ForestGreen}{\kappa} \left[ \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right) - \exp \left( - 2 \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right) \right]}{\colorcancel{ForestGreen}{\kappa} \left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right) \right]^2} \right\}^2 &= 1\\
+        \left\{ \frac{- 2 \sqrt{\frac{2}{3 \gamma}} \colorcancel{violet}{\left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right) \right]} \cdot \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right)}{\left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right) \right]^{\colorcancel{violet}{2}}} \right\}^2 &= 2\\
+        \frac{4}{3 \gamma} \left[ \frac{\colorcancel{blue}{\exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right)}}{\colorcancel{blue}{\exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right)} \left[ \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right) - 1 \right]} \right]^2 &= 2\\
+        \frac{1}{\left[ \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right) - 1 \right]^2} &= \frac{3}{2} \gamma\\
+        \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right) - 1 &= \sqrt{\frac{2}{3 \gamma}}\\
+        \exp \left( \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right) &= \sqrt{\frac{2}{3 \gamma}} + 1\\
+        \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 &= \ln \left( \sqrt{\frac{2}{3 \gamma}} + 1 \right)
     \end{split}
 \end{equation*}
 
 \begin{equation}
     \tilde{\phi}_0 = \sqrt{\frac{3}{2} \gamma} \ln \left( \sqrt{\frac{2}{3 \gamma}} + 1 \right)
+\end{equation}
+
+La velocidad inicial del campo inflatón la podemos plantear a partir de pedir que la energía cinética inicial sea igual a la energía potencial del campo:
+
+\begin{equation*}
+    \begin{split}
+        \frac{1}{2} \dot{\tilde{\phi}}^2_0 &= V(\tilde{\phi}_0)\\
+        \dot{\tilde{\phi}}_0 &= \sqrt{2 V(\tilde{\phi}_0)}\\
+        \dot{\tilde{\phi}}_0 &= \sqrt{2 \kappa \left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right) \right]^2}\\
+        \dot{\tilde{\phi}}_0 &= \sqrt{2 \kappa} \left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \tilde{\phi}_0 \right) \right]\\ 
+        \dot{\tilde{\phi}}_0 &= \sqrt{2 \kappa} \left[ 1 - \exp \left( - \sqrt{\frac{2}{3 \gamma}} \cdot \sqrt{\frac{3}{2} \gamma} \ln \left( \sqrt{\frac{2}{3 \gamma}} + 1 \right) \right) \right]\\ 
+        \dot{\tilde{\phi}}_0 &= \sqrt{2 \kappa} \left[ 1 - \exp \left( - \ln \left( \sqrt{\frac{2}{3 \gamma}} + 1 \right) \right) \right]
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    \dot{\tilde{\phi}}_0 = \sqrt{2 \kappa} \left[ 1 - \left( \sqrt{\frac{2}{3 \gamma}} + 1 \right)^{-1} \right]
 \end{equation}
