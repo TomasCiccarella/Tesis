@@ -33,21 +33,23 @@ namespace TempLat
             kappa = parser.get<double>("kappa");
 
             /////////
-            // Rescaling for program variables
-            /////////
-            alpha = 1.0; 
-            fStar = fldS0[0];
-            omegaStar = kappa * fStar;
-
-            /////////
             // Initial homogeneous components of the fields (Input in physical units)
             /////////
             auto amp_GeV = parser.get<double, 2>("initial_amplitudes_GeV");
             auto mom_GeV2 = parser.get<double, 2>("initial_momenta_GeV2", {0.0, 0.0});
 
+            /////////
+            // Rescaling for program variables
+            /////////
+            alpha = 1.0; 
+            fStar = amp_GeV[0]; // Ahora sí usamos el valor que acabamos de leer
+            omegaStar = kappa * fStar;
+
+            /////////
             // Adimensionalización interna
-            fldS0 = {amp_GeV[0], amp_GeV[1]};
-            piS0 = {mom_GeV2[0], mom_GeV2[1]};
+            /////////
+            fldS0 = {amp_GeV[0] / fStar, amp_GeV[1] / fStar};
+            piS0 = {mom_GeV2[0] / (fStar * omegaStar), mom_GeV2[1] / (fStar * omegaStar)};
 
             setInitialPotentialAndMassesFromPotential();
         }
