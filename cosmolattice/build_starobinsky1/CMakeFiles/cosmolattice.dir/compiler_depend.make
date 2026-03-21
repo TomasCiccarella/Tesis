@@ -716,8 +716,6 @@ starobinsky1: /lib/x86_64-linux-gnu/libc.so.6 \
   /usr/lib/x86_64-linux-gnu/crti.o \
   /usr/lib/x86_64-linux-gnu/crtn.o \
   /usr/lib/x86_64-linux-gnu/libc.so \
-  /usr/lib/x86_64-linux-gnu/libfftw3.so \
-  /usr/lib/x86_64-linux-gnu/libfftw3_threads.so \
   /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 \
   /usr/lib/x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o \
@@ -727,10 +725,14 @@ starobinsky1: /lib/x86_64-linux-gnu/libc.so.6 \
   /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
   /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
+  /usr/lib/x86_64-linux-gnu/libfftw3.so \
+  /usr/lib/x86_64-linux-gnu/libfftw3_threads.so \
   CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o
 
 
 CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o:
+
+/usr/lib/x86_64-linux-gnu/libfftw3.so:
 
 /usr/lib/x86_64-linux-gnu/libc_nonshared.a:
 
@@ -741,8 +743,6 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o:
 /usr/lib/gcc/x86_64-linux-gnu/13/crtfastmath.o:
 
 /usr/lib/x86_64-linux-gnu/libm.so:
-
-/usr/lib/x86_64-linux-gnu/libfftw3.so:
 
 /usr/lib/x86_64-linux-gnu/crtn.o:
 

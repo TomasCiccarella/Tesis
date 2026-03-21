@@ -3,8 +3,8 @@ starobinsky1: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o \
   CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libfftw3_threads.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libfftw3.so \
+  /usr/lib/x86_64-linux-gnu/libfftw3_threads.so \
+  /usr/lib/x86_64-linux-gnu/libfftw3.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
@@ -42,9 +42,9 @@ starobinsky1: \
 
 CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libfftw3_threads.so:
+/usr/lib/x86_64-linux-gnu/libfftw3_threads.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libfftw3.so:
+/usr/lib/x86_64-linux-gnu/libfftw3.so:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so:
 

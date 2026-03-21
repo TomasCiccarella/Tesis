@@ -61,7 +61,9 @@ namespace TempLat
         {
             double k = sqrt(2.0 / 3.0);
             auto exp_term = exp(-k * fldS(0_c) * (fStar/MPl_phys));
-            return 0.75 * pow<4>(MPl_phys/fStar) * pow<2>(kappa) * pow<2>(1.0 - exp_term);
+            
+            // Corrección: Se elimina pow<2>(kappa) porque se cancela en la adimensionalización
+            return 0.75 * pow<4>(MPl_phys/fStar) * pow<2>(1.0 - exp_term);
         }
 
         auto potentialTerms(Tag<1>) // Interaction energy
@@ -78,7 +80,8 @@ namespace TempLat
             auto exp1 = exp(-k * fldS(0_c) * (fStar/MPl_phys));
             auto exp2 = exp(-2.0 * k * fldS(0_c) * (fStar/MPl_phys));
             
-            return 1.5 * pow<4>(MPl_phys/fStar) * pow<2>(kappa) * k * (exp1 - exp2) + pow<2>(q / kappa) * fldS(0_c) * pow<2>(fldS(1_c));
+            // Corrección: pow<3> por la regla de la cadena, y sin kappa
+            return 1.5 * pow<3>(MPl_phys/fStar) * k * (exp1 - exp2) + pow<2>(q / kappa) * fldS(0_c) * pow<2>(fldS(1_c));
         }
 
         auto potDeriv(Tag<1>)  // Derivative with respect to the daughter field
@@ -95,7 +98,8 @@ namespace TempLat
             auto exp1 = exp(-k * fldS(0_c) * (fStar/MPl_phys));
             auto exp2 = exp(-2.0 * k * fldS(0_c) * (fStar/MPl_phys));
             
-            return 1.5 * pow<4>(MPl_phys/fStar) * pow<2>(kappa) * pow<2>(k) * (2.0 * exp2 - exp1) + pow<2>(q / kappa) * pow<2>(fldS(1_c));
+            // Corrección: pow<2> por la doble regla de la cadena, y sin kappa
+            return 1.5 * pow<2>(MPl_phys/fStar) * pow<2>(k) * (2.0 * exp2 - exp1) + pow<2>(q / kappa) * pow<2>(fldS(1_c));
         }
 
         auto potDeriv2(Tag<1>) // Second derivative with respect daughter field

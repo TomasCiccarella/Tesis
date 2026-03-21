@@ -25,13 +25,13 @@ Other parameters:
      fixedBackground       false               
              PS_type       1                   
           outputfile       ./data/prueba3/     
-            baseSeed       2602744829          
+            baseSeed       2139107530          
                input       ../src/models/parameter-files/starobinsky.in
        appendToFiles       false               
      GWprojectorType       1                   
-                   q       5e-6                
+                   q       1e-6                
 initial_amplitudes_GeV       1.78e18 0           
-initial_momenta_GeV2       -3.769e34 0         
+initial_momenta_GeV2       -2.17e31 0          
                kappa       1e-6                
          tBackupFreq       -1                  
          tOutputVerb       0.1                 
@@ -39,7 +39,7 @@ initial_momenta_GeV2       -3.769e34 0
              OccNumb       false               
     spectraVerbosity       0                   
 
-The simulation started on the d17 m3 y2026 around h1m8.
-It will be running on a grid of (1,1,1) cores.The simulation finished on the d17 m3 y2026 around h2m42.
-The timer indicates that it ran for 5669.696s.
-As it ran on 1 cores, this corresponds to 1.57492 core hours.
+The simulation started on the d20 m3 y2026 around h17m50.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d20 m3 y2026 around h23m38.
+The timer indicates that it ran for 20903.709s.
+As it ran on 1 cores, this corresponds to 5.80659 core hours.

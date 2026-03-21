@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/prueba/
+outputfile = ./data/prueba_recal/
 
 #Evolution
 expansion = true
@@ -26,9 +26,9 @@ withGWs = true
 
 #IC
 kCutOff = 100
-initial_amplitudes_GeV = 1.78e18 0
-initial_momenta_GeV2 = -3.769e34 0
+initial_amplitudes = 8.92e18 0
+initial_momenta = -4.11e12 0
 
 #Model Parameters
 kappa = 1e-6
-q = 1e-6
+g = 1e-6
