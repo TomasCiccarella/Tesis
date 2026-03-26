@@ -1,0 +1,43 @@
+Parameters: 
+Important parameters:
+
+                tMax       200                 
+                  dt       0.001               
+                   N       64                  
+             withGWs       true                
+             evolver       VV2                 
+           expansion       true                
+       tOutputInfreq       20                  
+             kCutOff       100                 
+                  t0       0                   
+     tOutputRareFreq       1                   
+                 kIR       0.1                 
+         tOutputFreq       0.5                 
+
+
+Other parameters:
+
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+           deltaKBin       1                   
+          PS_version       1                   
+     fixedBackground       false               
+     initial_momenta       -0.337 0.0          
+             PS_type       1                   
+          outputfile       ./data/floquet/     
+            baseSeed       3168846577          
+               input       ../src/models/parameter-files/starobinsky.in
+       appendToFiles       false               
+     GWprojectorType       1                   
+    spectraVerbosity       0                   
+             OccNumb       true                
+  initial_amplitudes       0.731 0.0           
+         tBackupFreq       -1                  
+               kappa       1e-6                
+                   g       4e-5                
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+         tOutputVerb       0.1                 
+
+The simulation started on the d26 m3 y2026 around h10m0.
+It will be running on a grid of (1,1,1) cores.

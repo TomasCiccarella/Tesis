@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/prueba_recal/
+outputfile = ./data/floquet/
 
 #Evolution
 expansion = true
@@ -8,12 +8,12 @@ evolver = VV2
 #Lattice
 N = 64
 dt = 0.001
-kIR = 0.75
+kIR = 0.1
 
 #Times
-tOutputFreq = 0.1
-tOutputInfreq = 10
-tMax = 100
+tOutputFreq = 0.5
+tOutputInfreq = 20
+tMax = 200
 
 #Spectra options
 PS_type = 1
@@ -23,12 +23,13 @@ projectorType = 1
 #GWs
 GWprojectorType = 1
 withGWs = true
+OccNumb = true
 
 #IC
 kCutOff = 100
-initial_amplitudes = 8.92e18 0
-initial_momenta = -4.11e12 0
+initial_amplitudes = 0.731 0.0
+initial_momenta = -0.337 0.0
 
 #Model Parameters
 kappa = 1e-6
-g = 1e-6
+g = 4e-5

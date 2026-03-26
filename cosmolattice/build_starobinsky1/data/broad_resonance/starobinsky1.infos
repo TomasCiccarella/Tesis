@@ -1,0 +1,45 @@
+Parameters: 
+Important parameters:
+
+                tMax       300                 
+                  dt       0.001               
+                   N       64                  
+             withGWs       true                
+             evolver       VV2                 
+           expansion       true                
+       tOutputInfreq       50                  
+             kCutOff       12                  
+                  t0       0                   
+     tOutputRareFreq       1                   
+                 kIR       0.5                 
+         tOutputFreq       2.0                 
+
+
+Other parameters:
+
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+           deltaKBin       1                   
+          PS_version       1                   
+     fixedBackground       false               
+     initial_momenta       -0.272 0.0          
+             PS_type       1                   
+          outputfile       ./data/broad_resonance/
+            baseSeed       2196749155          
+               input       ../src/models/parameter-files/starobinsky.in
+    spectraVerbosity       0                   
+             OccNumb       true                
+       appendToFiles       false               
+     GWprojectorType       1                   
+  initial_amplitudes       3.663 0.0           
+         tBackupFreq       -1                  
+               kappa       1e-6                
+                   g       1e-5                
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+         tOutputVerb       0.1                 
+
+The simulation started on the d23 m3 y2026 around h12m20.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d23 m3 y2026 around h17m14.
+The timer indicates that it ran for 17610.982s.
+As it ran on 1 cores, this corresponds to 4.89194 core hours.
