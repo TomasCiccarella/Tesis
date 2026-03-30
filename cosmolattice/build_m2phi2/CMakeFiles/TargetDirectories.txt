@@ -1,4 +1,4 @@
-/home/tomy/Desktop/UBA/Tesis/cosmolattice/build_m2phi2/CMakeFiles/cosmolattice.dir
-/home/tomy/Desktop/UBA/Tesis/cosmolattice/build_m2phi2/CMakeFiles/clean-cmake.dir
-/home/tomy/Desktop/UBA/Tesis/cosmolattice/build_m2phi2/CMakeFiles/edit_cache.dir
-/home/tomy/Desktop/UBA/Tesis/cosmolattice/build_m2phi2/CMakeFiles/rebuild_cache.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_m2phi2/CMakeFiles/cosmolattice.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_m2phi2/CMakeFiles/clean-cmake.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_m2phi2/CMakeFiles/edit_cache.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_m2phi2/CMakeFiles/rebuild_cache.dir
