@@ -1,0 +1,46 @@
+Parameters: 
+Important parameters:
+
+             kCutOff       18                  
+                tMax       100                 
+                  dt       0.003               
+                   N       128                 
+             withGWs       true                
+             evolver       VV2                 
+     tOutputRareFreq       10                  
+           expansion       true                
+                 kIR       3                   
+       tOutputInfreq       3                   
+                  t0       0                   
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+          PS_version       1                   
+             PS_type       1                   
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+     fixedBackground       false               
+     initial_momenta       -5.25164e31 0       
+         tBackupFreq       -1                  
+          outputfile       ./data/def/         
+            baseSeed       1836250574          
+               input       ../src/models/parameter-files/starobinsky3.in
+             Lambda4       1.7966e65           
+                   q       4e4                 
+       appendToFiles       false               
+     GWprojectorType       1                   
+  initial_amplitudes       3.22088e18 0        
+         tOutputVerb       0.3                 
+                   M       2.435e19            
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       true                
+    spectraVerbosity       0                   
+           deltaKBin       1                   
+
+The simulation started on the d30 m3 y2026 around h18m46.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d30 m3 y2026 around h23m9.
+The timer indicates that it ran for 15752.215s.
+As it ran on 1 cores, this corresponds to 4.37562 core hours.

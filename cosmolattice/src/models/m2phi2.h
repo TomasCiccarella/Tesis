@@ -18,25 +18,27 @@ namespace TempLat
     class MODELNAME : public Model<MODELNAME>
     {
     private:
-        double g, m, q;
+        double g, m, q, phii;
         
     public:
         MODELNAME(ParameterParser& parser, RunParameters<double>& runPar, std::shared_ptr<MemoryToolBox> toolBox) : 
             Model<MODELNAME>(parser, runPar.getLatParams(), toolBox, runPar.dt, STRINGIFY(MODELLABEL))
         {
-            // Parámetros del modelo
-            m = parser.get<double>("m");
-            q = parser.get<double>("q");
-            g = sqrt(q) * m;
 
             // Condiciones iniciales
             fldS0 = parser.get<double, 2>("initial_amplitudes");
             piS0 = parser.get<double, 2>("initial_momenta", {0, 0});
+            phii = fldS0[0];
+            
+            // Parámetros del modelo
+            m = parser.get<double>("m");
+            q = parser.get<double>("q");
+            g = sqrt(q) * m / phii;
             
             // Rescaling para variables del programa
             alpha = 1;
-            fStar = fldS0[0];
-            omegaStar = m * fStar;
+            fStar = phii;
+            omegaStar = m;
 
             setInitialPotentialAndMassesFromPotential();
         }
@@ -63,7 +65,7 @@ namespace TempLat
             return q * fldS(1_c) * pow<2>(fldS(0_c));
         }
 
-        // Derivadas segundas del potencial (CORREGIDAS)
+        // Derivadas segundas del potencial
         auto potDeriv2(Tag<0>) // Respecto a φ dos veces
         {
             return 1.0 + q * pow<2>(fldS(1_c));

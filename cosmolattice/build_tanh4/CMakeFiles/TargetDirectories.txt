@@ -1,0 +1,4 @@
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_tanh4/CMakeFiles/cosmolattice.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_tanh4/CMakeFiles/clean-cmake.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_tanh4/CMakeFiles/edit_cache.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_tanh4/CMakeFiles/rebuild_cache.dir

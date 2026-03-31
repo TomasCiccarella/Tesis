@@ -1,19 +1,20 @@
 #Output
-outputfile = ./data/
+outputfile = ./data/def2/
 
 #Evolution
 expansion = true
 evolver = VV2
 
 #Lattice
-N = 32
-dt = 5e-5
-kIR = 0.2
+N = 128
+dt = 0.003
+kIR = 3
 
 #Times
-tOutputFreq = 1
-tOutputInfreq = 1
-tMax = 200
+tOutputFreq = 0.1
+tOutputInfreq = 3
+tOutputRareFreq = 10
+tMax = 100
 baseSeed = 4356597
 
 #Spectra options
@@ -23,12 +24,13 @@ PS_version = 1
 #GWs
 GWprojectorType = 1
 withGWs = true
+OccNumb = true
 
 #IC
-kCutOff = 4
-initial_amplitudes = 5.6964e18 0  # homogeneous amplitudes in GeV
-initial_momenta = -4.86735e30 0   # homogeneous amplitudes in GeV2
+kCutOff = 18
+initial_amplitudes = 3.44e18 0  # homogeneous amplitudes in GeV
+initial_momenta = -2.90e31 0 # homogeneous amplitudes in GeV2
 
 #Model Parameters
-m = 1e-6 
-q = 1e6
+m = 1.46e13
+q = 4e4

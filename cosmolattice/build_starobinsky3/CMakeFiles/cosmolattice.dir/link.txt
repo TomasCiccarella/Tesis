@@ -1,0 +1,1 @@
+/usr/bin/c++   -DNOMPI -DNOPFFT -DNOFFTFLOAT  -DMODELTYPE=starobinsky3 -DMODELINCLUDE=models/starobinsky3.h -DMODELLABEL=starobinsky3 -Ofast  -Wall -Wshadow  -Wl,--dependency-file=CMakeFiles/cosmolattice.dir/link.d CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o -o starobinsky3  /usr/lib/x86_64-linux-gnu/libfftw3_threads.so /usr/lib/x86_64-linux-gnu/libfftw3.so

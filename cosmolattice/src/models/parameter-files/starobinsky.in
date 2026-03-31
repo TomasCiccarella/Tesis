@@ -1,14 +1,14 @@
 #Output
-outputfile = ./data/floquet/
+outputfile = ./data/
 
 #Evolution
 expansion = true
 evolver = VV2
 
 #Lattice
-N = 64
-dt = 0.001
-kIR = 0.1
+N = 32
+dt = 0.01
+kIR = 0.75
 
 #Times
 tOutputFreq = 0.5

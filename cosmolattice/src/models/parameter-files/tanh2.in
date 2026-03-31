@@ -1,12 +1,12 @@
 #Output
-outputfile = ./
+outputfile = ./data/def/
 
 #Evolution
 expansion = true
 evolver = VV2
 
 #Lattice
-N = 64
+N = 128
 dt = 0.003
 kIR = 3
 
@@ -14,7 +14,7 @@ kIR = 3
 tOutputFreq = 0.1
 tOutputInfreq = 3
 tOutputRareFreq = 10
-tMax = 300
+tMax = 100
 
 #IC
 kCutOff = 18
@@ -28,4 +28,5 @@ q = 4e4
 
 #GWs
 GWprojectorType = 1
-withGWs=false
+withGWs=true
+OccNumb = true

@@ -1,0 +1,43 @@
+Parameters: 
+Important parameters:
+
+                tMax       900                 
+                  dt       0.001               
+                   N       64                  
+             withGWs       true                
+             evolver       VV2                 
+           expansion       true                
+     tOutputRareFreq       10                  
+                 kIR       3                   
+       tOutputInfreq       3                   
+                  t0       0                   
+             kCutOff       18                  
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+           deltaKBin       1                   
+            baseSeed       4356597             
+          outputfile       ./data/def/         
+     fixedBackground       false               
+     initial_momenta       -2.90e31 0          
+                   m       1.46e13             
+         tBackupFreq       -1                  
+             PS_type       1                   
+               input       ../src/models/parameter-files/m2phi2.in
+          PS_version       1                   
+       appendToFiles       false               
+     GWprojectorType       1                   
+                   q       4e4                 
+  initial_amplitudes       3.44e18 0           
+         tOutputVerb       0.1                 
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       true                
+    spectraVerbosity       0                   
+
+The simulation started on the d30 m3 y2026 around h3m50.
+It will be running on a grid of (1,1,1) cores.

@@ -1,0 +1,1 @@
+/usr/bin/c++   -DNOMPI -DNOPFFT -DNOFFTFLOAT  -DMODELTYPE=tanh4 -DMODELINCLUDE=models/tanh4.h -DMODELLABEL=tanh4 -Ofast  -Wall -Wshadow  -Wl,--dependency-file=CMakeFiles/cosmolattice.dir/link.d CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o -o tanh4  /usr/lib/x86_64-linux-gnu/libfftw3_threads.so /usr/lib/x86_64-linux-gnu/libfftw3.so

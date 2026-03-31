@@ -19,8 +19,7 @@ namespace TempLat
     {
     private:
         // Variables físicas del modelo
-        double q, kappa;
-        double MPl_phys = 1.22e19;
+        double q, g, M, mu, phii;
 
     public:
         MODELNAME(ParameterParser& parser, RunParameters<double>& runPar, std::shared_ptr<MemoryToolBox> toolBox): 
@@ -30,26 +29,23 @@ namespace TempLat
             // Independent parameters of the model
             /////////
             q = parser.get<double>("q");
-            kappa = parser.get<double>("kappa");
-
+            M = parser.get<double>("M");
+            mu = parser.get<double>("mu");
+            g = sqrt(q)*M;
+            
             /////////
             // Initial homogeneous components of the fields (Input in physical units)
             /////////
-            auto amp_GeV = parser.get<double, 2>("initial_amplitudes_GeV");
-            auto mom_GeV2 = parser.get<double, 2>("initial_momenta_GeV2", {0.0, 0.0});
+            fldS0 = parser.get<double, 2>("initial_amplitudes");
+            piS0 = parser.get<double, 2>("initial_momenta", {0, 0});
 
             /////////
             // Rescaling for program variables
             /////////
+            phii = fldS0[0];
             alpha = 1.0; 
-            fStar = amp_GeV[0]; // Ahora sí usamos el valor que acabamos de leer
-            omegaStar = kappa * fStar;
-
-            /////////
-            // Adimensionalización interna
-            /////////
-            fldS0 = {amp_GeV[0] / fStar, amp_GeV[1] / fStar};
-            piS0 = {mom_GeV2[0] / (fStar * omegaStar), mom_GeV2[1] / (fStar * omegaStar)};
+            fStar = phii;
+            omegaStar = M;
 
             setInitialPotentialAndMassesFromPotential();
         }
@@ -59,16 +55,12 @@ namespace TempLat
         /////////
         auto potentialTerms(Tag<0>) // Inflaton potential energy
         {
-            double k = sqrt(2.0 / 3.0);
-            auto exp_term = exp(-k * fldS(0_c) * (fStar/MPl_phys));
-            
-            // Corrección: Se elimina pow<2>(kappa) porque se cancela en la adimensionalización
-            return 0.75 * pow<4>(MPl_phys/fStar) * pow<2>(1.0 - exp_term);
+            return 0.5 * pow<2>(mu/phii) * pow<2>(1.0 - exp(-fldS(0_c) * phii/mu));
         }
 
         auto potentialTerms(Tag<1>) // Interaction energy
         {
-            return 0.5 * pow<2>(q / kappa) * pow<2>(fldS(0_c)) * pow<2>(fldS(1_c));
+            return 0.5 * q * pow<2>(fldS(0_c)) * pow<2>(fldS(1_c));
         }
    
         /////////
@@ -76,17 +68,12 @@ namespace TempLat
         /////////
         auto potDeriv(Tag<0>) // Derivative with respect to the inflaton
         {
-            double k = sqrt(2.0 / 3.0);
-            auto exp1 = exp(-k * fldS(0_c) * (fStar/MPl_phys));
-            auto exp2 = exp(-2.0 * k * fldS(0_c) * (fStar/MPl_phys));
-            
-            // Corrección: pow<3> por la regla de la cadena, y sin kappa
-            return 1.5 * pow<3>(MPl_phys/fStar) * k * (exp1 - exp2) + pow<2>(q / kappa) * fldS(0_c) * pow<2>(fldS(1_c));
+            return (mu/phii) * (exp(-1*fldS(0_c)*phii/mu) - exp(-2*fldS(0_c)*phii/mu)) + q* fldS(0_c) * pow<2>(fldS(1_c));
         }
 
         auto potDeriv(Tag<1>)  // Derivative with respect to the daughter field
         {
-            return pow<2>(q / kappa) * fldS(1_c) * pow<2>(fldS(0_c));
+            return q * fldS(1_c) * pow<2>(fldS(0_c));
         }
    
         /////////
@@ -94,17 +81,12 @@ namespace TempLat
         /////////
         auto potDeriv2(Tag<0>) // Second derivative with respect inflaton
         {
-            double k = sqrt(2.0 / 3.0);
-            auto exp1 = exp(-k * fldS(0_c) * (fStar/MPl_phys));
-            auto exp2 = exp(-2.0 * k * fldS(0_c) * (fStar/MPl_phys));
-            
-            // Corrección: pow<2> por la doble regla de la cadena, y sin kappa
-            return 1.5 * pow<2>(MPl_phys/fStar) * pow<2>(k) * (2.0 * exp2 - exp1) + pow<2>(q / kappa) * pow<2>(fldS(1_c));
+            return 2*exp(-2*fldS(0_c)*phii/mu) - exp(-1*fldS(0_c)*phii/mu) + q * pow<2>(fldS(1_c));
         }
 
         auto potDeriv2(Tag<1>) // Second derivative with respect daughter field
         {
-            return pow<2>(q / kappa) * pow<2>(fldS(0_c));
+            return q * pow<2>(fldS(0_c));
         }
     };
 }
