@@ -1,20 +1,20 @@
 #Output
-outputfile = ./data/def2/
+outputfile = ./data/4/
 
 #Evolution
 expansion = true
 evolver = VV2
 
 #Lattice
-N = 128
-dt = 0.003
+N = 64
+dt = 0.01
 kIR = 3
 
 #Times
 tOutputFreq = 0.1
 tOutputInfreq = 3
 tOutputRareFreq = 10
-tMax = 100
+tMax = 900
 baseSeed = 4356597
 
 #Spectra options

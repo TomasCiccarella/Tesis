@@ -1,19 +1,20 @@
 #Output
-outputfile = ./data/q5050/var_lambda/lambda_1e-13/
+outputfile = ./data/short/
 
 #Evolution
 expansion = true
 evolver = VV2
 
 #Lattice
-N = 64
+N = 128
 dt = 0.01
 kIR = 0.75
 
 #Times
 tOutputFreq = 0.1
-tOutputInfreq = 10
-tMax = 690
+tOutputInfreq = 3
+tOutputRareFreq = 10
+tMax = 100
 
 #Spectra options
 PS_type = 1
@@ -23,6 +24,7 @@ projectorType = 1
 #GWs
 GWprojectorType = 1
 withGWs = true
+OccNumb = true
 
 #IC
 kCutOff = 100
@@ -30,5 +32,5 @@ initial_amplitudes = 7.42675e18 0 # homogeneous amplitudes in GeV
 initial_momenta = -6.2969e30 0 # homogeneous amplitudes in GeV2
 
 #Model Parameters
-lambda = 1e-13
+lambda = 9e-14
 q = 5050

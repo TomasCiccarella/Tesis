@@ -1,12 +1,12 @@
 #Output
-outputfile = ./data/test/
+outputfile = ./data/short/
 
 #Evolution
 expansion = true
 evolver = VV2
 
 #Lattice
-N = 32
+N = 128
 dt = 0.01
 kIR = 0.75
 
@@ -14,7 +14,7 @@ kIR = 0.75
 tOutputFreq = 0.1
 tOutputInfreq = 3
 tOutputRareFreq = 10
-tMax = 900
+tMax = 100
 
 #IC
 kCutOff = 100
@@ -24,7 +24,7 @@ initial_momenta = -2.07694e31 0    # homogeneous amplitudes in GeV2
 #Model Parameters
 M = 2.435e19
 Lambda4 = 1.7966e65
-q = 4e4
+q = 5050
 
 #GWs
 GWprojectorType = 1
