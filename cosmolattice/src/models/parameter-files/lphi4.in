@@ -1,12 +1,12 @@
 #Output
-outputfile = ./data/short/
+outputfile = ./data/var_lambda/
 
 #Evolution
 expansion = true
 evolver = VV2
 
 #Lattice
-N = 128
+N = 32
 dt = 0.01
 kIR = 0.75
 
@@ -14,7 +14,7 @@ kIR = 0.75
 tOutputFreq = 0.1
 tOutputInfreq = 3
 tOutputRareFreq = 10
-tMax = 100
+tMax = 1000
 
 #Spectra options
 PS_type = 1

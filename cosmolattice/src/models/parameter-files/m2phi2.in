@@ -1,12 +1,12 @@
 #Output
-outputfile = ./data/4/
+outputfile = ./data/q0/
 
 #Evolution
 expansion = true
 evolver = VV2
 
 #Lattice
-N = 64
+N = 32
 dt = 0.01
 kIR = 3
 
@@ -33,4 +33,4 @@ initial_momenta = -2.90e31 0 # homogeneous amplitudes in GeV2
 
 #Model Parameters
 m = 1.46e13
-q = 4e4
+q = 0

@@ -79,8 +79,8 @@ private:
         piS0 = parser.get<double, 2>("initial_momenta", {0, 0});
         
         phii = fldS0[0];
-        g = sqrt(q)*omega/phii;
         omega = sqrt(Lambda4  / pow<2>(M)); 
+        g = sqrt(q)*omega/phii;
 
         
         /////////

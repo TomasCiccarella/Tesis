@@ -4,7 +4,7 @@
 param_file="../src/models/parameter-files/lphi4.in"
 
 # Valores de lambda y q
-lambdas=(1e-15 2e-15 5e-15 7e-15 1e-14 2e-14 5e-14 7e-14 1e-13)
+lambdas=(5e-15 5e-13 5e-14)
 qs=(5050)
 
 for lambda in "${lambdas[@]}"
@@ -13,7 +13,7 @@ do
     do
         # 1. Definimos la carpeta exacta
         # Agregamos '/' al final para mantener el formato de tu archivo original
-        output_folder="./data/q5050/var_lambda/lambda_${lambda}/"
+        output_folder="./data/var_lambda/lambda_${lambda}/"
 
         echo "=============================================="
         echo "Ejecutando para lambda = $lambda, q = $q"
