@@ -26,21 +26,21 @@ Other parameters:
      fixedBackground       false               
      initial_momenta       -5.25164e31 0       
          tBackupFreq       -1                  
-          outputfile       ./data/starobinsky3/m_1.0e13/M_2.435e19/
-            baseSeed       370184711           
+          outputfile       ./data/starobinsky3/m_2.0e13/M_2.435e19/
+            baseSeed       2097388760          
                input       ../src/models/parameter-files/starobinsky3.in
-             Lambda4       59292250000000000000000000000000000000000000000000000000000000000.00
+             Lambda4       237169000000000000000000000000000000000000000000000000000000000000.0
+                   M       2.435e19            
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+    spectraVerbosity       0                   
+             OccNumb       true                
                    q       616                 
        appendToFiles       false               
      GWprojectorType       1                   
   initial_amplitudes       3.22088e18 0        
          tOutputVerb       1                   
-                   M       2.435e19            
-     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
-             OccNumb       true                
-    spectraVerbosity       0                   
 
-The simulation started on the d6 m4 y2026 around h24m20.
-It will be running on a grid of (1,1,1) cores.The simulation finished on the d6 m4 y2026 around h24m35.
-The timer indicates that it ran for 887.217s.
-As it ran on 1 cores, this corresponds to 0.246449 core hours.
+The simulation started on the d7 m4 y2026 around h1m35.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d7 m4 y2026 around h1m48.
+The timer indicates that it ran for 811.856s.
+As it ran on 1 cores, this corresponds to 0.225516 core hours.
