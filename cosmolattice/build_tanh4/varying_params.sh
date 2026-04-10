@@ -1,51 +1,35 @@
 #!/bin/bash
 
-# Ruta al archivo de parámetros de tanh4
 param_file="../src/models/parameter-files/tanh4.in"
 
-# Listas de valores para M y Lambda4
-Ms=(2.435e19 4.330e18 7.700e18)
-Lambdas4=(1.7966e63 1.7966e65 1.7966e64)
+# Parámetros
+lambdas=(5e-13 5e-14 5e-15 9e-13 9e-15 9e-14)
+Lambdas4=(1.7966e63 1.7966e64 1.7966e65)
+q_fixed="64.64"
 
-# Valor de q fijo (según tu preferencia de q = 4e4)
-q_fixed="64.64" # 4e4
-
-for M in "${Ms[@]}"
+for lambda in "${lambdas[@]}"
 do
     for L4 in "${Lambdas4[@]}"
     do
-        # 1. Definimos la carpeta de salida basada en ambos parámetros
-        output_folder="./data/tanh4/var_params/M_${M}_L4_${L4}/"
+        # Calculamos M usando Python para no tener errores de precisión con bc
+        # M = (L4 / lambda)^(1/4)
+        M_final=$(python3 -c "print((${L4} / ${lambda})**0.25)")
 
-        echo "=============================================="
-        echo "Ejecutando tanh4 para:"
-        echo "M = $M"
-        echo "Lambda4 = $L4"
-        echo "q = $q_fixed"
-        echo "Configurando output en: $output_folder"
-        echo "=============================================="
-
-        # 2. Creamos el directorio
+        output_folder="./data/lambda_${lambda}/L4_${L4}/"
         mkdir -p "$output_folder"
 
-        # 3. Modificamos el archivo .in usando sed
-        # Cambiamos el outputfile
-        sed -i "s|^outputfile *= *.*|outputfile = $output_folder|" "$param_file"
+        echo "----------------------------------------------"
+        echo "Lanzando: lambda=$lambda | L4=$L4"
+        echo "M calculado correctamente: $M_final"
+        echo "----------------------------------------------"
 
-        # Modificamos M
-        sed -i "s/^M *= *.*/M = $M/" "$param_file"
+        # Modificamos el .in asegurando que no queden valores vacíos
+        sed -i "s|^outputfile *=.*|outputfile = $output_folder|" "$param_file"
+        sed -i "s|^M *=.*|M = $M_final|" "$param_file"
+        sed -i "s|^Lambda4 *=.*|Lambda4 = $L4|" "$param_file"
+        sed -i "s|^q *=.*|q = $q_fixed|" "$param_file"
 
-        # Modificamos Lambda4
-        sed -i "s/^Lambda4 *= *.*/Lambda4 = $L4/" "$param_file"
-
-        # Nos aseguramos de que q sea el correcto
-        sed -i "s/^q *= *.*/q = $q_fixed/" "$param_file"
-
-        # 4. Ejecutamos CosmoLattice
-        # Asegurate de que el ejecutable se llame tanh4 y esté en esta ruta
+        # Ejecutamos
         ./tanh4 input="$param_file"
-
-        echo "✔️ Simulación para M=$M y L4=$L4 terminada."
-        echo ""
     done
 done

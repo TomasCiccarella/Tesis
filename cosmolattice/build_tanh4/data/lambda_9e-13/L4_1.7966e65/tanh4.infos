@@ -1,0 +1,46 @@
+Parameters: 
+Important parameters:
+
+             kCutOff       100                 
+                tMax       1000                
+                  dt       0.01                
+                   N       32                  
+             withGWs       true                
+             evolver       VV2                 
+     tOutputRareFreq       10                  
+           expansion       true                
+                 kIR       0.75                
+       tOutputInfreq       3                   
+                  t0       0                   
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+          PS_version       1                   
+             PS_type       1                   
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+     fixedBackground       false               
+     initial_momenta       -2.07694e31 0       
+         tBackupFreq       -1                  
+          outputfile       ./data/lambda_9e-13/L4_1.7966e65/
+            baseSeed       2109974939          
+               input       ../src/models/parameter-files/tanh4.in
+             Lambda4       1.7966e65           
+                   q       64.64               
+       appendToFiles       false               
+     GWprojectorType       1                   
+  initial_amplitudes       6.5645e18 0         
+         tOutputVerb       1                   
+                   M       2.113743190323441e+19
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       true                
+    spectraVerbosity       0                   
+           deltaKBin       1                   
+
+The simulation started on the d10 m4 y2026 around h1m8.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d10 m4 y2026 around h1m21.
+The timer indicates that it ran for 784.298s.
+As it ran on 1 cores, this corresponds to 0.217861 core hours.

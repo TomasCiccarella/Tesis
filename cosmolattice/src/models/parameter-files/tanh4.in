@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/tanh4/var_params/
+outputfile = ./data/lambda_9e-14/L4_1.7966e65/
 
 #Evolution
 expansion = true
@@ -22,9 +22,9 @@ initial_amplitudes = 6.5645e18 0 # homogeneous amplitudes in GeV
 initial_momenta = -2.07694e31 0    # homogeneous amplitudes in GeV2
 
 #Model Parameters
-M = 2.435e19
-Lambda4 = 1.7966e64
-q = 4e4
+M = 3.758825993462159e+19
+Lambda4 = 1.7966e65
+q = 64.64
 
 #GWs
 GWprojectorType = 1

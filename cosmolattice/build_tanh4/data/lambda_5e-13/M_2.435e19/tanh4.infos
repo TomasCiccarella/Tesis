@@ -1,0 +1,46 @@
+Parameters: 
+Important parameters:
+
+             kCutOff       100                 
+                tMax       1000                
+                  dt       0.01                
+                   N       32                  
+             withGWs       true                
+             evolver       VV2                 
+     tOutputRareFreq       10                  
+           expansion       true                
+                 kIR       0.75                
+       tOutputInfreq       3                   
+                  t0       0                   
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+          PS_version       1                   
+             PS_type       1                   
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+     fixedBackground       false               
+     initial_momenta       -2.07694e31 0       
+         tBackupFreq       -1                  
+          outputfile       ./data/lambda_5e-13/M_2.435e19/
+            baseSeed       2516696994          
+               input       ../src/models/parameter-files/tanh4.in
+             Lambda4       0                   
+                   q       4e4                 
+       appendToFiles       false               
+     GWprojectorType       1                   
+  initial_amplitudes       6.5645e18 0         
+         tOutputVerb       1                   
+                   M       2.435e19            
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       true                
+    spectraVerbosity       0                   
+           deltaKBin       1                   
+
+The simulation started on the d9 m4 y2026 around h16m35.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d9 m4 y2026 around h16m44.
+The timer indicates that it ran for 528.870s.
+As it ran on 1 cores, this corresponds to 0.146908 core hours.
