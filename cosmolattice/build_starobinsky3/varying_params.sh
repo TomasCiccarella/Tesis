@@ -10,7 +10,7 @@ ms=(1.0e13 1.46e13 2.0e13)
 Ms=(1.0e19 2.435e19 5.0e19)
 
 # 3. q ajustado para consistencia (el valor calculado para g equivalente)
-q_fixed=616
+q_fixed=4490
 
 for m in "${ms[@]}"
 do

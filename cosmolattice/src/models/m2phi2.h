@@ -36,7 +36,7 @@ namespace TempLat
             g = sqrt(q) * m / phii;
             
             // Rescaling para variables del programa
-            alpha = 1;
+            alpha = 0; //1;
             fStar = phii;
             omegaStar = m;
 

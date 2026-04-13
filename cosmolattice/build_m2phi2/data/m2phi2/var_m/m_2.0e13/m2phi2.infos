@@ -32,14 +32,14 @@ Other parameters:
           PS_version       1                   
        appendToFiles       false               
      GWprojectorType       1                   
-                   q       1000                
+                   q       7280                
   initial_amplitudes       3.44e18 0           
          tOutputVerb       1                   
      energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
              OccNumb       true                
     spectraVerbosity       0                   
 
-The simulation started on the d6 m4 y2026 around h21m16.
-It will be running on a grid of (1,1,1) cores.The simulation finished on the d6 m4 y2026 around h21m25.
-The timer indicates that it ran for 547.307s.
-As it ran on 1 cores, this corresponds to 0.15203 core hours.
+The simulation started on the d12 m4 y2026 around h16m47.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d12 m4 y2026 around h16m57.
+The timer indicates that it ran for 617.096s.
+As it ran on 1 cores, this corresponds to 0.171416 core hours.

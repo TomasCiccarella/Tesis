@@ -27,20 +27,20 @@ Other parameters:
      initial_momenta       -3.0714e31 0        
          tBackupFreq       -1                  
           outputfile       ./data/tanh2/m_1.0e13/M_5.0e19/
-            baseSeed       26748808            
+            baseSeed       1897836360          
                input       ../src/models/parameter-files/tanh2.in
              Lambda4       250000000000000000000000000000000000000000000000000000000000000000.0
-                   q       687                 
+    spectraVerbosity       0                   
+             OccNumb       true                
+                   M       5.0e19              
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+                   q       5000                
        appendToFiles       false               
      GWprojectorType       1                   
   initial_amplitudes       3.39928e18 0        
          tOutputVerb       1                   
-                   M       5.0e19              
-     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
-             OccNumb       true                
-    spectraVerbosity       0                   
 
-The simulation started on the d6 m4 y2026 around h22m19.
-It will be running on a grid of (1,1,1) cores.The simulation finished on the d6 m4 y2026 around h22m35.
-The timer indicates that it ran for 978.202s.
-As it ran on 1 cores, this corresponds to 0.271723 core hours.
+The simulation started on the d12 m4 y2026 around h17m33.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d12 m4 y2026 around h17m48.
+The timer indicates that it ran for 904.331s.
+As it ran on 1 cores, this corresponds to 0.251203 core hours.

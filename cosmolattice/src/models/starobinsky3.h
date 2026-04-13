@@ -87,11 +87,11 @@ private:
         // Rescaling for program variables
         /////////
         
-         alpha = 0;
-   		 fStar = fldS0[0];
-   		 omegaStar = omega;
+        alpha = 0; //1;
+   	fStar = fldS0[0];
+   	omegaStar = omega;
    		 
-   		 // We now need to specify the rescaling from physical units to program units.
+   	// We now need to specify the rescaling from physical units to program units.
         // This consists of the  time rescaling exponent alpha, the field rescaling fStar
         // and the velocity rescaling omegaStar.
         // See the paper for more information on how to fix them.

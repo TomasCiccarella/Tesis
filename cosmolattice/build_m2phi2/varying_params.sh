@@ -8,7 +8,7 @@ param_file="../src/models/parameter-files/m2phi2.in"
 ms=(1.0e13 1.46e13 2.0e13)
 
 # El valor de q calculado para que g sea ~1.024e-3
-q_fixed=1000
+q_fixed=7280
 
 for m in "${ms[@]}"
 do

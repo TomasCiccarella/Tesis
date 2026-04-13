@@ -26,7 +26,7 @@ Other parameters:
      initial_momenta       -2.07694e31 0       
          tBackupFreq       -1                  
           outputfile       ./data/lambda_9e-13/L4_1.7966e64/
-            baseSeed       1597661567          
+            baseSeed       378440604           
                input       ../src/models/parameter-files/tanh4.in
              Lambda4       1.7966e64           
                    q       64.64               
@@ -40,7 +40,7 @@ Other parameters:
     spectraVerbosity       0                   
            deltaKBin       1                   
 
-The simulation started on the d9 m4 y2026 around h24m38.
-It will be running on a grid of (1,1,1) cores.The simulation finished on the d10 m4 y2026 around h1m8.
-The timer indicates that it ran for 1780.567s.
-As it ran on 1 cores, this corresponds to 0.494602 core hours.
+The simulation started on the d10 m4 y2026 around h23m49.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d10 m4 y2026 around h24m1.
+The timer indicates that it ran for 711.441s.
+As it ran on 1 cores, this corresponds to 0.197622 core hours.

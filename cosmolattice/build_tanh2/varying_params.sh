@@ -6,7 +6,7 @@ param_file="../src/models/parameter-files/tanh2.in"
 # 1. Valores de 'm' y 'M'
 ms=(1.0e13 1.46e13 2.0e13)
 Ms=(1.0e19 2.435e19 5.0e19)
-q_fixed=687
+q_fixed=5000
 
 for m in "${ms[@]}"
 do

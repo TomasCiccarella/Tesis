@@ -708,6 +708,53 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o: /home/tomy/Desktop/UBA/Tesis
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
+starobinsky3: /lib/x86_64-linux-gnu/libc.so.6 \
+  /lib/x86_64-linux-gnu/libm.so.6 \
+  /lib/x86_64-linux-gnu/libmvec.so.1 \
+  /lib64/ld-linux-x86-64.so.2 \
+  /usr/lib/x86_64-linux-gnu/Scrt1.o \
+  /usr/lib/x86_64-linux-gnu/crti.o \
+  /usr/lib/x86_64-linux-gnu/crtn.o \
+  /usr/lib/x86_64-linux-gnu/libc.so \
+  /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 \
+  /usr/lib/x86_64-linux-gnu/libm.so \
+  /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/13/crtfastmath.o \
+  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
+  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
+  /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
+  /usr/lib/x86_64-linux-gnu/libfftw3.so \
+  /usr/lib/x86_64-linux-gnu/libfftw3_threads.so \
+  CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o
+
+
+CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o:
+
+/usr/lib/x86_64-linux-gnu/libfftw3.so:
+
+/usr/lib/x86_64-linux-gnu/libc_nonshared.a:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/crtfastmath.o:
+
+/usr/lib/x86_64-linux-gnu/libm.so:
+
+/usr/lib/x86_64-linux-gnu/crtn.o:
+
+/usr/lib/x86_64-linux-gnu/crti.o:
+
+/usr/lib/x86_64-linux-gnu/libc.so:
+
+/usr/lib/x86_64-linux-gnu/Scrt1.o:
+
+/lib64/ld-linux-x86-64.so.2:
+
+/lib/x86_64-linux-gnu/libm.so.6:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
@@ -768,6 +815,8 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o: /home/tomy/Desktop/UBA/Tesis
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/lib/x86_64-linux-gnu/libmvec.so.1:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
@@ -985,6 +1034,8 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o: /home/tomy/Desktop/UBA/Tesis
 
 /usr/include/c++/13/bits/parse_numbers.h:
 
+/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/c++/13/bits/erase_if.h:
@@ -1124,6 +1175,8 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o: /home/tomy/Desktop/UBA/Tesis
 /home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/src/include/TempLat/fft/types/fftmallocfree.h:
 
 /home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/src/include/TempLat/fft/fftlibraryselector.h:
+
+/usr/lib/x86_64-linux-gnu/libfftw3_threads.so:
 
 /home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/src/include/CosmoInterface/evolvers/kernels/u1kernels.h:
 
@@ -1447,6 +1500,8 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o: /home/tomy/Desktop/UBA/Tesis
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o:
+
 /home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/src/include/TempLat/lattice/algebra/helpers/doeval.h:
 
 /home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/src/include/TempLat/fft/external/fftw/fftwmemorylayout.h:
@@ -1474,6 +1529,8 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o: /home/tomy/Desktop/UBA/Tesis
 /home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/src/include/CosmoInterface/definitions/fixedbackgroundexpansion.h:
 
 /home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/src/include/TempLat/lattice/algebra/operators/tanh.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
@@ -1559,6 +1616,8 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o: /home/tomy/Desktop/UBA/Tesis
 
 /home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/src/include/TempLat/lattice/measuringtools/toolwithownmemory.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/src/include/TempLat/lattice/algebra/gaugealgebra/magneticfield.h:
@@ -1616,6 +1675,8 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o: /home/tomy/Desktop/UBA/Tesis
 /home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/src/include/TempLat/lattice/algebra/conditional/conditionalbinarygetter.h:
 
 /home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/src/include/TempLat/lattice/loopers/coordinatesinitializer.h:
+
+/lib/x86_64-linux-gnu/libc.so.6:
 
 /usr/include/c++/13/cwctype:
 

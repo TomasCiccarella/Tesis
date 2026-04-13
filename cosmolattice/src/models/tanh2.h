@@ -87,7 +87,7 @@ private:
         // Rescaling for program variables
         /////////
         
-         alpha = 0;
+         alpha = 0; //1;
    	 fStar = fldS0[0];
    	 omegaStar = omega;
    		 
