@@ -1,12 +1,12 @@
 #Output
-#outputfile = ./
+#outputfile = ./data/
 
 #Evolution
 expansion = true
 evolver = VV2
 
 #Lattice
-N = 128
+N = 32
 dt = 0.01
 kIR = 1.5
 

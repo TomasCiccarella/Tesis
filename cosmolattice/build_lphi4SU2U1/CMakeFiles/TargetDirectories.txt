@@ -1,0 +1,4 @@
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_lphi4SU2U1/CMakeFiles/cosmolattice.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_lphi4SU2U1/CMakeFiles/clean-cmake.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_lphi4SU2U1/CMakeFiles/edit_cache.dir
+/home/tomy/Desktop/UBA/Tesis/Git/cosmolattice/build_lphi4SU2U1/CMakeFiles/rebuild_cache.dir

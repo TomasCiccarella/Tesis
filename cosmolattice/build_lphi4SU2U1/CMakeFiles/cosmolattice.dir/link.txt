@@ -1,0 +1,1 @@
+/usr/bin/c++   -DNOMPI -DNOPFFT -DNOFFTFLOAT  -DMODELTYPE=lphi4SU2U1 -DMODELINCLUDE=models/lphi4SU2U1.h -DMODELLABEL=lphi4SU2U1 -Ofast  -Wall -Wshadow  -Wl,--dependency-file=CMakeFiles/cosmolattice.dir/link.d CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o -o lphi4SU2U1  /usr/lib/x86_64-linux-gnu/libfftw3_threads.so /usr/lib/x86_64-linux-gnu/libfftw3.so

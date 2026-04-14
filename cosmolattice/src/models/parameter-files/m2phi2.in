@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/m2phi2/var_m/m_2.0e13/
+outputfile = ./data/var_q/q_100000/
 
 #Evolution
 expansion = true
@@ -32,5 +32,5 @@ initial_amplitudes = 3.44e18 0  # homogeneous amplitudes in GeV
 initial_momenta = -2.90e31 0 # homogeneous amplitudes in GeV2
 
 #Model Parameters
-m = 2.0e13
-q = 7280
+m = 1.46e13
+q = 100000
