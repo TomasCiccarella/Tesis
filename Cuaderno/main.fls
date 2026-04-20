@@ -586,6 +586,12 @@ INPUT Apunte 3.tex
 INPUT ./Apunte 4.tex
 INPUT ./Apunte 4.tex
 INPUT Apunte 4.tex
+INPUT ./Apunte 5.tex
+INPUT ./Apunte 5.tex
+INPUT Apunte 5.tex
+INPUT ./Apunte 6.tex
+INPUT ./Apunte 6.tex
+INPUT Apunte 6.tex
 INPUT ./CosmoLattice.tex
 INPUT ./CosmoLattice.tex
 INPUT ./CosmoLattice.tex
@@ -675,6 +681,41 @@ INPUT ./Imagenes/cosmolattice/varq_GW.png
 INPUT ./Imagenes/cosmolattice/varq_GW.png
 INPUT ./Imagenes/cosmolattice/varq_GW.png
 INPUT ./Imagenes/cosmolattice/varq_GW.png
+INPUT ./Imagenes/cosmolattice/Energia_Starobinsky.png
+INPUT ./Imagenes/cosmolattice/Energia_Starobinsky.png
+INPUT ./Imagenes/cosmolattice/Energia_Starobinsky.png
+INPUT ./Imagenes/cosmolattice/Energia_Starobinsky.png
+INPUT ./Imagenes/cosmolattice/Energia_Starobinsky.png
+INPUT ./Imagenes/cosmolattice/Omega_Starobinsky.png
+INPUT ./Imagenes/cosmolattice/Omega_Starobinsky.png
+INPUT ./Imagenes/cosmolattice/Omega_Starobinsky.png
+INPUT ./Imagenes/cosmolattice/Omega_Starobinsky.png
+INPUT ./Imagenes/cosmolattice/Omega_Starobinsky.png
+INPUT ./Imagenes/cosmolattice/time_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/time_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/time_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/time_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/time_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/phi_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/phi_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/phi_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/phi_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/phi_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/chi_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/chi_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/chi_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/chi_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/chi_evol_m2phi2.png
+INPUT ./Imagenes/cosmolattice/Omega_m2phi2.png
+INPUT ./Imagenes/cosmolattice/Omega_m2phi2.png
+INPUT ./Imagenes/cosmolattice/Omega_m2phi2.png
+INPUT ./Imagenes/cosmolattice/Omega_m2phi2.png
+INPUT ./Imagenes/cosmolattice/Omega_m2phi2.png
+INPUT ./Imagenes/cosmolattice/Energy_m2phi2.png
+INPUT ./Imagenes/cosmolattice/Energy_m2phi2.png
+INPUT ./Imagenes/cosmolattice/Energy_m2phi2.png
+INPUT ./Imagenes/cosmolattice/Energy_m2phi2.png
+INPUT ./Imagenes/cosmolattice/Energy_m2phi2.png
 INPUT ./Nahue.tex
 INPUT ./Nahue.tex
 INPUT ./Nahue.tex
@@ -865,6 +906,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb

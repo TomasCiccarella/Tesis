@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  11 MAR 2026 08:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  20 APR 2026 01:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1104,12 +1104,12 @@ Package hyperref Info: Link coloring ON on input line 4.
 \openout4 = `main.out'.
 
  (./Caratula.tex
-<Portada.png, id=296, 872.50969pt x 409.53pt>
+<Portada.png, id=340, 872.50969pt x 409.53pt>
 File: Portada.png Graphic file (type png)
 <use Portada.png>
 Package pdftex.def Info: Portada.png  used on input line 22.
 (pdftex.def)             Requested size: 483.69687pt x 227.02937pt.
-<GW_fuentes.png, id=297, 963.6pt x 542.025pt>
+<GW_fuentes.png, id=341, 963.6pt x 542.025pt>
 File: GW_fuentes.png Graphic file (type png)
 <use GW_fuentes.png>
 Package pdftex.def Info: GW_fuentes.png  used on input line 27.
@@ -1130,7 +1130,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.57 ...}Ecuación de Mathieu}{57}{subsection.6.3}
+l.56 ...ne {7.4.1}Modelo}{41}{subsubsection.7.4.1}
                                                   % [1])
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -1186,7 +1186,7 @@ LaTeX Info: Redefining \% on input line 1065.
 LaTeX Info: Redefining \. on input line 1137.
 LaTeX Info: Redefining \% on input line 1137.
  [19]
-<Imagenes/Apunte 1/Inflacion.png, id=629, 487.8225pt x 269.50688pt>
+<Imagenes/Apunte 1/Inflacion.png, id=684, 487.8225pt x 269.50688pt>
 File: Imagenes/Apunte 1/Inflacion.png Graphic file (type png)
 <use Imagenes/Apunte 1/Inflacion.png>
 Package pdftex.def Info: Imagenes/Apunte 1/Inflacion.png  used on input line 1140.
@@ -1215,7 +1215,7 @@ LaTeX Info: Redefining \% on input line 312.
 LaTeX Info: Redefining \. on input line 384.
 LaTeX Info: Redefining \% on input line 384.
  [28]
-<Mathieu_apunte2.png, id=730, 949.5475pt x 348.30125pt>
+<Mathieu_apunte2.png, id=785, 949.5475pt x 348.30125pt>
 File: Mathieu_apunte2.png Graphic file (type png)
 <use Mathieu_apunte2.png>
 Package pdftex.def Info: Mathieu_apunte2.png  used on input line 402.
@@ -1265,43 +1265,52 @@ Overfull \hbox (34.40598pt too wide) detected at line 260
 
 LaTeX Info: Redefining \. on input line 264.
 LaTeX Info: Redefining \% on input line 264.
-[36]) (./CosmoLattice.tex (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[36]) (./Apunte 5.tex
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+ [37]
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
+ [38]) (./Apunte 6.tex) (./CosmoLattice.tex
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
+ [39] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 44.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
- [37] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
+ [40] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
-LaTeX Info: Redefining \. on input line 145.
-LaTeX Info: Redefining \% on input line 145.
- [38]
-LaTeX Info: Redefining \. on input line 223.
-LaTeX Info: Redefining \% on input line 223.
- [39] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+LaTeX Info: Redefining \. on input line 161.
+LaTeX Info: Redefining \% on input line 161.
+ [41]
+LaTeX Info: Redefining \. on input line 244.
+LaTeX Info: Redefining \% on input line 244.
+ [42] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-LaTeX Info: Redefining \. on input line 312.
-LaTeX Info: Redefining \% on input line 312.
- [40]
+LaTeX Info: Redefining \. on input line 331.
+LaTeX Info: Redefining \% on input line 331.
+ [43]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 336.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Info: Redefining \. on input line 401.
-LaTeX Info: Redefining \% on input line 401.
- [41{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-LaTeX Info: Redefining \. on input line 478.
-LaTeX Info: Redefining \% on input line 478.
- [42]
+LaTeX Info: Redefining \. on input line 415.
+LaTeX Info: Redefining \% on input line 415.
+ [44{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+LaTeX Info: Redefining \. on input line 487.
+LaTeX Info: Redefining \% on input line 487.
+ [45]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 490.
@@ -1322,56 +1331,56 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 490.
 
-<Imagenes/cosmolattice/varN_inflaton.png, id=1105, 1279.179pt x 416.9979pt>
+<Imagenes/cosmolattice/varN_inflaton.png, id=1209, 1279.179pt x 416.9979pt>
 File: Imagenes/cosmolattice/varN_inflaton.png Graphic file (type png)
 <use Imagenes/cosmolattice/varN_inflaton.png>
 Package pdftex.def Info: Imagenes/cosmolattice/varN_inflaton.png  used on input line 520.
 (pdftex.def)             Requested size: 483.69687pt x 157.6782pt.
-<Imagenes/cosmolattice/varN_hijo.png, id=1106, 1279.179pt x 417.7206pt>
+<Imagenes/cosmolattice/varN_hijo.png, id=1210, 1279.179pt x 417.7206pt>
 File: Imagenes/cosmolattice/varN_hijo.png Graphic file (type png)
 <use Imagenes/cosmolattice/varN_hijo.png>
 Package pdftex.def Info: Imagenes/cosmolattice/varN_hijo.png  used on input line 525.
 (pdftex.def)             Requested size: 483.69687pt x 157.95148pt.
-<Imagenes/cosmolattice/varN_GW.png, id=1107, 1279.179pt x 416.9979pt>
+<Imagenes/cosmolattice/varN_GW.png, id=1211, 1279.179pt x 416.9979pt>
 File: Imagenes/cosmolattice/varN_GW.png Graphic file (type png)
 <use Imagenes/cosmolattice/varN_GW.png>
 Package pdftex.def Info: Imagenes/cosmolattice/varN_GW.png  used on input line 530.
 (pdftex.def)             Requested size: 483.69687pt x 157.6782pt.
 LaTeX Info: Redefining \. on input line 536.
 LaTeX Info: Redefining \% on input line 536.
-[43]
-<Imagenes/cosmolattice/varkIR_inflaton.png, id=1136, 1279.179pt x 416.9979pt>
+[46]
+<Imagenes/cosmolattice/varkIR_inflaton.png, id=1229, 1279.179pt x 416.9979pt>
 File: Imagenes/cosmolattice/varkIR_inflaton.png Graphic file (type png)
 <use Imagenes/cosmolattice/varkIR_inflaton.png>
 Package pdftex.def Info: Imagenes/cosmolattice/varkIR_inflaton.png  used on input line 544.
 (pdftex.def)             Requested size: 483.69687pt x 157.6782pt.
-<Imagenes/cosmolattice/varkIR_hijo.png, id=1137, 1279.179pt x 417.7206pt>
+<Imagenes/cosmolattice/varkIR_hijo.png, id=1230, 1279.179pt x 417.7206pt>
 File: Imagenes/cosmolattice/varkIR_hijo.png Graphic file (type png)
 <use Imagenes/cosmolattice/varkIR_hijo.png>
 Package pdftex.def Info: Imagenes/cosmolattice/varkIR_hijo.png  used on input line 549.
 (pdftex.def)             Requested size: 483.69687pt x 157.95148pt.
-<Imagenes/cosmolattice/varkIR_GW.png, id=1138, 1279.179pt x 416.9979pt>
+<Imagenes/cosmolattice/varkIR_GW.png, id=1231, 1279.179pt x 416.9979pt>
 File: Imagenes/cosmolattice/varkIR_GW.png Graphic file (type png)
 <use Imagenes/cosmolattice/varkIR_GW.png>
 Package pdftex.def Info: Imagenes/cosmolattice/varkIR_GW.png  used on input line 554.
 (pdftex.def)             Requested size: 483.69687pt x 157.6782pt.
 LaTeX Info: Redefining \. on input line 560.
 LaTeX Info: Redefining \% on input line 560.
- [44 <./Imagenes/cosmolattice/varN_inflaton.png> <./Imagenes/cosmolattice/varN_hijo.png> <./Imagenes/cosmolattice/varN_GW.png>]
-<Imagenes/cosmolattice/varq_inflaton.png, id=1153, 1051.5285pt x 1718.5806pt>
+ [47 <./Imagenes/cosmolattice/varN_inflaton.png> <./Imagenes/cosmolattice/varN_hijo.png> <./Imagenes/cosmolattice/varN_GW.png>]
+<Imagenes/cosmolattice/varq_inflaton.png, id=1246, 1051.5285pt x 1718.5806pt>
 File: Imagenes/cosmolattice/varq_inflaton.png Graphic file (type png)
 <use Imagenes/cosmolattice/varq_inflaton.png>
 Package pdftex.def Info: Imagenes/cosmolattice/varq_inflaton.png  used on input line 565.
 (pdftex.def)             Requested size: 483.69687pt x 790.53046pt.
 LaTeX Info: Redefining \. on input line 569.
 LaTeX Info: Redefining \% on input line 569.
- [45 <./Imagenes/cosmolattice/varkIR_inflaton.png> <./Imagenes/cosmolattice/varkIR_hijo.png> <./Imagenes/cosmolattice/varkIR_GW.png>]
+ [48 <./Imagenes/cosmolattice/varkIR_inflaton.png> <./Imagenes/cosmolattice/varkIR_hijo.png> <./Imagenes/cosmolattice/varkIR_GW.png>]
 Overfull \vbox (80.29462pt too high) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 569.
 LaTeX Info: Redefining \% on input line 569.
- [46 <./Imagenes/cosmolattice/varq_inflaton.png>]
-<Imagenes/cosmolattice/varq_hijo.png, id=1173, 1051.5285pt x 1718.5806pt>
+ [49 <./Imagenes/cosmolattice/varq_inflaton.png>]
+<Imagenes/cosmolattice/varq_hijo.png, id=1267, 1051.5285pt x 1718.5806pt>
 File: Imagenes/cosmolattice/varq_hijo.png Graphic file (type png)
 <use Imagenes/cosmolattice/varq_hijo.png>
 Package pdftex.def Info: Imagenes/cosmolattice/varq_hijo.png  used on input line 572.
@@ -1381,8 +1390,8 @@ Overfull \vbox (80.29462pt too high) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 576.
 LaTeX Info: Redefining \% on input line 576.
- [47 <./Imagenes/cosmolattice/varq_hijo.png>]
-<Imagenes/cosmolattice/varq_GW.png, id=1181, 1050.8058pt x 1718.5806pt>
+ [50 <./Imagenes/cosmolattice/varq_hijo.png>]
+<Imagenes/cosmolattice/varq_GW.png, id=1275, 1050.8058pt x 1718.5806pt>
 File: Imagenes/cosmolattice/varq_GW.png Graphic file (type png)
 <use Imagenes/cosmolattice/varq_GW.png>
 Package pdftex.def Info: Imagenes/cosmolattice/varq_GW.png  used on input line 579.
@@ -1392,84 +1401,239 @@ Overfull \vbox (80.8453pt too high) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 583.
 LaTeX Info: Redefining \% on input line 583.
- [48 <./Imagenes/cosmolattice/varq_GW.png>]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 586.
-LaTeX Info: Redefining \. on input line 651.
-LaTeX Info: Redefining \% on input line 651.
- [49]
-LaTeX Info: Redefining \. on input line 713.
-LaTeX Info: Redefining \% on input line 713.
- [50]
-LaTeX Info: Redefining \. on input line 762.
-LaTeX Info: Redefining \% on input line 762.
- [51]) (./Nahue.tex [52]
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
+ [51 <./Imagenes/cosmolattice/varq_GW.png>]
+LaTeX Info: Redefining \. on input line 650.
+LaTeX Info: Redefining \% on input line 650.
+ [52]
+LaTeX Info: Redefining \. on input line 712.
+LaTeX Info: Redefining \% on input line 712.
  [53]
-LaTeX Info: Redefining \. on input line 179.
-LaTeX Info: Redefining \% on input line 179.
+LaTeX Info: Redefining \. on input line 775.
+LaTeX Info: Redefining \% on input line 775.
  [54]
+<Imagenes/cosmolattice/Energia_Starobinsky.png, id=1436, 1011.78pt x 507.3354pt>
+File: Imagenes/cosmolattice/Energia_Starobinsky.png Graphic file (type png)
+<use Imagenes/cosmolattice/Energia_Starobinsky.png>
+Package pdftex.def Info: Imagenes/cosmolattice/Energia_Starobinsky.png  used on input line 802.
+(pdftex.def)             Requested size: 483.69687pt x 242.54282pt.
+LaTeX Info: Redefining \. on input line 806.
+LaTeX Info: Redefining \% on input line 806.
+ [55]
+<Imagenes/cosmolattice/Omega_Starobinsky.png, id=1446, 812.3148pt x 417.7206pt>
+File: Imagenes/cosmolattice/Omega_Starobinsky.png Graphic file (type png)
+<use Imagenes/cosmolattice/Omega_Starobinsky.png>
+Package pdftex.def Info: Imagenes/cosmolattice/Omega_Starobinsky.png  used on input line 809.
+(pdftex.def)             Requested size: 483.69687pt x 248.72849pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 814.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 814.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 814.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 814.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 814.
+
+LaTeX Info: Redefining \. on input line 826.
+LaTeX Info: Redefining \% on input line 826.
+[56 <./Imagenes/cosmolattice/Energia_Starobinsky.png> <./Imagenes/cosmolattice/Omega_Starobinsky.png>]
+LaTeX Info: Redefining \. on input line 889.
+LaTeX Info: Redefining \% on input line 889.
+ [57]
+<Imagenes/cosmolattice/time_evol_m2phi2.png, id=1535, 1282.7925pt x 1284.2379pt>
+File: Imagenes/cosmolattice/time_evol_m2phi2.png Graphic file (type png)
+<use Imagenes/cosmolattice/time_evol_m2phi2.png>
+Package pdftex.def Info: Imagenes/cosmolattice/time_evol_m2phi2.png  used on input line 906.
+(pdftex.def)             Requested size: 483.69687pt x 484.23347pt.
+LaTeX Info: Redefining \. on input line 909.
+LaTeX Info: Redefining \% on input line 909.
+ [58]
+<Imagenes/cosmolattice/phi_evol_m2phi2.png, id=1555, 1284.9606pt x 1284.2379pt>
+File: Imagenes/cosmolattice/phi_evol_m2phi2.png Graphic file (type png)
+<use Imagenes/cosmolattice/phi_evol_m2phi2.png>
+Package pdftex.def Info: Imagenes/cosmolattice/phi_evol_m2phi2.png  used on input line 912.
+(pdftex.def)             Requested size: 483.69687pt x 483.43004pt.
+LaTeX Info: Redefining \. on input line 915.
+LaTeX Info: Redefining \% on input line 915.
+ [59 <./Imagenes/cosmolattice/time_evol_m2phi2.png>]
+<Imagenes/cosmolattice/chi_evol_m2phi2.png, id=1564, 1284.9606pt x 1284.2379pt>
+File: Imagenes/cosmolattice/chi_evol_m2phi2.png Graphic file (type png)
+<use Imagenes/cosmolattice/chi_evol_m2phi2.png>
+Package pdftex.def Info: Imagenes/cosmolattice/chi_evol_m2phi2.png  used on input line 918.
+(pdftex.def)             Requested size: 483.69687pt x 483.43004pt.
+LaTeX Info: Redefining \. on input line 921.
+LaTeX Info: Redefining \% on input line 921.
+ [60 <./Imagenes/cosmolattice/phi_evol_m2phi2.png>]
+<Imagenes/cosmolattice/Omega_m2phi2.png, id=1575, 1422.9963pt x 1235.0943pt>
+File: Imagenes/cosmolattice/Omega_m2phi2.png Graphic file (type png)
+<use Imagenes/cosmolattice/Omega_m2phi2.png>
+Package pdftex.def Info: Imagenes/cosmolattice/Omega_m2phi2.png  used on input line 924.
+(pdftex.def)             Requested size: 483.69687pt x 419.83228pt.
+LaTeX Info: Redefining \. on input line 927.
+LaTeX Info: Redefining \% on input line 927.
+ [61 <./Imagenes/cosmolattice/chi_evol_m2phi2.png>]
+<Imagenes/cosmolattice/Energy_m2phi2.png, id=1584, 1428.0552pt x 1256.0526pt>
+File: Imagenes/cosmolattice/Energy_m2phi2.png Graphic file (type png)
+<use Imagenes/cosmolattice/Energy_m2phi2.png>
+Package pdftex.def Info: Imagenes/cosmolattice/Energy_m2phi2.png  used on input line 930.
+(pdftex.def)             Requested size: 483.69687pt x 425.4423pt.
+LaTeX Info: Redefining \. on input line 933.
+LaTeX Info: Redefining \% on input line 933.
+ [62 <./Imagenes/cosmolattice/Omega_m2phi2.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tanh' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 934.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 938.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 938.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 938.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 938.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 938.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 938.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tanh' on input line 938.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 938.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 938.
+
+) (./Nahue.tex
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+ [63 <./Imagenes/cosmolattice/Energy_m2phi2.png>]
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+ [64]
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
+ [65]
 LaTeX Info: Redefining \. on input line 214.
 LaTeX Info: Redefining \% on input line 214.
- [55]
+ [66]
 LaTeX Info: Redefining \. on input line 262.
 LaTeX Info: Redefining \% on input line 262.
- [56]
-<Imagenes//Nahue/Mathieu_1.png, id=1375, 680.5425pt x 579.16376pt>
+ [67]
+<Imagenes//Nahue/Mathieu_1.png, id=1648, 680.5425pt x 579.16376pt>
 File: Imagenes//Nahue/Mathieu_1.png Graphic file (type png)
 <use Imagenes//Nahue/Mathieu_1.png>
 Package pdftex.def Info: Imagenes//Nahue/Mathieu_1.png  used on input line 308.
 (pdftex.def)             Requested size: 217.66211pt x 185.23897pt.
-<Imagenes//Nahue/Mathieu_2.png, id=1376, 678.535pt x 579.16376pt>
+<Imagenes//Nahue/Mathieu_2.png, id=1649, 678.535pt x 579.16376pt>
 File: Imagenes//Nahue/Mathieu_2.png Graphic file (type png)
 <use Imagenes//Nahue/Mathieu_2.png>
 Package pdftex.def Info: Imagenes//Nahue/Mathieu_2.png  used on input line 316.
 (pdftex.def)             Requested size: 217.66211pt x 185.77805pt.
-<Imagenes//Nahue/Mathieu_3.png, id=1379, 1985.4175pt x 2988.16376pt>
+<Imagenes//Nahue/Mathieu_3.png, id=1652, 1985.4175pt x 2988.16376pt>
 File: Imagenes//Nahue/Mathieu_3.png Graphic file (type png)
 <use Imagenes//Nahue/Mathieu_3.png>
 Package pdftex.def Info: Imagenes//Nahue/Mathieu_3.png  used on input line 326.
 (pdftex.def)             Requested size: 435.32422pt x 655.16388pt.
 LaTeX Info: Redefining \. on input line 329.
 LaTeX Info: Redefining \% on input line 329.
- [57 <./Imagenes//Nahue/Mathieu_1.png> <./Imagenes//Nahue/Mathieu_2.png>]
-<Imagenes//Nahue/Mathieu_4.png, id=1391, 1985.4175pt x 2989.1675pt>
+ [68 <./Imagenes//Nahue/Mathieu_1.png> <./Imagenes//Nahue/Mathieu_2.png>]
+<Imagenes//Nahue/Mathieu_4.png, id=1664, 1985.4175pt x 2989.1675pt>
 File: Imagenes//Nahue/Mathieu_4.png Graphic file (type png)
 <use Imagenes//Nahue/Mathieu_4.png>
 Package pdftex.def Info: Imagenes//Nahue/Mathieu_4.png  used on input line 333.
 (pdftex.def)             Requested size: 435.32422pt x 655.38396pt.
 LaTeX Info: Redefining \. on input line 337.
 LaTeX Info: Redefining \% on input line 337.
- [58 <./Imagenes//Nahue/Mathieu_3.png>]
+ [69 <./Imagenes//Nahue/Mathieu_3.png>]
 LaTeX Info: Redefining \. on input line 339.
 LaTeX Info: Redefining \% on input line 339.
- [59 <./Imagenes//Nahue/Mathieu_4.png>]
-<Imagenes//Nahue/Mathieu_5.png, id=1410, 1036.87375pt x 689.57625pt>
+ [70 <./Imagenes//Nahue/Mathieu_4.png>]
+<Imagenes//Nahue/Mathieu_5.png, id=1683, 1036.87375pt x 689.57625pt>
 File: Imagenes//Nahue/Mathieu_5.png Graphic file (type png)
 <use Imagenes//Nahue/Mathieu_5.png>
 Package pdftex.def Info: Imagenes//Nahue/Mathieu_5.png  used on input line 343.
 (pdftex.def)             Requested size: 217.66211pt x 144.75215pt.
-<Imagenes//Nahue/Mathieu_6.png, id=1411, 1027.84pt x 689.57625pt>
+<Imagenes//Nahue/Mathieu_6.png, id=1684, 1027.84pt x 689.57625pt>
 File: Imagenes//Nahue/Mathieu_6.png Graphic file (type png)
 <use Imagenes//Nahue/Mathieu_6.png>
 Package pdftex.def Info: Imagenes//Nahue/Mathieu_6.png  used on input line 351.
 (pdftex.def)             Requested size: 217.66211pt x 146.02531pt.
-<Imagenes//Nahue/Narrow_resonance.pdf, id=1414, 1300.86pt x 578.16pt>
+<Imagenes//Nahue/Narrow_resonance.pdf, id=1687, 1300.86pt x 578.16pt>
 File: Imagenes//Nahue/Narrow_resonance.pdf Graphic file (type pdf)
 <use Imagenes//Nahue/Narrow_resonance.pdf>
 Package pdftex.def Info: Imagenes//Nahue/Narrow_resonance.pdf  used on input line 376.
 (pdftex.def)             Requested size: 217.66211pt x 96.73322pt.
-<Imagenes//Nahue/Broad_resonance.pdf, id=1415, 1300.86pt x 578.16pt>
+<Imagenes//Nahue/Broad_resonance.pdf, id=1688, 1300.86pt x 578.16pt>
 File: Imagenes//Nahue/Broad_resonance.pdf Graphic file (type pdf)
 <use Imagenes//Nahue/Broad_resonance.pdf>
 Package pdftex.def Info: Imagenes//Nahue/Broad_resonance.pdf  used on input line 384.
 (pdftex.def)             Requested size: 217.66211pt x 96.73322pt.
-<Imagenes/Nahue/Floquet_m2phi2.pdf, id=1420, 722.7pt x 433.62pt>
+<Imagenes/Nahue/Floquet_m2phi2.pdf, id=1693, 722.7pt x 433.62pt>
 File: Imagenes/Nahue/Floquet_m2phi2.pdf Graphic file (type pdf)
 <use Imagenes/Nahue/Floquet_m2phi2.pdf>
 Package pdftex.def Info: Imagenes/Nahue/Floquet_m2phi2.pdf  used on input line 399.
 (pdftex.def)             Requested size: 241.84843pt x 145.10646pt.
-<Imagenes/Nahue/Floquet_lphi4.pdf, id=1421, 722.7pt x 433.62pt>
+<Imagenes/Nahue/Floquet_lphi4.pdf, id=1694, 722.7pt x 433.62pt>
 File: Imagenes/Nahue/Floquet_lphi4.pdf Graphic file (type pdf)
 <use Imagenes/Nahue/Floquet_lphi4.pdf>
 Package pdftex.def Info: Imagenes/Nahue/Floquet_lphi4.pdf  used on input line 405.
@@ -1481,13 +1645,13 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 397--409
 
 LaTeX Info: Redefining \. on input line 411.
 LaTeX Info: Redefining \% on input line 411.
-[60 <./Imagenes//Nahue/Mathieu_5.png> <./Imagenes//Nahue/Mathieu_6.png> <./Imagenes//Nahue/Narrow_resonance.pdf> <./Imagenes//Nahue/Broad_resonance.pdf>]
-<Imagenes/Nahue/mu_m2phi2.png, id=1499, 1381.0797pt x 2129.7969pt>
+[71 <./Imagenes//Nahue/Mathieu_5.png> <./Imagenes//Nahue/Mathieu_6.png> <./Imagenes//Nahue/Narrow_resonance.pdf> <./Imagenes//Nahue/Broad_resonance.pdf>]
+<Imagenes/Nahue/mu_m2phi2.png, id=1771, 1381.0797pt x 2129.7969pt>
 File: Imagenes/Nahue/mu_m2phi2.png Graphic file (type png)
 <use Imagenes/Nahue/mu_m2phi2.png>
 Package pdftex.def Info: Imagenes/Nahue/mu_m2phi2.png  used on input line 417.
 (pdftex.def)             Requested size: 241.84843pt x 372.94753pt.
-<Imagenes/Nahue/mu_lphi4.png, id=1500, 1390.4748pt x 2131.965pt>
+<Imagenes/Nahue/mu_lphi4.png, id=1772, 1390.4748pt x 2131.965pt>
 File: Imagenes/Nahue/mu_lphi4.png Graphic file (type png)
 <use Imagenes/Nahue/mu_lphi4.png>
 Package pdftex.def Info: Imagenes/Nahue/mu_lphi4.png  used on input line 423.
@@ -1519,13 +1683,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Info: Redefining \. on input line 439.
 LaTeX Info: Redefining \% on input line 439.
-[61 <./Imagenes/Nahue/Floquet_m2phi2.pdf> <./Imagenes/Nahue/Floquet_lphi4.pdf> <./Imagenes/Nahue/mu_m2phi2.png> <./Imagenes/Nahue/mu_lphi4.png>]
-<Imagenes/Nahue/lphi4_narrow.png, id=1616, 706.8006pt x 416.9979pt>
+[72 <./Imagenes/Nahue/Floquet_m2phi2.pdf> <./Imagenes/Nahue/Floquet_lphi4.pdf> <./Imagenes/Nahue/mu_m2phi2.png> <./Imagenes/Nahue/mu_lphi4.png>]
+<Imagenes/Nahue/lphi4_narrow.png, id=1890, 706.8006pt x 416.9979pt>
 File: Imagenes/Nahue/lphi4_narrow.png Graphic file (type png)
 <use Imagenes/Nahue/lphi4_narrow.png>
 Package pdftex.def Info: Imagenes/Nahue/lphi4_narrow.png  used on input line 497.
 (pdftex.def)             Requested size: 241.84843pt x 142.68092pt.
-<Imagenes/Nahue/lphi4_broad.png, id=1617, 706.8006pt x 416.9979pt>
+<Imagenes/Nahue/lphi4_broad.png, id=1891, 706.8006pt x 416.9979pt>
 File: Imagenes/Nahue/lphi4_broad.png Graphic file (type png)
 <use Imagenes/Nahue/lphi4_broad.png>
 Package pdftex.def Info: Imagenes/Nahue/lphi4_broad.png  used on input line 503.
@@ -1537,13 +1701,13 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 495--507
 
 LaTeX Info: Redefining \. on input line 509.
 LaTeX Info: Redefining \% on input line 509.
-[62]
-<Imagenes/Nahue/n_narrow.png, id=1632, 706.0779pt x 416.9979pt>
+[73]
+<Imagenes/Nahue/n_narrow.png, id=1906, 706.0779pt x 416.9979pt>
 File: Imagenes/Nahue/n_narrow.png Graphic file (type png)
 <use Imagenes/Nahue/n_narrow.png>
 Package pdftex.def Info: Imagenes/Nahue/n_narrow.png  used on input line 522.
 (pdftex.def)             Requested size: 241.84843pt x 142.83363pt.
-<Imagenes/Nahue/n_broad.png, id=1633, 706.0779pt x 416.9979pt>
+<Imagenes/Nahue/n_broad.png, id=1907, 706.0779pt x 416.9979pt>
 File: Imagenes/Nahue/n_broad.png Graphic file (type png)
 <use Imagenes/Nahue/n_broad.png>
 Package pdftex.def Info: Imagenes/Nahue/n_broad.png  used on input line 528.
@@ -1553,51 +1717,51 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 520--532
 [][] [] 
  []
 
-<Imagenes/Nahue/Pchi.png, id=1636, 599.1183pt x 407.6028pt>
+<Imagenes/Nahue/Pchi.png, id=1910, 599.1183pt x 407.6028pt>
 File: Imagenes/Nahue/Pchi.png Graphic file (type png)
 <use Imagenes/Nahue/Pchi.png>
 Package pdftex.def Info: Imagenes/Nahue/Pchi.png  used on input line 539.
 (pdftex.def)             Requested size: 483.69687pt x 329.08669pt.
 LaTeX Info: Redefining \. on input line 543.
 LaTeX Info: Redefining \% on input line 543.
-[63 <./Imagenes/Nahue/lphi4_narrow.png> <./Imagenes/Nahue/lphi4_broad.png> <./Imagenes/Nahue/n_narrow.png> <./Imagenes/Nahue/n_broad.png>]
-<Imagenes/Nahue/Pchi_vart.png, id=1651, 766.7847pt x 407.6028pt>
+[74 <./Imagenes/Nahue/lphi4_narrow.png> <./Imagenes/Nahue/lphi4_broad.png> <./Imagenes/Nahue/n_narrow.png> <./Imagenes/Nahue/n_broad.png>]
+<Imagenes/Nahue/Pchi_vart.png, id=1926, 766.7847pt x 407.6028pt>
 File: Imagenes/Nahue/Pchi_vart.png Graphic file (type png)
 <use Imagenes/Nahue/Pchi_vart.png>
 Package pdftex.def Info: Imagenes/Nahue/Pchi_vart.png  used on input line 546.
 (pdftex.def)             Requested size: 483.69687pt x 257.12074pt.
-<Imagenes/Nahue/lphi4_GW.png, id=1653, 706.8006pt x 416.9979pt>
+<Imagenes/Nahue/lphi4_GW.png, id=1928, 706.8006pt x 416.9979pt>
 File: Imagenes/Nahue/lphi4_GW.png Graphic file (type png)
 <use Imagenes/Nahue/lphi4_GW.png>
 Package pdftex.def Info: Imagenes/Nahue/lphi4_GW.png  used on input line 555.
 (pdftex.def)             Requested size: 483.69687pt x 285.37459pt.
 LaTeX Info: Redefining \. on input line 559.
 LaTeX Info: Redefining \% on input line 559.
- [64 <./Imagenes/Nahue/Pchi.png> <./Imagenes/Nahue/Pchi_vart.png>]
-<Imagenes/Nahue/inflaton_lphi4.png, id=1667, 706.0779pt x 416.9979pt>
+ [75 <./Imagenes/Nahue/Pchi.png> <./Imagenes/Nahue/Pchi_vart.png>]
+<Imagenes/Nahue/inflaton_lphi4.png, id=1942, 706.0779pt x 416.9979pt>
 File: Imagenes/Nahue/inflaton_lphi4.png Graphic file (type png)
 <use Imagenes/Nahue/inflaton_lphi4.png>
 Package pdftex.def Info: Imagenes/Nahue/inflaton_lphi4.png  used on input line 584.
 (pdftex.def)             Requested size: 290.22107pt x 171.40291pt.
-<Imagenes/Nahue/a_lphi4.png, id=1668, 706.8006pt x 416.9979pt>
+<Imagenes/Nahue/a_lphi4.png, id=1943, 706.8006pt x 416.9979pt>
 File: Imagenes/Nahue/a_lphi4.png Graphic file (type png)
 <use Imagenes/Nahue/a_lphi4.png>
 Package pdftex.def Info: Imagenes/Nahue/a_lphi4.png  used on input line 590.
 (pdftex.def)             Requested size: 217.66211pt x 128.41537pt.
-<Imagenes/Nahue/H_lphi4.png, id=1669, 706.0779pt x 416.9979pt>
+<Imagenes/Nahue/H_lphi4.png, id=1944, 706.0779pt x 416.9979pt>
 File: Imagenes/Nahue/H_lphi4.png Graphic file (type png)
 <use Imagenes/Nahue/H_lphi4.png>
 Package pdftex.def Info: Imagenes/Nahue/H_lphi4.png  used on input line 596.
 (pdftex.def)             Requested size: 217.66211pt x 128.549pt.
 LaTeX Info: Redefining \. on input line 603.
 LaTeX Info: Redefining \% on input line 603.
- [65 <./Imagenes/Nahue/lphi4_GW.png>]
-<Imagenes/Nahue/lphi4_narrow_exp.png, id=1683, 706.8006pt x 416.9979pt>
+ [76 <./Imagenes/Nahue/lphi4_GW.png>]
+<Imagenes/Nahue/lphi4_narrow_exp.png, id=1958, 706.8006pt x 416.9979pt>
 File: Imagenes/Nahue/lphi4_narrow_exp.png Graphic file (type png)
 <use Imagenes/Nahue/lphi4_narrow_exp.png>
 Package pdftex.def Info: Imagenes/Nahue/lphi4_narrow_exp.png  used on input line 609.
 (pdftex.def)             Requested size: 241.84843pt x 142.68092pt.
-<Imagenes/Nahue/lphi4_broad_exp.png, id=1684, 706.8006pt x 416.9979pt>
+<Imagenes/Nahue/lphi4_broad_exp.png, id=1959, 706.8006pt x 416.9979pt>
 File: Imagenes/Nahue/lphi4_broad_exp.png Graphic file (type png)
 <use Imagenes/Nahue/lphi4_broad_exp.png>
 Package pdftex.def Info: Imagenes/Nahue/lphi4_broad_exp.png  used on input line 615.
@@ -1607,12 +1771,12 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 607--619
 [][] [] 
  []
 
-<Imagenes/Nahue/n_narrow_exp.png, id=1685, 706.0779pt x 416.9979pt>
+<Imagenes/Nahue/n_narrow_exp.png, id=1960, 706.0779pt x 416.9979pt>
 File: Imagenes/Nahue/n_narrow_exp.png Graphic file (type png)
 <use Imagenes/Nahue/n_narrow_exp.png>
 Package pdftex.def Info: Imagenes/Nahue/n_narrow_exp.png  used on input line 625.
 (pdftex.def)             Requested size: 241.84843pt x 142.83363pt.
-<Imagenes/Nahue/n_broad_exp.png, id=1686, 706.0779pt x 416.9979pt>
+<Imagenes/Nahue/n_broad_exp.png, id=1961, 706.0779pt x 416.9979pt>
 File: Imagenes/Nahue/n_broad_exp.png Graphic file (type png)
 <use Imagenes/Nahue/n_broad_exp.png>
 Package pdftex.def Info: Imagenes/Nahue/n_broad_exp.png  used on input line 631.
@@ -1624,34 +1788,36 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 623--635
 
 LaTeX Info: Redefining \. on input line 637.
 LaTeX Info: Redefining \% on input line 637.
-[66 <./Imagenes/Nahue/inflaton_lphi4.png> <./Imagenes/Nahue/a_lphi4.png> <./Imagenes/Nahue/H_lphi4.png> <./Imagenes/Nahue/lphi4_narrow_exp.png> <./Imagenes/Nahue/lphi4_broad_exp.png>]
-<Imagenes/Nahue/Pchi_exp.png, id=1704, 599.1183pt x 407.6028pt>
+[77 <./Imagenes/Nahue/inflaton_lphi4.png> <./Imagenes/Nahue/a_lphi4.png> <./Imagenes/Nahue/H_lphi4.png> <./Imagenes/Nahue/lphi4_narrow_exp.png> <./Imagenes/Nahue/lphi4_broad_exp.png>]
+<Imagenes/Nahue/Pchi_exp.png, id=1977, 599.1183pt x 407.6028pt>
 File: Imagenes/Nahue/Pchi_exp.png Graphic file (type png)
 <use Imagenes/Nahue/Pchi_exp.png>
 Package pdftex.def Info: Imagenes/Nahue/Pchi_exp.png  used on input line 642.
 (pdftex.def)             Requested size: 483.69687pt x 329.08669pt.
-<Imagenes/Nahue/Pchi_vart_exp.png, id=1705, 767.5074pt x 407.6028pt>
+<Imagenes/Nahue/Pchi_vart_exp.png, id=1978, 767.5074pt x 407.6028pt>
 File: Imagenes/Nahue/Pchi_vart_exp.png Graphic file (type png)
 <use Imagenes/Nahue/Pchi_vart_exp.png>
 Package pdftex.def Info: Imagenes/Nahue/Pchi_vart_exp.png  used on input line 649.
 (pdftex.def)             Requested size: 483.69687pt x 256.87819pt.
-)
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
- [67 <./Imagenes/Nahue/n_narrow_exp.png> <./Imagenes/Nahue/n_broad_exp.png> <./Imagenes/Nahue/Pchi_exp.png>] (./RAFA.tex
-<poster.pdf, id=1720, 1690.09323pt x 2392.87677pt>
+LaTeX Info: Redefining \. on input line 653.
+LaTeX Info: Redefining \% on input line 653.
+ [78 <./Imagenes/Nahue/n_narrow_exp.png> <./Imagenes/Nahue/n_broad_exp.png> <./Imagenes/Nahue/Pchi_exp.png>]
+LaTeX Info: Redefining \. on input line 686.
+LaTeX Info: Redefining \% on input line 686.
+ [79 <./Imagenes/Nahue/Pchi_vart_exp.png>]) (./RAFA.tex
+<poster.pdf, id=2003, 1690.09323pt x 2392.87677pt>
 File: poster.pdf Graphic file (type pdf)
 <use poster.pdf>
 Package pdftex.def Info: poster.pdf  used on input line 45.
 (pdftex.def)             Requested size: 439.41388pt x 622.1333pt.
- [68 <./Imagenes/Nahue/Pchi_vart_exp.png>]
+ [80]
 LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 51.
  (/usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 ))
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
- [69{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc} <./poster.pdf>] 
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
+ [81{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc} <./poster.pdf>] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux
 LaTeX Info: Redefining \. on input line 12.
@@ -1662,24 +1828,24 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A9568AD13980DEBF2B5A3E7751BA3221;15866.
+(rerunfilecheck)             Checksum: 9491858350D473A5C88A8E5DBC4DE26A;18675.
  ) 
 Here is how much of TeX's memory you used:
- 57796 strings out of 474222
- 1301819 string characters out of 5748734
- 2635541 words of memory out of 5000000
- 78479 multiletter control sequences out of 15000+600000
+ 58012 strings out of 474222
+ 1306401 string characters out of 5748734
+ 2682161 words of memory out of 5000000
+ 78531 multiletter control sequences out of 15000+600000
  580700 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,33n,150p,1140b,2297s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 91i,33n,150p,1140b,2207s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{toc} has been referenced but does not exist, replaced by a fixed one
 
-</usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss3583.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on main.pdf (70 pages, 15434802 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss3583.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on main.pdf (82 pages, 17797460 bytes).
 PDF statistics:
- 2459 PDF objects out of 2487 (max. 8388607)
- 1942 compressed objects within 20 object streams
- 752 named destinations out of 1000 (max. 500000)
- 871 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2781 PDF objects out of 2984 (max. 8388607)
+ 2233 compressed objects within 23 object streams
+ 910 named destinations out of 1000 (max. 500000)
+ 994 words of extra memory for PDF output out of 10000 (max. 10000000)
 

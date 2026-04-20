@@ -7,7 +7,7 @@ param_file="../src/models/parameter-files/m2phi2.in"
 m_fixed=1.46e13
 
 # Valores de q para variar
-qs=(25000 50000 75000 100000)
+qs=(6200 8400 9600 11000 13450 16780 17345 18900 20000 21780 22400 241600)
 
 for q in "${qs[@]}"
 do

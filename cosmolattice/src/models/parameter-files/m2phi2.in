@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/var_q/q_100000/
+outputfile = ./data/var_q/q_17345/
 
 #Evolution
 expansion = true
@@ -33,4 +33,4 @@ initial_momenta = -2.90e31 0 # homogeneous amplitudes in GeV2
 
 #Model Parameters
 m = 1.46e13
-q = 100000
+q = 17345

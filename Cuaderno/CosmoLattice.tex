@@ -583,8 +583,6 @@ Finalmente, lo último que podemos variar para ver cómo cambia la idea de compa
 
 En estos últimos espectros podemos notar que el pico de resonancia dónde se amplifica fuertemente el espectro, tenemos que dónde ocurre una narrow resonance ($q$ chicos) el pico casi no se nota y se homogeniza rápido el espectro, mientras que cuando ocurre broad resonance ($q$ grandes) el pico se nota amplificado y coincide con la posición esperada del pico. 
 
-\todo[inline]{Escribir sobre variaciones de $\lambda$}
-
 \subsection{Modelo de Starobinsky}
 
 El modelo de Starobinsky lo podemos pensar como el siguiente potencial:
@@ -633,107 +631,130 @@ Comparando con los archivos de CosmoLattice, ésto implica que vamos a necesitar
 con todo ésto, el \texttt{.h} queda:
 
 \begin{lstlisting}[style = cppStyle]
-#ifndef STAROBINSKY_H
-#define STAROBINSKY_H
+#ifndef STAROBINSKY3_H //Usual macro guard to prevent multiple inclusion
+#define STAROBINSKY3_H
 
 #include "CosmoInterface/cosmointerface.h"
 
+//Include cosmointerface to have access to all of the library.
+
 namespace TempLat
 {
+    /////////
+    // Model name and number of fields
+    /////////
+
+    // In the following class, we define the defining parameters of your model:
+    //number of fields of each species and the type of interactions.
+
     struct ModelPars : public TempLat::DefaultModelPars {
         static constexpr size_t NScalars = 2;
         static constexpr size_t NPotTerms = 2;
+        // Our potential naturaly splits into two terms: the inflaton potential
+        // and the interaction with the daughter field.
     };
 
-    #define MODELNAME starobinsky
+  #define MODELNAME starobinsky3
+  // Here we define the name of the model. This should match the name of your file.
 
-    template<class R>
-    using Model = MakeModel(R, ModelPars);
+  template<class R>
+  using Model = MakeModel(R, ModelPars);
 
-    class MODELNAME : public Model<MODELNAME>
+  class MODELNAME : public Model<MODELNAME>
+  //Declaration of our model. It inherits from the generic model defined above.
+  {
+ //...
+private:
+
+	double M, Lambda4, phii, omega, q, g;
+
+// fldS0, piS0 : arrays which should contain the initial homogeneous values of
+//               the scalar fields
+//
+// alpha, fStar, omegaStar : time and field rescaling to go to program units.
+//
+// fldS : The actual object which contains the scalar fields.
+  
+  public:
+
+    MODELNAME(ParameterParser& parser, RunParameters<double>& runPar, std::shared_ptr<MemoryToolBox> toolBox): //Constructor of our model.
+    Model<MODELNAME>(parser,runPar.getLatParams(), toolBox, runPar.dt, STRINGIFY(MODELLABEL)) //MODELLABEL is defined in the cmake.
     {
-    private:
-        double q, kappa, gamma;
+      /////////
+      // Independent parameters of the model and initial homogeneous components of the fields
+      /////////
+      
+        M = parser.get<double>("M");
+        Lambda4 = parser.get<double>("Lambda4");
+        q = parser.get<double>("q");
+        
+        fldS0 = parser.get<double, 2>("initial_amplitudes");
+        piS0 = parser.get<double, 2>("initial_momenta", {0, 0});
+        
+        phii = fldS0[0];
+        g = sqrt(q)*omega/phii;
+        omega = sqrt(Lambda4  / pow<2>(M)); 
 
-    public:
-        MODELNAME(ParameterParser& parser, RunParameters<double>& runPar, std::shared_ptr<MemoryToolBox> toolBox): 
-        Model<MODELNAME>(parser,runPar.getLatParams(), toolBox, runPar.dt, STRINGIFY(MODELLABEL))
-        {
-            /////////
-            // Independent parameters of the model
-            /////////
-            q = parser.get<double>("q");
-            kappa = parser.get<double>("kappa");
-            gamma = parser.get<double>("gamma");
-
-            /////////
-            // Initial homogeneous components of the fields
-            /////////
-            fldS0 = parser.get<double, 2>("initial_amplitudes");
-            piS0 = parser.get<double, 2>("initial_momenta", {0, 0});
-            
-            /////////
-            // Rescaling for program variables
-            /////////
-            alpha = 1.0; 
-            fStar = fldS0[0];
-            omegaStar = sqrt(kappa)*fStar;
-
-            setInitialPotentialAndMassesFromPotential();
-        }
-
+        
         /////////
-        // Program potential
+        // Rescaling for program variables
         /////////
-        auto potentialTerms(Tag<0>) // Inflaton potential energy
-        {
-            double k = sqrt(2.0 / (3.0 * gamma));
-            auto exp_term = exp(-k * fldS(0_c));
-            return kappa * pow<2>(1.0 - exp_term);
-        }
+        
+    alpha = 0; //0 coordinate time, 1 conformal time
+   	fStar = fldS0[0];
+   	omegaStar = omega;
+   		 
 
-        auto potentialTerms(Tag<1>) // Interaction energy
-        {
-            return 0.5 * (q / kappa) * pow<2>(fldS(0_c)) * pow<2>(fldS(1_c));
-        }
+   		 setInitialPotentialAndMassesFromPotential();
+   		
+   	}
+   		 
+   /////////
+   // Program potential (add as many functions as terms are in the potential)
+   /////////  
    
-        /////////
-        // Derivatives of the program potential with respect fields
-        /////////
-        auto potDeriv(Tag<0>) // Derivative with respect to the inflaton
-        {
-            double k = sqrt(2.0 / (3.0 * gamma));
-            auto exp1 = exp(-k * fldS(0_c));
-            auto exp2 = exp(-2.0 * k * fldS(0_c));
-            
-            return 2.0 * kappa * k * (exp1 - exp2) + (q / kappa) * fldS(0_c) * pow<2>(fldS(1_c));
-        }
+    auto potentialTerms(Tag<0>) // Inflaton potential energy
+    {
+      	return pow<2>(M/phii) * pow<2>(1-exp(-fldS(0_c)*phii/M)) / 2;
+    }
+    auto potentialTerms(Tag<1>) // Interaction energy
+    {
+        return 0.5 * q * fldS(0_c) * fldS(0_c) * fldS(1_c) * fldS(1_c);
+    }
+    
+    
+   /////////
+   // Derivatives of the program potential with respect fields (add one function for each field)
+   ///////// 
 
-        auto potDeriv(Tag<1>)  // Derivative with respect to the daughter field
-        {
-            return (q / kappa) * fldS(1_c) * pow<2>(fldS(0_c));
-        }
-   
-        /////////
-        // Second derivatives of the program potential with respect fields
-        /////////
-        auto potDeriv2(Tag<0>) // Second derivative with respect inflaton
-        {
-            double k = sqrt(2.0 / (3.0 * gamma));
-            auto exp1 = exp(-k * fldS(0_c));
-            auto exp2 = exp(-2.0 * k * fldS(0_c));
-            
-            return 2.0 * kappa * pow<2>(k) * (2.0 * exp2 - exp1) + (q / kappa) * pow<2>(fldS(1_c));
-        }
+    auto potDeriv(Tag<0> f0) // Derivative with respect inflaton
+    {
+        return   (M/phii) * (1-exp(-fldS(0_c)*phii/M)) * exp(-fldS(0_c)*phii/M)  + q * fldS(0_c) * fldS(1_c) * fldS(1_c);
+    }
 
-        auto potDeriv2(Tag<1>) // Second derivative with respect daughter field
-        {
-            return (q / kappa) * pow<2>(fldS(0_c));
-        }
+    auto potDeriv(Tag<1> f1)  // Derivative with respect daughter field
+    {
+        return  q * fldS(1_c) * fldS(0_c) * fldS(0_c);
+    }
+    
+   /////////
+   //  Second derivatives of the program potential with respect fields (add one function for each field)
+   /////////
+
+    auto potDeriv2(Tag<0> f0) // Second derivative with respect inflaton
+    {
+        return  ( 2 - exp( fldS(0_c) * phii / M ) ) * exp(- 2 * fldS(0_c) * phii / M ) +  q * fldS(1_c) * fldS(1_c) ;
+    }
+
+    auto potDeriv2(Tag<1> f1) // Second derivative with respect daughter field
+    {
+        return  q * fldS(0_c) * fldS(0_c) ;
+    }
+
     };
 }
 
-#endif //STAROBINSKY_H
+#endif //STAROBINSKY3_H
 \end{lstlisting}
 
 Calculemos las condiciones iniciales para este potencial, para ello, veamos que la condición inicial del campo estará dada por pedir que el parámetro $\epsilon$ de slow-roll valga 1
@@ -773,3 +794,145 @@ La velocidad inicial del campo inflatón la podemos plantear a partir de pedir q
 \begin{equation}
     \dot{\tilde{\phi}}_0 = \sqrt{2 \kappa} \left[ 1 - \left( \sqrt{\frac{2}{3 \gamma}} + 1 \right)^{-1} \right]
 \end{equation}
+
+Para este modelo, si utilizamos un $q = 4 \times 10^4$ podemos encontrarnos con gráficos como los que tenemos abajo, dónde de la densidad de energía (Fig. \ref{fig:densidad_Starobinsky}) se puede observar que cuando el término de los gradientes (naranja y rojo) aumentan al igual que el de la interacción tendremos producción de ondas gravitacionales, y a medida que éstos se estabilizan la producción se congela manteniendo la energía de las ondas en un valor fijo. A su vez, del espectro de potencias (Fig. \ref{fig:Omega_Starobinsky}) podemos observar que el espectro es homogéneo sin picos y por tanto sin bandas de resonancia dónde las ondas se amplifican fuertemente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/cosmolattice/Energia_Starobinsky.png}
+    \caption{evolución en la densidad de energía de cada término de la acción y energía de las ondas gravitacionales en el tiempo en un modelo de tipo Starobinsky para $q = 4 \times 10^4$.}
+    \label{fig:densidad_Starobinsky}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/cosmolattice/Omega_Starobinsky.png}
+    \caption{espectro de potencia para las ondas gravitacionales en un modelo de tipo Starobinsky para $q = 4 \times 10^4$.}
+    \label{fig:Omega_Starobinsky}
+\end{figure}
+
+\subsection{Modelo $m^2 \phi^2$}
+
+El modelo de $m^2 \phi^2$ tampoco se encontraba programado por defecto en CosmoLattice, por ello tuvimos que armarlo nosotros, y lo hicimos a partir del siguiente \texttt{.h}:
+
+\begin{lstlisting}[style = cppStyle]
+#ifndef M2PHI2_H
+#define M2PHI2_H
+
+#include "CosmoInterface/cosmointerface.h"
+
+namespace TempLat
+{
+    struct ModelPars : public TempLat::DefaultModelPars {
+        static constexpr size_t NScalars = 2;
+        static constexpr size_t NPotTerms = 2;
+    };
+
+    #define MODELNAME m2phi2
+  
+    template<class R>
+    using Model = MakeModel(R, ModelPars);
+  
+    class MODELNAME : public Model<MODELNAME>
+    {
+    private:
+        double g, m, q, phii;
+        
+    public:
+        MODELNAME(ParameterParser& parser, RunParameters<double>& runPar, std::shared_ptr<MemoryToolBox> toolBox) : 
+            Model<MODELNAME>(parser, runPar.getLatParams(), toolBox, runPar.dt, STRINGIFY(MODELLABEL))
+        {
+
+            // Condiciones iniciales
+            fldS0 = parser.get<double, 2>("initial_amplitudes");
+            piS0 = parser.get<double, 2>("initial_momenta", {0, 0});
+            phii = fldS0[0];
+            
+            // Parametros del modelo
+            m = parser.get<double>("m");
+            q = parser.get<double>("q");
+            g = sqrt(q) * m / phii;
+            
+            // Rescaling para variables del programa
+            alpha = 0; //1;
+            fStar = phii;
+            omegaStar = m;
+
+            setInitialPotentialAndMassesFromPotential();
+        }
+
+        // Terminos del potencial
+        auto potentialTerms(Tag<0>) // Potencial del inflaton
+        {
+            return 0.5 * pow<2>(fldS(0_c));
+        }
+        
+        auto potentialTerms(Tag<1>) // Termino de interaccion
+        {
+            return 0.5 * q * pow<2>(fldS(0_c) * fldS(1_c));
+        }
+
+        // Derivadas del potencial
+        auto potDeriv(Tag<0>) // Respecto al inflaton phi
+        {
+            return fldS(0_c) + q * fldS(0_c) * pow<2>(fldS(1_c));
+        }
+
+        auto potDeriv(Tag<1>) // Respecto al campo hijo chi
+        {
+            return q * fldS(1_c) * pow<2>(fldS(0_c));
+        }
+
+        // Derivadas segundas del potencial
+        auto potDeriv2(Tag<0>) // Respecto a phi dos veces
+        {
+            return 1.0 + q * pow<2>(fldS(1_c));
+        }
+
+        auto potDeriv2(Tag<1>) // Respecto a chi dos veces
+        {
+            return q * pow<2>(fldS(0_c));
+        }
+    };
+}
+
+#endif // M2PHI2_H
+\end{lstlisting}
+
+Para este modelo, me encontré que es muy sensible a los cambios en los parámetros, haciendo que para valores de $q$ muy bajos la producción de ondas es casi nula y para valores de $q$ muy grandes el código colapsa rápidamente tienendo por respuesta un archivo lleno de \textit{nan} (Not a Number). Para resolver un poco el problema del colapso y comparar con el código de $\tanh^2$ y Statobinsky en las próximas subsecciones, trabajamos en tiempo coordenado\footnote{Según lo que leí el tiempo conforme para potenciales con masa tiene problemas el integrador y colapsa rápidamente, debo investigar más al respecto.}. Con todo ésto en mente, y para buscar qué valores de $q$ se le puede dar al código realizo un barrido en este parámetro y se pueden ver los datos más significativos en las figuras de abajo (para valores más grandes de $q$ el código colapsa en la 2da o 3era iteración).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/cosmolattice/time_evol_m2phi2.png}
+    \caption{evolución de $a(t)$ para el potencial $m^2 \phi^2$, podemos ver que $a \sim t^{2/3}$.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/cosmolattice/phi_evol_m2phi2.png}
+    \caption{evolución de $\phi(t)$ para el modelo $m^2 \phi^2$.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/cosmolattice/chi_evol_m2phi2.png}
+    \caption{evolución de $\chi(t)$ para el modelo $m^2 \phi^2$.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/cosmolattice/Omega_m2phi2.png}
+    \caption{espectro de potencia para las ondas gravitacionales en un modelo de tipo $m^2 \phi^2$.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Imagenes/cosmolattice/Energy_m2phi2.png}
+    \caption{evolución de las densidades de energía de cada tipo y ondas gravitacionales.}
+\end{figure}
+
+\subsection{Comparación de modelo $\lambda \phi^4$ vs. $\tanh^4$}
+
+
+
+\subsection{Comparación de modelo $m^2 \phi^2$ vs. $\tanh^2$ vs. Starobinsky}

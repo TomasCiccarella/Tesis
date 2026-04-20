@@ -41,24 +41,35 @@
 \contentsline {subsection}{\numberline {4.3}Spectrum of gravitational waves}{33}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Gravitational waves from parametric resonance. Numerical Results}{37}{subsection.4.4}%
 \contentsline {subsubsection}{\numberline {4.4.1}Lattice simulations of preheating with quartic potential}{37}{subsubsection.4.4.1}%
-\contentsline {section}{\numberline {5}Cosmolattice}{37}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Convenciones}{37}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Inicialización}{37}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Comandos importantes}{38}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}04/07/2025}{38}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Modelo}{38}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}Condiciones iniciales}{39}{subsubsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.3}Levantar los espectros}{40}{subsubsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.5}$\lambda \phi ^4$ sin expansión}{43}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Modelo de Starobinsky}{49}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Charlas con Nahue}{52}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Vacío de Bunch-Davies y la cuantización de las ondas en inflación}{52}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Función de transferencia de modos subhorizonte}{56}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Ecuación de Mathieu}{57}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Floquet}{60}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Modelo de $\lambda \phi ^4$}{61}{subsection.6.5}%
-\contentsline {subsubsection}{\numberline {6.5.1}Sin expansión}{62}{subsubsection.6.5.1}%
-\contentsline {subsubsection}{\numberline {6.5.2}Con expansión}{65}{subsubsection.6.5.2}%
-\contentsline {section}{\numberline {7}RAFA 2025}{68}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Resumen RAFA}{68}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Poster}{69}{subsection.7.2}%
+\contentsline {section}{\numberline {5}Testing the Starobinsky model of inflation with resonant cavities}{37}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Introduction}{37}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Scalaron decay in Jordan frame - Starobinsky model}{37}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Comparison with Einstein frame dynamics}{38}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Perturbative reheating epoch}{38}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Gravitational waves: production and detection}{39}{subsection.5.5}%
+\contentsline {section}{\numberline {6}On Legacy of Starobinsky Inflation}{39}{section.6}%
+\contentsline {section}{\numberline {7}Cosmolattice}{39}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Convenciones}{40}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Inicialización}{40}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Comandos importantes}{40}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}04/07/2025}{41}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Modelo}{41}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}Condiciones iniciales}{42}{subsubsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.3}Levantar los espectros}{43}{subsubsection.7.4.3}%
+\contentsline {subsection}{\numberline {7.5}$\lambda \phi ^4$ sin expansión}{46}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Modelo de Starobinsky}{52}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Modelo $m^2 \phi ^2$}{56}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Comparación de modelo $\lambda \phi ^4$ vs. $\tanh ^4$}{63}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}Comparación de modelo $m^2 \phi ^2$ vs. $\tanh ^2$ vs. Starobinsky}{63}{subsection.7.9}%
+\contentsline {section}{\numberline {8}Charlas con Nahue}{63}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Vacío de Bunch-Davies y la cuantización de las ondas en inflación}{64}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Función de transferencia de modos subhorizonte}{67}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Ecuación de Mathieu}{68}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Floquet}{71}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Modelo de $\lambda \phi ^4$}{72}{subsection.8.5}%
+\contentsline {subsubsection}{\numberline {8.5.1}Sin expansión}{73}{subsubsection.8.5.1}%
+\contentsline {subsubsection}{\numberline {8.5.2}Con expansión}{76}{subsubsection.8.5.2}%
+\contentsline {subsubsection}{\numberline {8.5.3}Reescaleo del espectro de potencia de GWs hoy}{79}{subsubsection.8.5.3}%
+\contentsline {section}{\numberline {9}RAFA 2025}{80}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Resumen RAFA}{80}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Poster}{81}{subsection.9.2}%

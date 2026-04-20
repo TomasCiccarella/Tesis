@@ -650,3 +650,44 @@ Una vez estudiada la dinámica y el número de partículas para cada tipo de res
     \caption{espectro de potencias lineal para las fluctuaciones del campo hijo para distintos tiempos.}
     \label{fig:Pchi_lphi4_vart_exp}
 \end{figure}
+
+\subsubsection{Reescaleo del espectro de potencia de GWs hoy}
+
+Con CosmoLattice, podemos obtener el espectro de potencia de las ondas gravitacionales en términos del número de onda adimensionalizado $\tilde{k}$ y lo que buscamos poder conseguir es el espectro de potencias en términos de la frecuencia física que podemos medir hoy. Para poder reescalar el espectro a hoy debemos tener en cuenta que en las simulaciones de CosmoLattice a partir de un cierto tiempo $t_*$ los espectros de las ondas se saturan, haciendo que no se produzcan más ondas durante Reheating, eso mismo implica que desde este tiempo hasta un tiempo $t_{reh}$ para el cual termina Reheating vale:
+
+\begin{equation}
+    \Omega_{GW} \left( k, t_{reh} \right) = \Omega_{GW} \left( k, t_* \right)
+\end{equation}
+
+Por otro lado, para ver cómo se reescala el espectro cuando estamos en las eras posteriores debemos recordar que $\Omega = \rho / \rho_C$, para la densidad de las ondas gravitacionales, sabemos que siempre va como $\rho_{GW} \propto a^4$ mientras que la densidad de energía crítica va como $\rho \propto a^4$ cuando estamos en radiación y va como $\rho \propto a^3$ cuando estamos en materia, lo que implica que el espectro de ondas se reescala de la siguiente forma:
+
+\begin{equation*}
+    \begin{split}
+        \Omega_{GW} \left( k, t_0 \right) &= \frac{\rho_{GW} \left( t_0 \right)}{\rho_C \left( t_0 \right)}\\
+        &= \frac{(a_{eq}/a_0)^4 \rho_{GW} \left( k, t_{eq} \right)}{(a_{eq}/a_0)^3 \rho_C \left( k, t_{eq} \right)}\\
+        &= \frac{a_{eq}}{a_0} \frac{\rho_{GW} \left( k, t_{eq} \right)}{\rho_C \left( k, t_{eq} \right)}\\
+        &= \frac{a_{eq}}{a_0} \frac{(a_{reh}/a_{eq})^4 \rho_{GW} \left( k, t_{reh} \right)}{(a_{reh}/a_{eq})^4 \rho_C \left( k, t_{reh} \right)}\\
+        &= \frac{a_{eq}}{a_0} \frac{\rho_{GW} \left( k, t_{reh} \right)}{\rho_C \left( k, t_{reh} \right)}\\
+        &= \frac{a_{eq}}{a_0} \Omega_{GW} \left( k, t_{reh} \right)
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    \Omega_{GW} \left( k, t_0 \right) = \frac{a_{eq}}{a_0} \Omega_{GW} \left( k, t_{*} \right)
+\end{equation}
+
+\noindent
+finalmente debemos saber que la relación $a_{eq}/a_0 = 1/3000$ y con ello podemos obtener el espectro de potencias reescalado a tiempo hoy. 
+
+Finalmente, nos falta escribir el espectro de potencias de las ondas en términos de la frecuencia física hoy que lo podemos hacer sabiendo que la relación entre $\tilde{k}$ y $f$ está dada por:
+
+\begin{equation}
+    f = \frac{a_i}{a_0} \frac{k}{2\pi} = \frac{a_{reh}}{a_0} \frac{\omega_* \tilde{k}}{2\pi}
+\end{equation}
+
+\noindent
+y podemos usar que $a \propto 1/T$
+
+\begin{equation}
+    f = \frac{T_{0}}{T_{reh}} \frac{\omega_* \tilde{k}}{2 \pi}
+\end{equation}

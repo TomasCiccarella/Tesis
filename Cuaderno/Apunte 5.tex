@@ -1,0 +1,166 @@
+\subsection{Introduction}
+
+El modelo de Starobinsky resulta útil a la hora de buscar cotas experimentales para las anisotropías en temperatura y polarización del CMB. Este modelo predice valores para $r$ en un rango de $2 \sigma$  de $r = (2-3) \times 10^{-3}$.
+
+En este trabajo se estudia la generalización del fondo cósmico de ondas gravitacionales a través del decaimiento del inflatón en un potencial del tipo Starobinsky para reheating. En este trabajo, además, los autores buscan derivar los vértices de decaimiento de la acción que de Starobinsky en el marco de Jordan para encontrar en qué frecuencias se producen ondas gravitacionales secundarias durante reheating que sean detectables a través de una cavidad resonante electromagnética en un laboratorio.
+
+\subsection{Scalaron decay in Jordan frame - Starobinsky model}
+
+Vamos a considerar la acción dada por
+
+\begin{equation}
+    S = \int \sqrt{-g} \left[ \frac{M_P^2}{2} \left( R + \frac{\alpha}{2 M^2_P} R^2 \right) + \mathcal{L}_{SM} \right] ~ d^4 x,
+\end{equation}
+
+\noindent
+dónde $\mathcal{L}_{SM}$ es el Lagrangiano del modelo estándar mientras que el resto representa la acción que nos dá el potencial de Starobinsky. Esta acción, a su vez, a partir de definir un multiplicador de Lagrange $\chi$ que representará al campo hijo en el que decaerá el inflatón podemos escribirla como 
+
+\begin{equation}
+    S = \int \sqrt{-g} \left[ \frac{M_P^2}{2} \left( 1 + \frac{\alpha \chi}{M_P^2} \right) R - \frac{\alpha \chi^4}{4} \right] ~ d^4 x.
+\end{equation}
+
+\noindent
+Para poder obtener la dinámica del campo $\chi$ podemos realizar una transformación de Weyl.
+
+Podemos expandir la métrica que utilizaremos a partir de pensar en una métrica de fondo de tipo Minkowski:
+
+\begin{equation}
+    g_{\mu \nu} = \eta_{\mu \nu} + \frac{2}{M_P} h_{\mu \nu},
+\end{equation}
+
+\noindent
+con lo que podemos hacer una expansión en términos cuadráticos de $h_{\mu \nu}$ para la parte lineal en $R$ como:
+
+\begin{equation}
+    \begin{split}
+        \sqrt{-g} \frac{M_P^2}{2} R = M_P \left( \partial_\mu \partial_\nu h^{\mu \nu} - \Box h \right) - \partial_\mu h^{\mu \nu} \partial_\nu h + \frac{1}{2} \partial_\mu h \partial^\mu h - \frac{1}{2} \partial_\rho h^{\mu \nu} \partial^\rho h_{\mu \nu} + \partial_\mu h^{\mu \nu} \partial^\rho h_{\rho \nu} + \mathcal{O} \left( h^3 \right).
+    \end{split}
+\end{equation}
+
+\noindent
+Substituyendo esta ecuación en la acción de Starobinsky podemos obtener términos cinéticos cruzados de $\chi$ con $h$, pero para obtener términos puramente cinéticos de $\chi$ debemos hacer una transformación de la forma $\displaystyle h_{\mu \nu} \to h_{\mu \nu} - \frac{\alpha}{2 M_P} \eta_{\mu \nu} \chi^2$ que es una transformación de Weyl linealizada $\left( \frac{\chi}{M_P} \ll 1 \right)$ y nos deja con una acción de la siguiente forma:
+
+\begin{equation}
+    \begin{split}
+        S =& \int \left( 1 + \frac{\alpha \chi^2}{M_P^2} \right) \left( - \partial_\mu h^{\mu \nu} \partial_\nu h + \frac{1}{2} \partial_\mu h \partial^\mu h - \frac{1}{2} \partial_\rho h^{\mu \nu} \partial^\rho h_{\mu \nu} + \partial_\mu h^{\mu \nu} \partial^\rho h_{\rho \nu} \right) ~ d^4 x\\
+        &- \int \frac{3 \alpha^2}{4 M_P^2} \partial_\mu \chi^2 \partial^\mu \chi^2 + \frac{\alpha^2}{M_P^3} \chi^2 \left( \partial_\mu h^{\mu \nu} \partial_\nu \chi^2 - \partial_\mu h \partial^\mu \chi^2 \right) ~ d^4 x + \int \left[ \frac{3 \alpha^3}{4 M_P^4} \chi^2 \partial_\mu \chi^2 \partial^\mu \chi^2 - \frac{\alpha \chi^4}{4} \right] ~ d^4 x.
+    \end{split}
+\end{equation}
+
+\noindent
+podemos definir al grado de libertad escalar $\displaystyle \zeta = \sqrt{\frac{3}{2}} \frac{\alpha}{M_P} \chi^2$ que llamaremos ``scalaron'' y es tal que la acción se simplifica en 
+
+\begin{equation}
+    \begin{split}
+        S =& \int \left[ \left( 1 + \sqrt{\frac{2}{3}} \frac{\zeta}{M_P} \right) \left( - \partial_\mu h^{\mu \nu} \partial_\nu h + \frac{1}{2} \partial_\mu h \partial^\mu h - \frac{1}{2} \partial_\rho h^{\mu \nu} \partial^\rho h_{\mu \nu} + \partial_\mu h^{\mu \nu} \partial^\rho h_{\rho \nu} \right) - \frac{1}{2} \partial_\mu \zeta \partial^\mu \zeta \right] ~ d^4 x\\
+        &- \int \frac{M_P^2}{6 \alpha} \zeta^2 ~ d^4 x + \int \left[ \frac{2}{3} \frac{\zeta}{M_P} \left( \partial_\mu h^{\mu \nu} \partial_\nu \zeta - \partial_\mu h \partial^\mu \zeta \right) + \frac{1}{\sqrt{6}} \frac{\zeta}{M_P} \partial_\mu \zeta \partial^\mu \zeta \right] ~ d^4 x
+    \end{split}
+\end{equation}
+
+\noindent
+el scalaron lo podemos identificar como el inflatón asociado al potencial de Starobinsky con masa $M_\zeta = M_P/\sqrt{3 \alpha} \approx (3.173 \pm 0.022) \times 10^{13}$ GeV.
+
+\subsection{Comparison with Einstein frame dynamics}
+
+El acople entre $\zeta$ y las perturbaciones métricas $h$ de la forma $\zeta h h$ en el marco de Einstein corresponde con un factor conforme $\Omega (\zeta)$ que relaciona este marco con el de Jordan, y dá oscilaciones en la métrica. Este efecto es importante resaltar que es distinto a los efectos de aniquilación del inflatón, pero las correcciones en $R$ y esta oscilación en la métrica pueden actuar como fuente de producción de ondas gravitacionales de forma no adiabática durante reheating.
+
+\subsection{Perturbative reheating epoch}
+
+Si asumimos que el lagrangiano del modelo estándar está mínimamente acoplado con la gravedad, podemos calcular la acción del modelo estándar a partir de 
+
+\begin{equation}
+    \int \sqrt{-g} \mathcal{L}_{SM} ~ d^4 x = \int \left( 1 + \frac{h}{M_P} - \frac{4}{\sqrt{6}} \frac{\zeta}{M_P} \right) ~ \mathcal{L}_{SM} ~ d^4 x
+\end{equation}
+
+\noindent
+de acá se puede observar que existen vértices en los diagramas de Feynmann que permiten relacionar al decaimiento del scalaron con la creación de partículas del modelo estándar siempre y cuando éstan tengan una masa menor a la del scalaron haciendo que las partículas del modelo estándar sean relativistas. El vértice que contiene este proceso tiene una amplitud de scattering dada por
+
+\begin{equation}
+    \left| \mathcal{M} \right|^2 = \frac{2}{3} \frac{M_\zeta^4}{M_P^2}
+\end{equation}
+
+\noindent
+y con ésto podemos ver que la tasa de decaimiento estará dada por:
+
+\begin{equation}
+    \Gamma_{SM} = g_{reh} \times \frac{M_\zeta^3}{24 \pi M^2_P}
+\end{equation}
+
+\noindent
+con $g_{reh} = 106.75$ el número efectivo de grados de libertad relativista durante reheating. A su vez, de ésto, se puede obtener una aproximación para la temperatura al final de reheating dada por:
+
+\begin{equation}
+    T_{reh} = \sqrt[4]{\frac{90}{\pi^2} \frac{M_P^2 \Gamma^2}{g_{reh}}},
+\end{equation}
+
+\noindent
+con $\Gamma = \Gamma_{SM} + \Gamma_{hh}$.
+
+Por otro lado, podemos calcular el $\omega$ de reheating que relaciona la presión y la densidad de energía como 
+
+\begin{equation}
+    \omega_{reh} \approx \frac{\left\langle \dot{\zeta}^2 \right\rangle - \left\langle M^2_\zeta \zeta^2 \right\rangle}{\left\langle \dot{\zeta}^2 \right\rangle + \left\langle M^2_\zeta \zeta^2 \right\rangle} + \mathcal{O} \left( \frac{\langle \zeta \rangle}{M_P} \right) \approx 0
+\end{equation}
+
+\noindent
+dándo por resultado que una época de reheating dada por un potencial del tipo Starobinsky corresponde con una era dominada por la materia, ésto se debe a que $\zeta$ oscila rápidamente alrededor de $\zeta = 0$ haciendo que $\left\langle \dot{\zeta}^2 \right\rangle = \left\langle M_\zeta^2 \zeta^2 \right\rangle$.
+
+\subsection{Gravitational waves: production and detection}
+
+Utilizando el gauge TT podemos ver que los únicos términos que contribuyen con el decaimiento del scalaraton en dos gravitones $(h_{\mu\nu})$ dándonos los vértices que buscamos estudiar son los siguientes:
+
+\begin{equation}
+    \sqrt{\frac{2}{3}} \frac{1}{M_P} \left( - \zeta h^{\mu \nu} \Box h_{\mu \nu} - 2 \zeta \partial_\rho h_{\mu \nu} \partial^\rho h^{\mu \nu} + \zeta \partial_\rho h^{\mu \sigma} \partial_\sigma h_ \mu^\rho \right)
+\end{equation}
+
+\noindent
+siendo que en el gauge TT $k^\mu \epsilon_{\mu \nu} = 0$ y $k^2 = 0$ entonces el último y el primer término son nulos. Luego, la amplitud de decaimiento nos queda:
+
+\begin{equation}
+    \left| \mathcal{M} \right| = \frac{4}{M_P} \sqrt{\frac{2}{3}} \left| k_1 \cdot k_2 \right| \left( \epsilon_1 \cdot \epsilon_2 \right)
+\end{equation}
+
+\noindent
+siendo $\epsilon$ los tensores de polarización, y $k$ los momentos de los gravitones. En el sistema de referencia del centro de masa podemos escribir $k_1 \cdot k_2 = - M^2_\zeta / 2$ entonces la tasa de decaimiento de las ondas va a estar dada por:
+
+\begin{equation}
+    \Gamma_{hh} = \frac{1}{6 \pi} \frac{M^3_\zeta}{M^2_P}
+\end{equation}
+
+El número de grados de libertad relativistas libres lo podemos calcular como
+
+\begin{equation}
+    \Delta N_{eff} = 2.85 \frac{\Gamma_{hh}}{\Gamma_{SM}} \approx 0.028
+\end{equation}
+
+\noindent
+dónde la cota que se obtiene de las mediciones de Planck está dada por $\Delta N_{eff} \leq 0.2$ lo que implica que la cota hallada está dentro de los límites. A su vez, conociendo $\Gamma_{hh}$ y $\Gamma_{SM}$ podemos conocer la temperatura de reheating $T_{reh} \approx (7.376 \pm 0.077) \times 10^{10}$ GeV.
+
+A partir de conocer que inflación arranca cuando termina la inflación podemos calcular la mínima frecuencia que pueden tener las ondas gravitacionales (el límite infrarrojo):
+
+\begin{equation}
+    f_{min} = \frac{M_\zeta}{4 \pi} \frac{a_{end}}{a_0} = \frac{M_\zeta}{4 \pi} \sqrt[3]{\frac{\rho_{reh}}{\rho_{end}}} \frac{T_0}{T_{reh}} \sqrt[3]{\frac{g_0}{g_{reh}}} \approx (3.400 \pm 0.035) \times 10^6 ~ \text{Hz}
+\end{equation}
+
+\noindent
+mientras que la máxima frecuencia la podemos encontrar pidiendo que reheating termina cuando $H_{reh} \sim \Gamma_{SM}$ lo que implica que 
+
+\begin{equation}
+    f_{max} = \frac{M_\zeta}{4 \pi} \frac{a_{reh}}{a_0} = \frac{M_{\zeta}}{4 \pi} \frac{T_0}{T_{reh}} \sqrt[3]{\frac{g_0}{g_{reh}}} \approx (4.061 \pm 0.014) \times 10^{12} ~ \text{Hz}
+\end{equation}
+
+El espectro de la densidad de energía para las ondas gravitacionales producidas durante refeating como consecuencia del decaimiento del inflatón lo podemos calcular como
+
+\begin{equation}
+    \frac{d \Omega_{hh}}{d \log k} = \frac{16 k^4}{M^4_\zeta} \frac{\rho_{reh}}{\rho_0} \frac{\Gamma_{hh}}{H_{reh}} \frac{e^{-\gamma(k)}}{\gamma(k)}, \hspace{2cm} \gamma(k) = \left[ \sqrt[3]{\frac{g_{reh}}{g_0}} \frac{T_{reh}}{T_0} \frac{2k}{M_\zeta} \right]^{3/2}
+\end{equation}
+
+\noindent
+y a partir del espectro de la densidad de energía podemos encontrar la amplitud característica de las ondas gravitacionales en términos de $f = k/2\pi$:
+
+\begin{equation}
+    h_c (f) = \sqrt{\frac{3 H_0^2}{f^2} \frac{d \Omega_{hh}}{d \log f}}
+\end{equation}
+
+\noindent
+podemos ver que para frecuencias bajas $h_c \propto \sqrt[4]{f}$ y decae exponencialmente para frecuencias altas.
