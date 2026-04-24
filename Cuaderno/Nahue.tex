@@ -651,7 +651,7 @@ Una vez estudiada la dinámica y el número de partículas para cada tipo de res
     \label{fig:Pchi_lphi4_vart_exp}
 \end{figure}
 
-\subsubsection{Reescaleo del espectro de potencia de GWs hoy}
+\subsection{Reescaleo del espectro de potencia de GWs hoy}
 
 Con CosmoLattice, podemos obtener el espectro de potencia de las ondas gravitacionales en términos del número de onda adimensionalizado $\tilde{k}$ y lo que buscamos poder conseguir es el espectro de potencias en términos de la frecuencia física que podemos medir hoy. Para poder reescalar el espectro a hoy debemos tener en cuenta que en las simulaciones de CosmoLattice a partir de un cierto tiempo $t_*$ los espectros de las ondas se saturan, haciendo que no se produzcan más ondas durante Reheating, eso mismo implica que desde este tiempo hasta un tiempo $t_{reh}$ para el cual termina Reheating vale:
 
@@ -691,3 +691,167 @@ y podemos usar que $a \propto 1/T$
 \begin{equation}
     f = \frac{T_{0}}{T_{reh}} \frac{\omega_* \tilde{k}}{2 \pi}
 \end{equation}
+
+\subsubsection{Corrección: Nahue-Figueroa}
+
+Empecemos reescalando la frecuencia, para lo cual sabemos que vale:
+
+\begin{equation*}
+    \begin{split}
+        f_0 &= \frac{k_0}{2 \pi}\\
+        f_0 &= \frac{k_i}{2 \pi} \frac{a_i}{a_0}\\
+        f_0 &= \frac{k_i}{2 \pi} \frac{a_{reh}}{a_{0}} \frac{a_i}{a_{reh}}
+    \end{split}
+\end{equation*}
+
+\noindent
+utilizando que $g^{1/3}_s a T = cte$ podemos escribir $\frac{a_{reh}}{a_0}$ en términos de la temperatura $T_0$ y $T_{reh}$ como:
+
+\begin{equation*}
+    \begin{split}
+        \frac{a_{reh}}{a_0} &= \frac{g_{s,0} T_0}{g_{s,reh} T_{reh}}
+    \end{split}
+\end{equation*}
+
+\noindent
+por el otro lado, para la parte de $\frac{a_i}{a_{reh}}$ podemos usar cómo evoluciona la densidad crítica en ese período
+
+\begin{equation*}
+    \begin{split}
+        \rho_{C,i} &= \rho_{C,reh} \left( \frac{a_{reh}}{a_i} \right)^{3(1 + \omega)}\\
+        \frac{\rho_{C,i}}{\rho_{C,reh}} &= \left( \frac{a_{reh}}{a_i} \right)^{3(1 + \omega)}\\
+        \frac{a_{reh}}{a_i} &= \left( \frac{\rho_{C,i}}{\rho_{C,reh}} \right)^{\frac{1}{3(1 + \omega)}}\\
+        \frac{a_{i}}{a_{reh}} &= \left( \frac{\rho_{C,reh}}{\rho_{C,i}} \right)^{\frac{1}{3(1 + \omega)}}
+    \end{split}
+\end{equation*}
+
+\noindent
+utilicemos $\rho_{RAD} = \frac{\pi^2}{30} g T^4$ y $\rho_{C,i} = 2 V_i$ para poder reescribir ésto y juntemos todo en la frecuencia de modo tal que nos queda:
+
+\begin{equation*}
+    \begin{split}
+        f_0 &= \frac{k_i}{2 \pi} \frac{a_{reh}}{a_{0}} \frac{a_i}{a_{reh}}\\
+        f_0 &= \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh} T_{reh}} \left( \frac{\rho_{C,reh}}{\rho_{C,i}} \right)^{\frac{1}{3(1 + \omega)}}\\
+        f_0 &= \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh} T_{reh}} \left( \frac{\frac{\pi^2}{30} g_{reh} T^4_{reh}}{2V_{i}} \right)^{\frac{1}{3(1 + \omega)}}
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    f_0 = \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh}} \left( \frac{\pi^2 g_{reh}}{60 V_{i}} \right)^{\frac{1}{3(1 + \omega)}} T^{\frac{1 - 3 \omega}{3 (1 + \omega)}}_{reh}
+\end{equation}
+
+Por otro lado, sabemos que el $\Omega_{GW}$ se puede escribir a partir de:
+
+\begin{equation}
+    \Omega_{GW} (k, a_0) = \frac{\rho_{GW} (k, a_0)}{\rho_{C0}}
+\end{equation}
+
+\noindent
+A partir de saber que la densidad de energía de las ondas gravitacionales va como $a^{-4}$ de modo tal que nos queda:
+
+\begin{equation*}
+    \rho_{GW} (k, a_0) = \left( \frac{a_f}{a_0} \right)^{4} \rho_{GW} (k, a_f)
+\end{equation*}
+
+\noindent
+con ésto, el espectro de potencias nos queda:
+
+\begin{equation*}
+    \begin{split}
+        \Omega_{GW} (k, a_0) &= \frac{1}{\rho_{C0}} \left( \frac{a_f}{a_0} \right)^4 \rho_{GW} \left( k, a_f \right)\\
+        \Omega_{GW} (k, a_0) &= \frac{\rho_{Cf}}{\rho_{C0}} \left( \frac{a_f}{a_0} \right)^4 \frac{\rho_{GW} \left( k, a_f \right)}{\rho_{Cf}}\\
+        \Omega_{GW} (k, a_0) &= \frac{\rho_{Cf}}{\rho_{C0}} \left( \frac{a_f}{a_0} \right)^4 \Omega_{GW} \left( k, a_f \right)\\
+        \Omega_{GW} (k, a_0) &= \frac{\rho_{RAD,0}}{\rho_{C0}} \frac{\rho_{Cf}}{\rho_{RAD,0}} \left( \frac{a_f}{a_0} \right)^4 \Omega_{GW} \left( k, a_f \right)\\
+        \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{\rho_{Cf}}{\rho_{RAD,0}} \left( \frac{a_f}{a_0} \right)^4 \Omega_{GW} \left( k, a_f \right)
+    \end{split}
+\end{equation*}
+
+\noindent
+podemos utilizar que la densidad de energía de radiación evoluciona como
+
+\begin{equation}
+    \rho_{RAD} = \frac{\pi^2}{30} g T^4 \hspace{2cm} \Longrightarrow \hspace{2cm} T = \left( \frac{\rho_{RAD}}{\frac{\pi^2}{30} g} \right)^{1/4} 
+\end{equation}
+
+\noindent
+luego, utilizando la conservación de la energía podemos encontrarnos con cómo escala la densidad de energía a hoy
+
+\begin{equation*}
+    \begin{split}
+        g^{1/3}_{s,0} a_0 T_0 &= g^{1/3}_{s,reh} a_{reh} T_{reh}\\
+        g^{1/3}_{s,0} a_0 \left( \frac{\rho_{RAD,0}}{\frac{\pi^2}{30} g_{0}} \right)^{1/4} &= g^{1/3}_{s,reh} a_{reh} \left( \frac{\rho_{RAD,reh}}{\frac{\pi^2}{30} g_{reh}} \right)^{1/4}\\
+        g^{4/3}_{s,0} a_0^4 \frac{\rho_{RAD,0}}{\frac{\pi^2}{30} g_{0}} &= g^{4/3}_{s,reh} a_{reh}^4 \frac{\rho_{RAD,reh}}{\frac{\pi^2}{30} g_{reh}}\\
+        a_0^4 \rho_{RAD,0} &= \frac{g_0}{g_{reh}} \left( \frac{g_{s,reh}}{g_{s,0}} \right)^{4/3} a_{reh}^4 \rho_{RAD,reh}
+    \end{split}
+\end{equation*}
+
+\noindent
+reemplazando ésto en el espectro tenemos:
+
+\begin{equation*}
+    \begin{split}
+        \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{\rho_{Cf}}{\rho_{RAD,0}} \left( \frac{a_f}{a_0} \right)^4 \Omega_{GW} \left( k, a_f \right)\\
+        \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{\rho_{Cf}}{\frac{g_0}{g_{reh}} \left( \frac{g_{s,reh}}{g_{s,0}} \right)^{4/3} \rho_{RAD,reh}} \left( \frac{a_f}{a_{reh}} \right)^4 \Omega_{GW} \left( k, a_f \right)\\
+        \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \frac{\rho_{Cf}}{\rho_{RAD,reh}} \left( \frac{a_f}{a_{reh}} \right)^4 \Omega_{GW} \left( k, a_f \right)
+    \end{split}
+\end{equation*}
+
+\noindent
+ahora podemos reescalar $\rho_{C,f}$ a $\rho_{C,reh}$ a partir de utilizar que la ecuación de estado tiene un $\omega$ efectivo por tanto $\displaystyle \rho_{C,f} = \rho_{C,reh} \left( \frac{a_{reh}}{a_f} \right)^{3(1 + \omega)}$
+
+\begin{equation*}
+    \begin{split}
+        \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \frac{\rho_{C,reh}}{\rho_{RAD,reh}} \left( \frac{a_{reh}}{a_{f}} \right)^{3(1 + \omega)} \left( \frac{a_f}{a_{reh}} \right)^4 \Omega_{GW} \left( k, a_f \right)\\
+        \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \frac{\rho_{C,reh}}{\rho_{RAD,reh}} \left( \frac{a_{f}}{a_{reh}} \right)^{1 - 3 \omega} \Omega_{GW} \left( k, a_f \right)\\
+        \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \frac{\rho_{C,reh}}{\rho_{RAD,reh}} \left( \frac{a_i}{a_{reh}} \right)^{1 - 3 \omega} \left( \frac{a_{f}}{a_{i}} \right)^{1 - 3 \omega} \Omega_{GW} \left( k, a_f \right)
+    \end{split}
+\end{equation*}
+
+\noindent
+utilizando que durante la época de radiación tenemos que la densidad crítica es prácticamente toda de radiación podemos tomar $ \displaystyle \frac{\rho_{C,reh}}{\rho_{RAD,reh}} \approx 1$, además conocemos cuánto vale el cociente $a_i/a_{reh}$ porque lo calculamos previamente tenemos que el espectro final nos queda:
+
+\begin{equation*}
+    \begin{split}
+        \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left[ \left( \frac{\rho_{C,reh}}{\rho_{C_i}} \right)^{\frac{1}{3 (1 + \omega)}} \right]^{1 - 3 \omega} \left( \frac{a_{f}}{a_{i}} \right)^{1 - 3 \omega} \Omega_{GW} \left( k, a_f \right)\\
+        \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left( \frac{\rho_{C,reh}}{\rho_{C_i}} \right)^{\frac{1 - 3 \omega}{3 (1 + \omega)}} \left( \frac{a_{f}}{a_{i}} \right)^{1 - 3 \omega} \Omega_{GW} \left( k, a_f \right)
+    \end{split}
+\end{equation*}
+
+\noindent
+utilicemos $\rho_{RAD,reh} = \frac{\pi^2}{30} g_{reh} T^4_{reh}$ y $\rho_{C,i} = 2 V_i$ para finalmente obtener que el espectro de potencia de las ondas gravitacionales vale:
+
+\begin{equation*}
+    \begin{split}
+        \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left( \frac{\frac{\pi^2}{30} g_{reh} T_{reh}^4}{2 V_i} \right)^{\frac{1 - 3 \omega}{3 (1 + \omega)}} \left( \frac{a_{f}}{a_{i}} \right)^{1 - 3 \omega} \Omega_{GW} \left( k, a_f \right)
+    \end{split}
+\end{equation*}
+
+\begin{equation}
+    \Omega_{GW} (k, a_0) = \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left( \frac{\pi^2 g_{reh} T_{reh}^4}{60 V_i} \right)^{\frac{1 - 3 \omega}{3 (1 + \omega)}} \left( \frac{a_{f}}{a_{i}} \right)^{1 - 3 \omega} \Omega_{GW} \left( k, a_f \right)
+\end{equation}
+
+\begin{infobox}[olive]{Casos especiales}
+    Podemos ver a partir de las ecuaciones que obtuvimos previamente cómo es la frecuencia y el espectro de potencias hoy para los distintos modelos que utilizamos (los que se comportan como materia y los que se comportan como radiación).
+
+    \begin{itemize}
+        \item Para modelos de tipo radiación $(\omega = 1/3)$ tenemos:
+        
+            \begin{equation}
+                f_0 = \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh}} \left( \frac{\pi^2 g_{reh}}{60 V_{i}} \right)^{\frac{1}{4}}
+            \end{equation}
+
+            \begin{equation}
+                \Omega_{GW} (k, a_0) = \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \Omega_{GW} \left( k, a_f \right)
+            \end{equation}
+
+        \item Para modelos de tipo materia $(\omega = 0)$ tenemos:
+        
+            \begin{equation}
+                f_0 = \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh}} \left( \frac{\pi^2 g_{reh}}{60 V_{i}} \right)^{\frac{1}{3}} T^{\frac{1}{3}}_{reh}
+            \end{equation}
+
+            \begin{equation}
+                \Omega_{GW} (k, a_0) = \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left( \frac{\pi^2 g_{reh} T_{reh}^4}{60 V_i} \right)^{\frac{1}{3}} \left( \frac{a_{f}}{a_{i}} \right) \Omega_{GW} \left( k, a_f \right)
+            \end{equation}
+    \end{itemize}
+\end{infobox}

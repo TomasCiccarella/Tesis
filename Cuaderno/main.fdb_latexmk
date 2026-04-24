@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1776661111.42513 "/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/main.tex" "main.pdf" "main" 1776661158.16592 0
+["pdflatex"] 1777060890.29292 "/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/main.tex" "main.pdf" "main" 1777060903.54779 0
   "/etc/texmf/web2c/texmf.cnf" 1754028040.36857 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/tomy/Desktop/UBA/Tesis/Git/Cuaderno/main.tex" 1776212862.93573 888 f7d17b2f580ae39ec45ae33397b92b67 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -409,13 +409,13 @@
   "Imagenes/cosmolattice/varq_inflaton.png" 1770053983.10657 864633 05a989ca96a075a1f13febb112acc263 ""
   "Librerías.tex" 1769625847.62113 8934 732937f366b14b545112af24f315f2e3 ""
   "Mathieu_apunte2.png" 1756923532 101612 175d595cc357b0202d1163a72fe2c8c9 ""
-  "Nahue.tex" 1776661062.93147 43145 6d1c820246de6e970f500c2719269c66 ""
+  "Nahue.tex" 1777060889.91898 52556 79dd30a8252a8d43557ede8225835b07 ""
   "Portada.png" 1744512137.87731 982398 f367fcf69b808f2fc124990fa720436d ""
   "RAFA.tex" 1758854208.74749 2887 2e694a21cdb9b41c2027ae2b32d360a7 ""
-  "main.aux" 1776661157.24588 26089 ace4423b54c5b3e9427c6b3519d8bc9f "pdflatex"
-  "main.out" 1776661157.26588 18675 9491858350d473a5c88a8e5dbc4de26a "pdflatex"
+  "main.aux" 1777060903.29259 26224 fc56e4ea2d20cc632b79fd235006f0ca "pdflatex"
+  "main.out" 1777060903.29658 18869 f5be5af21ac48f3b827c8c361d31b5f1 "pdflatex"
   "main.tex" 1776212862.93573 888 f7d17b2f580ae39ec45ae33397b92b67 ""
-  "main.toc" 1776661157.2684 7929 614d670915a0d07c5f90b6f5e6d56ff8 "pdflatex"
+  "main.toc" 1777060903.29678 8023 0f4ebdef68ac122985c73820aa317446 "pdflatex"
   "poster.pdf" 1758032727.87745 1883826 fb44e609ae5ec4d3b81eced3647e8933 ""
   (generated)
   "main.aux"
