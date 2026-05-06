@@ -1,0 +1,199 @@
+%============================================================================
+% 
+%============================================================================
+\documentclass[letterpaper,12pt]{report}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+\usepackage[numbers]{natbib}
+\usepackage{graphicx,setspace,longtable,pdflscape,color}
+\usepackage[colorlinks=true,linkcolor=blue,
+           urlcolor=blue,citecolor=blue]{hyperref}
+\usepackage{titlesec,url}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage[margin=2.54 cm]{geometry}
+\usepackage[version=4]{mhchem}
+\usepackage{amssymb, amsmath} 
+\usepackage{float}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{xspace}
+\newcommand{\CosmoLattice}{\ensuremath{\mathcal{C}}\text{osmo}\ensuremath{\mathcal{L}}\text{attice}\xspace}
+\begin{document}
+\spacing{1.5}
+%\frontmatter
+%============================================================================
+% 
+%============================================================================
+
+
+
+%============================================================================
+% 
+%============================================================================
+
+
+\newpage
+\thispagestyle{empty}
+\begin{center}
+\includegraphics[width=0.3\textwidth]{UBA.jpg}
+\vfill
+
+{\Huge Producción de ondas gravitatorias durante el Recalentamiento: análisis teórico
+y simulaciones con CosmoLattice}
+\vfill
+\textbf{Tomás Alejandro Ciccarella}\\
+
+\vfill
+
+\textsc{Tesis de Licenciatura en Ciencias Físicas}\\
+\vfill
+\textsc{Universidad de Buenos Aires - Facultad de Ciencias Exactas y Naturales}\\
+\textsc{Ciudad Autónoma de Buenos Aires - Argentina}\\
+\vfill
+\textsc{Junio 2026}
+\end{center}
+
+%============================================================================
+%
+%============================================================================
+
+
+
+\newpage
+\thispagestyle{empty}
+
+
+
+
+
+
+
+
+\vspace{0.5cm}
+
+\noindent
+\textbf{TEMA:} Producción de ondas gravitatorias durante el Recalentamiento: análisis teórico
+y simulaciones con CosmoLattice
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{ALUMNO:} Tomás Alejandro Ciccarella
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{LUGAR DE TRABAJO:} Departamento de Física, Facultad de Ciencias Exactas y Naturales, UBA
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{DIRECTOR DEL TRABAJO:} Nahuel Mirón Granese
+
+\noindent
+\textbf{CO-DIRECTOR DEL TRABAJO:} Esteban Calzetta
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{FECHA DE INICIACIÓN:} Abril 2025
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{FECHA DE FINALIZACIÓN:} Junio 2026
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{FECHA DE EXAMEN:} xx/06/2026
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{INFORME FINAL APROBADO POR:}
+
+\vspace{1 cm}
+
+\begin{center}
+\begin{table}[h]
+\begin{tabular}{ll}
+\rule{70mm}{0.1mm}      \hspace{1.5cm}           & \rule{70mm}{0.1mm} \\
+\vspace{1.0 cm}
+Autor                              & Jurado  
+\vspace{1.0 cm}
+\\
+\rule{70mm}{0.1mm}      \hspace{1.5cm}            & \rule{70mm}{0.1mm} \\
+\vspace{1.0 cm}
+Director                         & Jurado           \\
+\rule{70mm}{0.1mm}       \hspace{1.5cm}           & \rule{70mm}{0.1mm} \\
+\vspace{1.0 cm}
+Profesor de Tesis de Licenciatura & Jurado          \\
+\end{tabular}
+\end{table}
+\end{center}
+\noindent 
+
+%============================================================================
+
+\newpage
+\thispagestyle{empty}
+\section*{Resumen}
+Aca va el resumen\\
+\textbf{Palabras clave:} 
+\newpage
+
+
+%============================================================================
+\section*{Agradecimientos}
+\thispagestyle{empty}
+Acá van los agradecimentos
+\noindent 
+%============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+%============================================================================
+.
+%============================================================================
+
+
+\tableofcontents
+\setcounter{page}{1}
+     \pagenumbering{Roman}
+\newpage
+
+
+\input{1.introduccion}
+\input{2.cap2}
+\input{3.cap3}
+\input{4.cap4}
+\input{5.conclusiones}
+
+\bibliographystyle{apalike}
+\bibliography{6.references}
+\input{Anexo}
+\newpage
+\section*{}
+\thispagestyle{empty}
+
+\begin{flushright}
+\null\vspace{\stretch{1}}
+\input{last_page}
+\vspace{\stretch{4}}\null
+\end{flushright}
+\noindent
+
+\end{document}
