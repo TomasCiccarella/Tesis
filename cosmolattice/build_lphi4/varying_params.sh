@@ -4,7 +4,7 @@
 param_file="../src/models/parameter-files/lphi4.in"
 
 # Valores de lambda y q
-lambdas=(5e-15 5e-13 5e-14)
+lambdas=(9e-14) #(5e-15 5e-13 5e-14)
 qs=(5050)
 
 for lambda in "${lambdas[@]}"

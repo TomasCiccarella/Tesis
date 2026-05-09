@@ -2,47 +2,47 @@ This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Tesis_Ciccarella.aux
 The style file: apalike.bst
-I found no \citation commands---while reading file Tesis_Ciccarella.aux
-Database file #1: 6.references.bib
-You've used 0 entries,
+Database file #1: references.bib
+Warning--empty journal in Kofman_1997_Reheating
+You've used 60 entries,
             1935 wiz_defined-function locations,
-            471 strings with 3696 characters,
-and the built_in function-call counts, 17 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
-int.to.chr$ -- 1
+            812 strings with 11955 characters,
+and the built_in function-call counts, 19011 in all, are:
+= -- 1791
+> -- 834
+< -- 41
++ -- 278
+- -- 268
+* -- 1430
+:= -- 3598
+add.period$ -- 182
+call.type$ -- 60
+change.case$ -- 420
+chr.to.int$ -- 58
+cite$ -- 61
+duplicate$ -- 792
+empty$ -- 1242
+format.name$ -- 361
+if$ -- 3585
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+missing$ -- 67
+newline$ -- 303
+num.names$ -- 184
+pop$ -- 373
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 429
 quote$ -- 0
-skip$ -- 1
+skip$ -- 648
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 728
+swap$ -- 57
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 340
+warning$ -- 1
+while$ -- 122
 width$ -- 0
-write$ -- 2
-(There was 1 error message)
+write$ -- 753
+(There was 1 warning)

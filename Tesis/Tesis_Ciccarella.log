@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  6 MAY 2026 11:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  8 MAY 2026 23:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -411,6 +411,10 @@ LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
+
+
+LaTeX Warning: Label `fig:Floquet' multiply defined.
+
 )
 \openout1 = `Tesis_Ciccarella.aux'.
 
@@ -498,22 +502,33 @@ Package chemgreek Info: Activating mapping `default' on line 24.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<UBA.jpg, id=32, 304.13625pt x 307.1475pt>
+<UBA.jpg, id=80, 304.13625pt x 307.1475pt>
 File: UBA.jpg Graphic file (type jpg)
 <use UBA.jpg>
 Package pdftex.def Info: UBA.jpg  used on input line 41.
 (pdftex.def)             Requested size: 140.92804pt x 142.32532pt.
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./UBA.jpg>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 123.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 123.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2] [3] [4] (./Tesis_Ciccarella.toc
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./UBA.jpg>] [2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.148 \newpage
+               [1
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.173 \tableofcontents
+                       [2] (./Tesis_Ciccarella.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
@@ -522,7 +537,7 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@toc=\write4
 \openout4 = `Tesis_Ciccarella.toc'.
 
- [1
+ [3
 
 ] (./1.introduccion.tex
 Cap\'{\i }tulo 1.
@@ -540,10 +555,75 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has b
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {Preheating} \label{sec:cap3} [2
+            {Evolución lineal de los campos} \label{sec:cap3} [2
 
 ]
 Cap\'{\i }tulo 3.
+<figures/background_m2phi2.pdf, id=257, 1300.86pt x 578.16pt>
+File: figures/background_m2phi2.pdf Graphic file (type pdf)
+<use figures/background_m2phi2.pdf>
+Package pdftex.def Info: figures/background_m2phi2.pdf  used on input line 9.
+(pdftex.def)             Requested size: 352.31653pt x 156.58167pt.
+<figures/Background_lphi4.pdf, id=258, 722.7pt x 433.62pt>
+File: figures/Background_lphi4.pdf Graphic file (type pdf)
+<use figures/Background_lphi4.pdf>
+Package pdftex.def Info: figures/Background_lphi4.pdf  used on input line 14.
+(pdftex.def)             Requested size: 352.31653pt x 211.39055pt.
+<figures/Floquet_m2phi2.pdf, id=259, 722.7pt x 433.62pt>
+File: figures/Floquet_m2phi2.pdf Graphic file (type pdf)
+<use figures/Floquet_m2phi2.pdf>
+Package pdftex.def Info: figures/Floquet_m2phi2.pdf  used on input line 28.
+(pdftex.def)             Requested size: 352.31653pt x 211.39055pt.
+<figures/Floquet_lphi4.pdf, id=260, 722.7pt x 433.62pt>
+File: figures/Floquet_lphi4.pdf Graphic file (type pdf)
+<use figures/Floquet_lphi4.pdf>
+Package pdftex.def Info: figures/Floquet_lphi4.pdf  used on input line 33.
+(pdftex.def)             Requested size: 352.31653pt x 211.39055pt.
+<figures/narrow_resonance_m2phi2.pdf, id=261, 867.24pt x 578.16pt>
+File: figures/narrow_resonance_m2phi2.pdf Graphic file (type pdf)
+<use figures/narrow_resonance_m2phi2.pdf>
+Package pdftex.def Info: figures/narrow_resonance_m2phi2.pdf  used on input line 44.
+(pdftex.def)             Requested size: 211.38849pt x 140.92262pt.
+<figures/broad_resonance_m2phi2.pdf, id=262, 867.24pt x 578.16pt>
+File: figures/broad_resonance_m2phi2.pdf Graphic file (type pdf)
+<use figures/broad_resonance_m2phi2.pdf>
+Package pdftex.def Info: figures/broad_resonance_m2phi2.pdf  used on input line 49.
+(pdftex.def)             Requested size: 211.38849pt x 140.92262pt.
+<figures/nk_Narrow_resonance_m2phi2.pdf, id=263, 1300.86pt x 578.16pt>
+File: figures/nk_Narrow_resonance_m2phi2.pdf Graphic file (type pdf)
+<use figures/nk_Narrow_resonance_m2phi2.pdf>
+Package pdftex.def Info: figures/nk_Narrow_resonance_m2phi2.pdf  used on input line 54.
+(pdftex.def)             Requested size: 211.38849pt x 93.94547pt.
+<figures/nk_Broad_resonance_m2phi2.pdf, id=264, 1300.86pt x 578.16pt>
+File: figures/nk_Broad_resonance_m2phi2.pdf Graphic file (type pdf)
+<use figures/nk_Broad_resonance_m2phi2.pdf>
+Package pdftex.def Info: figures/nk_Broad_resonance_m2phi2.pdf  used on input line 59.
+(pdftex.def)             Requested size: 211.38849pt x 93.94547pt.
+<figures/Narrow_Resonance_lphi4.pdf, id=265, 722.7pt x 433.62pt>
+File: figures/Narrow_Resonance_lphi4.pdf Graphic file (type pdf)
+<use figures/Narrow_Resonance_lphi4.pdf>
+Package pdftex.def Info: figures/Narrow_Resonance_lphi4.pdf  used on input line 70.
+(pdftex.def)             Requested size: 211.38849pt x 126.83168pt.
+<figures/Broad_Resonance_lphi4.pdf, id=266, 722.7pt x 433.62pt>
+File: figures/Broad_Resonance_lphi4.pdf Graphic file (type pdf)
+<use figures/Broad_Resonance_lphi4.pdf>
+Package pdftex.def Info: figures/Broad_Resonance_lphi4.pdf  used on input line 75.
+(pdftex.def)             Requested size: 211.38849pt x 126.83168pt.
+<figures/nk_Narrow_Resonance_lphi4.pdf, id=267, 722.7pt x 433.62pt>
+File: figures/nk_Narrow_Resonance_lphi4.pdf Graphic file (type pdf)
+<use figures/nk_Narrow_Resonance_lphi4.pdf>
+Package pdftex.def Info: figures/nk_Narrow_Resonance_lphi4.pdf  used on input line 80.
+(pdftex.def)             Requested size: 211.38849pt x 126.83168pt.
+<figures/nk_Broad_Resonance_lphi4.pdf, id=268, 722.7pt x 433.62pt>
+File: figures/nk_Broad_Resonance_lphi4.pdf Graphic file (type pdf)
+<use figures/nk_Broad_Resonance_lphi4.pdf>
+Package pdftex.def Info: figures/nk_Broad_Resonance_lphi4.pdf  used on input line 85.
+(pdftex.def)             Requested size: 211.38849pt x 126.83168pt.
+<figures/rhoGW_lphi4(lineal).pdf, id=269, 722.7pt x 433.62pt>
+File: figures/rhoGW_lphi4(lineal).pdf Graphic file (type pdf)
+<use figures/rhoGW_lphi4(lineal).pdf>
+Package pdftex.def Info: figures/rhoGW_lphi4(lineal).pdf  used on input line 96.
+(pdftex.def)             Requested size: 352.31653pt x 211.39055pt.
 ) (./4.cap4.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
@@ -551,30 +631,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has b
 l.1 \chapter
             {\CosmoLattice} \label{sec:cap4} [3
 
-]
+] [4 <./figures/background_m2phi2.pdf> <./figures/Background_lphi4.pdf>] [5 <./figures/Floquet_m2phi2.pdf> <./figures/Floquet_lphi4.pdf>] [6 <./figures/narrow_resonance_m2phi2.pdf> <./figures/broad_resonance_m2phi2.pdf> <./figures/nk_Narrow_Resonance_m2phi2.pdf> <./figures/nk_Broad_Resonance_m2phi2.pdf> <./figures/Narrow_Resonance_lphi4.pdf> <./figures/Broad_Resonance_lphi4.pdf> <./figures/nk_Narrow_Resonance_lphi4.pdf> <./figures/nk_Broad_Resonance_lphi4.pdf>] [7 <./figures/rhoGW_lphi4(lineal).pdf>]
 Cap\'{\i }tulo 4.
-) (./5.conclusiones.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Conclusiones} [4
+) (./5.conclusiones.tex [8
 
 ]
 Cap\'{\i }tulo 5.
-) (./Tesis_Ciccarella.bbl [5
+) (./Tesis_Ciccarella.bbl [9
 
-]
+] [10
 
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-) (./Anexo.tex [6
-
-]
+] [11] [12] [13]) (./Anexo.tex [14]
 Ap\'{e}ndice A.
-) [7
+) [15
 
-] (./last_page.tex) [8] (./Tesis_Ciccarella.aux
+] (./last_page.tex) [16] (./Tesis_Ciccarella.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 LaTeX Info: Redefining \. on input line 12.
@@ -584,26 +655,30 @@ LaTeX Info: Redefining \% on input line 12.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Tesis_Ciccarella.out' has not changed.
-(rerunfilecheck)             Checksum: 1DD34E2E906703362950F47A2D1F3D2B;1000.
+(rerunfilecheck)             Checksum: 672195E01E2AD24960A307A486CEE275;3377.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 25 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15197 strings out of 474222
- 247851 string characters out of 5748734
- 1927975 words of memory out of 5000000
- 37197 multiletter control sequences out of 15000+600000
- 568574 words of font info for 76 fonts, out of 8000000 for 9000
+ 15625 strings out of 474222
+ 257668 string characters out of 5748734
+ 1931975 words of memory out of 5000000
+ 37539 multiletter control sequences out of 15000+600000
+ 571046 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,79p,453b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Tesis_Ciccarella.pdf (13 pages, 100571 bytes).
+ 75i,9n,79p,929b,859s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Tesis_Ciccarella.pdf (21 pages, 2517117 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 62 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 806 PDF objects out of 1000 (max. 8388607)
+ 505 compressed objects within 6 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
 
