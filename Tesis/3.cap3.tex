@@ -1,60 +1,178 @@
-\chapter{Evolución lineal de los campos} \label{sec:cap3}
+\chapter{Evolución lineal de los campos durante Preheating} \label{sec:cap3}
 
 \section{Resonancia Paramétrica}
 
+Durante \textit{Reheating} como se mencionó en la sección \ref{sec:reheating} el inflatón oscila alrededor del mínimo de potencial, como consecuencia de este decaimiento se realiza una producción de partículas de un campo hijo $\chi$ dado por un fenómeno conocido como resonancia paramétrica y surge de resolver las ecuaciones de campos de la acción
+
+\begin{equation}
+    S[g_{\mu \nu}, \phi, \chi] = \int \sqrt{-g} \left[ \frac{m_p^2}{2} R - \frac{1}{2} \partial_\mu \phi \partial^\mu \phi - \frac{1}{2} \partial_\mu \chi \partial^\mu \chi - V(\phi) - \mathcal{I} (\phi, \chi) \right] ~ d^4 x,
+\end{equation}
+
+\noindent
+dónde $g$ es el determinante de la métrica, $R$ es el escalar de Ricci, $V(\phi)$ es el potencial del inflatón y $\mathcal{I}(\phi, \chi)$ es el término de interacción entre los campos el cual consideraremos que será de la forma $\mathcal{I}(\phi, \chi) = \frac{1}{2} g^2 \phi^2 \chi^2$ siendo $g$ una constante de acoplamiento de los campos que describe qué tan fuerte será la generación del campo $\chi$ cuando decaiga el campo $\phi$. Para esta acción podemos utilizar una métrica de tipo FLRW plana y obtener las ecuaciones de movimiento para los campos
+
+\begin{equation}\label{eqn:preheating_phi}
+    \ddot{\phi} + 3 H \dot{\phi} - \frac{1}{a^2} \nabla^2 \phi + \frac{\partial V(\phi)}{\partial \phi} + \frac{\partial \mathcal{I} (\phi, \chi)}{\partial \phi} = 0,
+\end{equation}
+
+\begin{equation}
+    \ddot{\chi} + 3 H \dot{\chi} - \frac{1}{a^2} \nabla^2 \chi + \frac{\partial \mathcal{I} (\phi, \chi)}{\partial \chi} = 0.
+\end{equation}
+
+En este capítulo, buscaremos resolver estas ecuaciones a orden lineal a partir de plantear una teoría de perturbaciones de los campos de la forma $\phi = \bar{\phi} + \delta \phi$ y $\chi = \delta \chi$ con $\delta \phi, \delta \chi \ll 1$ y $\bar{\phi}$ la evolución a orden cero del inflatón. Utilizando ésto, y descartando los términos de orden superior al lineal podemos encontrar las ecuaciones que rigen las pertubaciones de los campos\footnote{Se puede encontrar un desarrollo de estas cuentas realizadas en la sección del cuaderno de tesis encontrado en \cite{Git}.}
+
+\begin{equation}
+    \delta \ddot{\phi} + 3 H ~ \delta \dot{\phi} + \left[ \frac{\partial^2 V \left( \bar{\phi} \right)}{\partial \phi^2} - \frac{1}{a^2} \nabla^2 \right] ~ \delta \phi = 0,
+\end{equation}
+
+\begin{equation}
+    \delta \ddot{\chi} + 3 H ~ \delta \dot{\chi} + \left( g^2 \phi^2 - \frac{1}{a^2} \nabla^2 \right) ~ \delta \chi = 0.    
+\end{equation}
+
+\noindent
+A su vez, el \textit{background} va a estar regido por las ecuaciones de Friedmann para $a(t)$ y la ecuación para $\bar{\phi}$ que se obtiene de la ecuación (\ref{eqn:preheating_phi})
+
+\begin{equation}
+    \ddot{\bar{\phi}} + 3 H \bar{\phi} + \frac{\partial V \left( \bar{\phi} \right)}{\partial \phi} = 0,
+\end{equation}
+
+\begin{equation}
+    H^2 = \frac{1}{3 m_p^2} \left[ \frac{1}{2} \dot{\bar{\phi}}^2 + V \left( \bar{\phi} \right) \right]
+\end{equation}
+
+En este trabajo se realizaron códigos computacionales para la resolución de estas ecuaciones \cite[Git], para lo cual se buscó modelar la forma del potencial del inflatón de forma cuadrática $\left( m^2 \phi^2 \right)$ dándonos para las pertubaciones del campo hijo una ecuación de tipo Mathieu, y de forma cuártica $(\lambda \phi^4)$ dándonos para las perturbaciones del campo hijo una ecuaciónde tipo Lamé. Para el \textit{background} estos dos escenarios se encuentran graficados en la Figura \ref{fig:Background}, dónde podemos ver que para ambos modelos tenemos que el inflatón disminuye su amplitud con el tiempo mientras que el universo se expande siguiendo una ley de potencias: $a \propto t^{2/3}$ para $m^2 \phi^2$ y $a \propto t^{1/2}$ para $\lambda \phi^4$ tal como se esperaba según la ecuación (\ref{eqn:omega_eff}), permitiendo capturar una dinámica esperable de los códigos armados y que en el capítulo siguiente buscaremos comparar con lo que ocurre cuando agregamos efectos no lineales.
+
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.75\linewidth}
+    \begin{subfigure}[t]{\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/background_m2phi2.pdf}
         \subcaption{$m^2 \phi^2$}
     \end{subfigure}
-    \begin{subfigure}[b]{0.75\linewidth}
+    \begin{subfigure}[b]{\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/Background_lphi4.pdf}
         \subcaption{$\lambda \phi^4$}
     \end{subfigure}
-    \caption{}
-    \label{fig:Floquet}
+    \caption{Evolución de la dinámica del \textit{background} para cada modelo siendo que en ambos se observa cómo el inflatón decae con el tiempo y $a(t)$ aumenta a un ritmo de (a) $t^{2/3}$ y (b) $t^{1/2}$}
+    \label{fig:Background}
 \end{figure}
 
+Las ecuaciones de perturbaciones las podemos escribir en el espacio de Fourier para poder transformar ecuaciones diferencias en derivadas parciales en ecuaciones diferenciales desacopladas para cada modo de Fourier
+
+\begin{equation}
+    \delta \ddot{\phi}_k + 3 H ~ \delta \dot{\phi}_k + \left[ \frac{\partial^2 V \left( \bar{\phi} \right)}{\partial \phi^2} + \frac{k^2}{a^2} \right] ~ \delta \phi_k = 0,
+\end{equation}
+
+\begin{equation}
+    \delta \ddot{\chi}_k + 3 H ~ \delta \dot{\chi}_k + \left( g^2 \bar{\phi}^2 + k^2 \right) ~ \delta \chi_k = 0. 
+\end{equation}
+
+\noindent
+Y de estas dos ecuaciones nos centraremos en resolver sólo la última ecuación para entender cómo es la producción de partículas de distintos modos de Fourier para el campo hijo. Al querer resolver la misma, podemos empezar planteando de forma análitica cómo son las perturbaciones cuando no tenemos expansión del universo $(H = 0)$ lo que nos dará para resolver ecuaciones de la forma:
+
+\begin{equation}
+    \ddot{\bar{\phi}} + \frac{\partial V \left( \bar{\phi} \right)}{\partial \phi} = 0,
+\end{equation}
+
+\begin{equation}
+    \delta \ddot{\chi}_k + \left( g^2 \bar{\phi}^2 + k^2 \right) ~ \delta \chi = 0,
+\end{equation}
+
+\noindent
+y acá para un potencial de la forma $\displaystyle V(\phi) = \frac{1}{2} m^2 \phi^2$ podemos ver que obtenemos un oscilador armónico para $\bar{\phi}$ por tanto tenemos una solución de la forma $\bar{\phi} = \phi_0 \cos (mt)$ que al aplicar dentro de la ecuación para el campo hijo nos da una ecuación de la forma
+
+\begin{equation}
+    \frac{d^2 \delta \chi}{dT^2} + \left[ A_k - 2 q \cos (2T) \right] ~ \delta \chi,
+\end{equation}
+
+\noindent
+la cual es una ecuación que se conoce como de tipo Mathieu; y para llegar a ella se definieron los cambios de variables $\displaystyle T = mt + \frac{\pi}{2}$, $\displaystyle q = \frac{g^2}{4} \left( \frac{\phi_0}{m} \right)^2$ y $\displaystyle A_k = \left( \frac{k}{m} \right)^2 + 2q$. Las soluciones de esta ecuación serán analizadas en la siguiente sección haciendo uso del análisis de Fourier, antes de eso saltemos a qué ocurre cuando tenemos un potencial de tipo cuártico.
+
+Si tenemos un potencial de la forma $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$, para el campo inflatón la solución será en términos de una función hiperbólica $cn \left(x, \frac{1}{\sqrt{2}} \right)$ \cite{Greene_1997} la cual nos permite escribir la ecuación de las perturbaciones del campo hijo como
+
+\begin{equation}
+    X_k^{\prime \prime} + \left[ \kappa^2 + \frac{g^2}{\lambda} cn^2 \left(x, \frac{1}{\sqrt{2}} \right) \right] X_k = 0,
+\end{equation}
+
+\noindent
+dónde $x$ es el tiempo conforme, $X = a(t) ~ \chi(t)$ y $\displaystyle \kappa^2 = \frac{k^2}{\lambda a^2 \bar{\phi}^2}$. A esta ecuación se la conoce como ecuación de Lamé y al igual que con la ecuación de Mathieu haremos un análisis de las soluciones de esta ecuación en la siguiente sección al introducir el análisis de Floquet y los tipos de resonancia.
 
 \section{Análisis de Floquet}
 
+Para empezar a estudiar las soluciones a las ecuaciones de Mathieu y Lamé debemos entender lo que se conoce como el análisis de Floquet, y eso implica observar que estas ecuaciones tienen por solución $\chi(t) \propto e^{\mu_k t}$ dónde $\mu_k$ se conoce como el exponente de Floquet y es complejo, lo que implica que existen valores para los cuales éste tiene parte real y genera una amplificación en el campo generando una resonancia. El calculo de estos Floquets está descripto en [arXiV:1410.3808] y consiste en armarse una matriz conocida como matriz de monodromía con las soluciones de la ecuación dinámica en un período
+
+\begin{equation}
+    \mathcal{O} \left( t_0 + T, t_0 \right) = \begin{pmatrix}
+        u^{(1)} (t_0 + T) & u^{(2)} (t_0 + T)\\
+        v^{(1)} (t_0 + T) & v^{(2)} (t_0 + T)\\
+    \end{pmatrix},
+\end{equation}
+
+\noindent
+siendo $u$ y $v$ la amplitud y velocidad del campo respectivamente, y los supraíndices indicaciones para considerar por condiciones iniciales $(1,0)$ y $(0,1)$ para $u$ y $v$. Luego, el coeficiente de Floquet se calcula a partir de 
+
+\begin{equation}
+    \mu = \frac{1}{T} \cosh^{-1} \left[ \frac{\text{Tr} \left( \mathcal{O} \right)}{2} \right],
+\end{equation}
+
+\noindent
+pudiendo observar además que si la traza de la matriz de monodromía es menor que $2$ tendremos valores reales para $\mu$ pero para valores mayores tendremos valores imaginarios. De este modo, con los coeficientes de Floquet calculados, se pueden armar tablas de inestabilidades como las que se observan en la Figura \ref{fig:Floquet} dónde marcamos con colores más intensos valores mayores para la parte real del coeficiente y por tanto serán valores de los parámetros para los cuales la resonancia y amplificación del campo serán mayores, mientras que en negro tendremos aquellos valores dónde el coeficiente de Floquet es imaginario puro y por tanto las perturbaciones fluctuarán sin amplificarse. Este tipo de tablas de inestabilidades permiten ver que existen bandas en las cuales el campo se encuentra en resonancia y bandas dónde no, entonces un análisis que buscaremos hacer en la sección siguiente es si esas bandas de amplificación generan un aumento en el espectro de potencias de las ondas gravitacionales.
+
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.75\linewidth}
+    \begin{subfigure}[t]{0.9\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/Floquet_m2phi2.pdf}
         \subcaption{$m^2 \phi^2$}
     \end{subfigure}
-    \begin{subfigure}[b]{0.75\linewidth}
+    \begin{subfigure}[b]{0.9\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/Floquet_lphi4.pdf}
         \subcaption{$\lambda \phi^4$}
     \end{subfigure}
-    \caption{}
+    \caption{Tablas de inestabilidad de los coeficientes de Floquet para los distintos modelos. Se muestran en color negro aquellas combinaciones de parámetros tal que el coeficiente no tiene parte real, mientras que se muestra en colores más intensos aquellos dónde la parte real de este coeficiente es mayor; permitiendo observar la estructura de bandas de la resonancia paramétrica.}
     \label{fig:Floquet}
 \end{figure}
+
+\vspace{1cm}
+
+De la Figura \ref{fig:Floquet} se puede extraer para la ecuación de Mathieu y de Lamé parámetros tales que se pueda producir la amplificación paramétrica simplemente a partir de elegir un valor para el acoplamiento $g$ y observar su comportamiento para los distintos modos tal como se puede graficar en la Figura \ref{fig:muk} dónde se observa un corte de las tablas de instabilidades para un valor fijo del parámetro de acoplamiento permitiendo entender cómo cambia el coficiente de Floquet a lo largo de los modos del campo. A partir de la Figura \ref{fig:muk}, se puede extraer un ancho banda para el cual $\Re\{ \mu_k \} > 0$ y permite clasificar los tipos de resonancia en dos: \textit{Narrow Resonance} (o resonancia angosta) y \textit{Broad Resonance} (o resonancia ancha), dando dos tipos de comportamientos distintos para el campo.
 
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}[l]{0.45\linewidth}
         \centering
+        \includegraphics[width = \linewidth]{figures/muk_m2phi2.pdf}
+        \subcaption{$m^2 \phi^2$}
+    \end{subfigure}
+    \begin{subfigure}[r]{0.45\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{figures/muk_lphi4.pdf}
+        \subcaption{$\lambda \phi^4$}
+    \end{subfigure}
+    \caption{CORREGIR: HABLAR CON NAHUE - SEGURO VALE LA PENA MOSTRAR PERO SACANDO GRAFICOS}
+    \label{fig:muk}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[tl]{0.45\linewidth}
+        \centering
         \includegraphics[width = \linewidth]{figures/narrow_resonance_m2phi2.pdf}
         \subcaption{Narrow resonance: amplitud}
     \end{subfigure}
-    \begin{subfigure}[r]{0.45\linewidth}
+    \begin{subfigure}[tr]{0.45\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/broad_resonance_m2phi2.pdf}
         \subcaption{Broad resonance: amplitud}
     \end{subfigure}
-    \begin{subfigure}[l]{0.45\linewidth}
+    \begin{subfigure}[bl]{0.45\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/nk_Narrow_resonance_m2phi2.pdf}
         \subcaption{Narrow resonance: número de ocupación}
     \end{subfigure}
-    \begin{subfigure}[r]{0.45\linewidth}
+    \begin{subfigure}[br]{0.45\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/nk_Broad_resonance_m2phi2.pdf}
         \subcaption{Broad resonance: número de ocupación}

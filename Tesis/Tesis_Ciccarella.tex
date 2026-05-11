@@ -1,5 +1,5 @@
 %============================================================================
-% 
+% PREÁMBULO
 %============================================================================
 \documentclass[letterpaper,12pt]{report}
 \usepackage[spanish]{babel}
@@ -15,26 +15,28 @@
 \usepackage[version=4]{mhchem}
 \usepackage{amssymb, amsmath} 
 \usepackage{float}
-\usepackage{color}
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage{graphicx}
 \usepackage{xspace}
+\usepackage{fancyhdr}
+
+% Comando personalizado para CosmoLattice
 \newcommand{\CosmoLattice}{\ensuremath{\mathcal{C}}\text{osmo}\ensuremath{\mathcal{L}}\text{attice}\xspace}
+
+% Definición del estilo para el cuerpo de la tesis (pág xx de yy)
+\fancypagestyle{estilotesis}{
+  \fancyhf{} 
+  \cfoot{pág \thepage\ de \pageref*{ultimaPagina}} 
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+%============================================================================
+% COMIENZO DEL DOCUMENTO
+%============================================================================
 \begin{document}
 \spacing{1.5}
-%\frontmatter
-%============================================================================
-% 
-%============================================================================
 
-
-
-%============================================================================
-% 
-%============================================================================
-
-
+% --- CARÁTULA ---
 \newpage
 \thispagestyle{empty}
 \begin{center}
@@ -56,21 +58,9 @@ y simulaciones con \CosmoLattice}
 \textsc{Junio 2026}
 \end{center}
 
-%============================================================================
-%
-%============================================================================
-
-
-
+% --- HOJA DE INFORMACIÓN / FIRMAS ---
 \newpage
 \thispagestyle{empty}
-
-
-
-
-
-
-
 
 \vspace{0.5cm}
 
@@ -135,45 +125,38 @@ Profesor de Tesis de Licenciatura & Jurado          \\
 \end{tabular}
 \end{table}
 \end{center}
-\noindent 
 
-%============================================================================
-
+% --- FRONT MATTER (ROMANOS) ---
 \newpage
 \cleardoublepage
-\pagenumbering{arabic}
+\pagenumbering{Roman} % Empieza en I
+\pagestyle{plain}     % Solo número de página abajo
+
 \section*{Resumen}
-Aca va el resumen\\
-\textbf{Palabras clave:} 
+Aca va el resumen de tu tesis sobre ondas gravitatorias y preheating.
+\vspace{1cm}
+
+\noindent \textbf{Palabras clave:} Ondas gravitatorias, Recalentamiento, CosmoLattice, Universo temprano.
 \newpage
 
-
-%============================================================================
 \section*{Agradecimientos}
-Acá van los agradecimentos
-\noindent 
-%============================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-%============================================================================
-.
-%============================================================================
-
+Acá van tus agradecimientos personales.
+\newpage
 
 \tableofcontents
-
 \newpage
 
+% --- MAIN MATTER (ARÁBIGOS Y ESTILO PERSONALIZADO) ---
+\cleardoublepage
+\pagenumbering{arabic}
+\pagestyle{estilotesis}
+
+% Redefinimos el estilo plain para que los inicios de capítulo también tengan el "pág de"
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \cfoot{pág \thepage\ de \pageref*{ultimaPagina}}
+  \renewcommand{\headrulewidth}{0pt}
+}
 
 \input{1.introduccion}
 \input{2.cap2}
@@ -181,18 +164,26 @@ Acá van los agradecimentos
 \input{4.cap4}
 \input{5.conclusiones}
 
+% --- BIBLIOGRAFÍA ---
 \bibliographystyle{apalike}
 \bibliography{references}
+
+% --- APÉNDICES ---
+\appendix
 \input{Anexo}
+
+% Marcador para el total de páginas arábigas
+\label{ultimaPagina}
+
+% --- PÁGINA FINAL (LICENCIA) ---
 \newpage
 \section*{}
-\thispagestyle{empty}
+\thispagestyle{empty} 
 
 \begin{flushright}
 \null\vspace{\stretch{1}}
 \input{last_page}
 \vspace{\stretch{4}}\null
 \end{flushright}
-\noindent
 
 \end{document}
