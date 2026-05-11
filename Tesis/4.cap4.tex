@@ -1,6 +1,23 @@
 \chapter{\CosmoLattice} \label{sec:cap4}
 
-\section{¿Qué es?}
+\CosmoLattice es un software de tipo \textit{Lattice} (o de grilla) que funciona como una herramienta numérica para la simulación de la dinámica de campos en un universo temprano en expansión. Con este software se puede simular la dinámica de interacciones de campos escalares, campos de gauge abelianos y no abelianos. Para ello, \CosmoLattice utiliza una acción de la forma
+
+\begin{equation}
+    \begin{split}
+        S = - \int \sqrt{-g} \left[ \frac{1}{2} \partial_\mu \phi \partial^\mu \phi + \left( D_\mu^A \varphi \right)^* \left( D^\mu_A \varphi \right) + \left( D_\mu \Phi \right)^\dagger \left( D^\mu \Phi \right) \right.\\
+        \left. + \frac{1}{4} F_{\mu \nu} F^{\mu \nu} + \frac{1}{2} \text{Tr} \left( G_{\mu\nu} G^{\mu\nu} \right) + V \left( \phi, \left| \varphi \right|, \left| \Phi \right| \right) \right] ~ d^4 x
+    \end{split}
+\end{equation}
+
+\noindent
+y una métrica del tipo FLRW plana 
+
+\begin{equation}
+    ds^2 = - a^{2 \alpha} (\tau) ~ d\tau^2 + a^2 (\tau) ~ \delta_{ij} ~ dx^i dx^j
+\end{equation}
+
+\noindent
+dónde $\alpha = 0$ representa utilizar el tiempo coordenado y $\alpha = 1$ representa utilizar el tiempo conforme.
 
 \section{Estudio del potencial \texorpdfstring{$\lambda \phi^4$}{lambda phi\textasciicircum 4} a orden lineal}
 

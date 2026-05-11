@@ -155,6 +155,12 @@ De la Figura \ref{fig:Floquet} se puede extraer para la ecuación de Mathieu y d
     \label{fig:muk}
 \end{figure}
 
+Para valores pequeños del parámetro de acoplamiento $(q \ll 1)$, el ancho de la banda de la resonancia es angosta (\textit{Narrow Resonance}) lo que nos dará una dinámica en la cual la amplitud del campo hijo aumenta de forma continua, estas oscilaciones darán lugar a un aumento en el número de ocupación de las partículas que fluctuará alrededor de un valor medio monótonamente creciente. En cambio, si tenemos valores grandes de este parámetro $(q \gg 1)$, el ancho de banda de la resonancia será ancha (\textit{Broad Resonance}) lo que nos dará una dinámica en la cual el campo hijo oscila alrededor de un cierto valor medio pero por momentos se genera un aumento espontáneo en el valor del campo, esa dinámica genera en el número de ocupación de las partículas del campo una función escalonada dónde cada vez que se produce el aumento espontáneo se genera un aumento repentino en el número de ocupación también generando lo que se conoce como un \textit{particle burst} (o chorro de partículas). Estas dinámicas se pueden observar en la Figura \ref{fig:m2phi2_Resonance} para un modelo con $\displaystyle V(\phi) = \frac{1}{2} m^2 \phi^2$ y en la Figura \ref{fig:lphi4_Resonance} para un modelo con $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$, y los números de ocupación de las partículas fueron calculados a partir de pensar al campo $\chi$ como cuántico por tanto pensándolo como un oscilador armónico tenemos que vale
+
+\begin{equation}
+    n_\chi (k) = \frac{1}{2 \Omega_\chi} \left( \left| \dot{\chi}_k \right|^2 + \Omega^2_\chi \left| \chi_k \right|^2 \right)
+\end{equation}
+
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}[tl]{0.45\linewidth}
@@ -177,7 +183,7 @@ De la Figura \ref{fig:Floquet} se puede extraer para la ecuación de Mathieu y d
         \includegraphics[width = \linewidth]{figures/nk_Broad_resonance_m2phi2.pdf}
         \subcaption{Broad resonance: número de ocupación}
     \end{subfigure}
-    \caption{}
+    \caption{Comparación entre la dinámica que se dá cuando uno tiene una combinación de parámetros tal que se tiene un tipo de resonancia conocida como \textit{Narrow Resonance} contra la resonancia conocida como \textit{Broad Resonance} en un modelo de potencial de tipo $\displaystyle V(\phi) = \frac{1}{2} m^2 \phi^2$. Se puede observar que la \textit{Broad Resonance} se caracteriza por el aumento espontáneo en la amplitud del campo y como consecuencia también en el número de partículas.}
     \label{fig:m2phi2_Resonance}
 \end{figure}
 
@@ -185,33 +191,101 @@ De la Figura \ref{fig:Floquet} se puede extraer para la ecuación de Mathieu y d
     \centering
     \begin{subfigure}[l]{0.45\linewidth}
         \centering
-        \includegraphics[width = \linewidth]{figures/Narrow_Resonance_lphi4.pdf}
+        \includegraphics[width = 0.9\linewidth]{figures/Narrow_Resonance_lphi4.pdf}
         \subcaption{Narrow resonance: amplitud}
     \end{subfigure}
     \begin{subfigure}[r]{0.45\linewidth}
         \centering
-        \includegraphics[width = \linewidth]{figures/Broad_Resonance_lphi4.pdf}
+        \includegraphics[width = 0.9\linewidth]{figures/Broad_Resonance_lphi4.pdf}
         \subcaption{Broad resonance: amplitud}
     \end{subfigure}
     \begin{subfigure}[l]{0.45\linewidth}
         \centering
-        \includegraphics[width = \linewidth]{figures/nk_Narrow_Resonance_lphi4.pdf}
+        \includegraphics[width = 0.9\linewidth]{figures/nk_Narrow_Resonance_lphi4.pdf}
         \subcaption{Narrow resonance: número de ocupación}
     \end{subfigure}
     \begin{subfigure}[r]{0.45\linewidth}
         \centering
-        \includegraphics[width = \linewidth]{figures/nk_Broad_Resonance_lphi4.pdf}
+        \includegraphics[width = 0.9\linewidth]{figures/nk_Broad_Resonance_lphi4.pdf}
         \subcaption{Broad resonance: número de ocupación}
     \end{subfigure}
-    \caption{}
+    \caption{Comparación entre la dinámica que se dá cuando uno tiene una combinación de parámetros tal que se tiene un tipo de resonancia conocida como \textit{Narrow Resonance} contra la resonancia conocida como \textit{Broad Resonance} en un modelo de potencial de tipo $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$. Se puede observar que la \textit{Broad Resonance} se caracteriza por el aumento espontáneo en la amplitud del campo y como consecuencia también en el número de partículas.}
     \label{fig:lphi4_Resonance}
 \end{figure}
 
+\vspace{3cm}
+
+En particular, para el estudio que haremos en la siguiente sección nos centraremos en comprender cómo afecta la \textit{Broad Resonance} a la producción de ondas gravitacionales en un potencial de la forma $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$. Se eligió ésto dado que en el capítulo \ref{sec:cap4} se querrá comparar el estudio del modelo lineal con códigos armados y analizados en el estudio de la producción de ondas gravitacionales cuando se tienen no linealidades, y en estos códigos ya estaba estudiado su funcionamiento para el caso de un potencial de esta forma [citar a Figueroa y sus papers en CosmoLattice].
+
 \section{Producción lineal de ondas gravitacionales}
+
+Una vez estudiada la dinámica de los campos de materia durante \textit{Preheating} se quiere entender cómo esta dinámica afecta a la producción de ondas gravitacionales, para lo cual podemos armarnos las perturbaciones del tensor de energía-momento usando las fluctuaciones de los campos como
+
+\begin{equation}
+    \Pi_{ij}^{TT} = \left\{ \partial_i \chi \partial_j \chi \right\}^{TT},
+\end{equation}
+
+\noindent
+estas perturbaciones entran en la ecuación de ondas (\ref{eqn:GWs}) que se resuelve utilizando el método de la función de Green planteando que la misma es $\mathcal{G} (k, \tau, \tau^\prime) = k^{-1} \sin \left[ k \left( \tau - \tau^\prime \right) \right]$ y con ello las perturbaciones métricas que describen a las ondas gravitacionales se pueden escribir como
+
+\begin{equation}
+    h_{ij}^{TT} (k, \tau) = \frac{1}{a(\tau) m_p^2} \int_{\tau_i}^{\tau} \frac{a \left( \tau^\prime \right)}{k} \sin \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi^{TT}_{ij} \left( k, \tau^{\prime} \right) ~ d\tau^{\prime}.
+\end{equation}
+
+A su vez, lo que vamos a querer calcular es la densidad de energía de las ondas gravitacionales para un fondo estocástico, la cual se puede obtener a partir de 
+
+\begin{equation}
+    \frac{d \rho_{GW}}{d \log k} \left( k, \tau \right) = \frac{k^3 m_p^3}{8 \pi^2 a^2} P_{h^{\prime}} \left( k, \tau \right),
+\end{equation}
+
+\noindent
+dónde $\displaystyle \left\langle h^\prime \left( k, \tau \right) h^{*\prime} \left( k^\prime, \tau \right) \right\rangle = (2 \pi)^3 ~ P_{h^{\prime}} \left( k, \tau \right) ~ \delta \left( k - k^\prime \right)$ con $P_{h^\prime} \left( k, \tau \right)$ el espectro de potencias, el cual puede ser calculado en términos del correlador $\displaystyle \Pi^2 \left( k, \tau, \tau^{\prime} \right)$ definido como $\displaystyle \left\langle \Pi^{TT}_{ij} \left( k, \tau \right) ~ \Pi^{*TT}_{ij} \left( k^\prime, \tau^{\prime \prime} \right) \right\rangle = (2 \pi)^3 ~ \Pi^2 \left( k, \tau^\prime, \tau^{\prime \prime} \right) ~ \delta \left( k - k^\prime \right)$ dándonos que la densidad de energía de las ondas gravitacionales en términos de este correlador nos queda
+
+\begin{equation}
+    \frac{d \rho_{GW}}{d \log k} = \frac{k^3}{16 m_p \pi^2 ~ a^4 (\tau)} \int_{\tau_i}^{\tau} \int_{\tau_i}^{\tau} a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau^\prime - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, \tau^\prime, \tau^{\prime \prime} \right) ~ d \tau^\prime ~ d \tau^{\prime \prime}.
+\end{equation}
+
+Para poder calcular el correlador $\Pi^{2} \left( k, \tau, \tau^\prime \right)$ podemos pensar al campo hijo en términos de los operadores de creación y destrucción del campo
+
+\begin{equation}
+    \chi (x) = \frac{1}{(2 \pi)^3} \int \left[ \hat{a}_p \chi_p (t) + \hat{a}^\dagger_{-p} \chi^*_p \right] e^{- i \vec{p} \cdot \vec{x}} ~ d^3 p,
+\end{equation}
+
+\noindent
+de este modo, se obtiene que el correlador vale 
+
+\begin{equation}
+    \Pi^2 \left( k, \tau^\prime, \tau^{\prime \prime} \right) = \frac{1}{4 \pi^2 ~ a^2 \left( \tau^\prime \right) ~ a^2 \left( \tau^{\prime \prime} \right)} \int p^6 \sin^5 \theta ~ \chi_p (\tau) ~ \chi_{k - p} (\tau) ~ \chi_p6 * \left( \tau^\prime \right) ~ \chi_{k - p}^* \left( \tau^\prime \right) ~ dp ~ d\theta.
+\end{equation}
+
+\noindent
+Y, finalmente, con ésto obtenemos que la densidad de energía de las ondas gravitacionales la podemos calcular a partir de 
+
+\begin{equation}\label{eqn:GW_production}
+    \frac{d \rho_{GW} (k, \tau)}{d \log k} = \frac{k^3}{16 \pi^4 m_p^2 a^4} \int p^6 \sin^5 \theta \left[ \left| I_c \left( k, p, \theta, \tau \right) \right|^2 + \left| I_s \left( k, p, \theta, \tau \right) \right|^2 \right] ~ dp ~ d\theta,
+\end{equation}
+
+\noindent
+dónde las funciones $I_c \left( k, p, \theta, \tau \right)$ e $I_s \left( k, p, \theta, \tau \right)$ se definen a partir de 
+
+\begin{equation}
+    I_c \left( k, p, \theta, \tau \right) = \int_{\tau_i}^{\tau} \frac{\cos \left( k \tau^\prime \right)}{a \left( \tau^\prime \right)} \chi_p \left( \tau^\prime \right) ~ \chi_{k - p} \left( \tau^\prime \right) ~ d\tau^\prime,
+\end{equation}
+
+\begin{equation}
+    I_s \left( k, p, \theta, \tau \right) = \int_{\tau_i}^{\tau} \frac{\sin \left( k \tau^\prime \right)}{a \left( \tau^\prime \right)} \chi_p \left( \tau^\prime \right) ~ \chi_{k - p} \left( \tau^\prime \right) ~ d\tau^\prime,
+\end{equation}
+
+\noindent
+en estas funciones están metidas la dinámica de los modos de Fourier de $\chi$ que lo calculamos en la sección anterior pero observamos, además, que contiene una convolución de los modos por lo que una resonancia en unos modos va a inducir ondas gravitacionales en todo el espectro de potencia. \textcolor{red}{[PREGUNTAR A NAHUE SI VALE LA PENA HACER MÁS DE ESTE DESARROLLO EN UN APÉNDICE O SIMPLEMENTE DEJARLO ASÍ]}
+
+A partir de la ecuación (\ref{eqn:GW_production}) podemos armar un código de Python que reciba la dinámica de los modos de Fourier del campo y la evolución del \textit{background} para calcular el espectro de ondas gravitacionales, esto mismo lo podemos observar en la Figura \ref{fig:GW_lineal} dónde además se sombrea de verde aquella zona dónde ocurre la amplificación del campo por resonancia paramétrica y por tanto se espera un aumento mayor en el espectro de ondas gravitacionales. Se observa, efectivamente, en la Figura \ref{fig:GW_lineal} que en la banda dónde el coeficiente de Floquet tiene parte real no nula ocurre una amplificación del espectro y además se observa que el efecto de la convolución de los modos de Fourier causan que todo el espectro se vea aumentado.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width = 0.75\linewidth]{figures/rhoGW_lphi4(lineal).pdf}
-    \caption{}
+    \caption{CORREGIR ESPECTRO A OMEGA PARA PODER COMPARAR CON COSMOLATTICE}
     \label{fig:GW_lineal}
 \end{figure}
+
+El objetivo del espectro obtenido en la Figura \ref{fig:GW_lineal} será poder comparar este espectro con el que se obtiene cuando uno considera no linealidades en las ecuaciones dinámicas de los campos y observa la producción de ondas gravitacionales, para ello debemos ver estos espectros a tiempos cortos (cuando $\delta \chi \ll 1$) y observar si la densidad de ondas gravitacionales aumenta en la banda de resonancia que mencionamos, junto con eso se buscará estudiar qué efectos causan las no linealidades en los espectros tardíos. Todo ese análisis será desarrollado en el siguiente capítulo a partir de la incorporación de \CosmoLattice.
