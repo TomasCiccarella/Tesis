@@ -1,2 +1,227 @@
 \appendix
-\chapter{Ánalisis en la estabilidad de modelos en \CosmoLattice} \label{sec:codigo}
+\chapter{Produción lineal de ondas gravitacionales} \label{sec:apexA}
+
+\newpage
+
+\chapter{Condiciones iniciales \CosmoLattice} \label{sec:apexB}
+
+A la hora de querer calcular las condiciones iniciales para el campo inflatón al entrar en \textit{reheating} se utilizó el parámetro $\epsilon$ de \textit{slow-roll} definido como
+
+\begin{equation}
+    \epsilon = \frac{m_p^2}{2} \left[ \frac{V^{\prime} \left( \phi \right)}{V \left( \phi \right)} \right]^2,
+\end{equation}
+
+\noindent
+dado que considerar $\epsilon \simeq 1$ denota el final de la etapa inflacionaria. A su vez, para calular la velocidad de los campos se pidió que la energía cinética del campo sea comparable con la energía potencial, dando como condición\footnote{El signo negativo en la velocidad está dado ya que se espera que el campo decaiga y por tanto su amplitud debe disminuir.}
+
+\vspace{-0.7cm}
+
+\begin{equation}
+    \dot{\phi}_0 = - \sqrt{2 V \left( \phi_0 \right)}. 
+\end{equation}
+
+\vspace{-0.25cm}
+
+\noindent
+De este modo, abajo se desarrollan las cuentas realizadas para calcular las condiciones iniciales para cada modelo.
+
+\begin{itemize}
+    \item $\displaystyle V(\phi) = \frac{1}{2} m^2 \phi^2$
+    
+    Para la amplitud inicial se tiene
+
+    \vspace{-0.9cm}
+
+    \begin{equation*}
+        \begin{split}
+            \frac{m_p^2}{2} \left( \frac{m^2 \phi_0}{\frac{1}{2} m^2 \phi_0^2} \right)^2 &= 1\\
+            \frac{2 m_p^2}{\phi_0^2} &= 1
+        \end{split}
+    \end{equation*}
+
+    \vspace{-0.5cm}
+
+    \begin{equation}
+        \phi_0^{m} = \sqrt{2} m_p
+    \end{equation}
+
+    Y la condición para la velocidad inicial sería
+
+    \vspace{-1cm}
+
+    \begin{equation*}
+        \begin{split}
+            \dot{\phi}_0 &= - \sqrt{m^2 \phi_0^2}
+        \end{split}
+    \end{equation*}
+
+    \vspace{-1cm}
+
+    \begin{equation}
+        \dot{\phi}_0^{m} = - \sqrt{2} m m_p
+    \end{equation}
+
+    \item $\displaystyle V(\phi) = \frac{\Lambda^4}{2} \tanh^2 \left( \frac{\phi}{M} \right)$
+    
+    Para la amplitud inicial se tiene
+
+    \vspace{-0.9cm}
+
+    \begin{equation*}
+        \begin{split}
+            \frac{m_p^2}{2} \left[ \frac{\frac{\Lambda^4}{M} \tanh \left( \frac{\phi_0}{M} \right) \text{sech}^2 \left( \frac{\phi_0}{M} \right)}{\frac{1}{2} \Lambda^4 \tanh^2 \left( \frac{\phi_0}{M} \right)} \right]^2 &= 1\\
+            \frac{m_p^2}{2} \left[ \frac{2 \text{sech}^2 \left( \frac{\phi_0}{M} \right)}{M \tanh \left( \frac{\phi_0}{M} \right)} \right]^2 &= 1\\
+            \frac{m_p^2}{2} \left[ \frac{2}{M \sinh \left( \frac{\phi_0}{M} \right) \cosh \left( \frac{\phi_0}{M} \right)} \right]^2 &= 1\\
+            \frac{m_p^2}{2} \left[ \frac{4}{M \sinh \left( 2 \frac{\phi_0}{M} \right)} \right]^2 &= 1\\
+            \frac{8 m_p^2}{M^2 \sinh^2 \left( 2 \frac{\phi_0}{M} \right)} &= 1\\
+            \sinh^2 \left( 2 \frac{\phi_0}{M} \right) &= 8 \left( \frac{m_p}{M} \right)^2\\
+            2 \frac{\phi_0}{M} &= \text{arcsinh} \left( 2 \sqrt{2} \frac{m_p}{M} \right)
+        \end{split}
+    \end{equation*}
+
+    \vspace{-0.5cm}
+
+    \begin{equation}
+        \phi_0^{t2} = \frac{M}{2} \text{arcsinh} \left( 2 \sqrt{2} \frac{m_p}{M} \right)
+    \end{equation}
+
+    Y la condición para la velocidad inicial sería
+
+    \vspace{-1cm}
+
+    \begin{equation*}
+        \begin{split}
+            \dot{\phi}_0 &= -\sqrt{\Lambda^4 \tanh^2 \left( \frac{\phi_0}{M} \right)}\\
+            \dot{\phi}_0 &= - \Lambda^2 \tanh \left( \frac{\phi_0}{M} \right)
+        \end{split}
+    \end{equation*}
+
+    \vspace{-1cm}
+
+    \begin{equation}
+        \dot{\phi}_0^{t2} = - \Lambda^2 \tanh \left[ \frac{1}{2} \text{arcsinh} \left( 2 \sqrt{2} \frac{m_p}{M} \right) \right]
+    \end{equation}
+
+    \newpage
+
+    \item $\displaystyle V(\phi) = \frac{\Lambda^4}{2} \left[ 1 - \exp \left( \frac{\phi}{M} \right) \right]^2$ (Starobinsky)
+    
+    Para la amplitud inicial se tiene
+
+    \vspace{-0.9cm}
+
+    \begin{equation*}
+        \begin{split}
+            \frac{m_p^2}{2} \left\{ \frac{\frac{\Lambda^4}{M} \left[ 1 - \exp \left( - \frac{\phi_0}{M} \right) \right] \exp \left( - \frac{\phi_0}{M} \right)}{\frac{1}{2} \Lambda^4 \left[ 1 - \exp \left(- \frac{\phi_0}{M} \right) \right]^2} \right\}^2 &= 1\\
+            \frac{m_p^2}{2} \left\{ \frac{2 \exp \left(- \frac{\phi_0}{M} \right)}{M \left[ 1 - \exp \left(- \frac{\phi_0}{M} \right) \right]} \right\}^2 &= 1\\
+            \frac{m_p^2}{2} \left\{ \frac{2}{M \left[ \exp \left(\frac{\phi_0}{M} \right) - 1 \right]} \right\}^2 &= 1\\
+            \frac{2 m_p^2}{M^2 \left[ \exp \left(\frac{\phi_0}{M} \right) - 1 \right]^2} &= 1\\ 
+            \left[ \exp \left(\frac{\phi_0}{M} \right) - 1 \right]^2 &= 2 \left( \frac{m_p}{M} \right)^2\\
+            \exp \left( \frac{\phi_0}{M} \right) &= \sqrt{2} \frac{m_p}{M} + 1\\
+            \frac{\phi_0}{M} &= \ln \left( \sqrt{2} \frac{m_p}{M} + 1 \right) 
+        \end{split}
+    \end{equation*}
+
+    \vspace{-0.5cm}
+
+    \begin{equation}
+        \phi_0^{s} = M \ln \left( \sqrt{2} \frac{m_p}{M} + 1 \right)
+    \end{equation}
+
+    Y la condición para la velocidad inicial sería
+
+    \vspace{-1cm}
+
+    \begin{equation*}
+        \begin{split}
+            \dot{\phi}_0 &= -\sqrt{\Lambda^4 \left[ 1 - \exp \left(- \frac{\phi_0}{M} \right) \right]^2}\\
+            \dot{\phi}_0 &= -\Lambda^2 \left[ 1 - \exp \left( - \frac{\phi_0}{M} \right) \right]\\
+            \dot{\phi}_0 &= -\Lambda^2 \left\{ 1 - \exp \left[ - \ln \left( \sqrt{2} \frac{m_p}{M} + 1 \right) \right] \right\}\\
+            \dot{\phi}_0 &= -\Lambda^2 \left( 1 - \frac{1}{\sqrt{2} \frac{m_p}{M} + 1} \right)\\
+            \dot{\phi}_0 &= -\Lambda^2 \frac{\sqrt{2} \frac{m_p}{M}}{\sqrt{2} \frac{m_p}{M} + 1}
+        \end{split}
+    \end{equation*}
+
+    \vspace{-1cm}
+
+    \begin{equation}
+        \dot{\phi}_0^{s} = - \frac{\sqrt{2} \Lambda^2 m_p }{\sqrt{2} m_p + M}
+    \end{equation}
+
+    \newpage
+
+    \item $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$
+    
+    Para la amplitud inicial se tiene
+
+    \vspace{-0.9cm}
+
+    \begin{equation*}
+        \begin{split}
+            \frac{m_p^2}{2} \left( \frac{\lambda \phi_0^3}{\frac{1}{4} \lambda \phi_0^4} \right)^2 &= 1\\
+            \frac{8 m_p^2}{\phi_0^2} &= 1 
+        \end{split}
+    \end{equation*}
+
+    \vspace{-0.5cm}
+
+    \begin{equation}
+        \phi_0^{\lambda} = M \ln \left( \sqrt{2} \frac{m_p}{M} + 1 \right)
+    \end{equation}
+
+    Y la condición para la velocidad inicial sería
+
+    \vspace{-1cm}
+
+    \begin{equation*}
+        \begin{split}
+            \dot{\phi}_0 &= - \sqrt{\frac{1}{2} \lambda \phi_0^4}\\
+        \end{split}
+    \end{equation*}
+
+    \vspace{-1cm}
+
+    \begin{equation}
+        \dot{\phi}_0^{\lambda} = - 4 \sqrt{2 \lambda} m_p^2
+    \end{equation}
+
+    \item $\displaystyle V(\phi) = \frac{\Lambda^4}{4} \tanh^4 \left( \frac{\phi}{M} \right)$
+    
+    Para la amplitud inicial se tiene
+
+    \vspace{-0.9cm}
+
+    \begin{equation*}
+        \begin{split}
+            \frac{m_p^2}{2} \left[ \frac{\frac{\Lambda^4}{M} \tanh^3 \left( \frac{\phi_0}{M} \right) \text{sech}^2 \left( \frac{\phi_0}{M} \right)}{\frac{1}{4} \Lambda^4 \tanh^4 \left( \frac{\phi_0}{M} \right)} \right]^2 &= 1\\
+            \frac{m_p^2}{2} \left[ \frac{8}{M \sinh \left( 2 \frac{\phi_0}{M} \right)} \right]^2 &= 1\\
+            \frac{32 m_p^2}{M^2 \sinh^2 \left( 2 \frac{\phi_0}{M} \right)} &= 1\\
+        \end{split}
+    \end{equation*}
+
+    \vspace{-0.5cm}
+
+    \begin{equation}
+        \phi_0^{t4} = \frac{M}{2} \text{arcsinh} \left( 4 \sqrt{2} \frac{m_p}{M} \right)
+    \end{equation}
+
+    Y la condición para la velocidad inicial sería
+
+    \vspace{-1cm}
+
+    \begin{equation*}
+        \begin{split}
+            \dot{\phi}_0 &= -\sqrt{\frac{1}{2} \Lambda^4 \tanh^4 \left( \frac{\phi_0}{M} \right)}\\
+        \end{split}
+    \end{equation*}
+
+    \vspace{-1cm}
+
+    \begin{equation}
+        \dot{\phi}_0^{t4} = - \sqrt{\frac{1}{2}} \Lambda^2 \tanh^2 \left[ \frac{1}{2} \text{arcsinh} \left( 4 \sqrt{2} \frac{m_p}{M} \right) \right]
+    \end{equation}
+\end{itemize}
+
+\newpage
+
+\chapter{Ánalisis en la estabilidad de modelos en \CosmoLattice} \label{sec:apexC}

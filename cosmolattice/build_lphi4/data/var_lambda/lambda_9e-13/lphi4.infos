@@ -27,7 +27,7 @@ Other parameters:
          tBackupFreq       -1                  
           outputfile       ./data/var_lambda/lambda_9e-13/
               lambda       9e-13               
-            baseSeed       4226933758          
+            baseSeed       3133840593          
              PS_type       1                   
                input       ../src/models/parameter-files/lphi4.in
        appendToFiles       false               
@@ -39,7 +39,7 @@ Other parameters:
          tOutputVerb       1                   
      energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
 
-The simulation started on the d6 m4 y2026 around h17m53.
-It will be running on a grid of (1,1,1) cores.The simulation finished on the d6 m4 y2026 around h18m3.
-The timer indicates that it ran for 641.978s.
-As it ran on 1 cores, this corresponds to 0.178327 core hours.
+The simulation started on the d13 m5 y2026 around h24m50.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d13 m5 y2026 around h24m58.
+The timer indicates that it ran for 473.482s.
+As it ran on 1 cores, this corresponds to 0.131523 core hours.

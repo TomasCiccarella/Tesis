@@ -19,6 +19,24 @@
 \usepackage{subcaption}
 \usepackage{xspace}
 \usepackage{fancyhdr}
+\usepackage{fontawesome5}
+
+\usepackage[most]{tcolorbox}
+
+\newtcolorbox{infobox}[2][blue]{
+    colback=#1!5!white,
+    colframe=#1!75!black,
+    title={#2},
+    fonttitle=\bfseries,
+    coltitle=black,
+    boxrule=0.8pt,
+    arc=4pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    breakable
+}
 
 % Comando personalizado para CosmoLattice
 \newcommand{\CosmoLattice}{\ensuremath{\mathcal{C}}\text{osmo}\ensuremath{\mathcal{L}}\text{attice}\xspace}
@@ -29,6 +47,9 @@
   \cfoot{pág \thepage\ de \pageref*{ultimaPagina}} 
   \renewcommand{\headrulewidth}{0pt}
 }
+
+\definecolor{gold}{RGB}{212, 175, 55}     % Oro metálico
+\definecolor{silver}{RGB}{125, 125, 125}  % Plata clásico
 
 %============================================================================
 % COMIENZO DEL DOCUMENTO
@@ -136,7 +157,7 @@ Profesor de Tesis de Licenciatura & Jurado          \\
 Aca va el resumen de tu tesis sobre ondas gravitatorias y preheating.
 \vspace{1cm}
 
-\noindent \textbf{Palabras clave:} Ondas gravitatorias, Recalentamiento, CosmoLattice, Universo temprano.
+\noindent \textbf{Palabras clave:} Ondas gravitatorias, Recalentamiento, \CosmoLattice, Universo temprano.
 \newpage
 
 \section*{Agradecimientos}

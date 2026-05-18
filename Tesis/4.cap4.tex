@@ -19,10 +19,83 @@ y una métrica del tipo FLRW plana
 \noindent
 dónde $\alpha = 0$ representa utilizar el tiempo coordenado y $\alpha = 1$ representa utilizar el tiempo conforme.
 
+\begin{infobox}[cyan]{NOTA}
+    Desarrollar más esta parte usando como base \url{https://arxiv.org/pdf/2102.01031} y \url{https://arxiv.org/pdf/2006.15122}
+\end{infobox}
+
 \section{Estudio del potencial \texorpdfstring{$\lambda \phi^4$}{lambda phi\textasciicircum 4} a orden lineal}
+
+Con el fin de estudiar cómo es la comparación entre un modelo de \textit{preheating} lineal como se desarrolló en el capítulo \ref{sec:cap3} con un modelo dónde se considera la expansión el universo y efectos no lineales en los campos armado con \CosmoLattice, se buscó observar a tiempos cortos (dónde vale la aproximación de $\delta \chi \ll 1$) si efectivamente el espectro de ondas gravitacionales obtiene un pico de amplificación en la banda de resonancia dada por el coeficiente de Floquet.
+
+Para hacer esta comparativa, se utilizó un modelo de decaimiento del potencial de la forma $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$ y se realizó un barrido en el parámetro de acople $q$ con el fin de verificar si efectivamente se cumple la hipótesis de que una amplificación por resonancia paramétrica en los campos genera una amplificación en el espectro de potencias. Por este motive, en la Figura \ref{fig:CosmoLattice_chi_lineal} se puede ver el espectro de potencia del campo hijo, dónde el ancho de banda verde se determinó a partir de realizar un análisis de Floquet como se describió en la sección \ref{sec:Floquet} y con ello luego se buscó el espectro de potencia de las ondas gravitacionales que se puede observar en la Figura \ref{fig:CosmoLattice_GW_lineal}.
+
+En los espectros de potencia de los campos hijos que se observan en la Figura \ref{fig:CosmoLattice_chi_lineal} podemos observar que efectivamente a tiempos cortos se genera una amplificación en el campo para los modos dentro de la banda verde\footnote{en las siguientes secciones estudiaremos el comportamiento de los campos para tiempos largos y veremos que los efectos no lineales causan que el espectro de potencia se ``planche''}; esto mismo se lo puede ver también en la evolución del número de ocupación del campo, dónde para regiones en la banda de Floquet esta cantidad se vé amplificada tal como se muestra en la Figura \ref{fig:CosmoLattice_nk_lineal}. Para el espectro de las ondas gravitacionales que podemos observar en la Figura \ref{fig:CosmoLattice_GW_lineal} también se observa una amplificación en el espectro en la banda pero se producen más picos en otras bandas que se deben al hecho de que la producción contiene la convolución de los modos.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 0.9\linewidth]{figures/CosmoLattice1_chi_spectra.pdf}
+    \caption{Espectro de potencias del campo hijo para distintos valores del parámetro de acoplamiento $q$. Se sombrea en verde la banda de frecuencias que se vé amplificada de acuerdo con el análisis de Floquet y en la misma franja se observa que se encuentra el pico principal del espectro.}
+    \label{fig:CosmoLattice_chi_lineal}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 0.9\linewidth]{figures/CosmoLattice1_nk_spectra.pdf}
+    \caption{Número de partículas que se producen en el campo hijo, además se grafica en verda la banda en la que se espera según el análisis de Floquet que ocurra la banda de producción de partículas.}
+    \label{fig:CosmoLattice_nk_lineal}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 0.9\linewidth]{figures/CosmoLattice1_GW_spectra.pdf}
+    \caption{Espectro de potencias de ondas gravitacionales para distintos valores del parámetro de acoplamiento $q$. Se sombrea en verde la banda de frecuencias que se vé amplificada de acuerdo con el análisis de Floquet y en la misma franja se observa que se encuentra el pico principal del espectro, además se observan otros picos consecuencia de la convolución de modos.}
+    \label{fig:CosmoLattice_GW_lineal}
+\end{figure}
+
+\begin{infobox}[cyan]{}
+    Cuando estén corregidos los códigos de producción lineal, hay que agregar un análisis comparando ambos espectros + sumar analisis comparativo con los distintos $q$'s.
+\end{infobox}
+
+\section{Los modelos a estudiar}
+
+A la hora de estudiar los espectros de potencia y cómo es la producción de ondas gravitacionales durante \textit{reheating} utilizaremos \CosmoLattice para simular la dinámica de los campos a tiempos largos. Esto fue realizado sobre 5 tipos de modelos para $V(\phi)$ de tipo $m^2 \phi^2$, $\lambda \phi^4$, $\tanh^2 \phi$, $\tanh^4 \phi$ y Starobinsky; los cuales iremos describiendo a lo largo de las siguientes secciones su comportamiento a la hora de la producción de las ondas gravitacionales y comparándolos entre sí, pero la primera observación que podemos realizar es cómo es la evolución del \textit{background} para cada uno de ellos.
+
+Estos modelos vamos a poder clasificarlos en dos categorías según su comportamiento alrededor del mínimo del campo y esta clasificación podemos denominarla como modelos de tipo radiación para los modelos tipo $\lambda \phi^4$ y $\tanh^4 \phi$, y como modelos de tipo materia para los modelos de tipo $m^2 \phi^2$, $\tanh^2 \phi$ y Starobinsky. Esta clasificación lo utilizamos ya que surge del tipo de comportamiento que estudiaremos que tiene el \textit{background} como consecuencia de la ecuación (\ref{eqn:omega_eff}) dónde los modelos que clasificamos como de tipo materia tienen $\omega_{eff} = 0$ y los de tipo radiación tienen $\omega_{eff} = 1/3$.
+
+Podemos observar que estos modelos son equivalentes entre sí cerca del mínimo de potencial haciendo una expansión en series de Laurent para cada uno de los potenciales propuestos, dentro de lo cual marcaremos en color \textcolor{gold}{dorado} los modelos de tipo radiación y \textcolor{silver}{plateado} los modelos de tipo materia:
+
+\begin{itemize}
+    \item[\textcolor{gold}{$\bullet$}] $\displaystyle V(\phi) = \frac{\Lambda^4}{4} \tanh^4 \left( \frac{\phi}{M} \right) \approx \frac{\Lambda^4}{4 M^4} \phi^4 + \mathcal{O} \left( \phi^8 \right)$ - de este modo vemos que efectivamente el modelo $\tanh^4$ cerca del mínimo es comparable con un modelo de tipo $\lambda \phi^4$ dónde los parámetros del modelo se relacionan a partir de la relación $\displaystyle \lambda = \frac{\Lambda^4}{M^4}$.
+    \item[\textcolor{silver}{$\bullet$}] $\displaystyle V(\phi) = \frac{\Lambda^4}{2} \tanh^2 \left( \frac{\phi}{M} \right) \approx \frac{\Lambda^4}{2 M^2} \phi^2 + \mathcal{O} \left( \phi^4 \right)$ - de este modo vemos que efectivamente el modelo $\tanh^2$ cerca del mínimo es comparable con un modelo de tipo $m^2 \phi^2$ dónde los parámetros del modelo se relacionan a partir de la relación $\displaystyle m^2 = \frac{\Lambda^4}{M^2}$.
+    \item[\textcolor{silver}{$\bullet$}] $\displaystyle V(\phi) = \frac{\Lambda^4}{2} \left[ 1 - \exp \left( - \frac{\phi}{M} \right)  \right]^2 \approx \frac{\Lambda^4}{2 M^2} \phi^2 + \mathcal{O} \left( \phi^4 \right)$ - de este modo, también, vemos que efectivamente el modelo de Starobinsky cerca del mínimo es comparable con un modelo de tipo $m^2 \phi^2$ dónde los parámetros del modelo se relacionan a partir de la relación $\displaystyle m^2 = \frac{\Lambda^4}{M^2}$.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.65\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{figures/comparacion_w0.pdf}
+        \subcaption{}
+    \end{subfigure}
+    \begin{subfigure}[base]{0.65\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{figures/comparacion_w13.pdf}
+        \subcaption{}
+    \end{subfigure}
+    \caption{Comparación de los distintos modelos alrededor del mínimo de potencial, además se marca con un punto la condición inicial del campo para la cual se considera que termina la inflación y con una flecha el valor de su velocidad. Dentro de los gráficos se utilizan las variables $\tilde{\phi}$ y $\tilde{V} \left( \tilde{\phi} \right)$ para marcar que son cantidades adimensionales con el fin de poder hacer una correcta comparación de los modelos. Además se separan estos modelos según la clasificación hecha (a) de tipo materia, y (b) de tipo radiación, siendo que esta última se tuvo que graficar en escala logarítimica como consecuencia de lo alejadas que se encuentran las condiciones iniciales.}
+    \label{fig:comp_modelos}
+\end{figure}
+
+Este tipo de comparativa entre los distintos modelos se puede observar en la Figura \ref{fig:comp_modelos} dónde se graficó según el comportamiento cerca del mínimo de potencial cada tipo de modelo. Además, para poder hacer una correcta comparación de estos modelos, es necesario considerar el movimiento a partir del momento en que empieza \textit{reheating} y poder observar qué tan cercanas son estas condiciones iniciales para poder entender qué tan esperable es que estos modelos sean semejantes por ello en la Figura se grafican también estos puntos y sus velocidades iniciales, calculadas en el Apéndice \ref{sec:apexB} a partir de las aproximaciones tomadas al utilizar el \textit{slow-roll}. Se puede observar en la Figura que los modelos son semejantes alrededor del mínimo tal como se esperaba al realizar hacer la expansión en series de Laurent aunque las condiciones iniciales no lo son, haciendo que las comparaciones entre estos modelos tengan validez para tiempos largos cuando el inflatón esté en el final de su decaimiento; el hecho de que estas condiciones iniciales disten tanto forzó que para una mejor visualización en la comparativa para modelos de tipo radiación se grafique utilizando escala logarítmica.
+
+Como se mencionó en la sección anterior, \CosmoLattice admite también la implementación de campos de gauge U(1) y SU(2), pero en este trabajo no se utilizaron por lo que no buscaremos comparar estos espectros de ondas gravitacionales con los que fueron mencionados en esta sección. A su vez, en la siguiente sección estudiaremos cómo es la evolución de $a(t)$ y $\phi(t)$ para los distintos modelos con el fin de terminar de convencerse que los modelos mencionados tienen espectros de onda que tienen relevancia comparar.
 
 \section{Evolución del background}
 
-\section{Comparación de modelos con \texorpdfstring{$\omega_{eff} = 1/3$}{omega = 1/3}}
+A partir de la ecuación \ref{eqn:omega_eff}, se discutió que para modelos semejantes a $m^2 \phi^2$ tendremos evolución de tipo materia dónde $a(t) \propto t^{2/3}$ (o $a(t) \propto \eta^2)$ y para modelos semejantes a $\lambda \phi^4$ tendremos evolución de tipo radiación dónde $a(t) \propto t^{1/2}$ (o $a(t) \propto \eta)$. En esta sección buscaremos estudiar a partir de los códigos realizados como es esta evolución para cada uno de los modelos propuestos en la sección anterior.
 
-\section{Comparación de modelos con \texorpdfstring{$\omega_{eff} = 0$}{omega = 0}}
+
+
+\section{Comparación de espectros con \texorpdfstring{$\omega_{eff} = 1/3$}{omega = 1/3}}
+
+\section{Comparación de espectros con \texorpdfstring{$\omega_{eff} = 0$}{omega = 0}}

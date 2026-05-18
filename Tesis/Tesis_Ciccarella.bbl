@@ -10,6 +10,11 @@ Abramowitz, M. and Stegun, I. (1965).
 \newblock {\em Handbook of Mathematical Functions}.
 \newblock Dover, New York.
 
+\bibitem[Amin et~al., 2014]{Amin_2014}
+Amin, M.~A., Hertzberg, M.~P., Kaiser, D.~I., and Karouby, J. (2014).
+\newblock Nonperturbative dynamics of reheating after inflation: a review.
+\newblock {\em arXiv preprint arXiv:1410.3808}.
+
 \bibitem[Bahari et~al., 2025]{Bahari2025}
 Bahari, K., Heydari, S., and Karami, K. (2025).
 \newblock Reheating and relic gravitational waves as remedies for degeneracies of non-canonical natural inflation.
@@ -203,7 +208,7 @@ Kofman, L., Linde, A., and Starobinsky, A.~A. (1997a).
 \bibitem[Kofman et~al., 1997b]{Kofman_1997_Reheating}
 Kofman, L.~A., Linde, A.~D., and Starobinsky, A.~A. (1997b).
 \newblock Reheating after inflation: Perturbation theory.
-\newblock In preparation.
+\newblock {\em Phys. Rev. D}, 56.
 
 \bibitem[Lozanov, 2019]{Lozanov}
 Lozanov, K.~D. (2019).

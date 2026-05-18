@@ -1,0 +1,44 @@
+Parameters: 
+Important parameters:
+
+                tMax       30                  
+                  dt       0.01                
+                   N       128                 
+             evolver       VV2                 
+           expansion       false               
+     tOutputRareFreq       10                  
+                 kIR       0.4                 
+             withGWs       true                
+       tOutputInfreq       1                   
+                  t0       0                   
+             kCutOff       100                 
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+           deltaKBin       1                   
+          PS_version       1                   
+     initial_momenta       -6.2969e30 0        
+         tBackupFreq       -1                  
+          outputfile       ./data/short/no_exp/var_q/q_3.26/
+              lambda       9e-14               
+            baseSeed       3858271604          
+             PS_type       1                   
+               input       ../src/models/parameter-files/lphi4.in
+       appendToFiles       false               
+     GWprojectorType       1                   
+                   q       3.26                
+  initial_amplitudes       7.42675e18 0        
+         tOutputVerb       1                   
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       true                
+    spectraVerbosity       0                   
+
+The simulation started on the d14 m5 y2026 around h20m32.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d14 m5 y2026 around h20m53.
+The timer indicates that it ran for 1313.143s.
+As it ran on 1 cores, this corresponds to 0.364762 core hours.

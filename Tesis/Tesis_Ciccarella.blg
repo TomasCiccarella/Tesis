@@ -3,47 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Tesis_Ciccarella.aux
 The style file: apalike.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for ""
-Warning--empty journal in Kofman_1997_Reheating
-You've used 60 entries,
+You've used 61 entries,
             1935 wiz_defined-function locations,
-            812 strings with 11955 characters,
-and the built_in function-call counts, 19011 in all, are:
-= -- 1791
-> -- 834
+            817 strings with 12137 characters,
+and the built_in function-call counts, 19379 in all, are:
+= -- 1825
+> -- 857
 < -- 41
-+ -- 278
-- -- 268
-* -- 1430
-:= -- 3598
-add.period$ -- 182
-call.type$ -- 60
-change.case$ -- 420
-chr.to.int$ -- 58
++ -- 286
+- -- 276
+* -- 1461
+:= -- 3669
+add.period$ -- 185
+call.type$ -- 61
+change.case$ -- 429
+chr.to.int$ -- 59
 cite$ -- 61
-duplicate$ -- 792
-empty$ -- 1242
-format.name$ -- 361
-if$ -- 3585
+duplicate$ -- 805
+empty$ -- 1262
+format.name$ -- 370
+if$ -- 3653
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 67
-newline$ -- 303
-num.names$ -- 184
-pop$ -- 373
+missing$ -- 68
+newline$ -- 308
+num.names$ -- 187
+pop$ -- 379
 preamble$ -- 1
-purify$ -- 429
+purify$ -- 438
 quote$ -- 0
-skip$ -- 648
+skip$ -- 659
 stack$ -- 0
-substring$ -- 728
-swap$ -- 57
+substring$ -- 740
+swap$ -- 59
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 340
-warning$ -- 1
-while$ -- 122
+type$ -- 346
+warning$ -- 0
+while$ -- 124
 width$ -- 0
-write$ -- 753
-(There were 2 warnings)
+write$ -- 766

@@ -1,20 +1,20 @@
 #Output
-outputfile = ./data/var_lambda/
+outputfile = ./data/short/no_exp/var_q/q_5050/
 
 #Evolution
-expansion = true
+expansion = false
 evolver = VV2
 
 #Lattice
-N = 32
+N = 128
 dt = 0.01
-kIR = 0.75
+kIR = 0.4
 
 #Times
 tOutputFreq = 0.1
-tOutputInfreq = 3
+tOutputInfreq = 1
 tOutputRareFreq = 10
-tMax = 1000
+tMax = 30
 
 #Spectra options
 PS_type = 1

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  11 MAY 2026 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  18 MAY 2026 00:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -417,7 +417,314 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@erf=\skip81
 \f@nch@O@olf=\skip82
 \f@nch@O@orf=\skip83
-) (./Tesis_Ciccarella.aux
+) (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
+ (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
+Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fontawesome5
+ (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks31
+\pgfutil@tempdima=\dimen185
+\pgfutil@tempdimb=\dimen186
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box62
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks34
+))
+\pgf@x=\dimen187
+\pgf@y=\dimen188
+\pgf@xa=\dimen189
+\pgf@ya=\dimen190
+\pgf@xb=\dimen191
+\pgf@yb=\dimen192
+\pgf@xc=\dimen193
+\pgf@yc=\dimen194
+\pgf@xd=\dimen195
+\pgf@yd=\dimen196
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count311
+\c@pgf@countb=\count312
+\c@pgf@countc=\count313
+\c@pgf@countd=\count314
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
+\pgf@sys@id@count=\count315
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count316
+\pgfsyssoftpath@bigbuffer@items=\count317
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 758.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen197
+\pgfmath@count=\count318
+\pgfmath@box=\box63
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count319
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen198
+\pgf@picmaxx=\dimen199
+\pgf@picminy=\dimen256
+\pgf@picmaxy=\dimen257
+\pgf@pathminx=\dimen258
+\pgf@pathmaxx=\dimen259
+\pgf@pathminy=\dimen260
+\pgf@pathmaxy=\dimen261
+\pgf@xx=\dimen262
+\pgf@xy=\dimen263
+\pgf@yx=\dimen264
+\pgf@yy=\dimen265
+\pgf@zx=\dimen266
+\pgf@zy=\dimen267
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen268
+\pgf@path@lasty=\dimen269
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen270
+\pgf@shorten@start@additional=\dimen271
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box64
+\pgf@hbox=\box65
+\pgf@layerbox@main=\box66
+\pgf@picture@serial@count=\count320
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen272
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen273
+\pgf@pt@y=\dimen274
+\pgf@pt@temp=\dimen275
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen276
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen277
+\pgf@sys@shading@range@num=\count321
+\pgf@shadingcount=\count322
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box67
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box68
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen278
+\pgf@nodesepend=\dimen279
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks41
+\verbatim@line=\toks42
+\verbatim@in@stream=\read4
+) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box69
+\tcb@upperbox=\box70
+\tcb@lowerbox=\box71
+\tcb@phantombox=\box72
+\c@tcbbreakpart=\count323
+\c@tcblayer=\count324
+\c@tcolorbox@number=\count325
+\l__tcobox_tmpa_box=\box73
+\l__tcobox_tmpa_dim=\dimen280
+\tcb@temp=\box74
+\tcb@temp=\box75
+\tcb@temp=\box76
+\tcb@temp=\box77
+ (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.2.0'
+\c@tcbrastercolumn=\count326
+\c@tcbrasterrow=\count327
+\c@tcbrasternum=\count328
+\c@tcbraster=\count329
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen281
+\pgffor@skip=\dimen282
+\pgffor@stack=\toks43
+\pgffor@toks=\toks44
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count330
+\pgfplotmarksize=\dimen283
+)
+\tikz@lastx=\dimen284
+\tikz@lasty=\dimen285
+\tikz@lastxsaved=\dimen286
+\tikz@lastysaved=\dimen287
+\tikz@lastmovetox=\dimen288
+\tikz@lastmovetoy=\dimen289
+\tikzleveldistance=\dimen290
+\tikzsiblingdistance=\dimen291
+\tikz@figbox=\box78
+\tikz@figbox@bg=\box79
+\tikz@tempbox=\box80
+\tikz@tempbox@bg=\box81
+\tikztreelevel=\count331
+\tikznumberofchildren=\count332
+\tikznumberofcurrentchild=\count333
+\tikz@fig@count=\count334
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count335
+\pgfmatrixcurrentcolumn=\count336
+\pgf@matrix@numberofcolumns=\count337
+)
+\tikz@expandcount=\count338
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+ (/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+) (/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box82
+)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
+)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box83
+\tcb@totalupperbox=\box84
+\tcb@totallowerbox=\box85
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.2.0'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.2.0'
+\tcbfitdim=\dimen292
+\tcb@lowerfitdim=\dimen293
+\tcb@upperfitdim=\dimen294
+\tcb@cur@hbadness=\count339
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count340
+\lst@gtempboxa=\box86
+\lst@token=\toks45
+\lst@length=\count341
+\lst@currlwidth=\dimen295
+\lst@column=\count342
+\lst@pos=\count343
+\lst@lostspace=\dimen296
+\lst@width=\dimen297
+\lst@newlines=\count344
+\lst@lineno=\count345
+\lst@maxwidth=\dimen298
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count346
+\lst@skipnumbers=\count347
+\lst@framebox=\box87
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
+)
+\c@tcblisting=\count348
+)) (/usr/share/texlive/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.2.0'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.2.0'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.2.0'
+)) (./Tesis_Ciccarella.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 LaTeX Info: Redefining \. on input line 12.
@@ -425,49 +732,49 @@ LaTeX Info: Redefining \% on input line 12.
 )
 \openout1 = `Tesis_Ciccarella.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
-\scratchdimen=\dimen185
-\scratchbox=\box62
-\nofMPsegments=\count312
-\nofMParguments=\count313
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count314
-\MPscratchDim=\dimen186
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count349
+\scratchdimen=\dimen299
+\scratchbox=\box88
+\nofMPsegments=\count350
+\nofMParguments=\count351
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count352
+\MPscratchDim=\dimen300
+\MPnumerator=\count353
+\makeMPintoPDFobject=\count354
+\everyMPtoPDFconversion=\toks47
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 36.
+Package hyperref Info: Link coloring ON on input line 57.
  (./Tesis_Ciccarella.out) (./Tesis_Ciccarella.out)
-\@outlinefile=\write3
-\openout3 = `Tesis_Ciccarella.out'.
+\@outlinefile=\write4
+\openout4 = `Tesis_Ciccarella.out'.
 
 
 *geometry* driver: auto-detecting
@@ -505,20 +812,22 @@ Package hyperref Info: Link coloring ON on input line 36.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Package chemgreek Info: Activating mapping `default' on line 36.
+Package chemgreek Info: Activating mapping `default' on line 57.
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<UBA.jpg, id=76, 304.13625pt x 307.1475pt>
+\c@lstlisting=\count355
+<UBA.jpg, id=139, 304.13625pt x 307.1475pt>
 File: UBA.jpg Graphic file (type jpg)
 <use UBA.jpg>
-Package pdftex.def Info: UBA.jpg  used on input line 43.
+Package pdftex.def Info: UBA.jpg  used on input line 64.
 (pdftex.def)             Requested size: 140.92804pt x 142.32532pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -530,15 +839,15 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-)
-\tf@toc=\write4
-\openout4 = `Tesis_Ciccarella.toc'.
-
  [3
 
-] (./1.introduccion.tex
+])
+\tf@toc=\write5
+\openout5 = `Tesis_Ciccarella.toc'.
+
+ [4] (./1.introduccion.tex
 Cap\'{\i }tulo 1.
-<figures/reheating.pdf, id=186, 1806.75pt x 722.7pt>
+<figures/reheating.pdf, id=260, 1806.75pt x 722.7pt>
 File: figures/reheating.pdf Graphic file (type pdf)
 <use figures/reheating.pdf>
 Package pdftex.def Info: figures/reheating.pdf  used on input line 11.
@@ -565,100 +874,135 @@ Cap\'{\i }tulo 3.
 [4
 
 ]
-<figures/background_m2phi2.pdf, id=288, 1300.86pt x 433.62pt>
+<figures/background_m2phi2.pdf, id=362, 1300.86pt x 433.62pt>
 File: figures/background_m2phi2.pdf Graphic file (type pdf)
 <use figures/background_m2phi2.pdf>
 Package pdftex.def Info: figures/background_m2phi2.pdf  used on input line 49.
 (pdftex.def)             Requested size: 469.75539pt x 156.58607pt.
-<figures/Background_lphi4.pdf, id=289, 1300.86pt x 433.62pt>
+<figures/Background_lphi4.pdf, id=363, 1300.86pt x 433.62pt>
 File: figures/Background_lphi4.pdf Graphic file (type pdf)
 <use figures/Background_lphi4.pdf>
 Package pdftex.def Info: figures/Background_lphi4.pdf  used on input line 54.
 (pdftex.def)             Requested size: 469.75539pt x 156.58607pt.
  [5] [6 <./figures/background_m2phi2.pdf> <./figures/Background_lphi4.pdf>] [7]
-<figures/Floquet_m2phi2.pdf, id=362, 722.7pt x 433.62pt>
+<figures/Floquet_m2phi2.pdf, id=438, 722.7pt x 433.62pt>
 File: figures/Floquet_m2phi2.pdf Graphic file (type pdf)
 <use figures/Floquet_m2phi2.pdf>
 Package pdftex.def Info: figures/Floquet_m2phi2.pdf  used on input line 126.
 (pdftex.def)             Requested size: 422.77698pt x 253.66338pt.
-<figures/Floquet_lphi4.pdf, id=363, 722.7pt x 433.62pt>
+<figures/Floquet_lphi4.pdf, id=439, 722.7pt x 433.62pt>
 File: figures/Floquet_lphi4.pdf Graphic file (type pdf)
 <use figures/Floquet_lphi4.pdf>
 Package pdftex.def Info: figures/Floquet_lphi4.pdf  used on input line 131.
 (pdftex.def)             Requested size: 422.77698pt x 253.66338pt.
  [8] [9 <./figures/Floquet_m2phi2.pdf> <./figures/Floquet_lphi4.pdf>]
-<figures/muk_m2phi2.pdf, id=437, 1445.4pt x 1445.4pt>
+<figures/muk_m2phi2.pdf, id=513, 1445.4pt x 1445.4pt>
 File: figures/muk_m2phi2.pdf Graphic file (type pdf)
 <use figures/muk_m2phi2.pdf>
 Package pdftex.def Info: figures/muk_m2phi2.pdf  used on input line 146.
 (pdftex.def)             Requested size: 211.38849pt x 211.3751pt.
-<figures/muk_lphi4.pdf, id=438, 1445.4pt x 1445.4pt>
+<figures/muk_lphi4.pdf, id=514, 1445.4pt x 1445.4pt>
 File: figures/muk_lphi4.pdf Graphic file (type pdf)
 <use figures/muk_lphi4.pdf>
 Package pdftex.def Info: figures/muk_lphi4.pdf  used on input line 151.
 (pdftex.def)             Requested size: 211.38849pt x 211.3751pt.
  [10 <./figures/muk_m2phi2.pdf> <./figures/muk_lphi4.pdf>]
-<figures/narrow_resonance_m2phi2.pdf, id=525, 867.24pt x 578.16pt>
+<figures/narrow_resonance_m2phi2.pdf, id=602, 867.24pt x 578.16pt>
 File: figures/narrow_resonance_m2phi2.pdf Graphic file (type pdf)
 <use figures/narrow_resonance_m2phi2.pdf>
 Package pdftex.def Info: figures/narrow_resonance_m2phi2.pdf  used on input line 168.
 (pdftex.def)             Requested size: 211.38849pt x 140.92262pt.
-<figures/broad_resonance_m2phi2.pdf, id=526, 867.24pt x 578.16pt>
+<figures/broad_resonance_m2phi2.pdf, id=603, 867.24pt x 578.16pt>
 File: figures/broad_resonance_m2phi2.pdf Graphic file (type pdf)
 <use figures/broad_resonance_m2phi2.pdf>
 Package pdftex.def Info: figures/broad_resonance_m2phi2.pdf  used on input line 173.
 (pdftex.def)             Requested size: 211.38849pt x 140.92262pt.
-<figures/nk_Narrow_resonance_m2phi2.pdf, id=527, 867.24pt x 433.62pt>
+<figures/nk_Narrow_resonance_m2phi2.pdf, id=604, 867.24pt x 433.62pt>
 File: figures/nk_Narrow_resonance_m2phi2.pdf Graphic file (type pdf)
 <use figures/nk_Narrow_resonance_m2phi2.pdf>
 Package pdftex.def Info: figures/nk_Narrow_resonance_m2phi2.pdf  used on input line 178.
 (pdftex.def)             Requested size: 211.38849pt x 105.69196pt.
-<figures/nk_Broad_resonance_m2phi2.pdf, id=528, 867.24pt x 433.62pt>
+<figures/nk_Broad_resonance_m2phi2.pdf, id=605, 867.24pt x 433.62pt>
 File: figures/nk_Broad_resonance_m2phi2.pdf Graphic file (type pdf)
 <use figures/nk_Broad_resonance_m2phi2.pdf>
 Package pdftex.def Info: figures/nk_Broad_resonance_m2phi2.pdf  used on input line 183.
 (pdftex.def)             Requested size: 211.38849pt x 105.69196pt.
-<figures/Narrow_Resonance_lphi4.pdf, id=529, 867.24pt x 433.62pt>
+<figures/Narrow_Resonance_lphi4.pdf, id=606, 867.24pt x 433.62pt>
 File: figures/Narrow_Resonance_lphi4.pdf Graphic file (type pdf)
 <use figures/Narrow_Resonance_lphi4.pdf>
 Package pdftex.def Info: figures/Narrow_Resonance_lphi4.pdf  used on input line 194.
 (pdftex.def)             Requested size: 190.24834pt x 95.11879pt.
-<figures/Broad_Resonance_lphi4.pdf, id=530, 867.24pt x 433.62pt>
+<figures/Broad_Resonance_lphi4.pdf, id=607, 867.24pt x 433.62pt>
 File: figures/Broad_Resonance_lphi4.pdf Graphic file (type pdf)
 <use figures/Broad_Resonance_lphi4.pdf>
 Package pdftex.def Info: figures/Broad_Resonance_lphi4.pdf  used on input line 199.
 (pdftex.def)             Requested size: 190.24834pt x 95.11879pt.
-<figures/nk_Narrow_Resonance_lphi4.pdf, id=531, 867.24pt x 433.62pt>
+<figures/nk_Narrow_Resonance_lphi4.pdf, id=608, 867.24pt x 433.62pt>
 File: figures/nk_Narrow_Resonance_lphi4.pdf Graphic file (type pdf)
 <use figures/nk_Narrow_Resonance_lphi4.pdf>
 Package pdftex.def Info: figures/nk_Narrow_Resonance_lphi4.pdf  used on input line 204.
 (pdftex.def)             Requested size: 190.24834pt x 95.11879pt.
-<figures/nk_Broad_Resonance_lphi4.pdf, id=532, 867.24pt x 433.62pt>
+<figures/nk_Broad_Resonance_lphi4.pdf, id=609, 867.24pt x 433.62pt>
 File: figures/nk_Broad_Resonance_lphi4.pdf Graphic file (type pdf)
 <use figures/nk_Broad_Resonance_lphi4.pdf>
 Package pdftex.def Info: figures/nk_Broad_Resonance_lphi4.pdf  used on input line 209.
 (pdftex.def)             Requested size: 190.24834pt x 95.11879pt.
  [11 <./figures/narrow_resonance_m2phi2.pdf> <./figures/broad_resonance_m2phi2.pdf> <./figures/nk_Narrow_Resonance_m2phi2.pdf> <./figures/nk_Broad_Resonance_m2phi2.pdf>] [12 <./figures/Narrow_Resonance_lphi4.pdf> <./figures/Broad_Resonance_lphi4.pdf> <./figures/nk_Narrow_Resonance_lphi4.pdf> <./figures/nk_Broad_Resonance_lphi4.pdf>] [13]
-<figures/rhoGW_lphi4(lineal).pdf, id=770, 722.7pt x 433.62pt>
+<figures/rhoGW_lphi4(lineal).pdf, id=853, 722.7pt x 433.62pt>
 File: figures/rhoGW_lphi4(lineal).pdf Graphic file (type pdf)
 <use figures/rhoGW_lphi4(lineal).pdf>
 Package pdftex.def Info: figures/rhoGW_lphi4(lineal).pdf  used on input line 286.
 (pdftex.def)             Requested size: 352.31653pt x 211.39055pt.
 ) (./4.cap4.tex [14] [15 <./figures/rhoGW_lphi4(lineal).pdf>]
 Cap\'{\i }tulo 4.
-) (./5.conclusiones.tex [16
+[16
 
-] [17]
+]
+<figures/CosmoLattice1_chi_spectra.pdf, id=928, 867.24pt x 1084.05pt>
+File: figures/CosmoLattice1_chi_spectra.pdf Graphic file (type pdf)
+<use figures/CosmoLattice1_chi_spectra.pdf>
+Package pdftex.def Info: figures/CosmoLattice1_chi_spectra.pdf  used on input line 36.
+(pdftex.def)             Requested size: 422.77698pt x 528.4764pt.
+<figures/CosmoLattice1_nk_spectra.pdf, id=929, 867.24pt x 1084.05pt>
+File: figures/CosmoLattice1_nk_spectra.pdf Graphic file (type pdf)
+<use figures/CosmoLattice1_nk_spectra.pdf>
+Package pdftex.def Info: figures/CosmoLattice1_nk_spectra.pdf  used on input line 43.
+(pdftex.def)             Requested size: 422.77698pt x 528.4764pt.
+<figures/CosmoLattice1_GW_spectra.pdf, id=930, 867.24pt x 1084.05pt>
+File: figures/CosmoLattice1_GW_spectra.pdf Graphic file (type pdf)
+<use figures/CosmoLattice1_GW_spectra.pdf>
+Package pdftex.def Info: figures/CosmoLattice1_GW_spectra.pdf  used on input line 50.
+(pdftex.def)             Requested size: 422.77698pt x 528.4764pt.
+ [17] [18 <./figures/CosmoLattice1_chi_spectra.pdf>] [19 <./figures/CosmoLattice1_nk_spectra.pdf>] [20 <./figures/CosmoLattice1_GW_spectra.pdf>] [21]
+<figures/comparacion_w0.pdf, id=1103, 860.53012pt x 422.76006pt>
+File: figures/comparacion_w0.pdf Graphic file (type pdf)
+<use figures/comparacion_w0.pdf>
+Package pdftex.def Info: figures/comparacion_w0.pdf  used on input line 77.
+(pdftex.def)             Requested size: 305.33812pt x 150.00668pt.
+<figures/comparacion_w13.pdf, id=1104, 860.66783pt x 422.76006pt>
+File: figures/comparacion_w13.pdf Graphic file (type pdf)
+<use figures/comparacion_w13.pdf>
+Package pdftex.def Info: figures/comparacion_w13.pdf  used on input line 82.
+(pdftex.def)             Requested size: 305.33812pt x 149.98088pt.
+ [22 <./figures/comparacion_w0.pdf> <./figures/comparacion_w13.pdf>]) (./5.conclusiones.tex [23]
 Cap\'{\i }tulo 5.
-) (./Tesis_Ciccarella.bbl [18
+) (./Tesis_Ciccarella.bbl [24
 
-] [19
+] [25
 
-] [20] [21] [22]) (./Anexo.tex [23]
+] [26] [27] [28] [29]) (./Anexo.tex [30]
 Ap\'{e}ndice A.
-) [24
+[31
 
-] (./last_page.tex) [25] (./Tesis_Ciccarella.aux
+]
+Ap\'{e}ndice B.
+[32
+
+] [33] [34] [35]
+Ap\'{e}ndice C.
+) [36
+
+] (./last_page.tex) [37] (./Tesis_Ciccarella.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 LaTeX Info: Redefining \. on input line 12.
@@ -669,25 +1013,25 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `Tesis_Ciccarella.out' has not changed.
-(rerunfilecheck)             Checksum: CF955B2D6ACD155C9EDBD06F4640BAF5;3375.
+(rerunfilecheck)             Checksum: 09685D1845B9802DAEBBE06EE8C28D8E;4763.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 37 (\begingroup)
+### semi simple group (level 1) entered at line 58 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15901 strings out of 474222
- 261904 string characters out of 5748734
- 1938975 words of memory out of 5000000
- 37766 multiletter control sequences out of 15000+600000
+ 36000 strings out of 474222
+ 723383 string characters out of 5748734
+ 1943975 words of memory out of 5000000
+ 57510 multiletter control sequences out of 15000+600000
  572337 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,18n,79p,1567b,975s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Tesis_Ciccarella.pdf (30 pages, 2724319 bytes).
+ 93i,19n,99p,1567b,1013s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Tesis_Ciccarella.pdf (43 pages, 3319187 bytes).
 PDF statistics:
- 978 PDF objects out of 1000 (max. 8388607)
- 659 compressed objects within 7 object streams
- 146 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1375 PDF objects out of 1440 (max. 8388607)
+ 875 compressed objects within 9 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 459 words of extra memory for PDF output out of 10000 (max. 10000000)
 

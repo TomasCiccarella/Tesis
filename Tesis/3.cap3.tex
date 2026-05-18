@@ -40,7 +40,7 @@ A su vez, el \textit{background} va a estar regido por las ecuaciones de Friedma
     H^2 = \frac{1}{3 m_p^2} \left[ \frac{1}{2} \dot{\bar{\phi}}^2 + V \left( \bar{\phi} \right) \right]
 \end{equation}
 
-En este trabajo se realizaron códigos computacionales para la resolución de estas ecuaciones \cite[Git], para lo cual se buscó modelar la forma del potencial del inflatón de forma cuadrática $\left( m^2 \phi^2 \right)$ dándonos para las pertubaciones del campo hijo una ecuación de tipo Mathieu, y de forma cuártica $(\lambda \phi^4)$ dándonos para las perturbaciones del campo hijo una ecuaciónde tipo Lamé. Para el \textit{background} estos dos escenarios se encuentran graficados en la Figura \ref{fig:Background}, dónde podemos ver que para ambos modelos tenemos que el inflatón disminuye su amplitud con el tiempo mientras que el universo se expande siguiendo una ley de potencias: $a \propto t^{2/3}$ para $m^2 \phi^2$ y $a \propto t^{1/2}$ para $\lambda \phi^4$ tal como se esperaba según la ecuación (\ref{eqn:omega_eff}), permitiendo capturar una dinámica esperable de los códigos armados y que en el capítulo siguiente buscaremos comparar con lo que ocurre cuando agregamos efectos no lineales.
+En este trabajo se realizaron códigos computacionales para la resolución de estas ecuaciones \cite{Git}, para lo cual se buscó modelar la forma del potencial del inflatón de forma cuadrática $\left( m^2 \phi^2 \right)$ dándonos para las pertubaciones del campo hijo una ecuación de tipo Mathieu, y de forma cuártica $(\lambda \phi^4)$ dándonos para las perturbaciones del campo hijo una ecuación de tipo Lamé. Para el \textit{background} estos dos escenarios se encuentran graficados en la Figura \ref{fig:Background}, dónde podemos ver que para ambos modelos tenemos que el inflatón disminuye su amplitud con el tiempo mientras que el universo se expande siguiendo una ley de potencias: $a \propto t^{2/3}$ para $m^2 \phi^2$ y $a \propto t^{1/2}$ para $\lambda \phi^4$ tal como se esperaba según la ecuación (\ref{eqn:omega_eff}), permitiendo capturar una dinámica esperable de los códigos armados y que en el capítulo siguiente buscaremos comparar con lo que ocurre cuando agregamos efectos no lineales.
 
 \begin{figure}[htbp]
     \centering
@@ -83,13 +83,13 @@ Y de estas dos ecuaciones nos centraremos en resolver sólo la última ecuación
 y acá para un potencial de la forma $\displaystyle V(\phi) = \frac{1}{2} m^2 \phi^2$ podemos ver que obtenemos un oscilador armónico para $\bar{\phi}$ por tanto tenemos una solución de la forma $\bar{\phi} = \phi_0 \cos (mt)$ que al aplicar dentro de la ecuación para el campo hijo nos da una ecuación de la forma
 
 \begin{equation}
-    \frac{d^2 \delta \chi}{dT^2} + \left[ A_k - 2 q \cos (2T) \right] ~ \delta \chi,
+    \frac{d^2 \delta \chi}{dT^2} + \left[ A_k - 2 q \cos (2T) \right] ~ \delta \chi = 0,
 \end{equation}
 
 \noindent
 la cual es una ecuación que se conoce como de tipo Mathieu; y para llegar a ella se definieron los cambios de variables $\displaystyle T = mt + \frac{\pi}{2}$, $\displaystyle q = \frac{g^2}{4} \left( \frac{\phi_0}{m} \right)^2$ y $\displaystyle A_k = \left( \frac{k}{m} \right)^2 + 2q$. Las soluciones de esta ecuación serán analizadas en la siguiente sección haciendo uso del análisis de Fourier, antes de eso saltemos a qué ocurre cuando tenemos un potencial de tipo cuártico.
 
-Si tenemos un potencial de la forma $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$, para el campo inflatón la solución será en términos de una función hiperbólica $cn \left(x, \frac{1}{\sqrt{2}} \right)$ \cite{Greene_1997} la cual nos permite escribir la ecuación de las perturbaciones del campo hijo como
+Si tenemos un potencial de la forma $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$, para el campo inflatón la solución será en términos de una función elíptica $cn \left(x, \frac{1}{\sqrt{2}} \right)$ \cite{Greene_1997} la cual nos permite escribir la ecuación de las perturbaciones del campo hijo como
 
 \begin{equation}
     X_k^{\prime \prime} + \left[ \kappa^2 + \frac{g^2}{\lambda} cn^2 \left(x, \frac{1}{\sqrt{2}} \right) \right] X_k = 0,
@@ -98,9 +98,9 @@ Si tenemos un potencial de la forma $\displaystyle V(\phi) = \frac{1}{4} \lambda
 \noindent
 dónde $x$ es el tiempo conforme, $X = a(t) ~ \chi(t)$ y $\displaystyle \kappa^2 = \frac{k^2}{\lambda a^2 \bar{\phi}^2}$. A esta ecuación se la conoce como ecuación de Lamé y al igual que con la ecuación de Mathieu haremos un análisis de las soluciones de esta ecuación en la siguiente sección al introducir el análisis de Floquet y los tipos de resonancia.
 
-\section{Análisis de Floquet}
+\section{Análisis de Floquet}\label{sec:Floquet}
 
-Para empezar a estudiar las soluciones a las ecuaciones de Mathieu y Lamé debemos entender lo que se conoce como el análisis de Floquet, y eso implica observar que estas ecuaciones tienen por solución $\chi(t) \propto e^{\mu_k t}$ dónde $\mu_k$ se conoce como el exponente de Floquet y es complejo, lo que implica que existen valores para los cuales éste tiene parte real y genera una amplificación en el campo generando una resonancia. El calculo de estos Floquets está descripto en [arXiV:1410.3808] y consiste en armarse una matriz conocida como matriz de monodromía con las soluciones de la ecuación dinámica en un período
+Para empezar a estudiar las soluciones a las ecuaciones de Mathieu y Lamé debemos entender lo que se conoce como el análisis de Floquet, y eso implica observar que estas ecuaciones tienen por solución $\chi(t) \propto e^{\mu_k t}$ dónde $\mu_k$ se conoce como el exponente de Floquet y es complejo, lo que implica que existen valores para los cuales éste tiene parte real y genera una amplificación en el campo generando una resonancia. El calculo de estos Floquets está descripto en \cite{Amin_2014} y consiste en armarse una matriz conocida como matriz de monodromía con las soluciones de la ecuación dinámica en un período
 
 \begin{equation}
     \mathcal{O} \left( t_0 + T, t_0 \right) = \begin{pmatrix}
@@ -215,7 +215,7 @@ Para valores pequeños del parámetro de acoplamiento $(q \ll 1)$, el ancho de l
 
 \vspace{3cm}
 
-En particular, para el estudio que haremos en la siguiente sección nos centraremos en comprender cómo afecta la \textit{Broad Resonance} a la producción de ondas gravitacionales en un potencial de la forma $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$. Se eligió ésto dado que en el capítulo \ref{sec:cap4} se querrá comparar el estudio del modelo lineal con códigos armados y analizados en el estudio de la producción de ondas gravitacionales cuando se tienen no linealidades, y en estos códigos ya estaba estudiado su funcionamiento para el caso de un potencial de esta forma [citar a Figueroa y sus papers en CosmoLattice].
+En particular, para el estudio que haremos en la siguiente sección nos centraremos en comprender cómo afecta la \textit{Broad Resonance} a la producción de ondas gravitacionales en un potencial de la forma $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$. Se eligió ésto dado que en el capítulo \ref{sec:cap4} se querrá comparar el estudio del modelo lineal con códigos armados y analizados en el estudio de la producción de ondas gravitacionales cuando se tienen no linealidades, y en estos códigos ya estaba estudiado su funcionamiento para el caso de un potencial de esta forma \cite{CosmoLatticeNet, Figueroa2021, Figueroa2023, Figueroa2024, Figueroa_2017_GW, Figueroa_2017_Parametric}.
 
 \section{Producción lineal de ondas gravitacionales}
 
@@ -255,7 +255,7 @@ Para poder calcular el correlador $\Pi^{2} \left( k, \tau, \tau^\prime \right)$ 
 de este modo, se obtiene que el correlador vale 
 
 \begin{equation}
-    \Pi^2 \left( k, \tau^\prime, \tau^{\prime \prime} \right) = \frac{1}{4 \pi^2 ~ a^2 \left( \tau^\prime \right) ~ a^2 \left( \tau^{\prime \prime} \right)} \int p^6 \sin^5 \theta ~ \chi_p (\tau) ~ \chi_{k - p} (\tau) ~ \chi_p6 * \left( \tau^\prime \right) ~ \chi_{k - p}^* \left( \tau^\prime \right) ~ dp ~ d\theta.
+    \Pi^2 \left( k, \tau^\prime, \tau^{\prime \prime} \right) = \frac{1}{4 \pi^2 ~ a^2 \left( \tau^\prime \right) ~ a^2 \left( \tau^{\prime \prime} \right)} \int p^6 \sin^5 \theta ~ \chi_p (\tau) ~ \chi_{k - p} (\tau) ~ \chi_p^* \left( \tau^\prime \right) ~ \chi_{k - p}^* \left( \tau^\prime \right) ~ dp ~ d\theta.
 \end{equation}
 
 \noindent
