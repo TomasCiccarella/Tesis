@@ -44,12 +44,12 @@ En este trabajo se realizaron códigos computacionales para la resolución de es
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{\linewidth}
+    \begin{subfigure}[t]{0.7\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/background_m2phi2.pdf}
         \subcaption{$m^2 \phi^2$}
     \end{subfigure}
-    \begin{subfigure}[b]{\linewidth}
+    \begin{subfigure}[b]{0.7\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/Background_lphi4.pdf}
         \subcaption{$\lambda \phi^4$}
@@ -134,8 +134,6 @@ pudiendo observar además que si la traza de la matriz de monodromía es menor q
     \caption{Tablas de inestabilidad de los coeficientes de Floquet para los distintos modelos. Se muestran en color negro aquellas combinaciones de parámetros tal que el coeficiente no tiene parte real, mientras que se muestra en colores más intensos aquellos dónde la parte real de este coeficiente es mayor; permitiendo observar la estructura de bandas de la resonancia paramétrica.}
     \label{fig:Floquet}
 \end{figure}
-
-\vspace{1cm}
 
 De la Figura \ref{fig:Floquet} se puede extraer para la ecuación de Mathieu y de Lamé parámetros tales que se pueda producir la amplificación paramétrica simplemente a partir de elegir un valor para el acoplamiento $g$ y observar su comportamiento para los distintos modos tal como se puede graficar en la Figura \ref{fig:muk} dónde se observa un corte de las tablas de instabilidades para un valor fijo del parámetro de acoplamiento permitiendo entender cómo cambia el coficiente de Floquet a lo largo de los modos del campo. A partir de la Figura \ref{fig:muk}, se puede extraer un ancho banda para el cual $\Re\{ \mu_k \} > 0$ y permite clasificar los tipos de resonancia en dos: \textit{Narrow Resonance} (o resonancia angosta) y \textit{Broad Resonance} (o resonancia ancha), dando dos tipos de comportamientos distintos para el campo.
 
@@ -277,7 +275,7 @@ dónde las funciones $I_c \left( k, p, \theta, \tau \right)$ e $I_s \left( k, p,
 \end{equation}
 
 \noindent
-en estas funciones están metidas la dinámica de los modos de Fourier de $\chi$ que lo calculamos en la sección anterior pero observamos, además, que contiene una convolución de los modos por lo que una resonancia en unos modos va a inducir ondas gravitacionales en todo el espectro de potencia. \textcolor{red}{[PREGUNTAR A NAHUE SI VALE LA PENA HACER MÁS DE ESTE DESARROLLO EN UN APÉNDICE O SIMPLEMENTE DEJARLO ASÍ]}
+en estas funciones están metidas la dinámica de los modos de Fourier de $\chi$ que lo calculamos en la sección anterior pero observamos, además, que contiene una convolución de los modos por lo que una resonancia en unos modos va a inducir ondas gravitacionales en todo el espectro de potencia\footnote{Las cuentas completas para llegar a estas expresiones se encuentran desarrolladas en el Apéndice \ref{sec:apexA}}.
 
 A partir de la ecuación (\ref{eqn:GW_production}) podemos armar un código de Python que reciba la dinámica de los modos de Fourier del campo y la evolución del \textit{background} para calcular el espectro de ondas gravitacionales, esto mismo lo podemos observar en la Figura \ref{fig:GW_lineal} dónde además se sombrea de verde aquella zona dónde ocurre la amplificación del campo por resonancia paramétrica y por tanto se espera un aumento mayor en el espectro de ondas gravitacionales. Se observa, efectivamente, en la Figura \ref{fig:GW_lineal} que en la banda dónde el coeficiente de Floquet tiene parte real no nula ocurre una amplificación del espectro y además se observa que el efecto de la convolución de los modos de Fourier causan que todo el espectro se vea aumentado.
 

@@ -2,7 +2,7 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Inflación}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Recalentamiento}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Recalentamiento}{1}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Ondas Gravitacionales}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Descomposición SVT}{3}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Ondas Gravitacionales}{3}{section.2.2}%
@@ -11,16 +11,17 @@
 \contentsline {section}{\numberline {2.5}Las ondas gravitacionales como reliquias del universo temprano}{3}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Evolución lineal de los campos durante Preheating}{4}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Resonancia Paramétrica}{4}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Análisis de Floquet}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Producción lineal de ondas gravitacionales}{12}{section.3.3}%
-\contentsline {chapter}{\numberline {4}\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Estudio del potencial $\lambda \phi ^4$ a orden lineal}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Los modelos a estudiar}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Evolución del background}{23}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Comparación de espectros con $\omega _{eff} = 1/3$}{23}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Comparación de espectros con $\omega _{eff} = 0$}{23}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{24}{chapter.5}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{25}{chapter*.14}%
+\contentsline {section}{\numberline {3.2}Análisis de Floquet}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Producción lineal de ondas gravitacionales}{10}{section.3.3}%
+\contentsline {chapter}{\numberline {4}\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Estudio del potencial $\lambda \phi ^4$ a orden lineal}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Los modelos a estudiar}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Evolución del background}{22}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Comparación de espectros con $\omega _{eff} = 1/3$}{24}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Comparación de espectros con $\omega _{eff} = 0$}{24}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Sensibilidad de los modelos ante detectores}{24}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{25}{chapter.5}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{26}{chapter*.16}%
 \contentsline {chapter}{\numberline {A}Produción lineal de ondas gravitacionales}{31}{appendix.Alph1}%
-\contentsline {chapter}{\numberline {B}Condiciones iniciales \ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{32}{appendix.Alph2}%
-\contentsline {chapter}{\numberline {C}Ánalisis en la estabilidad de modelos en \ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{36}{appendix.Alph3}%
+\contentsline {chapter}{\numberline {B}Condiciones iniciales \ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{36}{appendix.Alph2}%
+\contentsline {chapter}{\numberline {C}Reescaleo del espectro de \ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace al observable hoy}{40}{appendix.Alph3}%

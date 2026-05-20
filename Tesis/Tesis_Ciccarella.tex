@@ -2,6 +2,7 @@
 % PREÁMBULO
 %============================================================================
 \documentclass[letterpaper,12pt]{report}
+\usepackage[a4paper, margin=2cm, marginparwidth=3cm]{geometry} % Configura el tamaño del papel y los márgenes del documento
 \usepackage[spanish]{babel}
 \selectlanguage{spanish}
 \usepackage[utf8]{inputenc}
@@ -11,7 +12,7 @@
            urlcolor=blue,citecolor=blue]{hyperref}
 \usepackage{titlesec,url}
 \usepackage[nottoc,notlot,notlof]{tocbibind}
-\usepackage[margin=2.54 cm]{geometry}
+%\usepackage[margin=2.54 cm]{geometry}
 \usepackage[version=4]{mhchem}
 \usepackage{amssymb, amsmath} 
 \usepackage{float}
@@ -20,6 +21,8 @@
 \usepackage{xspace}
 \usepackage{fancyhdr}
 \usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage{physics} % Ofrece comandos para la notación matemática usada en física, como derivadas y operadores
 
 \usepackage[most]{tcolorbox}
 
@@ -37,6 +40,9 @@
     bottom=6pt,
     breakable
 }
+
+\usepackage{cancel}
+\newcommand{\colorcancel}[2]{\textcolor{#1}{\cancel{\textcolor{black}{#2}}}}
 
 % Comando personalizado para CosmoLattice
 \newcommand{\CosmoLattice}{\ensuremath{\mathcal{C}}\text{osmo}\ensuremath{\mathcal{L}}\text{attice}\xspace}
@@ -61,14 +67,16 @@
 \newpage
 \thispagestyle{empty}
 \begin{center}
-\includegraphics[width=0.3\textwidth]{UBA.jpg}
-\vfill
 
 {\Huge Producción de ondas gravitatorias durante el Recalentamiento: análisis teórico
 y simulaciones con \CosmoLattice}
 \vfill
+\vspace{-1cm}
 \textbf{Tomás Alejandro Ciccarella}\\
 
+\vfill
+
+\includegraphics[width=0.5\textwidth]{UBA.jpg}
 \vfill
 
 \textsc{Tesis de Licenciatura en Ciencias Físicas}\\
@@ -161,7 +169,7 @@ Aca va el resumen de tu tesis sobre ondas gravitatorias y preheating.
 \newpage
 
 \section*{Agradecimientos}
-Acá van tus agradecimientos personales.
+%Acá van tus agradecimientos personales.
 \newpage
 
 \tableofcontents
