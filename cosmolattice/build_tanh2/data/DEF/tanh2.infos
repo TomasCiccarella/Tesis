@@ -1,0 +1,46 @@
+Parameters: 
+Important parameters:
+
+             kCutOff       18                  
+                tMax       900                 
+                  dt       0.01                
+                   N       32                  
+             withGWs       true                
+             evolver       VV2                 
+     tOutputRareFreq       10                  
+           expansion       true                
+                 kIR       3                   
+       tOutputInfreq       3                   
+                  t0       0                   
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+          PS_version       1                   
+             PS_type       1                   
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+     fixedBackground       false               
+     initial_momenta       -3.0714e31 0        
+         tBackupFreq       -1                  
+          outputfile       ./data/DEF/         
+            baseSeed       3410739696          
+               input       ../src/models/parameter-files/tanh2.in
+             Lambda4       1.7966e65           
+                   q       5000                
+       appendToFiles       false               
+     GWprojectorType       1                   
+  initial_amplitudes       3.39928e18 0        
+         tOutputVerb       1                   
+                   M       2.903e19            
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       true                
+    spectraVerbosity       0                   
+           deltaKBin       1                   
+
+The simulation started on the d20 m5 y2026 around h12m32.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d20 m5 y2026 around h12m46.
+The timer indicates that it ran for 812.632s.
+As it ran on 1 cores, this corresponds to 0.225731 core hours.

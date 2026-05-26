@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/tanh2/m_2.0e13/M_5.0e19/
+outputfile = ./data/DEF/
 
 #Evolution
 expansion = true
@@ -22,20 +22,8 @@ initial_amplitudes = 3.39928e18 0 # homogeneous amplitudes in GeV
 initial_momenta = -3.0714e31 0    # homogeneous amplitudes in GeV2
 
 #Model Parameters
-M = 5.0e19
-Lambda4 = 1000000000000000000000000000000000000000000000000000000000000000000.
-00
-00
-0
-00
-0
-0
-00
-00
-0
-00
-0
-0
+M = 2.903e19
+Lambda4 = 1.7966e65
 q = 5000
 
 #GWs

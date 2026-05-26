@@ -2,53 +2,32 @@
 \chapter{Produción lineal de ondas gravitacionales} \label{sec:apexA}
 
 El estudio de la producción de ondas gravitacionales a partir del tensor de energía-momento se puede hacer a partir de recordar que en el gauge TT bajo una métrica de fondo del tipo FLRW, la ecuación de ondas en el espacio de Fourier se escribe como 
-
 \begin{equation}\label{eqn:GW_eq}
     h^{\prime \prime}_{ij} + 2 \mathcal{H} h^\prime_{ij} - k^2 h_{ij} = \frac{2}{m_p^2} \Pi_{ij}^{TT},
 \end{equation}
-
-\noindent
 dónde las perturbaciones en el tensor de energía-momento calcula a partir de
-
 \begin{equation}
     \Pi^{TT}_{ij} = \left\{ \partial_i \chi, \partial_j \chi \right\}^{TT} = \frac{1}{a^2} \left\{ \partial_i \chi_c, \partial_j \chi_c \right\}^{TT},
 \end{equation}
-
-\noindent
 siendo que se puede calcular la proyección TT haciendo uso del proyector $P_{ij} = \delta_{ij} - \hat{k}_i \hat{k}_j$ que a su vez define a un proyector 
-
 \begin{equation}
     \Lambda_{ij,lm} \left( \hat{k} \right) = P_{il} \left( \hat{k} \right) ~ P_{jm} \left( \hat{k} \right) - \frac{1}{2} P_{ij} \left( \hat{k} \right) ~ P_{lm} \left( \hat{k} \right),
 \end{equation}
-
-\noindent
 tal que $\Pi^{TT}_{ij} = \Lambda_{ij,lm} \left( \hat{k} \right) ~ \Pi_{ij}$ es el tensor de energía-momento en el gauge deseado.
 
 Por otro lado, la densidad de energía de las ondas gravitacionales para un fondo estocástico puede ser calculada a partir de conocer el espectro de potencias $\mathcal{P}_h \left( k, \tau \right)$ como
-
 \begin{equation}
     \frac{d \rho_{GW}}{d \log k} = \frac{k^3 m_p^3}{8 \pi^2 a^2} \mathcal{P}_{h^\prime} (k, \tau),
 \end{equation}
-
-\noindent
 por lo que usando que el espectro de potencias se define a partir de $\langle h^\prime (k, \tau) ~ h^{* \prime} (k^\prime, \tau) \rangle = (2\pi)^3 \mathcal{P}_{h^\prime} (k, \tau) ~ \delta (k - k^\prime)$ podemos obtener el espectro de potencias para las ondas gravitacionales. Haciendo uso de la función de Green, la ecuación (\ref{eqn:GW_eq}) tiene por solución
-
 \begin{equation}
     h_{ij}^{TT} (k, \tau) = \frac{1}{a(\tau) ~ m_p^2} \int_{\tau_i}^{\tau} a(\tau^\prime) ~ \mathcal{G} (k, \tau, \tau^\prime) ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime,
 \end{equation}
-
-\noindent
 siendo $\mathcal{G} (k, \tau, \tau^\prime) = k^{-1} \sin \left[k \left( \tau - \tau^\prime \right) \right]$, lo que implica que las ondas se escriben como
-
 \begin{equation}
     h_{ij}^{TT} (k, \tau) = \frac{1}{a(\tau) ~ m_p^2} \int_{\tau_i}^{\tau} \frac{a \left( \tau^\prime \right)}{k} ~ \sin \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime.
 \end{equation}
-
-\noindent
 Para calcular el espectro requiero las derivadas en tiempo propio entonces calculemos esto último
-
-\vspace{-1cm}
-
 {\small \begin{equation*}
     \begin{split}
         h^\prime_{ij} =& \frac{dh_{ij}}{d\tau}\\
@@ -61,27 +40,17 @@ Para calcular el espectro requiero las derivadas en tiempo propio entonces calcu
         =& -\mathcal{H} h_{ij} + \frac{1}{a(\tau) ~ m_p^2} \int_{\tau_i}^{\tau} a \left( \tau^\prime \right) ~ \cos \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi^{TT}_{ij} \left( k, \tau^\prime \right) ~ d\tau^\prime
     \end{split}
 \end{equation*}}
-
-\noindent
 para modos subhorizonte tenemos que $\mathcal{H} \sim 1/\tau$, la integral va como $\sim k$ y como estamos debajo del horizonte $k\tau \gg 1$ lo que nos permite notar que el segundo término pesa mucho más que el primero, por tanto despreciaremos el primero quedándonos con
-
 \begin{equation}
     h^\prime_{ij} = \frac{1}{a(\tau) ~ m_p^2} \int_{\tau_i}^{\tau} a \left( \tau^\prime \right) ~ \cos \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi^{TT}_{ij} \left( k, \tau^\prime \right) ~ d\tau^\prime.
 \end{equation}
 
-
 Utilizando la definición del espectro de potencias del campo se puede calcular éste a partir de utilizar que $\displaystyle \cos(a) \cos(b) = \frac{1}{2} \left[ \cos(a + b) + \cos(a - b) \right]$ junto con definir
-
 \begin{equation}
     \left\langle \Pi^{TT}_{ij} \left( k, \tau^{\prime} \right) \Pi^{*TT}_{ij} \left( k^\prime, \tau^{\prime \prime} \right) \right\rangle  = (2\pi)^3 \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ \delta \left( k - k^\prime \right)
 \end{equation}
-
-\noindent
 por lo que la función de dos puntos de $h^\prime$ nos queda
-
-\vspace{-0.5cm}
-
-{\scriptsize \begin{equation*}
+{\footnotesize \begin{equation*}
     \begin{split}
         \langle h^\prime \left( k, \tau \right) h^{* \prime} \left( k^\prime, \tau \right) \rangle &= \frac{1}{a^2 (\tau) m_p^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) a \left( \tau^{\prime \prime} \right) \cos \left[ k \left( \tau - \tau^\prime \right) \right] ~ \cos \left[ k^\prime \left( \tau - \tau^{\prime \prime} \right) \right] ~ \left\langle \Pi^{TT}_{ij} \left( k, \tau^{\prime} \right) \Pi^{*TT}_{ij} \left( k^\prime, \tau^{\prime \prime} \right) \right\rangle ~ d\tau^\prime ~ d\tau^{\prime \prime}\\
         &= \frac{(2 \pi)^3}{a^2 (\tau) ~ m_p^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau - \tau^\prime \right) \right] ~ \cos \left[ k^\prime \left( \tau - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ \delta \left( k - k^\prime \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}\\
@@ -89,44 +58,30 @@ por lo que la función de dos puntos de $h^\prime$ nos queda
         &= \frac{4 \pi^3}{a^2 (\tau) ~ m_p^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \left\{ \cos \left[ k \left( 2 \tau - \tau^\prime - \tau^{\prime \prime} \right) \right] + \cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right] \right\} ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}
     \end{split}
 \end{equation*}}
-
-\noindent
-tomando un promedio de tiempo $\delta t = 2\pi / k$ podemos descartar $\cos \left[ k \left( 2 \tau - \tau^\prime - \tau^{\prime \prime} \right) \right]$ por sobre $\cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right]$ por oscilar de forma más rápida
-
+tomando un promedio temporal $\delta t = 2\pi / k$ podemos descartar $\cos \left[ k \left( 2 \tau - \tau^\prime - \tau^{\prime \prime} \right) \right]$ contra $\cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right]$ por oscilar de forma más rápida
 \begin{equation*}
     \begin{split}
         \left\langle \left| h^\prime \left( k, \tau \right) \right|^2 \right\rangle &= \frac{4 \pi^3}{a^2 (\tau) ~ m_p^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}
     \end{split}
 \end{equation*}
-
-\noindent
 y entonces el espectro de potencias que nos servirá para calcular la densidad de energía para las ondas gravitaciones nos quedan de la forma
-
 \begin{equation}
     \mathcal{P}_{h^\prime} (k, \tau) = \frac{1}{2 m_p^4 ~ a^2 (\tau)} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}.
 \end{equation}
 
-
 Una vez calculado el espectro de potencias podemos ver que la densidad de energía de las ondas vale
-
 \begin{equation}
     \frac{d\rho_{GW}}{d \log k} = \frac{k^3}{16 m_p \pi^2 a^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}.
 \end{equation}
 
 Para poder obtener la densidad de ondas gravitaciones debemos calcular $\Pi^2 \left( k, t^\prime, t^{\prime \prime} \right)$ utilizando la expansión en modos del campo hijo, junto con que $\displaystyle \Pi_{ij}^{TT} = \frac{1}{a^2} \left\{ \partial_i \chi_c ~ \partial_j \chi_c \right\}^{TT} = \frac{\Lambda_{ij,lm} \left( \hat{k} \right)}{a^2} \left\{ \partial_i \chi_c ~ \partial_j \chi_c \right\}$, entonces tenemos
-
 \begin{equation}
     \chi_c (x) = \int \frac{1}{(2 \pi)^3} \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] ~ e^{- i \vec{p} \cdot \vec{x}} ~ d^3 p,
 \end{equation}
-
 \begin{equation}
     \partial_i \chi_c (x) = \int \frac{(-i p_i)}{(2 \pi)^3} \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] ~ e^{- i \vec{p} \cdot \vec{x}} ~ d^3 p,
 \end{equation}
-
-\noindent
 con ésto, calculemos la proyección TT del tensor de energía-impulso para lo cual podemos usar la idea de que la multiplicación de dos transformadas de Fourier es la convolución de las funciones, por tanto
-
-\vspace{-0.5cm}
 
 {\small \begin{equation*}
     \begin{split}
@@ -138,35 +93,25 @@ con ésto, calculemos la proyección TT del tensor de energía-impulso para lo c
         =& - \frac{\Lambda_{ij,lm} (\hat{k})}{(2 \pi)^6 a^2} \iint p_l q_m \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] \\ & \left[ \hat{a}_q \chi^{(c)}_q (t) + \hat{a}^\dagger_{-q} \chi^{(c) *}_q (t) \right] \underbrace{\left[\int e^{i \left( \vec{k} - \vec{p} - \vec{q} \right) \cdot \vec{x}} ~ d^3 x \right]}_{\displaystyle (2\pi)^3 \delta \left( \vec{k} - \vec{p} - \vec{q} \right)} ~ d^3 q ~ d^3 p
     \end{split}
 \end{equation*}}
-
-{\footnotesize \begin{equation*}
+{\small \begin{equation*}
     \begin{split}
         \Pi^{TT} (k,\tau) =& - \frac{\Lambda_{ij,lm} (\hat{k})}{(2 \pi)^3 a^2} \iint p_l q_m \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] \left[ \hat{a}_q \chi^{(c)}_q (t) + \hat{a}^\dagger_{-q} \chi^{(c) *}_q (t) \right] \delta \left( \vec{k} - \vec{p} - \vec{q} \right) ~ d^3 q ~ d^3 p\\
         =& - \frac{\Lambda_{ij,lm} (\hat{k})}{(2 \pi)^3 a^2} \int p_l (k_m - p_m) \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] \left[ \hat{a}_{k - p} \chi^{(c)}_{k - p} (t) + \hat{a}^\dagger_{-(k - p)} \chi^{(c) *}_{k - p} (t) \right] ~ d^3 p
     \end{split}
 \end{equation*}}
-
-\noindent
 usemos que $\Lambda(\hat{k})$ es el proyector TT y por ser una proyección transversal $\Lambda_{ij,lm} (\hat{k}) ~ k_m = 0$ tenemos
-
 \begin{equation}
-    \Pi^{TT}_{ij} (k,\tau) = \frac{\Lambda_{ij,lm} (\hat{k})}{(2 \pi)^3 a^2} \int p_l p_m \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] \left[ \hat{a}_{k - p} \chi^{(c)}_{k - p} (t) + \hat{a}^\dagger_{-(k - p)} \chi^{(c) *}_{k - p} (t) \right] ~ d^3 p
+    \Pi^{TT}_{ij} (k,\tau) = \frac{\Lambda_{ij,lm} (\hat{k})}{(2 \pi)^3 a^2} \int p_l p_m \left[ \hat{a}_p \chi^{(c)}_p (t) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (t) \right] \left[ \hat{a}_{k - p} \chi^{(c)}_{k - p} (t) + \hat{a}^\dagger_{-(k - p)} \chi^{(c) *}_{k - p} (t) \right] ~ d^3 p.
 \end{equation}
 
 Con ésto, podemos obtener $\Pi^2 \left( k, t^\prime, t^{\prime \prime} \right)$ a partir de calcular la función de dos puntos para $\Pi^{TT}_{ij}$ para lo cual necesitaremos tener en cuenta que las únicas multiplicaciones de los operadores de creación y destrucción no nula es 
-
 \begin{equation}
     \begin{cases}
         \displaystyle \bra{0} \hat{a}_p \hat{a}_{k - p} \hat{a}^\dagger_q \hat{a}^\dagger_{k^\prime - q} \ket{0} = (2\pi)^6 ~ \left[ \delta (k - p - q) + \delta (p - q) \right] \delta \left( k - k^\prime  \right)\\
         \displaystyle \bra{0} \hat{a}_p \hat{a}^\dagger_{-(k-p)} \hat{a}_q \hat{a}^{\prime}_{-\left( k^\prime - q \right)} \ket{0} = (2\pi)^6 ~ \delta (k) ~ \delta \left( k^\prime - k \right)
     \end{cases}
 \end{equation}
-
-\noindent
 dónde el segundo bracket no nos interesa porque nos daría ondas de momento nulo, entonces tenemos que lo único que sobrevive, teniendo en cuenta que $\Lambda$ es un proyector y por tanto $\Lambda^2 = \Lambda$, es
-
-\vspace{-0.5cm}
-
 {\footnotesize \begin{equation*}
     \begin{split}
         \left\langle \Pi^{TT}_{ij} \left( k, \tau^{\prime} \right) \Pi^{*TT}_{ij} \left( k^\prime, \tau^{\prime \prime} \right) \right\rangle  =& \frac{\Lambda_{ij,lm} (\hat{k})}{(2 \pi)^6 a^2 \left( \tau^\prime \right) a^2 \left( \tau^{\prime \prime} \right)} \int p_l p_m \left[ \hat{a}_p \chi^{(c)}_p (\tau) + \hat{a}^\dagger_{-p} \chi^{(c) *}_p (\tau) \right] \left[ \hat{a}_{k - p} \chi^{(c)}_{k - p} (\tau) + \hat{a}^\dagger_{-(k - p)} \chi^{(c) *}_{k - p} (\tau) \right] ~ d^3 p \\
@@ -183,15 +128,11 @@ dónde el segundo bracket no nos interesa porque nos daría ondas de momento nul
 \end{equation*}}
 
 Con todo ésto tenemos que $\Pi^2 \left( k, t^\prime, t^{\prime \prime} \right)$ vale
-
 \begin{equation}
     \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) = \frac{1}{4 \pi^2 a^2 \left( \tau^\prime \right) a^2 \left( \tau^{\prime \prime} \right)} \int p^6 \sin^5 \theta ~ \chi^{(c)}_{p} (\tau) ~ \chi_{k - p}^{(c) *} (\tau) ~ \chi^{(c) *}_{k - p} (\tau^\prime) ~ \chi^{(c)}_{p} (\tau^\prime) ~ dp ~ d\theta
 \end{equation}
 
 Finalmente, la densidad de energía de las ondas gravitationales es de la forma
-
-\vspace{-0.5cm}
-
 {\footnotesize \begin{equation*}
     \begin{split}
         \frac{d \rho_{GW}}{d \log k} =& \frac{k^3}{4 m_p^2 \pi^2 a^4} \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau^{\prime} - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, t^\prime, t^{\prime \prime} \right) ~ d\tau^\prime ~ d\tau^{\prime \prime}\\
@@ -200,24 +141,13 @@ Finalmente, la densidad de energía de las ondas gravitationales es de la forma
         &+ \frac{k^3}{16 m_p^2 \pi^4 a^4} \int \int_{\tau_i}^{\tau} \int_{\tau_i}^\tau \frac{\sin (k\tau^\prime) \sin (k\tau^{\prime \prime})}{a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right)} p^6 \sin^5 \theta ~ \chi^{(c)}_{p} (\tau^\prime) ~ \chi_{k - p}^{(c) *} (\tau^\prime) ~ \chi^{(c) *}_{k - p} (\tau^{\prime \prime}) ~ \chi^{(c)}_{p} (\tau^{\prime \prime}) ~ dp ~ d\theta ~ d\tau^\prime ~ d\tau^{\prime \prime}
     \end{split}
 \end{equation*}}
-
-\vspace{-0.75cm}
-
 \begin{equation}
     \frac{d \rho_{GW}}{d \log k} = \frac{k^3}{16 \pi^4 m_p^2 a^4} \int p^6 \sin^5 \theta ~ \left\{ \left| I_{(c)} (k, p, \theta, \tau)  \right|^2 + \left| I_{(s)} (k, p, \theta, \tau)  \right|^2 \right\} ~ dp ~ d\theta
 \end{equation}
-
-\noindent
 con
-
-\vspace{-0.5cm}
-
 \begin{equation}
     I_{(c)} (k, p, \theta, \tau) = \int_{\tau_{i}}^\tau  \frac{\cos (k\tau^\prime)}{a \left( \tau^\prime \right)} ~ \chi^{(c)}_{p} (\tau^\prime) ~ \chi_{k - p}^{(c)} (\tau^\prime) ~ d\tau^\prime
 \end{equation}
-
-\vspace{-0.5cm}
-
 \begin{equation}
     I_{(s)} (k, p, \theta, \tau) = \int_{\tau_{i}}^\tau  \frac{\sin (k\tau^\prime)}{a \left( \tau^\prime \right)} ~ \chi^{(c)}_{p} (\tau^\prime) ~ \chi_{k - p}^{(c)} (\tau^\prime) ~ d\tau^\prime
 \end{equation}
@@ -227,57 +157,35 @@ con
 \chapter{Condiciones iniciales \CosmoLattice} \label{sec:apexB}
 
 A la hora de querer calcular las condiciones iniciales para el campo inflatón al entrar en \textit{reheating} se utilizó el parámetro $\epsilon$ de \textit{slow-roll} definido como
-
 \begin{equation}
     \epsilon = \frac{m_p^2}{2} \left[ \frac{V^{\prime} \left( \phi \right)}{V \left( \phi \right)} \right]^2,
 \end{equation}
-
-\noindent
 dado que considerar $\epsilon \simeq 1$ denota el final de la etapa inflacionaria. A su vez, para calular la velocidad de los campos se pidió que la energía cinética del campo sea comparable con la energía potencial, dando como condición\footnote{El signo negativo en la velocidad está dado ya que se espera que el campo decaiga y por tanto su amplitud debe disminuir.}
-
-\vspace{-0.7cm}
-
 \begin{equation}
     \dot{\phi}_0 = - \sqrt{2 V \left( \phi_0 \right)}. 
 \end{equation}
-
-\vspace{-0.25cm}
-
-\noindent
 De este modo, abajo se desarrollan las cuentas realizadas para calcular las condiciones iniciales para cada modelo.
 
 \begin{itemize}
     \item $\displaystyle V(\phi) = \frac{1}{2} m^2 \phi^2$
     
     Para la amplitud inicial se tiene
-
-    \vspace{-0.9cm}
-
     \begin{equation*}
         \begin{split}
             \frac{m_p^2}{2} \left( \frac{m^2 \phi_0}{\frac{1}{2} m^2 \phi_0^2} \right)^2 &= 1\\
             \frac{2 m_p^2}{\phi_0^2} &= 1
         \end{split}
     \end{equation*}
-
-    \vspace{-0.5cm}
-
     \begin{equation}
         \phi_0^{m} = \sqrt{2} m_p
     \end{equation}
 
     Y la condición para la velocidad inicial sería
-
-    \vspace{-1cm}
-
     \begin{equation*}
         \begin{split}
             \dot{\phi}_0 &= - \sqrt{m^2 \phi_0^2}
         \end{split}
     \end{equation*}
-
-    \vspace{-1cm}
-
     \begin{equation}
         \dot{\phi}_0^{m} = - \sqrt{2} m m_p
     \end{equation}
@@ -285,9 +193,6 @@ De este modo, abajo se desarrollan las cuentas realizadas para calcular las cond
     \item $\displaystyle V(\phi) = \frac{\Lambda^4}{2} \tanh^2 \left( \frac{\phi}{M} \right)$
     
     Para la amplitud inicial se tiene
-
-    \vspace{-0.9cm}
-
     \begin{equation*}
         \begin{split}
             \frac{m_p^2}{2} \left[ \frac{\frac{\Lambda^4}{M} \tanh \left( \frac{\phi_0}{M} \right) \text{sech}^2 \left( \frac{\phi_0}{M} \right)}{\frac{1}{2} \Lambda^4 \tanh^2 \left( \frac{\phi_0}{M} \right)} \right]^2 &= 1\\
@@ -299,26 +204,17 @@ De este modo, abajo se desarrollan las cuentas realizadas para calcular las cond
             2 \frac{\phi_0}{M} &= \text{arcsinh} \left( 2 \sqrt{2} \frac{m_p}{M} \right)
         \end{split}
     \end{equation*}
-
-    \vspace{-0.5cm}
-
     \begin{equation}
         \phi_0^{t2} = \frac{M}{2} \text{arcsinh} \left( 2 \sqrt{2} \frac{m_p}{M} \right)
     \end{equation}
 
     Y la condición para la velocidad inicial sería
-
-    \vspace{-1cm}
-
     \begin{equation*}
         \begin{split}
             \dot{\phi}_0 &= -\sqrt{\Lambda^4 \tanh^2 \left( \frac{\phi_0}{M} \right)}\\
             \dot{\phi}_0 &= - \Lambda^2 \tanh \left( \frac{\phi_0}{M} \right)
         \end{split}
     \end{equation*}
-
-    \vspace{-1cm}
-
     \begin{equation}
         \dot{\phi}_0^{t2} = - \Lambda^2 \tanh \left[ \frac{1}{2} \text{arcsinh} \left( 2 \sqrt{2} \frac{m_p}{M} \right) \right]
     \end{equation}
@@ -328,9 +224,6 @@ De este modo, abajo se desarrollan las cuentas realizadas para calcular las cond
     \item $\displaystyle V(\phi) = \frac{\Lambda^4}{2} \left[ 1 - \exp \left( \frac{\phi}{M} \right) \right]^2$ (Starobinsky)
     
     Para la amplitud inicial se tiene
-
-    \vspace{-0.9cm}
-
     \begin{equation*}
         \begin{split}
             \frac{m_p^2}{2} \left\{ \frac{\frac{\Lambda^4}{M} \left[ 1 - \exp \left( - \frac{\phi_0}{M} \right) \right] \exp \left( - \frac{\phi_0}{M} \right)}{\frac{1}{2} \Lambda^4 \left[ 1 - \exp \left(- \frac{\phi_0}{M} \right) \right]^2} \right\}^2 &= 1\\
@@ -342,17 +235,11 @@ De este modo, abajo se desarrollan las cuentas realizadas para calcular las cond
             \frac{\phi_0}{M} &= \ln \left( \sqrt{2} \frac{m_p}{M} + 1 \right) 
         \end{split}
     \end{equation*}
-
-    \vspace{-0.5cm}
-
     \begin{equation}
         \phi_0^{s} = M \ln \left( \sqrt{2} \frac{m_p}{M} + 1 \right)
     \end{equation}
 
     Y la condición para la velocidad inicial sería
-
-    \vspace{-1cm}
-
     \begin{equation*}
         \begin{split}
             \dot{\phi}_0 &= -\sqrt{\Lambda^4 \left[ 1 - \exp \left(- \frac{\phi_0}{M} \right) \right]^2}\\
@@ -362,9 +249,6 @@ De este modo, abajo se desarrollan las cuentas realizadas para calcular las cond
             \dot{\phi}_0 &= -\Lambda^2 \frac{\sqrt{2} \frac{m_p}{M}}{\sqrt{2} \frac{m_p}{M} + 1}
         \end{split}
     \end{equation*}
-
-    \vspace{-1cm}
-
     \begin{equation}
         \dot{\phi}_0^{s} = - \frac{\sqrt{2} \Lambda^2 m_p }{\sqrt{2} m_p + M}
     \end{equation}
@@ -374,34 +258,22 @@ De este modo, abajo se desarrollan las cuentas realizadas para calcular las cond
     \item $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$
     
     Para la amplitud inicial se tiene
-
-    \vspace{-0.9cm}
-
     \begin{equation*}
         \begin{split}
             \frac{m_p^2}{2} \left( \frac{\lambda \phi_0^3}{\frac{1}{4} \lambda \phi_0^4} \right)^2 &= 1\\
             \frac{8 m_p^2}{\phi_0^2} &= 1 
         \end{split}
     \end{equation*}
-
-    \vspace{-0.5cm}
-
     \begin{equation}
         \phi_0^{\lambda} = M \ln \left( \sqrt{2} \frac{m_p}{M} + 1 \right)
     \end{equation}
 
     Y la condición para la velocidad inicial sería
-
-    \vspace{-1cm}
-
     \begin{equation*}
         \begin{split}
             \dot{\phi}_0 &= - \sqrt{\frac{1}{2} \lambda \phi_0^4}\\
         \end{split}
     \end{equation*}
-
-    \vspace{-1cm}
-
     \begin{equation}
         \dot{\phi}_0^{\lambda} = - 4 \sqrt{2 \lambda} m_p^2
     \end{equation}
@@ -409,9 +281,6 @@ De este modo, abajo se desarrollan las cuentas realizadas para calcular las cond
     \item $\displaystyle V(\phi) = \frac{\Lambda^4}{4} \tanh^4 \left( \frac{\phi}{M} \right)$
     
     Para la amplitud inicial se tiene
-
-    \vspace{-0.9cm}
-
     \begin{equation*}
         \begin{split}
             \frac{m_p^2}{2} \left[ \frac{\frac{\Lambda^4}{M} \tanh^3 \left( \frac{\phi_0}{M} \right) \text{sech}^2 \left( \frac{\phi_0}{M} \right)}{\frac{1}{4} \Lambda^4 \tanh^4 \left( \frac{\phi_0}{M} \right)} \right]^2 &= 1\\
@@ -419,25 +288,16 @@ De este modo, abajo se desarrollan las cuentas realizadas para calcular las cond
             \frac{32 m_p^2}{M^2 \sinh^2 \left( 2 \frac{\phi_0}{M} \right)} &= 1\\
         \end{split}
     \end{equation*}
-
-    \vspace{-0.5cm}
-
     \begin{equation}
         \phi_0^{t4} = \frac{M}{2} \text{arcsinh} \left( 4 \sqrt{2} \frac{m_p}{M} \right)
     \end{equation}
 
     Y la condición para la velocidad inicial sería
-
-    \vspace{-1cm}
-
     \begin{equation*}
         \begin{split}
             \dot{\phi}_0 &= -\sqrt{\frac{1}{2} \Lambda^4 \tanh^4 \left( \frac{\phi_0}{M} \right)}\\
         \end{split}
     \end{equation*}
-
-    \vspace{-1cm}
-
     \begin{equation}
         \dot{\phi}_0^{t4} = - \sqrt{\frac{1}{2}} \Lambda^2 \tanh^2 \left[ \frac{1}{2} \text{arcsinh} \left( 4 \sqrt{2} \frac{m_p}{M} \right) \right]
     \end{equation}
@@ -452,45 +312,30 @@ De este modo, abajo se desarrollan las cuentas realizadas para calcular las cond
 \chapter{Reescaleo del espectro de \CosmoLattice al observable hoy} \label{sec:apexC}
 
 El espectro que se extrae de \CosmoLattice se encuentra escrito en términos del número de onda comóvil y se encuentra evaluado en un tiempo arbitrario $t$ que simboliza el fin de la producción de ondas gravitacionales el cual marcaremos con el subíndice $f$. De modo tal de comparar con la sensibilidad de los experimentos, queremos que el espectro esté escrito en términos de la frecuencia comóvil y esté reescalado al día de hoy. Para poder hacer ésto, empecemos pasando del número de onda a frecuencia
-
 \begin{equation}
     f_0 = \frac{k_0}{2 \pi} = \frac{k_i}{2 \pi} \frac{a_i}{a_0} = \frac{k_i}{2 \pi} \frac{a_{reh}}{a_{0}} \frac{a_i}{a_{reh}}.
 \end{equation}
-
-\noindent
 La conservación de la entropía nos indica que $g^{1/3}_s a T = cte$, por lo que podemos escribir $\displaystyle \frac{a_{reh}}{a_0}$ en términos de la temperatura $T_0$ y $T_{reh}$ como
-
 \begin{equation}
     \frac{a_{reh}}{a_0} = \frac{g_{s,0} T_0}{g_{s,reh} T_{reh}},
 \end{equation}
-
-\noindent
 por el otro lado, para $\displaystyle \frac{a_i}{a_{reh}}$ podemos usar cómo evoluciona la densidad crítica en ese período
-
 \begin{equation}
     \rho_{C,i} = \rho_{C,reh} \left( \frac{a_{reh}}{a_i} \right)^{3(1 + \omega)} \hspace{1cm} \Longrightarrow \hspace{1cm} \frac{a_{i}}{a_{reh}} = \left( \frac{\rho_{C,reh}}{\rho_{C,i}} \right)^{\frac{1}{3(1 + \omega)}},
 \end{equation}
-
-\noindent
 a su vez, podemos utilizar que las densidades de energía son $\displaystyle \rho_{RAD} = \frac{\pi^2}{30} g T^4$ y $\rho_{C,i} = 2 V_i$, siendo $V_i$ la energía potencial inicial, para poder reescribir ésto y juntemos todo en la frecuencia de modo tal que nos queda
-
 \begin{equation*}
         f_0 = \frac{k_i}{2 \pi} \frac{a_{reh}}{a_{0}} \frac{a_i}{a_{reh}} = \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh} T_{reh}} \left( \frac{\rho_{C,reh}}{\rho_{C,i}} \right)^{\frac{1}{3(1 + \omega)}} = \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh} T_{reh}} \left( \frac{\frac{\pi^2}{30} g_{reh} T^4_{reh}}{2V_{i}} \right)^{\frac{1}{3(1 + \omega)}},
 \end{equation*}
-
 \begin{equation}\label{eqn:reescaleo_f}
     f_0 = \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh}} \left( \frac{\pi^2 g_{reh}}{60 V_{i}} \right)^{\frac{1}{3(1 + \omega)}} T^{\frac{1 - 3 \omega}{3 (1 + \omega)}}_{reh}.
 \end{equation}
 
 Por otro lado, para la amplitud del espectro de potencia de las ondas $\Omega_{GW}$, podemos transformarla a la observable hoy sabiendo que la densidad de energía se define a partir de
-
 \begin{equation}
     \Omega_{GW} (k, a_0) = \frac{\rho_{GW} (k, a_0)}{\rho_{C,0}}.
 \end{equation}
-
-\noindent
 Para las ondas gravitacionales, la densidad de energía es proporcional a $a^{-4}$, por lo que esta amplitud podemos escalarla de la siguiente forma:
-
 \begin{equation*}
     \begin{split}
         \Omega_{GW} (k, a_0) &= \frac{1}{\rho_{C,0}} \left( \frac{a_f}{a_0} \right)^4 \rho_{GW} \left( k, a_f \right)\\
@@ -500,10 +345,7 @@ Para las ondas gravitacionales, la densidad de energía es proporcional a $a^{-4
         \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{\rho_{C,f}}{\rho_{RAD,0}} \left( \frac{a_f}{a_0} \right)^4 \Omega_{GW} \left( k, a_f \right)
     \end{split}
 \end{equation*}
-
-\noindent
 nuevamente podemos utilizar que conocemos cómo es la evolución de la densidad de energía de radiación con la temperatura y con la conservación de la entropía se obtiene la siguiente relación:
-
 \begin{equation*}
     \begin{split}
         g^{1/3}_{s,0} a_0 T_0 &= g^{1/3}_{s,reh} a_{reh} T_{reh}\\
@@ -512,10 +354,7 @@ nuevamente podemos utilizar que conocemos cómo es la evolución de la densidad 
         a_0^4 \rho_{RAD,0} &= \frac{g_0}{g_{reh}} \left( \frac{g_{s,reh}}{g_{s,0}} \right)^{4/3} a_{reh}^4 \rho_{RAD,reh}
     \end{split}
 \end{equation*}
-
-\noindent
 reemplazando ésto en el espectro tenemos
-
 \begin{equation*}
     \begin{split}
         \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{\rho_{C,f}}{\rho_{RAD,0}} \left( \frac{a_f}{a_0} \right)^4 \Omega_{GW} \left( k, a_f \right)\\
@@ -523,10 +362,7 @@ reemplazando ésto en el espectro tenemos
         \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \frac{\rho_{C,f}}{\rho_{RAD,reh}} \left( \frac{a_f}{a_{reh}} \right)^4 \Omega_{GW} \left( k, a_f \right)
     \end{split}
 \end{equation*}
-
-\noindent
 ahora podemos reescalar $\rho_{C,f}$ a $\rho_{C,reh}$ a partir de utilizar que la ecuación de estado tiene un $\omega$ efectivo por tanto $\displaystyle \rho_{C,f} = \rho_{C,reh} \left( \frac{a_{reh}}{a_f} \right)^{3(1 + \omega)}$
-
 \begin{equation*}
     \begin{split}
         \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \frac{\rho_{C,reh}}{\rho_{RAD,reh}} \left( \frac{a_{reh}}{a_{f}} \right)^{3(1 + \omega)} \left( \frac{a_f}{a_{reh}} \right)^4 \Omega_{GW} \left( k, a_f \right)\\
@@ -534,38 +370,27 @@ ahora podemos reescalar $\rho_{C,f}$ a $\rho_{C,reh}$ a partir de utilizar que l
         \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \frac{\rho_{C,reh}}{\rho_{RAD,reh}} \left( \frac{a_i}{a_{reh}} \right)^{1 - 3 \omega} \left( \frac{a_{f}}{a_{i}} \right)^{1 - 3 \omega} \Omega_{GW} \left( k, a_f \right)
     \end{split}
 \end{equation*}
-
-\noindent
 utilizando que durante la época de radiación tenemos que la densidad crítica es prácticamente toda de radiación podemos tomar $ \displaystyle \frac{\rho_{C,reh}}{\rho_{RAD,reh}} \approx 1$, además conocemos cuánto vale el cociente $\displaystyle \frac{a_i}{a_{reh}}$. Por lo tanto,
-
 \begin{equation*}
     \Omega_{GW} (k, a_0) = \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left( \frac{\rho_{C,reh}}{\rho_{C_i}} \right)^{\frac{1 - 3 \omega}{3 (1 + \omega)}} \left( \frac{a_{f}}{a_{i}} \right)^{1 - 3 \omega} \Omega_{GW} \left( k, a_f \right)
 \end{equation*}
-
-\noindent
 utilicemos $\rho_{RAD,reh} = \frac{\pi^2}{30} g_{reh} T^4_{reh}$ y $\rho_{C,i} = 2 V_i$ para finalmente obtener que el espectro de potencia de las ondas gravitacionales vale
-
 \begin{equation}\label{eqn:reescaleo_Omega}
     \Omega_{GW} (k, a_0) = \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left( \frac{\pi^2 g_{reh} T_{reh}^4}{60 V_i} \right)^{\frac{1 - 3 \omega}{3 (1 + \omega)}} \left( \frac{a_{f}}{a_{i}} \right)^{1 - 3 \omega} \Omega_{GW} \left( k, a_f \right)
 \end{equation}
 
 A partir de la ecuación (\ref{eqn:reescaleo_f}) y (\ref{eqn:reescaleo_Omega}) se puede ver que para modelos de tipo radiación $(\omega_{eff} = 1/3)$ podemos reescalar la frecuencia y amplitud a partir de
-        
 \begin{equation}
     f_0 = \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh}} \left( \frac{\pi^2 g_{reh}}{60 V_{i}} \right)^{\frac{1}{4}},
 \end{equation}
-
 \begin{equation}
     \Omega_{GW} (k, a_0) = \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \Omega_{GW} \left( k, a_f \right).
 \end{equation}
 
-\noindent
 Mientras que para modelos de tipo materia $(\omega_{eff} = 0)$ se puede observar que los reescaleos estarán dados por
-
 \begin{equation}
     f_0 = \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh}} \left( \frac{\pi^2 g_{reh}}{60 V_{i}} \right)^{\frac{1}{3}} T^{\frac{1}{3}}_{reh},
 \end{equation}
-
 \begin{equation}
     \Omega_{GW} (k, a_0) = \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left( \frac{\pi^2 g_{reh} T_{reh}^4}{60 V_i} \right)^{\frac{1}{3}} \left( \frac{a_{f}}{a_{i}} \right) \Omega_{GW} \left( k, a_f \right).
 \end{equation}

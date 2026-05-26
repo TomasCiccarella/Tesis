@@ -1,22 +1,16 @@
 \chapter{\CosmoLattice} \label{sec:cap4}
 
 \CosmoLattice es un software de tipo \textit{Lattice} (o de grilla) que funciona como una herramienta numérica para la simulación de la dinámica de campos en un universo temprano en expansión. Con este software se puede simular la dinámica de interacciones de campos escalares, campos de gauge abelianos y no abelianos. Para ello, \CosmoLattice utiliza una acción de la forma
-
 \begin{equation}
     \begin{split}
         S = - \int \sqrt{-g} \left[ \frac{1}{2} \partial_\mu \phi \partial^\mu \phi + \left( D_\mu^A \varphi \right)^* \left( D^\mu_A \varphi \right) + \left( D_\mu \Phi \right)^\dagger \left( D^\mu \Phi \right) \right.\\
         \left. + \frac{1}{4} F_{\mu \nu} F^{\mu \nu} + \frac{1}{2} \text{Tr} \left( G_{\mu\nu} G^{\mu\nu} \right) + V \left( \phi, \left| \varphi \right|, \left| \Phi \right| \right) \right] ~ d^4 x
     \end{split}
 \end{equation}
-
-\noindent
 y una métrica del tipo FLRW plana 
-
 \begin{equation}
     ds^2 = - a^{2 \alpha} (\tau) ~ d\tau^2 + a^2 (\tau) ~ \delta_{ij} ~ dx^i dx^j
 \end{equation}
-
-\noindent
 dónde $\alpha = 0$ representa utilizar el tiempo coordenado y $\alpha = 1$ representa utilizar el tiempo conforme.
 
 \begin{infobox}[cyan]{NOTA}
@@ -130,8 +124,89 @@ Además de la expansión del universo, se puede observar cómo es la dinámica d
     \label{fig:CosmoLattice_background_phi}
 \end{figure}
 
+Una vez estudiado el comportamiento del \textit{background}, vamos a querer entender cómo son los espectros de potencia, número de ocupación y producción de las ondas en cada modelo, eso mismo será estudiado en detalle en las dos secciones siguientes, mientras que en la última sección estudiaremos como es el efecto observable medible para cada modelo junto con la sensibilidad de los experimentos planteados hasta el momento. 
+
 \section{Comparación de espectros con \texorpdfstring{$\omega_{eff} = 1/3$}{omega = 1/3}}
+
+Para poder empezar a comparar los espectros de las ondas gravitacionales, vamos a utilizar la Figura \ref{fig:CosmoLattice_energies_w1/3} para ver cómo es el intercambio de energías entre los campos durante la época estudiada. En esta Figura se puede observar que la densidad de energía de las ondas gravitacionales aumenta con el aumento del gradiente de los campos y el aumento en la energía de interacción, resultado esperable de la ecuación (\ref{eqn:PiTT}) que relaciona a las perturbaciones en el tensor de energía-materia con los campos de materia. Como consecuencia de ésto, la producción de ondas se termina una vez que el campo del inflatón decayó completamente y la producción de partículas del campo hijo se termina.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = \linewidth]{figures/CosmoLattice_energies_lphi4tanh4.pdf}
+    \caption{Evolución de los distintos tipos de densidad de energía para la evolución temporal de los campos de materia. En ésta se pueden comparar los modelos de tipo radiación y cómo la producción de las ondas gravitacionales se encuentra ligada al aumento en el gradiente de los campos de materia y la energía de interacción.}
+    \label{fig:CosmoLattice_energies_w1/3}
+\end{figure}
+
+En la Figura \ref{fig:CosmoLattice_energies_w1/3} podemos, además, comparar cómo es la producción de las ondas para los distintos modelos. Se puede observar que para el modelo de la forma $\tanh^4$ tenemos mayores fluctuaciones de energía que para el modelo de tipo $\lambda \phi^4$ y utilizando la Figura \ref{fig:CosmoLattice_energy_analysis_w1/3} se puede notar que la producción de ondas empiezan al mismo tiempo pero se produce durante un mayor tiempo para el modelo de $\tanh^4$, lo cual es esperable dado que en la Figura \ref{fig:CosmoLattice_background_phi} se pudo notar que el potencial monomial hace que el inflatón decaiga a su mínimo más rápido que el otro potencial logrando que la producción de ondas se estanque antes. Otra observación que surge de la comparación es que las densidades de energía para las ondas y los gradientes son tres órdenes de magnitud menores al principio de la simulación para el modelo $\lambda \phi^4$, aunque al final de la simulación terminan con igual magnitud.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = \linewidth]{figures/CosmoLattice_GW_Scale_Analysis_lphi4tanh4.pdf}
+    \caption{Análisis de tiempos característicos para la producción de ondas gravitacionales para modelos de tipo radiación. Se buscaron los puntos en los cuales la densidad de energía empieza a aumentar y se empieza a estacionar para poder obtener un intervalo de tiempo característico en el cual se produce la producción. Se puede observar que el modelo $\tanh^4$ tiene una producción durante un período temporal mayor que su contraparte.}
+    \label{fig:CosmoLattice_energy_analysis_w1/3}
+\end{figure}
+
+Con el fin de poder comparar los espectros de ondas gravitacionales con las sensibilidades de los experimentos utilizados para la detección de un fondo estocástico, se buscó transformar los espectros extraídos de \CosmoLattice en espectros de potencias medidos en frecuencia y con las amplitudes que se observarían hoy, esta transformación se hace a partir de las siguientes ecuaciones:
+\begin{equation}
+    f_0 = \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh}} \left( \frac{\pi^2 g_{reh}}{60 V_{i}} \right)^{\frac{1}{4}},
+\end{equation}
+\begin{equation}
+    \Omega_{GW} (k, a_0) = \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \Omega_{GW} \left( k, a_f \right),
+\end{equation}
+las cuales son válidas para modelos de tipo radiación y cuyo desarrollo general está descripto en el Apéndice \ref{sec:apexC}, y dónde se utilizó el índice $f$ para describir el momento final para la producción de las ondas gravitacionales, el cual fue extraído de la Figura \ref{fig:CosmoLattice_energy_analysis_w1/3} como el punto rojo que describe el momento en el cual la densidad de energía de las ondas gravitacionales se estaciona.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = \linewidth]{figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf}
+    \caption{Espectro de potencia para las ondas gravitacionales reescalada de la salida de los códigos de \CosmoLattice a lo observable hoy. Se puede observar que el espectro para $\lambda \phi^4$ es más picudo y mayor en amplitud que el de $\tanh^4$ pero ambos se encuentran dentro del mismo orden de magnitud para la amplitud.}
+    \label{fig:CosmoLattice_GW_spectra_w1/3}
+\end{figure}
+
+A partir del analisis mencionado, se puede armar la Figura \ref{fig:CosmoLattice_GW_spectra_w1/3} dónde se grafica el espectro de potencias para las ondas gravitacionales reescalado a lo observable hoy. En estos espectros se puede observar que a partir de un cierto tiempo el espectro se estaciona, tal como se mencionó previamente con la densidad de energía. En la Figura, también se pueden comparar los espectros para los dos modelos, dentro de lo cual se puede mencionar que el potencial $\lambda \phi^4$ tiene un espectro más picudo dónde se puede identificar modos que aportan mayor energía, mientras que el otro potencial tiene un espectro más plano dónde cada modo aporta una cantidad de energía semejante. Aún así, el orden de magnitud de los espectros es el mismo para ambos modelos lo que permite decir que estos modelos tendran un valor de amplitud semejante a la hora de medir los efectos en el fondo estocástico.
+
+\begin{infobox}[cyan]{}
+    Ver como conectar con los barridos en los parámetros y hablar de los parámetros propuestos.
+\end{infobox}
 
 \section{Comparación de espectros con \texorpdfstring{$\omega_{eff} = 0$}{omega = 0}}
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = \linewidth]{figures/CosmoLattice_energies_m2phi2tanh2Starobinsky.pdf}
+    \caption{Evolución de los distintos tipos de densidad de energía para la evolución temporal de los campos de materia. En ésta se pueden comparar los modelos de tipo materia y cómo la producción de las ondas gravitacionales se encuentra ligada al aumento en el gradiente de los campos de materia y la energía de interacción.}
+    \label{fig:CosmoLattice_energies_w0}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = \linewidth]{figures/CosmoLattice_GW_Scale_Analysis_m2phi2tanh2starobinsky.pdf}
+    \caption{Análisis de tiempos característicos para la producción de ondas gravitacionales para modelos de tipo materia. Se buscaron los puntos en los cuales la densidad de energía empieza a aumentar y se empieza a estacionar para poder obtener un intervalo de tiempo característico en el cual se produce la producción.}
+    \label{fig:CosmoLattice_energy_analysis_w0}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = \linewidth]{figures/CosmoLattice_GW_Spectra_today_m2phi2tanh2starobinsky.pdf}
+    \caption{}
+    \label{fig:CosmoLattice_GW_spectra_w0}
+\end{figure}
+
+\begin{infobox}[cyan]{}
+    Ver como conectar con los barridos en los parámetros y hablar de los parámetros propuestos.
+\end{infobox}
+
+
 \section{Sensibilidad de los modelos ante detectores}
+
+Para poder comparar con los experimentos propuestos y las cotas para el espectro de las ondas, se debe hacer uso del \textit{shear} o deformación que tiene el espacio-tiempo el cual se puede calcular a partir del espectro de potencias y la frecuencia como
+\begin{equation}
+    h_c (f) = \frac{\sqrt{3} H_0}{\pi f} \sqrt{\Omega(f)}
+\end{equation}
+de este modo, a partir de ésto, se pueden sumar los espectros obtenidos con \CosmoLattice para cada uno de los modelos descriptos a la figura extraída de [citar sensibilidad] dónde se muestran las cotas y sensibilidades de los detectores actuales, tal como se observa en la Figura \ref{fig:sensibilidades}. En la Figura se puede observar cómo ... 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = \linewidth]{figures/gwb-constraints.pdf}
+    \caption{Sensibilidad de los detectores de ondas gravitacionales presentes y futuros junto con las cotas para la producción de éstas con los espectros observados con \CosmoLattice superpuesto.}
+    \label{fig:sensibilidades}
+\end{figure}

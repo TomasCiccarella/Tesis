@@ -2,22 +2,57 @@
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
-\cite{Abbott_1982, Abramowitz_1965, Bahari2025, Barman2022, Bartolo2022, Bethke, Bian, Boyanovsky_1995, Boyanovsky_1996, Caprini_2020, Choi2024, Christensen_2018, CosmoLatticeNet, Doddelson, Dolgov_1982, Dufaux_2007, Elia_2026, Erdelyi_1955, Figueroa2021, Figueroa2023, Figueroa2024, Figueroa_2013, Figueroa_2017_GW, Figueroa_2017_Parametric, GarciaBellido_2007, Giovannini, Greene_1997, Kaiser_1997, Ketov_2025, Khlebnikov_1996, Khlebnikov_1997, Kofman_1994, Kofman_1996, Kofman_1996_PRL, Kofman_1997, Kofman_1997_Reheating, LIGO, Lozanov, Maggiore_2018, Martin2015, McLachlan_1947, Micha2004, Mishra_2024, Mohanty_2026, NANOGrav, Parker_2009, Peter_2009, Planck, Prokopec_1997, Renzini2022, Riotto_1996, Saini_2024, Shtanov_1995, Starobinsky_1984, Tkachev_1996, Turner_1983, Watanabe_2006, Weinberg, Git, Elia_2025}
-
 \section{Inflación}
+
+La etapa de inflación se define como un período de expansión acelerada en el universo temprano ($\ddot{a}>0$). La implementación de este mecanismo resulta fundamental para resolver las inconsistencias del modelo cosmológico estándar, principalmente: el problema del horizonte, el problema de la planitud y la sobreabundancia de reliquias topológicas \cite{Baumann_2012, Doddelson}. En primer lugar, la expansión exponencial resuelve el problema del horizonte al establecer que regiones del universo que hoy observamos espacialmente desconectadas, estuvieron en contacto causal previo a la inflación, lo cual justifica la extrema isotropía y homogeneidad del fondo cósmico de microondas \cite{Weinberg}. En segundo lugar, soluciona el problema de la planitud, ya que el drástico estiramiento del espacio-tiempo reduce cualquier curvatura espacial inicial, llevando al parámetro de densidad a un valor indistinguible de la unidad ($\Omega\to1$) \cite{Peter_2009}. Finalmente, esta rápida expansión diluye la densidad de defectos topológicos, como los monopolos magnéticos predichos por las Teorías de Gran Unificación (GUT), reduciéndolos a niveles inobservables en el universo actual \cite{Baumann_2012}.
+
+Para el modelado de la inflación, el modelo más sencillo suele trabajar con un único campo escalar denominado como inflatón, con un potencial $V(\phi)$ tal que la acción que dá la dinámica de este campo es
+\begin{equation}
+    S = -\int \sqrt{-g} \left[ \frac{1}{2} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi + V(\phi) \right] ~ d^4 x,
+\end{equation}
+dónde $\phi$ representa al inflatón, y con esta acción se puede obtener un tensor de energía-momento
+\begin{equation}
+    T_{\mu \nu} = \partial_\mu \phi \partial^\nu \phi - g_{\mu \nu} \left[ \frac{1}{2} g^{\alpha \beta} \partial_\alpha \phi \partial_\beta \phi + V(\phi) \right],
+\end{equation}
+el cual comparando con el tensor de energía-momento de un fluido ideal nos permite obtener un valor para la densidad de energía y la presión en términos del campo como
+\begin{equation}
+    \rho = \frac{1}{2} \dot{\phi}^2 + V(\phi),
+\end{equation}
+\begin{equation}
+    P = \frac{1}{2} \dot{\phi}^2 - V(\phi).
+\end{equation}
+A partir de lo cual se puede observar que si $\dot{\phi}^2 \ll V(\phi)$, la presión del fluido efectivo se vuelve negativa ($P \simeq -\rho$) y tendremos una expansión acelerada del universo. A esta exigencia cinemática se la conoce como condición de rodadura lenta o \textit{slow-roll}. En la Figura \ref{fig:slowroll} se muestra un esquema típico para un modelo de Starobinsky, donde se puede pensar intuitivamente que el inflatón ``rueda'' lentamente sobre la región plana del potencial. Cuando la pendiente se vuelve pronunciada, el campo adquiere la energía cinética suficiente para romper la condición anterior, poniendo fin a la etapa inflacionaria. El marco teórico general de la dinámica de este único campo escalar, así como la derivación de sus parámetros cinemáticos asociados, forman la base de los modelos inflacionarios más sencillos \cite{Doddelson, Weinberg, Baumann_2012,Elia_2025}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width = \linewidth]{figures/reheating.pdf}
-    \caption{}
+    \caption{Esquema típico de un potencial inflacionario. A lo largo de la región sombreada en verde ocurre la expansión acelerada, en ésta el inflatón rueda lentamente en dirección al mínimo hasta que su energía cinética resulta comparable con la potencial, dando por finalizada la inflación. Cuando las energías son comparables, se entra en el Recalentamiento marcado como la zona sombreada en naranja, y en esta etapa el inflatón ha perdido suficiente energía debido a la expansión del universo como para no poder regresar a la región plana, por lo que terminará oscilando en torno al mínimo.}
     \label{fig:slowroll}
 \end{figure}
 
+Para caracterizar la evolución del parámetro de Hubble  durante la época inflacionaria, se suelen utilizar magnitudes conocidas como parámetros de \textit{slow-roll} tales como
+\begin{equation}
+    \epsilon = \frac{d}{dt} \left( \frac{1}{H} \right) = \frac{m_p^2}{2} \left[ \frac{V^\prime (\phi)}{V(\phi)} \right]^2,
+\end{equation}
+\begin{equation}
+    \eta = \frac{\ddot{\phi}}{H \dot{\phi}} = \epsilon - m_p^2 \frac{V^{\prime \prime} (\phi)}{V(\phi)},
+\end{equation}
+siendo $m_p$ la masa de Planck reducida y $H$ el parámetro de Hubble. Estos parámetros son tales que cumplen $\epsilon, \eta \ll 1$ durante inflación y nos permiten marcar un momento final para esta época como el momento en el cual $\epsilon, \eta \simeq 1$, dando inicio a la época que se conoce como Recalentamiento o \textit{Reheating}. Esto último se encuentra esquematizado en la zona naranja de la Figura \ref{fig:slowroll} dónde $\phi_{end}$ es el valor de la amplitud del campo cuando termina la inflación.
+
 \section{Recalentamiento}\label{sec:reheating}
 
-\begin{equation}\label{eqn:omega_eff}
-    \left\langle \omega_\phi \right\rangle = \frac{n - 1}{n + 1},
-\end{equation}
+Una vez terminada la inflación cosmológica, el universo entra en la etapa conocida como \textit{Recalentamiento} que funciona como transición hasta la época en que el universo termaliza y se produce la nucleosíntesis primordial. Durante esta época, el inflatón se encuentra oscilando alrededor del mínimo de potencial tal como se observa en la Figura \ref{fig:slowroll}. A diferencia del decaimiento perturbativo estándar, la primera fase de esta etapa, conocida como Preheating, está dominada por efectos no lineales y dinámicas no perturbativas fuertemente dependientes de las condiciones iniciales. Durante este período, la producción de partículas ocurre de manera explosiva debido a fenómenos de resonancia paramétrica \cite{Kofman_1994, Kofman_1997, Amin_2014}.
 
-\noindent
+Para el estudio de esta etapa se puede hacer uso de procesos perturbativos o no perturbativos, pero en todos ellos se considera que el inflatón decae en nuevos campos que llamaremos campos hijos a través de un término de interacción entre el inflatón y los campos. En el caso del estudio no perturbativo del decaimiento del inflatón se hace uso de una acción de la forma
+\begin{equation}
+    S = \int \sqrt{-g} \left[ \frac{m_p^2}{2} R - \frac{1}{2} \partial_\mu \phi \partial^\mu \phi - \frac{1}{2} \partial_\mu \chi \partial^\mu \chi - V(\phi) - \mathcal{I} (\phi, \chi)  \right] ~ d^4 x,
+\end{equation}
+siendo $\mathcal{I} (\phi, \chi)$ el término de interacción entre los campos y $\chi$ el campo hijo, esta acción será válida para la primera parte de esta etapa en un momento conocido como \textit{Preheating} en la cual se realiza la producción de partículas de este nuevo campo. En el capítulo \ref{sec:cap3} se explicará cómo es la dinámica para estos campos para distintos potenciales a orden lineal y buscaremos relacionarlo con la producción de ondas gravitacionales.
+
+El decaimiento de este campo se encontrará caracterizado por el potencial del campo, el cual se suele estudiar potenciales de forma monomial $\displaystyle \left( V(\phi) \propto \phi^{2n} \right)$, de tipo T $\displaystyle \left( V(\phi) \propto \tanh^{2n} (\phi/\mu) \right)$\footnote{Estos modelos también son conocidos como ``$\alpha$-attractors'' dada su forma plana lejos del mínimo y mientras que muy pronunciada más cerca del mínimo.} y  de tipo $\displaystyle \left( V(\phi) \propto \left[ 1 - \exp (\phi/\mu) \right]^{2n} \right)$\footnote{Dentro de estos últimos se encuentra el modelo de Starobinsky.}. Para modelos monomiales, se puede demostrar tomando un promedio temporal para la ecuación de estado $\left( P = \omega \rho \right)$ que existe un valor $\omega_{eff}$ tal que cuando el inflatón se encuentre cerca del valor mínimo el universo se comporte como uno dominado por una sola especie, este va a estar dado por \cite{Turner_1983}
+\begin{equation}\label{eqn:omega_eff}
+\left\langle \omega_\phi \right\rangle = \frac{n - 1}{n + 1},
+\end{equation}
 entonces podemos ver que para potenciales cuadráticos $(n = 1)$ tendremos que el universo se comportará como materia $(\omega = 0)$ mientras que para potenciales cuárticos $(n = 2)$ tendremos que el universo se comportará como radiación $(\omega = 1/3)$.
+
+En este trabajo estudiaremos cómo el decaimiento del inflatón y la consecuente producción explosiva de campos hijos excitan perturbaciones tensoriales, dando lugar a un fondo estocástico de ondas gravitacionales \cite{Dufaux_2007, Figueroa_2017_GW, Caprini_2020}. El análisis se abordará primero desde un marco teórico a orden lineal (Capítulo \ref{sec:cap3}), para luego incorporar los efectos no lineales de las interacciones mediante simulaciones numéricas en redes (\textit{Lattice}) utilizando el código público CosmoLattice \cite{Figueroa2021, Figueroa2023, CosmoLatticeNet} (Capítulo \ref{sec:cap4}).

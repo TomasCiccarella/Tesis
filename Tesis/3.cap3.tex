@@ -3,39 +3,28 @@
 \section{Resonancia Paramétrica}
 
 Durante \textit{Reheating} como se mencionó en la sección \ref{sec:reheating} el inflatón oscila alrededor del mínimo de potencial, como consecuencia de este decaimiento se realiza una producción de partículas de un campo hijo $\chi$ dado por un fenómeno conocido como resonancia paramétrica y surge de resolver las ecuaciones de campos de la acción
-
 \begin{equation}
     S[g_{\mu \nu}, \phi, \chi] = \int \sqrt{-g} \left[ \frac{m_p^2}{2} R - \frac{1}{2} \partial_\mu \phi \partial^\mu \phi - \frac{1}{2} \partial_\mu \chi \partial^\mu \chi - V(\phi) - \mathcal{I} (\phi, \chi) \right] ~ d^4 x,
 \end{equation}
-
-\noindent
 dónde $g$ es el determinante de la métrica, $R$ es el escalar de Ricci, $V(\phi)$ es el potencial del inflatón y $\mathcal{I}(\phi, \chi)$ es el término de interacción entre los campos el cual consideraremos que será de la forma $\mathcal{I}(\phi, \chi) = \frac{1}{2} g^2 \phi^2 \chi^2$ siendo $g$ una constante de acoplamiento de los campos que describe qué tan fuerte será la generación del campo $\chi$ cuando decaiga el campo $\phi$. Para esta acción podemos utilizar una métrica de tipo FLRW plana y obtener las ecuaciones de movimiento para los campos
-
 \begin{equation}\label{eqn:preheating_phi}
     \ddot{\phi} + 3 H \dot{\phi} - \frac{1}{a^2} \nabla^2 \phi + \frac{\partial V(\phi)}{\partial \phi} + \frac{\partial \mathcal{I} (\phi, \chi)}{\partial \phi} = 0,
 \end{equation}
-
 \begin{equation}
     \ddot{\chi} + 3 H \dot{\chi} - \frac{1}{a^2} \nabla^2 \chi + \frac{\partial \mathcal{I} (\phi, \chi)}{\partial \chi} = 0.
 \end{equation}
 
 En este capítulo, buscaremos resolver estas ecuaciones a orden lineal a partir de plantear una teoría de perturbaciones de los campos de la forma $\phi = \bar{\phi} + \delta \phi$ y $\chi = \delta \chi$ con $\delta \phi, \delta \chi \ll 1$ y $\bar{\phi}$ la evolución a orden cero del inflatón. Utilizando ésto, y descartando los términos de orden superior al lineal podemos encontrar las ecuaciones que rigen las pertubaciones de los campos\footnote{Se puede encontrar un desarrollo de estas cuentas realizadas en la sección del cuaderno de tesis encontrado en \cite{Git}.}
-
 \begin{equation}
     \delta \ddot{\phi} + 3 H ~ \delta \dot{\phi} + \left[ \frac{\partial^2 V \left( \bar{\phi} \right)}{\partial \phi^2} - \frac{1}{a^2} \nabla^2 \right] ~ \delta \phi = 0,
 \end{equation}
-
 \begin{equation}
     \delta \ddot{\chi} + 3 H ~ \delta \dot{\chi} + \left( g^2 \phi^2 - \frac{1}{a^2} \nabla^2 \right) ~ \delta \chi = 0.    
 \end{equation}
-
-\noindent
 A su vez, el \textit{background} va a estar regido por las ecuaciones de Friedmann para $a(t)$ y la ecuación para $\bar{\phi}$ que se obtiene de la ecuación (\ref{eqn:preheating_phi})
-
 \begin{equation}
     \ddot{\bar{\phi}} + 3 H \bar{\phi} + \frac{\partial V \left( \bar{\phi} \right)}{\partial \phi} = 0,
 \end{equation}
-
 \begin{equation}
     H^2 = \frac{1}{3 m_p^2} \left[ \frac{1}{2} \dot{\bar{\phi}}^2 + V \left( \bar{\phi} \right) \right]
 \end{equation}
@@ -59,65 +48,45 @@ En este trabajo se realizaron códigos computacionales para la resolución de es
 \end{figure}
 
 Las ecuaciones de perturbaciones las podemos escribir en el espacio de Fourier para poder transformar ecuaciones diferencias en derivadas parciales en ecuaciones diferenciales desacopladas para cada modo de Fourier
-
 \begin{equation}
     \delta \ddot{\phi}_k + 3 H ~ \delta \dot{\phi}_k + \left[ \frac{\partial^2 V \left( \bar{\phi} \right)}{\partial \phi^2} + \frac{k^2}{a^2} \right] ~ \delta \phi_k = 0,
 \end{equation}
-
 \begin{equation}
     \delta \ddot{\chi}_k + 3 H ~ \delta \dot{\chi}_k + \left( g^2 \bar{\phi}^2 + k^2 \right) ~ \delta \chi_k = 0. 
 \end{equation}
-
-\noindent
 Y de estas dos ecuaciones nos centraremos en resolver sólo la última ecuación para entender cómo es la producción de partículas de distintos modos de Fourier para el campo hijo. Al querer resolver la misma, podemos empezar planteando de forma análitica cómo son las perturbaciones cuando no tenemos expansión del universo $(H = 0)$ lo que nos dará para resolver ecuaciones de la forma:
-
 \begin{equation}
     \ddot{\bar{\phi}} + \frac{\partial V \left( \bar{\phi} \right)}{\partial \phi} = 0,
 \end{equation}
-
 \begin{equation}
     \delta \ddot{\chi}_k + \left( g^2 \bar{\phi}^2 + k^2 \right) ~ \delta \chi = 0,
 \end{equation}
-
-\noindent
 y acá para un potencial de la forma $\displaystyle V(\phi) = \frac{1}{2} m^2 \phi^2$ podemos ver que obtenemos un oscilador armónico para $\bar{\phi}$ por tanto tenemos una solución de la forma $\bar{\phi} = \phi_0 \cos (mt)$ que al aplicar dentro de la ecuación para el campo hijo nos da una ecuación de la forma
-
 \begin{equation}
     \frac{d^2 \delta \chi}{dT^2} + \left[ A_k - 2 q \cos (2T) \right] ~ \delta \chi = 0,
 \end{equation}
-
-\noindent
 la cual es una ecuación que se conoce como de tipo Mathieu; y para llegar a ella se definieron los cambios de variables $\displaystyle T = mt + \frac{\pi}{2}$, $\displaystyle q = \frac{g^2}{4} \left( \frac{\phi_0}{m} \right)^2$ y $\displaystyle A_k = \left( \frac{k}{m} \right)^2 + 2q$. Las soluciones de esta ecuación serán analizadas en la siguiente sección haciendo uso del análisis de Fourier, antes de eso saltemos a qué ocurre cuando tenemos un potencial de tipo cuártico.
 
 Si tenemos un potencial de la forma $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$, para el campo inflatón la solución será en términos de una función elíptica $cn \left(x, \frac{1}{\sqrt{2}} \right)$ \cite{Greene_1997} la cual nos permite escribir la ecuación de las perturbaciones del campo hijo como
-
 \begin{equation}
     X_k^{\prime \prime} + \left[ \kappa^2 + \frac{g^2}{\lambda} cn^2 \left(x, \frac{1}{\sqrt{2}} \right) \right] X_k = 0,
 \end{equation}
-
-\noindent
 dónde $x$ es el tiempo conforme, $X = a(t) ~ \chi(t)$ y $\displaystyle \kappa^2 = \frac{k^2}{\lambda a^2 \bar{\phi}^2}$. A esta ecuación se la conoce como ecuación de Lamé y al igual que con la ecuación de Mathieu haremos un análisis de las soluciones de esta ecuación en la siguiente sección al introducir el análisis de Floquet y los tipos de resonancia.
 
 \section{Análisis de Floquet}\label{sec:Floquet}
 
 Para empezar a estudiar las soluciones a las ecuaciones de Mathieu y Lamé debemos entender lo que se conoce como el análisis de Floquet, y eso implica observar que estas ecuaciones tienen por solución $\chi(t) \propto e^{\mu_k t}$ dónde $\mu_k$ se conoce como el exponente de Floquet y es complejo, lo que implica que existen valores para los cuales éste tiene parte real y genera una amplificación en el campo generando una resonancia. El calculo de estos Floquets está descripto en \cite{Amin_2014} y consiste en armarse una matriz conocida como matriz de monodromía con las soluciones de la ecuación dinámica en un período
-
 \begin{equation}
     \mathcal{O} \left( t_0 + T, t_0 \right) = \begin{pmatrix}
         u^{(1)} (t_0 + T) & u^{(2)} (t_0 + T)\\
         v^{(1)} (t_0 + T) & v^{(2)} (t_0 + T)\\
     \end{pmatrix},
 \end{equation}
-
-\noindent
 siendo $u$ y $v$ la amplitud y velocidad del campo respectivamente, y los supraíndices indicaciones para considerar por condiciones iniciales $(1,0)$ y $(0,1)$ para $u$ y $v$. Luego, el coeficiente de Floquet se calcula a partir de 
-
 \begin{equation}
     \mu = \frac{1}{T} \cosh^{-1} \left[ \frac{\text{Tr} \left( \mathcal{O} \right)}{2} \right],
 \end{equation}
-
-\noindent
-pudiendo observar además que si la traza de la matriz de monodromía es menor que $2$ tendremos valores reales para $\mu$ pero para valores mayores tendremos valores imaginarios. De este modo, con los coeficientes de Floquet calculados, se pueden armar tablas de inestabilidades como las que se observan en la Figura \ref{fig:Floquet} dónde marcamos con colores más intensos valores mayores para la parte real del coeficiente y por tanto serán valores de los parámetros para los cuales la resonancia y amplificación del campo serán mayores, mientras que en negro tendremos aquellos valores dónde el coeficiente de Floquet es imaginario puro y por tanto las perturbaciones fluctuarán sin amplificarse. Este tipo de tablas de inestabilidades permiten ver que existen bandas en las cuales el campo se encuentra en resonancia y bandas dónde no, entonces un análisis que buscaremos hacer en la sección siguiente es si esas bandas de amplificación generan un aumento en el espectro de potencias de las ondas gravitacionales.
+pudiendo observar además que si la traza de la matriz de monodromía es menor que $2$ tendremos valores reales para $\mu$ pero para valores mayores tendremos valores imaginarios. De este modo, con los coeficientes de Floquet calculados a partir de plantear las ecuaciones dinámicas de los campos y utilizando el período que se obtiene de la conservación de la energía, se pueden armar tablas de inestabilidades como las que se observan en la Figura \ref{fig:Floquet} dónde marcamos con colores más intensos valores mayores para la parte real del coeficiente y por tanto serán valores de los parámetros para los cuales la resonancia y amplificación del campo serán mayores, mientras que en negro tendremos aquellos valores dónde el coeficiente de Floquet es imaginario puro y por tanto las perturbaciones fluctuarán sin amplificarse. Este tipo de tablas de inestabilidades permiten ver que existen bandas en las cuales el campo se encuentra en resonancia y bandas dónde no, entonces un análisis que buscaremos hacer en la sección siguiente es si esas bandas de amplificación generan un aumento en el espectro de potencias de las ondas gravitacionales.
 
 \begin{figure}[htbp]
     \centering
@@ -154,7 +123,6 @@ De la Figura \ref{fig:Floquet} se puede extraer para la ecuación de Mathieu y d
 \end{figure}
 
 Para valores pequeños del parámetro de acoplamiento $(q \ll 1)$, el ancho de la banda de la resonancia es angosta (\textit{Narrow Resonance}) lo que nos dará una dinámica en la cual la amplitud del campo hijo aumenta de forma continua, estas oscilaciones darán lugar a un aumento en el número de ocupación de las partículas que fluctuará alrededor de un valor medio monótonamente creciente. En cambio, si tenemos valores grandes de este parámetro $(q \gg 1)$, el ancho de banda de la resonancia será ancha (\textit{Broad Resonance}) lo que nos dará una dinámica en la cual el campo hijo oscila alrededor de un cierto valor medio pero por momentos se genera un aumento espontáneo en el valor del campo, esa dinámica genera en el número de ocupación de las partículas del campo una función escalonada dónde cada vez que se produce el aumento espontáneo se genera un aumento repentino en el número de ocupación también generando lo que se conoce como un \textit{particle burst} (o chorro de partículas). Estas dinámicas se pueden observar en la Figura \ref{fig:m2phi2_Resonance} para un modelo con $\displaystyle V(\phi) = \frac{1}{2} m^2 \phi^2$ y en la Figura \ref{fig:lphi4_Resonance} para un modelo con $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$, y los números de ocupación de las partículas fueron calculados a partir de pensar al campo $\chi$ como cuántico por tanto pensándolo como un oscilador armónico tenemos que vale
-
 \begin{equation}
     n_\chi (k) = \frac{1}{2 \Omega_\chi} \left( \left| \dot{\chi}_k \right|^2 + \Omega^2_\chi \left| \chi_k \right|^2 \right)
 \end{equation}
@@ -211,70 +179,47 @@ Para valores pequeños del parámetro de acoplamiento $(q \ll 1)$, el ancho de l
     \label{fig:lphi4_Resonance}
 \end{figure}
 
-\vspace{3cm}
-
 En particular, para el estudio que haremos en la siguiente sección nos centraremos en comprender cómo afecta la \textit{Broad Resonance} a la producción de ondas gravitacionales en un potencial de la forma $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$. Se eligió ésto dado que en el capítulo \ref{sec:cap4} se querrá comparar el estudio del modelo lineal con códigos armados y analizados en el estudio de la producción de ondas gravitacionales cuando se tienen no linealidades, y en estos códigos ya estaba estudiado su funcionamiento para el caso de un potencial de esta forma \cite{CosmoLatticeNet, Figueroa2021, Figueroa2023, Figueroa2024, Figueroa_2017_GW, Figueroa_2017_Parametric}.
 
 \section{Producción lineal de ondas gravitacionales}
 
 Una vez estudiada la dinámica de los campos de materia durante \textit{Preheating} se quiere entender cómo esta dinámica afecta a la producción de ondas gravitacionales, para lo cual podemos armarnos las perturbaciones del tensor de energía-momento usando las fluctuaciones de los campos como
-
 \begin{equation}
     \Pi_{ij}^{TT} = \left\{ \partial_i \chi \partial_j \chi \right\}^{TT},
 \end{equation}
-
-\noindent
 estas perturbaciones entran en la ecuación de ondas (\ref{eqn:GWs}) que se resuelve utilizando el método de la función de Green planteando que la misma es $\mathcal{G} (k, \tau, \tau^\prime) = k^{-1} \sin \left[ k \left( \tau - \tau^\prime \right) \right]$ y con ello las perturbaciones métricas que describen a las ondas gravitacionales se pueden escribir como
-
 \begin{equation}
     h_{ij}^{TT} (k, \tau) = \frac{1}{a(\tau) m_p^2} \int_{\tau_i}^{\tau} \frac{a \left( \tau^\prime \right)}{k} \sin \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi^{TT}_{ij} \left( k, \tau^{\prime} \right) ~ d\tau^{\prime}.
 \end{equation}
 
 A su vez, lo que vamos a querer calcular es la densidad de energía de las ondas gravitacionales para un fondo estocástico, la cual se puede obtener a partir de 
-
 \begin{equation}
     \frac{d \rho_{GW}}{d \log k} \left( k, \tau \right) = \frac{k^3 m_p^3}{8 \pi^2 a^2} P_{h^{\prime}} \left( k, \tau \right),
 \end{equation}
-
-\noindent
 dónde $\displaystyle \left\langle h^\prime \left( k, \tau \right) h^{*\prime} \left( k^\prime, \tau \right) \right\rangle = (2 \pi)^3 ~ P_{h^{\prime}} \left( k, \tau \right) ~ \delta \left( k - k^\prime \right)$ con $P_{h^\prime} \left( k, \tau \right)$ el espectro de potencias, el cual puede ser calculado en términos del correlador $\displaystyle \Pi^2 \left( k, \tau, \tau^{\prime} \right)$ definido como $\displaystyle \left\langle \Pi^{TT}_{ij} \left( k, \tau \right) ~ \Pi^{*TT}_{ij} \left( k^\prime, \tau^{\prime \prime} \right) \right\rangle = (2 \pi)^3 ~ \Pi^2 \left( k, \tau^\prime, \tau^{\prime \prime} \right) ~ \delta \left( k - k^\prime \right)$ dándonos que la densidad de energía de las ondas gravitacionales en términos de este correlador nos queda
-
 \begin{equation}
     \frac{d \rho_{GW}}{d \log k} = \frac{k^3}{16 m_p \pi^2 ~ a^4 (\tau)} \int_{\tau_i}^{\tau} \int_{\tau_i}^{\tau} a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau^\prime - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, \tau^\prime, \tau^{\prime \prime} \right) ~ d \tau^\prime ~ d \tau^{\prime \prime}.
 \end{equation}
 
 Para poder calcular el correlador $\Pi^{2} \left( k, \tau, \tau^\prime \right)$ podemos pensar al campo hijo en términos de los operadores de creación y destrucción del campo
-
 \begin{equation}
     \chi (x) = \frac{1}{(2 \pi)^3} \int \left[ \hat{a}_p \chi_p (t) + \hat{a}^\dagger_{-p} \chi^*_p \right] e^{- i \vec{p} \cdot \vec{x}} ~ d^3 p,
 \end{equation}
-
-\noindent
 de este modo, se obtiene que el correlador vale 
-
 \begin{equation}
     \Pi^2 \left( k, \tau^\prime, \tau^{\prime \prime} \right) = \frac{1}{4 \pi^2 ~ a^2 \left( \tau^\prime \right) ~ a^2 \left( \tau^{\prime \prime} \right)} \int p^6 \sin^5 \theta ~ \chi_p (\tau) ~ \chi_{k - p} (\tau) ~ \chi_p^* \left( \tau^\prime \right) ~ \chi_{k - p}^* \left( \tau^\prime \right) ~ dp ~ d\theta.
 \end{equation}
-
-\noindent
 Y, finalmente, con ésto obtenemos que la densidad de energía de las ondas gravitacionales la podemos calcular a partir de 
-
 \begin{equation}\label{eqn:GW_production}
     \frac{d \rho_{GW} (k, \tau)}{d \log k} = \frac{k^3}{16 \pi^4 m_p^2 a^4} \int p^6 \sin^5 \theta \left[ \left| I_c \left( k, p, \theta, \tau \right) \right|^2 + \left| I_s \left( k, p, \theta, \tau \right) \right|^2 \right] ~ dp ~ d\theta,
 \end{equation}
-
-\noindent
 dónde las funciones $I_c \left( k, p, \theta, \tau \right)$ e $I_s \left( k, p, \theta, \tau \right)$ se definen a partir de 
-
 \begin{equation}
     I_c \left( k, p, \theta, \tau \right) = \int_{\tau_i}^{\tau} \frac{\cos \left( k \tau^\prime \right)}{a \left( \tau^\prime \right)} \chi_p \left( \tau^\prime \right) ~ \chi_{k - p} \left( \tau^\prime \right) ~ d\tau^\prime,
 \end{equation}
-
 \begin{equation}
     I_s \left( k, p, \theta, \tau \right) = \int_{\tau_i}^{\tau} \frac{\sin \left( k \tau^\prime \right)}{a \left( \tau^\prime \right)} \chi_p \left( \tau^\prime \right) ~ \chi_{k - p} \left( \tau^\prime \right) ~ d\tau^\prime,
 \end{equation}
-
-\noindent
 en estas funciones están metidas la dinámica de los modos de Fourier de $\chi$ que lo calculamos en la sección anterior pero observamos, además, que contiene una convolución de los modos por lo que una resonancia en unos modos va a inducir ondas gravitacionales en todo el espectro de potencia\footnote{Las cuentas completas para llegar a estas expresiones se encuentran desarrolladas en el Apéndice \ref{sec:apexA}}.
 
 A partir de la ecuación (\ref{eqn:GW_production}) podemos armar un código de Python que reciba la dinámica de los modos de Fourier del campo y la evolución del \textit{background} para calcular el espectro de ondas gravitacionales, esto mismo lo podemos observar en la Figura \ref{fig:GW_lineal} dónde además se sombrea de verde aquella zona dónde ocurre la amplificación del campo por resonancia paramétrica y por tanto se espera un aumento mayor en el espectro de ondas gravitacionales. Se observa, efectivamente, en la Figura \ref{fig:GW_lineal} que en la banda dónde el coeficiente de Floquet tiene parte real no nula ocurre una amplificación del espectro y además se observa que el efecto de la convolución de los modos de Fourier causan que todo el espectro se vea aumentado.

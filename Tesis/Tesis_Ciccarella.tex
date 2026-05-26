@@ -56,6 +56,15 @@
 
 \definecolor{gold}{RGB}{212, 175, 55}     % Oro metálico
 \definecolor{silver}{RGB}{125, 125, 125}  % Plata clásico
+\definecolor{ForestGreen}{HTML}{14BA24}
+
+% ============================================================================
+% CONFIGURACIÓN DE ESPACIADO EN ECUACIONES
+% ============================================================================
+\setlength{\abovedisplayskip}{6pt plus 2pt minus 2pt}
+\setlength{\belowdisplayskip}{6pt plus 2pt minus 2pt}
+\setlength{\abovedisplayshortskip}{0pt plus 2pt}
+\setlength{\belowdisplayshortskip}{6pt plus 2pt minus 2pt}
 
 %============================================================================
 % COMIENZO DEL DOCUMENTO
@@ -137,13 +146,14 @@ y simulaciones con \CosmoLattice
 
 \vspace{1 cm}
 
+\vfill
+
 \begin{center}
 \begin{table}[h]
 \begin{tabular}{ll}
 \rule{70mm}{0.1mm}      \hspace{1.5cm}           & \rule{70mm}{0.1mm} \\
 \vspace{1.0 cm}
 Autor                              & Jurado  
-\vspace{1.0 cm}
 \\
 \rule{70mm}{0.1mm}      \hspace{1.5cm}            & \rule{70mm}{0.1mm} \\
 \vspace{1.0 cm}
@@ -162,14 +172,16 @@ Profesor de Tesis de Licenciatura & Jurado          \\
 \pagestyle{plain}     % Solo número de página abajo
 
 \section*{Resumen}
-Aca va el resumen de tu tesis sobre ondas gravitatorias y preheating.
+
+
+
 \vspace{1cm}
 
 \noindent \textbf{Palabras clave:} Ondas gravitatorias, Recalentamiento, \CosmoLattice, Universo temprano.
 \newpage
 
 \section*{Agradecimientos}
-%Acá van tus agradecimientos personales.
+
 \newpage
 
 \tableofcontents
