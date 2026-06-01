@@ -1,0 +1,46 @@
+Parameters: 
+Important parameters:
+
+             kCutOff       18                  
+                tMax       900                 
+                  dt       0.01                
+                   N       32                  
+             withGWs       true                
+             evolver       VV2                 
+     tOutputRareFreq       10                  
+           expansion       true                
+                 kIR       3                   
+       tOutputInfreq       3                   
+                  t0       0                   
+         tOutputFreq       0.1                 
+
+
+Other parameters:
+
+          PS_version       1                   
+             PS_type       1                   
+           tolerance       -1                  
+       print_headers       false               
+         hdf5Spectra       false               
+     fixedBackground       false               
+     initial_momenta       -3.0714e31 0        
+         tBackupFreq       -1                  
+          outputfile       ./data/var_M/M_2.435e18/
+            baseSeed       3328433075          
+               input       ../src/models/parameter-files/tanh2.in
+             Lambda4       3515570910062500000000000000000000000000000000000000000000000000.000
+                   q       16000               
+       appendToFiles       false               
+     GWprojectorType       1                   
+  initial_amplitudes       3.39928e18 0        
+         tOutputVerb       1                   
+                   M       2.435e18            
+     energy_snapshot       ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
+             OccNumb       true                
+    spectraVerbosity       0                   
+           deltaKBin       1                   
+
+The simulation started on the d30 m5 y2026 around h5m25.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d30 m5 y2026 around h5m36.
+The timer indicates that it ran for 645.052s.
+As it ran on 1 cores, this corresponds to 0.179181 core hours.

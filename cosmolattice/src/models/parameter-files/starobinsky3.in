@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/DEF/
+outputfile = ./data/starobinsky3/m_2.435e13/M_2.435e23/
 
 #Evolution
 expansion = true
@@ -22,9 +22,13 @@ initial_amplitudes = 3.22088e18 0 # homogeneous amplitudes in GeV
 initial_momenta = -5.25164e31 0    # homogeneous amplitudes in GeV2
 
 #Model Parameters
-M = 2.903e19
-Lambda4 = 1.7966e65
-q = 4490
+M = 2.435e23
+Lambda4 = 35155709100625000000000000000000000000000000000000000000000000000000
+000000.000
+0000.000
+00.000
+00
+q = 16000
 
 #GWs
 GWprojectorType = 1

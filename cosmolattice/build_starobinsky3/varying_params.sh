@@ -3,14 +3,9 @@
 # Ruta al archivo de parámetros de Starobinsky
 param_file="../src/models/parameter-files/starobinsky3.in"
 
-# 1. Valores de 'm' (para emular el modelo cuadrático)
-ms=(1.0e13 1.46e13 2.0e13)
-
-# 2. Valores de M (ancho de la meseta de Starobinsky)
-Ms=(1.0e19 2.435e19 5.0e19)
-
-# 3. q ajustado para consistencia (el valor calculado para g equivalente)
-q_fixed=4490
+ms=(2.435e13)
+Ms=(2.435e18 2.435e19 2.435.0e20 2.435e21 2.435e22 2.435e23)
+q_fixed=16000
 
 for m in "${ms[@]}"
 do

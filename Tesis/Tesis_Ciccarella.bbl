@@ -55,6 +55,11 @@ Dufaux, J.-F., Bergman, A., Felder, G., Kofman, L., and Uzan, J.-P. (2007).
 \newblock Theory and numerics of gravitational waves from preheating after inflation.
 \newblock {\em arXiv preprint arXiv:0707.0875}.
 
+\bibitem[Ellis et~al., 2026]{Ellis_2026}
+Ellis, J., Garcia, M. A.~G., Olive, K.~A., and Verner, S. (2026).
+\newblock Constraints on attractor models of inflation and reheating from planck, bicep/keck, act dr6, and spt-3g data.
+\newblock {\em Physical Review D}, 113(6):063571.
+
 \bibitem[Elía, 2025]{Elia_2025}
 Elía, J.~P. (2025).
 \newblock Producción de un fondo estocástico de ondas gravitatorias durante recalentamiento.
@@ -105,6 +110,11 @@ Herman, N., Lehoucq, L., and F{\"u}zfa, A. (2023).
 \newblock Electromagnetic antennas for the resonant detection of the stochastic gravitational wave background.
 \newblock {\em arXiv preprint arXiv:2203.15668}.
 
+\bibitem[Kallosh and Linde, 2013]{Kallosh_2013}
+Kallosh, R. and Linde, A. (2013).
+\newblock Superconformal generalizations of the starobinsky model.
+\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2013(06):028.
+
 \bibitem[Kofman et~al., 1994]{Kofman_1994}
 Kofman, L., Linde, A., and Starobinsky, A.~A. (1994).
 \newblock Reheating after inflation.
@@ -125,6 +135,11 @@ Maggiore, M. (2018).
 \newblock {\em Gravitational Waves Volume 2: Astrophysics and Cosmology}.
 \newblock Oxford University Press, Great Clarendon Street, Oxford, OX2 6DP, United Kingdom.
 
+\bibitem[Martin et~al., 2015]{Martin2015}
+Martin, J., Ringeval, C., and Vennin, V. (2015).
+\newblock Observing inflationary reheating.
+\newblock {\em Physical Review Letters}, 114(8).
+
 \bibitem[McLachlan, 1947]{McLachlan_1947}
 McLachlan, N.~W. (1947).
 \newblock {\em Theory and Application of Mathieu Functions}.
@@ -144,6 +159,11 @@ Peter, P. and Uzan, J.-P. (2009).
 Renzini, A., Goncharov, B., Jenkins, A.~C., and Meyers, P.~M. (2022).
 \newblock Stochastic gravitational-wave backgrounds: Current detection efforts and future prospects.
 \newblock {\em Galaxies}, 10(1).
+
+\bibitem[Starobinsky, 1980]{Starobinsky_1980}
+Starobinsky, A.~A. (1980).
+\newblock A new type of isotropic cosmological models without singularity.
+\newblock {\em Physics Letters B}, 91(1):99--102.
 
 \bibitem[Turner, 1983]{Turner_1983}
 Turner, M.~S. (1983).

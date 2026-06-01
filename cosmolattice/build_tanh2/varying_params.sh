@@ -4,9 +4,9 @@
 param_file="../src/models/parameter-files/tanh2.in"
 
 # 1. Valores de 'm' y 'M'
-ms=(1.0e13 1.46e13 2.0e13)
-Ms=(1.0e19 2.435e19 5.0e19)
-q_fixed=5000
+ms=(2.435e13)
+Ms=(2.435e18 2.435e19 2.435.0e20 2.435e21 2.435e22 2.435e23)
+q_fixed=16000
 
 for m in "${ms[@]}"
 do
@@ -23,7 +23,7 @@ do
         # Si bc devuelve algo como .123, le agregamos el 0 inicial
         if [[ $L4 == .* ]]; then L4="0$L4"; fi
 
-        output_folder="./data/tanh2/m_${m}/M_${M}/"
+        output_folder="./data/var_M/M_${M}/"
         mkdir -p "$output_folder"
 
         echo "=============================================="
