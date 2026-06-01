@@ -1,4 +1,20 @@
-\chapter{Conclusiones} 
-\label{sec:Conclusiones}
+\chapter{Conclusiones}
+\label{cap:conclusiones}
 
+El presente trabajo de tesis tuvo como objetivo principal el estudio de la dinámica de los campos escalares durante la época de \textit{reheating} y la consecuente producción de un Fondo Estocástico de Ondas Gravitacionales (SGWB). A partir del análisis teórico y la implementación de simulaciones numéricas, se han obtenido las siguientes conclusiones fundamentales:
 
+\begin{itemize}
+    \item \textbf{Dinámica lineal y resonancia paramétrica:} Se desarrolló y validó un marco computacional propio a orden lineal para estudiar la dinámica del campo inflatón y la subsecuente creación explosiva de partículas durante la etapa de \textit{preheating}. Esta implementación permitió comprender fenomenológicamente la estructura de las bandas de inestabilidad y los regímenes de resonancia dictados por el análisis de Floquet.
+    
+    \item \textbf{Generación lineal de ondas gravitacionales:} A través de los códigos propios, se analizó el efecto directo de estas fluctuaciones lineales sobre el tensor de energía-momento. Se corroboró analítica y numéricamente que el crecimiento exponencial de los modos escalares actúa como una fuente eficaz para la amplificación del espectro de potencias de las perturbaciones tensoriales.
+    
+    \item \textbf{Dinámica no lineal en redes espaciales:} Se dominó e implementó exitosamente el integrador avanzado \CosmoLattice. Esto permitió superar las limitaciones de la teoría lineal, capturando la evolución completa del sistema, incluyendo los efectos de retroacción (\textit{backreaction}), la dispersión no lineal de modos (\textit{rescattering}) y el vaciamiento total del condensado, procesos que dictaminan la saturación y estabilización definitiva de los espectros de ondas gravitacionales.
+    
+    \item \textbf{Exploración paramétrica de modelos inflacionarios:} Se caracterizó el espacio de soluciones para distintas familias de potenciales, contrastando modelos de tipo monomial ($m^2\phi^2$, $\lambda\phi^4$) frente a modelos con \textit{plateau} fenomenológicamente favorecidos, como los atractores $\alpha$ (T-models) y el modelo de Starobinsky. El barrido paramétrico demostró cómo la pendiente del potencial y la escala de acoplamiento modifican drásticamente la topología, la frecuencia pico y la amplitud de la energía tensorial inyectada.
+    
+    \item \textbf{Sensibilidad observacional y ruptura de degeneración:} Se reescalaron los espectros teóricos proyectándolos al \textit{strain} característico ($h_c$) observable en la actualidad, confrontándolos con las curvas de sensibilidad de arreglos de púlsares (PTA), interferómetros láser y cavidades resonantes electromagnéticas (EMRC). Se concluyó que los experimentos de ultra-alta frecuencia (EMRC) representan la vía más prometedora para la detección de estas señales. Destacablemente, se demostró que el cálculo del \textit{strain} introduce una ruptura de degeneración para los modelos de tipo materia ($\omega_{eff}=0$): mientras que la densidad de energía $\Omega_{GW}$ de estos modelos resulta virtualmente idéntica, la dependencia del \textit{strain} con la inversa de la frecuencia magnifica su separación. Esto evidencia que el SGWB posee el poder resolutivo intrínseco necesario para discriminar empíricamente entre modelos inflacionarios subyacentes.
+\end{itemize}
+
+\section*{Perspectivas futuras}
+
+Como extensión de este trabajo, resulta de particular interés abordar el estudio de escenarios más complejos que incorporen campos vectoriales de gauge (U(1) o SU(2)) en las simulaciones de \CosmoLattice, con el fin de evaluar cómo las interacciones de norma modifican la eficiencia en la transferencia de energía y la consecuente firma gravitacional. Asimismo, sería valioso ampliar el análisis espectral considerando familias de potenciales polinomiales, tal como se ha propuesto recientemente en la literatura para dinámicas de tipo \textit{hilltop} \cite{Das_2025}. Finalmente, otra dirección prometedora consistiría en enmarcar este estudio dentro de teorías de gravedad modificada, analizando la dinámica y la producción de ondas gravitacionales en escenarios donde el acoplamiento de los campos de materia con la gravedad es no mínimo.

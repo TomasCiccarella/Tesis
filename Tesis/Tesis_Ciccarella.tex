@@ -66,6 +66,14 @@
 \setlength{\abovedisplayshortskip}{0pt plus 2pt}
 \setlength{\belowdisplayshortskip}{6pt plus 2pt minus 2pt}
 
+\usepackage{tocloft}
+
+% Ajusta el espacio ANTES de "Índice general" (podés usar valores negativos)
+\setlength{\cftbeforetoctitleskip}{0cm} 
+
+% Ajusta el espacio DESPUÉS de "Índice general" y antes del primer ítem
+\setlength{\cftaftertoctitleskip}{1cm}
+
 %============================================================================
 % COMIENZO DEL DOCUMENTO
 %============================================================================
@@ -173,7 +181,11 @@ Profesor de Tesis de Licenciatura & Jurado          \\
 
 \section*{Resumen}
 
+El presente trabajo de tesis aborda el estudio de la dinámica de los campos escalares durante la etapa de Recalentamiento (\textit{reheating}) del universo temprano, enfocándose en la producción de un Fondo Estocástico de Ondas Gravitatorias (SGWB) originado por la creación explosiva de partículas (\textit{preheating}). Inicialmente, se analizó la evolución de las perturbaciones de los campos de materia a orden lineal mediante el formalismo de Floquet, evidenciando y caracterizando el fenómeno de resonancia paramétrica. Posteriormente, se implementaron simulaciones numéricas tridimensionales en redes utilizando el integrador \CosmoLattice. Esto permitió superar las limitaciones perturbativas y capturar la evolución no lineal completa del sistema, incluyendo los efectos de retroacción (\textit{backreaction}) y la estabilización asintótica de las fuentes tensoriales.
 
+Se caracterizó la producción de ondas gravitacionales para cinco modelos de decaimiento del inflatón: potenciales monomiales ($m^2\phi^2$, $\lambda\phi^4$) y modelos atractores con \textit{plateau} (Starobinsky, $\tanh^2$, $\tanh^4$). Estos fueron clasificados según el comportamiento promediado de su \textit{background} en escenarios de tipo materia ($\omega_{eff}=0$) y radiación ($\omega_{eff}=1/3$). Se calculó el espectro de densidad de energía fraccional ($\Omega_{GW}$) para cada modelo, evaluando su dependencia paramétrica, y se procedió a reescalar las señales teóricas a las magnitudes observables en la actualidad. 
+
+Los resultados demuestran que, si bien la densidad de energía tensorial presenta una fuerte degeneración morfológica para los modelos de tipo materia a tiempos largos, dicha degeneración se rompe drásticamente al proyectar las señales en el espacio de la deformación característica (\textit{strain}, $h_c$). Finalmente, al contrastar estas firmas espectrales con las curvas de sensibilidad de detectores actuales y propuestos, se concluye que las cavidades resonantes electromagnéticas (EMRC) operativas en la banda de ultra-alta frecuencia constituyen el instrumental más prometedor para su detección. Esta eventual observación empírica proveería el poder resolutivo necesario para discriminar entre los distintos modelos físicos que rigen la inflación y el universo temprano.
 
 \vspace{1cm}
 

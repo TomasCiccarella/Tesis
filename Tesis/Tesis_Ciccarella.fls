@@ -323,6 +323,8 @@ OUTPUT Tesis_Ciccarella.pdf
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 INPUT ./Tesis_Ciccarella.aux
 INPUT ./Tesis_Ciccarella.aux
 INPUT Tesis_Ciccarella.aux
@@ -392,6 +394,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./Tesis_Ciccarella.toc
 INPUT ./Tesis_Ciccarella.toc
@@ -400,7 +403,6 @@ OUTPUT Tesis_Ciccarella.toc
 INPUT ./1.introduccion.tex
 INPUT ./1.introduccion.tex
 INPUT 1.introduccion.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT ./figures/reheating.pdf
 INPUT ./figures/reheating.pdf
 INPUT ./figures/reheating.pdf
