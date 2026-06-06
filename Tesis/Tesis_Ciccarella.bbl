@@ -25,11 +25,6 @@ Caprini, C. and Figueroa, D.~G. (2020).
 \newblock Cosmological backgrounds of gravitational waves.
 \newblock {\em arXiv preprint arXiv:1801.04268}.
 
-\bibitem[Christensen, 2018]{Christensen_2018}
-Christensen, N. (2018).
-\newblock Stochastic gravitational wave backgrounds.
-\newblock {\em arXiv preprint arXiv:1811.08797}.
-
 \bibitem[Ciccarella, 2026]{Git}
 Ciccarella, T. (2025-2026).
 \newblock Github repositorio de la tesis.
@@ -154,6 +149,11 @@ McLachlan, N.~W. (1947).
 Mohanty, S., Panda, S., and Vidyarthi, A. (2026).
 \newblock Testing the starobinsky model of inflation with resonant cavities.
 \newblock {\em arXiv preprint arXiv:2503.06858}.
+
+\bibitem[Moore et~al., 2015]{Moore_2015}
+Moore, C.~J., Cole, R.~H., and Berry, C. P.~L. (2015).
+\newblock Gravitational-wave sensitivity curves.
+\newblock {\em Classical and Quantum Gravity}.
 
 \bibitem[Peter and Uzan, 2009]{Peter_2009}
 Peter, P. and Uzan, J.-P. (2009).

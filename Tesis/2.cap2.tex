@@ -1,79 +1,32 @@
 \chapter{Ondas Gravitacionales} \label{sec:cap2}
 
-\section{Descomposición SVT}
-
-La descomposición SVT (Escalar-Vectorial-Tensorial) permite separar las perturbaciones métricas y del tensor de energía-momento según su comportamiento bajo rotaciones espaciales. En una métrica de fondo de tipo FLRW, la homogeneidad e isotropía garantizan que estos tres sectores evolucionen de manera completamente desacoplada a primer orden en teoría de perturbaciones \cite{Doddelson, Weinberg}.
-
-Al hacer esta descomposición para una métrica perturbada, ésta nos queda de la forma
-\begin{equation}
-    \delta g_{\mu \nu} = \begin{cases}
-        \delta g_{00} = - 2 \phi\\
-        \delta g_{i0} = \partial_i B + S_i\\
-        \delta g_{ij} = - 2 \psi ~ \delta_{ij} + \left( \partial_i \partial_j - \frac{\delta_{ij}}{3} \nabla^2 \right) E + 2 \partial_{(i} F_{j)} + h_{ij}
-    \end{cases}
-\end{equation}
-tal que $\partial^i S_i = 0$, $\partial^i F_i = 0$ y ${h_i}^i = \partial^j h_{ij} = 0$. Durante la inflación, las fuentes de tipo vectorial son nulas o despreciables. Además, estas perturbaciones vectoriales decaen cinemáticamente con la expansión del universo (evolucionando de la forma $\propto a^{-2}$), por lo que la consideración de $S_i$ y $F_i$ en la métrica carece de interés para el presente estudio.
-
-Para el tensor de energía-momento perturbado, la descomposición SVT se puede hacer de la siguiente forma:
-\begin{equation}
-    T_{\mu \nu} = \begin{cases}
-         T_{00} = \rho\\
-         T_{i0} = \partial_i u + u_i\\
-         \displaystyle T_{ij} = P ~ \delta_{ij} + \left( \partial_i \partial_j - \frac{\delta_{ij}}{3} \nabla^2 \right) \sigma + 2 \partial_{(i} v_{j)} + \Pi_{ij}
-    \end{cases}
-\end{equation}
-donde se debe cumplir $\partial_i u_i = 0$, $\partial_i v_i = 0$ y ${\Pi_i}^i = \partial^j \Pi_{ij} = 0$. A su vez, como se mencionó previamente, no resultarán de interés $u_i$ y $v_i$ durante la etapa inflacionaria.
-
-La teoría de la Relatividad General es invariante ante difeomorfismos. A nivel perturbativo, esto se traduce en una libertad de gauge bajo transformaciones de coordenadas infinitesimales $x^{\prime \mu} = x^\mu + \xi^\mu$. La métrica perturbada se transforma según $\delta g_{\mu\nu}^\prime = \delta g_{\mu\nu} - 2 \partial_{(\mu} \xi_{\nu)}$. Por lo tanto, si definimos el vector $\xi_\mu = (d_0, \partial_i d + d_i)$, podemos ver que se deben cumplir las siguientes relaciones:
-\begin{equation}
-    \begin{cases}
-        B^\prime = B - \dot{d} - \dot{d}_0\\
-        \psi^\prime = \psi + \frac{1}{3} \nabla^2 d\\
-       E^\prime = E - 2d\\
-       F^\prime_i = F_i - d_i\\
-       S^\prime_i = S_i - \dot{d}_i\\
-       h^\prime_{ij} = h_{ij} 
-    \end{cases}
-\end{equation}
-Con lo cual podemos definir variables invariantes ante un cambio de gauge:
-\begin{equation}\label{eqn:Bardeen}
-    \begin{cases}
-        \Phi = \phi + \dot{B} - \frac{1}{2} \ddot{E}\\
-        \Theta = - 2 \psi - \frac{1}{3} \nabla^2 E
-    \end{cases}
-\end{equation}
-\begin{equation}
-    \Sigma_i = S_i - \dot{F}_i
-\end{equation}
-\begin{equation}
-    h_{ij} = h_{ij}
-\end{equation}
-siendo los escalares de la ecuación (\ref{eqn:Bardeen}) los potenciales de Bardeen \cite{Doddelson}. Resulta fundamental notar que la parte tensorial de la perturbación en la métrica ($h_{ij}$) es automáticamente invariante de gauge a primer orden. Al introducir estas perturbaciones en las ecuaciones de Einstein asumiendo una métrica de fondo de tipo FLRW, los sectores escalar, vectorial y tensorial se desacoplan
-
-\begin{equation}
-    \begin{cases}
-        \displaystyle \nabla^2 \Theta = - \frac{1}{m^2_p} \rho\\
-        \displaystyle \nabla^2 \Phi = - \frac{1}{2 m_p^2} \left( \rho + 3 P - 3 \dot{u} \right)
-    \end{cases}
-\end{equation}
-\begin{equation}
-    \nabla^2 \Sigma_i = - \frac{2}{m^2_p} v_i
-\end{equation}
-\begin{equation}\label{eqn:Perturbacion_Tensorial}
-    \Box h_{ij} = - \frac{2}{m_p^2} \Pi_{ij}
-\end{equation} 
-
-Dado que el objetivo central de esta tesis es el análisis de las ondas gravitacionales, nos enfocaremos exclusivamente en el sector tensorial, cuya dinámica en un universo en expansión está regida por la perturbación transversal y de traza nula $\Pi_{ij}$, conduciendo a la ecuación de onda que se detalla en la siguiente sección.
-
-\section{Ondas Gravitacionales: Definición}
-
-En el marco de la Relatividad General, las ondas gravitacionales surgen como soluciones a las ecuaciones de Einstein linealizadas al introducir una perturbación de tipo tensorial sobre la métrica de fondo \cite{Maggiore_2018}:
+En el marco de la Relatividad General, las ondas gravitacionales surgen como soluciones a las ecuaciones de Einstein linealizadas al introducir una perturbación de tipo tensorial sobre la métrica de fondo \cite{Maggiore_2018,Caprini_2020}:
 \begin{equation}
     g_{\mu\nu} = \bar{g}_{\mu\nu} + h_{\mu\nu},
 \end{equation}
 donde $\bar{g}_{\mu\nu}$ representa la métrica de fondo espacio-temporal y $h_{\mu\nu}$ es la perturbación métrica que describe a las ondas gravitacionales. Para la validez de la teoría linealizada, se asume la condición de campo débil, es decir, que las componentes de la perturbación son pequeñas en comparación con la métrica de fondo ($\left| h_{\mu\nu} \right| \ll 1$).
 
-Dado que el tensor métrico es simétrico, la perturbación $h_{\mu\nu}$ también lo es, lo que reduce sus 16 componentes a 10 grados de libertad independientes. Mediante una elección adecuada de gauge, es posible eliminar los grados de libertad espurios para conservar únicamente los físicos. En primer lugar, se impone la condición de Lorenz, $\partial^\nu \bar{h}_{\mu\nu} = 0$\footnote{En el espacio de Fourier, esta condición se escribe como $k^\mu h_{\mu \nu} = 0$, lo que manifiesta que las ondas gravitacionales son transversales.}, donde $\bar{h}_{\mu\nu} = h_{\mu\nu} - \frac{1}{2} \bar{g}_{\mu \nu} {h^\alpha}_\alpha$ es el reverso de traza de la perturbación. En ausencia de fuentes locales, es posible refinar aún más esta elección exigiendo que la perturbación no posea componentes temporales ($h_{\nu 0} = 0$) y que su traza sea nula (${h_\mu}^\mu = 0$). A este conjunto de condiciones se lo conoce como el gauge TT (\textit{Transverse and Traceless}) \cite{Bethke}. En este gauge, el tensor de perturbaciones se reduce a solo dos componentes independientes:
+En una métrica de fondo de tipo Minkowski $(\bar{g}_{\mu\nu} = \eta_{\mu\nu})$, el desarrollo a orden lineal en $h_{\mu\nu}$ de la conexión afín de Levi-Civita adopta la siguiente forma:
+\begin{equation}
+    {\Gamma^{\alpha}}_{\mu\nu} = \frac{1}{2} \eta^{\alpha \beta} \left( \partial_\mu h_{\nu\beta} + \partial_\nu h_{\mu \beta} - \partial_\beta h_{\mu \nu} \right).
+\end{equation}
+Esto nos permite calcular el tensor de Riemann, el tensor de Ricci y el escalar de curvatura a primer orden en la perturbación:
+\begin{equation}
+    {R^\alpha}_{\mu\nu\beta} = \frac{1}{2} \left( \partial_\mu \partial_\nu {h^\alpha}_\beta + \partial_\beta \partial^\alpha h_{\mu\nu} - \partial_\nu \partial^\alpha h_{\mu \beta} - \partial_\beta \partial_\mu {h^\alpha}_\nu \right),
+\end{equation}
+\begin{equation}
+    R_{\mu\nu} = \frac{1}{2} \left( \partial_\nu \partial^\alpha h_{\alpha \mu} + \partial_\mu \partial^\alpha h_{\alpha \nu} - \partial_\mu \partial_\nu h - \Box h_{\mu\nu} \right),
+\end{equation}
+\begin{equation}
+    R = \partial^\alpha \partial^\beta h_{\alpha \beta} - \Box h.
+\end{equation}
+Con todo esto, el tensor de Einstein linealizado resulta:
+\begin{equation}\label{eqn:Guv}
+    G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2} \eta_{\mu\nu} R = \frac{1}{2} \left( \partial_\alpha \partial_\nu {\bar{h}^\alpha}_\mu + \partial^\alpha \partial_\mu \bar{h}_{\nu \alpha} - \Box \bar{h}_{\mu\nu} - \eta_{\mu\nu} \partial_\alpha \partial^\beta {\bar{h}^\alpha}_\beta \right),
+\end{equation}
+donde se ha introducido la perturbación reversa de traza, definida como $\displaystyle \bar{h}_{\mu\nu} = h_{\mu\nu} - \frac{1}{2} \bar{g}_{\mu \nu} h$ (siendo $h \equiv {h^\alpha}_\alpha$).
+
+Dado que el tensor métrico es simétrico, la perturbación $h_{\mu\nu}$ también lo es, lo que reduce sus 16 componentes a 10 grados de libertad independientes. Mediante una elección adecuada del \textit{gauge}, es posible eliminar los grados de libertad espurios para conservar únicamente los físicos. En primer lugar, se impone la condición de Lorenz, $\partial^\nu \bar{h}_{\mu\nu} = 0$\footnote{En el espacio de Fourier, esta condición se escribe como $k^\nu \bar{h}_{\mu \nu} = 0$, lo que manifiesta la transversalidad de la perturbación.}. En ausencia de fuentes locales, es posible refinar aún más esta elección exigiendo que la perturbación no posea componentes temporales ($h_{\nu 0} = 0$) y que su traza sea nula (${h_\mu}^\mu = 0$). Al combinarse con la condición de Lorenz, el tensor reverso de traza $\bar{h}_{\mu\nu}$ pasa a coincidir exactamente con $h_{\mu\nu}$. A este conjunto de condiciones se lo conoce como el \textit{gauge} TT (\textit{Transverse-Traceless}) \cite{Bethke, Caprini_2020}. En este \textit{gauge}, la amplitud del tensor de perturbaciones se reduce a solo dos componentes independientes:
 \begin{equation}
     h_{\mu\nu} = \begin{pmatrix}
         0 & 0 & 0 & 0\\
@@ -90,9 +43,9 @@ Dado que el tensor métrico es simétrico, la perturbación $h_{\mu\nu}$ tambié
         0 & 0 & 1 & 0\\
         0 & 1 & 0 & 0\\
         0 & 0 & 0 & 0
-    \end{pmatrix}.
+    \end{pmatrix},
 \end{equation}
-Donde las funciones $h_+$ y $h_\times$ representan las dos polarizaciones ortogonales de la onda gravitacional. Su efecto físico sobre el espacio-tiempo se encuentra esquematizado en la Figura \ref{fig:GWs_polarizaciones}, donde se observa cómo el paso de la onda produce una distorsión armónica (a la que denominaremos \textit{shear}) transversal a la dirección de propagación $\hat{z}$. 
+donde las funciones $h_+$ y $h_\times$ representan las dos polarizaciones ortogonales de la onda gravitacional. Su efecto físico sobre el espacio-tiempo se encuentra esquematizado en la Figura \ref{fig:GWs_polarizaciones}, donde se observa cómo el paso de la onda produce una distorsión armónica (denominada \textit{shear}) transversal a la dirección de propagación $\hat{z}$.
 
 \begin{figure}[htbp]
     \centering
@@ -127,66 +80,270 @@ Donde las funciones $h_+$ y $h_\times$ representan las dos polarizaciones ortogo
         \node at (2.5,-2.5) {\LARGE $\odot$};
         \node[right = 5pt] at (2.5,-2.5) {$\hat{z}$};
     \end{tikzpicture}
-    \caption{Esquema de las polarizaciones posibles para una onda gravitacional viajando en dirección $\hat{z}$: en rojo vemos la polarización $\textcolor{red}{h_\times}$ mientras que en verde vemos la polarización $\textcolor{ForestGreen}{h_+}$.}
+    \caption{Representación esquemática de las polarizaciones posibles para una onda gravitacional propagándose en la dirección $\hat{z}$. Las flechas indican el campo de deformación para la polarización cruzada ($\textcolor{red}{h_\times}$, en rojo) y para la polarización más ($\textcolor{ForestGreen}{h_+}$, en verde).}
     \label{fig:GWs_polarizaciones}
 \end{figure}
 
-Al expandir el tensor de Einstein $G_{\mu\nu}$ a primer orden en las perturbaciones tensoriales, se obtiene la ecuación de propagación correspondiente. Si se adopta un fondo plano y estático de Minkowski, la dinámica se reduce a la ecuación de onda homogénea convencional (\ref{eqn:Perturbacion_Tensorial}). Por el contrario, al considerar un fondo cosmológico regido por la métrica de Friedmann-Lemaître-Robertson-Walker (FLRW), la expansión del espacio introduce un término de fricción de Hubble \cite{Caprini_2020}:
+De este modo, al aplicar la elección del \textit{gauge} TT en la Ecuación (\ref{eqn:Guv}) y sustituirla en las ecuaciones de Einstein, se obtiene la ecuación de ondas que describe la dinámica de las perturbaciones tensoriales en la métrica de Minkowski:
 \begin{equation}
-    \ddot{h}_{ij} \left( \textbf{x}, t \right) + 3 H \dot{h}_{ij} \left( \textbf{x}, t \right) - \frac{1}{a^2} \nabla^2 h_{ij} \left( \textbf{x}, t \right) = 16 \pi G \Pi_{ij} \left( \textbf{x}, t \right),
+    \Box h^{TT}_{\mu\nu} = - \frac{2}{m_p^2} T^{TT}_{\mu\nu}.
 \end{equation}
-Alternativamente, la evolución puede expresarse de manera más compacta introduciendo el tiempo conforme ($d\eta = dt/a$) y pasando al espacio de Fourier, lo que conduce a:
+En las secciones siguientes, se contextualizarán estas perturbaciones en un escenario cosmológico, con el fin de derivar la ecuación que gobierna la propagación de las ondas gravitacionales en un universo en expansión.
+
+\section{Perturbaciones: contexto cosmológico}
+
+La descomposición SVT (Escalar-Vectorial-Tensorial) permite separar las perturbaciones métricas y del tensor de energía-momento según su comportamiento bajo rotaciones espaciales. En una métrica de fondo cosmológica de tipo FLRW, la homogeneidad e isotropía espaciales garantizan que estos tres sectores evolucionen de manera completamente desacoplada a primer orden en la teoría de perturbaciones \cite{Doddelson, Weinberg}.
+
+Al aplicar esta descomposición a una métrica perturbada de la forma $g_{\mu\nu} = \bar{g}_{\mu\nu} + \delta g_{\mu\nu}$, la perturbación $\delta g_{\mu\nu}$ se expresa de la siguiente manera:
+\begin{equation}
+    \delta g_{\mu \nu} = \begin{cases}
+        \delta g_{00} = - 2 \phi\\
+        \delta g_{i0} = \partial_i B + S_i\\
+        \delta g_{ij} = - 2 \psi ~ \delta_{ij} + \left( \partial_i \partial_j - \frac{\delta_{ij}}{3} \nabla^2 \right) E + 2 \partial_{(i} F_{j)} + h_{ij}
+    \end{cases}
+\end{equation}
+donde las condiciones de transversalidad y de traza nula implican $\partial^i S_i = 0$, $\partial^i F_i = 0$, $\partial^j h_{ij} = 0$ y ${h_i}^i = 0$. En un universo en expansión, las perturbaciones de tipo vectorial ($S_i$ y $F_i$) en ausencia de fuentes activas decaen cinemáticamente con el factor de escala (según $a^{-2}$). Por ello, su consideración es despreciable y por tanto carece de interés para el presente trabajo.
+
+Para el tensor de energía-momento perturbado, esta descomposición se formula análogamente:
+\begin{equation}
+    \delta T_{\mu \nu} = \begin{cases}
+         \delta T_{00} = \rho\\
+         \delta T_{i0} = \partial_i u + u_i\\
+         \displaystyle \delta T_{ij} = P ~ \delta_{ij} + \left( \partial_i \partial_j - \frac{\delta_{ij}}{3} \nabla^2 \right) \sigma + 2 \partial_{(i} v_{j)} + \Pi_{ij}
+    \end{cases}
+\end{equation}
+donde se debe cumplir $\partial^i u_i = 0$, $\partial^i v_i = 0$, $\partial^j \Pi_{ij} = 0$ y ${\Pi_i}^i = 0$. Al igual que en el sector geométrico, las componentes vectoriales $u_i$ y $v_i$ no resultarán de interés durante las etapas cosmológicas analizadas.
+
+La teoría de la Relatividad General es invariante ante difeomorfismos. A nivel perturbativo, esto se traduce en una libertad de \textit{gauge} bajo transformaciones de coordenadas infinitesimales $x^{\prime \mu} = x^\mu + \xi^\mu$. Bajo esta transformación, la métrica perturbada cambia según $\delta g_{\mu\nu}^\prime = \delta g_{\mu\nu} - 2 \partial_{(\mu} \xi_{\nu)}$. Por consiguiente, resulta conveniente construir combinaciones lineales de estas variables que permanezcan invariantes ante cambios de \textit{gauge}:
+\begin{equation}\label{eqn:Bardeen}
+    \begin{cases}
+        \Phi = \phi + \dot{B} - \frac{1}{2} \ddot{E}\\
+        \Theta = - 2 \psi - \frac{1}{3} \nabla^2 E
+    \end{cases}
+\end{equation}
+\begin{equation}
+    \Sigma_i = S_i - \dot{F}_i
+\end{equation}
+\begin{equation}
+    h_{ij} = h_{ij}
+\end{equation}
+siendo los escalares de la Ecuación (\ref{eqn:Bardeen}) los potenciales de Bardeen\cite{Doddelson}. Además, resulta fundamental notar que la parte tensorial de la perturbación espacial ($h_{ij}$) es automáticamente invariante de \textit{gauge} a primer orden. 
+
+Al introducir estas perturbaciones invariantes en las ecuaciones de Einstein linealizadas, la simetría del espacio-tiempo garantiza que los sectores escalar, vectorial y tensorial se desacoplen. Se puede notar que si se evalúa este sistema en el límite estático de espacio plano (métrica de Minkowski), las ecuaciones para las perturbaciones métricas adoptan la siguiente forma:
+\begin{equation}
+    \begin{cases}
+        \displaystyle \nabla^2 \Theta = - \frac{1}{m^2_p} \rho\\
+        \displaystyle \nabla^2 \Phi = - \frac{1}{2 m_p^2} \left( \rho + 3 P - 3 \dot{u} \right)
+    \end{cases}
+\end{equation}
+\begin{equation}
+    \nabla^2 \Sigma_i = - \frac{2}{m^2_p} v_i
+\end{equation}
+\begin{equation}\label{eqn:Perturbacion_Tensorial}
+    \Box h_{ij} = - \frac{2}{m_p^2} \Pi_{ij}
+\end{equation} 
+
+Dado que el objetivo central de esta tesis es el análisis de las ondas gravitacionales, nos enfocaremos exclusivamente en el sector tensorial. La dinámica de estas perturbaciones en un universo en expansión realista estará regida por la componente transversal y de traza nula del tensor de energía-momento ($\Pi_{ij}$), conduciendo a la ecuación de onda cosmológica que se derivará en la siguiente sección.
+
+\section{Ondas gravitacionales en un fondo cosmológico}
+
+Las perturbaciones métricas en espacios curvos para el tensor de energía-momento están dadas por el tensor efectivo
+\begin{equation}
+    T^{\text{GW}}_{\mu\nu} = \frac{1}{32 \pi G} \left\langle \nabla_\mu h_{\alpha \beta} \nabla_\nu h^{\alpha \beta}  \right\rangle,
+\end{equation}
+siendo $\nabla_\mu$ la derivada covariante. Al comparar esta expresión con el tensor de energía-momento de un fluido ideal, se deduce que la densidad de energía efectiva para las ondas gravitacionales adopta la forma
+\begin{equation}
+    \rho_{GW} = \frac{1}{32 \pi G} \left\langle \dot{h}_{\alpha \beta} \dot{h}^{\alpha\beta} \right\rangle.
+\end{equation}
+
+En Cosmología, la métrica de fondo que describe al espacio-tiempo a gran escala es la métrica plana de Friedmann-Lemaître-Robertson-Walker (FLRW)
+\begin{equation}
+    ds^2 = - dt^2 + a^2 (t) ~ \delta_{ij} ~ dx^i ~ dx^j.
+\end{equation}
+Al expandir el tensor de Einstein $G_{\mu\nu}$ a primer orden en las perturbaciones tensoriales bajo esta métrica de fondo, se obtiene la ecuación de propagación correspondiente. La expansión del universo introduce naturalmente un término de fricción de Hubble \cite{Caprini_2020}
+\begin{equation}
+    \ddot{h}_{ij} \left( \textbf{x}, t \right) + 3 H \dot{h}_{ij} \left( \textbf{x}, t \right) - \frac{1}{a^2} \nabla^2 h_{ij} \left( \textbf{x}, t \right) = \frac{2}{m_p^2} \Pi_{ij} \left( \textbf{x}, t \right),
+\end{equation}
+donde $\Pi_{ij} \left( \textbf{x}, t \right)$ describe el estrés anisotrópico del tensor de energía-momento, el cual en esta métrica perturbada está dado por
+\begin{equation}
+    \Pi_{ij} = T_{ij} - P a^2 \left( \delta_{ij} + h_{ij} \right).
+\end{equation}
+
+\vspace{3cm}
+
+Haciendo uso de la transformada de Fourier, se pueden expresar los tensores $h_{ij}$ y $\Pi_{ij}$ en el espacio de momentos como
+\begin{equation}
+    h_{ij} \left( \textbf{x}, t \right) = \frac{1}{(2\pi)^3} \sum_{r = +, \times} \int h_r \left( \textbf{k}, t \right) ~ e^r_{ij} \left( \hat{\textbf{k}} \right) ~ e^{-i \textbf{k} \cdot \textbf{x}} ~ d^3 \textbf{k},
+\end{equation}
+\begin{equation}
+    \Pi_{ij} \left( \textbf{x}, t \right) = \frac{1}{(2\pi)^3} \int \Pi_{ij} \left( \textbf{k}, t \right) ~ e^{-i \textbf{k} \cdot \textbf{x}} ~ d^3 \textbf{k},
+\end{equation}
+donde $r = +, \times$ indexa las polarizaciones de las ondas y $e_{ij}^r$ es el tensor de polarización definido por:
+\begin{equation}
+    \begin{cases}
+        e_{ij}^+ \left( \hat{\textbf{k}} \right) = \hat{m}_i \hat{m}_j - \hat{n}_i \hat{n}_j\\
+        e_{ij}^\times \left( \hat{\textbf{k}} \right) = \hat{m}_i \hat{n}_j + \hat{m}_j \hat{n}_i,
+    \end{cases}
+\end{equation} 
+siendo $\hat{m}$ y $\hat{n}$ dos vectores unitarios ortogonales entre sí y ortogonales a la dirección de propagación de la onda $\hat{\textbf{k}}$. Estos tensores cumplen las siguientes propiedades de ortogonalidad y completitud
+\begin{equation}
+    \begin{cases}
+        e_{ij}^r \left( \hat{\textbf{k}} \right) e_{ij}^{r^\prime} \left( \hat{\textbf{k}} \right) = 2 \delta_{rr^\prime}\\
+        \displaystyle \sum_{r = +, \times} e_{ij}^r \left( \hat{\textbf{k}} \right) e_{lm}^r \left( \hat{\textbf{k}} \right) = P_{il} \left( \hat{\textbf{k}} \right) ~ P_{jm} \left( \hat{\textbf{k}} \right) + P_{im} \left( \hat{\textbf{k}} \right) ~ P_{jl} \left( \hat{\textbf{k}} \right) - P_{ij} \left( \hat{\textbf{k}} \right) ~ P_{lm} \left( \hat{\textbf{k}} \right),
+    \end{cases}
+\end{equation}
+donde $P_{ij} \left( \hat{\textbf{k}} \right) =  \delta_{ij} - \hat{k}_i \hat{k}_j$ es el proyector sobre el subespacio ortogonal a $\textbf{k}$, satisfaciendo $P_{ij} k_i = 0$ y $P_{ij} P_{jl} = P_{il}$. Con este proyector se puede construir el operador de polarización $\Lambda_{ij,lm}$, el cual, al ser contraído con el tensor $\Pi_{lm}$, extrae su componente transversal y de traza nula (el \textit{gauge} TT). Este operador se define como
+\begin{equation}
+    \Lambda_{ij,lm} \left( \hat{\textbf{k}} \right) = P_{il} \left( \hat{\textbf{k}} \right) ~ P_{jm} \left( \hat{\textbf{k}} \right) - \frac{1}{2} P_{ij} \left( \hat{\textbf{k}} \right) ~ P_{lm} \left( \hat{\textbf{k}} \right).
+\end{equation}
+
+A partir de este formalismo, la evolución espacial y temporal puede expresarse de manera mucho más compacta introduciendo el tiempo conforme ($d\eta = dt/a$). Transformando la ecuación de ondas al espacio de Fourier y operando con las derivadas conformes, se obtiene
 \begin{equation}\label{eqn:GWs}
-    h^{\prime \prime}_{ij} \left( \textbf{k}, t \right) + 2 \mathcal{H} h^\prime_{ij} \left( \textbf{k}, t \right) + k^2 h_{ij} \left( \textbf{k}, t \right) = \frac{2}{m_p^2} \Pi_{ij}^{TT} \left( \textbf{k}, t \right),
+    h^{\prime \prime}_{ij} \left( \textbf{k}, \eta \right) + 2 \mathcal{H} h^\prime_{ij} \left( \textbf{k}, \eta \right) + k^2 h_{ij} \left( \textbf{k}, \eta \right) = \frac{2}{m_p^2} \Pi_{ij}^{TT} \left( \textbf{k}, \eta \right),
 \end{equation}
 donde las primas ($^\prime$) representan la derivada respecto al tiempo conforme $\eta$, $\mathcal{H} = a^\prime/a = aH$ es el parámetro de Hubble conforme, y $\Pi_{ij}^{TT}$ es la componente transversal y de traza nula del tensor de estrés anisotrópico que actúa como fuente de las ondas \cite{Figueroa_2017_GW}.
 
-\section{Mecanismos de Producción}
+\section{Fondo estocástico de ondas gravitacionales}
 
-Desde el punto de vista observacional, las ondas gravitacionales pueden ser señales coherentes o pueden formar fondos estocásticos, denominados SGWB por sus siglas en inglés. Las primeras permiten identificar y aislar eventos o fuentes individuales específicas, pudiendo conocer con exactitud qué tipo de fenómeno las produce. Por el contrario, los fondos estocásticos se generan como una superposición incoherente de ondas, por lo que su detección no puede estar basada en aislar un evento en el tiempo, sino en buscar correlaciones en las señales medidas por múltiples detectores \cite{Christensen_2018, Renzini2022}. La detección de los fondos estocásticos se realiza a partir de definir una cantidad adimensional que cuantifica la amplitud de la deformación espacio-temporal, conocida como deformación característica o \textit{strain}, la cual se define como:
+Desde el punto de vista observacional, las ondas gravitacionales pueden manifestarse como señales coherentes o como fondos estocásticos. Las señales coherentes son generadas por eventos individuales y resolubles, lo que permite identificar con exactitud la fuente y la dinámica que las produjo; su medición, por tanto, no está ligada estrictamente a la correlación entre distintos detectores. Por el contrario, las ondas gravitacionales generadas por procesos globales en el universo temprano no conforman eventos aislados, sino que constituyen un Fondo Estocástico de Ondas Gravitacionales (SGWB, por sus siglas en inglés). Los mecanismos cosmológicos originan una superposición incoherente de ondas provenientes de todas las direcciones del espacio, por lo que su detección se basa fundamentalmente en buscar correlaciones en las señales medidas por múltiples detectores o puntos del espacio-tiempo \cite{Caprini_2020, Renzini2022}.
+
+La amplitud de este fondo cosmológico no es determinista y debe ser tratada rigurosamente como un campo aleatorio. Dado que solo disponemos de un único universo observable, el formalismo estadístico requiere hacer uso de la hipótesis ergódica, la cual establece una equivalencia entre promediar sobre un ensamble teórico de universos y promediar sobre volúmenes espaciales (o intervalos temporales) suficientemente grandes en nuestro propio universo \cite{Renzini2022}. La validez de esta hipótesis está garantizada por dos premisas cosmológicas básicas. En primer lugar, el universo es estadísticamente homogéneo e isótropo a grandes escalas. En segundo lugar, los mecanismos de producción primordial operan de forma causal en escalas sub-horizonte en el universo temprano, lo que asegura que los distintos volúmenes actuales del universo evolucionaron como regiones independientes con idénticas condiciones iniciales \cite{Renzini2022}.
+
+Como consecuencia directa de esta formulación, el SGWB primordial exhibe una serie de simetrías y propiedades estadísticas bien definidas \cite{Renzini2022}:
+\begin{itemize}
+    \item \textbf{Homogeneidad e isotropía estadísticas:} Las propiedades del fondo no dependen de la posición del observador ni de la dirección de observación.
+    \item \textbf{Estacionariedad:} Las correlaciones estadísticas del campo de ondas son invariantes ante traslaciones temporales.
+    \item \textbf{No Polarización:} Al no existir un marco de referencia preferencial en los procesos estocásticos primordiales, el fondo es intrínsecamente no polarizado. Esto implica que las dos polarizaciones tensoriales ($+$ y $\times$) se generan con igual amplitud y no presentan correlaciones cruzadas, a menos que el mecanismo físico subyacente viole explícitamente la paridad \cite{Renzini2022}.
+    \item \textbf{Gaussianidad:} Dado que el fondo estocástico es el resultado de la superposición macroscópica de una inmensa cantidad de regiones causales independientes, el Teorema Central del Límite garantiza que las fluctuaciones del campo métrico se aproximen fuertemente a un campo aleatorio Gaussiano \cite{Renzini2022}. 
+\end{itemize}
+
+Esta última propiedad implica que, dado que el primer momento estadístico del campo es nulo por definición ($\langle h_r \rangle = 0$), toda la información física de un SGWB Gaussiano queda completamente codificada en su función de correlación de dos puntos:
+\begin{equation}
+    \left\langle h_r(\textbf{k}, \eta) h_{r^\prime}^*(\textbf{k}^\prime, \eta) \right\rangle = \frac{8\pi^5}{k^3} \delta(\textbf{k} - \textbf{k}^\prime) \delta_{r r^\prime} h_c^2(k, \eta),
+\end{equation}
+donde la delta de Kronecker $\delta_{r r^\prime}$ refleja la despolarización (ausencia de correlación entre polarizaciones distintas), y $h_c(k, \eta)$ es la deformación característica (\textit{strain}) que cuantifica la amplitud espectral de las ondas \cite{Renzini2022}.
+
+Al sustituir esta estructura estadística en el tensor de energía-momento, se obtiene de forma directa la densidad de energía fraccional de las ondas gravitacionales:
+\begin{equation}
+    \Omega_{GW} (f) = \frac{1}{\rho_c} \frac{d \rho_{GW}}{d \log f}. 
+\end{equation}
+Esta cantidad espectral será la herramienta teórica central que se utilizará a lo largo de los capítulos siguientes para cuantificar la eficiencia de la producción de ondas durante el Recalentamiento y proyectar su observabilidad empírica. Finalmente, su relación analítica con la deformación característica evaluada en los detectores actuales está dada por:
 \begin{equation}\label{eqn:strain}
-    h_c^2 (f) = \frac{3 H_0^2}{4\pi^2 f^2} \Omega_{GW}(f), 
-\end{equation}
-siendo $\Omega_{GW} (f)$ la densidad de energía fraccional de las ondas gravitatorias, que se puede calcular a partir de la relación:
-\begin{equation}
-    \Omega_{GW}(f) = \frac{1}{\rho_c} \frac{d\rho_{GW}}{d\log f},
-\end{equation}
-\noindent
-donde $\rho_{GW}$ es la densidad de energía de las ondas gravitacionales. Para un fondo estocástico, esta última magnitud puede ser obtenida a partir de la expresión:
-\begin{equation}
-    \rho_{GW} = \frac{m_p^2}{4} \left\langle \dot{h}_{\alpha \beta} \dot{h}^{\alpha \beta} \right\rangle
+    h_c^2 (f) = \frac{3 H_0^2}{4\pi^2 f^2} \Omega_{GW} (f).
 \end{equation}
 
-Por otra parte, las ondas gravitacionales pueden clasificarse, según su origen, en astrofísicas y cosmológicas. Las de origen astrofísico son generadas por sistemas localizados y dinámicas de objetos compactos, tales como la coalescencia de sistemas binarios (agujeros negros o estrellas de neutrones), explosiones de supernovas o la rotación asimétrica de púlsares \cite{LIGO, Maggiore_2018}. En contraposición, las ondas gravitacionales cosmológicas provienen de fenómenos globales ocurridos en el universo temprano. Entre estos se incluyen las fluctuaciones cuánticas del vacío amplificadas durante la inflación (usualmente denominadas ondas gravitacionales primordiales), la dinámica de los campos durante el recalentamiento y la formación de defectos topológicos o transiciones de fase de primer orden \cite{Caprini_2020, Lozanov}. Resulta importante destacar que, mientras las fuentes astrofísicas pueden dar lugar tanto a eventos resolubles como a un fondo estocástico astrofísico, los mecanismos cosmológicos generan exclusivamente un fondo estocástico isotrópico y estacionario \cite{Caprini_2020}.
+\section{Fuentes de ondas}
 
-En este trabajo, el interés se centrará en las ondas gravitacionales de origen cosmológico generadas durante el Recalentamiento, como consecuencia del decaimiento del inflatón y la consecuente producción explosiva de partículas del campo hijo, tal como se describió en la sección \ref{sec:reheating}. En este escenario, la producción de ondas gravitacionales estará dictada por las perturbaciones del tensor de energía-momento de los campos de materia escalar, cuya componente de interés resulta:
+Según su origen físico, las ondas gravitacionales pueden dividirse a grandes rasgos en fuentes astrofísicas y cosmológicas. Las emisiones astrofísicas provienen de dinámicas altamente asimétricas de sistemas localizados y objetos compactos en el universo tardío, abarcando fenómenos como la coalescencia de sistemas binarios (agujeros negros o estrellas de neutrones), el colapso asimétrico en supernovas o la rotación de púlsares con deformaciones cuadrupolares \cite{LIGO, Maggiore_2018}. En marcada contraposición, las ondas gravitacionales cosmológicas se originan a partir de procesos globales y estocásticos ocurridos en el universo temprano. Esta categoría incluye a las fluctuaciones cuánticas del vacío amplificadas durante la inflación, las transiciones de fase de primer orden, la dinámica de redes de defectos topológicos y los procesos fuera del equilibrio térmico durante el Recalentamiento \cite{Caprini_2020, Lozanov}. 
+
+Es crucial destacar una distinción fenoménica central: mientras que los eventos astrofísicos pueden detectarse como señales individuales, transitorias y resolubles (o bien como un fondo estocástico residual si están muy lejanos), los mecanismos cosmológicos generan única y exclusivamente un fondo estocástico (SGWB) de carácter isótropo y estacionario \cite{Caprini_2020}. En el Cuadro \ref{table:AstrovsCosmo} se presenta una clasificación esquemática de la morfología esperada de la señal según el proceso generador.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{||c||c|c||}
+        \hline \hline Fuente & Fondos Estocásticos & Señales Coherentes / Resolubles \\
+        \hline \hline 
+        Astrofísicas & Rotación Asimétrica de Púlsares & Sistemas binarios compactos cercanos\\
+        & Sistemas binarios lejanos & Explosiones de supernovas\\
+        \hline & Transiciones de fase primordial & \\
+        Cosmológicas & Fluctuaciones cuánticas (Inflación) & - \\
+        & Dinámica de campos (Recalentamiento) & \\
+        \hline \hline
+    \end{tabular}
+    \caption{Clasificación de las fuentes de ondas gravitacionales según su origen físico y el carácter estadístico de la señal esperada en los detectores.}
+    \label{table:AstrovsCosmo}
+\end{table}
+
+Acorde al alcance de este trabajo, el enfoque analítico y numérico se centrará exclusivamente en la producción estocástica originada durante el Recalentamiento. Como se abordará detalladamente en los capítulos subsiguientes, la fuente matemática de estas ondas radica en el estrés anisotrópico generado por las fluctuaciones espaciales del campo inflatón y sus campos de decaimiento. La componente transversal y de traza nula (\textit{gauge} TT) del tensor de energía-momento que rige esta dinámica adopta la forma:
 \begin{equation}\label{eqn:PiTT}
-    \Pi_{ij}^{TT} = \left\{ \partial_i \phi \partial_j \phi + \partial_i \chi \partial_j \chi \right\}^{TT},
+    \Pi_{ij}^{TT} = \left\{ \partial_i \phi \partial_j \phi + \partial_i \chi \partial_j \chi \right\}^{TT}.
 \end{equation}
-siendo el subíndice $TT$ el operador de proyección sobre el gauge transversal y de traza nula. En el capítulo \ref{sec:cap3} se abordará un desarrollo a orden lineal de la dinámica de estos campos, para estudiar su impacto directo en la producción de ondas gravitacionales a partir de la ecuación (\ref{eqn:PiTT}) \cite{Dufaux_2007, Figueroa_2017_GW}. Posteriormente, en el capítulo \ref{sec:cap4}, se hará uso de simulaciones numéricas en redes para investigar cómo las dinámicas no lineales afectan y moldean el espectro de potencia de las ondas gravitacionales para distintos modelos de decaimiento del inflatón \cite{Figueroa2021, Figueroa2023}.
+En el Capítulo \ref{sec:cap3} se desarrollará la integración analítica a orden lineal de esta fuente para distintos potenciales inflacionarios \cite{Dufaux_2007, Figueroa_2017_GW}. Posteriormente, el Capítulo \ref{sec:cap4} se dedicará a la resolución computacional no perturbativa de la Ecuación (\ref{eqn:PiTT}) empleando redes espaciales tridimensionales, lo que permitirá capturar la totalidad de los fenómenos de retroacción que moldean el espectro observable \cite{Figueroa2021, Figueroa2023}.
 
 \section{Mecanismos de Detección}
 
-Para la detección de las ondas gravitacionales, existen diferentes experimentos diseñados para medir perturbaciones en el espacio-tiempo. Estos detectores operan en distintas bandas de frecuencia y poseen sensibilidades específicas, lo que los hace ideales para estudiar distintos tipos de fuentes, ya sean astrofísicas o cosmológicas.
+La verificación empírica de estas predicciones teóricas requiere instrumentos capaces de registrar perturbaciones subatómicas en la métrica del espacio-tiempo. Los arreglos experimentales actuales y propuestos operan en bandas de frecuencia muy dispares, dictadas por sus limitaciones tecnológicas y dimensiones físicas, lo cual determina su sensibilidad hacia fuentes astrofísicas específicas o fondos cosmológicos. Un mapa general del espacio de parámetros de frecuencias y deformación característica ($h_c$) se exhibe en la Figura \ref{fig:freqsvsstrains}.
 
-En la banda de frecuencias de los Hz a kHz, los detectores operan mediante interferometría láser, como es el caso del observatorio terrestre LIGO o el futuro observatorio espacial LISA (banda de los mHz). El esquema de funcionamiento se ilustra en la Figura \ref{fig:LIGO}, basado en un interferómetro de Michelson. En este arreglo, un haz láser es dividido por un \textit{beam splitter} viaja a través de dos brazos ortogonales. Al regresar, los haces interfieren sobre un fotodetector. El paso de una onda gravitacional altera diferencialmente la longitud de los brazos, lo que induce un corrimiento de fase y una variación en el patrón de interferencia medido \cite{LIGO, Maggiore_2018}.
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[scale = 0.8]
+        % Marco General
+        %% Formas
+        \draw (0,-2) rectangle (18.5,10);
+        \foreach \x in {0.5, 2.25, ..., 18}{\draw (\x,-2) -- ++(0,0.15);}
+        \foreach \y in {0,2,4,...,8}{\draw (0,\y) -- ++(0.15,0);}
+        %% Textos verticales
+        \node[left] at (0,-2) {$10^{-30}$};
+        \node[left] at (0,0) {$10^{-26}$};
+        \node[left] at (0,2) {$10^{-22}$};
+        \node[left] at (0,4) {$10^{-18}$};
+        \node[left] at (0,6) {$10^{-14}$};
+        \node[left] at (0,8) {$10^{-10}$};
+        \node[left] at (0,10) {$10^{-6}$};
+        \node[rotate=90] at (-2,4) {\LARGE Strain $(h_c)$};
+        %% Textos horizontales
+        \node[below] at (0.5,-2) {$10^{-10}$};
+        \node[below] at (2.25,-2) {$10^{-8}$};
+        \node[below] at (4,-2) {$10^{-6}$};
+        \node[below] at (5.75,-2) {$10^{-4}$};
+        \node[below] at (7.5,-2) {$10^{-2}$};
+        \node[below] at (9.25,-2) {$10^{0}$};
+        \node[below] at (11,-2) {$10^{2}$};
+        \node[below] at (12.75,-2) {$10^{4}$};
+        \node[below] at (14.5,-2) {$10^{6}$};
+        \node[below] at (16.25,-2) {$10^{8}$};
+        \node[below] at (18,-2) {$10^{10}$};
+        \node[below] at (9,-2.5) {\LARGE Frecuencia [Hz]};
+        %% Referencias 
+        \node at (1.5,8.75) {\small \textcolor{red!40!orange}{CMB}};
+        \node at (4,7.8) {\small \textcolor{orange!50!yellow}{\shortstack{Binarias de\\$\simeq 10^9$ M$_\odot$}}};
+        \node at (4.65,3.5) {\small \textcolor{green!80!blue}{\shortstack{Galaxias\\binarias\\irresolubles}}};
+        \node at (8.7,4.6) {\small \textcolor{green!50!blue}{\shortstack{Galaxias\\binarias\\resolubles}}};
+        \node at (6.8,5.75) {\small \textcolor{green!30!blue}{\shortstack{Binarias de\\$\simeq 10^6$ M$_\odot$}}};
+        \node at (11.2,3.5) {\small \textcolor{violet!50!white}{\shortstack{Inspiral de\\binarias\\compactas}}};
+        \node at (12.5,2) {\small \textcolor{violet!70!black}{Supernovas}};
+        \node at (13,1) {\small \textcolor{violet!20!black}{Púlsares}};
+        \node at (15.375,-0.5) {\small \textcolor{gray!70!black}{Recalentamiento}};
+
+        % Fuentes
+        %% Frecuencias Bajas
+        \filldraw[color = red!40!orange, opacity=0.3] (0.75,-2) -- (0.75,8.5) -- (2.75,7) -- (4.25,-2) -- cycle; 
+        \filldraw[color = orange!50!yellow, opacity=0.3] (1,7.75) -- (3.25,7) -- (3.25,-2) -- (1,-2) -- cycle;
+        %% Frecuencias medias
+        \filldraw[color = green!80!blue, opacity=0.3] (5.75,-2) -- (5.75,4.25) -- (6.4,3.5) -- (6.4,-2) -- cycle;
+        \filldraw[color = green!50!blue, opacity=0.3] (6.1,-2) -- (6.1,5) -- (8.5,3.4) -- (8.5,-2) -- cycle;
+        \filldraw[color = green!30!blue, opacity=0.5] (6.5,-2) -- (6.5,4.5) -- (7.5,4) -- (7.5,-2) -- cycle;
+        %% Frecuencias altas
+        \filldraw[color = violet!50!white, opacity=0.5] (9.75,-2) -- (9.75,3) -- (11.25,2) -- (11.25,-2) -- cycle;
+        \filldraw[color = violet!70!black, opacity=0.4] (11,-2) -- (11,1.8) -- (11.75,1.6) -- (11.75,-2) -- cycle;
+        \filldraw[color = violet!20!black, opacity=0.4] (10,-2) -- (10,1.5) -- (12,1.5) -- (12,-2) -- cycle;
+        %% Frecuencias ultra-altas
+        \filldraw[color = gray!70!black, opacity=0.4] (13.75,-2) -- (13.75,-1) -- (17,-1) -- (17,-2) -- cycle;
+    \end{tikzpicture}
+    \caption{Bandas de frecuencias y espectro de deformación característica esperado para diversos mecanismos astrofísicos y cosmológicos de producción de ondas gravitacionales. Gráfico elaborado en base a \cite{Moore_2015}.}
+    \label{fig:freqsvsstrains}
+\end{figure}
+
+En el régimen de altas frecuencias (Hz a kHz), la detección se realiza mediante interferometría láser terrestre, ejemplificada por la colaboración LIGO-Virgo-KAGRA. El esquema de funcionamiento (Figura \ref{fig:LIGO}) se basa en un interferómetro de Michelson: un divisor de haz (\textit{beam splitter}) separa un láser coherente en dos haces que recorren brazos ortogonales de longitud kilométrica. El paso de una onda gravitacional distorsiona la métrica, provocando un estiramiento y contracción diferencial en la longitud física de los brazos, lo que a su vez induce un corrimiento de fase detectable en el fotodiodo recombinador \cite{LIGO, Maggiore_2018}. Para explorar frecuencias más bajas (rango de los mHz), se requiere evadir el ruido sísmico terrestre, motivando el diseño de interferómetros espaciales como el proyecto LISA.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width = \linewidth]{figures/LIGO.jpg}
-    \caption{Esquema básico de un interferómetro de tipo Michelson utilizado para la detección de ondas gravitacionales. La diferencia de longitud efectiva en los brazos, inducida por el paso de la onda, genera un desfasaje detectable en el patrón de interferencia. Esquema representativo adaptado de la colaboración LIGO \cite{LIGO}.}
+    \caption{Esquema básico de un interferómetro de tipo Michelson operado por la colaboración LIGO. La perturbación métrica transversal induce una variación diferencial en los brazos, revelando la onda gravitacional a través de un patrón de interferencia desplazado \cite{LIGO}.}
     \label{fig:LIGO}
 \end{figure}
 
-Para la banda de muy bajas frecuencias (nHz), el principal mecanismo de detección son los \textit{Pulsar Timing Arrays} (PTAs). Los púlsares actúan como relojes astrofísicos de extrema precisión, emitiendo haces de radiación electromagnética de forma periódica. El paso de una onda gravitacional a través de la línea de visión modifica la métrica del espacio-tiempo, induciendo adelantos o retrasos en el tiempo de llegada de los pulsos (residuos de tiempo de llegada o ToA). Las colaboraciones de PTAs buscan detectar un fondo estocástico midiendo las correlaciones espaciales en los residuos temporales de una red de múltiples púlsares dispersos en la galaxia \cite{NANOGrav, Renzini2022}.
+En la banda de muy bajas frecuencias (nHz), la estrategia observacional dominante consiste en el uso de \textit{Pulsar Timing Arrays} (PTAs). Los púlsares de milisegundo funcionan como relojes astrofísicos de extraordinaria estabilidad. La propagación de una onda gravitacional a través de la línea de visión Tierra-Púlsar altera el tiempo de vuelo de los fotones, induciendo anomalías (adelantos o retrasos) en los tiempos de llegada de los pulsos (residuos ToA). Estas colaboraciones buscan aislar la firma de un fondo estocástico mediante el análisis de la correlación cruzada de los residuos temporales en una extensa red galáctica de púlsares \cite{NANOGrav, Renzini2022}.
 
-Para frecuencias de la escala del horizonte cosmológico, el fondo estocástico de ondas gravitacionales primordiales deja una huella observable en el fondo cósmico de microondas (CMB). Específicamente, las perturbaciones tensoriales generan un patrón de polarización tipo rotor, conocido como modos B. El estudio de estas anisotropías resulta complejo debido a que los modos B también son inducidos por el efecto de lente gravitacional (\textit{lensing}) ejercido por estructuras a gran escala y por la reionización que transforma modos E en B, tal como se observa en el espectro de la Figura \ref{fig:modosB} \cite{Baumann_2012, Planck}.
+Aún más abajo en frecuencia, aproximándose a la escala del horizonte cosmológico, las ondas gravitacionales primordiales imprimen una firma indirecta sobre el fondo cósmico de microondas (CMB). Las perturbaciones tensoriales inducen un patrón de polarización con divergencia nula y rotacional no nulo, denominado modos B. La confirmación observacional de estos modos primordiales es un desafío técnico formidable, ya que la débil señal compite fuertemente con la emisión galáctica de polvo y, fundamentalmente, con el efecto de lente gravitacional (\textit{lensing}) generado por la estructura a gran escala, el cual distorsiona geométricamente los abundantes modos E transformándolos en un fondo espurio de modos B a pequeñas escalas angulares (Figura \ref{fig:modosB}) \cite{Baumann_2012, Planck}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width = \linewidth]{figures/CMB_Bmodes.png}
-    \caption{Espectro de anisotropías en la temperatura y polarización del CMB en función de la separación angular. Los modos B generados por ondas gravitacionales primordiales dominan a grandes escalas angulares, mientras que a escalas menores el espectro está dominado por modos B inducidos por \textit{lensing} gravitacional. Imagen adaptada de \cite{Planck}.}
+    \includegraphics[width = 0.75\linewidth]{figures/CMB_Bmodes.png}
+    \caption{Espectro angular de potencia de las anisotropías de temperatura y polarización del CMB. A grandes escalas angulares (bajo multipolo $\ell$), se espera que dominen los modos B primordiales tensoriales. A escalas menores, el espectro queda dominado por la conversión geométrica de modos E en modos B inducida por el efecto de \textit{lensing} gravitacional \cite{Planck}.}
     \label{fig:modosB}
 \end{figure}
 
-Finalmente, los mecanismos de producción cosmológica durante el Recalentamiento del universo temprano (como los estudiados en este trabajo mediante \CosmoLattice) generan ondas gravitacionales de muy alta frecuencia (típicamente en el rango de los MHz a GHz). Estas señales quedan completamente fuera del rango de detectabilidad de LIGO, LISA o los PTAs. Para explorar esta banda espectral, en los últimos años se ha propuesto el uso de cavidades electromagnéticas resonantes. En presencia de un campo magnético estático intenso, una onda gravitacional de alta frecuencia puede excitar los modos de resonancia electromagnética dentro de la cavidad, operando como un detector altamente sensible a procesos no perturbativos de la física del inflatón \cite{Herman_2023, Berlin_2023, Mohanty_2026}.
+\vspace{3cm}
+
+Finalmente, la dinámica violenta del Recalentamiento inyecta ondas gravitacionales en el régimen de ultra-alta frecuencia (UHF), abarcando típicamente desde los MHz hasta los GHz. En esta ventana espectral, los interferómetros láser pierden sensibilidad debido a limitaciones impuestas por el ruido cuántico y el largo de los brazos. Una alternativa altamente prometedora para este régimen radica en el uso de cavidades electromagnéticas resonantes (EMRC). Estas cavidades explotan el efecto Gertsenshtein inverso: en presencia de un campo magnético estático de gran intensidad, una onda gravitacional incidente interacciona con el campo de fondo y excita modos electromagnéticos resonantes dentro de la cavidad. Este principio físico provee un método de detección sintonizable y de gran sensibilidad para registrar procesos no perturbativos de la era post-inflacionaria \cite{Herman_2023, Berlin_2023, Mohanty_2026}.

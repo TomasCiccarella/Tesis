@@ -4,23 +4,24 @@
 \contentsline {section}{\numberline {1.1}Inflación}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Recalentamiento}{5}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Ondas Gravitacionales}{8}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Descomposición SVT}{8}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Ondas Gravitacionales: Definición}{10}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Mecanismos de Producción}{12}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Mecanismos de Detección}{13}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Evolución lineal de los campos durante Preheating}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Resonancia Paramétrica}{16}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Análisis de Floquet}{19}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Producción lineal de ondas gravitacionales}{24}{section.3.3}%
-\contentsline {chapter}{\numberline {4}\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Estudio del potencial $\lambda \phi ^4$ a orden lineal}{28}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Los modelos a estudiar}{33}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Evolución del background}{36}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Comparación de espectros con $\omega _{eff} = 1/3$}{39}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Comparación de espectros con $\omega _{eff} = 0$}{43}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Sensibilidad observacional y perspectivas de detección}{52}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{55}{chapter.5}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{57}{chapter*.36}%
-\contentsline {chapter}{\numberline {A}Producción lineal de ondas gravitacionales}{60}{appendix.Alph1}%
-\contentsline {chapter}{\numberline {B}Condiciones iniciales \ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{66}{appendix.Alph2}%
-\contentsline {chapter}{\numberline {C}Reescaleo del espectro de \ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace al observable hoy}{70}{appendix.Alph3}%
+\contentsline {section}{\numberline {2.1}Perturbaciones: contexto cosmológico}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Ondas gravitacionales en un fondo cosmológico}{12}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Fondo estocástico de ondas gravitacionales}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Fuentes de ondas}{15}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Mecanismos de Detección}{17}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Evolución lineal de los campos durante Preheating}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Resonancia Paramétrica}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Análisis de Floquet}{23}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Producción lineal de ondas gravitacionales}{28}{section.3.3}%
+\contentsline {chapter}{\numberline {4}\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Estudio del potencial $\lambda \phi ^4$ a orden lineal}{32}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Los modelos a estudiar}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Evolución del background}{40}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Comparación de espectros con $\omega _{eff} = 1/3$}{43}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Comparación de espectros con $\omega _{eff} = 0$}{47}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Sensibilidad observacional y perspectivas de detección}{56}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{59}{chapter.5}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{61}{chapter*.38}%
+\contentsline {chapter}{\numberline {A}Producción lineal de ondas gravitacionales}{64}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {B}Condiciones iniciales \ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{70}{appendix.Alph2}%
+\contentsline {chapter}{\numberline {C}Reescaleo del espectro de \ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace al observable hoy}{74}{appendix.Alph3}%
