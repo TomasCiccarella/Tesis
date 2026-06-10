@@ -1,39 +1,136 @@
-\chapter{Introducción} \label{sec:Introduccion}
+\chapter{Cosmología} \label{sec:Introduccion}
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
-El modelo cosmológico estándar, conocido como $\Lambda$CDM, describe un universo en constante expansión desde una singularidad inicial (Big Bang) hasta la actualidad. Esta evolución cronológica y térmica se encuentra esquematizada en la Figura \ref{fig:Cosmo_etapas}. Según este paradigma, en los instantes más tempranos el universo experimentó una fase de expansión acelerada denominada Inflación, seguida inmediatamente por una etapa de Recalentamiento (\textit{Reheating}), procesos sobre los cuales se profundizará en las próximas secciones. 
+El modelo cosmológico estándar, conocido como $\Lambda$CDM, describe un universo en constante expansión desde una singularidad inicial (Big Bang) hasta la actualidad \cite{Weinberg, Baumann_2012}. Esta evolución cronológica y térmica se encuentra esquematizada en la Figura \ref{fig:Cosmo_etapas}. Según este paradigma, en los instantes más tempranos el universo experimentó una fase de expansión acelerada denominada Inflación, seguida inmediatamente por una etapa de Recalentamiento (\textit{reheating}), procesos sobre los cuales se profundizará en las próximas secciones. 
 
-Posterior a estas etapas, el universo entra en una fase dominada por la radiación. Durante este período, cuando la temperatura desciende a la escala de $\sim 1$ MeV, ocurre la Nucleosíntesis Primordial (BBN), dando lugar a la formación de los primeros núcleos atómicos ligeros. A medida que el universo continúa expandiéndose, la densidad de energía de la radiación decae más rápidamente ($\propto a^{-4}$) que la densidad de la materia no relativista ($\propto a^{-3}$). Esta diferencia en las tasas de dilución provoca que ambas densidades se igualen en un evento conocido como Equivalencia (\textit{Equality}), marcando el inicio de la era dominada por la materia. 
+Posterior a estas etapas, el universo entra en una fase dominada por la radiación \cite{Baumann_2012}. Durante este período, cuando la temperatura desciende a la escala de $\sim 1$ MeV, ocurre la Nucleosíntesis Primordial (BBN), dando lugar a la formación de los primeros núcleos atómicos ligeros. A medida que el universo continúa expandiéndose, la densidad de energía de la radiación decae más rápidamente ($\propto a^{-4}$) que la densidad de la materia no relativista ($\propto a^{-3}$). Esta diferencia en las tasas de dilución provoca que ambas densidades se igualen en un evento conocido como Equivalencia (\textit{equality}), marcando el inicio de la era dominada por la materia. 
 
-Más adelante, cuando la temperatura cae por debajo de $\sim 0.3$ eV, los electrones se combinan con los núcleos para formar átomos neutros en un proceso conocido como Recombinación. En este punto, los fotones dejan de interactuar fuertemente con el plasma, desacoplándose de la materia y viajando libremente a través del espacio; estos fotones constituyen lo que hoy observamos como el Fondo Cósmico de Microondas (CMB). Finalmente, la dominancia de la materia a lo largo de las épocas posteriores es lo que permite el colapso gravitatorio y la consecuente formación de estructuras a gran escala, como galaxias y cúmulos galácticos.
-
-En el contexto de la cosmología moderna, el estudio del universo suele dividirse en dos grandes regímenes: la cosmología del universo tardío (posterior a la emisión del CMB), centrada en la evolución de las estructuras a gran escala, y la cosmología del universo temprano (anterior al CMB). En este trabajo, el enfoque estará estrictamente dirigido a la física del universo muy temprano, abordando en detalle la dinámica de los campos durante la Inflación y el subsecuente Recalentamiento. 
+Más adelante, cuando la temperatura cae por debajo de $\sim 0.3$ eV, los electrones se combinan con los núcleos para formar átomos neutros en un proceso conocido como Recombinación. En este punto, los fotones dejan de interactuar fuertemente con el plasma, desacoplándose de la materia y viajando libremente a través del espacio; estos fotones constituyen lo que hoy observamos como el Fondo Cósmico de Microondas (CMB) \cite{Doddelson}. Finalmente, la dominancia de la materia a lo largo de las épocas posteriores es lo que permite el colapso gravitatorio y la consecuente formación de estructuras a gran escala, como galaxias y cúmulos galácticos.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.98\linewidth]{figures/Cosmologia_etapas.png}
+    \includegraphics[width=0.8\linewidth]{figures/Cosmologia_etapas.png}
     \caption{Cronología térmica del universo según el modelo $\Lambda$CDM. Se ilustran las etapas fundamentales desde el Big Bang hasta la actualidad, incluyendo la Inflación, el Recalentamiento, la era dominada por radiación (donde ocurre la BBN), la formación del Fondo Cósmico de Microondas (CMB) tras la Recombinación, y la época de formación de estructuras bajo dominancia de materia y energía oscura.}
     \label{fig:Cosmo_etapas}
 \end{figure}
 
+\vspace{3cm}
+
+El estudio formal de la Cosmología se realiza teniendo en consideración que, a grandes escalas, el universo es homogéneo e isótropo. Esta premisa, conocida como el Principio Cosmológico, determina que la geometría del espacio-tiempo está completamente descripta por la métrica de Friedmann-Lemaître-Robertson-Walker (FLRW), cuyo elemento de línea es \cite{Weinberg}:
+\begin{equation}
+    ds^2 = - dt^2 + a^2 (t) \left[ \frac{dr^2}{1 - K r^2} + r^2 \left( d\theta^2 + \sin^2 \theta ~ d\varphi^2 \right) \right],
+\end{equation}
+donde $a(t)$ representa el factor de escala, el cual cuantifica la expansión del universo en concordancia con la ley de Hubble. El parámetro $K$ determina la curvatura espacial intrínseca, pudiendo adoptar los valores de $+1$, $0$ o $-1$ para universos cerrados, planos o abiertos, respectivamente. En el marco del modelo estándar $\Lambda$CDM, y respaldado por las observaciones del CMB, se establece que el espacio es euclídeo, fijando de manera estricta $K = 0$ \cite{Planck}.
+
+Para describir el contenido de materia y energía en un universo homogéneo e isótropo, las fuentes se modelan macroscópicamente como un fluido ideal, cuyo tensor de energía-momento asociado adopta la forma \cite{Weinberg}:
+\begin{equation}
+    T_{\mu\nu} = (\rho + P) u_\mu u_\nu + P g_{\mu\nu},
+\end{equation}
+siendo $\rho$ la densidad de energía espectral y $P$ la presión isótropa del fluido. En un sistema de coordenadas comóviles (donde el fluido se encuentra localmente en reposo), la cuadrivelocidad adopta la forma $u^\mu = (1,0,0,0)$. Considerando una métrica plana ($K=0$), las componentes de este tensor se escriben como \cite{Baumann_2012}:
+\begin{equation}
+    T^\mu_{\nu} = \begin{pmatrix}
+        \rho & 0 & 0 & 0\\
+        0 & P & 0 & 0\\
+        0 & 0 & P & 0\\
+        0 & 0 & 0 & P
+    \end{pmatrix}.
+\end{equation}
+
+Al introducir este tensor de energía-momento y la métrica de FLRW en las ecuaciones de campo de Einstein, se deducen las ecuaciones de Friedmann, las cuales gobiernan la dinámica global del universo plano \cite{Weinberg, Doddelson}:
+\begin{equation}\label{eqn:Friedmann1}
+    \left(\frac{\dot{a}}{a}\right)^2 = \frac{8\pi G}{3} \rho,
+\end{equation}
+\begin{equation}\label{eqn:Friedmann2}
+    \frac{\ddot{a}}{a} = - \frac{4\pi G}{3} \left( \rho + 3 P \right).
+\end{equation}
+
+Asimismo, la Relatividad General impone de manera covariante la conservación del tensor de energía-momento, $\nabla^\mu T_{\mu\nu} = 0$. A partir de la componente temporal de esta ley hidrodinámica, se deriva la ecuación de continuidad, la cual explicita la tasa de dilución de la densidad de energía a medida que el espacio se expande \cite{Baumann_2012}:
+\begin{equation}\label{eqn:conservacion}
+    \dot{\rho} + 3 H \left( \rho + P \right) = 0,
+\end{equation}
+donde $H \equiv \dot{a}/a$ denota el parámetro de Hubble, el cual caracteriza la tasa instantánea de expansión cósmica.
+
+Debido a las identidades de Bianchi, las expresiones (\ref{eqn:Friedmann1}), (\ref{eqn:Friedmann2}) y (\ref{eqn:conservacion}) no son linealmente independientes entre sí; cualquiera de ellas puede derivarse formalmente a partir de las otras dos. Por lo tanto, se dispone de un sistema de dos ecuaciones diferenciales independientes para tres funciones incógnitas: $a(t)$, $\rho(t)$ y $P(t)$. Para cerrar el sistema y determinar unívocamente la evolución temporal, resulta necesario incorporar una tercera relación independiente conocida como la ecuación de estado, definida típicamente mediante un parámetro barotrópico constante $\omega$ \cite{Baumann_2012}:
+\begin{equation}
+    P = \omega \rho.
+\end{equation}
+En esta parametrización, el valor $\omega = 0$ describe analíticamente el comportamiento de la materia no relativista (polvo), $\omega = 1/3$ rige la dinámica de la radiación ultra-relativista y $\omega = -1$ representa la densidad de energía oscura o constante cosmológica. La combinación de estas relaciones permite caracterizar de forma completa las distintas eras cosmológicas del fondo homogéneo. En la sección siguiente, se introducirá el formalismo necesario para tratar los escenarios donde el universo abandona esta homogeneidad perfecta a través de perturbaciones locales.
+
+\section{Perturbaciones: contexto cosmológico}
+
+Si bien el modelo cosmológico estándar asume un fondo perfectamente homogéneo e isótropo a grandes escalas, la observación del universo revela una red de estructuras (galaxias, cúmulos) y anisotropías en el CMB. Para dar cuenta del origen y evolución de estas estructuras, se requiere relajar la hipótesis de homogeneidad estricta. Esto se logra introduciendo perturbaciones sobre la métrica del espacio-tiempo y sobre el tensor de energía-momento. De este modo, la descripción del universo se descompone en un fondo (\textit{background}) analítico exacto de tipo FLRW, al cual se le superpone una componente perturbativa que codifica las inhomogeneidades y anisotropías locales \cite{Doddelson, Weinberg}:
+\begin{equation}
+    g_{\mu\nu} = \bar{g}_{\mu\nu} + \delta g_{\mu\nu},
+\end{equation}
+siendo $\bar{g}_{\mu\nu}$ la métrica de fondo y $\delta g_{\mu\nu}$ la perturbación geométrica.
+
+Para el estudio sistemático de estas perturbaciones, se emplea habitualmente la descomposición SVT (Escalar-Vectorial-Tensorial). Este formalismo permite clasificar las perturbaciones métricas y materiales según su comportamiento bajo rotaciones espaciales. En una métrica de fondo de tipo FLRW, las simetrías espaciales garantizan que estos tres sectores evolucionen de manera completamente desacoplada a primer orden en teoría de perturbaciones \cite{Doddelson, Weinberg}.
+
+Al aplicar esta descomposición a la métrica, la perturbación $\delta g_{\mu\nu}$ se parametriza de la siguiente manera:
+\begin{equation}
+    \delta g_{\mu \nu} = \begin{cases}
+        \delta g_{00} = - 2 \phi\\
+        \delta g_{i0} = \partial_i B + S_i\\
+        \delta g_{ij} = - 2 \psi ~ \delta_{ij} + \left( \partial_i \partial_j - \frac{\delta_{ij}}{3} \nabla^2 \right) E + 2 \partial_{(i} F_{j)} + h_{ij}
+    \end{cases}
+\end{equation}
+sujeto a las condiciones de transversalidad y de traza nula: $\partial^i S_i = 0$, $\partial^i F_i = 0$, $\partial^j h_{ij} = 0$ y ${h_i}^i = 0$. En un universo en expansión, las perturbaciones de tipo vectorial ($S_i$ y $F_i$) decaen cinemáticamente ($\propto a^{-2}$) en ausencia de fuentes activas que las sostengan. Por consiguiente, su impacto dinámico resulta despreciable y carecen de interés para el presente trabajo.
+
+Por otro lado, las perturbaciones en el tensor de energía-momento se formulan análogamente:
+\begin{equation}
+    \delta T_{\mu \nu} = \begin{cases}
+         \delta T_{00} = \delta\rho\\
+         \delta T_{i0} = \partial_i u + u_i\\
+         \displaystyle \delta T_{ij} = \delta P ~ \delta_{ij} + \left( \partial_i \partial_j - \frac{\delta_{ij}}{3} \nabla^2 \right) \sigma + 2 \partial_{(i} v_{j)} + \Pi_{ij}
+    \end{cases}
+\end{equation}
+donde se debe cumplir $\partial^i u_i = 0$, $\partial^i v_i = 0$, $\partial^j \Pi_{ij} = 0$ y ${\Pi_i}^i = 0$. Al igual que en el sector geométrico, las componentes vectoriales $u_i$ y $v_i$ no resultarán de interés durante las etapas cosmológicas abordadas.
+
+La teoría de la Relatividad General es invariante ante difeomorfismos. A nivel perturbativo, esto se manifiesta como una libertad de \textit{gauge} bajo transformaciones de coordenadas infinitesimales $x^{\prime \mu} = x^\mu + \xi^\mu$. Bajo esta transformación, la métrica perturbada cambia según $\delta g_{\mu\nu}^\prime = \delta g_{\mu\nu} - 2 \partial_{(\mu} \xi_{\nu)}$. Para evitar ambigüedades físicas ligadas a la elección del sistema de coordenadas, resulta conveniente construir combinaciones lineales que permanezcan invariantes ante cambios de \textit{gauge}:
+\begin{equation}\label{eqn:Bardeen}
+    \begin{cases}
+        \Phi = \phi + \dot{B} - \frac{1}{2} \ddot{E}\\
+        \Theta = - 2 \psi - \frac{1}{3} \nabla^2 E
+    \end{cases}
+\end{equation}
+\begin{equation}
+    \Sigma_i = S_i - \dot{F}_i
+\end{equation}
+\begin{equation}
+    h_{ij} = h_{ij}
+\end{equation}
+siendo los escalares de la Ecuación (\ref{eqn:Bardeen}) los potenciales de Bardeen, herramientas analíticas esenciales para el tratamiento unívoco de las fluctuaciones primordiales \cite{Doddelson}. Es fundamental notar que la componente tensorial de la perturbación espacial ($h_{ij}$) es automáticamente invariante de \textit{gauge} a primer orden. 
+
+Al introducir estas perturbaciones invariantes en las ecuaciones de Einstein linealizadas, la simetría del espacio-tiempo garantiza el desacople de los sectores escalar, vectorial y tensorial. Si se evalúa este sistema en el límite estático del espacio plano (métrica de Minkowski), las ecuaciones de campo son:
+\begin{equation}
+    \begin{cases}
+        \displaystyle \nabla^2 \Theta = - \frac{1}{m^2_p} \rho\\
+        \displaystyle \nabla^2 \Phi = - \frac{1}{2 m_p^2} \left( \rho + 3 P - 3 \dot{u} \right)
+    \end{cases}
+\end{equation}
+\begin{equation}
+    \nabla^2 \Sigma_i = - \frac{2}{m^2_p} v_i
+\end{equation}
+\begin{equation}\label{eqn:Perturbacion_Tensorial}
+    \Box h_{ij} = - \frac{2}{m_p^2} \Pi_{ij}
+\end{equation} 
+
+Dado que el objetivo central de esta tesis es el análisis de las ondas gravitacionales, los capítulos siguientes se enfocarán exclusivamente en el sector tensorial, gobernado por la componente de estrés anisotrópico $\Pi_{ij}$.
+
 \section{Inflación}
 
-La etapa de Inflación se define como un período de expansión acelerada en el universo temprano. La implementación de este mecanismo resulta fundamental para resolver las inconsistencias del modelo cosmológico estándar, principalmente: el problema del horizonte, el problema de la planitud y la sobreabundancia de reliquias topológicas \cite{Baumann_2012, Doddelson}. En primer lugar, la expansión exponencial resuelve el problema del horizonte al establecer que regiones del universo que hoy observamos espacialmente desconectadas, estuvieron en contacto causal previo o durante la inflación, lo cual justifica la extrema isotropía y homogeneidad del fondo cósmico de microondas \cite{Weinberg}. En segundo lugar, soluciona el problema de la planitud, ya que el drástico estiramiento del espacio-tiempo reduce cualquier curvatura espacial inicial\cite{Peter_2009}. A su vez, esta rápida expansión diluye la densidad de defectos topológicos, como los monopolos magnéticos predichos por las Teorías de Gran Unificación (GUT), reduciéndolos a niveles inobservables en el universo actual \cite{Baumann_2012}.
+La etapa de Inflación se define como un período de expansión acelerada en el universo muy temprano. La introducción de este mecanismo resulta fundamental para resolver las inconsistencias del modelo cosmológico estándar, principalmente: el problema del horizonte, el problema de la planitud y la sobreabundancia de reliquias topológicas \cite{Baumann_2012, Doddelson}. En primer lugar, la expansión exponencial resuelve el problema del horizonte al establecer que regiones del universo que hoy observamos espacialmente desconectadas, estuvieron en contacto causal previo o durante la inflación, lo cual justifica la extrema isotropía y homogeneidad del fondo cósmico de microondas \cite{Weinberg}. En segundo lugar, soluciona el problema de la planitud, ya que el drástico estiramiento del espacio-tiempo reduce exponencialmente cualquier curvatura espacial inicial \cite{Peter_2009}. A su vez, esta rápida expansión diluye la densidad de defectos topológicos, como los monopolos magnéticos predichos por las Teorías de Gran Unificación (GUT), reduciéndolos a niveles inobservables en el universo actual \cite{Baumann_2012}.
 
-El modelo más sencillo de Inflación consta en trabajar con un único campo escalar denominado como inflatón, con un potencial $V(\phi)$ tal que la acción que dá la dinámica de este campo es
+El modelo inflacionario más sencillo (\textit{single-field inflation}) consiste en considerar la dinámica de un único campo escalar, denominado inflatón. La acción que rige la dinámica de este campo $\phi$ bajo un potencial $V(\phi)$ está dada por:
 \begin{equation}
-    S = -\int \sqrt{-g} \left[ \frac{1}{2} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi + V(\phi) \right] ~ d^4 x,
+    S = -\int \sqrt{-g} \left[ \frac{1}{2} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi + V(\phi) \right] d^4 x.
 \end{equation}
-dónde $\phi$ representa al inflatón. Con esta acción se puede obtener un tensor de energía-momento
+A partir de esta acción, variando respecto a la métrica, se obtiene el tensor de energía-momento asociado al campo escalar:
 \begin{equation}
-    T_{\mu \nu} = \partial_\mu \phi \partial^\nu \phi - g_{\mu \nu} \left[ \frac{1}{2} g^{\alpha \beta} \partial_\alpha \phi \partial_\beta \phi + V(\phi) \right],
+    T_{\mu \nu} = \partial_\mu \phi \partial_\nu \phi - g_{\mu \nu} \left[ \frac{1}{2} g^{\alpha \beta} \partial_\alpha \phi \partial_\beta \phi + V(\phi) \right].
 \end{equation}
-el cual comparando con el tensor de energía-momento de un fluido ideal
-\begin{equation}
-    T_{\mu\nu} = (\rho + P) u_\mu u_\nu + P g_{\mu\nu}
-\end{equation}
-junto con que en un contexto cosmológico por el principio copernicano $u^\mu = (1,0,0,0)$, nos permite obtener un valor para la densidad de energía y la presión en términos del campo como
+Considerando que la homogeneidad exigida por el Principio Cosmológico implica que el campo solo puede depender del tiempo ($\phi = \phi(t)$), y adoptando un sistema de coordenadas comóvil con $u^\mu = (1,0,0,0)$, la comparación de esta expresión con el tensor de energía-momento de un fluido ideal ($T_{\mu\nu} = (\rho + P) u_\mu u_\nu + P g_{\mu\nu}$) permite identificar la densidad de energía y la presión efectiva del inflatón:
 \begin{equation}
     \rho = \frac{1}{2} \dot{\phi}^2 + V(\phi),
 \end{equation}
@@ -41,30 +138,23 @@ junto con que en un contexto cosmológico por el principio copernicano $u^\mu = 
     P = \frac{1}{2} \dot{\phi}^2 - V(\phi).
 \end{equation}
 
-Por otro lado, la dinámica del universo va a estar regida por una métrica de tipo FLRW, la cual a partir de las ecuaciones de Enistein permite armarnos las ecuaciones de Friedmann
-\begin{equation}
-    \frac{\dot{a}^2}{a^2} = \frac{8}{3} \pi G \rho
-\end{equation}
-\begin{equation}
-    \frac{\ddot{a}}{a} = - \frac{4}{3} \pi G \left( \rho + 3 P \right) 
-\end{equation}
-siendo $a$ el factor de escala del universo que dá idea del tamaño relativo del mismo. A partir de todo ésto se puede observar que si $\dot{\phi}^2 \ll V(\phi)$, la presión del fluido efectivo se vuelve negativa ($P \simeq -\rho$) y tendremos una expansión acelerada del universo. A esta exigencia cinemática se la conoce como condición de rodadura lenta o \textit{slow-roll}. En la Figura \ref{fig:slowroll} se muestra un esquema típico para un modelo de Starobinsky, donde se puede pensar intuitivamente que el inflatón ``rueda'' lentamente sobre la región plana del potencial. Cuando la pendiente se vuelve pronunciada, el campo adquiere la energía cinética suficiente para romper la condición anterior, poniendo fin a la etapa inflacionaria. El marco teórico general de la dinámica de este único campo escalar, así como la derivación de sus parámetros cinemáticos asociados, forman la base de los modelos inflacionarios más sencillos \cite{Doddelson, Weinberg, Baumann_2012,Elia_2025}.
+A partir de esto, y analizando la segunda ecuación de Friedmann, se observa que si la energía cinética del campo es subdominante frente a la energía potencial ($\dot{\phi}^2 \ll V(\phi)$), la presión del fluido efectivo se vuelve negativa ($P \simeq -V(\phi) \simeq -\rho$). Esta condición termodinámica produce una expansión acelerada del espacio-tiempo ($\ddot{a} > 0$). A esta exigencia cinemática se la conoce como condición de rodadura lenta o \textit{slow-roll}. En la Figura \ref{fig:slowroll} se muestra un esquema típico para un potencial inflacionario (como el modelo de Starobinsky), donde se puede pensar intuitivamente que el inflatón ``rueda'' lentamente sobre la región plana. Cuando la pendiente se vuelve pronunciada, el campo adquiere la energía cinética suficiente para romper la condición anterior, poniendo fin a la etapa inflacionaria. El marco teórico general de la dinámica de este único campo escalar forma la base predictiva de los modelos inflacionarios contemporáneos \cite{Doddelson, Weinberg, Baumann_2012, Elia_2025}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width = \linewidth]{figures/reheating.pdf}
-    \caption{Esquema típico de un potencial inflacionario. A lo largo de la región sombreada en verde ocurre la expansión acelerada, en ésta el inflatón rueda lentamente en dirección al mínimo hasta que su energía cinética resulta comparable con la potencial, dando por finalizada la inflación. Cuando las energías son comparables, se entra en el Recalentamiento marcado como la zona sombreada en naranja, y en esta etapa el inflatón ha perdido suficiente energía debido a la expansión del universo como para no poder regresar a la región plana, por lo que terminará oscilando en torno al mínimo.}
+    \caption{Esquema típico de un potencial inflacionario. A lo largo de la región sombreada en verde ocurre la expansión acelerada, en la cual el inflatón rueda lentamente en dirección al mínimo hasta que su energía cinética resulta comparable con la potencial, dando por finalizada la inflación. Posteriormente, se ingresa al Recalentamiento (zona sombreada en naranja), etapa en la cual el campo oscila en torno a su mínimo global, transfiriendo su energía a los demás grados de libertad del universo.}
     \label{fig:slowroll}
 \end{figure}
 
-Para caracterizar la evolución del parámetro de Hubble  durante la época inflacionaria, se suelen utilizar magnitudes conocidas como parámetros de \textit{slow-roll} tales como
+Para caracterizar la viabilidad y duración de esta época, resulta conveniente definir los parámetros de \textit{slow-roll} asociados a la morfología del potencial:
 \begin{equation}
-    \epsilon = \frac{d}{dt} \left( \frac{1}{H} \right) = \frac{m_p^2}{2} \left[ \frac{V^\prime (\phi)}{V(\phi)} \right]^2,
+    \epsilon_V = \frac{m_p^2}{2} \left[ \frac{V^\prime (\phi)}{V(\phi)} \right]^2,
 \end{equation}
 \begin{equation}
-    \eta = \frac{\ddot{\phi}}{H \dot{\phi}} = \epsilon - m_p^2 \frac{V^{\prime \prime} (\phi)}{V(\phi)},
+    \eta_V = m_p^2 \frac{V^{\prime \prime} (\phi)}{V(\phi)},
 \end{equation}
-siendo $m_p$ la masa de Planck reducida y $H$ el parámetro de Hubble. Estos parámetros son tales que cumplen $\epsilon, \eta \ll 1$ durante Inflación y nos permiten marcar un momento final para esta época como el momento en el cual $\epsilon, \eta \simeq 1$, dando inicio a la época que se conoce como Recalentamiento o \textit{Reheating}. Esto último se encuentra esquematizado en la zona naranja de la Figura \ref{fig:slowroll} dónde $\phi_{end}$ es el valor de la amplitud del campo cuando termina la inflación.
+siendo $m_p$ la masa de Planck reducida. Durante el régimen inflacionario sostenido, el potencial debe ser suficientemente plano, lo que se traduce en las condiciones $\epsilon_V \ll 1$ y $|\eta_V| \ll 1$. A medida que el campo evoluciona hacia el mínimo, la pendiente se acentúa. El final de la inflación se define formalmente en el instante en que se viola la primera de estas condiciones ($\epsilon_V(\phi_{end}) \simeq 1$), marcando el inicio de la época conocida como Recalentamiento o \textit{Reheating}. Este proceso dinámico se encuentra esquematizado en la zona naranja de la Figura \ref{fig:slowroll}, donde $\phi_{end}$ representa la amplitud del campo en el momento exacto en que cesa la expansión acelerada.
 
 \section{Recalentamiento}\label{sec:reheating}
 
@@ -72,7 +162,7 @@ Una vez finalizada la etapa de Inflación, el universo experimenta una transici�
 
 Para el modelado analítico y numérico de este decaimiento, se asume que el inflatón ($\phi$) decae en nuevos grados de libertad, denominados campos hijos ($\chi$), a través de un término de interacción directo. En el contexto de un estudio no perturbativo, la dinámica del sistema queda determinada por una acción de la forma:
 \begin{equation}
-    S = \int d^4x \sqrt{-g} \left[ \frac{m_p^2}{2} R - \frac{1}{2} \partial_\mu \phi \partial^\mu \phi - \frac{1}{2} \partial_\mu \chi \partial^\mu \chi - V(\phi) - \mathcal{I} (\phi, \chi)  \right],
+    S = \int \sqrt{-g} \left[ \frac{m_p^2}{2} R - \frac{1}{2} \partial_\mu \phi \partial^\mu \phi - \frac{1}{2} \partial_\mu \chi \partial^\mu \chi - V(\phi) - \mathcal{I} (\phi, \chi)  \right] d^4 x,
 \end{equation}
 donde $\mathcal{I} (\phi, \chi)$ representa el acoplamiento específico entre los campos. Esta formulación rige la evolución del sistema durante el \textit{Preheating}, dictaminando la tasa de creación de partículas. En el Capítulo \ref{sec:cap3}, se abordará en detalle la dinámica de estos campos a orden lineal para diversos potenciales, y se establecerá su vínculo con la generación de un fondo estocástico de ondas gravitacionales.
 

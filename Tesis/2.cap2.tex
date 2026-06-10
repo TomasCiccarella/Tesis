@@ -90,63 +90,6 @@ De este modo, al aplicar la elección del \textit{gauge} TT en la Ecuación (\re
 \end{equation}
 En las secciones siguientes, se contextualizarán estas perturbaciones en un escenario cosmológico, con el fin de derivar la ecuación que gobierna la propagación de las ondas gravitacionales en un universo en expansión.
 
-\section{Perturbaciones: contexto cosmológico}
-
-La descomposición SVT (Escalar-Vectorial-Tensorial) permite separar las perturbaciones métricas y del tensor de energía-momento según su comportamiento bajo rotaciones espaciales. En una métrica de fondo cosmológica de tipo FLRW, la homogeneidad e isotropía espaciales garantizan que estos tres sectores evolucionen de manera completamente desacoplada a primer orden en la teoría de perturbaciones \cite{Doddelson, Weinberg}.
-
-Al aplicar esta descomposición a una métrica perturbada de la forma $g_{\mu\nu} = \bar{g}_{\mu\nu} + \delta g_{\mu\nu}$, la perturbación $\delta g_{\mu\nu}$ se expresa de la siguiente manera:
-\begin{equation}
-    \delta g_{\mu \nu} = \begin{cases}
-        \delta g_{00} = - 2 \phi\\
-        \delta g_{i0} = \partial_i B + S_i\\
-        \delta g_{ij} = - 2 \psi ~ \delta_{ij} + \left( \partial_i \partial_j - \frac{\delta_{ij}}{3} \nabla^2 \right) E + 2 \partial_{(i} F_{j)} + h_{ij}
-    \end{cases}
-\end{equation}
-donde las condiciones de transversalidad y de traza nula implican $\partial^i S_i = 0$, $\partial^i F_i = 0$, $\partial^j h_{ij} = 0$ y ${h_i}^i = 0$. En un universo en expansión, las perturbaciones de tipo vectorial ($S_i$ y $F_i$) en ausencia de fuentes activas decaen cinemáticamente con el factor de escala (según $a^{-2}$). Por ello, su consideración es despreciable y por tanto carece de interés para el presente trabajo.
-
-\vspace{3cm}
-
-Para el tensor de energía-momento perturbado, esta descomposición se formula análogamente:
-\begin{equation}
-    T_{\mu \nu} = \begin{cases}
-         T_{00} = \rho\\
-         T_{i0} = \partial_i u + u_i\\
-         \displaystyle T_{ij} = P ~ \delta_{ij} + \left( \partial_i \partial_j - \frac{\delta_{ij}}{3} \nabla^2 \right) \sigma + 2 \partial_{(i} v_{j)} + \Pi_{ij}
-    \end{cases}
-\end{equation}
-donde se debe cumplir $\partial^i u_i = 0$, $\partial^i v_i = 0$, $\partial^j \Pi_{ij} = 0$ y ${\Pi_i}^i = 0$. Al igual que en el sector geométrico, las componentes vectoriales $u_i$ y $v_i$ no resultarán de interés durante las etapas cosmológicas analizadas.
-
-La teoría de la Relatividad General es invariante ante difeomorfismos. A nivel perturbativo, esto se traduce en una libertad de \textit{gauge} bajo transformaciones de coordenadas infinitesimales $x^{\prime \mu} = x^\mu + \xi^\mu$. Bajo esta transformación, la métrica perturbada cambia según $\delta g_{\mu\nu}^\prime = \delta g_{\mu\nu} - 2 \partial_{(\mu} \xi_{\nu)}$. Por ello, resulta conveniente construir combinaciones lineales de estas variables que permanezcan invariantes ante cambios de \textit{gauge}:
-\begin{equation}\label{eqn:Bardeen}
-    \begin{cases}
-        \Phi = \phi + \dot{B} - \frac{1}{2} \ddot{E}\\
-        \Theta = - 2 \psi - \frac{1}{3} \nabla^2 E
-    \end{cases}
-\end{equation}
-\begin{equation}
-    \Sigma_i = S_i - \dot{F}_i
-\end{equation}
-\begin{equation}
-    h_{ij} = h_{ij}
-\end{equation}
-siendo los escalares de la Ecuación (\ref{eqn:Bardeen}) los potenciales de Bardeen\cite{Doddelson}. Además, resulta fundamental notar que la parte tensorial de la perturbación espacial ($h_{ij}$) es automáticamente invariante de \textit{gauge} a primer orden. 
-
-Al introducir estas perturbaciones invariantes en las ecuaciones de Einstein linealizadas, la simetría del espacio-tiempo garantiza que los sectores escalar, vectorial y tensorial se desacoplen. Se puede notar que si se evalúa este sistema en el límite estático de espacio plano (métrica de Minkowski), las ecuaciones para las perturbaciones métricas adoptan la siguiente forma:
-\begin{equation}
-    \begin{cases}
-        \displaystyle \nabla^2 \Theta = - \frac{1}{m^2_p} \rho\\
-        \displaystyle \nabla^2 \Phi = - \frac{1}{2 m_p^2} \left( \rho + 3 P - 3 \dot{u} \right)
-    \end{cases}
-\end{equation}
-\begin{equation}
-    \nabla^2 \Sigma_i = - \frac{2}{m^2_p} v_i
-\end{equation}
-\begin{equation}\label{eqn:Perturbacion_Tensorial}
-    \Box h_{ij} = - \frac{2}{m_p^2} \Pi_{ij}
-\end{equation} 
-
-Dado que el objetivo central de esta tesis es el análisis de las ondas gravitacionales, nos enfocaremos exclusivamente en el sector tensorial. La dinámica de estas perturbaciones en un universo en expansión realista estará regida por la componente transversal y de traza nula del tensor de energía-momento ($\Pi_{ij}$), conduciendo a la ecuación de onda cosmológica que se derivará en la siguiente sección.
-
 \section{Ondas gravitacionales en un fondo cosmológico}
 
 Las perturbaciones métricas en espacios curvos para el tensor de energía-momento están dadas por el tensor efectivo
@@ -297,7 +240,7 @@ La verificación empírica de estas predicciones teóricas requiere instrumentos
         \node[below] at (18,-2) {$10^{10}$};
         \node[below] at (9,-3) {\LARGE Frecuencia [Hz]};
         %% Referencias 
-        \node at (1.5,9) {\small \textcolor{red!40!orange}{\shortstack{Fluctuaciones\\cuánticas}}};
+        \node at (2.4,9.25) {\small \textcolor{red!40!orange}{\shortstack{Binarias de agujeros\\negros super masivos}}};
         \node at (4,7.8) {\small \textcolor{orange!50!yellow}{\shortstack{Binarias de\\$\simeq 10^9$ M$_\odot$}}};
         \node at (4.65,3.5) {\small \textcolor{green!80!blue}{\shortstack{Galaxias\\binarias\\irresolubles}}};
         \node at (8.7,4.6) {\small \textcolor{green!50!blue}{\shortstack{Galaxias\\binarias\\resolubles}}};
@@ -305,7 +248,7 @@ La verificación empírica de estas predicciones teóricas requiere instrumentos
         \node at (11.2,3.5) {\small \textcolor{violet!50!white}{\shortstack{Inspiral de\\binarias\\compactas}}};
         \node at (12.5,2) {\small \textcolor{violet!70!black}{Supernovas}};
         \node at (13,1) {\small \textcolor{violet!20!black}{Púlsares}};
-        \node at (15.375,-0.4) {\small \textcolor{gray!70!black}{\shortstack{Dinamica de\\campos de materia}}};
+        \node at (15.375,-0.2) {\small \textcolor{gray!70!black}{\shortstack{Dinamica de\\campos de materia\\(Recalentamiento)}}};
 
         % Fuentes
         %% Frecuencias Bajas
