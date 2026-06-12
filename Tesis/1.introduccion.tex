@@ -137,8 +137,7 @@ Considerando que la homogeneidad exigida por el Principio Cosmológico implica q
 \begin{equation}
     P = \frac{1}{2} \dot{\phi}^2 - V(\phi).
 \end{equation}
-
-A partir de esto, y analizando la segunda ecuación de Friedmann, se observa que si la energía cinética del campo es subdominante frente a la energía potencial ($\dot{\phi}^2 \ll V(\phi)$), la presión del fluido efectivo se vuelve negativa ($P \simeq -V(\phi) \simeq -\rho$). Esta condición termodinámica produce una expansión acelerada del espacio-tiempo ($\ddot{a} > 0$). A esta exigencia cinemática se la conoce como condición de rodadura lenta o \textit{slow-roll}. En la Figura \ref{fig:slowroll} se muestra un esquema típico para un potencial inflacionario (como el modelo de Starobinsky), donde se puede pensar intuitivamente que el inflatón ``rueda'' lentamente sobre la región plana. Cuando la pendiente se vuelve pronunciada, el campo adquiere la energía cinética suficiente para romper la condición anterior, poniendo fin a la etapa inflacionaria. El marco teórico general de la dinámica de este único campo escalar forma la base predictiva de los modelos inflacionarios contemporáneos \cite{Doddelson, Weinberg, Baumann_2012, Elia_2025}.
+A partir de esto, y analizando la segunda ecuación de Friedmann, se observa que si la energía potencial es dominante frente a la cinética ($\dot{\phi}^2 \ll V(\phi)$), la presión del fluido efectivo se vuelve negativa ($P \simeq -V(\phi) \simeq -\rho$). Esta condición termodinámica produce una expansión acelerada del espacio-tiempo ($\ddot{a} > 0$). A esta exigencia cinemática se la conoce como condición de rodadura lenta o \textit{slow-roll}. En la Figura \ref{fig:slowroll} se muestra un esquema típico para un potencial inflacionario (como el modelo de Starobinsky), donde se puede pensar intuitivamente que el inflatón ``rueda'' lentamente sobre la región plana. Cuando la pendiente se vuelve pronunciada, el campo adquiere la energía cinética suficiente para romper la condición anterior, poniendo fin a la etapa inflacionaria. El marco teórico general de la dinámica de este único campo escalar forma la base predictiva de los modelos inflacionarios contemporáneos \cite{Doddelson, Weinberg, Baumann_2012, Elia_2025}.
 
 \begin{figure}[htbp]
     \centering
@@ -147,18 +146,36 @@ A partir de esto, y analizando la segunda ecuación de Friedmann, se observa que
     \label{fig:slowroll}
 \end{figure}
 
-Para caracterizar la viabilidad y duración de esta época, resulta conveniente definir los parámetros de \textit{slow-roll} asociados a la morfología del potencial:
+\vspace{3cm}
+
+Para caracterizar la viabilidad y duración de esta época, resulta conveniente definir los parámetros de \textit{slow-roll} asociados a la forma del potencial:
 \begin{equation}
-    \epsilon_V = \frac{m_p^2}{2} \left[ \frac{V^\prime (\phi)}{V(\phi)} \right]^2,
+    \epsilon = \frac{m_p^2}{2} \left[ \frac{V^\prime (\phi)}{V(\phi)} \right]^2,
 \end{equation}
 \begin{equation}
-    \eta_V = m_p^2 \frac{V^{\prime \prime} (\phi)}{V(\phi)},
+    \eta = m_p^2 \frac{V^{\prime \prime} (\phi)}{V(\phi)},
 \end{equation}
-siendo $m_p$ la masa de Planck reducida. Durante el régimen inflacionario sostenido, el potencial debe ser suficientemente plano, lo que se traduce en las condiciones $\epsilon_V \ll 1$ y $|\eta_V| \ll 1$. A medida que el campo evoluciona hacia el mínimo, la pendiente se acentúa. El final de la inflación se define formalmente en el instante en que se viola la primera de estas condiciones ($\epsilon_V(\phi_{end}) \simeq 1$), marcando el inicio de la época conocida como Recalentamiento o \textit{Reheating}. Este proceso dinámico se encuentra esquematizado en la zona naranja de la Figura \ref{fig:slowroll}, donde $\phi_{end}$ representa la amplitud del campo en el momento exacto en que cesa la expansión acelerada.
+siendo $m_p$ la masa de Planck reducida. Durante el régimen inflacionario, el potencial debe ser suficientemente plano, lo que se traduce en las condiciones $\epsilon \ll 1$ y $|\eta| \ll 1$. A medida que el campo evoluciona hacia el mínimo, la pendiente se acentúa, de modo tal que el final de la inflación se define formalmente en el instante en que se violan estas condiciones ($\epsilon (\phi_{end}), \eta (\phi_{end}) \simeq 1$), marcando el inicio de la época conocida como Recalentamiento o \textit{Reheating}. Este período se encuentra esquematizado en la zona naranja de la Figura \ref{fig:slowroll}, donde $\phi_{end}$ representa la amplitud del campo en el momento exacto en que la Inflación termina.
+
+La etapa inflacionaria, además de ser un mecanismo que resuelve las inconsistencias del modelo de fondo, la misma permite explicar el origen de las estructuras a gran escala del universo actual. Durante la violenta expansión exponencial, las fluctuaciones cuánticas del vacío del campo inflatón y de la métrica del espacio-tiempo son estiradas macroscópicamente, cruzando el horizonte de Hubble y quedando ``congeladas'' como perturbaciones clásicas \cite{Baumann_2012}. Físicamente, esto implica que la Inflación no concluye exactamente al mismo tiempo en todos los puntos del espacio. Estos leves desfasajes temporales ($\delta t \simeq \delta\phi/\dot{\phi}$) en el fin de la rodadura lenta generan perturbaciones locales en la densidad de energía del universo ($\delta\rho/\rho \sim H^2/\dot{\phi}$). Estas inhomogeneidades proveen las condiciones iniciales (``semillas'') para el posterior colapso gravitatorio que formará las galaxias y cúmulos, además de dejar una huella en las anisotropías de temperatura del Fondo Cósmico de Microondas (CMB) \cite{Doddelson, Baumann_2012}. 
+
+Como se mencionó previamente, la descomposición SVT implica que estas fluctuaciones primordiales se desacoplan en dos sectores de interés observacional: las perturbaciones escalares (o de curvatura) y las perturbaciones tensoriales (ondas gravitacionales primordiales). La estadística de estas perturbaciones suele caracterizarse en el espacio de Fourier mediante sus respectivos espectros de potencias. Para el sector escalar, el espectro de la perturbación de curvatura $\mathcal{R}$ se parametriza fenomenológicamente como una ley de potencias:
+\begin{equation}
+    \mathcal{P}_{\mathcal{R}}(k) = A_s \left( \frac{k}{k_p} \right)^{n_s - 1},
+\end{equation}
+donde $A_s$ es la amplitud de las perturbaciones escalares, $k_p$ es una escala de pivote de referencia, y $n_s$ es el índice espectral escalar. De manera análoga, las fluctuaciones tensoriales del vacío originan un espectro de potencias para las ondas gravitacionales primordiales dado por:
+\begin{equation}
+    \mathcal{P}_{T}(k) = A_T \left( \frac{k}{k_p} \right)^{n_T} = r A_s \left( \frac{k}{k_p} \right)^{n_T},
+\end{equation}
+siendo $n_T$ el índice espectral tensorial y $r \equiv A_T / A_s$ el cociente escalar-tensorial (\textit{tensor-to-scalar ratio}), un parámetro que cuantifica la amplitud de las ondas gravitacionales relativa a las perturbaciones de densidad \cite{Baumann_2012}.
+
+Para que un modelo inflacionario sea considerado viable, las predicciones teóricas de sus parámetros de \textit{slow-roll} evaluados al momento de cruce del horizonte deben ser capaces de reproducir los valores observables de $n_s$ y $r$. En la actualidad, las mediciones de altísima precisión de la colaboración \textit{Planck} estipulan una amplitud de perturbaciones $\delta\rho/\rho \sim 10^{-5}$, un índice espectral fuertemente acotado a $n_s \approx 0.965$ (evidenciando una ligera desviación de la invariancia de escala exacta), y establecen una cota superior para el fondo tensorial primordial de $r < 0.032$ \cite{Planck}. La capacidad de satisfacer estas cotas experimentales es lo que posiciona a los potenciales con \textit{plateau}, estudiados computacionalmente en los capítulos posteriores, como los candidatos más robustos de la cosmología inflacionaria.
 
 \section{Recalentamiento}\label{sec:reheating}
 
 Una vez finalizada la etapa de Inflación, el universo experimenta una transición conocida como \textit{Recalentamiento} (\textit{Reheating}). Este proceso es el responsable de conectar el estado frío y vacío dejado por la expansión acelerada con el plasma térmico y denso requerido por la teoría del Big Bang caliente, dando lugar posterioriormente a la nucleosíntesis primordial. Un proceso de Recalentamiento completo se compone de tres etapas sucesivas. En primer lugar, la dinámica está dictada por el \textit{Preheating}, una fase violenta donde el inflatón oscila en torno al mínimo de su potencial (tal como se ilustra en la Figura \ref{fig:slowroll}) y transfiere su energía de manera explosiva y no perturbativa hacia otros campos acoplados, típicamente mediante resonancia paramétrica o inestabilidades espinodales \cite{Kofman_1994, Kofman_1997, Amin_2014}. En segundo lugar, se establece un régimen de turbulencia donde las interacciones no lineales re-distribuyen la energía hacia el espectro ultravioleta. Finalmente, el proceso termina con una etapa de termalización, en la cual las interacciones de los campos aseguran el equilibrio cinético y químico de todas las especies.
+
+\vspace{3cm}
 
 Para el modelado analítico y numérico de este decaimiento, se asume que el inflatón ($\phi$) decae en nuevos grados de libertad, denominados campos hijos ($\chi$), a través de un término de interacción directo. En el contexto de un estudio no perturbativo, la dinámica del sistema queda determinada por una acción de la forma:
 \begin{equation}

@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Aggarwal et~al., 2020]{Aggarwal_2020}
+Aggarwal, N., Aguiar, O.~D., Bauswein, A., Cella, G., Clesse, S., Cruise, A.~M., Domcke, V., Figueroa, D.~G., Geraci, A., Goryachev, M., Grote, H., Hindmarsh, M., Muia, F., Mukund, N., Ottaway, D., Peloso, M., Quevedo, F., Ricciardone, A., Steinlechner, J., Steinlechner, S., Sun, S., Tobar, M.~E., Torrenti, F., Unal, C., and White, G. (2020).
+\newblock Challenges and opportunities of gravitational wave searches at mhz to ghz frequencies.
+\newblock {\em arXiv preprint arXiv:2011.12414}.
+
 \bibitem[Amin et~al., 2014]{Amin_2014}
 Amin, M.~A., Hertzberg, M.~P., Kaiser, D.~I., and Karouby, J. (2014).
 \newblock Nonperturbative dynamics of reheating after inflation: a review.
@@ -50,10 +55,20 @@ Dodelson, S. and Schmidt, F. (2021).
 \newblock {\em Modern Cosmology}.
 \newblock Academic Press.
 
+\bibitem[Domcke, 2023]{Domcke_2023}
+Domcke, V. (2023).
+\newblock Electromagnetic high-frequency gravitational wave detection.
+\newblock {\em arXiv preprint arXiv:2306.04496}.
+
 \bibitem[Dufaux et~al., 2007]{Dufaux_2007}
 Dufaux, J.-F., Bergman, A., Felder, G., Kofman, L., and Uzan, J.-P. (2007).
 \newblock Theory and numerics of gravitational waves from preheating after inflation.
 \newblock {\em arXiv preprint arXiv:0707.0875}.
+
+\bibitem[{Einstein Telescope Collaboration} et~al., 2025]{EinsteinTelescope_2025}
+{Einstein Telescope Collaboration}, Abaco, A., Abramo, R., Albanesi, S., Albertini, A., Agapito, A., Agathos, M., Albertus, C., Andersson, N., Andrade, T., Andreoni, I., Angeloni, F., Antonelli, M., Antoniadis, J., Antonini, F., Arca~Sedda, M., Artale, M.~C., Ascenzi, S., Auclair, P., Bachetti, M., Badger, C., Banerjee, B., Barba-González, D., Barta, D., Bartolo, N., Bauswein, A., Begnoni, A., Beirnaert, F., Bejger, M., Belgacem, E., Bellomo, N., Bernard, L., Bernardini, M.~G., Bernuzzi, S., Berry, C. P.~L., and Berti, E. (2025).
+\newblock The science of the einstein telescope.
+\newblock {\em arXiv preprint arXiv:2503.12263}.
 
 \bibitem[Ellis et~al., 2026]{Ellis_2026}
 Ellis, J., Garcia, M. A.~G., Olive, K.~A., and Verner, S. (2026).
@@ -150,10 +165,16 @@ Mohanty, S., Panda, S., and Vidyarthi, A. (2026).
 \newblock Testing the starobinsky model of inflation with resonant cavities.
 \newblock {\em arXiv preprint arXiv:2503.06858}.
 
-\bibitem[Moore et~al., 2015]{Moore_2015}
-Moore, C.~J., Cole, R.~H., and Berry, C. P.~L. (2015).
+\bibitem[Moore et~al., 2015a]{Moore_2015}
+Moore, C.~J., Cole, R.~H., and Berry, C. P.~L. (2015a).
 \newblock Gravitational-wave sensitivity curves.
 \newblock {\em Classical and Quantum Gravity}.
+
+\bibitem[Moore et~al., 2015b]{GWPlotter}
+Moore, C.~J., Cole, R.~H., and Berry, C. P.~L. (2015b).
+\newblock {GWPlotter}: a tool for plotting gravitational-wave sensitivity curves.
+\newblock \url{http://gwplotter.com/}.
+\newblock Accedido en: Junio 2026.
 
 \bibitem[Peter and Uzan, 2009]{Peter_2009}
 Peter, P. and Uzan, J.-P. (2009).

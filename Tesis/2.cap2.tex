@@ -114,8 +114,6 @@ donde $\Pi_{ij} \left( \textbf{x}, t \right)$ describe el estrés anisotrópico 
     \Pi_{ij} = T_{ij} - P a^2 \left( \delta_{ij} + h_{ij} \right).
 \end{equation}
 
-\vspace{3cm}
-
 Haciendo uso de la transformada de Fourier, se pueden expresar los tensores $h_{ij}$ y $\Pi_{ij}$ en el espacio de momentos como
 \begin{equation}
     h_{ij} \left( \textbf{x}, t \right) = \frac{1}{(2\pi)^3} \sum_{r = +, \times} \int h_r \left( \textbf{k}, t \right) ~ e^r_{ij} \left( \hat{\textbf{k}} \right) ~ e^{-i \textbf{k} \cdot \textbf{x}} ~ d^3 \textbf{k},
@@ -207,88 +205,26 @@ En el Capítulo \ref{sec:cap3} se desarrollará la integración analítica a ord
 
 \section{Mecanismos de Detección}
 
-La verificación empírica de estas predicciones teóricas requiere instrumentos capaces de registrar perturbaciones en la métrica del espacio-tiempo. Los arreglos experimentales actuales y propuestos operan en bandas de frecuencia muy dispares, dictadas por sus limitaciones tecnológicas y dimensiones físicas, lo cual determina su sensibilidad hacia fuentes astrofísicas específicas o fondos cosmológicos. Un mapa general del espacio de parámetros de frecuencias y deformación característica ($h_c$) se muestra en la Figura \ref{fig:freqsvsstrains}.
+La verificación empírica de estas predicciones teóricas requiere instrumentos capaces de registrar perturbaciones en la métrica del espacio-tiempo. Los arreglos experimentales actuales y propuestos operan en bandas de frecuencia muy diferentes, dictadas por sus limitaciones tecnológicas y dimensiones físicas, lo cual determina su sensibilidad hacia fuentes astrofísicas específicas o fondos cosmológicos. Un mapa general del espacio de parámetros de frecuencias y densidad fraccionaria de energía de las ondas gravitacionales se muestra en la Figura \ref{fig:freqsvsstrains}, dónde se marcan algunas fuentes de ondas y las curvas de sensibilidad ante la detección de los detectores actualmente en uso (línea continua) y futuros (línea discontinua). La Figura \ref{fig:freqsvsstrains} muestra de forma pictórica el rango de frecuencias y la amplitud del espectro de potencias que se espera obtener como consecuencia de la dinámica de los campos de materia durante el Recalentamiento, el cual será el punto de central interés en este trabajo y que en el Capítulo \ref{sec:cap4} se puede observar que los espectros se encuentran en este rango de valores. El resto de fuentes y las curvas de sensibilidad fueron extraídos de \cite{Aggarwal_2020,Domcke_2023,Moore_2015} dónde se explica en detalle de dónde se extraen estos valores a la hora de medir fondos estocásticos. 
 
 \begin{figure}[htbp]
     \centering
-    \begin{tikzpicture}[scale = 0.8]
-        % Marco General
-        %% Formas
-        \draw (0,-2) rectangle (18.5,10);
-        \foreach \x in {0.5, 2.25, ..., 18}{\draw (\x,-2) -- ++(0,0.15);}
-        \foreach \y in {0,2,4,...,8}{\draw (0,\y) -- ++(0.15,0);}
-        %% Textos verticales
-        \node[left] at (0,-2) {$10^{-30}$};
-        \node[left] at (0,0) {$10^{-26}$};
-        \node[left] at (0,2) {$10^{-22}$};
-        \node[left] at (0,4) {$10^{-18}$};
-        \node[left] at (0,6) {$10^{-14}$};
-        \node[left] at (0,8) {$10^{-10}$};
-        \node[left] at (0,10) {$10^{-6}$};
-        \node[rotate=90] at (-2,4) {\LARGE Strain $(h_c)$};
-        %% Textos horizontales
-        \node[below] at (0.5,-2) {$10^{-10}$};
-        \node[below] at (2.25,-2) {$10^{-8}$};
-        \node[below] at (4,-2) {$10^{-6}$};
-        \node[below] at (5.75,-2) {$10^{-4}$};
-        \node[below] at (7.5,-2) {$10^{-2}$};
-        \node[below] at (9.25,-2) {$10^{0}$};
-        \node[below] at (11,-2) {$10^{2}$};
-        \node[below] at (12.75,-2) {$10^{4}$};
-        \node[below] at (14.5,-2) {$10^{6}$};
-        \node[below] at (16.25,-2) {$10^{8}$};
-        \node[below] at (18,-2) {$10^{10}$};
-        \node[below] at (9,-3) {\LARGE Frecuencia [Hz]};
-        %% Referencias 
-        \node at (2.4,9.25) {\small \textcolor{red!40!orange}{\shortstack{Binarias de agujeros\\negros super masivos}}};
-        \node at (4,7.8) {\small \textcolor{orange!50!yellow}{\shortstack{Binarias de\\$\simeq 10^9$ M$_\odot$}}};
-        \node at (4.65,3.5) {\small \textcolor{green!80!blue}{\shortstack{Galaxias\\binarias\\irresolubles}}};
-        \node at (8.7,4.6) {\small \textcolor{green!50!blue}{\shortstack{Galaxias\\binarias\\resolubles}}};
-        \node at (6.8,5.75) {\small \textcolor{green!30!blue}{\shortstack{Binarias de\\$\simeq 10^6$ M$_\odot$}}};
-        \node at (11.2,3.5) {\small \textcolor{violet!50!white}{\shortstack{Inspiral de\\binarias\\compactas}}};
-        \node at (12.5,2) {\small \textcolor{violet!70!black}{Supernovas}};
-        \node at (13,1) {\small \textcolor{violet!20!black}{Púlsares}};
-        \node at (15.375,-0.2) {\small \textcolor{gray!70!black}{\shortstack{Dinamica de\\campos de materia\\(Recalentamiento)}}};
-
-        % Fuentes
-        %% Frecuencias Bajas
-        \filldraw[color = red!40!orange, opacity=0.3] (0.75,-2) -- (0.75,8.5) -- (2.75,7) -- (4.25,-2) -- cycle; 
-        \filldraw[color = orange!50!yellow, opacity=0.3] (1,7.75) -- (3.25,7) -- (3.25,-2) -- (1,-2) -- cycle;
-        %% Frecuencias medias
-        \filldraw[color = green!80!blue, opacity=0.3] (5.75,-2) -- (5.75,4.25) -- (6.4,3.5) -- (6.4,-2) -- cycle;
-        \filldraw[color = green!50!blue, opacity=0.3] (6.1,-2) -- (6.1,5) -- (8.5,3.4) -- (8.5,-2) -- cycle;
-        \filldraw[color = green!30!blue, opacity=0.5] (6.5,-2) -- (6.5,4.5) -- (7.5,4) -- (7.5,-2) -- cycle;
-        %% Frecuencias altas
-        \filldraw[color = violet!50!white, opacity=0.5] (9.75,-2) -- (9.75,3) -- (11.25,2) -- (11.25,-2) -- cycle;
-        \filldraw[color = violet!70!black, opacity=0.4] (11,-2) -- (11,1.8) -- (11.75,1.6) -- (11.75,-2) -- cycle;
-        \filldraw[color = violet!20!black, opacity=0.4] (10,-2) -- (10,1.5) -- (12,1.5) -- (12,-2) -- cycle;
-        %% Frecuencias ultra-altas
-        \filldraw[color = gray!70!black, opacity=0.4] (13.75,-2) -- (13.75,-1) -- (17,-1) -- (17,-2) -- cycle;
-    \end{tikzpicture}
-    \caption{Bandas de frecuencias y espectro de deformación característica esperado para diversos mecanismos astrofísicos y cosmológicos de producción de ondas gravitacionales. Gráfico elaborado en base a \cite{Moore_2015}.}
+    \begin{subfigure}[t]{\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{figures/GW-detectors.png}        
+    \end{subfigure}
+    \begin{subfigure}[t]{\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{figures/GW-detectors-references.png}        
+    \end{subfigure}
+    \caption{Bandas de frecuencias y densidad de energía de ondas gravitacionales esperado para diversos mecanismos astrofísicos y cosmológicos de producción de ondas gravitacionales. Además, se grafica en línea continua las curvas de sensibilidad para los detectores actualmente activos, mientras que en línea punteada las curvas de sensibilidad previstas para los detectores que al momento no se encuentran activos. Gráfico elaborado en base a \cite{Moore_2015, GWPlotter, EinsteinTelescope_2025,Domcke_2023,Aggarwal_2020}.}
     \label{fig:freqsvsstrains}
 \end{figure}
 
-En el régimen de altas frecuencias (Hz a kHz), la detección se realiza mediante interferometría láser terrestre, ejemplificada por la colaboración LIGO-Virgo-KAGRA. El esquema de funcionamiento (Figura \ref{fig:LIGO}) se basa en un interferómetro de Michelson: un divisor de haz (\textit{beam splitter}) separa un láser coherente en dos haces que recorren brazos ortogonales de longitud kilométrica. El paso de una onda gravitacional distorsiona la métrica, provocando un estiramiento y contracción diferencial en la longitud física de los brazos, lo que a su vez induce un corrimiento de fase detectable en el fotodetector \cite{LIGO, Maggiore_2018}. Para explorar frecuencias más bajas (rango de los mHz), se requiere evadir el ruido sísmico terrestre, motivando el diseño de interferómetros espaciales como el proyecto LISA.
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width = \linewidth]{figures/LIGO.jpg}
-    \caption{Esquema básico de un interferómetro de tipo Michelson operado por la colaboración LIGO. La perturbación métrica transversal induce una variación diferencial en los brazos, revelando la onda gravitacional a través de un patrón de interferencia desplazado \cite{LIGO}.}
-    \label{fig:LIGO}
-\end{figure}
+En el régimen de frecuencias del orden de los Hz a kHz, la detección se realiza mediante interferometría láser terrestre, ejemplificada por la colaboración LIGO-Virgo-KAGRA. El esquema de funcionamiento se basa en un interferómetro de Michelson: un divisor de haz (\textit{beam splitter}) separa un láser coherente en dos haces que recorren brazos ortogonales de longitud kilométrica. El paso de una onda gravitacional distorsiona la métrica, provocando un estiramiento y contracción diferencial en la longitud física de los brazos, lo que a su vez induce un corrimiento de fase detectable en el fotodetector \cite{LIGO, Maggiore_2018}. Para explorar frecuencias más bajas (rango de los mHz), se requiere evadir el ruido sísmico terrestre, motivando el diseño de interferómetros espaciales como el proyecto LISA. Aunque este tipo de detectores se suele utilizar para la medición de ondas coherentes, a partir de la medición de una gran cantidad de eventos y realizar una suma incoherente de estas se puede hacer una medición sobre un fondo estocástico permitiendo medir correlaciones entre las distintas ondas.
 
 En la banda de muy bajas frecuencias (nHz), la estrategia observacional dominante consiste en el uso de \textit{Pulsar Timing Arrays} (PTAs). Los púlsares de milisegundo funcionan como relojes astrofísicos de extraordinaria estabilidad. La propagación de una onda gravitacional a través de la línea de visión Tierra-Púlsar altera el tiempo de vuelo de los fotones, induciendo anomalías (adelantos o retrasos) en los tiempos de llegada de los pulsos (residuos ToA). Estas colaboraciones buscan aislar la firma de un fondo estocástico mediante el análisis de la correlación cruzada de los residuos temporales en una extensa red galáctica de púlsares \cite{NANOGrav, Renzini2022}.
 
-Aún más abajo en frecuencia, aproximándose a la escala del horizonte cosmológico, las ondas gravitacionales primordiales imprimen una firma indirecta sobre el fondo cósmico de microondas (CMB). Las perturbaciones tensoriales inducen un patrón de polarización con divergencia nula y rotacional no nulo, denominado modos B. La confirmación observacional de estos modos primordiales es un desafío técnico, ya que la débil señal compite fuertemente con la emisión galáctica de polvo y, fundamentalmente, con el efecto de lente gravitacional (\textit{lensing}) generado por la estructura a gran escala, el cual distorsiona geométricamente los modos E transformándolos en un fondo espurio de modos B a pequeñas escalas angulares (Figura \ref{fig:modosB}) \cite{Baumann_2012, Planck}.
+Aún más abajo en frecuencia, aproximándose a la escala del horizonte cosmológico, las ondas gravitacionales primordiales imprimen una firma indirecta sobre el fondo cósmico de microondas (CMB). Las perturbaciones tensoriales inducen un patrón de polarización con divergencia nula y rotacional no nulo, denominado modos B. La confirmación observacional de estos modos primordiales es un desafío técnico, ya que la débil señal compite fuertemente con la emisión galáctica de polvo y, fundamentalmente, con el efecto de lente gravitacional (\textit{lensing}) generado por la estructura a gran escala, el cual distorsiona geométricamente los modos E transformándolos en un fondo espurio de modos B a pequeñas escalas angulares \cite{Baumann_2012, Planck}.
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width = 0.75\linewidth]{figures/CMB_Bmodes.png}
-    \caption{Espectro angular de potencia de las anisotropías de temperatura y polarización del CMB. A grandes escalas angulares (bajo multipolo $\ell$), se espera que dominen los modos B primordiales tensoriales. A escalas menores, el espectro queda dominado por la conversión geométrica de modos E en modos B inducida por el efecto de \textit{lensing} gravitacional \cite{Planck}.}
-    \label{fig:modosB}
-\end{figure}
-
-\vspace{3cm}
-
-Finalmente, la dinámica violenta del Recalentamiento genera ondas gravitacionales en el régimen de ultra-alta frecuencia (UHF), abarcando típicamente desde los MHz hasta los GHz. En esta ventana espectral, los interferómetros láser pierden sensibilidad debido a limitaciones impuestas por el ruido cuántico y el largo de los brazos. Una alternativa altamente prometedora para este régimen radica en el uso de cavidades electromagnéticas resonantes (EMRC). Estas cavidades explotan el efecto Gertsenshtein inverso: en presencia de un campo magnético estático de gran intensidad, una onda gravitacional incidente interacciona con el campo de fondo y excita modos electromagnéticos resonantes dentro de la cavidad. Este principio físico provee un método de detección sintonizable y de gran sensibilidad para registrar procesos no perturbativos de la era post-inflacionaria \cite{Herman_2023, Berlin_2023, Mohanty_2026}.
+Finalmente, la dinámica violenta del Recalentamiento genera ondas gravitacionales en el régimen de ultra-alta frecuencia (UHF), abarcando típicamente desde los MHz hasta los GHz. En esta ventana espectral, los interferómetros láser pierden sensibilidad debido a limitaciones impuestas por el ruido cuántico y el largo de los brazos. Una alternativa altamente prometedora para este régimen radica en el uso de cavidades electromagnéticas resonantes (EMRC). Estas cavidades explotan el efecto Gertsenshtein inverso: en presencia de un campo magnético estático de gran intensidad, una onda gravitacional incidente interacciona con el campo de fondo y excita modos electromagnéticos resonantes dentro de la cavidad. Este principio físico provee un método de detección sintonizable y de gran sensibilidad para registrar procesos no perturbativos de la era post-inflacionaria \cite{Herman_2023, Berlin_2023, Mohanty_2026,Aggarwal_2020}.
