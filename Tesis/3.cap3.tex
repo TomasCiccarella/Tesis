@@ -1,12 +1,16 @@
 \chapter{Evolución lineal de los campos durante Preheating} \label{sec:cap3}
 
+En el Capítulo \ref{sec:Introduccion} se mencionó que el final de la etapa inflacionaria deja al universo en un estado vacío, cuya densidad de energía está dominada en su totalidad por el condensado homogéneo del campo inflatón. Para que la historia térmica estándar del Big Bang caliente pueda tener lugar, esta energía debe ser transferida hacia los demás grados de libertad del modelo de partículas; este proceso global ocurre durante la etapa de Recalentamiento (\textit{Reheating}). La fase inicial de esta transición, denominada \textit{Preheating}, se aleja del equilibrio termodinámico y perturbativo clásico \cite{Amin_2014}. Durante esta etapa, las oscilaciones coherentes del inflatón en torno al mínimo de su potencial inducen una transferencia de energía explosiva, no perturbativa y altamente eficiente hacia los campos bosónicos acoplados a él \cite{Kofman_1994, Kofman_1997, Amin_2014}. 
+
+En este capítulo, se abordará la descripción analítica y numérica a orden lineal de esta dinámica temprana. En primer lugar, se estudiará cómo esta transferencia de energía se manifiesta a través de bandas de resonancia paramétrica, amplificando exponencialmente las fluctuaciones cuánticas del vacío \cite{Kofman_1994, Kofman_1997}. Posteriormente, se evaluará cómo la excitación repentina de estos modos de materia actúa como una fuente tensorial activa, dando origen a la emisión de un fondo estocástico de ondas gravitacionales \cite{Dufaux_2007, Figueroa_2017_GW, Caprini_2020}.
+
 \section{Resonancia Paramétrica}
 
-Durante \textit{Reheating}, como se mencionó en la sección \ref{sec:reheating}, el inflatón oscila alrededor del mínimo de su potencial. Como consecuencia de este decaimiento, se produce una creación explosiva de partículas de un campo hijo $\chi$ a través de un fenómeno conocido como resonancia paramétrica \cite{Kofman_1994, Kofman_1997, Amin_2014}. La evolución de este sistema surge de resolver las ecuaciones de movimiento derivadas de la acción:
+Durante esta fase inicial de \textit{Preheating}, y tal como se adelantó en la sección \ref{sec:reheating}, el condensado del inflatón oscila en torno al mínimo de su potencial. Como consecuencia directa de esta dinámica periódica de fondo, se produce la creación explosiva de partículas de un campo hijo $\chi$ a través del fenómeno de resonancia paramétrica \cite{Kofman_1994, Kofman_1997, Amin_2014}. La evolución temporal y espacial de este sistema surge de resolver las ecuaciones de movimiento derivadas de la acción:
 \begin{equation}
     S[g_{\mu \nu}, \phi, \chi] = \int \sqrt{-g} \left[ \frac{m_p^2}{2} R - \frac{1}{2} \partial_\mu \phi \partial^\mu \phi - \frac{1}{2} \partial_\mu \chi \partial^\mu \chi - V(\phi) - \mathcal{I} (\phi, \chi) \right] ~ d^4 x,
 \end{equation}
-donde $g$ (en la medida de integración) corresponde al determinante del tensor métrico, $R$ es el escalar de Ricci y $V(\phi)$ es el potencial del inflatón. Consideraremos un término de interacción entre los campos de la forma $\mathcal{I}(\phi, \chi) = \frac{1}{2} g^2 \phi^2 \chi^2$, donde $g$ en este contexto representa la constante de acoplamiento\footnote{Existe un abuso de notación estándar en la literatura al utilizar la letra $g$ tanto para la métrica como para la constante de acoplamiento.} que determina la eficiencia de la generación del campo $\chi$ ante el decaimiento de $\phi$. Asumiendo una métrica de fondo cosmológica plana de tipo FLRW, las ecuaciones de movimiento para los campos resultan
+donde $g$ (en la medida de integración) corresponde al determinante del tensor métrico, $R$ es el escalar de Ricci y $V(\phi)$ es el potencial del inflatón. Consideraremos un término de interacción entre los campos de la forma $\mathcal{I}(\phi, \chi) = \frac{1}{2} g^2 \phi^2 \chi^2$, donde $g$ en este contexto representa la constante de acoplamiento\footnote{Existe un abuso de notación estándar en la literatura al utilizar la letra $g$ tanto para la métrica como para la constante de acoplamiento.} que determina la eficiencia de la generación del campo $\chi$ ante el decaimiento de $\phi$. Asumiendo una métrica de fondo cosmológica plana de tipo FLRW, las ecuaciones de movimiento para los campos resultan:
 \begin{equation}\label{eqn:preheating_phi}
     \ddot{\phi} + 3 H \dot{\phi} - \frac{1}{a^2} \nabla^2 \phi + \frac{\partial V(\phi)}{\partial \phi} + \frac{\partial \mathcal{I} (\phi, \chi)}{\partial \phi} = 0,
 \end{equation}
@@ -14,14 +18,14 @@ donde $g$ (en la medida de integración) corresponde al determinante del tensor 
     \ddot{\chi} + 3 H \dot{\chi} - \frac{1}{a^2} \nabla^2 \chi + \frac{\partial \mathcal{I} (\phi, \chi)}{\partial \chi} = 0.
 \end{equation}
 
-En este capítulo, buscaremos resolver estas ecuaciones a orden lineal a partir de plantear una teoría de perturbaciones de los campos de la forma $\phi = \bar{\phi} + \delta \phi$ y $\chi = \delta \chi$ con $\delta \phi, \delta \chi \ll 1$ y $\bar{\phi}$ la evolución a orden cero del inflatón. Utilizando esto, y descartando los términos de orden superior al lineal, podemos encontrar las ecuaciones que rigen las perturbaciones de los campos\footnote{Se puede encontrar un desarrollo detallado de estos cálculos en el repositorio complementario de la tesis \cite{Git}.}
+En este capítulo, buscaremos resolver estas ecuaciones a orden lineal a partir de plantear una teoría de perturbaciones de la forma $\phi = \bar{\phi} + \delta \phi$ y $\chi = \delta \chi$, con $\delta \phi, \delta \chi \ll 1$, siendo $\bar{\phi}$ la evolución a orden cero del inflatón. Utilizando esta descomposición y descartando los términos de orden superior al lineal, se obtienen las ecuaciones que rigen las perturbaciones de los campos\footnote{Se puede encontrar un desarrollo matemático detallado de estos cálculos en el repositorio complementario de la tesis \cite{Git}.}:
 \begin{equation}
     \delta \ddot{\phi} + 3 H ~ \delta \dot{\phi} + \left[ \frac{\partial^2 V \left( \bar{\phi} \right)}{\partial \phi^2} - \frac{1}{a^2} \nabla^2 \right] ~ \delta \phi = 0,
 \end{equation}
 \begin{equation}
     \delta \ddot{\chi} + 3 H ~ \delta \dot{\chi} + \left( g^2 \bar{\phi}^2 - \frac{1}{a^2} \nabla^2 \right) ~ \delta \chi = 0.    
 \end{equation}
-A su vez, la dinámica del \textit{background} va a estar regida por las ecuaciones de Friedmann para $a(t)$ y la ecuación para $\bar{\phi}$ que se obtiene al aislar el orden cero de la ecuación (\ref{eqn:preheating_phi}):
+A su vez, la dinámica del \textit{background} estará regida por las ecuaciones de Friedmann para $a(t)$ y la ecuación para $\bar{\phi}$, la cual se obtiene al aislar el orden cero de la ecuación (\ref{eqn:preheating_phi}):
 \begin{equation}
     \ddot{\bar{\phi}} + 3 H \dot{\bar{\phi}} + \frac{\partial V \left( \bar{\phi} \right)}{\partial \phi} = 0,
 \end{equation}
@@ -29,71 +33,79 @@ A su vez, la dinámica del \textit{background} va a estar regida por las ecuacio
     H^2 = \frac{1}{3 m_p^2} \left[ \frac{1}{2} \dot{\bar{\phi}}^2 + V \left( \bar{\phi} \right) \right].
 \end{equation}
 
-Para la resolución de este sistema acoplado, se desarrollaron códigos numéricos propios en Python \cite{Git}, modelando el potencial del inflatón tanto de forma cuadrática $\left( m^2 \phi^2 \right)$, lo que conduce a una ecuación de tipo Mathieu para las perturbaciones del campo hijo, como de forma cuártica $(\lambda \phi^4)$, conduciendo a una ecuación de tipo Lamé. Para el \textit{background}, estos dos escenarios se encuentran graficados en la Figura \ref{fig:Background}, donde podemos ver que para ambos modelos el inflatón disminuye su amplitud con el tiempo mientras que el universo se expande siguiendo una ley de potencias: $a \propto t^{2/3}$ para $m^2 \phi^2$ y $a \propto t^{1/2}$ para $\lambda \phi^4$, tal como se esperaba analíticamente según la ecuación (\ref{eqn:omega_eff}). Esto permite capturar una dinámica robusta en los códigos armados, que en el capítulo siguiente buscaremos comparar con los resultados al incorporar efectos no lineales.
+\vspace{2cm}
+
+Para la resolución de este sistema acoplado, se desarrollaron códigos numéricos propios en Python \cite{Git}, modelando el potencial del inflatón tanto de forma cuadrática $\left( V(\phi) = \frac{1}{2} m^2 \phi^2 \right)$, lo que conduce a una ecuación de tipo Mathieu para las perturbaciones del campo hijo, como de forma cuártica $\left( V(\phi) = \frac{1}{4} \lambda \phi^4 \right)$, conduciendo a una ecuación de tipo Lamé. Para el \textit{background}, estos dos escenarios se encuentran graficados en la Figura \ref{fig:Background}, donde se puede observar que para ambos modelos el inflatón disminuye su amplitud con el tiempo debido a la fricción de Hubble, mientras que el universo se expande siguiendo una ley de potencias: $a \propto t^{2/3}$ para el caso cuadrático y $a \propto t^{1/2}$ para el caso cuártico. Esto resulta consistente con el comportamiento esperado según la Ecuación (\ref{eqn:omega_eff}). Esta formulación permite capturar una dinámica lineal que en el capítulo siguiente se utilizará como marco de referencia para comparar con los resultados de simulaciones no lineales.
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.8\linewidth}
+    \begin{subfigure}[t]{\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/background_m2phi2.pdf}
         \subcaption{$m^2 \phi^2$}
     \end{subfigure}
-    \begin{subfigure}[b]{0.8\linewidth}
+    \begin{subfigure}[b]{\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/Background_lphi4.pdf}
         \subcaption{$\lambda \phi^4$}
     \end{subfigure}
-    \caption{Evolución de la dinámica del \textit{background} para cada modelo, donde se observa cómo el inflatón decae temporalmente mientras $a(t)$ aumenta a un ritmo de (a) $t^{2/3}$ y (b) $t^{1/2}$.}
+    \caption{Evolución de la dinámica del \textit{background} para cada modelo, donde se observa cómo el condensado del inflatón decae temporalmente mientras el factor de escala $a(t)$ aumenta a un ritmo de (a) $t^{2/3}$ y (b) $t^{1/2}$.}
     \label{fig:Background}
 \end{figure}
 
-Las ecuaciones de perturbaciones las podemos escribir en el espacio de Fourier para transformar las derivadas parciales espaciales en ecuaciones diferenciales ordinarias desacopladas para cada modo $k$:
+\vspace{2cm}
+
+Transformando las ecuaciones de perturbaciones al espacio de Fourier, las derivadas parciales espaciales se convierten en ecuaciones diferenciales ordinarias desacopladas para cada modo $k$:
 \begin{equation}
     \delta \ddot{\phi}_k + 3 H ~ \delta \dot{\phi}_k + \left[ \frac{\partial^2 V \left( \bar{\phi} \right)}{\partial \phi^2} + \frac{k^2}{a^2} \right] ~ \delta \phi_k = 0,
 \end{equation}
 \begin{equation}
     \delta \ddot{\chi}_k + 3 H ~ \delta \dot{\chi}_k + \left( g^2 \bar{\phi}^2 + \frac{k^2}{a^2} \right) ~ \delta \chi_k = 0. 
 \end{equation}
-
-\vspace{2cm}
-
-\noindent
-De este sistema, nos centraremos en resolver solo la segunda ecuación para comprender cómo es la producción de partículas en los distintos modos de Fourier para el campo hijo. Dado que la escala temporal de la resonancia es típicamente mucho más rápida que el tiempo de Hubble ($H^{-1}$), podemos empezar planteando de forma analítica cómo evolucionan las perturbaciones asumiendo un espacio estático de Minkowski como aproximación a tiempos cortos ($H \simeq 0$, $a=1$). Esto nos conduce a resolver ecuaciones de la forma:
+De este sistema, nos centraremos en resolver exclusivamente la segunda ecuación para comprender cómo se produce la excitación de partículas en los distintos modos de Fourier del campo hijo. Dado que la escala temporal de la resonancia es típicamente mucho más rápida que el tiempo de Hubble ($H^{-1}$), es posible obtener una aproximación analítica asumiendo un espacio estático de Minkowski a tiempos cortos ($H \simeq 0$, $a=1$). Bajo estas simplificaciones, el sistema se reduce a:
 \begin{equation}
     \ddot{\bar{\phi}} + \frac{\partial V \left( \bar{\phi} \right)}{\partial \phi} = 0,
 \end{equation}
 \begin{equation}
     \delta \ddot{\chi}_k + \left( g^2 \bar{\phi}^2 + k^2 \right) ~ \delta \chi_k = 0.
 \end{equation}
-Para un potencial de la forma $\displaystyle V(\phi) = \frac{1}{2} m^2 \phi^2$, el inflatón se comporta como un oscilador armónico con solución $\bar{\phi} = \phi_0 \cos (mt)$. Al introducir este resultado en la ecuación para el campo hijo, se obtiene:
-\begin{equation}
-    \frac{d^2 \delta \chi_k}{dT^2} + \left[ A_k - 2 q \cos (2T) \right] ~ \delta \chi_k = 0,
-\end{equation}
-la cual es conocida universalmente como la ecuación de Mathieu \cite{McLachlan_1947}. Para llegar a su forma canónica se definieron los cambios de variables $\displaystyle T = mt + \frac{\pi}{2}$, $\displaystyle q = \frac{g^2}{4} \left( \frac{\phi_0}{m} \right)^2$ y $\displaystyle A_k = \left( \frac{k}{m} \right)^2 + 2q$. Las soluciones de esta ecuación serán estudiadas en la siguiente sección mediante el análisis de Floquet.
 
-Por otro lado, si consideramos un potencial cuártico de la forma $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$, la solución exacta para el inflatón de fondo se expresa en términos de la función elíptica de Jacobi $cn \left(x, \frac{1}{\sqrt{2}} \right)$ \cite{Greene_1997}. Esto permite escribir la ecuación de las perturbaciones del campo hijo como:
+Para un potencial masivo libre de la forma $\displaystyle V(\phi) = \frac{1}{2} m^2 \phi^2$, el inflatón se comporta como un oscilador armónico simple con solución $\bar{\phi}(t) = \phi_0 \cos (mt)$. Al introducir este resultado en la dinámica de las perturbaciones y definir los campos adimensionales $\tilde{\phi} = \bar{\phi} / \phi_0$ y $\tilde{\chi}_k = \delta \chi_k / \phi_0$, las ecuaciones adoptan la siguiente forma:
 \begin{equation}
-    X_k^{\prime \prime} + \left[ \kappa^2 + \frac{g^2}{\lambda} cn^2 \left(x, \frac{1}{\sqrt{2}} \right) \right] X_k = 0,
+    \ddot{\tilde{\phi}} + \tilde{\phi} = 0,
 \end{equation}
-donde $x$ es una variable temporal reescalada afín al tiempo conforme, $X = a(t) ~ \chi_k(t)$ y $\displaystyle \kappa^2 = \frac{k^2}{\lambda a^2 \bar{\phi}_0^2}$. A esta expresión se la conoce como ecuación de Lamé \cite{Greene_1997}. Al igual que con el caso cuadrático, el estudio de las bandas de inestabilidad y los tipos de resonancia para esta ecuación será abordado en detalle en la siguiente sección.
+\begin{equation}
+    \frac{d^2 \tilde{\chi}_k}{dT^2} + \left[ A_k - 2 q \cos (2T) \right] ~ \tilde{\chi}_k = 0.
+\end{equation}
+Esta última es conocida en la física matemática como la ecuación de Mathieu \cite{McLachlan_1947}. Para llegar a su forma canónica se utilizaron los cambios de variable temporal $\displaystyle T = mt + \frac{\pi}{2}$ y se definieron los parámetros adimensionales $\displaystyle q = \frac{g^2}{4} \left( \frac{\phi_0}{m} \right)^2$ y $\displaystyle A_k = \left( \frac{k}{m} \right)^2 + 2q$. Las propiedades de estabilidad de esta ecuación serán estudiadas en la sección subsiguiente mediante el análisis de Floquet.
+
+Por otro lado, si consideramos un potencial de auto-interacción cuártico $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$, la solución exacta para el inflatón de fondo se expresa analíticamente en términos de la función elíptica de Jacobi $cn \left(x, \frac{1}{\sqrt{2}} \right)$ \cite{Greene_1997}. Esto permite reescribir el sistema acoplado de la siguiente manera:
+\begin{equation}
+    \ddot{\tilde{\phi}} + \tilde{\phi}^3 = 0,
+\end{equation}
+\begin{equation}
+    X_k^{\prime \prime} + \left[ \kappa^2 + q ~ cn^2 \left(x, \frac{1}{\sqrt{2}} \right) \right] X_k = 0,
+\end{equation}
+donde $x$ es una variable temporal reescalada afín al tiempo conforme, $X_k = a(t) ~ \chi_k(t)$ representa el campo reescalado, $\displaystyle \kappa^2 = \frac{k^2}{\lambda a^2 \bar{\phi}_0^2}$ es el momento efectivo, y $\displaystyle q = \frac{g^2}{\lambda}$ funciona como el parámetro de acoplamiento de la resonancia. A esta expresión diferencial se la conoce como ecuación de Lamé \cite{Greene_1997}. Al igual que con el caso cuadrático, el estudio de las bandas de inestabilidad y la forma de la resonancia será abordado en detalle a continuación.
+
 \section{Análisis de Floquet}\label{sec:Floquet}
 
-Para comenzar el estudio de las soluciones a las ecuaciones de Mathieu y Lamé, es necesario introducir el análisis de Floquet. Esto implica reconocer que estas ecuaciones diferenciales con coeficientes periódicos admiten soluciones de la forma $\chi_k(t) \propto e^{\mu_k t}$, donde $\mu_k$ es el exponente de Floquet. En general, este exponente es un número complejo; por lo tanto, existirán regiones del espacio de parámetros donde $\mu_k$ posea una parte real positiva ($\Re\{\mu_k\} > 0$), dando lugar a un crecimiento exponencial del campo, lo que define el fenómeno de resonancia paramétrica \cite{Kofman_1994, Kofman_1997}. 
+Para comenzar el estudio formal de las soluciones a las ecuaciones de Mathieu y Lamé, es necesario introducir la teoría de Floquet. Este formalismo establece que las ecuaciones diferenciales lineales con coeficientes periódicos admiten soluciones de la forma $\chi_k(t) \propto e^{\mu_k t}$, donde $\mu_k$ se denomina exponente de Floquet. Dado que este exponente puede ser un número complejo, existirán regiones en el espacio de parámetros donde posea una parte real estrictamente positiva ($\Re\{\mu_k\} > 0$). En estas regiones, la amplitud del campo experimenta un crecimiento exponencial, dando origen al fenómeno físico conocido como resonancia paramétrica \cite{Kofman_1994, Kofman_1997}. 
 
-El cálculo analítico y numérico de estos exponentes se encuentra detallado en la literatura \cite{Amin_2014, Kofman_1997} y requiere la construcción de la matriz de monodromía $\mathcal{O}$, conformada por un conjunto fundamental de soluciones de la ecuación dinámica evaluadas tras un período $T$:
+El cálculo analítico y numérico de estos exponentes requiere la construcción de la matriz de monodromía $\mathcal{O}$, conformada por un conjunto fundamental de soluciones evaluadas en un período completo $T$ \cite{Amin_2014, Kofman_1997}:
 \begin{equation}
     \mathcal{O} \left( t_0 + T, t_0 \right) = \begin{pmatrix}
         u^{(1)} (t_0 + T) & u^{(2)} (t_0 + T)\\
         v^{(1)} (t_0 + T) & v^{(2)} (t_0 + T)\\
     \end{pmatrix},
 \end{equation}
-donde $u$ y $v$ representan la amplitud y la derivada temporal del campo respectivamente. Los superíndices indican las soluciones linealmente independientes asociadas a las condiciones iniciales normalizadas $(u, v) = (1,0)$ y $(0,1)$ en el tiempo $t_0$. Luego, el coeficiente de Floquet se extrae a partir de la traza de esta matriz:
+donde $u$ y $v$ representan la amplitud y la derivada temporal de las perturbaciones, respectivamente. Los superíndices indican las soluciones linealmente independientes generadas a partir de las condiciones iniciales ortonormales $(u, v) = (1,0)$ y $(0,1)$ evaluadas en $t_0$. A partir de esto, el exponente de Floquet queda unívocamente determinado por la traza de esta matriz a través de la relación:
 \begin{equation}
     \mu = \frac{1}{T} \cosh^{-1} \left[ \frac{\text{Tr} \left( \mathcal{O} \right)}{2} \right].
 \end{equation}
-De esta expresión se deduce que si la magnitud de la traza de la matriz de monodromía es mayor a 2 ($|\text{Tr}(\mathcal{O})| > 2$), el exponente $\mu$ toma valores puramente reales (o con parte real no nula), obteniendo una inestabilidad. Por el contrario, para valores $|\text{Tr}(\mathcal{O})| < 2$, el coeficiente es puramente imaginario, y las perturbaciones fluctuarán establemente sin amplificarse. 
+de donde se deduce que si la magnitud de la traza supera el valor crítico de 2 ($|\text{Tr}(\mathcal{O})| > 2$), el exponente $\mu$ adquiere una parte real no nula, manifestando una inestabilidad exponencial. Por el contrario, en las regiones donde $|\text{Tr}(\mathcal{O})| < 2$, el coeficiente es puramente imaginario, y el modo de Fourier oscilará de manera estable sin amplificación neta. 
 
-Con los coeficientes de Floquet calculados sobre el espacio de parámetros, se construyen las denominadas tablas de inestabilidad, observables en la Figura \ref{fig:Floquet}. En estas figuras se distinguen con colores más intensos las regiones donde la parte real del coeficiente es mayor, indicando una resonancia paramétrica más eficiente. Las zonas en negro representan parámetros de estabilidad donde el campo no sufre amplificación neta. Este análisis revela una estructura de bandas, cuyo objetivo en la sección \ref{sec:Produccion_lineal} será determinar si estas bandas de inestabilidad se traducen directamente en un aumento perceptible en el espectro de potencias de las ondas gravitacionales.
+Evaluando los coeficientes de Floquet a lo largo del espacio de parámetros $(A_k, q)$ o $(k, q)$, se construyen las denominadas tablas de inestabilidad, presentadas en la Figura \ref{fig:Floquet}. En estos diagramas, las zonas representadas en color negro corresponden a regiones de estabilidad, mientras que los gradientes de color intenso marcan las franjas donde $\Re\{\mu_k\}$ es máximo, indicando una resonancia altamente eficiente. Este análisis revela una estructura de bandas, cuyo objetivo fundamental en la sección \ref{sec:Produccion_lineal} será demostrar analíticamente cómo estas actúan como fuente para inyectar potencia en el espectro de las ondas gravitacionales.
 
 \begin{figure}[htbp]
     \centering
@@ -107,11 +119,11 @@ Con los coeficientes de Floquet calculados sobre el espacio de parámetros, se c
         \includegraphics[width = \linewidth]{figures/Floquet_lphi4.pdf}
         \subcaption{$\lambda \phi^4$}
     \end{subfigure}
-    \caption{Tablas de inestabilidad para los distintos modelos. Se muestran en color negro aquellas combinaciones de parámetros para las cuales el exponente de Floquet es puramente imaginario (estabilidad), mientras que en colores intensos se denotan los valores de mayor $\Re\{\mu_k\}$ (inestabilidad). Esta representación permite visualizar la estructura de bandas característica de la resonancia paramétrica.}
+    \caption{Tablas de inestabilidad de Floquet para los modelos estudiados. Las regiones en color negro denotan combinaciones de parámetros asociadas a una evolución estable (exponente puramente imaginario). Los colores intensos resaltan los valores de mayor magnitud para $\Re\{\mu_k\}$, haciendo evidente la estructura de bandas propia de la resonancia paramétrica.}
     \label{fig:Floquet}
 \end{figure}
 
-De la Figura \ref{fig:Floquet} es posible extraer la amplificación paramétrica para un escenario concreto al fijar un valor de la constante de acoplamiento efectiva (como $q$). Esto permite observar el comportamiento de $\mu_k$ a lo largo de los distintos números de onda $k$, tal como se presenta en la Figura \ref{fig:muk}. Esta gráfica representa cortes transversales de la tabla de inestabilidades, revelando el ancho de la banda para el cual $\Re\{ \mu_k \} > 0$. Esto permite clasificar la resonancia en dos regímenes físicos diferenciados: resonancia angosta (\textit{Narrow Resonance}) y resonancia ancha (\textit{Broad Resonance}) \cite{Kofman_1994, Kofman_1997}.
+Al fijar la constante de acoplamiento $q$ en la Figura \ref{fig:Floquet}, se puede analizar la dependencia explícita de la tasa de amplificación $\mu_k$ en función del número de onda $k$. Estos cortes transversales del espacio de parámetros se muestran en la Figura \ref{fig:muk}. El ancho y la amplitud de la banda espectral excitada permiten clasificar la dinámica del sistema en dos regímenes físicos claramente diferenciados: resonancia angosta (\textit{Narrow Resonance}) y resonancia ancha (\textit{Broad Resonance}) \cite{Kofman_1994, Kofman_1997}.
 
 \begin{figure}[htbp]
     \centering
@@ -125,15 +137,19 @@ De la Figura \ref{fig:Floquet} es posible extraer la amplificación paramétrica
         \includegraphics[width = \linewidth]{figures/muk_lphi4.pdf}
         \subcaption{$\lambda \phi^4$}
     \end{subfigure}
-    \caption{Bandas de inestabilidad obtenidas al fijar la constante de acoplamiento $(g, q)$, mostrando la dependencia del exponente de Floquet $\mu_k$ con el número de onda $k$. Se sombrea en naranja la región espectral donde el crecimiento resonante es dominante.}
+    \caption{Dependencia del exponente de Floquet $\mu_k$ respecto al número de onda $k$ para un valor de acoplamiento $q$ fijo. La región sombreada en naranja ilustra la ventana espectral donde domina el crecimiento resonante.}
     \label{fig:muk}
 \end{figure}
 
-Para valores pequeños del parámetro de acoplamiento ($q \ll 1$), el ancho de la banda de inestabilidad es angosto (\textit{Narrow Resonance}), lo que da lugar a una dinámica en la cual la amplitud del campo hijo se amplifica de forma continua. Al cuantizar el campo $\chi$ y tratar cada modo de Fourier como un oscilador armónico independiente, se define el número de ocupación de partículas como:
+Para valores débiles del parámetro de acoplamiento ($q \ll 1$), el ancho de la banda inestable es muy estrecho (\textit{Narrow Resonance}). Matemáticamente, esto implica una amplificación suave y continua de la amplitud del campo hijo. Para cuantificar la producción física de partículas, es habitual cuantizar el campo $\chi$ y tratar cada modo de Fourier como un oscilador armónico independiente, definiendo el número de ocupación espectral como:
 \begin{equation}
-    n_\chi (k) = \frac{1}{2 \Omega_\chi} \left( \left| \dot{\chi}_k \right|^2 + \Omega^2_\chi \left| \chi_k \right|^2 \right).
+    n_k^{(\chi)} = \frac{1}{2 \omega_k} \left( \left| \dot{\chi}_k \right|^2 + \omega^2_k \left| \chi_k \right|^2 \right) - \frac{1}{2}.
 \end{equation}
-En este régimen, el número de ocupación crece monótonamente alrededor de un valor medio de evolución continua. Por el contrario, si el parámetro de acoplamiento es grande ($q \gg 1$), la banda de inestabilidad resulta ancha (\textit{Broad Resonance}). En este régimen, el campo hijo oscila establemente durante la mayor parte del período, pero sufre violentas violaciones de adiabaticidad cuando el inflatón cruza el cero de su potencial. Esto se traduce en aumentos espontáneos y escalonados en la amplitud del campo y, en consecuencia, en la producción de lo que se conoce como explosiones de partículas (\textit{particle bursts}) \cite{Kofman_1997, Amin_2014}. Esta dinámica escalonada es evidente en el número de ocupación. Ambas dinámicas se encuentran ilustradas en la Figura \ref{fig:m2phi2_Resonance} para el modelo con $\displaystyle V(\phi) = \frac{1}{2} m^2 \phi^2$, y en la Figura \ref{fig:lphi4_Resonance} para el modelo $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$.
+En el régimen de resonancia angosta, este número de ocupación crece monótonamente alrededor de una envolvente continua. Por el contrario, cuando el parámetro de acoplamiento es fuerte ($q \gg 1$), el sistema ingresa al régimen de resonancia ancha (\textit{Broad Resonance}). En este escenario, la condición de adiabaticidad de los modos de Fourier se puede estudiar a través del parámetro:
+\begin{equation}
+    R = \frac{\left| \dot{\omega}_k \right|}{\omega_k^2},
+\end{equation}
+donde $\omega_k = \sqrt{\frac{k^2}{a^2} + g^2 \bar{\phi}^2}$ es la frecuencia efectiva del campo $\chi$. Durante la mayor parte del período de oscilación, $R \ll 1$ y el campo evoluciona adiabáticamente sin amplificación neta. Sin embargo, cuando el inflatón de fondo cruza por el mínimo de potencial ($\bar{\phi} \to 0$), la frecuencia efectiva decae abruptamente y su tasa de cambio se vuelve comparable a la magnitud de la frecuencia misma ($R \gtrsim 1$), tal como se ilustra en la Figura \ref{fig:adiabaticidad}. Esta violación de la adiabaticidad induce una producción violenta de partículas concentrada temporalmente en ráfagas cortas, dando lugar a un perfil escalonado en el número de ocupación. A este fenómeno característico se lo denomina explosión de partículas o \textit{particle bursts} \cite{Kofman_1997, Amin_2014}. Estas evoluciones se muestran en la Figura \ref{fig:m2phi2_Resonance} (para el potencial masivo) y en la Figura \ref{fig:lphi4_Resonance} (para el modelo cuártico de Lamé).
 
 \begin{figure}[htbp]
     \centering
@@ -157,7 +173,7 @@ En este régimen, el número de ocupación crece monótonamente alrededor de un 
         \includegraphics[width = \linewidth]{figures/nk_Broad_resonance_m2phi2.pdf}
         \subcaption{Broad resonance: número de ocupación}
     \end{subfigure}
-    \caption{Comparación de la dinámica del campo para los regímenes de \textit{Narrow Resonance} y \textit{Broad Resonance} en el modelo $V(\phi) = \frac{1}{2} m^2 \phi^2$. Se evidencia que la resonancia ancha se caracteriza por la amplificación no adiabática, generando saltos discretos (\textit{bursts}) tanto en la amplitud como en la densidad de número de partículas.}
+    \caption{Comparación de la dinámica del campo para los regímenes de \textit{Narrow Resonance} y \textit{Broad Resonance} en el modelo $V(\phi) = \frac{1}{2} m^2 \phi^2$. Se evidencia que la resonancia ancha se caracteriza por la amplificación no adiabática periódica, generando saltos discretos (\textit{bursts}) tanto en la envolvente del campo como en la densidad espectral de partículas.}
     \label{fig:m2phi2_Resonance}
 \end{figure}
 
@@ -183,9 +199,41 @@ En este régimen, el número de ocupación crece monótonamente alrededor de un 
         \includegraphics[width = 0.9\linewidth]{figures/nk_Broad_Resonance_lphi4.pdf}
         \subcaption{Broad resonance: número de ocupación}
     \end{subfigure}
-    \caption{Comparación de la dinámica del campo para los regímenes de \textit{Narrow Resonance} y \textit{Broad Resonance} en el modelo $V(\phi) = \frac{1}{4} \lambda \phi^4$. Al igual que en el caso masivo, la resonancia ancha exhibe la producción discontinua de partículas en los cruces por cero del inflatón.}
+    \caption{Comparación de los regímenes de resonancia en el modelo cuártico $V(\phi) = \frac{1}{4} \lambda \phi^4$. Al igual que en el caso cuadrático, el acoplamiento fuerte induce excitaciones discontinuas de partículas coincidentes con los cruces por cero del campo de fondo.}
     \label{fig:lphi4_Resonance}
 \end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.9\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{figures/Adiabaticity_m2phi2.pdf}
+        \subcaption{$m^2 \phi^2$}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.9\linewidth}
+        \centering
+        \includegraphics[width = \linewidth]{figures/Adiabaticity_lphi4.pdf}
+        \subcaption{$\lambda \phi^4$}
+    \end{subfigure}
+    \caption{Evolución del parámetro de adiabaticidad $R$ en función de las oscilaciones de fondo. Las gráficas demuestran que la tasa de cambio de la frecuencia efectiva es dominante ($R \gtrsim 1$) de manera exclusiva en la vecindad de los cruces por cero de $\bar{\phi}(t)$, originando así los eventos de no adiabaticidad extrema. (La dinámica del inflatón ha sido reescalada visualmente como referencia).}
+    \label{fig:adiabaticidad}
+\end{figure}
+
+
+\section{Evolución lineal con expansión}
+
+En la sección anterior, se desarrollaron la evolución de las ecuaciones de perturbaciones sin la consideración de la evolución temporal del universo. Para el desarrollo de esta sección, se armaron códigos \cite{Git} para el estudio del potencial cuártico ante la expansión del universo. Para ello, se utilizaron las ecuaciones
+\begin{equation}
+    \frac{d^2 \tilde{\phi}}{d \tilde{t}^2} + \frac{3}{a} \frac{d a}{d \tilde{t}} \frac{d \tilde{\phi}}{d \tilde{t}} + \tilde{\phi}^3 = 0,
+\end{equation}
+\begin{equation}
+    \frac{d^2 \tilde{\chi}_k}{d \tilde{t}^2} + \frac{3}{a} \frac{d a}{d \tilde{t}} \frac{d \tilde{\chi}_k}{d \tilde{t}} + \left( \frac{\tilde{k}^2}{a^2} + g^2 \tilde{\phi}^2 \right) \tilde{\chi}_k = 0,
+\end{equation}
+junto con la segunda ecuación de Friedmann
+\begin{equation}
+    \frac{d^2 a}{d \tilde{t}^2} + \frac{a}{3} \left[ \left( \frac{d \tilde{\phi}}{d \tilde{t}} \right)^2 - \frac{\tilde{\phi}^4}{4} \right] = 0,
+\end{equation}
+y donde se definieron los reescalados de los campos de modo tal que queden adimensionales para poder trabajar con ellos en los códigos. 
 
 Para el desarrollo de este trabajo, el interés estará en comprender el impacto de la \textit{Broad Resonance} sobre la generación del fondo de ondas gravitacionales bajo un potencial $V(\phi) = \frac{1}{4} \lambda \phi^4$. La elección de este escenario se debe por la posterior contrastación en el Capítulo \ref{sec:cap4}, donde el análisis lineal se comparará frente a las soluciones no lineales obtenidas de la simulación espectral en redes tipo \textit{Lattice}. Este marco potencial fue ampliamente calibrado en la literatura utilizando \CosmoLattice \cite{CosmoLatticeNet, Figueroa2021, Figueroa2023, Figueroa2024, Figueroa_2017_GW, Figueroa_2017_Parametric}.
 
