@@ -1,12 +1,12 @@
 \chapter{Evolución lineal de los campos durante Preheating} \label{sec:cap3}
 
-En el Capítulo \ref{sec:Introduccion} se mencionó que el final de la etapa inflacionaria deja al universo en un estado vacío, cuya densidad de energía está dominada en su totalidad por el condensado homogéneo del campo inflatón. Para que la historia térmica estándar del Big Bang caliente pueda tener lugar, esta energía debe ser transferida hacia los demás grados de libertad del modelo de partículas; este proceso global ocurre durante la etapa de Recalentamiento (\textit{Reheating}). La fase inicial de esta transición, denominada \textit{Preheating}, se aleja del equilibrio termodinámico y perturbativo clásico \cite{Amin_2014}. Durante esta etapa, las oscilaciones coherentes del inflatón en torno al mínimo de su potencial inducen una transferencia de energía explosiva, no perturbativa y altamente eficiente hacia los campos bosónicos acoplados a él \cite{Kofman_1994, Kofman_1997, Amin_2014}. 
+En el Capítulo \ref{sec:Introduccion} se mencionó que el final de la etapa inflacionaria deja al universo en un estado vacío, cuya densidad de energía está dominada en su totalidad por el condensado homogéneo del campo inflatón. Para que la historia térmica estándar del Big Bang caliente pueda tener lugar, esta energía debe ser transferida hacia los demás grados de libertad del modelo de partículas; este proceso global ocurre durante la etapa de Recalentamiento (\textit{Reheating}). La fase inicial de esta transición, denominada \textit{Preheating}, se aleja del equilibrio termodinámico y perturbativo clásico \cite{Amin_2014}. Durante esta etapa, las oscilaciones coherentes del inflatón en torno al mínimo de su potencial inducen una transferencia de energía explosiva, no perturbativa y altamente eficiente hacia los campos bosónicos acoplados a él \cite{Amin_2014, Kofman_1994, Kofman_1997}. 
 
-En este capítulo, se abordará la descripción analítica y numérica a orden lineal de esta dinámica temprana. En primer lugar, se estudiará cómo esta transferencia de energía se manifiesta a través de bandas de resonancia paramétrica, amplificando exponencialmente las fluctuaciones cuánticas del vacío \cite{Kofman_1994, Kofman_1997}. Posteriormente, se evaluará cómo la excitación repentina de estos modos de materia actúa como una fuente tensorial activa, dando origen a la emisión de un fondo estocástico de ondas gravitacionales \cite{Dufaux_2007, Figueroa_2017_GW, Caprini_2020}.
+En este capítulo, se abordará la descripción analítica y numérica a orden lineal de esta dinámica temprana. En primer lugar, se estudiará cómo esta transferencia de energía se manifiesta a través de bandas de resonancia paramétrica, amplificando exponencialmente las fluctuaciones cuánticas del vacío \cite{Kofman_1994, Kofman_1997}. Posteriormente, se evaluará cómo la excitación repentina de estos modos de materia actúa como una fuente tensorial activa, dando origen a la emisión de un fondo estocástico de ondas gravitacionales \cite{Caprini_2020, Dufaux_2007, Figueroa_2017_GW}.
 
 \section{Resonancia Paramétrica}
 
-Durante esta fase inicial de \textit{Preheating}, y tal como se adelantó en la sección \ref{sec:reheating}, el condensado del inflatón oscila en torno al mínimo de su potencial. Como consecuencia directa de esta dinámica periódica de fondo, se produce la creación explosiva de partículas de un campo hijo $\chi$ a través del fenómeno de resonancia paramétrica \cite{Kofman_1994, Kofman_1997, Amin_2014}. La evolución temporal y espacial de este sistema surge de resolver las ecuaciones de movimiento derivadas de la acción:
+Durante esta fase inicial de \textit{Preheating}, y tal como se adelantó en la sección \ref{sec:reheating}, el condensado del inflatón oscila en torno al mínimo de su potencial. Como consecuencia directa de esta dinámica periódica de fondo, se produce la creación explosiva de partículas de un campo hijo $\chi$ a través del fenómeno de resonancia paramétrica \cite{Amin_2014, Kofman_1994, Kofman_1997}. La evolución temporal y espacial de este sistema surge de resolver las ecuaciones de movimiento derivadas de la acción:
 \begin{equation}
     S[g_{\mu \nu}, \phi, \chi] = \int \sqrt{-g} \left[ \frac{m_p^2}{2} R - \frac{1}{2} \partial_\mu \phi \partial^\mu \phi - \frac{1}{2} \partial_\mu \chi \partial^\mu \chi - V(\phi) - \mathcal{I} (\phi, \chi) \right] ~ d^4 x,
 \end{equation}
@@ -18,7 +18,7 @@ donde $g$ (en la medida de integración) corresponde al determinante del tensor 
     \ddot{\chi} + 3 H \dot{\chi} - \frac{1}{a^2} \nabla^2 \chi + \frac{\partial \mathcal{I} (\phi, \chi)}{\partial \chi} = 0.
 \end{equation}
 
-En este capítulo, buscaremos resolver estas ecuaciones a orden lineal a partir de plantear una teoría de perturbaciones de la forma $\phi = \bar{\phi} + \delta \phi$ y $\chi = \delta \chi$, con $\delta \phi, \delta \chi \ll 1$, siendo $\bar{\phi}$ la evolución a orden cero del inflatón. Utilizando esta descomposición y descartando los términos de orden superior al lineal, se obtienen las ecuaciones que rigen las perturbaciones de los campos\footnote{Se puede encontrar un desarrollo matemático detallado de estos cálculos en el repositorio complementario de la tesis \cite{Git}.}:
+En este capítulo, buscaremos resolver estas ecuaciones a orden lineal a partir de plantear una teoría de perturbaciones de la forma $\phi = \bar{\phi} + \delta \phi$ y $\chi = \delta \chi$, con $\delta \phi, \delta \chi \ll 1$, siendo $\bar{\phi}$ la evolución a orden cero del inflatón. Utilizando esta descomposición y descartando los términos de orden superior al lineal, se obtienen las ecuaciones que rigen las perturbaciones de los campos:
 \begin{equation}
     \delta \ddot{\phi} + 3 H ~ \delta \dot{\phi} + \left[ \frac{\partial^2 V \left( \bar{\phi} \right)}{\partial \phi^2} - \frac{1}{a^2} \nabla^2 \right] ~ \delta \phi = 0,
 \end{equation}
@@ -149,7 +149,7 @@ En el régimen de resonancia angosta, este número de ocupación crece monótona
 \begin{equation}
     R = \frac{\left| \dot{\omega}_k \right|}{\omega_k^2},
 \end{equation}
-donde $\omega_k = \sqrt{\frac{k^2}{a^2} + g^2 \bar{\phi}^2}$ es la frecuencia efectiva del campo $\chi$. Durante la mayor parte del período de oscilación, $R \ll 1$ y el campo evoluciona adiabáticamente sin amplificación neta. Sin embargo, cuando el inflatón de fondo cruza por el mínimo de potencial ($\bar{\phi} \to 0$), la frecuencia efectiva decae abruptamente y su tasa de cambio se vuelve comparable a la magnitud de la frecuencia misma ($R \gtrsim 1$), tal como se ilustra en la Figura \ref{fig:adiabaticidad}. Esta violación de la adiabaticidad induce una producción violenta de partículas concentrada temporalmente en ráfagas cortas, dando lugar a un perfil escalonado en el número de ocupación. A este fenómeno característico se lo denomina explosión de partículas o \textit{particle bursts} \cite{Kofman_1997, Amin_2014}. Estas evoluciones se muestran en la Figura \ref{fig:m2phi2_Resonance} (para el potencial masivo) y en la Figura \ref{fig:lphi4_Resonance} (para el modelo cuártico de Lamé).
+donde $\omega_k = \sqrt{\frac{k^2}{a^2} + g^2 \bar{\phi}^2}$ es la frecuencia efectiva del campo $\chi$. Durante la mayor parte del período de oscilación, $R \ll 1$ y el campo evoluciona adiabáticamente sin amplificación neta. Sin embargo, cuando el inflatón de fondo cruza por el mínimo de potencial ($\bar{\phi} \to 0$), la frecuencia efectiva decae abruptamente y su tasa de cambio se vuelve comparable a la magnitud de la frecuencia misma ($R \gtrsim 1$). Esta violación de la adiabaticidad induce una producción violenta de partículas concentrada temporalmente en ráfagas cortas, dando lugar a un perfil escalonado en el número de ocupación. A este fenómeno característico se lo denomina explosión de partículas o \textit{particle bursts} \cite{Kofman_1997, Amin_2014}. Estas evoluciones se muestran en la Figura \ref{fig:m2phi2_Resonance} (para el potencial masivo) y en la Figura \ref{fig:lphi4_Resonance} (para el modelo cuártico de Lamé).
 
 \begin{figure}[htbp]
     \centering
@@ -203,28 +203,83 @@ donde $\omega_k = \sqrt{\frac{k^2}{a^2} + g^2 \bar{\phi}^2}$ es la frecuencia ef
     \label{fig:lphi4_Resonance}
 \end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    \begin{subfigure}[t]{0.9\linewidth}
-        \centering
-        \includegraphics[width = \linewidth]{figures/Adiabaticity_m2phi2.pdf}
-        \subcaption{$m^2 \phi^2$}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.9\linewidth}
-        \centering
-        \includegraphics[width = \linewidth]{figures/Adiabaticity_lphi4.pdf}
-        \subcaption{$\lambda \phi^4$}
-    \end{subfigure}
-    \caption{Evolución del parámetro de adiabaticidad $R$ en función de las oscilaciones de fondo. Las gráficas demuestran que la tasa de cambio de la frecuencia efectiva es dominante ($R \gtrsim 1$) de manera exclusiva en la vecindad de los cruces por cero de $\bar{\phi}(t)$, originando así los eventos de no adiabaticidad extrema. (La dinámica del inflatón ha sido reescalada visualmente como referencia).}
-    \label{fig:adiabaticidad}
-\end{figure}
-
+%\begin{figure}[htbp]
+%    \centering
+%    \begin{subfigure}[t]{0.9\linewidth}
+%        \centering
+%        \includegraphics[width = \linewidth]{figures/Adiabaticity_m2phi2.pdf}
+%        \subcaption{$m^2 \phi^2$}
+%    \end{subfigure}
+%    \begin{subfigure}[b]{0.9\linewidth}
+%        \centering
+%        \includegraphics[width = \linewidth]{figures/Adiabaticity_lphi4.pdf}
+%        \subcaption{$\lambda \phi^4$}
+%    \end{subfigure}
+%    \caption{Evolución del parámetro de adiabaticidad $R$ en función de las oscilaciones de fondo. Las gráficas demuestran que la tasa de cambio de la frecuencia efectiva es dominante ($R \gtrsim 1$) de manera exclusiva en la vecindad de los cruces por cero de $\bar{\phi}(t)$, originando así los eventos de no adiabaticidad extrema. (La dinámica del inflatón ha sido reescalada visualmente como referencia).}
+%    \label{fig:adiabaticidad}
+%\end{figure}
 
 \section{Dinámica con expansión}
 
-En la sección anterior, se desarrollaron la evolución de las ecuaciones de perturbaciones sin la consideración de la evolución temporal del universo. 
+En la sección anterior, se estudió la evolución de las ecuaciones de perturbaciones bajo la aproximación de un espacio estático de Minkowski. En esta sección se abordará rigurosamente el efecto de la expansión del universo en la dinámica de los campos a orden lineal.
 
-Para el desarrollo de este trabajo, el interés estará en comprender el impacto de la \textit{Broad Resonance} sobre la generación del fondo de ondas gravitacionales bajo un potencial $V(\phi) = \frac{1}{4} \lambda \phi^4$. La elección de este escenario se debe por la posterior contrastación en el Capítulo \ref{sec:cap4}, donde el análisis lineal se comparará frente a las soluciones no lineales obtenidas de la simulación espectral en redes tipo \textit{Lattice}. Este marco potencial fue ampliamente calibrado en la literatura utilizando \CosmoLattice \cite{CosmoLatticeNet, Figueroa2021, Figueroa2023, Figueroa2024, Figueroa_2017_GW, Figueroa_2017_Parametric}.
+Al incorporar la expansión cosmológica, las ecuaciones dinámicas para el campo de fondo del inflatón y para las perturbaciones del campo hijo están dadas por:
+\begin{equation}
+    \ddot{\bar{\phi}} + 3 H \dot{\bar{\phi}} + \frac{\partial V \left( \bar{\phi} \right)}{\partial \phi} = 0,
+\end{equation}
+\begin{equation}
+    \delta \ddot{\chi}_k + 3 H ~ \delta \dot{\chi}_k + \left( g^2 \bar{\phi}^2 + \frac{k^2}{a^2} \right) ~ \delta \chi_k = 0. 
+\end{equation}
+
+\vspace{3cm}
+
+Para el modelo masivo libre, regido por un potencial cuadrático $V(\phi) = \frac{1}{2} m^2 \phi^2$, el sistema se escribe como:
+\begin{equation}
+    \ddot{\bar{\phi}} + 3 H \dot{\bar{\phi}} + m^2 \bar{\phi} = 0,
+\end{equation}
+\begin{equation}
+    \delta \ddot{\chi}_k + 3 H ~ \delta \dot{\chi}_k + \left( g^2 \bar{\phi}^2 + \frac{k^2}{a^2} \right) ~ \delta \chi_k = 0. 
+\end{equation}
+Durante la fase de oscilaciones coherentes del principio de \textit{Preheating}, el universo se expande efectivamente como en una era dominada por materia, es decir, $a(t) \propto t^{2/3}$ (Ecuación \ref{eqn:omega_eff}). Esta dependencia temporal permite proponer un cambio de variables para absorber el término de fricción de Hubble. Definiendo los campos reescalados $\varphi = a^{3/2} \bar{\phi}$ y $X_k = a^{3/2} ~ \delta \chi_k$, las ecuaciones se transforman en:
+\begin{equation}
+    \ddot{\varphi} + \left( m^2 - \frac{9}{4} H^2 - \frac{3}{2} \dot{H} \right) \varphi = 0,
+\end{equation}
+\begin{equation}
+    \ddot{X}_k + \left( \frac{k^2}{a^2} + \frac{g^2 \varphi^2}{a^3} - \frac{9}{4} H^2 - \frac{3}{2} \dot{H} \right) X_k = 0.
+\end{equation}
+Dado que el factor de escala evoluciona como $a \propto t^{2/3}$, se puede verificar la relación $\frac{9}{4} H^2 + \frac{3}{2} \dot{H} = 0$. Por tanto, las ecuaciones se reducen a:
+\begin{equation}
+    \ddot{\varphi} + m^2 \varphi = 0,
+\end{equation}
+\begin{equation}
+    \ddot{X}_k + \left( \frac{k^2}{a^2} + \frac{g^2 \varphi^2}{a^3} \right) X_k = 0.
+\end{equation}
+Este resultado demuestra que, si bien la expansión elimina el decaimiento directo por fricción en las nuevas variables, introduce una fuerte dependencia temporal en la frecuencia efectiva del campo hijo a través de los factores $a^{-2}$ y $a^{-3}$. Este cambio altera la banda de inestabilidad, provocando que los modos de Fourier entren y salgan del régimen de resonancia ancha (\textit{Broad Resonance}). Esta acumulación de fases da lugar a un fenómeno conocido en la literatura como resonancia estocástica (\textit{Stochastic Resonance}) \cite{Amin_2014, Kofman_1997}, cuya dinámica escalonada irregular se puede observar en la Figura \ref{fig:stochastic_resonance}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = \linewidth]{figures/nk_Broad_resonance_expansion_m2phi2.pdf}
+    \caption{Evolución temporal del número de ocupación de partículas $n_k$ para el modelo $m^2\phi^2$ con expansión cósmica. La continua variación de la frecuencia efectiva inducida por el factor de escala altera el patrón estricto de las inestabilidades de Floquet, generando una producción de partículas modulada por resonancia estocástica.}
+    \label{fig:stochastic_resonance}
+\end{figure}
+
+Por otro lado, para el caso de un potencial de auto-interacción cuártico, $V(\phi) = \frac{1}{4} \lambda \phi^4$, el universo de fondo se expande como si estuviese dominado por la radiación, $a(t) \propto t^{1/2}$. Para este escenario, resulta conveniente expresar las ecuaciones de movimiento en términos del tiempo conforme $\eta$, en lugar del tiempo coordenado $t$, a su vez denoratemos a las derivadas respecto al tiempo conforme con prima ($^\prime$). De este modo, definiendo los campos conforme-reescalados $\varphi = a \bar{\phi}$ y $X_k = a ~ \delta \chi_k$, el sistema adopta la forma:
+\begin{equation}
+    \varphi^{\prime \prime} + \lambda \varphi^3 = \frac{a^{\prime \prime}}{a} \varphi,
+\end{equation}
+\begin{equation}
+    X_k^{\prime \prime} + \left( k^2 + g^2 \varphi^2 \right) X_k = \frac{a^{\prime \prime}}{a} X_k.
+\end{equation}
+En una era dominada por la radiación, el factor de escala es directamente proporcional al tiempo conforme ($a \propto \eta$), lo que implica trivialmente que $a^{\prime \prime} = 0$. Por ello, las ecuaciones dinámicas se escriben como:
+\begin{equation}
+    \varphi^{\prime \prime} + \lambda \varphi^3 = 0,
+\end{equation}
+\begin{equation}
+    X_k^{\prime \prime} + \left( k^2 + g^2 \varphi^2 \right) X_k = 0.
+\end{equation}
+Estas expresiones no tienen dependencia explícita con el factor de escala $a(\eta)$. Esto demuestra que el sistema $\lambda \phi^4$ acoplado a un campo escalar sin masa es un modelo invariante conforme a nivel clásico \cite{Greene_1997}. Por lo tanto, estudiar la dinámica de estos campos en un universo en expansión es matemáticamente equivalente a estudiarla en un espacio estático de Minkowski, lo que garantiza que las tablas de inestabilidad de Floquet deducidas en la sección anterior mantengan su validez intacta en el tiempo.
+
+Para el desarrollo del resto de este trabajo, el interés central radicará en comprender el impacto de la resonancia ancha sobre la generación del fondo de ondas gravitacionales bajo el potencial cuártico. La elección de este escenario, se justifica analíticamente por su invarianza conforme, y permitirá una contrastación directa en el Capítulo \ref{sec:cap4}, donde este análisis lineal a tiempos cortos se comparará frente a las soluciones no perturbativas a tiempos largos obtenidas de la simulación espectral en redes mediante \CosmoLattice \cite{CosmoLatticeNet, Figueroa2021, Figueroa_2017_GW}.
 
 \section{Producción de ondas gravitacionales en el régimen lineal}\label{sec:Produccion_lineal}
 

@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Tesis_Ciccarella.aux
 The style file: apalike.bst
 Database file #1: references.bib
-You've used 40 entries,
+You've used 42 entries,
             1935 wiz_defined-function locations,
-            711 strings with 10679 characters,
-and the built_in function-call counts, 14471 in all, are:
-= -- 1316
-> -- 835
-< -- 24
-+ -- 302
-- -- 292
-* -- 1194
-:= -- 2744
-add.period$ -- 121
-call.type$ -- 40
-change.case$ -- 339
-chr.to.int$ -- 38
-cite$ -- 40
-duplicate$ -- 518
-empty$ -- 827
-format.name$ -- 348
-if$ -- 2670
+            722 strings with 10880 characters,
+and the built_in function-call counts, 15101 in all, are:
+= -- 1378
+> -- 861
+< -- 26
++ -- 310
+- -- 300
+* -- 1242
+:= -- 2862
+add.period$ -- 127
+call.type$ -- 42
+change.case$ -- 353
+chr.to.int$ -- 40
+cite$ -- 42
+duplicate$ -- 544
+empty$ -- 867
+format.name$ -- 362
+if$ -- 2790
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 42
-newline$ -- 204
-num.names$ -- 120
-pop$ -- 306
+missing$ -- 44
+newline$ -- 214
+num.names$ -- 126
+pop$ -- 314
 preamble$ -- 1
-purify$ -- 344
+purify$ -- 358
 quote$ -- 0
-skip$ -- 419
+skip$ -- 443
 stack$ -- 0
-substring$ -- 537
-swap$ -- 36
+substring$ -- 561
+swap$ -- 38
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 228
+type$ -- 240
 warning$ -- 0
-while$ -- 84
+while$ -- 88
 width$ -- 0
-write$ -- 499
+write$ -- 525
