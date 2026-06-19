@@ -4,7 +4,7 @@
 param_file="../src/models/parameter-files/starobinsky3.in"
 
 ms=(2.435e13)
-Ms=(2.435e18 2.435e19 2.435.0e20 2.435e21 2.435e22 2.435e23)
+Ms=(2.435e20)
 q_fixed=16000
 
 for m in "${ms[@]}"
