@@ -49,11 +49,11 @@ Por otro lado, la máxima frecuencia espacial (resolución ultravioleta o \texti
 \end{equation}
 Esto implica que cualquier proceso físico cuya longitud de onda sea mayor a $L$ o menor a $2\Delta x$ resultará indetectable o generará efectos espurios de interpolación (\textit{aliasing}).
 
-Finalmente, la integración de las ecuaciones emplea métodos simplécticos (como algoritmos de tipo \textit{Velocity-Verlet}), los cuales evalúan las amplitudes y los momentos conjugados en instantes alternados para preservar el volumen en el espacio de fases. La estabilidad iterativa de estos métodos para las ecuaciones está gobernada por la condición de Courant-Friedrichs-Lewy (CFL). En \CosmoLattice, el tamaño del paso temporal de integración $\Delta \tau$ se vincula con el paso espacial mediante el factor de Courant $C$:
+Finalmente, la integración de las ecuaciones emplea métodos simplécticos (como algoritmos de tipo \textit{Velocity-Verlet}), los cuales evalúan las amplitudes y los momentos conjugados en instantes alternados para preservar el volumen en el espacio de fases. La estabilidad iterativa de estos métodos para las ecuaciones está gobernada por la condición de Courant-Friedrichs-Lewy (CFL). En \CosmoLattice, el tamaño del paso temporal de integración $\Delta \tau$ se vincula con el paso espacial mediante el factor de Courant $C$, de modo tal de que para tener estabilidad numérica se debe cumplir la relación:
 \begin{equation}
-    \Delta \tau = C \times \Delta x.
+    \delta \tau = \frac{\delta x}{\sqrt{N_{dim}}}
 \end{equation}
-Para asegurar que la información física no se propague más rápido que la velocidad de la luz en la red tridimensional, la estabilidad numérica exige que $C < 1/\sqrt{3} \approx 0.577$.
+siendo $N_{dim}$ el número de dimensiones espaciales de la red.
 
 En las secciones siguientes se utilizará este software para simular el decaimiento de dos familias de potenciales inflacionarios. A lo mismo se le extraerá computacionalmente el proyector transversal y de traza nula $\Pi_{ij}^{TT}$ del tensor de estrés y se integrará en la red para obtener el espectro observable del fondo de ondas gravitacionales \cite{Figueroa_2017_GW}, permitiendo contrastar así los resultados analíticos del Capítulo \ref{sec:cap3} con la fenomenología no lineal completa.
 

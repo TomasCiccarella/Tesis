@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {4.1}Discretización y parámetros de la red}{38}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Estudio del potencial $\lambda \phi ^4$ a orden lineal}{39}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Los modelos a estudiar}{43}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Evolución del background}{45}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Evolución del background}{46}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Comparación de espectros con $\omega _{eff} = 1/3$}{47}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Comparación de espectros con $\omega _{eff} = 0$}{54}{section.4.6}%
 \contentsline {section}{\numberline {4.7}Sensibilidad observacional y perspectivas de detección}{57}{section.4.7}%
