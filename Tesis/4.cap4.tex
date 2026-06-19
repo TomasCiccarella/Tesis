@@ -1,33 +1,67 @@
 \chapter{\CosmoLattice} \label{sec:cap4}
 
-\CosmoLattice es un código público moderno escrito en \texttt{C++}, diseñado para la simulación numérica tridimensional de la dinámica no lineal de campos clásicos en un universo en expansión \cite{Figueroa2023, CosmoLatticeNet}. Esta herramienta computacional resulta fundamental para investigar fenómenos del universo temprano donde la teoría de perturbaciones lineales pierde validez, tales como la termalización turbulenta, las etapas no perturbativas del \textit{Preheating}, y la generación del fondo estocástico de ondas gravitacionales \cite{Figueroa2024}.
+\CosmoLattice es un código público moderno escrito en \texttt{C++}, diseñado para la simulación numérica tridimensional de la dinámica no lineal de campos clásicos interactuantes en un universo en expansión \cite{Figueroa2023, CosmoLatticeNet}. Esta herramienta computacional resulta fundamental para investigar fenómenos del universo temprano donde la teoría de perturbaciones lineales pierde validez, tales como las etapas no perturbativas del \textit{preheating} y la generación de un fondo estocástico de ondas gravitacionales \cite{Figueroa2024}.
 
-El programa permite evolucionar sistemas físicos compuestos por múltiples campos escalares interactuantes, así como campos de gauge abelianos ($U(1)$) y no abelianos ($SU(N)$). La dinámica subyacente de estos campos se deriva de una acción genérica de la forma:
+El programa permite evolucionar sistemas físicos compuestos tanto por múltiples campos escalares como por campos de \textit{gauge} abelianos asociados a simetrías $U(1)$ y no abelianos bajo simetrías $SU(N)$. La dinámica más general que el código es capaz de integrar se deriva de una acción de la forma:
 \begin{equation}
     \begin{split}
-        S = - \int \sqrt{-g} \Bigg[ &\frac{1}{2} \partial_\mu \phi \partial^\mu \phi + \left( D_\mu^A \varphi \right)^* \left( D^\mu_A \varphi \right) + \left( D_\mu \Phi \right)^\dagger \left( D^\mu \Phi \right) \\
-        &+ \frac{1}{4} F_{\mu \nu} F^{\mu \nu} + \frac{1}{2} \text{Tr} \left( G_{\mu\nu} G^{\mu\nu} \right) + V \left( \phi, \left| \varphi \right|, \left| \Phi \right| \right) \Bigg] ~ d^4 x,
+        S = - \int \sqrt{-g} \Bigg[ &\sum_n \frac{1}{2} \partial_\mu \phi_n \partial^\mu \phi_n + \sum_m \left( D_\mu \varphi_m \right)^* \left( D^\mu \varphi_m \right) + \sum_k \left( D_\mu \Phi_k \right)^\dagger \left( D^\mu \Phi_k \right) \\
+        &+ \frac{1}{4} F_{\mu \nu} F^{\mu \nu} + \frac{1}{2} \text{Tr} \left( G_{\mu\nu} G^{\mu\nu} \right) + V \left( \phi_n, \varphi_m, \Phi_k \right) \Bigg] d^4 x,
     \end{split}
 \end{equation}
-donde $\phi$ representa escalares reales neutros (como el inflatón), $\varphi$ escalares cargados bajo $U(1)$, y $\Phi$ escalares en representaciones de $SU(N)$, estando acompañados por sus respectivos tensores de campo gravitacionales y de gauge \cite{Figueroa2021}. 
+donde $\phi_n$ representa un conjunto de campos escalares reales (como el inflatón), $\varphi_m$ son campos escalares complejos cargados bajo el grupo $U(1)$, y $\Phi_k$ son campos escalares en representaciones del grupo $SU(N)$. Los operadores $D_\mu$ son las derivadas covariantes correspondientes a cada grupo de simetría local. A su vez, $F_{\mu\nu}$ y $G_{\mu\nu}$ representan los tensores de intensidad de campo para los sectores abeliano y no abeliano, respectivamente, mientras que $V$ codifica tanto el potencial propio de los campos como sus interacciones escalares directas \cite{Figueroa2021}.
 
-Las ecuaciones de movimiento se evalúan sobre una métrica de fondo de tipo Friedmann-Lemaître-Robertson-Walker (FLRW) espacialmente plana, parametrizada de manera como:
+Aunque el software ofrece la posibilidad de simular interacciones de complejas, de acuerdo a los modelos inflacionarios que se usarán en este trabajo, la dinámica simulada se restringirá exclusivamente a los campos escalares reales interactuantes. Bajo esta consideración, las ecuaciones de movimiento se evalúan sobre una métrica de fondo de tipo Friedmann-Lemaître-Robertson-Walker (FLRW) espacialmente plana, parametrizada según:
 \begin{equation}
     ds^2 = - a^{2 \alpha} (\tau) ~ d\tau^2 + a^2 (\tau) ~ \delta_{ij} ~ dx^i dx^j,
 \end{equation}
-donde la elección del parámetro $\alpha$ determina la variable temporal de integración: $\alpha = 0$ corresponde a evolucionar el sistema en el tiempo cósmico ($t$), mientras que $\alpha = 1$ corresponde a la evolución en el tiempo conforme ($\eta$) \cite{Figueroa2023}.
+cuya elección del parámetro $\alpha$ determina la variable temporal del programa: $\alpha = 0$ implica evolucionar el sistema en el tiempo coordenado ($t$), mientras que $\alpha = 1$ corresponde a la evolución en el tiempo conforme ($\eta$) \cite{Figueroa2023}. Con esta métrica, la ecuación de movimiento exacta que resuelve el código para el campo escalar $n$-ésimo resulta:
+\begin{equation}\label{eqn:eom_lattice}
+    \phi_n^{\prime \prime} + (3 - \alpha) \frac{a^\prime}{a} \phi_n^\prime - a^{2\alpha - 2} \nabla^2 \phi_n + a^{2\alpha} \frac{\partial V}{\partial \phi_n} = 0,
+\end{equation}
+donde las primas ($^\prime$) denotan derivadas respecto al tiempo de programa $\tau$. 
 
-Para resolver numéricamente estas ecuaciones, \CosmoLattice discretiza el espacio-tiempo en una red cúbica periódica (\textit{Lattice}) de $N^3$ nodos, separados por un paso de red espacial constante. Las derivadas espaciales se aproximan mediante esquemas de diferencias finitas en la red. Un aspecto técnico crucial detallado en \cite{Figueroa2021} es el manejo de la evolución temporal: para garantizar la conservación del volumen en el espacio de fases y mantener la estabilidad numérica en simulaciones altamente oscilatorias (como ocurre durante la resonancia paramétrica), el código implementa integradores simplécticos explícitos, tales como algoritmos de tipo \textit{Velocity-Verlet}. Estos métodos evalúan las amplitudes de los campos y sus momentos conjugados en instantes de tiempo alternados, minimizando la acumulación de errores de energía a largo plazo.
+Para resolver acopladamente la evolución de la métrica $a(\tau)$, \CosmoLattice no impone una ley de expansión analítica prefijada, sino que resuelve numéricamente las ecuaciones de Friedmann paso a paso capturando la dinámica total del sistema. Para esto, evalúa los promedios espaciales sobre la red de la densidad de energía $\bar{\rho} = \langle \rho \rangle$ y la presión $\bar{P} = \langle P \rangle$. En ausencia de campos de \textit{gauge}, estas magnitudes se calculan a nivel local como:
+\begin{equation}
+    \rho = \sum_n \left( K_n + G_n \right) + V, \quad \quad P = \sum_n \left( K_n - \frac{1}{3} G_n \right) - V,
+\end{equation}
+donde las densidades de energía cinética $K_n$ y de gradiente espacial $G_n$ para cada campo están dadas por:
+\begin{equation}
+    K_n = \frac{1}{2 a^{2 \alpha}} \left( \phi_n^\prime \right)^2, \quad \quad G_n = \frac{1}{2 a^2} \sum_{i=1}^3 \left( \partial_i \phi_n \right)^2.
+\end{equation}
+Con estos promedios volumétricos, el código integra la segunda ecuación de Friedmann,
+\begin{equation}
+    \frac{a^{\prime \prime}}{a} - \alpha \left( \frac{a^\prime}{a} \right)^2 = \frac{a^{2\alpha}}{6 m_p^2} \left( \bar{\rho} - 3 \bar{P} \right),
+\end{equation}
+y utiliza la primera ecuación de Friedmann ($H^2 = \bar{\rho} / 3 m_p^2$) para evaluar la consistencia y el error numérico a lo largo de la simulación.
 
-Además de resolver la dinámica de los campos de materia, el código permite estudiar la evolución del factor de escala $a(\tau)$. En lugar de imponer una ley de expansión fija, \CosmoLattice resuelve las ecuaciones de Friedmann paso a paso. Para ello, calcula los promedios espaciales de la densidad de energía $\langle \rho \rangle$ y la presión $\langle P \rangle$ sobre toda la red, capturando la contribución de la explosión de partículas producidas (\textit{backreaction}) para dictar la tasa de expansión del universo \cite{Figueroa2021, Figueroa2023}.
+\section{Discretización y parámetros de la red}
 
-Aunque el software soporta la implementación de simetrías de gauge, para el propósito del trabajo nos restringiremos exclusivamente al sector escalar del código. Se simulará la dinámica de decaimiento del inflatón y su acoplamiento no lineal con el campo hijo $\chi$, con el fin de extraer computacionalmente el proyector transversal y de traza nula $\Pi_{ij}^{TT}$ del tensor de energía-momento espacial. Dicho proyector será integrado paralelamente en la red para obtener el espectro observable de las ondas gravitacionales \cite{Figueroa_2017_GW}, permitiendo así contrastar los resultados analíticos del Capítulo \ref{sec:cap3} con la dinámica no lineal completa. Luego, se estudiarán los espectros de potencia de las ondas para la implementación de distintos modelos de potencial $V(\phi)$ para tiempos largos, buscando constrastar con experientos propuestos para el estudio de este fenómeno.
+Para poder realizar la integración numérica, \CosmoLattice requiere que las variables físicas sean previamente adimensionalizadas. Este reescalamiento se realiza introduciendo una escala de masa (o frecuencia) característica $\omega_*$, y una amplitud de campo característica $\phi_*$. A partir de ellas, las coordenadas espaciales y temporales se reescriben como $\tilde{x}^i = \omega_* x^i$ y $\tilde{\tau} = \omega_* \tau$, mientras que los campos se expresan como $\tilde{\phi}_n = \phi_n / \phi_*$. Esta adimensionalización garantiza que los números manipulados por el procesador sean del orden de la unidad, evitando errores de desbordamiento numérico (\textit{overflow}).
+
+El espacio físico se discretiza en una red cúbica periódica (\textit{Lattice}) de $N^3$ nodos. Si el lado físico de la caja es $L$, la separación entre puntos adyacentes de la red (paso espacial) está dada por $\Delta x = L / N$. Esta discretización geométrica impone límites en las escalas que pueden ser resueltas por la simulación. En el espacio de Fourier, la escala infrarroja (\textit{IR cutoff}) o el momento mínimo no nulo capturado por la caja está dictado por el tamaño total de la red:
+\begin{equation}
+    k_{IR} = \frac{2\pi}{L}.
+\end{equation}
+Por otro lado, la máxima frecuencia espacial (resolución ultravioleta o \textit{UV cutoff}) está acotada por el teorema de muestreo de Nyquist a lo largo de las tres dimensiones y viene dada por la separación entre nodos:
+\begin{equation}
+    k_{UV} = \frac{\sqrt{3} \pi}{\Delta x} = \frac{\sqrt{3} N}{2} k_{IR}.
+\end{equation}
+Esto implica que cualquier proceso físico cuya longitud de onda sea mayor a $L$ o menor a $2\Delta x$ resultará indetectable o generará efectos espurios de interpolación (\textit{aliasing}).
+
+Finalmente, la integración de las ecuaciones emplea métodos simplécticos (como algoritmos de tipo \textit{Velocity-Verlet}), los cuales evalúan las amplitudes y los momentos conjugados en instantes alternados para preservar el volumen en el espacio de fases. La estabilidad iterativa de estos métodos para las ecuaciones está gobernada por la condición de Courant-Friedrichs-Lewy (CFL). En \CosmoLattice, el tamaño del paso temporal de integración $\Delta \tau$ se vincula con el paso espacial mediante el factor de Courant $C$:
+\begin{equation}
+    \Delta \tau = C \times \Delta x.
+\end{equation}
+Para asegurar que la información física no se propague más rápido que la velocidad de la luz en la red tridimensional, la estabilidad numérica exige que $C < 1/\sqrt{3} \approx 0.577$.
+
+En las secciones siguientes se utilizará este software para simular el decaimiento de dos familias de potenciales inflacionarios. A lo mismo se le extraerá computacionalmente el proyector transversal y de traza nula $\Pi_{ij}^{TT}$ del tensor de estrés y se integrará en la red para obtener el espectro observable del fondo de ondas gravitacionales \cite{Figueroa_2017_GW}, permitiendo contrastar así los resultados analíticos del Capítulo \ref{sec:cap3} con la fenomenología no lineal completa.
 
 \section{Estudio del potencial \texorpdfstring{$\lambda \phi^4$}{lambda phi\textasciicircum 4} a orden lineal}
 
 Con el propósito de contrastar el modelo lineal de \textit{preheating} desarrollado en el Capítulo \ref{sec:cap3} con una dinámica completa que incorpore la expansión del universo y los efectos no lineales, se procedió a analizar las simulaciones de \CosmoLattice a tiempos cortos \cite{Figueroa2021, Figueroa2023}. En este régimen temprano, donde la aproximación lineal $\delta \chi \ll 1$ aún es válida, el objetivo es verificar si el espectro de ondas gravitacionales muestra un pico de amplificación que coincida con la banda de inestabilidad teórica predicha por el exponente de Floquet \cite{Kofman_1997, Amin_2014}.
 
-Para poder realizar esta comparativa, se adopta el modelo de decaimiento con potencial cuártico $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$ y se realiza un barrido sobre el parámetro de acoplamiento efectivo $\displaystyle q = \frac{g^2}{\lambda}$. Esto permite comprobar si la amplificación por resonancia paramétrica en los campos escalares se traduce directamente en una amplificación análoga en el espectro de potencias tensorial. En la Figura \ref{fig:CosmoLattice_chi_lineal} se presenta el espectro de potencias del campo hijo, donde el área sombreada en verde indica la banda de inestabilidad calculada analíticamente mediante el formalismo de Floquet (sección \ref{sec:Floquet}). Consecuentemente, el espectro de potencia de las ondas gravitacionales inducidas se observa en la Figura \ref{fig:CosmoLattice_GW_lineal}.
+Para poder realizar esta comparativa, se adopta el modelo con potencial cuártico $\displaystyle V(\phi) = \frac{1}{4} \lambda \phi^4$ y se realiza un barrido sobre el parámetro de acoplamiento efectivo $\displaystyle q = \frac{g^2}{\lambda}$. Esto permite comprobar si la amplificación por resonancia paramétrica en los campos escalares se traduce directamente en una amplificación análoga en el espectro de potencias tensorial. En la Figura \ref{fig:CosmoLattice_chi_lineal} se presenta el espectro de potencias del campo hijo, donde el área sombreada en verde indica la banda de inestabilidad calculada analíticamente mediante el formalismo de Floquet (sección \ref{sec:Floquet}). Consecuentemente, el espectro de potencia de las ondas gravitacionales inducidas se observa en la Figura \ref{fig:CosmoLattice_GW_lineal}.
 
 Al analizar los espectros del campo hijo en la Figura \ref{fig:CosmoLattice_chi_lineal}, se puede notar que, a tiempos cortos, los modos contenidos dentro de la banda verde sufren una amplificación exponencial\footnote{En las siguientes secciones se estudiará el comportamiento a tiempos largos, donde se evidenciará que la retroacción (\textit{backreaction}) y la dispersión no lineal de modos (\textit{rescattering}) saturan el crecimiento, estabilizando el espectro de potencias \cite{Kofman_1997, Figueroa2021}.}. Este fenómeno se refleja también en la evolución del número de ocupación (Figura \ref{fig:CosmoLattice_nk_lineal}), el cual crece de manera pronunciada para los números de onda en resonancia. Respecto al espectro de las ondas gravitacionales (Figura \ref{fig:CosmoLattice_GW_lineal}), se observa el pico principal esperado dentro de la banda teórica. Sin embargo, aparecen picos secundarios en bandas de mayor frecuencia; estos son una consecuencia directa de la fuente tensorial, la cual involucra una convolución cuadrática de los modos escalares en el espacio de momentos, induciendo ondas en un rango espectral más amplio \cite{Dufaux_2007, Figueroa_2017_GW}.
 
@@ -92,7 +126,7 @@ Al realizar una expansión en serie de Taylor alrededor del mínimo del potencia
 
 Esta comparativa entre los distintos modelos se ilustra en la Figura \ref{fig:comp_modelos}, donde se gráfica la región cercana al mínimo. Además, para efectuar una comparación dinámica rigurosa, resulta imprescindible considerar el estado del sistema en el instante en que inicia el \textit{Reheating}. Evaluando qué tan cercanas son estas condiciones iniciales, se puede entender hasta qué punto cabe esperar una evolución semejantes. Por ello, la figura también indica la amplitud y la velocidad inicial del campo, calculadas en el Apéndice \ref{sec:apexB} a partir de las aproximaciones de \textit{slow-roll}. Se puede observar que las curvas de los potenciales son similares en la vecindad del mínimo, tal como anticipó la expansión de Taylor; sin embargo, las condiciones iniciales difieren drásticamente. Esto implica que la equivalencia dinámica entre modelos será estrictamente válida solo a tiempos largos, cuando el inflatón haya perdido energía y su amplitud decaiga hacia la región de concordancia. El hecho de que estas condiciones iniciales estén tan distantes forzó la utilización de una escala logarítmica para la correcta visualización de los modelos de tipo radiación.
 
-Tal como se mencionó en la anteriormente, \CosmoLattice admite la implementación de campos de gauge U(1) y SU(2). No obstante, en este trabajo el estudio se centra exclusivamente en las autointeracciones del sector escalar, por lo que no se abordarán los espectros de ondas gravitacionales originados por fuentes vectoriales o tensoriales primordiales. En la próxima sección se examinará la evolución del factor de escala $a(t)$ y del campo del inflatón $\phi(t)$ para constatar que el comportamiento macroscópico del \textit{background} concuerda con las aproximaciones analíticas.
+Tal como se mencionó anteriormente, \CosmoLattice admite la implementación de campos de gauge U(1) y SU(2). No obstante, en este trabajo el estudio se centra exclusivamente en las autointeracciones del sector escalar, por lo que no se abordarán los espectros de ondas gravitacionales originados por fuentes vectoriales o tensoriales primordiales. En la próxima sección se examinará la evolución del factor de escala $a(t)$ y del campo del inflatón $\phi(t)$ para constatar que el comportamiento del \textit{background} concuerda con las aproximaciones analíticas.
 
 \section{Evolución del background}
 
@@ -138,7 +172,7 @@ Junto a la expansión geométrica del espacio, resulta necesario estudiar la din
 
 \vspace{3cm}
 
-Habiendo corroborado el correcto comportamiento macroscópico del \textit{background}, el análisis se enfocará íntegramente en la evolución de las fluctuaciones: los espectros de potencia de los campos hijos junto con la consecuente retroacción sobre la métrica. Finalmente, en la última sección, se estudiará la huella tensorial remanente, reescalando los espectros de ondas gravitacionales obtenidos para confrontarlos con las curvas de sensibilidad de los arreglos experimentales actuales y futuros.
+Habiendo corroborado el correcto comportamiento del \textit{background}, el análisis se enfocará íntegramente en la evolución de las fluctuaciones: los espectros de potencia de los campos hijos junto con la consecuente retroacción sobre el factor de escala. Finalmente, en la última sección, se estudiarán las ondas gravitacionales producidas, reescalando los espectros de ondas gravitacionales obtenidos para confrontarlos con las curvas de sensibilidad de los arreglos experimentales actuales y futuros.
 
 \section{Comparación de espectros con \texorpdfstring{$\omega_{eff} = 1/3$}{omega = 1/3}}
 

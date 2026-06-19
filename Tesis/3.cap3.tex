@@ -220,39 +220,28 @@ donde $\omega_k = \sqrt{\frac{k^2}{a^2} + g^2 \bar{\phi}^2}$ es la frecuencia ef
 \end{figure}
 
 
-\section{Evolución lineal con expansión}
+\section{Dinámica con expansión}
 
-En la sección anterior, se desarrollaron la evolución de las ecuaciones de perturbaciones sin la consideración de la evolución temporal del universo. Para el desarrollo de esta sección, se armaron códigos \cite{Git} para el estudio del potencial cuártico ante la expansión del universo. Para ello, se utilizaron las ecuaciones
-\begin{equation}
-    \frac{d^2 \tilde{\phi}}{d \tilde{t}^2} + \frac{3}{a} \frac{d a}{d \tilde{t}} \frac{d \tilde{\phi}}{d \tilde{t}} + \tilde{\phi}^3 = 0,
-\end{equation}
-\begin{equation}
-    \frac{d^2 \tilde{\chi}_k}{d \tilde{t}^2} + \frac{3}{a} \frac{d a}{d \tilde{t}} \frac{d \tilde{\chi}_k}{d \tilde{t}} + \left( \frac{\tilde{k}^2}{a^2} + g^2 \tilde{\phi}^2 \right) \tilde{\chi}_k = 0,
-\end{equation}
-junto con la segunda ecuación de Friedmann
-\begin{equation}
-    \frac{d^2 a}{d \tilde{t}^2} + \frac{a}{3} \left[ \left( \frac{d \tilde{\phi}}{d \tilde{t}} \right)^2 - \frac{\tilde{\phi}^4}{4} \right] = 0,
-\end{equation}
-y donde se definieron los reescalados de los campos de modo tal que queden adimensionales para poder trabajar con ellos en los códigos. 
+En la sección anterior, se desarrollaron la evolución de las ecuaciones de perturbaciones sin la consideración de la evolución temporal del universo. 
 
 Para el desarrollo de este trabajo, el interés estará en comprender el impacto de la \textit{Broad Resonance} sobre la generación del fondo de ondas gravitacionales bajo un potencial $V(\phi) = \frac{1}{4} \lambda \phi^4$. La elección de este escenario se debe por la posterior contrastación en el Capítulo \ref{sec:cap4}, donde el análisis lineal se comparará frente a las soluciones no lineales obtenidas de la simulación espectral en redes tipo \textit{Lattice}. Este marco potencial fue ampliamente calibrado en la literatura utilizando \CosmoLattice \cite{CosmoLatticeNet, Figueroa2021, Figueroa2023, Figueroa2024, Figueroa_2017_GW, Figueroa_2017_Parametric}.
 
-\section{Producción lineal de ondas gravitacionales}\label{sec:Produccion_lineal}
+\section{Producción de ondas gravitacionales en el régimen lineal}\label{sec:Produccion_lineal}
 
-Una vez analizada la dinámica de los campos de materia durante el \textit{Preheating}, resulta de interés comprender cómo dicha dinámica excita la producción de ondas gravitacionales. Para ello, es necesario construir las perturbaciones del tensor de energía-momento. Dado que las fluctuaciones amplificadas del campo hijo dominan la dinámica no lineal, la componente transversal y de traza nula (TT) de las perturbaciones de este tensor se expresa como \cite{Dufaux_2007}:
+Una vez analizada la dinámica de los campos de materia durante el \textit{Preheating}, resulta de interés comprender cómo dicha dinámica excita la producción de ondas gravitacionales dadas por la componente transversal y de traza nula (TT) de las perturbaciones de este tensor \cite{Dufaux_2007}:
 \begin{equation}
-    \Pi_{ij}^{TT} = \left\{ \partial_i \chi \partial_j \chi \right\}^{TT}.
+    \Pi_{ij}^{TT} = \left\{ \partial_i \phi \partial_j \phi + \partial_i \chi \partial_j \chi \right\}^{TT}.
 \end{equation}
-Estas perturbaciones actúan como fuente en la ecuación de onda (\ref{eqn:GWs}). Utilizando el método de la función de Green, donde el propagador libre asume la forma $\mathcal{G} (k, \tau, \tau^\prime) = k^{-1} \sin \left[ k \left( \tau - \tau^\prime \right) \right]$, las perturbaciones métricas que describen a las ondas gravitacionales se pueden escribir en forma integral como:
+Aunque en esta sección sólo consideraremos las perturbaciones causadas ante la dinámica del campo hijo como simplificación del problema. Estas perturbaciones actúan como fuente en la ecuación de onda (\ref{eqn:GWs}). Utilizando el método de la función de Green, donde el propagador libre asume la forma $\mathcal{G} (k, \tau, \tau^\prime) = k^{-1} \sin \left[ k \left( \tau - \tau^\prime \right) \right]$, las perturbaciones métricas que describen a las ondas gravitacionales se pueden escribir en forma integral como:
 \begin{equation}
     h_{ij}^{TT} (k, \tau) = \frac{1}{a(\tau) m_p^2} \int_{\tau_i}^{\tau} \frac{a \left( \tau^\prime \right)}{k} \sin \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi^{TT}_{ij} \left( k, \tau^{\prime} \right) ~ d\tau^{\prime}.
 \end{equation}
 
 A su vez, el observable físico de interés es la densidad de energía de las ondas gravitacionales asociada a un fondo estocástico, la cual se obtiene a partir de \cite{Caprini_2020}:
 \begin{equation}
-    \frac{d \rho_{GW}}{d \log k} \left( k, \tau \right) = \frac{k^3 m_p^3}{8 \pi^2 a^2} P_{h^{\prime}} \left( k, \tau \right),
+    \Omega_{GW} = \frac{1}{\rho_c} \frac{d \rho_{GW}}{d \log k} \left( k, \tau \right) = \frac{k^3 m_p^3}{8 \pi^2 a^2 \rho_c} P_{h^{\prime}} \left( k, \tau \right),
 \end{equation}
-donde $\displaystyle \left\langle h^\prime \left( k, \tau \right) h^{*\prime} \left( k^\prime, \tau \right) \right\rangle = (2 \pi)^3 ~ P_{h^{\prime}} \left( k, \tau \right) ~ \delta \left( k - k^\prime \right)$, siendo $P_{h^\prime} \left( k, \tau \right)$ el espectro de potencias. Este último puede ser calculado en términos del correlador de la fuente $\displaystyle \Pi^2 \left( k, \tau^\prime, \tau^{\prime\prime} \right)$, definido a través de la relación $\displaystyle \left\langle \Pi^{TT}_{ij} \left( k, \tau^\prime \right) ~ \Pi^{*TT}_{ij} \left( k^\prime, \tau^{\prime \prime} \right) \right\rangle = (2 \pi)^3 ~ \Pi^2 \left( k, \tau^\prime, \tau^{\prime \prime} \right) ~ \delta \left( k - k^\prime \right)$. Reemplazando esto, la densidad de energía de las ondas gravitacionales en función del correlador asume la forma:
+donde $\displaystyle \left\langle h^\prime \left( k, \tau \right) h^{*\prime} \left( k^\prime, \tau \right) \right\rangle = (2 \pi)^3 ~ P_{h^{\prime}} \left( k, \tau \right) ~ \delta \left( k - k^\prime \right)$, siendo $P_{h^\prime} \left( k, \tau \right)$ el espectro de potencias. Este último puede ser calculado en términos del correlador de la fuente $\displaystyle \Pi^2 \left( k, \tau^\prime, \tau^{\prime\prime} \right)$, definido a través de la relación $\displaystyle \left\langle \Pi^{TT}_{ij} \left( k, \tau^\prime \right) ~ \Pi^{*TT}_{ij} \left( k^\prime, \tau^{\prime \prime} \right) \right\rangle = (2 \pi)^3 ~ \Pi^2 \left( k, \tau^\prime, \tau^{\prime \prime} \right) ~ \delta \left( k - k^\prime \right)$. Reemplazando esto, la densidad de energía de las ondas gravitacionales en función del correlador es:
 \begin{equation}
     \frac{d \rho_{GW}}{d \log k} = \frac{k^3}{16 m_p^2 \pi^2 ~ a^4 (\tau)} \int_{\tau_i}^{\tau} \int_{\tau_i}^{\tau} a \left( \tau^\prime \right) ~ a \left( \tau^{\prime \prime} \right) ~ \cos \left[ k \left( \tau^\prime - \tau^{\prime \prime} \right) \right] ~ \Pi^2 \left( k, \tau^\prime, \tau^{\prime \prime} \right) ~ d \tau^\prime ~ d \tau^{\prime \prime}.
 \end{equation}
