@@ -678,11 +678,6 @@ INPUT ./figures/GW_Strain_Spectrum.pdf
 INPUT ./figures/GW_Strain_Spectrum.pdf
 INPUT ./figures/GW_Strain_Spectrum.pdf
 INPUT ./figures/GW_Strain_Spectrum.pdf
-INPUT ./figures/gwb-constraints.pdf
-INPUT ./figures/gwb-constraints.pdf
-INPUT ./figures/gwb-constraints.pdf
-INPUT ./figures/gwb-constraints.pdf
-INPUT ./figures/gwb-constraints.pdf
 INPUT ./5.conclusiones.tex
 INPUT ./5.conclusiones.tex
 INPUT 5.conclusiones.tex
@@ -719,9 +714,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
