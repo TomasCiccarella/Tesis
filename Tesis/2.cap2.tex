@@ -84,67 +84,79 @@ donde las funciones $h_+$ y $h_\times$ representan las dos polarizaciones ortogo
     \label{fig:GWs_polarizaciones}
 \end{figure}
 
-De este modo, al aplicar la elección del \textit{gauge} TT en la Ecuación (\ref{eqn:Guv}) y sustituirla en las ecuaciones de Einstein, se obtiene la ecuación de ondas que describe la dinámica de las perturbaciones tensoriales en la métrica de Minkowski:
+De este modo, al imponer las condiciones del \textit{gauge} transversal y de traza nula (TT) en la Ecuación (\ref{eqn:Guv}) e introducirlas en las ecuaciones de Einstein linealizadas, se obtiene la ecuación de onda inhomogénea que rige la dinámica de las perturbaciones tensoriales sobre un espacio-tiempo plano de Minkowski:
 \begin{equation}
-    \Box h^{TT}_{\mu\nu} = - \frac{2}{m_p^2} T^{TT}_{\mu\nu}.
+    \Box h^{TT}_{ij} = - \frac{2}{m_p^2} T^{TT}_{ij},
 \end{equation}
-En las secciones siguientes, se contextualizarán estas perturbaciones en un escenario cosmológico, con el fin de derivar la ecuación que gobierna la propagación de las ondas gravitacionales en un universo en expansión.
+donde el término fuente $T^{TT}_{ij}$ corresponde exactamente al estrés anisotrópico $\Pi_{ij}$, tal como se había anticipado en la sección \ref{SVT} al analizar el desacople del sector tensorial (Ecuación (\ref{eqn:Perturbacion_Tensorial})). En las secciones siguientes, se extenderá este formalismo hacia un escenario cosmológico, con el objetivo de derivar la ecuación general que gobierna la propagación de las ondas gravitacionales en un universo en expansión regido por la métrica FLRW.
 
 \section{Ondas gravitacionales en un fondo cosmológico}
 
-Las perturbaciones métricas en espacios curvos para el tensor de energía-momento están dadas por el tensor efectivo
+En espacios curvos, es posible definir el tensor de energía-momento asociado a las ondas gravitacionales \cite{Caprini_2020} a partir de
 \begin{equation}
     T^{\text{GW}}_{\mu\nu} = \frac{1}{32 \pi G} \left\langle \nabla_\mu h_{\alpha \beta} \nabla_\nu h^{\alpha \beta}  \right\rangle,
 \end{equation}
-siendo $\nabla_\mu$ la derivada covariante. Al comparar esta expresión con el tensor de energía-momento de un fluido ideal, se deduce que la densidad de energía efectiva para las ondas gravitacionales adopta la forma
+siendo $\nabla_\mu$ la derivada covariante. A partir de la componente temporal-temporal de este tensor, se define la densidad de energía efectiva para las ondas gravitacionales de la forma
 \begin{equation}
-    \rho_{GW} = \frac{1}{32 \pi G} \left\langle \dot{h}_{\alpha \beta} \dot{h}^{\alpha\beta} \right\rangle.
+    \rho_{GW} = \frac{1}{32 \pi G} \left\langle \dot{h}_{\alpha \beta} \dot{h}^{\alpha \beta} \right\rangle.
 \end{equation}
 
-En Cosmología, la métrica de fondo que describe al espacio-tiempo a gran escala es la métrica plana de Friedmann-Lemaître-Robertson-Walker (FLRW)
+En Cosmología, la métrica de fondo que describe al espacio-tiempo a gran escala es la métrica espacialmente plana de Friedmann-Lemaître-Robertson-Walker (FLRW):
 \begin{equation}
     ds^2 = - dt^2 + a^2 (t) ~ \delta_{ij} ~ dx^i ~ dx^j.
 \end{equation}
-Al expandir el tensor de Einstein $G_{\mu\nu}$ a primer orden en las perturbaciones tensoriales bajo esta métrica de fondo, se obtiene la ecuación de propagación correspondiente. La expansión del universo introduce naturalmente un término de fricción de Hubble \cite{Caprini_2020}
+Al expandir el tensor de Einstein $G_{\mu\nu}$ a primer orden en las perturbaciones tensoriales bajo esta métrica de fondo, se obtiene la ecuación de propagación correspondiente. La expansión del universo introduce un término de fricción de Hubble \cite{Caprini_2020}:
 \begin{equation}
-    \ddot{h}_{ij} \left( \textbf{x}, t \right) + 3 H \dot{h}_{ij} \left( \textbf{x}, t \right) - \frac{1}{a^2} \nabla^2 h_{ij} \left( \textbf{x}, t \right) = \frac{2}{m_p^2} \Pi_{ij} \left( \textbf{x}, t \right),
+    \ddot{h}^{TT}_{ij} \left( \textbf{x}, t \right) + 3 H \dot{h}^{TT}_{ij} \left( \textbf{x}, t \right) - \frac{1}{a^2} \nabla^2 h^{TT}_{ij} \left( \textbf{x}, t \right) = \frac{2}{m_p^2} \Pi_{ij}^{TT} \left( \textbf{x}, t \right),
 \end{equation}
-donde $\Pi_{ij} \left( \textbf{x}, t \right)$ describe el estrés anisotrópico del tensor de energía-momento, el cual en esta métrica perturbada está dado por
+donde $\Pi_{ij}^{TT} \left( \textbf{x}, t \right)$ es la componente transversal y de traza nula del estrés anisotrópico del tensor de energía-momento, cuya forma general en esta métrica perturbada está dada por:
 \begin{equation}
     \Pi_{ij} = T_{ij} - P a^2 \left( \delta_{ij} + h_{ij} \right).
 \end{equation}
 
-Haciendo uso de la transformada de Fourier, se pueden expresar los tensores $h_{ij}$ y $\Pi_{ij}$ en el espacio de momentos como
-\begin{equation}
-    h_{ij} \left( \textbf{x}, t \right) = \frac{1}{(2\pi)^3} \sum_{r = +, \times} \int h_r \left( \textbf{k}, t \right) ~ e^r_{ij} \left( \hat{\textbf{k}} \right) ~ e^{-i \textbf{k} \cdot \textbf{x}} ~ d^3 \textbf{k},
+Haciendo uso de la transformada de Fourier, se pueden expresar los tensores $h_{ij}$ y $\Pi_{ij}$ en el espacio de momentos como:
+\begin{equation}\label{eqn:ondas+polarizaciones}
+    h_{ij} \left( \textbf{x}, t \right) = \frac{1}{(2\pi)^3} \sum_{r = +, \times} \int h_r \left( \textbf{k}, t \right) ~ e^r_{ij} \left( \hat{\textbf{k}} \right) ~ e^{i \textbf{k} \cdot \textbf{x}} ~ d^3 \textbf{k},
 \end{equation}
 \begin{equation}
-    \Pi_{ij} \left( \textbf{x}, t \right) = \frac{1}{(2\pi)^3} \int \Pi_{ij} \left( \textbf{k}, t \right) ~ e^{-i \textbf{k} \cdot \textbf{x}} ~ d^3 \textbf{k},
+    \Pi_{ij} \left( \textbf{x}, t \right) = \frac{1}{(2\pi)^3} \int \Pi_{ij} \left( \textbf{k}, t \right) ~ e^{i \textbf{k} \cdot \textbf{x}} ~ d^3 \textbf{k},
 \end{equation}
-donde $r = +, \times$ indica las polarizaciones de las ondas y $e_{ij}^r$ es el tensor de polarización definido por:
+donde $r = +, \times$ indica los dos estados independientes de polarización de las ondas y $e_{ij}^r$ es el tensor de polarización correspondiente, definido por:
 \begin{equation}
-    \begin{cases}
-        e_{ij}^+ \left( \hat{\textbf{k}} \right) = \hat{m}_i \hat{m}_j - \hat{n}_i \hat{n}_j\\
-        e_{ij}^\times \left( \hat{\textbf{k}} \right) = \hat{m}_i \hat{n}_j + \hat{m}_j \hat{n}_i,
-    \end{cases}
+    \begin{aligned}
+        e_{ij}^+ \left( \hat{\textbf{k}} \right) &= \hat{m}_i \hat{m}_j - \hat{n}_i \hat{n}_j, \\
+        e_{ij}^\times \left( \hat{\textbf{k}} \right) &= \hat{m}_i \hat{n}_j + \hat{m}_j \hat{n}_i,
+    \end{aligned}
 \end{equation} 
-siendo $\hat{m}$ y $\hat{n}$ dos vectores unitarios ortogonales entre sí y ortogonales a la dirección de propagación de la onda $\hat{\textbf{k}}$. Estos tensores cumplen las siguientes propiedades de ortogonalidad y completitud
+siendo $\hat{m}$ y $\hat{n}$ dos vectores unitarios, ortogonales entre sí y transversales a la dirección de propagación de la onda $\hat{\textbf{k}}$. Estos tensores cumplen con las siguientes propiedades de ortogonalidad y completitud:
 \begin{equation}
-    \begin{cases}
-        e_{ij}^r \left( \hat{\textbf{k}} \right) e_{ij}^{r^\prime} \left( \hat{\textbf{k}} \right) = 2 \delta_{rr^\prime}\\
-        \displaystyle \sum_{r = +, \times} e_{ij}^r \left( \hat{\textbf{k}} \right) e_{lm}^r \left( \hat{\textbf{k}} \right) = P_{il} \left( \hat{\textbf{k}} \right) ~ P_{jm} \left( \hat{\textbf{k}} \right) + P_{im} \left( \hat{\textbf{k}} \right) ~ P_{jl} \left( \hat{\textbf{k}} \right) - P_{ij} \left( \hat{\textbf{k}} \right) ~ P_{lm} \left( \hat{\textbf{k}} \right),
-    \end{cases}
+    \begin{aligned}
+        e_{ij}^r \left( \hat{\textbf{k}} \right) e_{ij}^{r^\prime} \left( \hat{\textbf{k}} \right) &= 2 \delta_{rr^\prime}, \\
+        \sum_{r = +, \times} e_{ij}^r \left( \hat{\textbf{k}} \right) e_{lm}^r \left( \hat{\textbf{k}} \right) &= P_{il} \left( \hat{\textbf{k}} \right) P_{jm} \left( \hat{\textbf{k}} \right) + P_{im} \left( \hat{\textbf{k}} \right) P_{jl} \left( \hat{\textbf{k}} \right) - P_{ij} \left( \hat{\textbf{k}} \right) P_{lm} \left( \hat{\textbf{k}} \right),
+    \end{aligned}
 \end{equation}
-donde $P_{ij} \left( \hat{\textbf{k}} \right) =  \delta_{ij} - \hat{k}_i \hat{k}_j$ es el proyector sobre el subespacio ortogonal a $\textbf{k}$, satisfaciendo $P_{ij} k_i = 0$ y $P_{ij} P_{jl} = P_{il}$. Con este proyector se puede construir el operador de polarización $\Lambda_{ij,lm}$, el cual, al ser contraído con el tensor $\Pi_{lm}$, extrae su componente transversal y de traza nula (el \textit{gauge} TT). Este operador se define como
+donde $P_{ij} \left( \hat{\textbf{k}} \right) =  \delta_{ij} - \hat{k}_i \hat{k}_j$ es el proyector sobre el subespacio ortogonal a $\textbf{k}$, el cual satisface $P_{ij} k_j = 0$ y $P_{ij} P_{jl} = P_{il}$. Con este proyector se puede construir el operador de polarización $\Lambda_{ij,lm}$, el cual, al ser contraído con el tensor $\Pi_{lm}$, extrae su componente transversal y de traza nula (imponiendo el \textit{gauge} TT). Este operador se define como:
 \begin{equation}
-    \Lambda_{ij,lm} \left( \hat{\textbf{k}} \right) = P_{il} \left( \hat{\textbf{k}} \right) ~ P_{jm} \left( \hat{\textbf{k}} \right) - \frac{1}{2} P_{ij} \left( \hat{\textbf{k}} \right) ~ P_{lm} \left( \hat{\textbf{k}} \right).
+    \Lambda_{ij,lm} \left( \hat{\textbf{k}} \right) = P_{il} \left( \hat{\textbf{k}} \right) P_{jm} \left( \hat{\textbf{k}} \right) - \frac{1}{2} P_{ij} \left( \hat{\textbf{k}} \right) P_{lm} \left( \hat{\textbf{k}} \right).
 \end{equation}
 
-A partir de este formalismo, la evolución espacial y temporal puede expresarse de manera mucho más compacta introduciendo el tiempo conforme ($d\eta = dt/a$). Transformando la ecuación de ondas al espacio de Fourier y operando con las derivadas conformes, se obtiene
+A partir de este formalismo, la evolución espacial y temporal puede expresarse de manera mucho más compacta introduciendo el tiempo conforme ($d\eta = dt/a$). Transformando la ecuación de propagación al espacio de Fourier y operando con las derivadas conformes, se obtiene:
 \begin{equation}\label{eqn:GWs}
-    h^{\prime \prime}_{ij} \left( \textbf{k}, \eta \right) + 2 \mathcal{H} h^\prime_{ij} \left( \textbf{k}, \eta \right) + k^2 h_{ij} \left( \textbf{k}, \eta \right) = \frac{2}{m_p^2} \Pi_{ij}^{TT} \left( \textbf{k}, \eta \right),
+    \left( h^{TT}_{ij} \right)^{\prime \prime} \left( \textbf{k}, \eta \right) + 2 \mathcal{H} \left( h^{TT}_{ij} \right)^{\prime} \left( \textbf{k}, \eta \right) + k^2 h_{ij}^{TT} \left( \textbf{k}, \eta \right) = \frac{2}{m_p^2} \Pi_{ij}^{TT} \left( \textbf{k}, \eta \right),
 \end{equation}
-donde las primas ($^\prime$) representan la derivada respecto al tiempo conforme $\eta$, $\mathcal{H} = a^\prime/a = aH$ es el parámetro de Hubble conforme, y $\Pi_{ij}^{TT}$ es la componente transversal y de traza nula del tensor de estrés anisotrópico que actúa como fuente de las ondas \cite{Figueroa_2017_GW}.
+donde las primas ($^\prime$) representan la derivada respecto al tiempo conforme $\eta$, $\mathcal{H} = a^\prime/a = aH$ es el parámetro de Hubble conforme, y $\Pi_{ij}^{TT}$ actúa como la fuente de las ondas \cite{Figueroa_2017_GW}. A su vez, la Ecuación (\ref{eqn:GWs}) puede reescribirse absorbiendo el término de fricción de Hubble mediante el reescalamiento del campo $H_{ij} = a h_{ij}$, resultando en:
+\begin{equation}
+    H_{ij}^{\prime \prime} \left( \textbf{k}, \eta \right) + \left( k^2 - \frac{a^{\prime \prime}}{a} \right) H_{ij} \left( \textbf{k}, \eta \right) = \frac{2 a}{m_p^2} \Pi_{ij}^{TT} \left( \textbf{k}, \eta \right).
+\end{equation}
+Esta formulación revela que, en términos de las coordenadas conformes y la variable reescalada $H_{ij}$, la dinámica de las perturbaciones tensoriales es análoga a la de un oscilador armónico forzado libre de viscosidad, con una frecuencia efectiva dependiente del tiempo. Para obtener la ecuación de evolución explícita de cada estado de polarización ($r = +, \times$), se debe proyectar la ecuación tensorial sobre la base correspondiente. Multiplicando la ecuación por el tensor $e_{ij}^r (\hat{\textbf{k}})$ y aplicando la propiedad de ortogonalidad $e_{ij}^r e_{ij}^{r^\prime} = 2 \delta_{rr^\prime}$, se obtiene:
+\begin{equation}
+    H_{r}^{\prime \prime} \left( \textbf{k}, \eta \right) + \left( k^2 - \frac{a^{\prime \prime}}{a} \right) H_{r} \left( \textbf{k}, \eta \right) = \frac{a}{m_p^2} \Pi_{r} \left( \textbf{k}, \eta \right),
+\end{equation}
+donde $\Pi_r (\textbf{k}, \eta) \equiv e_{ij}^r (\hat{\textbf{k}}) ~ \Pi_{ij}^{TT} (\textbf{k}, \eta)$ representa la proyección del estrés anisotrópico sobre el estado de polarización $r$. Finalmente, en el régimen de evolución libre (ausencia de fuentes, $\Pi_r = 0$), esta dinámica se reduce a la ecuación de onda homogénea:
+\begin{equation}
+    H_{r}^{\prime \prime} \left( \textbf{k}, \eta \right) + \left( k^2 - \frac{a^{\prime \prime}}{a} \right) H_{r} \left( \textbf{k}, \eta \right) = 0.
+\end{equation}
+La integración de estas ecuaciones, combinada con la descomposición presentada en la Ecuación (\ref{eqn:ondas+polarizaciones}), determina por completo la propagación espacio-temporal de las ondas gravitacionales en el universo.
 
 \section{Fondo estocástico de ondas gravitacionales}
 
@@ -170,7 +182,11 @@ Al sustituir esta estructura estadística en el tensor de energía-momento, se o
 \begin{equation}
     \Omega_{GW} (f) = \frac{1}{\rho_c} \frac{d \rho_{GW}}{d \log f}. 
 \end{equation}
-Esta cantidad espectral será la herramienta teórica que se utilizará a lo largo de los capítulos siguientes para cuantificar la eficiencia de la producción de ondas durante el Recalentamiento y proyectar su observabilidad empírica. Finalmente, su relación analítica con la deformación característica evaluada en los detectores actuales está dada por:
+donde la densidad de energía para las ondas gravitacionales va a estar dada por
+\begin{equation}
+    \frac{d \rho_{GW}}{d \log k} = \frac{k^2 h_c^2 \left( k, \eta \right)}{16 \pi G a^2 (\eta)}. 
+\end{equation}
+El espectro de la densidad de energía fraccional será la herramienta teórica que se utilizará a lo largo de los capítulos siguientes para cuantificar la eficiencia de la producción de ondas durante el Recalentamiento y proyectar su observabilidad empírica. Finalmente, su relación analítica con la deformación característica evaluada en los detectores actuales está dada por:
 \begin{equation}\label{eqn:strain}
     h_c^2 (f) = \frac{3 H_0^2}{4\pi^2 f^2} \Omega_{GW} (f).
 \end{equation}

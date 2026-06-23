@@ -55,7 +55,7 @@ Debido a las identidades de Bianchi, las expresiones (\ref{eqn:Friedmann1}), (\r
 \end{equation}
 En esta parametrización, el valor $\omega = 0$ describe analíticamente el comportamiento de la materia no relativista (polvo), $\omega = 1/3$ rige la dinámica de la radiación ultra-relativista y $\omega = -1$ representa la densidad de energía oscura o constante cosmológica. La combinación de estas relaciones permite caracterizar de forma completa las distintas eras cosmológicas del fondo homogéneo. En la sección siguiente, se introducirá el formalismo necesario para tratar los escenarios donde el universo abandona esta homogeneidad perfecta a través de perturbaciones locales.
 
-\section{Perturbaciones: contexto cosmológico}
+\section{Perturbaciones: contexto cosmológico}\label{SVT}
 
 Si bien el modelo cosmológico estándar asume un fondo perfectamente homogéneo e isótropo a grandes escalas, la observación del universo revela una red de estructuras (galaxias, cúmulos) y anisotropías en el Fondo Cósmico de Microondas (CMB). Para dar cuenta del origen y evolución de estas estructuras, se requiere relajar la hipótesis de homogeneidad estricta. Esto se logra introduciendo perturbaciones sobre la métrica del espacio-tiempo y sobre el tensor de energía-momento. De este modo, la descripción del universo se descompone en un fondo (\textit{background}) analítico exacto de tipo FLRW, al cual se le superpone una componente perturbativa que codifica las inhomogeneidades y anisotropías locales \cite{Doddelson, Peter_2009, Weinberg}:
 \begin{equation}
@@ -67,21 +67,21 @@ Para el estudio sistemático de estas perturbaciones, se emplea habitualmente la
 
 Al aplicar esta descomposición a la métrica, la perturbación geométrica $\delta g_{\mu\nu}$ se parametriza de la siguiente manera:
 \begin{equation}
-    \begin{aligned}
+    \delta g_{\mu\nu} = \begin{cases}
         \delta g_{00} &= - 2 \phi, \\
         \delta g_{i0} &= \partial_i B + S_i, \\
         \delta g_{ij} &= \displaystyle - 2 \psi \, \delta_{ij} + \left( \partial_i \partial_j - \frac{\delta_{ij}}{3} \nabla^2 \right) E + 2 \partial_{(i} F_{j)} + h_{ij},
-    \end{aligned}
+    \end{cases}
 \end{equation}
 donde $\phi$, $\psi$, $B$ y $E$ conforman el sector escalar; $S_i$ y $F_i$ el sector vectorial; y $h_{ij}$ el sector tensorial, el cual, como se discutirá en el Capítulo \ref{sec:cap2}, describe dinámicamente a las ondas gravitacionales. Para eliminar los grados de libertad espurios del sistema, a las componentes espaciales se les imponen condiciones de transversalidad y traza nula: $\partial^i S_i = 0$, $\partial^i F_i = 0$, $\partial^j h_{ij} = 0$ y ${h_i}^i = 0$.
 
 Por otro lado, las perturbaciones en el tensor de energía-momento del fluido cosmológico se formulan análogamente:
 \begin{equation}
-    \begin{aligned}
+    \delta T_{\mu\nu} = \begin{cases}
          \delta T_{00} &= \delta\rho, \\
          \delta T_{i0} &= \partial_i (\delta u) + u_i, \\
          \delta T_{ij} &= \delta P \, \delta_{ij} + \left( \partial_i \partial_j - \frac{\delta_{ij}}{3} \nabla^2 \right) \delta \sigma + 2 \partial_{(i} v_{j)} + \Pi_{ij},
-    \end{aligned}
+    \end{cases}
 \end{equation}
 siendo $\delta \rho$, $\delta P$, $\delta u$ y $\delta \sigma$ las perturbaciones escalares correspondientes a las variaciones en la densidad de energía, presión, densidad de momento y estrés anisótropo escalar del fluido, respectivamente. Las variables $u_i$ y $v_i$ corresponden a las perturbaciones vectoriales, mientras que $\Pi_{ij}$ representa el estrés anisótropo tensorial. A su vez, para aislar los verdaderos grados de libertad físicos, se exige que $\partial^i u_i = 0$, $\partial^i v_i = 0$, $\partial^j \Pi_{ij} = 0$ y ${\Pi_i}^i = 0$. Cabe destacar que las componentes vectoriales no poseen fuentes activas dominantes durante los períodos de Inflación y Recalentamiento; en consecuencia, decaen cinemáticamente con la expansión del universo ($\propto a^{-2}$) y no resultarán de interés para las etapas abordadas en este estudio \cite{Weinberg, Peter_2009}.
 
@@ -104,7 +104,7 @@ Al introducir estas perturbaciones invariantes en las ecuaciones de Einstein lin
 \begin{equation}
     \begin{aligned}
         \nabla^2 \Theta &= - \frac{1}{m^2_p} \delta\rho, \\
-        \nabla^2 \Phi &= - \frac{1}{2 m_p^2} \left( \delta\rho + 3 \delta P - 3 \dot{\delta u} \right),
+        \nabla^2 \Phi &= - \frac{1}{2 m_p^2} \left( \delta\rho + 3 \delta P - 3 ~ \delta \dot{u} \right),
     \end{aligned}
 \end{equation}
 \begin{equation}
@@ -228,10 +228,14 @@ Además de la producción lineal de partículas y ondas gravitacionales, la din�
     \label{fig:Reheating_effects}
 \end{figure}
 
+\vspace{3cm}
+
 La naturaleza de este decaimiento está determinada por la forma del potencial inflacionario $V(\phi)$. En la literatura se destacan diversas familias de potenciales, tales como los modelos monomiales $\displaystyle \left( V(\phi) \propto \phi^{2n} \right)$, los modelos de tipo T $\displaystyle \left( V(\phi) \propto \tanh^{2n} (\phi/\mu) \right)$\footnote{Estos modelos forman parte de la clase de \textit{$\alpha$-attractors}, caracterizados por un perfil asintóticamente plano (plateau) a grandes valores del campo y una pendiente pronunciada en las cercanías del mínimo.} y los modelos de tipo E $\displaystyle \left( V(\phi) \propto \left[ 1 - \exp (-\phi/\mu) \right]^{2n} \right)$\footnote{Esta familia engloba, entre otros, al modelo de Starobinsky.}. En el caso particular de los modelos monomiales, tomando el promedio temporal de la ecuación de estado ($P = \omega \rho$) durante las oscilaciones del inflatón en torno al mínimo, se puede demostrar analíticamente que el universo exhibe una ecuación de estado efectiva constante \cite{Turner_1983}:
 \begin{equation}\label{eqn:omega_eff}
 \left\langle \omega_{eff} \right\rangle = \frac{n - 1}{n + 1}.
 \end{equation}
-De esta expresión se deduce que para potenciales cuadráticos ($n = 1$), el universo promediado se comporta como si estuviese dominado por materia no relativista ($\omega_{eff} = 0$), mientras que para potenciales cuárticos ($n = 2$), la evolución global emula un dominio por radiación ($\omega_{eff} = 1/3$). Es importante destacar que este comportamiento analítico es estrictamente válido solo durante las primeras etapas del \textit{Preheating} cuando se tienen oscilaciones coherentes. Posteriormente, la efectos no lineales rompen la coherencia del condensado, forzando invariablemente la transición hacia $\omega_{eff} \to 1/3$, condición necesaria para el acople con la época de dominada por radiación \cite{Podolsky_2006}.
+De esta expresión se deduce que para potenciales cuadráticos ($n = 1$), el universo promediado se comporta como si estuviese dominado por materia no relativista ($\omega_{eff} = 0$), mientras que para potenciales cuárticos ($n = 2$), la evolución global emula un dominio por radiación ($\omega_{eff} = 1/3$). Es importante destacar que este comportamiento analítico es estrictamente válido solo durante las primeras etapas del \textit{Preheating} cuando se tienen oscilaciones coherentes. Posteriormente, los efectos no lineales rompen la coherencia del condensado, forzando la transición hacia $\omega_{eff} \to 1/3$, condición necesaria para el acople con la época de dominada por radiación \cite{Podolsky_2006}.
+
+\vspace{3cm}
 
 En el marco de este trabajo, se estudiará en detalle cómo el decaimiento del inflatón y la subsecuente producción explosiva de campos hijos excitan perturbaciones tensoriales del espacio-tiempo, dando lugar a la emisión de un fondo estocástico de ondas gravitacionales \cite{Caprini_2020, Dufaux_2007, Figueroa_2017_GW}. El análisis se abordará inicialmente desde un marco teórico a orden perturbativo lineal (Capítulo \ref{sec:cap3}), para luego incorporar rigurosamente la totalidad de los efectos no lineales de las interacciones mediante simulaciones numéricas tridimensionales en redes (\textit{lattice}), empleando el código público \CosmoLattice \cite{CosmoLatticeNet, Figueroa2021, Figueroa2023} (Capítulo \ref{sec:cap4}).

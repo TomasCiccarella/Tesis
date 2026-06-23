@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Tesis_Ciccarella"] 1782212818.89754 "Tesis_Ciccarella.aux" "Tesis_Ciccarella.bbl" "Tesis_Ciccarella" 1782213216.81069 0
+["bibtex Tesis_Ciccarella"] 1782236642.04514 "Tesis_Ciccarella.aux" "Tesis_Ciccarella.bbl" "Tesis_Ciccarella" 1782236785.85731 0
   "./references.bib" 1782211114.25868 21586 40a55931cdb9cf95b514957a90c1f094 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "Tesis_Ciccarella.aux" 1782213216.06324 41765 0a30e8e18ebc8a28eb6ef62227d8bacb "pdflatex"
+  "Tesis_Ciccarella.aux" 1782236785.3471 41983 3e4081c6b3f54b11d6d85436a95ddff0 "pdflatex"
   (generated)
   "Tesis_Ciccarella.bbl"
   "Tesis_Ciccarella.blg"
   (rewritten before read)
-["pdflatex"] 1782213205.9612 "/home/tomy/Desktop/UBA/Tesis/Git/Tesis/Tesis_Ciccarella.tex" "Tesis_Ciccarella.pdf" "Tesis_Ciccarella" 1782213216.8111 0
+["pdflatex"] 1782236778.99235 "/home/tomy/Desktop/UBA/Tesis/Git/Tesis/Tesis_Ciccarella.tex" "Tesis_Ciccarella.pdf" "Tesis_Ciccarella" 1782236785.85763 0
   "/etc/texmf/web2c/texmf.cnf" 1754028040.36857 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/tomy/Desktop/UBA/Tesis/Git/Tesis/Tesis_Ciccarella.tex" 1782154574.5407 11269 3c9c690ac055464388d7f7f64da520eb ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -255,17 +255,17 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1754028071.58514 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1754028237 8214163 21be332c6a420f73e121fd2e39b05413 ""
-  "1.introduccion.tex" 1782213205.28388 33394 24b392fd60efde0d76c7df625275f655 ""
-  "2.cap2.tex" 1782173042.3203 26398 1c6605b077f1ff9a5a6dc6fd10b6b894 ""
+  "1.introduccion.tex" 1782225261.46623 33452 d4d269b37507dfe28d94a0f1ab7fdc79 ""
+  "2.cap2.tex" 1782236778.69836 29158 e4b94518c78336f77b35b49d789e6ccd ""
   "3.cap3.tex" 1781885137.56949 34130 8cda5196afa7e091c6ccd050ad316661 ""
   "4.cap4.tex" 1781908484.08853 50811 e8baea47834e0dae739a4bd595ed813c ""
   "5.conclusiones.tex" 1780332299.99065 4438 8b9c49f836661fa52b7dc76156c78e50 ""
   "Anexo.tex" 1779931174.84228 37242 8b91d4f0d020d9e3f2d5c51fdf43ad53 ""
-  "Tesis_Ciccarella.aux" 1782213216.06324 41765 0a30e8e18ebc8a28eb6ef62227d8bacb "pdflatex"
-  "Tesis_Ciccarella.bbl" 1782212819.12297 10267 5b661252999954f0ab94b4c054379411 "bibtex Tesis_Ciccarella"
-  "Tesis_Ciccarella.out" 1782213216.07224 5788 d84a01da37f64274b7e9aab75be78a54 "pdflatex"
+  "Tesis_Ciccarella.aux" 1782236785.3471 41983 3e4081c6b3f54b11d6d85436a95ddff0 "pdflatex"
+  "Tesis_Ciccarella.bbl" 1782236642.19762 10267 5b661252999954f0ab94b4c054379411 "bibtex Tesis_Ciccarella"
+  "Tesis_Ciccarella.out" 1782236785.35211 5788 d84a01da37f64274b7e9aab75be78a54 "pdflatex"
   "Tesis_Ciccarella.tex" 1782154574.5407 11269 3c9c690ac055464388d7f7f64da520eb ""
-  "Tesis_Ciccarella.toc" 1782213216.07224 2759 60d3d678826f8f0bfd4b0ba933a9d8a6 "pdflatex"
+  "Tesis_Ciccarella.toc" 1782236785.35332 2759 a2b4fe0f83b9d360134042ada090a6cd "pdflatex"
   "UBA.jpg" 1699360384 23467 e98f0acf684eb82f4d30e124cc0a2db2 ""
   "figures/Background_lphi4.pdf" 1778351417.84905 15502 5dc1205e817a33c468104a5ec374049d ""
   "figures/Broad_Resonance_lphi4.pdf" 1781701077.39997 24563 45394399d219f45b93bee6741517a9ed ""
