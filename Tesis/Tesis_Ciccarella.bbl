@@ -1,9 +1,19 @@
 \begin{thebibliography}{}
 
+\bibitem[Abbott et~al., 2016]{Abbott_2016}
+Abbott, B.~P. et~al. (2016).
+\newblock Observation of gravitational waves from a binary black hole merger.
+\newblock {\em Physical Review Letters}, 116(6):061102.
+
 \bibitem[Aggarwal et~al., 2020]{Aggarwal_2020}
 Aggarwal, N., Aguiar, O.~D., Bauswein, A., Cella, G., Clesse, S., Cruise, A.~M., Domcke, V., Figueroa, D.~G., Geraci, A., Goryachev, M., Grote, H., Hindmarsh, M., Muia, F., Mukund, N., Ottaway, D., Peloso, M., Quevedo, F., Ricciardone, A., Steinlechner, J., Steinlechner, S., Sun, S., Tobar, M.~E., Torrenti, F., Unal, C., and White, G. (2020).
 \newblock Challenges and opportunities of gravitational wave searches at mhz to ghz frequencies.
 \newblock {\em arXiv preprint arXiv:2011.12414}.
+
+\bibitem[Allen and Romano, 1999]{Allen_1999}
+Allen, B. and Romano, J.~D. (1999).
+\newblock Detecting a stochastic background of gravitational radiation: Signal processing strategies and sensitivities.
+\newblock {\em Physical Review D}, 59(10):102001.
 
 \bibitem[Amin et~al., 2014]{Amin_2014}
 Amin, M.~A., Hertzberg, M.~P., Kaiser, D.~I., and Karouby, J. (2014).
