@@ -160,11 +160,11 @@ La integración de estas ecuaciones, combinada con la descomposición presentada
 
 \section{Fondo estocástico de ondas gravitacionales}
 
-Desde el punto de vista observacional, las ondas gravitacionales pueden manifestarse como señales coherentes o como fondos estocásticos. Las señales coherentes son generadas por eventos individuales y resolubles, lo que permite identificar con exactitud la fuente y la dinámica que las produjo; su medición, por tanto, no está ligada estrictamente a la correlación entre distintos detectores. Por el contrario, las ondas gravitacionales generadas por procesos globales en el universo temprano no conforman eventos aislados, sino que constituyen un Fondo Estocástico de Ondas Gravitacionales (SGWB, por sus siglas en inglés). Los mecanismos cosmológicos originan una superposición incoherente de ondas provenientes de todas las direcciones del espacio, por lo que su detección se basa fundamentalmente en buscar correlaciones en las señales medidas por múltiples detectores o puntos del espacio-tiempo \cite{Caprini_2020, Renzini2022}.
+Desde el punto de vista observacional, las ondas gravitacionales pueden manifestarse como señales coherentes o como fondos estocásticos. Las señales coherentes son generadas por eventos individuales y resolubles, lo que suele permitir identificar con exactitud la fuente y la dinámica que las produjo; su medición, por tanto, no está ligada estrictamente a la correlación entre distintos detectores. Un ejemplo de este tipo de ondas puede ser las ondas gravitacionales producidas por un sistema binario de agujeros negros. En cambio, los Fondos Estocásticos de Ondas Gravitacionales (SGWB) se corresponden a procesos globales y no a eventos aislados, por tanto se ven originados como superposición incoherente de ondas provenientes en todas las direcciones del espacio, tal como ocurre con las producidas ante una transición de fase en el universo o la rotación asimétrica de Púlsares. La detección de estos fondos se basa en buscar correlaciones en las señales medidas por múltiples detectores o puntos del espacio-tiempo \cite{Caprini_2020, Renzini2022}.
 
 La amplitud de este fondo cosmológico no es determinista y debe ser tratada como un campo aleatorio. Dado que solo disponemos de un único universo observable, el formalismo estadístico requiere hacer uso de la hipótesis ergódica, la cual establece una equivalencia entre promediar sobre un ensamble teórico de universos y promediar sobre volúmenes espaciales (o intervalos temporales) suficientemente grandes en nuestro propio universo \cite{Renzini2022}. La validez de esta hipótesis está garantizada por dos premisas cosmológicas básicas. En primer lugar, el universo es estadísticamente homogéneo e isótropo a grandes escalas. En segundo lugar, los mecanismos de producción primordial operan de forma causal en escalas sub-horizonte en el universo temprano, lo que asegura que los distintos volúmenes del universo evolucionaron como regiones independientes con idénticas condiciones iniciales \cite{Renzini2022}.
 
-Como consecuencia directa de esta formulación, el SGWB primordial exhibe una serie de simetrías y propiedades estadísticas bien definidas \cite{Renzini2022}:
+Como consecuencia de esta formulación, bajo la aproximación más simple se espera que el SGWB primordial exhiba una serie de simetrías y propiedades estadísticas bien definidas \cite{Renzini2022}:
 \begin{itemize}
     \item \textbf{Homogeneidad e isotropía estadísticas:} Las propiedades del fondo no dependen de la posición del observador ni de la dirección de observación.
     \item \textbf{Estacionariedad:} Las correlaciones estadísticas del campo de ondas son invariantes ante traslaciones temporales.
@@ -178,15 +178,15 @@ Esta última propiedad implica que, dado que el primer momento estadístico del 
 \end{equation}
 donde la delta de Kronecker $\delta_{r r^\prime}$ refleja la despolarización (ausencia de correlación entre polarizaciones distintas), y $h_c(k, \eta)$ es la deformación característica (\textit{strain}) que cuantifica la amplitud espectral de las ondas \cite{Renzini2022}.
 
-Al sustituir esta estructura estadística en el tensor de energía-momento, se obtiene la densidad de energía fraccional de las ondas gravitacionales:
+Al sustituir esta estructura estadística en el tensor de energía-momento, se obtiene la densidad de energía fraccional del SGWB:
 \begin{equation}
     \Omega_{GW} (f) = \frac{1}{\rho_c} \frac{d \rho_{GW}}{d \log f}. 
 \end{equation}
-donde la densidad de energía para las ondas gravitacionales va a estar dada por
+donde $f$ es la frecuencia física, la cual se relaciona con el número de onda a partir de $f = k/(2 \pi a_0)$, y la densidad de energía para las ondas gravitacionales va a estar dada por
 \begin{equation}
     \frac{d \rho_{GW}}{d \log k} = \frac{k^2 h_c^2 \left( k, \eta \right)}{16 \pi G a^2 (\eta)}. 
 \end{equation}
-El espectro de la densidad de energía fraccional será la herramienta teórica que se utilizará a lo largo de los capítulos siguientes para cuantificar la eficiencia de la producción de ondas durante el Recalentamiento y proyectar su observabilidad empírica. Finalmente, su relación analítica con la deformación característica evaluada en los detectores actuales está dada por:
+El espectro de la densidad de energía fraccional será la herramienta teórica que se utilizará a lo largo de los capítulos siguientes para cuantificar la eficiencia de la producción de ondas durante el Recalentamiento y proyectar su capacidad de poder ser observada. Finalmente, su relación analítica con la deformación característica evaluada en los detectores actuales está dada por:
 \begin{equation}\label{eqn:strain}
     h_c^2 (f) = \frac{3 H_0^2}{4\pi^2 f^2} \Omega_{GW} (f).
 \end{equation}
@@ -195,7 +195,7 @@ El espectro de la densidad de energía fraccional será la herramienta teórica 
 
 Según su origen físico, las ondas gravitacionales pueden dividirse a grandes rasgos en fuentes astrofísicas y cosmológicas. Las emisiones astrofísicas provienen de dinámicas altamente asimétricas de sistemas localizados y objetos compactos en el universo tardío, abarcando fenómenos como la coalescencia de sistemas binarios (agujeros negros o estrellas de neutrones), el colapso asimétrico en supernovas o la rotación de púlsares con deformaciones cuadrupolares \cite{LIGO, Maggiore_2018}. En contraposición, las ondas gravitacionales cosmológicas se originan a partir de procesos globales y estocásticos ocurridos en el universo temprano. Esta categoría incluye a las fluctuaciones cuánticas del vacío amplificadas durante la inflación, las transiciones de fase de primer orden, la dinámica de redes de defectos topológicos y los procesos fuera del equilibrio térmico durante el Recalentamiento \cite{Caprini_2020, Lozanov}. 
 
-Es importante destacar una distinción fenoménica central: mientras que los eventos astrofísicos pueden detectarse como señales individuales, transitorias y resolubles (o bien como un fondo estocástico residual si están muy lejanos), los mecanismos cosmológicos generan única y exclusivamente un fondo estocástico (SGWB) de carácter isótropo y estacionario \cite{Caprini_2020}. En el Cuadro \ref{table:AstrovsCosmo} se presenta una clasificación esquemática de la morfología esperada de la señal según el proceso generador.
+Es importante destacar una distinción fenomenológica mientras que los eventos astrofísicos pueden detectarse tanto como señales individuales, transitorias y resolubles o como un fondo estocástico residual si están muy lejanos, los mecanismos cosmológicos generan única y exclusivamente un fondo estocástico (SGWB) de carácter isótropo y estacionario \cite{Caprini_2020}. En el Cuadro \ref{table:AstrovsCosmo} se presenta una clasificación esquemática del tipo de señal según el proceso generador.
 
 \begin{table}[htbp]
     \centering
@@ -213,11 +213,11 @@ Es importante destacar una distinción fenoménica central: mientras que los eve
     \label{table:AstrovsCosmo}
 \end{table}
 
-En este trabajo, el enfoque analítico y numérico se centrará exclusivamente en la producción estocástica originada durante el Recalentamiento. Como se abordará detalladamente en los capítulos subsiguientes, la fuente matemática de estas ondas radica en el estrés anisotrópico generado por las fluctuaciones espaciales del campo inflatón y sus campos de decaimiento. La componente transversal y de traza nula (\textit{gauge} TT) del tensor de energía-momento que rige esta dinámica adopta la forma:
+En este trabajo, el enfoque analítico y numérico se centrará exclusivamente en la producción estocástica originada durante el Recalentamiento. Como se abordará detalladamente en los capítulos siguientes, la fuente de estas ondas es el estrés anisotrópico generado por las fluctuaciones espaciales del campo inflatón otros campos de materia. La componente transversal y de traza nula (\textit{gauge} TT) del tensor de energía-momento que rige esta dinámica adopta la forma:
 \begin{equation}\label{eqn:PiTT}
     \Pi_{ij}^{TT} = \left\{ \partial_i \phi \partial_j \phi + \partial_i \chi \partial_j \chi \right\}^{TT}.
 \end{equation}
-En el Capítulo \ref{sec:cap3} se desarrollará la integración analítica a orden lineal de esta fuente para distintos potenciales inflacionarios \cite{Dufaux_2007, Figueroa_2017_GW}. Posteriormente, el Capítulo \ref{sec:cap4} se dedicará a la resolución computacional no perturbativa de la Ecuación (\ref{eqn:PiTT}) empleando redes espaciales tridimensionales, lo que permitirá capturar la totalidad de los fenómenos de retroacción que moldean el espectro observable \cite{Figueroa2021, Figueroa2023}.
+En el Capítulo \ref{sec:cap3} se desarrollará la integración analítica a orden lineal de esta fuente \cite{Dufaux_2007, Figueroa_2017_GW}. Posteriormente, el Capítulo \ref{sec:cap4} se dedicará a la resolución computacional no perturbativa de la Ecuación (\ref{eqn:PiTT}) empleando redes espaciales tridimensionales, lo que permitirá capturar la totalidad de los fenómenos de retroacción que moldean el espectro observable \cite{Figueroa2021, Figueroa2023}.
 
 \begin{figure}[htbp]
     \centering

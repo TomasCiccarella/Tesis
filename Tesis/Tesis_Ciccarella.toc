@@ -7,8 +7,8 @@
 \contentsline {chapter}{\numberline {2}Ondas Gravitacionales}{14}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Ondas gravitacionales en un fondo cosmológico}{16}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Fondo estocástico de ondas gravitacionales}{19}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Fuentes de ondas}{20}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Mecanismos de Detección}{23}{section.2.4}%
+\contentsline {section}{\numberline {2.3}Fuentes de ondas}{21}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Mecanismos de Detección}{22}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Evolución lineal de los campos durante Preheating}{25}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Resonancia Paramétrica}{25}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Análisis de Floquet}{29}{section.3.2}%
