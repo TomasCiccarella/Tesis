@@ -1,16 +1,16 @@
 \chapter{Ondas Gravitacionales} \label{sec:cap2}
 
-En el marco de la Relatividad General, las ondas gravitacionales surgen como soluciones a las ecuaciones de Einstein linealizadas al introducir una perturbación de tipo tensorial sobre la métrica de fondo \cite{Caprini_2020, Maggiore_2018}:
+En el marco de la Relatividad General, las ondas gravitacionales surgen como soluciones a las ecuaciones de Einstein linealizadas al introducir una perturbación de tipo tensorial sobre la métrica de fondo \cite{Caprini_2020, Maggiore_2018}
 \begin{equation}
     g_{\mu\nu} = \bar{g}_{\mu\nu} + h_{\mu\nu},
 \end{equation}
 donde $\bar{g}_{\mu\nu}$ representa la métrica de fondo espacio-temporal y $h_{\mu\nu}$ es la perturbación métrica que describe a las ondas gravitacionales. Para la validez de la teoría linealizada, se asume la condición de campo débil, es decir, que las componentes de la perturbación son pequeñas en comparación con la métrica de fondo ($\left| h_{\mu\nu} \right| \ll 1$).
 
-En una métrica de fondo de tipo Minkowski $(\bar{g}_{\mu\nu} = \eta_{\mu\nu})$, el desarrollo a orden lineal en $h_{\mu\nu}$ de la conexión afín de Levi-Civita adopta la siguiente forma:
+En una métrica de fondo de tipo Minkowski $(\bar{g}_{\mu\nu} = \eta_{\mu\nu})$, el desarrollo a orden lineal en $h_{\mu\nu}$ de la conexión afín de Levi-Civita adopta la siguiente forma
 \begin{equation}
     {\Gamma^{\alpha}}_{\mu\nu} = \frac{1}{2} \eta^{\alpha \beta} \left( \partial_\mu h_{\nu\beta} + \partial_\nu h_{\mu \beta} - \partial_\beta h_{\mu \nu} \right).
 \end{equation}
-Esto nos permite calcular el tensor de Riemann, el tensor de Ricci y el escalar de curvatura a primer orden en la perturbación:
+Esto nos permite calcular el tensor de Riemann, el tensor de Ricci y el escalar de curvatura a primer orden en la perturbación
 \begin{equation}
     {R^\alpha}_{\mu\nu\beta} = \frac{1}{2} \left( \partial_\mu \partial_\nu {h^\alpha}_\beta + \partial_\beta \partial^\alpha h_{\mu\nu} - \partial_\nu \partial^\alpha h_{\mu \beta} - \partial_\beta \partial_\mu {h^\alpha}_\nu \right),
 \end{equation}
@@ -20,13 +20,13 @@ Esto nos permite calcular el tensor de Riemann, el tensor de Ricci y el escalar 
 \begin{equation}
     R = \partial^\alpha \partial^\beta h_{\alpha \beta} - \Box h.
 \end{equation}
-Con todo esto, el tensor de Einstein linealizado resulta:
+Con todo esto, el tensor de Einstein linealizado resulta
 \begin{equation}\label{eqn:Guv}
     G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2} \eta_{\mu\nu} R = \frac{1}{2} \left( \partial_\alpha \partial_\nu {\bar{h}^\alpha}_\mu + \partial^\alpha \partial_\mu \bar{h}_{\nu \alpha} - \Box \bar{h}_{\mu\nu} - \eta_{\mu\nu} \partial_\alpha \partial^\beta {\bar{h}^\alpha}_\beta \right),
 \end{equation}
 donde $\displaystyle \bar{h}_{\mu\nu} = h_{\mu\nu} - \frac{1}{2} \bar{g}_{\mu \nu} h$ (siendo $h \equiv {h^\alpha}_\alpha$) es el inverso de traza de la perturbación métrica.
 
-Dado que el tensor métrico es simétrico, la perturbación $h_{\mu\nu}$ también lo es, lo que reduce sus 16 componentes a 10 grados de libertad independientes. Mediante una elección adecuada del \textit{gauge}, es posible eliminar los grados de libertad espurios para conservar únicamente los físicos. En primer lugar, se impone la condición de Lorenz, $\partial^\nu \bar{h}_{\mu\nu} = 0$\footnote{En el espacio de Fourier, esta condición se escribe como $k^\nu \bar{h}_{\mu \nu} = 0$, lo que manifiesta la transversalidad de la perturbación.}. En ausencia de fuentes locales, es posible refinar aún más esta elección exigiendo que la perturbación no posea componentes temporales ($h_{\nu 0} = 0$) y que su traza sea nula (${h_\mu}^\mu = 0$). Al combinarse con la condición de Lorenz, el tensor reverso de traza $\bar{h}_{\mu\nu}$ pasa a coincidir exactamente con $h_{\mu\nu}$. A este conjunto de condiciones se lo conoce como el \textit{gauge} TT (\textit{Transverse-Traceless}) \cite{Bethke, Caprini_2020}. En este \textit{gauge}, la amplitud del tensor de perturbaciones se reduce a solo dos componentes independientes:
+Dado que el tensor métrico es simétrico, la perturbación $h_{\mu\nu}$ también lo es, lo que reduce sus 16 componentes a 10 grados de libertad independientes. Mediante una elección adecuada del \textit{gauge}, es posible eliminar los grados de libertad espurios para conservar únicamente los físicos. En primer lugar, se impone la condición de Lorenz, $\partial^\nu \bar{h}_{\mu\nu} = 0$\footnote{En el espacio de Fourier, esta condición se escribe como $k^\nu \bar{h}_{\mu \nu} = 0$, lo que manifiesta la transversalidad de la perturbación.}. En ausencia de fuentes locales, es posible refinar aún más esta elección exigiendo que la perturbación no posea componentes temporales ($h_{\nu 0} = 0$) y que su traza sea nula (${h_\mu}^\mu = 0$). Al combinarse con la condición de Lorenz, el tensor reverso de traza $\bar{h}_{\mu\nu}$ pasa a coincidir exactamente con $h_{\mu\nu}$. A este conjunto de condiciones se lo conoce como el \textit{gauge} TT (\textit{Transverse-Traceless}) \cite{Bethke, Caprini_2020}. En este \textit{gauge}, la amplitud del tensor de perturbaciones se reduce a solo dos componentes independientes
 \begin{equation}
     h_{\mu\nu} = \begin{pmatrix}
         0 & 0 & 0 & 0\\
@@ -84,7 +84,7 @@ donde las funciones $h_+$ y $h_\times$ representan las dos polarizaciones ortogo
     \label{fig:GWs_polarizaciones}
 \end{figure}
 
-De este modo, al imponer las condiciones del \textit{gauge} transversal y de traza nula (TT) en la Ecuación (\ref{eqn:Guv}) e introducirlas en las ecuaciones de Einstein linealizadas, se obtiene la ecuación de onda inhomogénea que rige la dinámica de las perturbaciones tensoriales sobre un espacio-tiempo plano de Minkowski:
+De este modo, al imponer las condiciones del \textit{gauge} transversal y de traza nula (TT) en la Ecuación (\ref{eqn:Guv}) e introducirlas en las ecuaciones de Einstein linealizadas, se obtiene la ecuación de onda inhomogénea que rige la dinámica de las perturbaciones tensoriales sobre un espacio-tiempo plano de Minkowski
 \begin{equation}
     \Box h^{TT}_{ij} = - \frac{2}{m_p^2} T^{TT}_{ij},
 \end{equation}
@@ -101,58 +101,58 @@ siendo $\nabla_\mu$ la derivada covariante. A partir de la componente temporal-t
     \rho_{GW} = \frac{1}{32 \pi G} \left\langle \dot{h}_{\alpha \beta} \dot{h}^{\alpha \beta} \right\rangle.
 \end{equation}
 
-En Cosmología, la métrica de fondo que describe al espacio-tiempo a gran escala es la métrica espacialmente plana de Friedmann-Lemaître-Robertson-Walker (FLRW):
+En Cosmología, la métrica de fondo que describe al espacio-tiempo a gran escala es la métrica espacialmente plana de Friedmann-Lemaître-Robertson-Walker (FLRW)
 \begin{equation}
     ds^2 = - dt^2 + a^2 (t) ~ \delta_{ij} ~ dx^i ~ dx^j.
 \end{equation}
-Al expandir el tensor de Einstein $G_{\mu\nu}$ a primer orden en las perturbaciones tensoriales bajo esta métrica de fondo, se obtiene la ecuación de propagación correspondiente. La expansión del universo introduce un término de fricción de Hubble \cite{Caprini_2020}:
+Al expandir el tensor de Einstein $G_{\mu\nu}$ a primer orden en las perturbaciones tensoriales bajo esta métrica de fondo, se obtiene la ecuación de propagación correspondiente. La expansión del universo introduce un término de fricción de Hubble \cite{Caprini_2020}
 \begin{equation}
     \ddot{h}^{TT}_{ij} \left( \textbf{x}, t \right) + 3 H \dot{h}^{TT}_{ij} \left( \textbf{x}, t \right) - \frac{1}{a^2} \nabla^2 h^{TT}_{ij} \left( \textbf{x}, t \right) = \frac{2}{m_p^2} \Pi_{ij}^{TT} \left( \textbf{x}, t \right),
 \end{equation}
-donde $\Pi_{ij}^{TT} \left( \textbf{x}, t \right)$ es la componente transversal y de traza nula del estrés anisotrópico del tensor de energía-momento, cuya forma general en esta métrica perturbada está dada por:
+donde $\Pi_{ij}^{TT} \left( \textbf{x}, t \right)$ es la componente transversal y de traza nula del estrés anisotrópico del tensor de energía-momento, cuya forma general en esta métrica perturbada está dada por
 \begin{equation}
     \Pi_{ij} = T_{ij} - P a^2 \left( \delta_{ij} + h_{ij} \right).
 \end{equation}
 
-Haciendo uso de la transformada de Fourier, se pueden expresar los tensores $h_{ij}$ y $\Pi_{ij}$ en el espacio de momentos como:
+Haciendo uso de la transformada de Fourier, se pueden expresar los tensores $h_{ij}$ y $\Pi_{ij}$ en el espacio de momentos como
 \begin{equation}\label{eqn:ondas+polarizaciones}
     h_{ij} \left( \textbf{x}, t \right) = \frac{1}{(2\pi)^3} \sum_{r = +, \times} \int h_r \left( \textbf{k}, t \right) ~ e^r_{ij} \left( \hat{\textbf{k}} \right) ~ e^{i \textbf{k} \cdot \textbf{x}} ~ d^3 \textbf{k},
 \end{equation}
 \begin{equation}
     \Pi_{ij} \left( \textbf{x}, t \right) = \frac{1}{(2\pi)^3} \int \Pi_{ij} \left( \textbf{k}, t \right) ~ e^{i \textbf{k} \cdot \textbf{x}} ~ d^3 \textbf{k},
 \end{equation}
-donde $r = +, \times$ indica los dos estados independientes de polarización de las ondas y $e_{ij}^r$ es el tensor de polarización correspondiente, definido por:
+donde $r = +, \times$ indica los dos estados independientes de polarización de las ondas y $e_{ij}^r$ es el tensor de polarización correspondiente, definido por
 \begin{equation}
     \begin{aligned}
         e_{ij}^+ \left( \hat{\textbf{k}} \right) &= \hat{m}_i \hat{m}_j - \hat{n}_i \hat{n}_j, \\
         e_{ij}^\times \left( \hat{\textbf{k}} \right) &= \hat{m}_i \hat{n}_j + \hat{m}_j \hat{n}_i,
     \end{aligned}
 \end{equation} 
-siendo $\hat{m}$ y $\hat{n}$ dos vectores unitarios, ortogonales entre sí y transversales a la dirección de propagación de la onda $\hat{\textbf{k}}$. Estos tensores cumplen con las siguientes propiedades de ortogonalidad y completitud:
+siendo $\hat{m}$ y $\hat{n}$ dos vectores unitarios, ortogonales entre sí y transversales a la dirección de propagación de la onda $\hat{\textbf{k}}$. Estos tensores cumplen con las siguientes propiedades de ortogonalidad y completitud
 \begin{equation}
     \begin{aligned}
         e_{ij}^r \left( \hat{\textbf{k}} \right) e_{ij}^{r^\prime} \left( \hat{\textbf{k}} \right) &= 2 \delta_{rr^\prime}, \\
         \sum_{r = +, \times} e_{ij}^r \left( \hat{\textbf{k}} \right) e_{lm}^r \left( \hat{\textbf{k}} \right) &= P_{il} \left( \hat{\textbf{k}} \right) P_{jm} \left( \hat{\textbf{k}} \right) + P_{im} \left( \hat{\textbf{k}} \right) P_{jl} \left( \hat{\textbf{k}} \right) - P_{ij} \left( \hat{\textbf{k}} \right) P_{lm} \left( \hat{\textbf{k}} \right),
     \end{aligned}
 \end{equation}
-donde $P_{ij} \left( \hat{\textbf{k}} \right) =  \delta_{ij} - \hat{k}_i \hat{k}_j$ es el proyector sobre el subespacio ortogonal a $\textbf{k}$, el cual satisface $P_{ij} k_j = 0$ y $P_{ij} P_{jl} = P_{il}$. Con este proyector se puede construir el operador de polarización $\Lambda_{ij,lm}$, el cual, al ser contraído con el tensor $\Pi_{lm}$, extrae su componente transversal y de traza nula (imponiendo el \textit{gauge} TT). Este operador se define como:
+donde $P_{ij} \left( \hat{\textbf{k}} \right) =  \delta_{ij} - \hat{k}_i \hat{k}_j$ es el proyector sobre el subespacio ortogonal a $\textbf{k}$, el cual satisface $P_{ij} k_j = 0$ y $P_{ij} P_{jl} = P_{il}$. Con este proyector se puede construir el operador de polarización $\Lambda_{ij,lm}$, el cual, al ser contraído con el tensor $\Pi_{lm}$, extrae su componente transversal y de traza nula (imponiendo el \textit{gauge} TT). Este operador se define como
 \begin{equation}
     \Lambda_{ij,lm} \left( \hat{\textbf{k}} \right) = P_{il} \left( \hat{\textbf{k}} \right) P_{jm} \left( \hat{\textbf{k}} \right) - \frac{1}{2} P_{ij} \left( \hat{\textbf{k}} \right) P_{lm} \left( \hat{\textbf{k}} \right).
 \end{equation}
 
-A partir de este formalismo, la evolución espacial y temporal puede expresarse de manera mucho más compacta introduciendo el tiempo conforme ($d\eta = dt/a$). Transformando la ecuación de propagación al espacio de Fourier y operando con las derivadas conformes, se obtiene:
+A partir de este formalismo, la evolución espacial y temporal puede expresarse de manera mucho más compacta introduciendo el tiempo conforme ($d\eta = dt/a$). Transformando la ecuación de propagación al espacio de Fourier y operando con las derivadas conformes, se obtiene
 \begin{equation}\label{eqn:GWs}
     \left( h^{TT}_{ij} \right)^{\prime \prime} \left( \textbf{k}, \eta \right) + 2 \mathcal{H} \left( h^{TT}_{ij} \right)^{\prime} \left( \textbf{k}, \eta \right) + k^2 h_{ij}^{TT} \left( \textbf{k}, \eta \right) = \frac{2}{m_p^2} \Pi_{ij}^{TT} \left( \textbf{k}, \eta \right),
 \end{equation}
-donde las primas ($^\prime$) representan la derivada respecto al tiempo conforme $\eta$, $\mathcal{H} = a^\prime/a = aH$ es el parámetro de Hubble conforme, y $\Pi_{ij}^{TT}$ actúa como la fuente de las ondas \cite{Figueroa_2017_GW}. A su vez, la Ecuación (\ref{eqn:GWs}) puede reescribirse absorbiendo el término de fricción de Hubble mediante el reescalamiento del campo $H_{ij} = a h_{ij}$, resultando en:
+donde las primas ($^\prime$) representan la derivada respecto al tiempo conforme $\eta$, $\mathcal{H} = a^\prime/a = aH$ es el parámetro de Hubble conforme, y $\Pi_{ij}^{TT}$ actúa como la fuente de las ondas \cite{Figueroa_2017_GW}. A su vez, la Ecuación (\ref{eqn:GWs}) puede reescribirse absorbiendo el término de fricción de Hubble mediante el reescalamiento del campo $H_{ij} = a h_{ij}$, resultando en
 \begin{equation}
     H_{ij}^{\prime \prime} \left( \textbf{k}, \eta \right) + \left( k^2 - \frac{a^{\prime \prime}}{a} \right) H_{ij} \left( \textbf{k}, \eta \right) = \frac{2 a}{m_p^2} \Pi_{ij}^{TT} \left( \textbf{k}, \eta \right).
 \end{equation}
-Esta formulación revela que, en términos de las coordenadas conformes y la variable reescalada $H_{ij}$, la dinámica de las perturbaciones tensoriales es análoga a la de un oscilador armónico forzado libre de viscosidad, con una frecuencia efectiva dependiente del tiempo. Para obtener la ecuación de evolución explícita de cada estado de polarización ($r = +, \times$), se debe proyectar la ecuación tensorial sobre la base correspondiente. Multiplicando la ecuación por el tensor $e_{ij}^r (\hat{\textbf{k}})$ y aplicando la propiedad de ortogonalidad $e_{ij}^r e_{ij}^{r^\prime} = 2 \delta_{rr^\prime}$, se obtiene:
+Esta formulación revela que, en términos de las coordenadas conformes y la variable reescalada $H_{ij}$, la dinámica de las perturbaciones tensoriales es análoga a la de un oscilador armónico forzado libre de viscosidad, con una frecuencia efectiva dependiente del tiempo. Para obtener la ecuación de evolución explícita de cada estado de polarización ($r = +, \times$), se debe proyectar la ecuación tensorial sobre la base correspondiente. Multiplicando la ecuación por el tensor $e_{ij}^r (\hat{\textbf{k}})$ y aplicando la propiedad de ortogonalidad $e_{ij}^r e_{ij}^{r^\prime} = 2 \delta_{rr^\prime}$, se obtiene
 \begin{equation}
     H_{r}^{\prime \prime} \left( \textbf{k}, \eta \right) + \left( k^2 - \frac{a^{\prime \prime}}{a} \right) H_{r} \left( \textbf{k}, \eta \right) = \frac{a}{m_p^2} \Pi_{r} \left( \textbf{k}, \eta \right),
 \end{equation}
-donde $\Pi_r (\textbf{k}, \eta) \equiv e_{ij}^r (\hat{\textbf{k}}) ~ \Pi_{ij}^{TT} (\textbf{k}, \eta)$ representa la proyección del estrés anisotrópico sobre el estado de polarización $r$. Finalmente, en el régimen de evolución libre (ausencia de fuentes, $\Pi_r = 0$), esta dinámica se reduce a la ecuación de onda homogénea:
+donde $\Pi_r (\textbf{k}, \eta) \equiv e_{ij}^r (\hat{\textbf{k}}) ~ \Pi_{ij}^{TT} (\textbf{k}, \eta)$ representa la proyección del estrés anisotrópico sobre el estado de polarización $r$. Finalmente, en el régimen de evolución libre (ausencia de fuentes, $\Pi_r = 0$), esta dinámica se reduce a la ecuación de onda homogénea
 \begin{equation}
     H_{r}^{\prime \prime} \left( \textbf{k}, \eta \right) + \left( k^2 - \frac{a^{\prime \prime}}{a} \right) H_{r} \left( \textbf{k}, \eta \right) = 0.
 \end{equation}
@@ -162,33 +162,58 @@ La integración de estas ecuaciones, combinada con la descomposición presentada
 
 Desde el punto de vista observacional, las ondas gravitacionales pueden manifestarse como señales coherentes o como fondos estocásticos. Las señales coherentes son generadas por eventos individuales y resolubles, lo que suele permitir identificar con exactitud la fuente y la dinámica que las produjo; su medición, por tanto, no está ligada estrictamente a la correlación entre distintos detectores. Un ejemplo de este tipo de ondas puede ser las ondas gravitacionales producidas por un sistema binario de agujeros negros. En cambio, los Fondos Estocásticos de Ondas Gravitacionales (SGWB) se corresponden a procesos globales y no a eventos aislados, por tanto se ven originados como superposición incoherente de ondas provenientes en todas las direcciones del espacio, tal como ocurre con las producidas ante una transición de fase en el universo o la rotación asimétrica de Púlsares. La detección de estos fondos se basa en buscar correlaciones en las señales medidas por múltiples detectores o puntos del espacio-tiempo \cite{Caprini_2020, Renzini2022}.
 
-La amplitud de este fondo cosmológico no es determinista y debe ser tratada como un campo aleatorio. Dado que solo disponemos de un único universo observable, el formalismo estadístico requiere hacer uso de la hipótesis ergódica, la cual establece una equivalencia entre promediar sobre un ensamble teórico de universos y promediar sobre volúmenes espaciales (o intervalos temporales) suficientemente grandes en nuestro propio universo \cite{Renzini2022}. La validez de esta hipótesis está garantizada por dos premisas cosmológicas básicas. En primer lugar, el universo es estadísticamente homogéneo e isótropo a grandes escalas. En segundo lugar, los mecanismos de producción primordial operan de forma causal en escalas sub-horizonte en el universo temprano, lo que asegura que los distintos volúmenes del universo evolucionaron como regiones independientes con idénticas condiciones iniciales \cite{Renzini2022}.
+La amplitud de este fondo cosmológico no es determinista y debe ser tratada analíticamente como un campo aleatorio. Dado que solo disponemos de un único universo observable, el formalismo estadístico requiere hacer uso de la hipótesis ergódica, la cual establece una equivalencia fundamental entre promediar sobre un ensamble teórico de universos y promediar sobre volúmenes espaciales (o intervalos temporales) suficientemente grandes en nuestro propio universo \cite{Renzini2022}. La validez de esta hipótesis está garantizada por dos premisas cosmológicas básicas. En primer lugar, el universo es estadísticamente homogéneo e isótropo a grandes escalas. En segundo lugar, los mecanismos de producción primordial operan de forma causal en escalas sub-horizonte en el universo temprano, lo que asegura que los distintos volúmenes del espacio evolucionaron como regiones independientes con idénticas condiciones iniciales macroscópicas \cite{Christensen_2018, Renzini2022}.
 
-Como consecuencia de esta formulación, bajo la aproximación más simple se espera que el SGWB primordial exhiba una serie de simetrías y propiedades estadísticas bien definidas \cite{Renzini2022}:
+Como consecuencia de esta formulación, bajo la aproximación más simple se espera que el SGWB primordial tenga una serie de simetrías y propiedades estadísticas bien definidas \cite{Christensen_2018}:
 \begin{itemize}
-    \item \textbf{Homogeneidad e isotropía estadísticas:} Las propiedades del fondo no dependen de la posición del observador ni de la dirección de observación.
+    \item \textbf{Homogeneidad e isotropía estadísticas:} Las propiedades del fondo estocástico no dependen de la posición topológica del observador ni de la dirección de observación en el cielo.
     \item \textbf{Estacionariedad:} Las correlaciones estadísticas del campo de ondas son invariantes ante traslaciones temporales.
-    \item \textbf{No Polarización:} Al no existir un marco de referencia preferencial en los procesos estocásticos primordiales, el fondo es intrínsecamente no polarizado. Esto implica que las dos polarizaciones tensoriales ($+$ y $\times$) se generan con igual amplitud y no presentan correlaciones cruzadas, a menos que el mecanismo físico subyacente viole explícitamente la paridad \cite{Renzini2022}.
-    \item \textbf{Gaussianidad:} Dado que el fondo estocástico es el resultado de la superposición macroscópica de una inmensa cantidad de regiones causales independientes, el Teorema Central del Límite garantiza que las fluctuaciones del campo métrico se aproximen fuertemente a un campo aleatorio Gaussiano \cite{Renzini2022}. 
+    \item \textbf{No Polarización:} Al no existir un marco de referencia preferencial ni direcciones privilegiadas en los procesos estocásticos primordiales, el fondo es intrínsecamente no polarizado. Esto implica que las dos polarizaciones tensoriales ($+$ y $\times$) se generan con igual varianza y no presentan correlaciones cruzadas, a menos que el mecanismo físico subyacente viole explícitamente la paridad \cite{Renzini2022}.
+    \item \textbf{Gaussianidad:} Dado que el fondo estocástico es el resultado de la superposición macroscópica e incoherente de una inmensa cantidad de regiones causales independientes, el Teorema Central del Límite garantiza que las fluctuaciones del campo métrico se aproximen fuertemente a un campo aleatorio Gaussiano \cite{Christensen_2018, Renzini2022}. 
 \end{itemize}
 
-Esta última propiedad implica que, dado que el primer momento estadístico del campo es nulo por definición ($\langle h_r \rangle = 0$), toda la información física de un SGWB Gaussiano queda completamente codificada en su función de correlación de dos puntos:
+Esta última propiedad implica que, dado que el primer momento estadístico del campo es nulo por definición ($\langle h_r \rangle = 0$), toda la información física de un SGWB Gaussiano queda completamente codificada en su función de correlación de dos puntos espectral
 \begin{equation}
     \left\langle h_r(\textbf{k}, \eta) h_{r^\prime}^*(\textbf{k}^\prime, \eta) \right\rangle = \frac{8\pi^5}{k^3} \delta(\textbf{k} - \textbf{k}^\prime) \delta_{r r^\prime} h_c^2(k, \eta),
 \end{equation}
-donde la delta de Kronecker $\delta_{r r^\prime}$ refleja la despolarización (ausencia de correlación entre polarizaciones distintas), y $h_c(k, \eta)$ es la deformación característica (\textit{strain}) que cuantifica la amplitud espectral de las ondas \cite{Renzini2022}.
+donde la delta de Kronecker $\delta_{r r^\prime}$ refleja la despolarización (ausencia de correlación entre polarizaciones ortogonales), y $h_c(k, \eta)$ es la deformación característica (\textit{characteristic strain}) que cuantifica la amplitud espectral de las ondas en el espacio de momentos \cite{Christensen_2018}.
 
-Al sustituir esta estructura estadística en el tensor de energía-momento, se obtiene la densidad de energía fraccional del SGWB:
+Al sustituir esta estructura estadística dentro de la definición del tensor de energía-momento gravitacional, se obtiene la densidad de energía fraccional del SGWB
 \begin{equation}
-    \Omega_{GW} (f) = \frac{1}{\rho_c} \frac{d \rho_{GW}}{d \log f}. 
+    \Omega_{GW} (f) = \frac{1}{\rho_c} \frac{d \rho_{GW}}{d \ln f},
 \end{equation}
-donde $f$ es la frecuencia física, la cual se relaciona con el número de onda a partir de $f = k/(2 \pi a_0)$, y la densidad de energía para las ondas gravitacionales va a estar dada por
+donde $f$ es la frecuencia física de la onda, la cual se relaciona con el número de onda comóvil a partir de $f = k/(2 \pi a_0)$, y la densidad de energía espectral para las ondas gravitacionales viene dada analíticamente por
 \begin{equation}
-    \frac{d \rho_{GW}}{d \log k} = \frac{k^2 h_c^2 \left( k, \eta \right)}{16 \pi G a^2 (\eta)}. 
+    \frac{d \rho_{GW}}{d \ln k} = \frac{k^2 h_c^2 \left( k, \eta \right)}{16 \pi G a^2 (\eta)}. 
 \end{equation}
-El espectro de la densidad de energía fraccional será la herramienta teórica que se utilizará a lo largo de los capítulos siguientes para cuantificar la eficiencia de la producción de ondas durante el Recalentamiento y proyectar su capacidad de poder ser observada. Finalmente, su relación analítica con la deformación característica evaluada en los detectores actuales está dada por:
+
+Desde una perspectiva observacional, el desafío para la detección de un fondo estocástico radica en la separación de la señal cosmológica del ruido instrumental \cite{Christensen_2018}. Analíticamente, los datos registrados por un único detector, $s(t)$, se modela como la superposición lineal de la deformación inducida por la onda gravitacional, $h(t)$, y el ruido intrínseco del instrumento, $n(t)$, tal que
+\begin{equation}
+    s(t) = h(t) + n(t).
+\end{equation}
+Bajo la suposición de que tanto la señal primordial como el ruido son procesos estocásticos estacionarios, de media nula y estadísticamente independientes, su caracterización se realiza de manera óptima en el dominio de las frecuencias mediante la densidad espectral de potencia (PSD, por sus siglas en inglés) \cite{Christensen_2018}. 
+
+En la práctica, la amplitud de la señal estocástica primordial suele ser varios órdenes de magnitud inferior a la del ruido instrumental ($h \ll n$). Por lo tanto, la estrategia observacional estándar consiste en correlacionar las mediciones de dos o más detectores espacialmente separados. Asumiendo que el ruido intrínseco de cada detector es estadísticamente independiente del otro ($\langle n_1(t) ~ n_2(t) \rangle = 0$) y que la señal gravitacional de fondo produce una respuesta correlacionada, el valor de expectación temporal de la correlación vale
+\begin{equation}
+    \begin{aligned}
+        \left\langle s_1 (t) ~ s_2 (t) \right\rangle &= \left\langle \left[ h_1 (t) + n_1 (t) \right] \left[ h_2 (t) + n_2 (t) \right] \right\rangle \\
+        &= \left\langle h_1 (t) ~ h_2 (t) \right\rangle + \left\langle n_1 (t) ~ n_2 (t) \right\rangle \\
+        &= \left\langle h_1 (t) ~ h_2 (t) \right\rangle.
+    \end{aligned}
+\end{equation}
+A su vez, trasladando este principio al espacio de las frecuencias, la densidad espectral de potencia de un canal de datos $S_s(f)$ se desacopla de forma aditiva en la componente de la señal gravitacional ($S_h$) y la del ruido ($S_n$):
+\begin{equation}
+    S_s(f) = S_h(f) + S_n(f).
+\end{equation}
+En esta descomposición, $S_h(f)$ representa la densidad espectral de potencia intrínseca del fondo de ondas gravitacionales. Para poder contrastar estas mediciones con las predicciones de los modelos cosmológicos, resulta necesario vincular esta variable observacional con la deformación característica del espacio-tiempo, $h_c(f)$. La relación analítica entre ambas magnitudes está dada por \cite{Christensen_2018}
+\begin{equation}
+    S_h(f) = \frac{h_c^2(f)}{f}.
+\end{equation}
+Esta expresión provee el nexo matemático directo entre la densidad espectral extraída de la red de detectores ($S_h$) y la amplitud característica ($h_c$) requerida para derivar el espectro de densidad de energía fraccional $\Omega_{GW}(f)$ analizado en las ecuaciones precedentes.
+
+El espectro de la densidad de energía fraccional $\Omega_{GW} (f)$ será la herramienta teórica fundamental que se utilizará a lo largo de los siguientes capítulos para cuantificar la producción de ondas durante el Recalentamiento y estudiar sus prospectos observacionales. Finalmente, la relación entre la deformación característica medida en los detectores con la densidad de energía fraccionaria será dada por \cite{Christensen_2018}
 \begin{equation}\label{eqn:strain}
-    h_c^2 (f) = \frac{3 H_0^2}{4\pi^2 f^2} \Omega_{GW} (f).
+    h_c^2 (f) = \frac{3 H_0^2}{2\pi^2 f^2} \Omega_{GW} (f).
 \end{equation}
 
 \section{Fuentes de ondas}
@@ -213,7 +238,7 @@ Es importante destacar una distinción fenomenológica mientras que los eventos 
     \label{table:AstrovsCosmo}
 \end{table}
 
-En este trabajo, el enfoque analítico y numérico se centrará exclusivamente en la producción estocástica originada durante el Recalentamiento. Como se abordará detalladamente en los capítulos siguientes, la fuente de estas ondas es el estrés anisotrópico generado por las fluctuaciones espaciales del campo inflatón otros campos de materia. La componente transversal y de traza nula (\textit{gauge} TT) del tensor de energía-momento que rige esta dinámica adopta la forma:
+En este trabajo, el enfoque analítico y numérico se centrará exclusivamente en la producción estocástica originada durante el Recalentamiento. Como se abordará detalladamente en los capítulos siguientes, la fuente de estas ondas es el estrés anisotrópico generado por las fluctuaciones espaciales del campo inflatón otros campos de materia. La componente transversal y de traza nula (\textit{gauge} TT) del tensor de energía-momento que rige esta dinámica adopta la forma
 \begin{equation}\label{eqn:PiTT}
     \Pi_{ij}^{TT} = \left\{ \partial_i \phi \partial_j \phi + \partial_i \chi \partial_j \chi \right\}^{TT}.
 \end{equation}
@@ -237,7 +262,7 @@ En el Capítulo \ref{sec:cap3} se desarrollará la integración analítica a ord
 
 La verificación empírica de estas predicciones teóricas requiere instrumentos capaces de registrar perturbaciones mínimas en la métrica del espacio-tiempo. Los arreglos experimentales actuales y propuestos operan en bandas de frecuencia muy diversas, dictadas por sus limitaciones tecnológicas y dimensiones físicas, lo cual determina su sensibilidad hacia fuentes astrofísicas específicas o fondos cosmológicos. Un mapa general del espacio de parámetros de frecuencias y densidad de energía fraccional de las ondas gravitacionales se muestra en la Figura \ref{fig:freqsvsstrains}, donde se localizan diversas fuentes de emisión junto a las curvas de sensibilidad de detectores actualmente activos (línea discontinua) y futuros (línea continua). En particular, se resalta de forma esquemática el rango de frecuencias y la amplitud esperada para el fondo generado durante el Recalentamiento como consecuencia de la dinámica de los campos de materia, foco central de este trabajo, cuyos espectros numéricos se derivarán en el Capítulo \ref{sec:cap4}. A su vez, en la región de ultra-alta frecuencia (UHF) se ubican propuestas experimentales como MAGO, un interferómetro basado en cavidades de microondas, y las cavidades electromagnéticas resonantes (EMRC), cuyas proyecciones de sensibilidad plantean un escenario optimista para la detección directa de las señales cosmológicas estudiadas en este trabajo \cite{Mohanty_2026}. El conjunto de fuentes y curvas de sensibilidad instrumentales fue adaptado de \cite{Aggarwal_2020, Domcke_2023, EinsteinTelescope_2025, Moore_2015}, donde se detalla la metodología analítica para establecer estas cotas en la búsqueda de fondos estocásticos.
 
-En el régimen de frecuencias del orden de los Hz a kHz, la detección se realiza mediante interferometría láser terrestre, ejemplificada por la colaboración LIGO-Virgo-KAGRA. El esquema de funcionamiento se basa en un interferómetro de Michelson: un divisor de haz (\textit{beam splitter}) separa un láser coherente en dos haces que recorren brazos ortogonales de longitud kilométrica. El paso de una onda gravitacional distorsiona la métrica, provocando un estiramiento y contracción diferencial en la longitud física de los brazos, lo que a su vez induce un corrimiento de fase detectable en el fotodiodo recombinador \cite{Abbott_2016, LIGO, Maggiore_2018}. Para explorar frecuencias más bajas (rango de los mHz), se requiere evadir el ruido terrestre, motivando el diseño de interferómetros espaciales como el proyecto LISA. Si bien estos instrumentos están pensados primordialmente para la detección de señales transitorias coherentes, la superposición incoherente de una inmensa cantidad de eventos astrofísicos irresolubles conforma un fondo estocástico que puede ser analizado mediante técnicas de correlación cruzada entre múltiples detectores \cite{Allen_1999, Caprini_2020}.
+En el régimen de frecuencias del orden de los Hz a kHz, la detección se realiza mediante interferometría láser terrestre, ejemplificada por la colaboración LIGO-Virgo-KAGRA. El esquema de funcionamiento se basa en un interferómetro de Michelson: un divisor de haz (\textit{beam splitter}) separa un láser coherente en dos haces que recorren brazos ortogonales de longitud kilométrica. El paso de una onda gravitacional distorsiona la métrica, provocando un estiramiento y contracción diferencial en la longitud física de los brazos, lo que a su vez induce un corrimiento de fase detectable en el fotodiodo recombinador \cite{LIGO, Maggiore_2018}. Para explorar frecuencias más bajas (rango de los mHz), se requiere evadir el ruido terrestre, motivando el diseño de interferómetros espaciales como el proyecto LISA. Si bien estos instrumentos están pensados primordialmente para la detección de señales transitorias coherentes, la superposición incoherente de una inmensa cantidad de eventos astrofísicos irresolubles conforma un fondo estocástico que puede ser analizado mediante técnicas de correlación cruzada entre múltiples detectores \cite{Allen_1999, Caprini_2020}.
 
 En la banda de muy bajas frecuencias (nHz), la estrategia observacional dominante consiste en el uso de \textit{Pulsar Timing Arrays} (PTAs). Los púlsares de milisegundo funcionan como relojes astrofísicos de extraordinaria estabilidad. La propagación de una onda gravitacional a través de la línea de visión Tierra-Púlsar altera el tiempo de vuelo de los fotones, induciendo anomalías (adelantos o retrasos) en los tiempos de llegada de los pulsos (residuos ToA). Estas colaboraciones buscan aislar la firma de un fondo estocástico mediante el análisis de la correlación cruzada de los residuos temporales en una extensa red galáctica de púlsares \cite{NANOGrav, Renzini2022}.
 

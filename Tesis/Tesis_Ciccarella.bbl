@@ -1,10 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[Abbott et~al., 2016]{Abbott_2016}
-Abbott, B.~P. et~al. (2016).
-\newblock Observation of gravitational waves from a binary black hole merger.
-\newblock {\em Physical Review Letters}, 116(6):061102.
-
 \bibitem[Aggarwal et~al., 2020]{Aggarwal_2020}
 Aggarwal, N., Aguiar, O.~D., Bauswein, A., Cella, G., Clesse, S., Cruise, A.~M., Domcke, V., Figueroa, D.~G., Geraci, A., Goryachev, M., Grote, H., Hindmarsh, M., Muia, F., Mukund, N., Ottaway, D., Peloso, M., Quevedo, F., Ricciardone, A., Steinlechner, J., Steinlechner, S., Sun, S., Tobar, M.~E., Torrenti, F., Unal, C., and White, G. (2020).
 \newblock Challenges and opportunities of gravitational wave searches at mhz to ghz frequencies.
@@ -44,6 +39,11 @@ Bethke, L. (2015).
 Caprini, C. and Figueroa, D.~G. (2020).
 \newblock Cosmological backgrounds of gravitational waves.
 \newblock {\em arXiv preprint arXiv:1801.04268}.
+
+\bibitem[Christensen, 2018]{Christensen_2018}
+Christensen, N. (2018).
+\newblock Stochastic gravitational wave backgrounds.
+\newblock {\em arXiv preprint arXiv:1811.08797}.
 
 \bibitem[Ciccarella, 2026]{Git}
 Ciccarella, T. (2025-2026).
