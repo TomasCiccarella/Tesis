@@ -20,6 +20,11 @@ Amin, M.~A., Hertzberg, M.~P., Kaiser, D.~I., and Karouby, J. (2014).
 \newblock Nonperturbative dynamics of reheating after inflation: a review.
 \newblock {\em arXiv preprint arXiv:1410.3808}.
 
+\bibitem[B.~P.~Abbott, 2016]{LIGO}
+B.~P.~Abbott, e.~a. (2016).
+\newblock Observation of gravitational waves from a binary black hole merger.
+\newblock {\em Physical Review Letters}.
+
 \bibitem[Baumann, 2012]{Baumann_2012}
 Baumann, D. (2012).
 \newblock Tasi lectures on inflation.
@@ -90,16 +95,6 @@ Elía, J.~P. (2025).
 \newblock Producción de un fondo estocástico de ondas gravitatorias durante recalentamiento.
 \newblock Tesis de licenciatura, Universidad de Buenos Aires, Facultad de Ciencias Exactas y Naturales, Buenos Aires, Argentina.
 
-\bibitem[et~al., 2016]{LIGO}
-et~al., B. P.~A. (2016).
-\newblock Observation of gravitational waves from a binary black hole merger.
-\newblock {\em Physical Review Letters}.
-
-\bibitem[et~al., 2023]{NANOGrav}
-et~al., G.~A. (2023).
-\newblock The nanograv 15-year data set: Evidence for a gravitational-wave background.
-\newblock {\em The Astrophysical Journal}.
-
 \bibitem[Figueroa et~al., 2021]{Figueroa2021}
 Figueroa, D.~G. et~al. (2021).
 \newblock The art of simulating the early universe. part i. integration techniques and canonical cases.
@@ -124,6 +119,11 @@ Figueroa, D.~G. and Torrenti, F. (2017a).
 Figueroa, D.~G. and Torrenti, F. (2017b).
 \newblock Parametric resonance in the early universe - a fitting analysis.
 \newblock {\em arXiv preprint arXiv:1609.05197}.
+
+\bibitem[G.~Agazie, 2023]{NANOGrav}
+G.~Agazie, e.~a. (2023).
+\newblock The nanograv 15-year data set: Evidence for a gravitational-wave background.
+\newblock {\em The Astrophysical Journal}.
 
 \bibitem[Greene et~al., 1997]{Greene_1997}
 Greene, P.~B., Kofman, L., Linde, A., and Starobinsky, A.~A. (1997).
@@ -175,6 +175,11 @@ McLachlan, N.~W. (1947).
 \newblock {\em Theory and Application of Mathieu Functions}.
 \newblock Clarendon Press, Oxford.
 
+\bibitem[Mishra, 2024]{Mishra_2024}
+Mishra, S.~S. (2024).
+\newblock Cosmic inflation: Background dynamics, quantum fluctuations and reheating.
+\newblock {\em arXiv preprint arXiv:2403.10606}.
+
 \bibitem[Mohanty et~al., 2026]{Mohanty_2026}
 Mohanty, S., Panda, S., and Vidyarthi, A. (2026).
 \newblock Testing the starobinsky model of inflation with resonant cavities.
@@ -195,6 +200,11 @@ Moore, C.~J., Cole, R.~H., and Berry, C. P.~L. (2015b).
 Peter, P. and Uzan, J.-P. (2009).
 \newblock {\em Primordial Cosmology}.
 \newblock Oxford University Press, Great Clarendon Street, Oxford OX2 6DP.
+
+\bibitem[Podolsky et~al., 2006]{Podolsky_2006}
+Podolsky, D., Felder, G., Kofman, L., and Peloso, M. (2006).
+\newblock Equation of state and beginning of thermalization after preheating.
+\newblock {\em Physical Review D}, 73(2):023501.
 
 \bibitem[Prokopec and Roos, 1997]{Prokopec_1997}
 Prokopec, T. and Roos, T.~G. (1997).
