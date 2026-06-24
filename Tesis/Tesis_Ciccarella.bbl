@@ -20,6 +20,12 @@ B.~P.~Abbott, e.~a. (2016).
 \newblock Observation of gravitational waves from a binary black hole merger.
 \newblock {\em Physical Review Letters}.
 
+\bibitem[Baeza-Ballesteros et~al., 2022]{CosmoLattice_Note2_GWs}
+Baeza-Ballesteros, J., Figueroa, D.~G., Florio, A., and Loayza, N. (2022).
+\newblock Cosmolattice - technical note ii: Gravitational waves.
+\newblock Technical report, Instituto de Física Corpuscular (IFIC) and Stony Brook University.
+\newblock Actualizado en Junio 2023. Disponible en el repositorio oficial de CosmoLattice.
+
 \bibitem[Baumann, 2012]{Baumann_2012}
 Baumann, D. (2012).
 \newblock Tasi lectures on inflation.
@@ -110,6 +116,11 @@ Figueroa, D.~G., Florio, A., and Torrenti, F. (2024).
 \newblock Present and future of cosmolattice.
 \newblock {\em Reports on Progress in Physics}, 87.
 
+\bibitem[Figueroa et~al., 2022]{Figueroa_GW_2022}
+Figueroa, D.~G., Florio, A., Torrenti, F., and Valkenburg, W. (2022).
+\newblock Background of gravitational waves from scalar and gauge fields: A cosmolattice module.
+\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2022(04):034.
+
 \bibitem[Figueroa and Torrenti, 2017a]{Figueroa_2017_GW}
 Figueroa, D.~G. and Torrenti, F. (2017a).
 \newblock Gravitational wave production from preheating: parameter dependence.
@@ -124,6 +135,11 @@ Figueroa, D.~G. and Torrenti, F. (2017b).
 G.~Agazie, e.~a. (2023).
 \newblock The nanograv 15-year data set: Evidence for a gravitational-wave background.
 \newblock {\em The Astrophysical Journal}.
+
+\bibitem[Garc\'\i{}a-Bellido et~al., 2008]{GarciaBellido_2007}
+Garc\'\i{}a-Bellido, J., Figueroa, D.~G., and Sastre, A. (2008).
+\newblock A gravitational wave background from reheating after hybrid inflation.
+\newblock {\em Physical Review D}.
 
 \bibitem[Greene et~al., 1997]{Greene_1997}
 Greene, P.~B., Kofman, L., Linde, A., and Starobinsky, A.~A. (1997).
