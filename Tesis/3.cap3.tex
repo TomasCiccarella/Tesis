@@ -105,7 +105,7 @@ donde $u$ y $v$ representan la amplitud y la derivada temporal de las perturbaci
 \end{equation}
 de donde se deduce que si la magnitud de la traza supera el valor crítico de 2 ($|\text{Tr}(\mathcal{O})| > 2$), el exponente $\mu$ adquiere una parte real no nula, manifestando una inestabilidad exponencial. Por el contrario, en las regiones donde $|\text{Tr}(\mathcal{O})| < 2$, el coeficiente es puramente imaginario, y el modo de Fourier oscilará de manera estable sin amplificación neta. 
 
-Evaluando los coeficientes de Floquet a lo largo del espacio de parámetros $(A_k, q)$ o $(k, q)$, se construyen las denominadas tablas de inestabilidad, presentadas en la Figura \ref{fig:Floquet}. En estos diagramas, las zonas representadas en color negro corresponden a regiones de estabilidad, mientras que los gradientes de color intenso marcan las franjas donde $\Re\{\mu_k\}$ es máximo, indicando una resonancia altamente eficiente. Este análisis revela una estructura de bandas, cuyo objetivo fundamental en la sección \ref{sec:Produccion_lineal} será demostrar analíticamente cómo estas actúan como fuente para inyectar potencia en el espectro de las ondas gravitacionales.
+Evaluando los coeficientes de Floquet a lo largo del espacio de parámetros $(\kappa, q)$, se construyen las denominadas tablas de inestabilidad, presentadas en la Figura \ref{fig:Floquet}. En estos diagramas, las zonas representadas en color negro corresponden a regiones de estabilidad, mientras que los gradientes de color intenso marcan las franjas donde $\Re\{\mu_k\}$ es máximo, indicando una resonancia altamente eficiente. Este análisis revela una estructura de bandas, cuyo objetivo fundamental en la sección \ref{sec:Produccion_lineal} será demostrar analíticamente cómo estas actúan como fuente para inyectar potencia en el espectro de las ondas gravitacionales.
 
 \begin{figure}[htbp]
     \centering
@@ -145,11 +145,7 @@ Para valores débiles del parámetro de acoplamiento ($q \ll 1$), el ancho de la
 \begin{equation}
     n_k^{(\chi)} = \frac{1}{2 \omega_k} \left( \left| \dot{\chi}_k \right|^2 + \omega^2_k \left| \chi_k \right|^2 \right) - \frac{1}{2}.
 \end{equation}
-En el régimen de resonancia angosta, este número de ocupación crece monótonamente alrededor de una envolvente continua. Por el contrario, cuando el parámetro de acoplamiento es fuerte ($q \gg 1$), el sistema ingresa al régimen de resonancia ancha (\textit{Broad Resonance}). En este escenario, la condición de adiabaticidad de los modos de Fourier se puede estudiar a través del parámetro:
-\begin{equation}
-    R = \frac{\left| \dot{\omega}_k \right|}{\omega_k^2},
-\end{equation}
-donde $\omega_k = \sqrt{\frac{k^2}{a^2} + g^2 \bar{\phi}^2}$ es la frecuencia efectiva del campo $\chi$. Durante la mayor parte del período de oscilación, $R \ll 1$ y el campo evoluciona adiabáticamente sin amplificación neta. Sin embargo, cuando el inflatón de fondo cruza por el mínimo de potencial ($\bar{\phi} \to 0$), la frecuencia efectiva decae abruptamente y su tasa de cambio se vuelve comparable a la magnitud de la frecuencia misma ($R \gtrsim 1$). Esta violación de la adiabaticidad induce una producción violenta de partículas concentrada temporalmente en ráfagas cortas, dando lugar a un perfil escalonado en el número de ocupación. A este fenómeno característico se lo denomina explosión de partículas o \textit{particle bursts} \cite{Kofman_1997, Amin_2014}. Estas evoluciones se muestran en la Figura \ref{fig:m2phi2_Resonance} (para el potencial masivo) y en la Figura \ref{fig:lphi4_Resonance} (para el modelo cuártico de Lamé).
+En el régimen de resonancia angosta, este número de ocupación crece monótonamente alrededor de una envolvente continua como consecuencia de una acumulación coherente de la transferencia de energía a lo largo de varios ciclos de decaimiento del inflatón. Por el contrario, cuando el parámetro de acoplamiento es fuerte ($q \gg 1$), el sistema ingresa al régimen de resonancia ancha (\textit{Broad Resonance}). En este escenario, la condición de adiabaticidad de los modos de Fourier se puede estudiar a través del parámetro $R = \frac{\left| \dot{\omega}_k \right|}{\omega_k^2}$, donde $\omega_k = \sqrt{\frac{k^2}{a^2} + g^2 \bar{\phi}^2}$ es la frecuencia efectiva del campo $\chi$. Durante la mayor parte del período de oscilación, $R \ll 1$ y el campo evoluciona adiabáticamente sin amplificación neta. Sin embargo, cuando el inflatón de fondo cruza por el mínimo de potencial ($\bar{\phi} \to 0$), la frecuencia efectiva decae abruptamente y su tasa de cambio se vuelve comparable a la magnitud de la frecuencia misma ($R \gtrsim 1$). Esta violación de la adiabaticidad induce una producción violenta de partículas concentrada temporalmente en ráfagas cortas, dando lugar a un perfil escalonado en el número de ocupación. A este fenómeno característico se lo denomina explosión de partículas o \textit{particle bursts} \cite{Kofman_1997, Amin_2014}. Estas evoluciones se muestran en la Figura \ref{fig:m2phi2_Resonance} (para el potencial masivo) y en la Figura \ref{fig:lphi4_Resonance} (para el modelo cuártico de Lamé).
 
 \begin{figure}[htbp]
     \centering
@@ -221,7 +217,7 @@ donde $\omega_k = \sqrt{\frac{k^2}{a^2} + g^2 \bar{\phi}^2}$ es la frecuencia ef
 
 \section{Dinámica con expansión}
 
-En la sección anterior, se estudió la evolución de las ecuaciones de perturbaciones bajo la aproximación de un espacio estático de Minkowski. En esta sección se abordará rigurosamente el efecto de la expansión del universo en la dinámica de los campos a orden lineal.
+En la sección anterior, se estudió la evolución de las ecuaciones de perturbaciones bajo la aproximación de un espacio estático de Minkowski. En esta sección se abordará el efecto de la expansión del universo en la dinámica de los campos a orden lineal.
 
 Al incorporar la expansión cosmológica, las ecuaciones dinámicas para el campo de fondo del inflatón y para las perturbaciones del campo hijo están dadas por:
 \begin{equation}
@@ -233,7 +229,7 @@ Al incorporar la expansión cosmológica, las ecuaciones dinámicas para el camp
 
 \vspace{3cm}
 
-Para el modelo masivo libre, regido por un potencial cuadrático $V(\phi) = \frac{1}{2} m^2 \phi^2$, el sistema se escribe como:
+Para el modelo con potencial cuadrático $V(\phi) = \frac{1}{2} m^2 \phi^2$, el sistema se escribe como:
 \begin{equation}
     \ddot{\bar{\phi}} + 3 H \dot{\bar{\phi}} + m^2 \bar{\phi} = 0,
 \end{equation}
@@ -277,9 +273,9 @@ En una era dominada por la radiación, el factor de escala es directamente propo
 \begin{equation}
     X_k^{\prime \prime} + \left( k^2 + g^2 \varphi^2 \right) X_k = 0.
 \end{equation}
-Estas expresiones no tienen dependencia explícita con el factor de escala $a(\eta)$. Esto demuestra que el sistema $\lambda \phi^4$ acoplado a un campo escalar sin masa es un modelo invariante conforme a nivel clásico \cite{Greene_1997}. Por lo tanto, estudiar la dinámica de estos campos en un universo en expansión es matemáticamente equivalente a estudiarla en un espacio estático de Minkowski, lo que garantiza que las tablas de inestabilidad de Floquet deducidas en la sección anterior mantengan su validez intacta en el tiempo.
+Estas expresiones no tienen dependencia explícita con el factor de escala $a(\eta)$. Esto demuestra que el sistema $\lambda \phi^4$ acoplado a un campo escalar sin masa es un modelo invariante conforme a nivel clásico \cite{Greene_1997}. Por lo tanto, estudiar la dinámica de estos campos en un universo en expansión es matemáticamente equivalente a estudiarla en un espacio estático de Minkowski, lo que garantiza que las tablas de inestabilidad de Floquet deducidas en la sección anterior mantengan su validez.
 
-Para el desarrollo del resto de este trabajo, el interés central radicará en comprender el impacto de la resonancia ancha sobre la generación del fondo de ondas gravitacionales bajo el potencial cuártico. La elección de este escenario, se justifica analíticamente por su invarianza conforme, y permitirá una contrastación directa en el Capítulo \ref{sec:cap4}, donde este análisis lineal a tiempos cortos se comparará frente a las soluciones no perturbativas a tiempos largos obtenidas de la simulación espectral en redes mediante \CosmoLattice \cite{CosmoLatticeNet, Figueroa2021, Figueroa_2017_GW}.
+Para el desarrollo del resto de este capítulo, el interés central radicará en comprender el impacto de la resonancia ancha sobre la generación del fondo de ondas gravitacionales bajo el potencial cuártico. La elección de este escenario, se justifica analíticamente por su invarianza conforme, y permitirá una contrastación directa en el Capítulo \ref{sec:cap4}, donde este análisis lineal a tiempos cortos se comparará frente a las soluciones no perturbativas a tiempos largos obtenidas de la simulación espectral en redes mediante \CosmoLattice \cite{CosmoLatticeNet, Figueroa2021, Figueroa_2017_GW}.
 
 \section{Producción de ondas gravitacionales en el régimen lineal}\label{sec:Produccion_lineal}
 
