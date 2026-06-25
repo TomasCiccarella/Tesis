@@ -91,6 +91,11 @@ Dufaux, J.-F., Bergman, A., Felder, G., Kofman, L., and Uzan, J.-P. (2007).
 \newblock The science of the einstein telescope.
 \newblock {\em arXiv preprint arXiv:2503.12263}.
 
+\bibitem[Elia, 2025]{Elia_2025}
+Elia, J.~P. (2025).
+\newblock Producción de un fondo estocástico de ondas gravitatorias durante recalentamiento.
+\newblock Tesis de licenciatura, Universidad de Buenos Aires, Facultad de Ciencias Exactas y Naturales, Buenos Aires, Argentina.
+
 \bibitem[Elia et~al., 2026]{Elia_2026}
 Elia, J.~P., Cantarutti, L., Calzetta, E., and Miron-Granese, N. (2026).
 \newblock Hydrodynamic models of reheating.
@@ -100,11 +105,6 @@ Elia, J.~P., Cantarutti, L., Calzetta, E., and Miron-Granese, N. (2026).
 Ellis, J., Garcia, M. A.~G., Olive, K.~A., and Verner, S. (2026).
 \newblock Constraints on attractor models of inflation and reheating from planck, bicep/keck, act dr6, and spt-3g data.
 \newblock {\em Physical Review D}, 113(6):063571.
-
-\bibitem[Elía, 2025]{Elia_2025}
-Elía, J.~P. (2025).
-\newblock Producción de un fondo estocástico de ondas gravitatorias durante recalentamiento.
-\newblock Tesis de licenciatura, Universidad de Buenos Aires, Facultad de Ciencias Exactas y Naturales, Buenos Aires, Argentina.
 
 \bibitem[Figueroa et~al., 2021]{Figueroa2021}
 Figueroa, D.~G. et~al. (2021).
@@ -146,10 +146,20 @@ Garc\'\i{}a-Bellido, J., Figueroa, D.~G., and Sastre, A. (2008).
 \newblock A gravitational wave background from reheating after hybrid inflation.
 \newblock {\em Physical Review D}.
 
+\bibitem[Gatti et~al., 2024]{Gatti_2024}
+Gatti, C., Visinelli, L., and Zantedeschi, M. (2024).
+\newblock Cavity detection of gravitational waves: Where do we stand?
+\newblock {\em Physical Review D}, 110(2):024075.
+
 \bibitem[Greene et~al., 1997]{Greene_1997}
 Greene, P.~B., Kofman, L., Linde, A., and Starobinsky, A.~A. (1997).
 \newblock Structure of resonance in preheating after inflation.
 \newblock {\em arXiv preprint hep-ph/9705347}.
+
+\bibitem[Gross et~al., 2025]{Gross_2025}
+Gross, M., Mambrini, Y., Kpatcha, E., Olea-Romacho, M.~O., and Roshan, R. (2025).
+\newblock Gravitational wave production during reheating: From the inflaton to primordial black holes.
+\newblock {\em Physical Review D}, 111(3):035020.
 
 \bibitem[Herman et~al., 2023]{Herman_2023}
 Herman, N., Lehoucq, L., and F{\"u}zfa, A. (2023).
@@ -236,6 +246,11 @@ Prokopec, T. and Roos, T.~G. (1997).
 Renzini, A., Goncharov, B., Jenkins, A.~C., and Meyers, P.~M. (2022).
 \newblock Stochastic gravitational-wave backgrounds: Current detection efforts and future prospects.
 \newblock {\em Galaxies}, 10(1).
+
+\bibitem[Ringwald and Tamarit, 2022]{Ringwald_2022}
+Ringwald, A. and Tamarit, C. (2022).
+\newblock Revealing the cosmic history with gravitational waves.
+\newblock {\em Physical Review D}, 106(6):063027.
 
 \bibitem[Starobinsky, 1980]{Starobinsky_1980}
 Starobinsky, A.~A. (1980).
