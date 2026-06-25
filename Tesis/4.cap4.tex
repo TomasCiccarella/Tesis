@@ -184,7 +184,7 @@ Habiendo corroborado el comportamiento del \textit{background}, el análisis se 
 
 \section{Comparación de espectros con \texorpdfstring{$\omega_{eff} = 1/3$}{omega = 1/3}}\label{sec:comparaciones_w1/3}
 
-Para iniciar la comparación de los espectros de ondas gravitacionales, la Figura \ref{fig:CosmoLattice_energies_w1/3} podrá permitirnos analizar el intercambio de energías entre los campos durante la época estudiada. En esta figura se puede observar que la densidad de energía de las ondas gravitacionales se incrementa en correlación directa con el aumento de la energía de los gradientes de los campos y la energía de interacción. Este resultado es consecuencia directa de la ecuación (\ref{eqn:PiTT}), la cual establece que las perturbaciones del tensor de energía-momento (fuente de las ondas) están dictaminadas por la dinámica espacial de los campos de materia \cite{Dufaux_2007, Figueroa_2017_GW}. Como resultado de esto, la producción de ondas gravitacionales se detiene una vez que el condensado del inflatón decae completamente y la producción explosiva de partículas del campo hijo cesa.
+Para iniciar la comparación de los espectros de ondas gravitacionales, la Figura \ref{fig:CosmoLattice_energies_w1/3} podrá permitirnos analizar el intercambio de energías entre los campos durante la época estudiada. En esta figura se puede observar que la densidad de energía de las ondas gravitacionales se incrementa abruptamente en correlación directa con el aumento de la energía de los gradientes de los campos y la energía de interacción, lo cual resulta un fenómeno no lineal. Este resultado es consecuencia directa de la ecuación (\ref{eqn:PiTT}), la cual establece que las perturbaciones del tensor de energía-momento (fuente de las ondas) están dictaminadas por los gradientes espaciales de los campos de materia \cite{Dufaux_2007, Figueroa_2017_GW}. Como resultado de esto, la producción de ondas gravitacionales se detiene una vez que el condensado del inflatón decae completamente y la producción explosiva de partículas del campo hijo cesa.
 
 \begin{figure}[htbp]
     \centering
@@ -193,7 +193,7 @@ Para iniciar la comparación de los espectros de ondas gravitacionales, la Figur
     \label{fig:CosmoLattice_energies_w1/3}
 \end{figure}
 
-A partir de la Figura \ref{fig:CosmoLattice_energies_w1/3} es posible, además, contrastar la dinámica de producción tensorial entre los distintos modelos. Se puede notar que el modelo $\tanh^4$ presenta fluctuaciones de energía de mayor magnitud temporal que el modelo $\lambda \phi^4$. Haciendo uso de la Figura \ref{fig:CosmoLattice_energy_analysis_w1/3}, se puede observar que si bien la producción de ondas inicia simultáneamente en ambos escenarios, en el modelo $\tanh^4$ se prolonga por un lapso temporal mayor. Este comportamiento es coherente con lo observado en la Figura \ref{fig:CosmoLattice_background_phi}, donde el potencial monomial hace decaer al inflatón más rápido, logrando que la fuente de las ondas gravitacionales se sature antes. Otra observación destacable es que, al comienzo de la simulación, las densidades de energía de las ondas y los gradientes son tres órdenes de magnitud menores para el modelo $\lambda \phi^4$; no obstante, al finalizar la etapa de \textit{preheating}, ambos alcanzan amplitudes comparables.
+A partir de la Figura \ref{fig:CosmoLattice_energies_w1/3} es posible, además, contrastar la dinámica de producción de ondas gravitatorias entre los distintos modelos. Se puede notar que el modelo $\tanh^4$ presenta una producción de ondas gravitacionales por un intervalo mayor de tiempo que el modelo $\lambda \phi^4$. Esto mismo se puede notar, también, en la Figura \ref{fig:CosmoLattice_energy_analysis_w1/3}, donde se puede observar que si bien la producción de ondas inicia simultáneamente en ambos escenarios, en el modelo $\tanh^4$ se prolonga por un lapso temporal mayor. Este comportamiento es coherente con lo observado en la Figura \ref{fig:CosmoLattice_background_phi}, donde el potencial monomial hace decaer al inflatón más rápido, logrando que la fuente de las ondas gravitacionales se sature antes. Otra observación destacable es que, al comienzo de la simulación, las densidades de energía de las ondas y los gradientes son tres órdenes de magnitud menores para el modelo $\lambda \phi^4$; no obstante, al finalizar la etapa de \textit{preheating}, ambos alcanzan amplitudes comparables.
 
 \begin{figure}[htbp]
     \centering
@@ -202,14 +202,14 @@ A partir de la Figura \ref{fig:CosmoLattice_energies_w1/3} es posible, además, 
     \label{fig:CosmoLattice_energy_analysis_w1/3}
 \end{figure}
 
-Para posibilitar una comparación directa de estos resultados con las curvas de sensibilidad de los detectores actuales y futuros de fondos estocásticos, es necesario transformar los espectros comóviles extraídos de \CosmoLattice a frecuencias físicas y amplitudes observables en el presente. Tal como se detalla en el Apéndice \ref{sec:apexC}, para modelos con una ecuación de estado efectiva de radiación, esta transformación obedece a las siguientes relaciones:
+Para posibilitar una comparación directa entre los espectros de ondas gravitacionales y las curvas de sensibilidad de los detectores actuales y futuros, se debe transformar los números de onda comóviles y los espectros extraídos de \CosmoLattice a frecuencias físicas y amplitudes observables en la actualidad. Tal como se detalla en el Apéndice \ref{sec:apexC}, asumiendo una fase gobernada por una ecuación de estado efectiva de tipo radiación ($\omega_{eff} = 1/3$), esta transformación cumple las siguientes relaciones de reescalamiento
 \begin{equation}
     f_0 = \frac{k_i}{2 \pi} \frac{g_{s,0} T_0}{g_{s,reh}} \left( \frac{\pi^2 g_{reh}}{60 V_{i}} \right)^{\frac{1}{4}},
 \end{equation}
 \begin{equation}
-    \Omega_{GW} (k, a_0) = \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \Omega_{GW} \left( k, a_f \right),
+    \Omega_{GW} (f_0, a_0) = \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \Omega_{GW} \left( f_0, a_f \right).
 \end{equation}
-donde el subíndice $f$ denota el instante final de la producción de ondas gravitacionales. Este valor de finalización para la producción se extrajo numéricamente de la Figura \ref{fig:CosmoLattice_energy_analysis_w1/3}, marcado por el punto rojo que indica la estabilización asintótica de la densidad de energía tensorial.
+En estas expresiones, el subíndice $0$ denota cantidades evaluadas en el tiempo presente, mientras que el subíndice $f$ corresponde al instante en el que cesa la producción activa de ondas gravitacionales. Asimismo, $g$ y $g_s$ representan los grados de libertad relativistas efectivos asociados a la densidad de energía y a la entropía, respectivamente; $T_0$ es la temperatura actual del fondo cósmico de microondas, $\Omega_{RAD,0}$ es la densidad de energía fraccional actual de la radiación y $V_i$ es la energía potencial inicial para el campo $\phi$. Finalmente, la magnitud $\Omega_{GW} (f_0, a_0)$ representa el espectro de la densidad de energía observable en la actualidad para una frecuencia física $f_0$. El factor de escala de corte $a_f$ requerido en la Ecuación (\ref{eqn:strain}) se extrajo numéricamente de la Figura \ref{fig:CosmoLattice_energy_analysis_w1/3}, identificando el punto (marcado en rojo) donde la densidad de energía tensorial alcanza su estabilización asintótica. Como criterio numérico, este instante de corte se definió como aquel en el cual la amplitud de la señal ingresa y se mantiene dentro de su máximo orden de magnitud.
 
 \begin{figure}[htbp]
     \centering
@@ -218,9 +218,9 @@ donde el subíndice $f$ denota el instante final de la producción de ondas grav
     \label{fig:CosmoLattice_GW_spectra_w1/3}
 \end{figure}
 
-Aplicando el reescaleo mencionado, se obtiene la Figura \ref{fig:CosmoLattice_GW_spectra_w1/3}, la cual muestra el espectro de potencias de ondas gravitacionales proyectado al día de hoy. Estos espectros confirman la saturación a tiempos largos discutida previamente. Al comparar la forma de ambos modelos, se destaca que el potencial $\lambda \phi^4$ genera un espectro con picos más agudos y resolubles, permitiendo identificar claramente los modos de Fourier que dominan la inyección de energía. En contraste, el modelo $\tanh^4$ presenta un espectro más aplanado, distribuyendo la energía de forma más homogénea a través de la banda de frecuencias excitada. A pesar de estas diferencias, el orden de magnitud de la amplitud máxima resulta equivalente, lo que sugiere que ambos escenarios ofrecerían señales de intensidad comparable para la detección estocástica.
+Aplicando el reescaleo mencionado, se obtiene la Figura \ref{fig:CosmoLattice_GW_spectra_w1/3}, la cual muestra el espectro de potencias de ondas gravitacionales proyectado al día de hoy. Estos espectros confirman la saturación a tiempos largos discutida previamente. Al comparar la forma de ambos modelos, se destaca que el potencial $\lambda \phi^4$ genera un espectro con picos más agudos y resolubles, permitiendo identificar claramente los modos de Fourier que dominan la inyección de energía de ondas gravitacionales. En contraste, el modelo $\tanh^4$ presenta un espectro más aplanado, distribuyendo la energía de forma más homogénea a través de la banda de frecuencias excitada. A pesar de estas diferencias, el orden de magnitud de la amplitud máxima resulta equivalente, lo que sugiere que ambos escenarios ofrecerían señales de intensidad comparable para la detección estocástica.
 
-Los espectros observados hasta este punto fueron simulados utilizando los parámetros del potencial $V(\phi)$ recomendados en \cite{Ellis_2026}, los cuales se ajustan óptimamente a las restricciones cosmológicas del fondo cósmico de microondas. No obstante, con el fin de comprender el impacto fenomenológico de estos parámetros sobre la señal gravitacional, se realizó un barrido paramétrico para cada familia de modelos. En la Figura \ref{fig:var_lambda} se expone la variación del espectro ante cambios en la constante de acoplamiento $\lambda$ para el potencial $\lambda \phi^4$, mientras que la Figura \ref{fig:var_tanh4} muestra un barrido bidimensional en $\Lambda^4$ y $M$ manteniendo constante el cociente efectivo $\lambda$.
+Los espectros observados hasta este punto fueron simulados utilizando los parámetros del potencial $V(\phi)$ recomendados en \cite{Ellis_2026}, los cuales se ajustan óptimamente a las restricciones cosmológicas del fondo cósmico de microondas. No obstante, con el fin de comprender el impacto fenomenológico de estos parámetros sobre la señal gravitacional, se realizó un barrido paramétrico para cada familia de modelos. En la Figura \ref{fig:var_lambda} se muestra la variación del espectro ante cambios en $\lambda$ para el potencial $\lambda \phi^4$, mientras que la Figura \ref{fig:var_tanh4} muestra un barrido bidimensional en $\Lambda^4$ y $M$ manteniendo constante el cociente efectivo $\lambda$, y en ambos casos se dejó fijo $q$.
 
 \begin{figure}[htbp]
     \centering
@@ -232,11 +232,13 @@ Los espectros observados hasta este punto fueron simulados utilizando los parám
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\linewidth]{figures/Omega_tanh4_varL4.pdf}
-    \caption{Espectros de potencia para el modelo $\tanh^4$ variando $\Lambda^4$ y $M$ bajo la restricción analítica $\displaystyle \lambda = \frac{\Lambda^4}{M^4} = 9 \times 10^{-14}$. El incremento en la escala de energía $\Lambda^4$ induce un aumento simultáneo tanto en la amplitud del espectro como en la frecuencia de los picos resonantes.}
+    \caption{Espectros de potencia para el modelo $\tanh^4$ variando $\Lambda^4$ y $M$ bajo la restricción $\displaystyle \lambda = \frac{\Lambda^4}{M^4} = 9 \times 10^{-14}$. El incremento en la escala de energía $\Lambda^4$ induce un aumento simultáneo tanto en la amplitud del espectro como en la frecuencia de los picos resonantes.}
     \label{fig:var_tanh4}
 \end{figure}
 
-El hecho de modificar magnitudes como $\lambda$ o $\Lambda^4$ altera la escala de energía y la pendiente geométrica del pozo de potencial, modificando la celeridad temporal con la que el inflatón rueda hacia el mínimo y oscila. Asimismo, estas alteraciones alteran la eficiencia de la producción de partículas y la firma de ondas gravitacionales resultante. En la Figura \ref{fig:var_lambda} se observa que para valores menores de $\lambda$, la pendiente se suaviza, ralentizando la dinámica del condensado; esto genera un espectro con múltiples picos armónicos pero suprime drásticamente la energía total emitida. Por otro lado, la Figura \ref{fig:var_tanh4} muestra un barrido en el potencial $\tanh^4$ conservando la relación asintótica $\displaystyle \lambda = \frac{\Lambda^4}{M^4} = 9 \times 10^{-14}$. Al aumentar la escala fundamental $\Lambda^4$, la dinámica temporal del campo se vuelve más violenta, lo que no solo incrementa la amplitud de las ondas producidas, sino que desplaza los picos resonantes hacia escalas ultravioletas (frecuencias mayores). A diferencia del modelo monomial, en este caso el aumento de $\Lambda^4$ no implica una mayor cantidad de picos, sino que vuelve más pronunciado el pico del modo principal dominante \cite{Figueroa_2017_Parametric}.
+El hecho de modificar magnitudes como $\lambda$ o $\Lambda^4$ altera la escala de energía y la pendiente geométrica del pozo de potencial, modificando la celeridad con la que el inflatón rueda hacia el mínimo y oscila. Asimismo, estas alteraciones cambian la eficiencia de la producción de partículas y la firma de ondas gravitacionales resultante. En la Figura \ref{fig:var_lambda} se observa que para valores menores de $\lambda$, la pendiente se suaviza, disminuyendo la celeridad del condensado al oscilar alrededor del mínimo; esto genera un espectro con múltiples picos armónicos pero suprime la energía total emitida. 
+
+Por otro lado, la Figura \ref{fig:var_tanh4} muestra un barrido en el potencial $\tanh^4$ conservando la relación asintótica $\displaystyle \lambda = \frac{\Lambda^4}{M^4} = 9 \times 10^{-14}$. Al aumentar la escala fundamental $\Lambda^4$, la dinámica temporal del campo se vuelve más violenta, lo que no solo incrementa la amplitud de las ondas producidas, sino que desplaza los picos resonantes hacia escalas ultravioletas (frecuencias mayores). A diferencia del modelo monomial, en este caso el aumento de $\Lambda^4$ no implica una mayor cantidad de picos, sino que vuelve más pronunciado el pico del modo principal dominante \cite{Figueroa_2017_Parametric}.
 
 \section{Comparación de espectros con \texorpdfstring{$\omega_{eff} = 0$}{omega = 0}}\label{sec:comparaciones_w0}
 
@@ -262,10 +264,10 @@ La Figura \ref{fig:CosmoLattice_energy_analysis_w0} permite identificar el momen
 \end{equation}
 \begin{equation}
     \begin{split}
-        \Omega_{GW} (k, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left( \frac{\pi^2 g_{reh} T_{reh}^4}{60 V_i} \right)^{\frac{1}{3}} \left( \frac{a_{f}}{a_{i}} \right) \Omega_{GW} \left( k, a_f \right).
+        \Omega_{GW} (f_0, a_0) &= \Omega_{RAD,0} \frac{g_{reh}}{g_{0}} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left( \frac{\pi^2 g_{reh} T_{reh}^4}{60 V_i} \right)^{\frac{1}{3}} \left( \frac{a_{f}}{a_{i}} \right) \Omega_{GW} \left( f_0, a_f \right).
     \end{split}
 \end{equation}
-A diferencia de los escenarios dominados por radiación, en este caso surge una dependencia explícita con $T_{reh}$, la temperatura de termalización del plasma al finalizar el \textit{Reheating}. Puesto que en la actualidad existen incertidumbres sobre el valor exacto de esta temperatura, se procedió a fijar un valor paramétrico de referencia $T_{reh} = 10^{10}$ GeV. Esta elección resulta plenamente compatible con las cotas cosmológicas actuales: se encuentra acotada inferiormente por la escala requerida para la Nucleosíntesis Primordial (BBN) y superiormente por las restricciones observacionales de la colaboración \textit{Planck} sobre el cociente tensor-escalar $r$ y la escala energética de la inflación \cite{Martin2015, Planck}. Una vez aplicado este reescaleo, se obtienen los espectros de potencias presentados en la Figura \ref{fig:CosmoLattice_GW_spectra_w0}.
+A diferencia de los escenarios dominados por radiación, en este caso surge una dependencia explícita con $T_{reh}$, la temperatura de termalización del plasma al finalizar el \textit{Reheating}. Dado que en la actualidad existe un amplio rango de valores posibles de esta temperatura, se procedió a fijar un valor paramétrico de referencia $T_{reh} = 10^{10}$ GeV. Esta elección resulta plenamente compatible con las cotas cosmológicas actuales: se encuentra acotada inferiormente por la escala requerida para la Nucleosíntesis Primordial (BBN) y superiormente por las restricciones observacionales sobre el cociente tensor-escalar $r$ y la escala energética de la inflación \cite{Planck, Martin2015}.
 
 \begin{figure}[htbp]
     \centering
@@ -274,11 +276,13 @@ A diferencia de los escenarios dominados por radiación, en este caso surge una 
     \label{fig:CosmoLattice_GW_spectra_w0}
 \end{figure}
 
-A partir de la Figura \ref{fig:CosmoLattice_GW_spectra_w0}, se observa que los espectros de ondas gravitacionales para los tres modelos convergen a tiempos largos hacia una morfología equivalente, compartiendo tanto la amplitud global como la ubicación espectral de los picos resonantes. Las principales divergencias se manifiestan en la banda infrarroja (valores bajos de $f_0$), donde el modelo monomial y el modelo $\tanh^2$ (T-model) exhiben un comportamiento ruidoso y de baja resolución. Este fenómeno se debe al corte infrarrojo de la discretización espacial ($k_{IR} = 2\pi/L$) y al volumen finito de la red de simulación \cite{Figueroa2021}; un aumento en el tamaño físico de la red ($L$) y en su resolución mitigaría este efecto, extendiendo la validez del espectro hacia frecuencias menores. 
+En la Figura \ref{fig:CosmoLattice_GW_spectra_w0}, se observa que los espectros de ondas gravitacionales reescalados para los tres modelos convergen a tiempos largos hacia una forma equivalente, compartiendo tanto la amplitud global como la ubicación espectral de los picos resonantes. Las principales diferencias se manifiestan en la banda infrarroja, donde el modelo monomial y el modelo $\tanh^2$ exhiben un comportamiento ruidoso y de baja resolución. Este fenómeno se debe al corte infrarrojo de la discretización espacial ($k_{IR} = 2\pi/L$) y al volumen finito de la red de simulación \cite{Figueroa2021}; un aumento en el tamaño físico de la red ($L$) y en su resolución mitigaría este efecto, extendiendo la validez del espectro hacia frecuencias menores. 
 
-Asimismo, se advierte una diferencia sutil en la dinámica a tiempos cortos: el modelo de Starobinsky no sufre una amplificación inicial tan violenta, mientras que el modelo monomial acumula rápidamente energía gravitacional en bandas espectrales secundarias. Este comportamiento dinámico es consistente con la topología de los potenciales analizada en la Figura \ref{fig:comp_modelos}. A tiempos tempranos (altas energías), el potencial cuadrático carece de la meseta asintótica que caracteriza a los modelos atractores; sin embargo, a medida que la amplitud del campo decae y el inflatón se confina en las cercanías del mínimo, los tres modelos convergen armónicamente, resultando en la emisión de un fondo estocástico de ondas gravitacionales morfológicamente similar.
+\vspace{3cm}
 
-Para profundizar en la dinámica del modelo $m^2 \phi^2$, resulta fundamental analizar la influencia del parámetro de resonancia $q$, el cual cuantifica el acoplamiento efectivo entre el inflatón y el campo hijo. El análisis paramétrico revela que para valores pequeños de $q$ (\textit{narrow resonance}), la inyección de energía al sector tensorial es ineficiente, produciendo un espectro de ondas gravitacionales con amplitudes irrelevantes. La generación de un fondo estocástico robusto requiere alcanzar el régimen de resonancia ancha (\textit{broad resonance}), lo cual ocurre para acoplamientos del orden de $q \gtrsim 7280$. A partir de este umbral, el campo hijo extrae eficientemente energía del \textit{background}, formando fuertes gradientes espaciales cuya retroacción (\textit{backreaction}) amplifica de manera masiva y no lineal la amplitud de las ondas generadas.
+Asimismo, se observa una diferencia en la dinámica a tiempos cortos: el modelo de Starobinsky no sufre una amplificación inicial tan violenta, mientras que el modelo monomial acumula rápidamente energía gravitacional en bandas espectrales secundarias. Este comportamiento dinámico es consistente con lo analizado en la Figura \ref{fig:comp_modelos}. A tiempos cortos, el potencial cuadrático carece de la meseta asintótica que caracteriza a los modelos atractores; sin embargo, a medida que la amplitud del campo decae y el inflatón se confina en las cercanías del mínimo, los tres modelos convergen, resultando en la emisión de un fondo estocástico de ondas gravitacionales similar.
+
+Para profundizar en la dinámica del modelo $m^2 \phi^2$, resulta fundamental analizar la influencia del parámetro de resonancia $q$, el cual cuantifica el acoplamiento efectivo entre el inflatón y el campo hijo. El análisis paramétrico revela que para valores pequeños de $q$ (\textit{narrow resonance}), la inyección de energía a las ondas es ineficiente, produciendo un espectro de ondas gravitacionales con amplitudes despreciables. La generación de un fondo estocástico requiere alcanzar el régimen de resonancia ancha (\textit{broad resonance}). En este régimen, el campo hijo extrae eficientemente energía del \textit{background}, formando fuertes gradientes espaciales cuya retroacción (\textit{backreaction}) amplifica la amplitud de las ondas generadas.
 
 \begin{figure}[htbp]
     \centering
@@ -287,14 +291,14 @@ Para profundizar en la dinámica del modelo $m^2 \phi^2$, resulta fundamental an
     \label{fig:Omega_varq_m2phi2}
 \end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width = \linewidth]{figures/energy_m2phi2_varq.pdf}
-    \caption{Evolución de la densidad de energía gravitacional para distintos valores de $q$ en el modelo monomial. A bajos acoplamientos, la inyección de energía es exigua, requiriendo un $q$ elevado para desatar una cascada resonante eficiente.}
-    \label{fig:energy_varq_m2phi2}
-\end{figure} 
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width = \linewidth]{figures/energy_m2phi2_varq.pdf}
+%    \caption{Evolución de la densidad de energía gravitacional para distintos valores de $q$ en el modelo monomial. A bajos acoplamientos, la inyección de energía es exigua, requiriendo un $q$ elevado para desatar una cascada resonante eficiente.}
+%    \label{fig:energy_varq_m2phi2}
+%\end{figure} 
 
-Otra exploración paramétrica que se puede hacer es evaluar el impacto de la escala de masa $m$ en el potencial cuadrático. Como se observa en la Figura \ref{fig:Omega_varm_m2phi2}, un incremento en la masa (para $m > 10^{13}$ GeV) se traduce en una notable disminución de la amplitud espectral. Físicamente, una masa mayor implica una curvatura más pronunciada del potencial; en consecuencia, el inflatón oscila en un pozo más estrecho y transfiere su energía de manera más acelerada. Esta dinámica acorta la ventana temporal durante la cual la resonancia paramétrica opera, limitando el crecimiento de los gradientes espaciales y, por ende, atenuando la inyección de energía al sector tensorial, tal como se corrobora en la evolución temporal de las densidades de energía (Figura \ref{fig:energy_varm_m2phi2}).
+Otra exploración paramétrica que se puede hacer es evaluar el impacto de la masa $m$ para un valor fijo de $q$ en el potencial cuadrático. Como se observa en la Figura \ref{fig:Omega_varm_m2phi2}, un incremento en la masa (para $m > 10^{13}$ GeV) se traduce en una notable disminución de la amplitud espectral. Físicamente, una masa mayor implica una curvatura más pronunciada del potencial; en consecuencia, el inflatón oscila en un pozo más estrecho y transfiere su energía de manera más acelerada. Esta dinámica acorta la ventana temporal durante la cual la resonancia paramétrica opera, limitando el crecimiento de los gradientes espaciales y, por ende, atenuando la inyección de energía al sector tensorial.
 
 \begin{figure}[htbp]
     \centering
@@ -303,23 +307,23 @@ Otra exploración paramétrica que se puede hacer es evaluar el impacto de la es
     \label{fig:Omega_varm_m2phi2}
 \end{figure}
 
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width = 0.9\linewidth]{figures/energy_m2phi2_varm.pdf}
+%    \caption{Evolución energética para distintas masas en el modelo $m^2 \phi^2$. Se observa cómo el incremento de la masa altera la tasa de transferencia de energía del \textit{background} hacia los gradientes del campo hijo.}
+%    \label{fig:energy_varm_m2phi2}
+%\end{figure} 
+
+Finalmente, se replicó este análisis para los otros dos modelos (Starobinsky y T-model), variando la escala $M$ y manteniendo fija la masa efectiva en el mínimo ($m = 2.435 \times 10^{13}$ GeV). Se observó que un aumento en $M$ ensancha la región plana del potencial, suavizando la transición hacia el mínimo global. Los resultados se observan en la Figura \ref{fig:Omega_varM} y demuestran que mayores valores de $M$ trasladan la potencia del espectro hacia modos ultravioletas a la vez que disminuyen la amplitud global de la señal. Inversamente, una reducción en $M$ hace más abrupta la caída hacia el mínimo, lo que genera una violación más severa de la adiabaticidad; esto agudiza los picos de resonancia dando una estructura espectral más nítida.
+
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width = 0.9\linewidth]{figures/energy_m2phi2_varm.pdf}
-    \caption{Evolución energética para distintas masas en el modelo $m^2 \phi^2$. Se observa cómo el incremento de la masa altera la tasa de transferencia de energía del \textit{background} hacia los gradientes del campo hijo.}
-    \label{fig:energy_varm_m2phi2}
-\end{figure} 
-
-Finalmente, se replicó este análisis fenomenológico para los otros dos modelos (Starobinsky y T-model), variando la escala $M$ y manteniendo fija la masa efectiva en el mínimo ($m = 2.435 \times 10^{13}$ GeV). Se observó que un aumento en $M$ ensancha la región plana del potencial, suavizando la transición hacia el mínimo global. Los resultados se observan en la Figura \ref{fig:Omega_varM} y demuestran que mayores valores de $M$ trasladan la potencia del espectro hacia modos ultravioletas a la vez que disminuyen la amplitud global de la señal. Inversamente, una reducción en $M$ hace más abrupta la caída hacia el mínimo, lo que genera una violación más severa de la adiabaticidad; esto agudiza los picos de resonancia dando una estructura espectral más nítida. Esta fenomenología queda respaldada por la correspondiente evolución en las densidades de energía expuesta en la Figura \ref{fig:energy_varM}.
-
-\begin{figure}[htbp]
-    \centering
-    \begin{subfigure}[t]{\linewidth}
+    \begin{subfigure}[t]{0.9\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/Omega_tanh2_varM.pdf}
         \subcaption{$\tanh^2$}
     \end{subfigure}
-    \begin{subfigure}[b]{\linewidth}
+    \begin{subfigure}[b]{0.9\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/Omega_Starobinsky_varM.pdf}
         \subcaption{Starobinsky}
@@ -328,21 +332,21 @@ Finalmente, se replicó este análisis fenomenológico para los otros dos modelo
     \label{fig:Omega_varM}
 \end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    \begin{subfigure}[t]{\linewidth}
-        \centering
-        \includegraphics[width = \linewidth]{figures/energy_tanh2_varM.pdf}
-        \subcaption{$\tanh^2$}
-    \end{subfigure}
-    \begin{subfigure}[b]{\linewidth}
-        \centering
-        \includegraphics[width = \linewidth]{figures/energy_Starobinsky_varM.pdf}
-        \subcaption{Starobinsky}
-    \end{subfigure}
-    \caption{Evolución energética frente a la variación de la escala $M$ para los modelos con meseta. Se evidencia la dependencia temporal de la transferencia de energía y la saturación de los gradientes espaciales en función de la topología del potencial.}
-    \label{fig:energy_varM}
-\end{figure}
+%\begin{figure}[htbp]
+%    \centering
+%    \begin{subfigure}[t]{\linewidth}
+%        \centering
+%        \includegraphics[width = \linewidth]{figures/energy_tanh2_varM.pdf}
+%        \subcaption{$\tanh^2$}
+%    \end{subfigure}
+%    \begin{subfigure}[b]{\linewidth}
+%        \centering
+%        \includegraphics[width = \linewidth]{figures/energy_Starobinsky_varM.pdf}
+%        \subcaption{Starobinsky}
+%    \end{subfigure}
+%    \caption{Evolución energética frente a la variación de la escala $M$ para los modelos con meseta. Se evidencia la dependencia temporal de la transferencia de energía y la saturación de los gradientes espaciales en función de la topología del potencial.}
+%    \label{fig:energy_varM}
+%\end{figure}
 
 \section{Sensibilidad observacional y perspectivas de detección}
 
@@ -356,6 +360,8 @@ Los espectros simulados numéricamente con \CosmoLattice para las distintas fami
     \caption{Deformación característica (\textit{strain}) de las ondas gravitacionales generadas durante el \textit{preheating} para los distintos modelos de inflatón estudiados. Las señales simuladas con \CosmoLattice se encuentran superpuestas a las curvas de sensibilidad proyectadas para detectores estocásticos de ultra-alta frecuencia (adaptado de \cite{Mohanty_2026}).}
     \label{fig:sensibilidades}
 \end{figure}
+
+\vspace{3cm}
 
 En la Figura \ref{fig:sensibilidades} se ha omitido intencionalmente la representación de las curvas de sensibilidad correspondientes a arreglos de púlsares (PTA) \cite{NANOGrav} y a interferómetros láser, tanto terrestres como espaciales (ej. LIGO, LISA, ET o CE) \cite{Caprini_2020, Renzini2022}. Esto se debe a que dichas tecnologías operan en bandas de baja y media frecuencia, abarcando desde los nHz hasta los kHz. Como se discutió en el Capítulo \ref{sec:cap2}, si bien estas ventanas son idóneas para la búsqueda de fondos estocásticos de origen astrofísico, resultan completamente ciegas a las emisiones de ultra-alta frecuencia (MHz a GHz) que son excitadas durante \textit{Preheating}. Por tanto, para registrar estas señales primordiales de amplitud extremadamente baja, las cavidades resonantes electromagnéticas (EMRC) de ultra-alta frecuencia \cite{Berlin_2023, Herman_2023, Domcke_2023} se muestran como los únicos instrumentos con perspectivas de detección.
 
