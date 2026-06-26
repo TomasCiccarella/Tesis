@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Tesis_Ciccarella.aux
 The style file: ieeetr.bst
 Database file #1: references.bib
-You've used 55 entries,
+You've used 57 entries,
             1876 wiz_defined-function locations,
-            800 strings with 13071 characters,
-and the built_in function-call counts, 10708 in all, are:
-= -- 879
-> -- 675
+            810 strings with 13367 characters,
+and the built_in function-call counts, 11019 in all, are:
+= -- 903
+> -- 694
 < -- 0
-+ -- 249
-- -- 194
-* -- 764
-:= -- 1755
-add.period$ -- 63
-call.type$ -- 55
-change.case$ -- 51
++ -- 256
+- -- 199
+* -- 785
+:= -- 1808
+add.period$ -- 65
+call.type$ -- 57
+change.case$ -- 53
 chr.to.int$ -- 0
-cite$ -- 55
-duplicate$ -- 576
-empty$ -- 1015
-format.name$ -- 194
-if$ -- 2512
+cite$ -- 57
+duplicate$ -- 594
+empty$ -- 1049
+format.name$ -- 199
+if$ -- 2584
 int.to.chr$ -- 0
-int.to.str$ -- 55
-missing$ -- 56
-newline$ -- 176
-num.names$ -- 55
-pop$ -- 198
+int.to.str$ -- 57
+missing$ -- 58
+newline$ -- 182
+num.names$ -- 57
+pop$ -- 206
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 230
+skip$ -- 233
 stack$ -- 0
 substring$ -- 123
-swap$ -- 152
+swap$ -- 154
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 68
-width$ -- 57
-write$ -- 500
+while$ -- 70
+width$ -- 59
+write$ -- 516

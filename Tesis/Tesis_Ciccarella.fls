@@ -692,6 +692,8 @@ INPUT last_page.tex
 INPUT Tesis_Ciccarella.aux
 INPUT ./Tesis_Ciccarella.out
 INPUT ./Tesis_Ciccarella.out
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb

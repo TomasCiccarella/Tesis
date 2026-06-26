@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  26 JUN 2026 14:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  26 JUN 2026 19:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -913,7 +913,7 @@ l.10
 
 
 ]
-<figures/Cosmologia_etapas.png, id=227, 2086.79625pt x 1503.6175pt>
+<figures/Cosmologia_etapas.png, id=226, 2086.79625pt x 1503.6175pt>
 File: figures/Cosmologia_etapas.png Graphic file (type png)
 <use figures/Cosmologia_etapas.png>
 Package pdftex.def Info: figures/Cosmologia_etapas.png  used on input line 13.
@@ -922,24 +922,24 @@ Package pdftex.def Info: figures/Cosmologia_etapas.png  used on input line 13.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 P
-      ara describir el contenido de materia y energ√≠a en un universo homog√... [2 <./figures/Cosmologia_etapas.png>] [3] [4] [5] [6] [7]
+l.23 
+      [2 <./figures/Cosmologia_etapas.png>] [3] [4] [5] [6] [7]
 <figures/reheating.pdf, id=314, 1806.75pt x 722.7pt>
 File: figures/reheating.pdf Graphic file (type pdf)
 <use figures/reheating.pdf>
-Package pdftex.def Info: figures/reheating.pdf  used on input line 146.
+Package pdftex.def Info: figures/reheating.pdf  used on input line 144.
 (pdftex.def)             Requested size: 483.69687pt x 193.47748pt.
  [8 <./figures/reheating.pdf>] [9] [10] [11]) (./2.cap2.tex [12] [13]
 Cap\'{\i }tulo 2.
 [14
 
 ] [15] [16] [17] [18] [19] [20] [21] [22]
-<figures/GW-detectors.pdf, id=532, 720.6925pt x 363.3575pt>
+<figures/GW-detectors.pdf, id=533, 720.6925pt x 363.3575pt>
 File: figures/GW-detectors.pdf Graphic file (type pdf)
 <use figures/GW-detectors.pdf>
 Package pdftex.def Info: figures/GW-detectors.pdf  used on input line 246.
 (pdftex.def)             Requested size: 483.69687pt x 243.86961pt.
-<figures/GW-detectors-references.png, id=533, 1267.73625pt x 396.48125pt>
+<figures/GW-detectors-references.png, id=534, 1267.73625pt x 396.48125pt>
 File: figures/GW-detectors-references.png Graphic file (type png)
 <use figures/GW-detectors-references.png>
 Package pdftex.def Info: figures/GW-detectors-references.png  used on input line 250.
@@ -949,91 +949,91 @@ Cap\'{\i }tulo 3.
 [27
 
 ] [28]
-<figures/background_m2phi2.pdf, id=640, 1300.86pt x 578.16pt>
+<figures/background_m2phi2.pdf, id=641, 1300.86pt x 578.16pt>
 File: figures/background_m2phi2.pdf Graphic file (type pdf)
 <use figures/background_m2phi2.pdf>
 Package pdftex.def Info: figures/background_m2phi2.pdf  used on input line 42.
 (pdftex.def)             Requested size: 483.69687pt x 214.97449pt.
-<figures/Background_lphi4.pdf, id=641, 1300.86pt x 433.62pt>
+<figures/Background_lphi4.pdf, id=642, 1300.86pt x 433.62pt>
 File: figures/Background_lphi4.pdf Graphic file (type pdf)
 <use figures/Background_lphi4.pdf>
 Package pdftex.def Info: figures/Background_lphi4.pdf  used on input line 47.
 (pdftex.def)             Requested size: 483.69687pt x 161.23087pt.
  [29 <./figures/background_m2phi2.pdf> <./figures/Background_lphi4.pdf>] [30] [31]
-<figures/Floquet_m2phi2.pdf, id=735, 722.7pt x 433.62pt>
+<figures/Floquet_m2phi2.pdf, id=736, 722.7pt x 433.62pt>
 File: figures/Floquet_m2phi2.pdf Graphic file (type pdf)
 <use figures/Floquet_m2phi2.pdf>
 Package pdftex.def Info: figures/Floquet_m2phi2.pdf  used on input line 120.
 (pdftex.def)             Requested size: 483.69687pt x 290.21953pt.
-<figures/Floquet_lphi4.pdf, id=736, 722.7pt x 433.62pt>
+<figures/Floquet_lphi4.pdf, id=737, 722.7pt x 433.62pt>
 File: figures/Floquet_lphi4.pdf Graphic file (type pdf)
 <use figures/Floquet_lphi4.pdf>
 Package pdftex.def Info: figures/Floquet_lphi4.pdf  used on input line 125.
 (pdftex.def)             Requested size: 483.69687pt x 290.21953pt.
-<figures/muk_m2phi2.pdf, id=741, 1084.05pt x 578.16pt>
+<figures/muk_m2phi2.pdf, id=742, 1084.05pt x 578.16pt>
 File: figures/muk_m2phi2.pdf Graphic file (type pdf)
 <use figures/muk_m2phi2.pdf>
 Package pdftex.def Info: figures/muk_m2phi2.pdf  used on input line 138.
 (pdftex.def)             Requested size: 483.69687pt x 257.97292pt.
-<figures/muk_lphi4.pdf, id=742, 1084.05pt x 578.16pt>
+<figures/muk_lphi4.pdf, id=743, 1084.05pt x 578.16pt>
 File: figures/muk_lphi4.pdf Graphic file (type pdf)
 <use figures/muk_lphi4.pdf>
 Package pdftex.def Info: figures/muk_lphi4.pdf  used on input line 143.
 (pdftex.def)             Requested size: 483.69687pt x 257.97292pt.
  [32] [33 <./figures/Floquet_m2phi2.pdf> <./figures/Floquet_lphi4.pdf>] [34 <./figures/muk_m2phi2.pdf> <./figures/muk_lphi4.pdf>]
-<figures/narrow_resonance_m2phi2.pdf, id=904, 867.24pt x 578.16pt>
+<figures/narrow_resonance_m2phi2.pdf, id=905, 867.24pt x 578.16pt>
 File: figures/narrow_resonance_m2phi2.pdf Graphic file (type pdf)
 <use figures/narrow_resonance_m2phi2.pdf>
 Package pdftex.def Info: figures/narrow_resonance_m2phi2.pdf  used on input line 160.
 (pdftex.def)             Requested size: 217.66211pt x 145.10425pt.
-<figures/broad_resonance_m2phi2.pdf, id=905, 867.24pt x 578.16pt>
+<figures/broad_resonance_m2phi2.pdf, id=906, 867.24pt x 578.16pt>
 File: figures/broad_resonance_m2phi2.pdf Graphic file (type pdf)
 <use figures/broad_resonance_m2phi2.pdf>
 Package pdftex.def Info: figures/broad_resonance_m2phi2.pdf  used on input line 165.
 (pdftex.def)             Requested size: 217.66211pt x 145.10425pt.
-<figures/nk_Narrow_resonance_m2phi2.pdf, id=906, 867.24pt x 433.62pt>
+<figures/nk_Narrow_resonance_m2phi2.pdf, id=907, 867.24pt x 433.62pt>
 File: figures/nk_Narrow_resonance_m2phi2.pdf Graphic file (type pdf)
 <use figures/nk_Narrow_resonance_m2phi2.pdf>
 Package pdftex.def Info: figures/nk_Narrow_resonance_m2phi2.pdf  used on input line 170.
 (pdftex.def)             Requested size: 217.66211pt x 108.82819pt.
-<figures/nk_Broad_resonance_m2phi2.pdf, id=907, 867.24pt x 433.62pt>
+<figures/nk_Broad_resonance_m2phi2.pdf, id=908, 867.24pt x 433.62pt>
 File: figures/nk_Broad_resonance_m2phi2.pdf Graphic file (type pdf)
 <use figures/nk_Broad_resonance_m2phi2.pdf>
 Package pdftex.def Info: figures/nk_Broad_resonance_m2phi2.pdf  used on input line 175.
 (pdftex.def)             Requested size: 217.66211pt x 108.82819pt.
-<figures/Narrow_Resonance_lphi4.pdf, id=908, 867.24pt x 433.62pt>
+<figures/Narrow_Resonance_lphi4.pdf, id=909, 867.24pt x 433.62pt>
 File: figures/Narrow_Resonance_lphi4.pdf Graphic file (type pdf)
 <use figures/Narrow_Resonance_lphi4.pdf>
 Package pdftex.def Info: figures/Narrow_Resonance_lphi4.pdf  used on input line 186.
 (pdftex.def)             Requested size: 195.89456pt x 97.94405pt.
-<figures/Broad_Resonance_lphi4.pdf, id=909, 867.24pt x 433.62pt>
+<figures/Broad_Resonance_lphi4.pdf, id=910, 867.24pt x 433.62pt>
 File: figures/Broad_Resonance_lphi4.pdf Graphic file (type pdf)
 <use figures/Broad_Resonance_lphi4.pdf>
 Package pdftex.def Info: figures/Broad_Resonance_lphi4.pdf  used on input line 191.
 (pdftex.def)             Requested size: 195.89456pt x 97.94405pt.
-<figures/nk_Narrow_Resonance_lphi4.pdf, id=910, 867.24pt x 433.62pt>
+<figures/nk_Narrow_Resonance_lphi4.pdf, id=911, 867.24pt x 433.62pt>
 File: figures/nk_Narrow_Resonance_lphi4.pdf Graphic file (type pdf)
 <use figures/nk_Narrow_Resonance_lphi4.pdf>
 Package pdftex.def Info: figures/nk_Narrow_Resonance_lphi4.pdf  used on input line 196.
 (pdftex.def)             Requested size: 195.89456pt x 97.94405pt.
-<figures/nk_Broad_Resonance_lphi4.pdf, id=911, 867.24pt x 433.62pt>
+<figures/nk_Broad_Resonance_lphi4.pdf, id=912, 867.24pt x 433.62pt>
 File: figures/nk_Broad_Resonance_lphi4.pdf Graphic file (type pdf)
 <use figures/nk_Broad_Resonance_lphi4.pdf>
 Package pdftex.def Info: figures/nk_Broad_Resonance_lphi4.pdf  used on input line 201.
 (pdftex.def)             Requested size: 195.89456pt x 97.94405pt.
  [35 <./figures/narrow_resonance_m2phi2.pdf> <./figures/broad_resonance_m2phi2.pdf> <./figures/nk_Narrow_Resonance_m2phi2.pdf> <./figures/nk_Broad_Resonance_m2phi2.pdf>] [36 <./figures/Narrow_Resonance_lphi4.pdf> <./figures/Broad_Resonance_lphi4.pdf> <./figures/nk_Narrow_Resonance_lphi4.pdf> <./figures/nk_Broad_Resonance_lphi4.pdf>]
-<figures/nk_Broad_resonance_expansion_m2phi2.pdf, id=1132, 1300.86pt x 578.16pt>
+<figures/nk_Broad_resonance_expansion_m2phi2.pdf, id=1133, 1300.86pt x 578.16pt>
 File: figures/nk_Broad_resonance_expansion_m2phi2.pdf Graphic file (type pdf)
 <use figures/nk_Broad_resonance_expansion_m2phi2.pdf>
 Package pdftex.def Info: figures/nk_Broad_resonance_expansion_m2phi2.pdf  used on input line 263.
 (pdftex.def)             Requested size: 483.69687pt x 214.97449pt.
  [37] [38 <./figures/nk_Broad_resonance_expansion_m2phi2.pdf>] [39] [40]
-<figures/Pchi_lineal.pdf, id=1220, 1300.86pt x 578.16pt>
+<figures/Pchi_lineal.pdf, id=1221, 1300.86pt x 578.16pt>
 File: figures/Pchi_lineal.pdf Graphic file (type pdf)
 <use figures/Pchi_lineal.pdf>
 Package pdftex.def Info: figures/Pchi_lineal.pdf  used on input line 337.
 (pdftex.def)             Requested size: 483.69687pt x 214.97449pt.
-<figures/Omega_lineal.pdf, id=1221, 1300.86pt x 578.16pt>
+<figures/Omega_lineal.pdf, id=1222, 1300.86pt x 578.16pt>
 File: figures/Omega_lineal.pdf Graphic file (type pdf)
 <use figures/Omega_lineal.pdf>
 Package pdftex.def Info: figures/Omega_lineal.pdf  used on input line 344.
@@ -1043,139 +1043,139 @@ Cap\'{\i }tulo 4.
 [43
 
 ] [44] [45] [46]
-<figures/CosmoLattice1_chi_spectra.pdf, id=1360, 867.24pt x 1084.05pt>
+<figures/CosmoLattice1_chi_spectra.pdf, id=1361, 867.24pt x 1084.05pt>
 File: figures/CosmoLattice1_chi_spectra.pdf Graphic file (type pdf)
 <use figures/CosmoLattice1_chi_spectra.pdf>
 Package pdftex.def Info: figures/CosmoLattice1_chi_spectra.pdf  used on input line 80.
 (pdftex.def)             Requested size: 435.32422pt x 544.1575pt.
-<figures/CosmoLattice1_nk_spectra.pdf, id=1361, 867.24pt x 1084.05pt>
+<figures/CosmoLattice1_nk_spectra.pdf, id=1362, 867.24pt x 1084.05pt>
 File: figures/CosmoLattice1_nk_spectra.pdf Graphic file (type pdf)
 <use figures/CosmoLattice1_nk_spectra.pdf>
 Package pdftex.def Info: figures/CosmoLattice1_nk_spectra.pdf  used on input line 87.
 (pdftex.def)             Requested size: 435.32422pt x 544.1575pt.
-<figures/CosmoLattice1_GW_spectra.pdf, id=1362, 867.24pt x 1084.05pt>
+<figures/CosmoLattice1_GW_spectra.pdf, id=1363, 867.24pt x 1084.05pt>
 File: figures/CosmoLattice1_GW_spectra.pdf Graphic file (type pdf)
 <use figures/CosmoLattice1_GW_spectra.pdf>
 Package pdftex.def Info: figures/CosmoLattice1_GW_spectra.pdf  used on input line 94.
 (pdftex.def)             Requested size: 435.32422pt x 544.1575pt.
  [47] [48 <./figures/CosmoLattice1_chi_spectra.pdf>] [49 <./figures/CosmoLattice1_nk_spectra.pdf>] [50 <./figures/CosmoLattice1_GW_spectra.pdf>] [51]
-<figures/comparacion_w0.pdf, id=1554, 860.53012pt x 422.76006pt>
+<figures/comparacion_w0.pdf, id=1555, 860.53012pt x 422.76006pt>
 File: figures/comparacion_w0.pdf Graphic file (type pdf)
 <use figures/comparacion_w0.pdf>
 Package pdftex.def Info: figures/comparacion_w0.pdf  used on input line 125.
 (pdftex.def)             Requested size: 483.69687pt x 237.63422pt.
-<figures/comparacion_w13.pdf, id=1555, 860.66783pt x 422.76006pt>
+<figures/comparacion_w13.pdf, id=1556, 860.66783pt x 422.76006pt>
 File: figures/comparacion_w13.pdf Graphic file (type pdf)
 <use figures/comparacion_w13.pdf>
 Package pdftex.def Info: figures/comparacion_w13.pdf  used on input line 130.
 (pdftex.def)             Requested size: 483.69687pt x 237.58907pt.
  [52] [53 <./figures/comparacion_w0.pdf> <./figures/comparacion_w13.pdf>] [54]
-<figures/CosmoLattice_background_a_lphi4tanh4.pdf, id=1644, 1300.86pt x 578.16pt>
+<figures/CosmoLattice_background_a_lphi4tanh4.pdf, id=1645, 1300.86pt x 578.16pt>
 File: figures/CosmoLattice_background_a_lphi4tanh4.pdf Graphic file (type pdf)
 <use figures/CosmoLattice_background_a_lphi4tanh4.pdf>
 Package pdftex.def Info: figures/CosmoLattice_background_a_lphi4tanh4.pdf  used on input line 153.
 (pdftex.def)             Requested size: 483.69687pt x 214.97449pt.
-<figures/CosmoLattice_background_a_m2phi2tanh2Starobinsky.pdf, id=1645, 1300.86pt x 578.16pt>
+<figures/CosmoLattice_background_a_m2phi2tanh2Starobinsky.pdf, id=1646, 1300.86pt x 578.16pt>
 File: figures/CosmoLattice_background_a_m2phi2tanh2Starobinsky.pdf Graphic file (type pdf)
 <use figures/CosmoLattice_background_a_m2phi2tanh2Starobinsky.pdf>
 Package pdftex.def Info: figures/CosmoLattice_background_a_m2phi2tanh2Starobinsky.pdf  used on input line 158.
 (pdftex.def)             Requested size: 483.69687pt x 214.97449pt.
  [55 <./figures/CosmoLattice_background_a_lphi4tanh4.pdf> <./figures/CosmoLattice_background_a_m2phi2tanh2Starobinsky.pdf>]
-<figures/CosmoLattice_background_phi_lphi4tanh4.pdf, id=1720, 1300.86pt x 578.16pt>
+<figures/CosmoLattice_background_phi_lphi4tanh4.pdf, id=1721, 1300.86pt x 578.16pt>
 File: figures/CosmoLattice_background_phi_lphi4tanh4.pdf Graphic file (type pdf)
 <use figures/CosmoLattice_background_phi_lphi4tanh4.pdf>
 Package pdftex.def Info: figures/CosmoLattice_background_phi_lphi4tanh4.pdf  used on input line 171.
 (pdftex.def)             Requested size: 483.69687pt x 214.97449pt.
-<figures/CosmoLattice_background_phi_m2phi2tanh2Starobinsky.pdf, id=1721, 1300.86pt x 578.16pt>
+<figures/CosmoLattice_background_phi_m2phi2tanh2Starobinsky.pdf, id=1722, 1300.86pt x 578.16pt>
 File: figures/CosmoLattice_background_phi_m2phi2tanh2Starobinsky.pdf Graphic file (type pdf)
 <use figures/CosmoLattice_background_phi_m2phi2tanh2Starobinsky.pdf>
 Package pdftex.def Info: figures/CosmoLattice_background_phi_m2phi2tanh2Starobinsky.pdf  used on input line 176.
 (pdftex.def)             Requested size: 483.69687pt x 214.97449pt.
  [56 <./figures/CosmoLattice_background_phi_lphi4tanh4.pdf> <./figures/CosmoLattice_background_phi_m2phi2tanh2Starobinsky.pdf>]
-<figures/CosmoLattice_energies_lphi4tanh4.pdf, id=1813, 1271.00089pt x 515.67331pt>
+<figures/CosmoLattice_energies_lphi4tanh4.pdf, id=1814, 1271.00089pt x 515.67331pt>
 File: figures/CosmoLattice_energies_lphi4tanh4.pdf Graphic file (type pdf)
 <use figures/CosmoLattice_energies_lphi4tanh4.pdf>
 Package pdftex.def Info: figures/CosmoLattice_energies_lphi4tanh4.pdf  used on input line 191.
 (pdftex.def)             Requested size: 483.69687pt x 196.24902pt.
  [57 <./figures/CosmoLattice_energies_lphi4tanh4.pdf>]
-<figures/CosmoLattice_GW_Scale_Analysis_lphi4tanh4.pdf, id=1882, 1055.80434pt x 463.00578pt>
+<figures/CosmoLattice_GW_Scale_Analysis_lphi4tanh4.pdf, id=1883, 1055.80434pt x 463.00578pt>
 File: figures/CosmoLattice_GW_Scale_Analysis_lphi4tanh4.pdf Graphic file (type pdf)
 <use figures/CosmoLattice_GW_Scale_Analysis_lphi4tanh4.pdf>
 Package pdftex.def Info: figures/CosmoLattice_GW_Scale_Analysis_lphi4tanh4.pdf  used on input line 200.
 (pdftex.def)             Requested size: 483.69687pt x 212.11626pt.
  [58 <./figures/CosmoLattice_GW_Scale_Analysis_lphi4tanh4.pdf>]
-<figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf, id=1951, 867.24pt x 433.62pt>
+<figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf, id=1952, 867.24pt x 433.62pt>
 File: figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf Graphic file (type pdf)
 <use figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf>
 Package pdftex.def Info: figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf  used on input line 216.
 (pdftex.def)             Requested size: 483.69687pt x 241.85292pt.
  [59 <./figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf>]
-<figures/Omega_lphi4_varlambda.pdf, id=2006, 1263.90651pt x 761.7883pt>
+<figures/Omega_lphi4_varlambda.pdf, id=2007, 1263.90651pt x 761.7883pt>
 File: figures/Omega_lphi4_varlambda.pdf Graphic file (type pdf)
 <use figures/Omega_lphi4_varlambda.pdf>
 Package pdftex.def Info: figures/Omega_lphi4_varlambda.pdf  used on input line 227.
 (pdftex.def)             Requested size: 435.32422pt x 262.37553pt.
-<figures/Omega_tanh4_varL4.pdf, id=2007, 1268.13017pt x 831.1675pt>
+<figures/Omega_tanh4_varL4.pdf, id=2008, 1268.13017pt x 831.1675pt>
 File: figures/Omega_tanh4_varL4.pdf Graphic file (type pdf)
 <use figures/Omega_tanh4_varL4.pdf>
 Package pdftex.def Info: figures/Omega_tanh4_varL4.pdf  used on input line 234.
 (pdftex.def)             Requested size: 435.32422pt x 285.31996pt.
  [60 <./figures/Omega_lphi4_varlambda.pdf>]
-<figures/energy_lphi4_varq.pdf, id=2077, 1265.87407pt x 820.39622pt>
+<figures/energy_lphi4_varq.pdf, id=2078, 1265.87407pt x 820.39622pt>
 File: figures/energy_lphi4_varq.pdf Graphic file (type pdf)
 <use figures/energy_lphi4_varq.pdf>
 Package pdftex.def Info: figures/energy_lphi4_varq.pdf  used on input line 247.
 (pdftex.def)             Requested size: 435.32422pt x 282.12317pt.
-<figures/Omega_lphi4_varq.pdf, id=2078, 1253.05334pt x 761.51163pt>
+<figures/Omega_lphi4_varq.pdf, id=2079, 1253.05334pt x 761.51163pt>
 File: figures/Omega_lphi4_varq.pdf Graphic file (type pdf)
 <use figures/Omega_lphi4_varq.pdf>
 Package pdftex.def Info: figures/Omega_lphi4_varq.pdf  used on input line 254.
 (pdftex.def)             Requested size: 435.32422pt x 264.55771pt.
  [61 <./figures/Omega_tanh4_varL4.pdf>] [62 <./figures/energy_lphi4_varq.pdf> <./figures/Omega_lphi4_varq.pdf>]
-<figures/CosmoLattice_energies_m2phi2tanh2Starobinsky.pdf, id=2258, 1270.12592pt x 507.0009pt>
+<figures/CosmoLattice_energies_m2phi2tanh2Starobinsky.pdf, id=2259, 1270.12592pt x 507.0009pt>
 File: figures/CosmoLattice_energies_m2phi2tanh2Starobinsky.pdf Graphic file (type pdf)
 <use figures/CosmoLattice_energies_m2phi2tanh2Starobinsky.pdf>
 Package pdftex.def Info: figures/CosmoLattice_energies_m2phi2tanh2Starobinsky.pdf  used on input line 265.
 (pdftex.def)             Requested size: 483.69687pt x 193.0801pt.
-<figures/CosmoLattice_GW_Scale_Analysis_m2phi2tanh2starobinsky.pdf, id=2259, 1056.07684pt x 463.00578pt>
+<figures/CosmoLattice_GW_Scale_Analysis_m2phi2tanh2starobinsky.pdf, id=2260, 1056.07684pt x 463.00578pt>
 File: figures/CosmoLattice_GW_Scale_Analysis_m2phi2tanh2starobinsky.pdf Graphic file (type pdf)
 <use figures/CosmoLattice_GW_Scale_Analysis_m2phi2tanh2starobinsky.pdf>
 Package pdftex.def Info: figures/CosmoLattice_GW_Scale_Analysis_m2phi2tanh2starobinsky.pdf  used on input line 272.
 (pdftex.def)             Requested size: 483.69687pt x 212.05974pt.
  [63 <./figures/CosmoLattice_energies_m2phi2tanh2Starobinsky.pdf>]
-<figures/CosmoLattice_GW_Spectra_today_m2phi2tanh2starobinsky.pdf, id=2334, 1300.86pt x 433.62pt>
+<figures/CosmoLattice_GW_Spectra_today_m2phi2tanh2starobinsky.pdf, id=2335, 1300.86pt x 433.62pt>
 File: figures/CosmoLattice_GW_Spectra_today_m2phi2tanh2starobinsky.pdf Graphic file (type pdf)
 <use figures/CosmoLattice_GW_Spectra_today_m2phi2tanh2starobinsky.pdf>
 Package pdftex.def Info: figures/CosmoLattice_GW_Spectra_today_m2phi2tanh2starobinsky.pdf  used on input line 290.
 (pdftex.def)             Requested size: 483.69687pt x 161.23087pt.
  [64 <./figures/CosmoLattice_GW_Scale_Analysis_m2phi2tanh2starobinsky.pdf> <./figures/CosmoLattice_GW_Spectra_today_m2phi2tanh2starobinsky.pdf>]
-<figures/Omega_m2phi2_varq.pdf, id=2466, 1255.58649pt x 760.78896pt>
+<figures/Omega_m2phi2_varq.pdf, id=2467, 1255.58649pt x 760.78896pt>
 File: figures/Omega_m2phi2_varq.pdf Graphic file (type pdf)
 <use figures/Omega_m2phi2_varq.pdf>
 Package pdftex.def Info: figures/Omega_m2phi2_varq.pdf  used on input line 303.
 (pdftex.def)             Requested size: 483.69687pt x 293.08458pt.
-<figures/Omega_m2phi2_varm.pdf, id=2468, 1255.59445pt x 761.7883pt>
+<figures/Omega_m2phi2_varm.pdf, id=2469, 1255.59445pt x 761.7883pt>
 File: figures/Omega_m2phi2_varm.pdf Graphic file (type pdf)
 <use figures/Omega_m2phi2_varm.pdf>
 Package pdftex.def Info: figures/Omega_m2phi2_varm.pdf  used on input line 319.
 (pdftex.def)             Requested size: 435.32422pt x 264.11913pt.
  [65] [66 <./figures/Omega_m2phi2_varq.pdf> <./figures/Omega_m2phi2_varm.pdf>]
-<figures/Omega_tanh2_varM.pdf, id=2586, 1263.80396pt x 362.8579pt>
+<figures/Omega_tanh2_varM.pdf, id=2587, 1263.80396pt x 362.8579pt>
 File: figures/Omega_tanh2_varM.pdf Graphic file (type pdf)
 <use figures/Omega_tanh2_varM.pdf>
 Package pdftex.def Info: figures/Omega_tanh2_varM.pdf  used on input line 337.
 (pdftex.def)             Requested size: 435.32422pt x 124.98677pt.
-<figures/Omega_Starobinsky_varM.pdf, id=2587, 1263.80396pt x 362.8579pt>
+<figures/Omega_Starobinsky_varM.pdf, id=2588, 1263.80396pt x 362.8579pt>
 File: figures/Omega_Starobinsky_varM.pdf Graphic file (type pdf)
 <use figures/Omega_Starobinsky_varM.pdf>
 Package pdftex.def Info: figures/Omega_Starobinsky_varM.pdf  used on input line 342.
 (pdftex.def)             Requested size: 435.32422pt x 124.98677pt.
  [67 <./figures/Omega_tanh2_varM.pdf> <./figures/Omega_Starobinsky_varM.pdf>]
-<figures/GW_Strain_Spectrum.pdf, id=2704, 701.79916pt x 407.05751pt>
+<figures/GW_Strain_Spectrum.pdf, id=2710, 701.79916pt x 407.05754pt>
 File: figures/GW_Strain_Spectrum.pdf Graphic file (type pdf)
 <use figures/GW_Strain_Spectrum.pdf>
 Package pdftex.def Info: figures/GW_Strain_Spectrum.pdf  used on input line 373.
-(pdftex.def)             Requested size: 483.69687pt x 280.55942pt.
+(pdftex.def)             Requested size: 483.69687pt x 280.55943pt.
  [68 <./figures/GW_Strain_Spectrum.pdf>]) (./5.conclusiones.tex [69]
 Cap\'{\i }tulo 5.
 [70
@@ -1222,18 +1222,18 @@ Package rerunfilecheck Info: File `Tesis_Ciccarella.out' has not changed.
 ### semi simple group (level 1) entered at line 84 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 37943 strings out of 474222
- 766760 string characters out of 5748734
+ 37952 strings out of 474222
+ 766953 string characters out of 5748734
  1953975 words of memory out of 5000000
- 59227 multiletter control sequences out of 15000+600000
+ 59234 multiletter control sequences out of 15000+600000
  575157 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,26n,96p,2564b,1110s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Tesis_Ciccarella.pdf (96 pages, 11739989 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on Tesis_Ciccarella.pdf (96 pages, 12505664 bytes).
 PDF statistics:
- 3134 PDF objects out of 3580 (max. 8388607)
- 1770 compressed objects within 18 object streams
- 374 named destinations out of 1000 (max. 500000)
+ 3226 PDF objects out of 3580 (max. 8388607)
+ 1874 compressed objects within 19 object streams
+ 376 named destinations out of 1000 (max. 500000)
  603 words of extra memory for PDF output out of 10000 (max. 10000000)
 
