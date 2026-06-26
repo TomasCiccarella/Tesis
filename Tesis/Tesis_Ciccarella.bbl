@@ -21,6 +21,15 @@ P.~Peter and J.-P. Uzan, {\em Primordial Cosmology}.
 \bibitem{Mishra_2024}
 S.~S. Mishra, ``Cosmic inflation: Background dynamics, quantum fluctuations and reheating,'' {\em arXiv preprint arXiv:2403.10606}, 2024.
 
+\bibitem{Starobinsky_1980}
+A.~A. Starobinsky, ``A new type of isotropic cosmological models without singularity,'' {\em Physics Letters B}, vol.~91, no.~1, pp.~99--102, 1980.
+
+\bibitem{Ellis_2026}
+J.~Ellis, M.~A.~G. Garcia, K.~A. Olive, and S.~Verner, ``Constraints on attractor models of inflation and reheating from planck, bicep/keck, act dr6, and spt-3g data,'' {\em Physical Review D}, vol.~113, no.~6, p.~063571, 2026.
+
+\bibitem{Martin_2014}
+J.~Martin, C.~Ringeval, and V.~Vennin, ``Encyclopaedia inflationaris,'' {\em Physics of the Dark Universe}, vol.~5-6, pp.~75--235, 2014.
+
 \bibitem{Martin2015}
 J.~Martin, C.~Ringeval, and V.~Vennin, ``Observing inflationary reheating,'' {\em Physical Review Letters}, vol.~114, no.~8, 2015.
 
@@ -36,8 +45,14 @@ L.~Kofman, A.~Linde, and A.~A. Starobinsky, ``Towards the theory of reheating af
 \bibitem{Elia_2025}
 J.~P. Elia, ``Producción de un fondo estocástico de ondas gravitatorias durante recalentamiento,'' tesis de licenciatura, Universidad de Buenos Aires, Facultad de Ciencias Exactas y Naturales, Buenos Aires, Argentina, 2025.
 
-\bibitem{Starobinsky_1980}
-A.~A. Starobinsky, ``A new type of isotropic cosmological models without singularity,'' {\em Physics Letters B}, vol.~91, no.~1, pp.~99--102, 1980.
+\bibitem{Micha_2003}
+R.~Micha and I.~Tkachev, ``Relativistic turbulence: A long way from preheating to equilibrium,'' {\em Physical Review Letters}, vol.~90, p.~121301, 2003.
+
+\bibitem{Micha2004}
+R.~Micha and I.~Tkachev, ``Turbulent thermalization,'' {\em Physical Review D}, vol.~70, 2004.
+
+\bibitem{Antusch_2022}
+S.~Antusch, D.~G. Figueroa, K.~Marschall, and F.~Torrenti, ``Characterizing the postinflationary reheating history: Single daughter field with quadratic-quadratic interaction,'' {\em Physical Review D}, vol.~105, no.~10, p.~103520, 2022.
 
 \bibitem{Kallosh_2013}
 R.~Kallosh and A.~Linde, ``Superconformal generalizations of the starobinsky model,'' {\em Journal of Cosmology and Astroparticle Physics}, vol.~2013, no.~06, p.~028, 2013.
@@ -157,9 +172,6 @@ T.~Prokopec and T.~G. Roos, ``Lattice study of classical inflaton decay,'' {\em 
 
 \bibitem{Figueroa_2017_Parametric}
 D.~G. Figueroa and F.~Torrenti, ``Parametric resonance in the early universe - a fitting analysis,'' {\em arXiv preprint arXiv:1609.05197}, 2017.
-
-\bibitem{Ellis_2026}
-J.~Ellis, M.~A.~G. Garcia, K.~A. Olive, and S.~Verner, ``Constraints on attractor models of inflation and reheating from planck, bicep/keck, act dr6, and spt-3g data,'' {\em Physical Review D}, vol.~113, no.~6, p.~063571, 2026.
 
 \bibitem{Ringwald_2022}
 A.~Ringwald and C.~Tamarit, ``Revealing the cosmic history with gravitational waves,'' {\em Physical Review D}, vol.~106, no.~6, p.~063027, 2022.
