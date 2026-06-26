@@ -96,7 +96,7 @@ En espacios curvos, es posible definir el tensor de energía-momento asociado a 
 \begin{equation}
     T^{\text{GW}}_{\mu\nu} = \frac{1}{32 \pi G} \left\langle \nabla_\mu h_{\alpha \beta} \nabla_\nu h^{\alpha \beta}  \right\rangle,
 \end{equation}
-siendo $\nabla_\mu$ la derivada covariante. A partir de la componente temporal-temporal de este tensor, se define la densidad de energía efectiva para las ondas gravitacionales de la forma
+siendo $\nabla_\mu$ la derivada covariante y $\left\langle \cdot \right\rangle$ implica un promedio estadístico sobre ensambles. A partir de la componente temporal-temporal de este tensor, se define la densidad de energía efectiva para las ondas gravitacionales de la forma
 \begin{equation}
     \rho_{GW} = \frac{1}{32 \pi G} \left\langle \dot{h}_{\alpha \beta} \dot{h}^{\alpha \beta} \right\rangle.
 \end{equation}
@@ -111,7 +111,7 @@ Al expandir el tensor de Einstein $G_{\mu\nu}$ a primer orden en las perturbacio
 \end{equation}
 donde $\Pi_{ij}^{TT} \left( \textbf{x}, t \right)$ es la componente transversal y de traza nula del estrés anisotrópico del tensor de energía-momento, cuya forma general en esta métrica perturbada está dada por
 \begin{equation}
-    \Pi_{ij} = T_{ij} - P a^2 \left( \delta_{ij} + h_{ij} \right).
+    a^2 \Pi_{ij} = T_{ij} - P a^2 \left( \delta_{ij} + h_{ij} \right).
 \end{equation}
 
 Haciendo uso de la transformada de Fourier, se pueden expresar los tensores $h_{ij}$ y $\Pi_{ij}$ en el espacio de momentos como
@@ -144,7 +144,7 @@ A partir de este formalismo, la evolución espacial y temporal puede expresarse 
 \begin{equation}\label{eqn:GWs}
     \left( h^{TT}_{ij} \right)^{\prime \prime} \left( \textbf{k}, \eta \right) + 2 \mathcal{H} \left( h^{TT}_{ij} \right)^{\prime} \left( \textbf{k}, \eta \right) + k^2 h_{ij}^{TT} \left( \textbf{k}, \eta \right) = \frac{2}{m_p^2} \Pi_{ij}^{TT} \left( \textbf{k}, \eta \right),
 \end{equation}
-donde las primas ($^\prime$) representan la derivada respecto al tiempo conforme $\eta$, $\mathcal{H} = a^\prime/a = aH$ es el parámetro de Hubble conforme, y $\Pi_{ij}^{TT}$ actúa como la fuente de las ondas \cite{Figueroa_2017_GW}. A su vez, la Ecuación (\ref{eqn:GWs}) puede reescribirse absorbiendo el término de fricción de Hubble mediante el reescalamiento del campo $H_{ij} = a h_{ij}$, resultando en
+donde las primas ($^\prime$) representan derivadar respecto al tiempo conforme $\eta$, $\mathcal{H} = a^\prime/a = aH$ es el parámetro de Hubble conforme, y $\Pi_{ij}^{TT}$ actúa como la fuente de las ondas \cite{Figueroa_2017_GW}. A su vez, la Ecuación (\ref{eqn:GWs}) puede reescribirse absorbiendo el término de fricción de Hubble mediante el reescalamiento del campo $H_{ij} = a h_{ij}$, resultando en
 \begin{equation}
     H_{ij}^{\prime \prime} \left( \textbf{k}, \eta \right) + \left( k^2 - \frac{a^{\prime \prime}}{a} \right) H_{ij} \left( \textbf{k}, \eta \right) = \frac{2 a}{m_p^2} \Pi_{ij}^{TT} \left( \textbf{k}, \eta \right).
 \end{equation}
@@ -166,7 +166,7 @@ La amplitud de este fondo cosmológico no es determinista y debe ser tratada ana
 
 Como consecuencia de esta formulación, bajo la aproximación más simple se espera que el SGWB primordial tenga una serie de simetrías y propiedades estadísticas bien definidas \cite{Christensen_2018}:
 \begin{itemize}
-    \item \textbf{Homogeneidad e isotropía estadísticas:} Las propiedades del fondo estocástico no dependen de la posición topológica del observador ni de la dirección de observación en el cielo.
+    \item \textbf{Homogeneidad e isotropía estadísticas:} Las propiedades del fondo estocástico no dependen de la posición del observador ni de la dirección de observación en el cielo.
     \item \textbf{Estacionariedad:} Las correlaciones estadísticas del campo de ondas son invariantes ante traslaciones temporales.
     \item \textbf{No Polarización:} Al no existir un marco de referencia preferencial ni direcciones privilegiadas en los procesos estocásticos primordiales, el fondo es intrínsecamente no polarizado. Esto implica que las dos polarizaciones tensoriales ($+$ y $\times$) se generan con igual varianza y no presentan correlaciones cruzadas, a menos que el mecanismo físico subyacente viole explícitamente la paridad \cite{Renzini2022}.
     \item \textbf{Gaussianidad:} Dado que el fondo estocástico es el resultado de la superposición macroscópica e incoherente de una inmensa cantidad de regiones causales independientes, el Teorema Central del Límite garantiza que las fluctuaciones del campo métrico se aproximen fuertemente a un campo aleatorio Gaussiano \cite{Renzini2022, Christensen_2018}. 
@@ -182,16 +182,16 @@ Al sustituir esta estructura estadística dentro de la definición del tensor de
 \begin{equation}
     \Omega_{GW} (f) = \frac{1}{\rho_c} \frac{d \rho_{GW}}{d \ln f},
 \end{equation}
-donde $f$ es la frecuencia física de la onda, la cual se relaciona con el número de onda comóvil a partir de $f = k/(2 \pi a_0)$, y la densidad de energía espectral para las ondas gravitacionales viene dada analíticamente por
+donde $f$ es la frecuencia física de la onda, la cual se relaciona con el número de onda comóvil a partir de $f = k/(2 \pi a_0)$ con $a_0$ el valor del parámetro de escala hoy, y la densidad de energía espectral para las ondas gravitacionales viene dada analíticamente por
 \begin{equation}
     \frac{d \rho_{GW}}{d \ln k} = \frac{k^2 h_c^2 \left( k, \eta \right)}{16 \pi G a^2 (\eta)}. 
 \end{equation}
 
-Desde una perspectiva observacional, el desafío para la detección de un fondo estocástico radica en la separación de la señal cosmológica del ruido instrumental \cite{Christensen_2018}. Analíticamente, los datos registrados por un único detector, $s(t)$, se modela como la superposición lineal de la deformación inducida por la onda gravitacional, $h(t)$, y el ruido intrínseco del instrumento, $n(t)$, tal que
+Desde una perspectiva observacional, el desafío para la detección de un fondo estocástico radica en la separación de la señal cosmológica del ruido instrumental \cite{Christensen_2018}. Analíticamente, los datos registrados por un único detector, $s(t)$, se modelan como la superposición lineal de la deformación inducida por la onda gravitacional, $h(t)$, y el ruido intrínseco del instrumento, $n(t)$, tal que
 \begin{equation}
     s(t) = h(t) + n(t).
 \end{equation}
-Bajo la suposición de que tanto la señal primordial como el ruido son procesos estocásticos estacionarios, de media nula y estadísticamente independientes, su caracterización se realiza de manera óptima en el dominio de las frecuencias mediante la densidad espectral de potencia (PSD, por sus siglas en inglés) \cite{Christensen_2018}. 
+Si se considera que tanto la señal primordial como el ruido son procesos estocásticos estacionarios, de media nula y estadísticamente independientes, su caracterización se realiza de manera óptima en el dominio de las frecuencias mediante la densidad espectral de potencia (PSD, por sus siglas en inglés) \cite{Christensen_2018}. 
 
 En la práctica, la amplitud de la señal estocástica primordial suele ser varios órdenes de magnitud inferior a la del ruido instrumental ($h \ll n$). Por lo tanto, la estrategia observacional estándar consiste en correlacionar las mediciones de dos o más detectores espacialmente separados. Asumiendo que el ruido intrínseco de cada detector es estadísticamente independiente del otro ($\langle n_1(t) ~ n_2(t) \rangle = 0$) y que la señal gravitacional de fondo produce una respuesta correlacionada, el valor de expectación temporal de la correlación vale
 \begin{equation}
@@ -243,13 +243,13 @@ Para ilustrar el panorama actual de estos fenómenos, la Figura \ref{fig:freqsvs
     \centering
     \begin{subfigure}[t]{\linewidth}
         \centering
-        \includegraphics[width = \linewidth]{figures/GW-detectors.png}        
+        \includegraphics[width = \linewidth]{figures/GW-detectors.pdf}        
     \end{subfigure}
     \begin{subfigure}[t]{\linewidth}
         \centering
         \includegraphics[width = \linewidth]{figures/GW-detectors-references.png}        
     \end{subfigure}
-    \caption{Bandas de frecuencias y densidad de energía fraccional esperada para diversos mecanismos astrofísicos y cosmológicos de producción de ondas gravitacionales. Se grafican en línea punteada las curvas de sensibilidad de los detectores actualmente en operación, mientras que en línea continua se representan los proyectos futuros. Gráfico elaborado en base a \cite{Aggarwal_2020, Domcke_2023, EinsteinTelescope_2025, Moore_2015, GWPlotter}.}
+    \caption{Bandas de frecuencias y densidad de energía fraccional esperada para diversos mecanismos astrofísicos y cosmológicos de producción de ondas gravitacionales. Se grafican en línea punteada las curvas de sensibilidad de los detectores actualmente en operación, mientras que en línea continua se representan los proyectos futuros. Además, se marca con un círculo mediciones el espectro que se logró medir por la colaboración NANOGrav. Gráfico elaborado en base a \cite{Aggarwal_2020, Domcke_2023, EinsteinTelescope_2025, Moore_2015, GWPlotter}.}
     \label{fig:freqsvsstrains}
 \end{figure}
 
@@ -269,4 +269,4 @@ En la banda de muy bajas frecuencias (nHz), la estrategia observacional dominant
 
 Aún más abajo en frecuencia, aproximándose a la escala del horizonte cosmológico, las ondas gravitacionales primordiales imprimen una firma indirecta sobre el fondo cósmico de microondas (CMB). Las perturbaciones tensoriales inducen un patrón de polarización con divergencia nula y rotacional no nulo, denominado modos B. La confirmación observacional de estos modos primordiales es un desafío técnico formidable, ya que la débil señal compite fuertemente con la emisión galáctica de polvo y, fundamentalmente, con el efecto de lente gravitacional (\textit{lensing}) generado por la estructura a gran escala, el cual distorsiona geométricamente los abundantes modos E transformándolos en un fondo espurio de modos B a pequeñas escalas angulares \cite{Baumann_2012, Planck}.
 
-Finalmente, la dinámica violenta del Recalentamiento inyecta ondas gravitacionales en el régimen de ultra-alta frecuencia (UHF), abarcando típicamente desde los MHz hasta los GHz. En esta ventana espectral, los interferómetros láser pierden su utilidad dado que la longitud de onda de la señal se vuelve mucho menor que el tamaño físico de los brazos del detector, y el ruido cuántico domina por completo la medición. Para explorar este régimen, surge una alternativa experimental basada en las cavidades electromagnéticas resonantes (EMRC). La base de estos instrumentos explota el efecto Gertsenshtein inverso, un fenómeno mediante el cual una onda gravitacional que atraviesa un campo magnético muy intenso puede generar fotones. En este tipo de experimentos, la perturbación del espacio-tiempo modifica las ecuaciones de Maxwell dentro de la cavidad, de modo tal que la interacción entre la onda incidente y el campo magnético estático de fondo ($\bar{\textbf{B}}$) induce una corriente electromagnética. A orden lineal, esta corriente ($\textbf{j}_{\text{eff}}$) resulta directamente proporcional a la variación temporal de la perturbación métrica ($\textbf{j}_{\text{eff}} \propto \dot{h} \times \bar{\textbf{B}}$) \cite{Berlin_2023}. Para que esta señal logre ser detectada, el sistema debe entrar en resonancia. Si la corriente inducida fluctúa a una frecuencia $\omega_{GW}$ que coincide exactamente con la frecuencia natural $\omega_n$ de algún modo electromagnético de la cavidad, la señal se amplifica. Sin embargo, la potencia final que se puede extraer depende de una sintonía espacia, lo que significa debe existir una cierta relación entre el campo magnético estático, la polarización de la onda incidente y el modo excitado en la cavidad \cite{Mohanty_2026, Herman_2023}. El principal enemigo en este rango de frecuencias es el ruido térmico de Johnson-Nyquist; cualquier señal de calor en el instrumento taparía la señal. Por este motivo, las cavidades deben enfriarse a temperaturas criogénicas extremas (del orden de los mK) y leerse mediante amplificadores que operen al límite de la mecánica cuántica o detectores de fotones únicos \cite{Aggarwal_2020}. Bajo estas condiciones, el estudio de EMRC y el efecto Gertsenshtein se postula con una sensibilidad esperada para poder medir las ondas gravitacionales generadas en \textit{Preheating} como consecuencia de la dinámica de campos de materia.
+Finalmente, la dinámica violenta del Recalentamiento inyecta ondas gravitacionales en el régimen de ultra-alta frecuencia (UHF), abarcando típicamente desde los MHz hasta los GHz. En esta ventana espectral, los interferómetros láser pierden su utilidad dado que la longitud de onda de la señal se vuelve mucho menor que el tamaño físico de los brazos del detector, y el ruido cuántico domina por completo la medición. Para explorar este régimen, surge una alternativa experimental basada en las cavidades electromagnéticas resonantes (EMRC). La base de estos instrumentos explota el efecto Gertsenshtein inverso, un fenómeno mediante el cual una onda gravitacional que atraviesa un campo magnético muy intenso puede generar fotones. En este tipo de experimentos, la perturbación del espacio-tiempo modifica las ecuaciones de Maxwell dentro de la cavidad, de modo tal que la interacción entre la onda incidente y el campo magnético estático de fondo ($\bar{\textbf{B}}$) induce una corriente electromagnética. A orden lineal, esta corriente ($\textbf{j}_{\text{eff}}$) resulta directamente proporcional a la variación temporal de la perturbación métrica ($\textbf{j}_{\text{eff}} \propto \dot{h} \times \bar{\textbf{B}}$) \cite{Berlin_2023}. Para que esta señal logre ser detectada, el sistema debe entrar en resonancia. Si la corriente inducida fluctúa a una frecuencia $\omega_{GW}$ que coincide exactamente con la frecuencia natural $\omega_n$ de algún modo electromagnético de la cavidad, la señal se amplifica. Sin embargo, la potencia final que se puede extraer depende de una sintonía espacial, lo que significa debe existir una cierta relación entre el campo magnético estático, la polarización de la onda incidente y el modo excitado en la cavidad \cite{Mohanty_2026, Herman_2023}. El principal enemigo en este rango de frecuencias es el ruido térmico de Johnson-Nyquist; cualquier señal térmica en el instrumento taparía la señal. Por este motivo, las cavidades deben enfriarse a temperaturas criogénicas extremas (del orden de los mK) y leerse mediante amplificadores que operen al límite de la mecánica cuántica o detectores de fotones únicos \cite{Aggarwal_2020}. Bajo estas condiciones, el estudio de EMRC y el efecto Gertsenshtein se postula con una sensibilidad esperada para poder medir las ondas gravitacionales generadas en \textit{Preheating} como consecuencia de la dinámica de campos de materia.

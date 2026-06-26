@@ -446,11 +446,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
-INPUT ./figures/GW-detectors.png
-INPUT ./figures/GW-detectors.png
-INPUT ./figures/GW-detectors.png
-INPUT ./figures/GW-detectors.png
-INPUT ./figures/GW-detectors.png
+INPUT ./figures/GW-detectors.pdf
+INPUT ./figures/GW-detectors.pdf
+INPUT ./figures/GW-detectors.pdf
+INPUT ./figures/GW-detectors.pdf
+INPUT ./figures/GW-detectors.pdf
 INPUT ./figures/GW-detectors-references.png
 INPUT ./figures/GW-detectors-references.png
 INPUT ./figures/GW-detectors-references.png
