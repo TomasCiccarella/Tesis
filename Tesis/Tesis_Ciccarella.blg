@@ -5,14 +5,14 @@ The style file: ieeetr.bst
 Database file #1: references.bib
 You've used 55 entries,
             1876 wiz_defined-function locations,
-            802 strings with 13164 characters,
-and the built_in function-call counts, 10710 in all, are:
+            800 strings with 13071 characters,
+and the built_in function-call counts, 10708 in all, are:
 = -- 879
 > -- 675
 < -- 0
 + -- 249
 - -- 194
-* -- 766
+* -- 764
 := -- 1755
 add.period$ -- 63
 call.type$ -- 55
