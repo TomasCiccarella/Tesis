@@ -1,270 +1,176 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
 
-\bibitem[Aggarwal et~al., 2020]{Aggarwal_2020}
-Aggarwal, N., Aguiar, O.~D., Bauswein, A., Cella, G., Clesse, S., Cruise, A.~M., Domcke, V., Figueroa, D.~G., Geraci, A., Goryachev, M., Grote, H., Hindmarsh, M., Muia, F., Mukund, N., Ottaway, D., Peloso, M., Quevedo, F., Ricciardone, A., Steinlechner, J., Steinlechner, S., Sun, S., Tobar, M.~E., Torrenti, F., Unal, C., and White, G. (2020).
-\newblock Challenges and opportunities of gravitational wave searches at mhz to ghz frequencies.
-\newblock {\em arXiv preprint arXiv:2011.12414}.
+\bibitem{Baumann_2012}
+D.~Baumann, ``Tasi lectures on inflation,'' {\em arXiv preprint arXiv:0907.5424}, 2012.
 
-\bibitem[Allen and Romano, 1999]{Allen_1999}
-Allen, B. and Romano, J.~D. (1999).
-\newblock Detecting a stochastic background of gravitational radiation: Signal processing strategies and sensitivities.
-\newblock {\em Physical Review D}, 59(10):102001.
+\bibitem{Weinberg}
+S.~Weinberg, {\em Cosmology}.
+\newblock Oxford University Press, 2008.
 
-\bibitem[Amin et~al., 2014]{Amin_2014}
-Amin, M.~A., Hertzberg, M.~P., Kaiser, D.~I., and Karouby, J. (2014).
-\newblock Nonperturbative dynamics of reheating after inflation: a review.
-\newblock {\em arXiv preprint arXiv:1410.3808}.
+\bibitem{Doddelson}
+S.~Dodelson and F.~Schmidt, {\em Modern Cosmology}.
+\newblock Academic Press, 2021.
 
-\bibitem[B.~P.~Abbott, 2016]{LIGO}
-B.~P.~Abbott, e.~a. (2016).
-\newblock Observation of gravitational waves from a binary black hole merger.
-\newblock {\em Physical Review Letters}.
+\bibitem{Planck}
+P.~Collaboration, ``Planck 2018 results. vi. cosmological parameters,'' {\em Astronomy \& Astrophysics}, 2020.
 
-\bibitem[Baeza-Ballesteros et~al., 2022]{CosmoLattice_Note2_GWs}
-Baeza-Ballesteros, J., Figueroa, D.~G., Florio, A., and Loayza, N. (2022).
-\newblock Cosmolattice - technical note ii: Gravitational waves.
-\newblock Technical report, Instituto de Física Corpuscular (IFIC) and Stony Brook University.
-\newblock Actualizado en Junio 2023. Disponible en el repositorio oficial de CosmoLattice.
+\bibitem{Peter_2009}
+P.~Peter and J.-P. Uzan, {\em Primordial Cosmology}.
+\newblock Great Clarendon Street, Oxford OX2 6DP: Oxford University Press, 2009.
 
-\bibitem[Baumann, 2012]{Baumann_2012}
-Baumann, D. (2012).
-\newblock Tasi lectures on inflation.
-\newblock {\em arXiv preprint arXiv:0907.5424}.
+\bibitem{Mishra_2024}
+S.~S. Mishra, ``Cosmic inflation: Background dynamics, quantum fluctuations and reheating,'' {\em arXiv preprint arXiv:2403.10606}, 2024.
 
-\bibitem[Berlin et~al., 2023]{Berlin_2023}
-Berlin, A., Blas, D., D'Agnolo, R.~T., Ellis, S. A.~R., Harnik, R., Kahn, Y., and Sch{\"u}tte-Engel, J. (2023).
-\newblock Detecting high-frequency gravitational waves with microwave cavities.
-\newblock {\em arXiv preprint arXiv:2112.11465}.
+\bibitem{Martin2015}
+J.~Martin, C.~Ringeval, and V.~Vennin, ``Observing inflationary reheating,'' {\em Physical Review Letters}, vol.~114, no.~8, 2015.
 
-\bibitem[Bethke, 2015]{Bethke}
-Bethke, L. (2015).
-\newblock {\em Exploring the Early Universe with Gravitational Waves}.
-\newblock Springer.
+\bibitem{Amin_2014}
+M.~A. Amin, M.~P. Hertzberg, D.~I. Kaiser, and J.~Karouby, ``Nonperturbative dynamics of reheating after inflation: a review,'' {\em arXiv preprint arXiv:1410.3808}, 2014.
 
-\bibitem[Caprini and Figueroa, 2020]{Caprini_2020}
-Caprini, C. and Figueroa, D.~G. (2020).
-\newblock Cosmological backgrounds of gravitational waves.
-\newblock {\em arXiv preprint arXiv:1801.04268}.
+\bibitem{Kofman_1994}
+L.~Kofman, A.~Linde, and A.~A. Starobinsky, ``Reheating after inflation,'' {\em Phys. Rev. Lett.}, vol.~73, 1994.
 
-\bibitem[Christensen, 2018]{Christensen_2018}
-Christensen, N. (2018).
-\newblock Stochastic gravitational wave backgrounds.
-\newblock {\em arXiv preprint arXiv:1811.08797}.
+\bibitem{Kofman_1997}
+L.~Kofman, A.~Linde, and A.~A. Starobinsky, ``Towards the theory of reheating after inflation,'' {\em Phys. Rev. D}, vol.~56, 1997.
 
-\bibitem[Ciccarella, 2026]{Git}
-Ciccarella, T. (2025-2026).
-\newblock Github repositorio de la tesis.
-\newblock \url{https://github.com/TomasCiccarella/Tesis}.
+\bibitem{Elia_2025}
+J.~P. Elia, ``Producción de un fondo estocástico de ondas gravitatorias durante recalentamiento,'' tesis de licenciatura, Universidad de Buenos Aires, Facultad de Ciencias Exactas y Naturales, Buenos Aires, Argentina, 2025.
 
-\bibitem[Collaboration, 2020]{Planck}
-Collaboration, P. (2020).
-\newblock Planck 2018 results. vi. cosmological parameters.
-\newblock {\em Astronomy \& Astrophysics}.
+\bibitem{Turner_1983}
+M.~S. Turner, ``Coherent scalar-field oscillations in an expanding universe,'' {\em Phys. Rev. D}, vol.~28, 1983.
 
-\bibitem[{CosmoLattice Team}, 2023]{CosmoLatticeNet}
-{CosmoLattice Team} (2023).
-\newblock Cosmolattice website.
-\newblock \url{https://www.cosmolattice.net}.
+\bibitem{Podolsky_2006}
+D.~Podolsky, G.~Felder, L.~Kofman, and M.~Peloso, ``Equation of state and beginning of thermalization after preheating,'' {\em Physical Review D}, vol.~73, no.~2, p.~023501, 2006.
 
-\bibitem[Das and Revankar, 2025]{Das_2025}
-Das, D. and Revankar, S. (2025).
-\newblock Preheating and gravitational waves in large-field hilltop inflation.
-\newblock {\em arXiv preprint arXiv:2508.07442}.
+\bibitem{Caprini_2020}
+C.~Caprini and D.~G. Figueroa, ``Cosmological backgrounds of gravitational waves,'' {\em arXiv preprint arXiv:1801.04268}, 2020.
 
-\bibitem[Dodelson and Schmidt, 2021]{Doddelson}
-Dodelson, S. and Schmidt, F. (2021).
-\newblock {\em Modern Cosmology}.
-\newblock Academic Press.
+\bibitem{Dufaux_2007}
+J.-F. Dufaux, A.~Bergman, G.~Felder, L.~Kofman, and J.-P. Uzan, ``Theory and numerics of gravitational waves from preheating after inflation,'' {\em arXiv preprint arXiv:0707.0875}, 2007.
 
-\bibitem[Domcke, 2023]{Domcke_2023}
-Domcke, V. (2023).
-\newblock Electromagnetic high-frequency gravitational wave detection.
-\newblock {\em arXiv preprint arXiv:2306.04496}.
+\bibitem{Figueroa_2017_GW}
+D.~G. Figueroa and F.~Torrenti, ``Gravitational wave production from preheating: parameter dependence,'' {\em arXiv preprint arXiv:1707.04533}, 2017.
 
-\bibitem[Dufaux et~al., 2007]{Dufaux_2007}
-Dufaux, J.-F., Bergman, A., Felder, G., Kofman, L., and Uzan, J.-P. (2007).
-\newblock Theory and numerics of gravitational waves from preheating after inflation.
-\newblock {\em arXiv preprint arXiv:0707.0875}.
+\bibitem{CosmoLatticeNet}
+{CosmoLattice Team}, ``Cosmolattice website.'' \url{https://www.cosmolattice.net}, 2023.
 
-\bibitem[{Einstein Telescope Collaboration} et~al., 2025]{EinsteinTelescope_2025}
-{Einstein Telescope Collaboration}, Abaco, A., Abramo, R., Albanesi, S., Albertini, A., Agapito, A., Agathos, M., Albertus, C., Andersson, N., Andrade, T., Andreoni, I., Angeloni, F., Antonelli, M., Antoniadis, J., Antonini, F., Arca~Sedda, M., Artale, M.~C., Ascenzi, S., Auclair, P., Bachetti, M., Badger, C., Banerjee, B., Barba-González, D., Barta, D., Bartolo, N., Bauswein, A., Begnoni, A., Beirnaert, F., Bejger, M., Belgacem, E., Bellomo, N., Bernard, L., Bernardini, M.~G., Bernuzzi, S., Berry, C. P.~L., and Berti, E. (2025).
-\newblock The science of the einstein telescope.
-\newblock {\em arXiv preprint arXiv:2503.12263}.
+\bibitem{Figueroa2021}
+D.~G. Figueroa {\em et~al.}, ``The art of simulating the early universe. part i. integration techniques and canonical cases,'' {\em JCAP}, vol.~04, 2021.
 
-\bibitem[Elia, 2025]{Elia_2025}
-Elia, J.~P. (2025).
-\newblock Producción de un fondo estocástico de ondas gravitatorias durante recalentamiento.
-\newblock Tesis de licenciatura, Universidad de Buenos Aires, Facultad de Ciencias Exactas y Naturales, Buenos Aires, Argentina.
+\bibitem{Figueroa2023}
+D.~G. Figueroa {\em et~al.}, ``Cosmolattice: A modern code for lattice simulations of scalar and gauge field dynamics in an expanding universe,'' {\em Computer Physics Communications}, vol.~283, 2023.
 
-\bibitem[Elia et~al., 2026]{Elia_2026}
-Elia, J.~P., Cantarutti, L., Calzetta, E., and Miron-Granese, N. (2026).
-\newblock Hydrodynamic models of reheating.
-\newblock {\em arXiv preprint arXiv:2510.08685}.
+\bibitem{Maggiore_2018}
+M.~Maggiore, {\em Gravitational Waves Volume 2: Astrophysics and Cosmology}.
+\newblock Great Clarendon Street, Oxford, OX2 6DP, United Kingdom: Oxford University Press, 2018.
 
-\bibitem[Ellis et~al., 2026]{Ellis_2026}
-Ellis, J., Garcia, M. A.~G., Olive, K.~A., and Verner, S. (2026).
-\newblock Constraints on attractor models of inflation and reheating from planck, bicep/keck, act dr6, and spt-3g data.
-\newblock {\em Physical Review D}, 113(6):063571.
+\bibitem{Bethke}
+L.~Bethke, {\em Exploring the Early Universe with Gravitational Waves}.
+\newblock Springer, 2015.
 
-\bibitem[Figueroa et~al., 2021]{Figueroa2021}
-Figueroa, D.~G. et~al. (2021).
-\newblock The art of simulating the early universe. part i. integration techniques and canonical cases.
-\newblock {\em JCAP}, 04.
+\bibitem{Renzini2022}
+A.~Renzini, B.~Goncharov, A.~C. Jenkins, and P.~M. Meyers, ``Stochastic gravitational-wave backgrounds: Current detection efforts and future prospects,'' {\em Galaxies}, vol.~10, no.~1, 2022.
 
-\bibitem[Figueroa et~al., 2023]{Figueroa2023}
-Figueroa, D.~G. et~al. (2023).
-\newblock Cosmolattice: A modern code for lattice simulations of scalar and gauge field dynamics in an expanding universe.
-\newblock {\em Computer Physics Communications}, 283.
+\bibitem{Christensen_2018}
+N.~Christensen, ``Stochastic gravitational wave backgrounds,'' {\em arXiv preprint arXiv:1811.08797}, 2018.
 
-\bibitem[Figueroa et~al., 2024]{Figueroa2024}
-Figueroa, D.~G., Florio, A., and Torrenti, F. (2024).
-\newblock Present and future of cosmolattice.
-\newblock {\em Reports on Progress in Physics}, 87.
+\bibitem{LIGO}
+e.~a. B.~P.~Abbott, ``Observation of gravitational waves from a binary black hole merger,'' {\em Physical Review Letters}, 2016.
 
-\bibitem[Figueroa et~al., 2022]{Figueroa_GW_2022}
-Figueroa, D.~G., Florio, A., Torrenti, F., and Valkenburg, W. (2022).
-\newblock Background of gravitational waves from scalar and gauge fields: A cosmolattice module.
-\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2022(04):034.
+\bibitem{Lozanov}
+K.~D. Lozanov, ``Gravitational waves from the early universe,'' {\em arXiv:1907.04402}, 2019.
 
-\bibitem[Figueroa and Torrenti, 2017a]{Figueroa_2017_GW}
-Figueroa, D.~G. and Torrenti, F. (2017a).
-\newblock Gravitational wave production from preheating: parameter dependence.
-\newblock {\em arXiv preprint arXiv:1707.04533}.
+\bibitem{NANOGrav_2023_NewPhysics}
+A.~Afzal {\em et~al.}, ``The nanograv 15-year data set: Search for signals from new physics,'' {\em The Astrophysical Journal Letters}, vol.~951, no.~1, p.~L11, 2023.
 
-\bibitem[Figueroa and Torrenti, 2017b]{Figueroa_2017_Parametric}
-Figueroa, D.~G. and Torrenti, F. (2017b).
-\newblock Parametric resonance in the early universe - a fitting analysis.
-\newblock {\em arXiv preprint arXiv:1609.05197}.
+\bibitem{Caprini_2024_LISA}
+C.~Caprini, R.~Jinno, M.~Lewicki, E.~Madge, M.~Merchand, G.~Nardini, M.~Pieroni, A.~Roper~Pol, and V.~Vaskonen, ``Gravitational waves from first-order phase transitions in lisa: reconstruction pipeline and physics interpretation,'' {\em Journal of Cosmology and Astroparticle Physics}, vol.~2024, no.~05, p.~013, 2024.
 
-\bibitem[G.~Agazie, 2023]{NANOGrav}
-G.~Agazie, e.~a. (2023).
-\newblock The nanograv 15-year data set: Evidence for a gravitational-wave background.
-\newblock {\em The Astrophysical Journal}.
+\bibitem{Aggarwal_2020}
+N.~Aggarwal, O.~D. Aguiar, A.~Bauswein, G.~Cella, S.~Clesse, A.~M. Cruise, V.~Domcke, D.~G. Figueroa, A.~Geraci, M.~Goryachev, H.~Grote, M.~Hindmarsh, F.~Muia, N.~Mukund, D.~Ottaway, M.~Peloso, F.~Quevedo, A.~Ricciardone, J.~Steinlechner, S.~Steinlechner, S.~Sun, M.~E. Tobar, F.~Torrenti, C.~Unal, and G.~White, ``Challenges and opportunities of gravitational wave searches at mhz to ghz frequencies,'' {\em arXiv preprint arXiv:2011.12414}, 2020.
 
-\bibitem[Garc\'\i{}a-Bellido et~al., 2008]{GarciaBellido_2007}
-Garc\'\i{}a-Bellido, J., Figueroa, D.~G., and Sastre, A. (2008).
-\newblock A gravitational wave background from reheating after hybrid inflation.
-\newblock {\em Physical Review D}.
+\bibitem{Domcke_2023}
+V.~Domcke, ``Electromagnetic high-frequency gravitational wave detection,'' {\em arXiv preprint arXiv:2306.04496}, 2023.
 
-\bibitem[Gatti et~al., 2024]{Gatti_2024}
-Gatti, C., Visinelli, L., and Zantedeschi, M. (2024).
-\newblock Cavity detection of gravitational waves: Where do we stand?
-\newblock {\em Physical Review D}, 110(2):024075.
+\bibitem{EinsteinTelescope_2025}
+{Einstein Telescope Collaboration}, A.~Abaco, R.~Abramo, S.~Albanesi, A.~Albertini, A.~Agapito, M.~Agathos, C.~Albertus, N.~Andersson, T.~Andrade, I.~Andreoni, F.~Angeloni, M.~Antonelli, J.~Antoniadis, F.~Antonini, M.~Arca~Sedda, M.~C. Artale, S.~Ascenzi, P.~Auclair, M.~Bachetti, C.~Badger, B.~Banerjee, D.~Barba-González, D.~Barta, N.~Bartolo, A.~Bauswein, A.~Begnoni, F.~Beirnaert, M.~Bejger, E.~Belgacem, N.~Bellomo, L.~Bernard, M.~G. Bernardini, S.~Bernuzzi, C.~P.~L. Berry, and E.~Berti, ``The science of the einstein telescope,'' {\em arXiv preprint arXiv:2503.12263}, 2025.
 
-\bibitem[Greene et~al., 1997]{Greene_1997}
-Greene, P.~B., Kofman, L., Linde, A., and Starobinsky, A.~A. (1997).
-\newblock Structure of resonance in preheating after inflation.
-\newblock {\em arXiv preprint hep-ph/9705347}.
+\bibitem{Moore_2015}
+C.~J. Moore, R.~H. Cole, and C.~P.~L. Berry, ``Gravitational-wave sensitivity curves,'' {\em Classical and Quantum Gravity}, 2015.
 
-\bibitem[Gross et~al., 2025]{Gross_2025}
-Gross, M., Mambrini, Y., Kpatcha, E., Olea-Romacho, M.~O., and Roshan, R. (2025).
-\newblock Gravitational wave production during reheating: From the inflaton to primordial black holes.
-\newblock {\em Physical Review D}, 111(3):035020.
-
-\bibitem[Herman et~al., 2023]{Herman_2023}
-Herman, N., Lehoucq, L., and F{\"u}zfa, A. (2023).
-\newblock Electromagnetic antennas for the resonant detection of the stochastic gravitational wave background.
-\newblock {\em arXiv preprint arXiv:2203.15668}.
-
-\bibitem[Kallosh and Linde, 2013]{Kallosh_2013}
-Kallosh, R. and Linde, A. (2013).
-\newblock Superconformal generalizations of the starobinsky model.
-\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2013(06):028.
-
-\bibitem[Khlebnikov and Tkachev, 1996]{Khlebnikov_1996}
-Khlebnikov, S.~Y. and Tkachev, I.~I. (1996).
-\newblock Classical decay of the inflaton.
-\newblock {\em Phys. Rev. Lett.}, 77.
-
-\bibitem[Kofman et~al., 1994]{Kofman_1994}
-Kofman, L., Linde, A., and Starobinsky, A.~A. (1994).
-\newblock Reheating after inflation.
-\newblock {\em Phys. Rev. Lett.}, 73.
-
-\bibitem[Kofman et~al., 1997]{Kofman_1997}
-Kofman, L., Linde, A., and Starobinsky, A.~A. (1997).
-\newblock Towards the theory of reheating after inflation.
-\newblock {\em Phys. Rev. D}, 56.
-
-\bibitem[Lozanov, 2019]{Lozanov}
-Lozanov, K.~D. (2019).
-\newblock Gravitational waves from the early universe.
-\newblock {\em arXiv:1907.04402}.
-
-\bibitem[Maggiore, 2018]{Maggiore_2018}
-Maggiore, M. (2018).
-\newblock {\em Gravitational Waves Volume 2: Astrophysics and Cosmology}.
-\newblock Oxford University Press, Great Clarendon Street, Oxford, OX2 6DP, United Kingdom.
-
-\bibitem[Martin et~al., 2015]{Martin2015}
-Martin, J., Ringeval, C., and Vennin, V. (2015).
-\newblock Observing inflationary reheating.
-\newblock {\em Physical Review Letters}, 114(8).
-
-\bibitem[McLachlan, 1947]{McLachlan_1947}
-McLachlan, N.~W. (1947).
-\newblock {\em Theory and Application of Mathieu Functions}.
-\newblock Clarendon Press, Oxford.
-
-\bibitem[Mishra, 2024]{Mishra_2024}
-Mishra, S.~S. (2024).
-\newblock Cosmic inflation: Background dynamics, quantum fluctuations and reheating.
-\newblock {\em arXiv preprint arXiv:2403.10606}.
-
-\bibitem[Mohanty et~al., 2026]{Mohanty_2026}
-Mohanty, S., Panda, S., and Vidyarthi, A. (2026).
-\newblock Testing the starobinsky model of inflation with resonant cavities.
-\newblock {\em arXiv preprint arXiv:2503.06858}.
-
-\bibitem[Moore et~al., 2015a]{Moore_2015}
-Moore, C.~J., Cole, R.~H., and Berry, C. P.~L. (2015a).
-\newblock Gravitational-wave sensitivity curves.
-\newblock {\em Classical and Quantum Gravity}.
-
-\bibitem[Moore et~al., 2015b]{GWPlotter}
-Moore, C.~J., Cole, R.~H., and Berry, C. P.~L. (2015b).
-\newblock {GWPlotter}: a tool for plotting gravitational-wave sensitivity curves.
-\newblock \url{http://gwplotter.com/}.
+\bibitem{GWPlotter}
+C.~J. Moore, R.~H. Cole, and C.~P.~L. Berry, ``{GWPlotter}: a tool for plotting gravitational-wave sensitivity curves.'' \url{http://gwplotter.com/}, 2015.
 \newblock Accedido en: Junio 2026.
 
-\bibitem[Peter and Uzan, 2009]{Peter_2009}
-Peter, P. and Uzan, J.-P. (2009).
-\newblock {\em Primordial Cosmology}.
-\newblock Oxford University Press, Great Clarendon Street, Oxford OX2 6DP.
+\bibitem{Mohanty_2026}
+S.~Mohanty, S.~Panda, and A.~Vidyarthi, ``Testing the starobinsky model of inflation with resonant cavities,'' {\em arXiv preprint arXiv:2503.06858}, 2026.
 
-\bibitem[Podolsky et~al., 2006]{Podolsky_2006}
-Podolsky, D., Felder, G., Kofman, L., and Peloso, M. (2006).
-\newblock Equation of state and beginning of thermalization after preheating.
-\newblock {\em Physical Review D}, 73(2):023501.
+\bibitem{Allen_1999}
+B.~Allen and J.~D. Romano, ``Detecting a stochastic background of gravitational radiation: Signal processing strategies and sensitivities,'' {\em Physical Review D}, vol.~59, no.~10, p.~102001, 1999.
 
-\bibitem[Prokopec and Roos, 1997]{Prokopec_1997}
-Prokopec, T. and Roos, T.~G. (1997).
-\newblock Lattice study of classical inflaton decay.
-\newblock {\em Phys. Rev. D}, 55.
+\bibitem{NANOGrav}
+e.~a. G.~Agazie, ``The nanograv 15-year data set: Evidence for a gravitational-wave background,'' {\em The Astrophysical Journal}, 2023.
 
-\bibitem[Renzini et~al., 2022]{Renzini2022}
-Renzini, A., Goncharov, B., Jenkins, A.~C., and Meyers, P.~M. (2022).
-\newblock Stochastic gravitational-wave backgrounds: Current detection efforts and future prospects.
-\newblock {\em Galaxies}, 10(1).
+\bibitem{Berlin_2023}
+A.~Berlin, D.~Blas, R.~T. D'Agnolo, S.~A.~R. Ellis, R.~Harnik, Y.~Kahn, and J.~Sch{\"u}tte-Engel, ``Detecting high-frequency gravitational waves with microwave cavities,'' {\em arXiv preprint arXiv:2112.11465}, 2023.
 
-\bibitem[Ringwald and Tamarit, 2022]{Ringwald_2022}
-Ringwald, A. and Tamarit, C. (2022).
-\newblock Revealing the cosmic history with gravitational waves.
-\newblock {\em Physical Review D}, 106(6):063027.
+\bibitem{Herman_2023}
+N.~Herman, L.~Lehoucq, and A.~F{\"u}zfa, ``Electromagnetic antennas for the resonant detection of the stochastic gravitational wave background,'' {\em arXiv preprint arXiv:2203.15668}, 2023.
 
-\bibitem[Starobinsky, 1980]{Starobinsky_1980}
-Starobinsky, A.~A. (1980).
-\newblock A new type of isotropic cosmological models without singularity.
-\newblock {\em Physics Letters B}, 91(1):99--102.
+\bibitem{Git}
+T.~Ciccarella, ``Github repositorio de la tesis.'' \url{https://github.com/TomasCiccarella/Tesis}, 2025-2026.
 
-\bibitem[Turner, 1983]{Turner_1983}
-Turner, M.~S. (1983).
-\newblock Coherent scalar-field oscillations in an expanding universe.
-\newblock {\em Phys. Rev. D}, 28.
+\bibitem{McLachlan_1947}
+N.~W. McLachlan, {\em Theory and Application of Mathieu Functions}.
+\newblock Clarendon Press, Oxford, 1947.
 
-\bibitem[Weinberg, 2008]{Weinberg}
-Weinberg, S. (2008).
-\newblock {\em Cosmology}.
-\newblock Oxford University Press.
+\bibitem{Greene_1997}
+P.~B. Greene, L.~Kofman, A.~Linde, and A.~A. Starobinsky, ``Structure of resonance in preheating after inflation,'' {\em arXiv preprint hep-ph/9705347}, 1997.
+
+\bibitem{Elia_2026}
+J.~P. Elia, L.~Cantarutti, E.~Calzetta, and N.~Miron-Granese, ``Hydrodynamic models of reheating,'' {\em arXiv preprint arXiv:2510.08685}, 2026.
+
+\bibitem{Figueroa2024}
+D.~G. Figueroa, A.~Florio, and F.~Torrenti, ``Present and future of cosmolattice,'' {\em Reports on Progress in Physics}, vol.~87, 2024.
+
+\bibitem{Figueroa_GW_2022}
+D.~G. Figueroa, A.~Florio, F.~Torrenti, and W.~Valkenburg, ``Background of gravitational waves from scalar and gauge fields: A cosmolattice module,'' {\em Journal of Cosmology and Astroparticle Physics}, vol.~2022, no.~04, p.~034, 2022.
+
+\bibitem{GarciaBellido_2007}
+J.~Garc\'\i{}a-Bellido, D.~G. Figueroa, and A.~Sastre, ``A gravitational wave background from reheating after hybrid inflation,'' {\em Physical Review D}, 2008.
+
+\bibitem{CosmoLattice_Note2_GWs}
+J.~Baeza-Ballesteros, D.~G. Figueroa, A.~Florio, and N.~Loayza, ``Cosmolattice - technical note ii: Gravitational waves,'' tech. rep., Instituto de Física Corpuscular (IFIC) and Stony Brook University, 2022.
+\newblock Actualizado en Junio 2023. Disponible en el repositorio oficial de CosmoLattice.
+
+\bibitem{Khlebnikov_1996}
+S.~Y. Khlebnikov and I.~I. Tkachev, ``Classical decay of the inflaton,'' {\em Phys. Rev. Lett.}, vol.~77, 1996.
+
+\bibitem{Prokopec_1997}
+T.~Prokopec and T.~G. Roos, ``Lattice study of classical inflaton decay,'' {\em Phys. Rev. D}, vol.~55, 1997.
+
+\bibitem{Figueroa_2017_Parametric}
+D.~G. Figueroa and F.~Torrenti, ``Parametric resonance in the early universe - a fitting analysis,'' {\em arXiv preprint arXiv:1609.05197}, 2017.
+
+\bibitem{Kallosh_2013}
+R.~Kallosh and A.~Linde, ``Superconformal generalizations of the starobinsky model,'' {\em Journal of Cosmology and Astroparticle Physics}, vol.~2013, no.~06, p.~028, 2013.
+
+\bibitem{Starobinsky_1980}
+A.~A. Starobinsky, ``A new type of isotropic cosmological models without singularity,'' {\em Physics Letters B}, vol.~91, no.~1, pp.~99--102, 1980.
+
+\bibitem{Ellis_2026}
+J.~Ellis, M.~A.~G. Garcia, K.~A. Olive, and S.~Verner, ``Constraints on attractor models of inflation and reheating from planck, bicep/keck, act dr6, and spt-3g data,'' {\em Physical Review D}, vol.~113, no.~6, p.~063571, 2026.
+
+\bibitem{Gatti_2024}
+C.~Gatti, L.~Visinelli, and M.~Zantedeschi, ``Cavity detection of gravitational waves: Where do we stand?,'' {\em Physical Review D}, vol.~110, no.~2, p.~024075, 2024.
+
+\bibitem{Gross_2025}
+M.~Gross, Y.~Mambrini, E.~Kpatcha, M.~O. Olea-Romacho, and R.~Roshan, ``Gravitational wave production during reheating: From the inflaton to primordial black holes,'' {\em Physical Review D}, vol.~111, no.~3, p.~035020, 2025.
+
+\bibitem{Ringwald_2022}
+A.~Ringwald and C.~Tamarit, ``Revealing the cosmic history with gravitational waves,'' {\em Physical Review D}, vol.~106, no.~6, p.~063027, 2022.
+
+\bibitem{Das_2025}
+D.~Das and S.~Revankar, ``Preheating and gravitational waves in large-field hilltop inflation,'' {\em arXiv preprint arXiv:2508.07442}, 2025.
 
 \end{thebibliography}

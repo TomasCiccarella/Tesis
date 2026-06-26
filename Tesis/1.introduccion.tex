@@ -35,7 +35,7 @@ siendo $\rho$ la densidad de energía espectral y $P$ la presión isótropa del 
     \end{pmatrix}.
 \end{equation}
 
-Al introducir este tensor de energía-momento y la métrica de FLRW en las ecuaciones de campo de Einstein, se deducen las ecuaciones de Friedmann, las cuales gobiernan la dinámica global del universo plano \cite{Doddelson, Weinberg}:
+Al introducir este tensor de energía-momento y la métrica de FLRW en las ecuaciones de campo de Einstein, se deducen las ecuaciones de Friedmann, las cuales gobiernan la dinámica global del universo plano \cite{Weinberg, Doddelson}:
 \begin{equation}\label{eqn:Friedmann1}
     \left(\frac{\dot{a}}{a}\right)^2 = \frac{8\pi G}{3} \rho,
 \end{equation}
@@ -57,13 +57,15 @@ En esta parametrización, el valor $\omega = 0$ describe analíticamente el comp
 
 \section{Perturbaciones: contexto cosmológico}\label{SVT}
 
-Si bien el modelo cosmológico estándar asume un fondo perfectamente homogéneo e isótropo a grandes escalas, la observación del universo revela una red de estructuras (galaxias, cúmulos) y anisotropías en el Fondo Cósmico de Microondas (CMB). Para dar cuenta del origen y evolución de estas estructuras, se requiere relajar la hipótesis de homogeneidad estricta. Esto se logra introduciendo perturbaciones sobre la métrica del espacio-tiempo y sobre el tensor de energía-momento. De este modo, la descripción del universo se descompone en un fondo (\textit{background}) analítico exacto de tipo FLRW, al cual se le superpone una componente perturbativa que codifica las inhomogeneidades y anisotropías locales \cite{Doddelson, Peter_2009, Weinberg}:
+Si bien el modelo cosmológico estándar asume un fondo perfectamente homogéneo e isótropo a grandes escalas, la observación del universo revela una red de estructuras (galaxias, cúmulos) y anisotropías en el Fondo Cósmico de Microondas (CMB). Para dar cuenta del origen y evolución de estas estructuras, se requiere relajar la hipótesis de homogeneidad estricta. Esto se logra introduciendo perturbaciones sobre la métrica del espacio-tiempo y sobre el tensor de energía-momento. De este modo, la descripción del universo se descompone en un fondo (\textit{background}) analítico exacto de tipo FLRW, al cual se le superpone una componente perturbativa que codifica las inhomogeneidades y anisotropías locales \cite{Weinberg, Doddelson, Peter_2009}:
 \begin{equation}
     g_{\mu\nu} = \bar{g}_{\mu\nu} + \delta g_{\mu\nu},
 \end{equation}
 siendo $\bar{g}_{\mu\nu}$ la métrica de fondo y $\delta g_{\mu\nu}$ la perturbación geométrica.
 
-Para el estudio sistemático de estas perturbaciones, se emplea habitualmente la descomposición SVT (Escalar-Vectorial-Tensorial). Este formalismo permite clasificar las perturbaciones según su comportamiento bajo rotaciones espaciales. En una métrica de fondo de tipo FLRW, las simetrías espaciales garantizan que estos tres sectores evolucionen de manera completamente desacoplada a primer orden en la teoría de perturbaciones \cite{Doddelson, Weinberg, Baumann_2012}.
+Para el estudio sistemático de estas perturbaciones, se emplea habitualmente la descomposición SVT (Escalar-Vectorial-Tensorial). Este formalismo permite clasificar las perturbaciones según su comportamiento bajo rotaciones espaciales. En una métrica de fondo de tipo FLRW, las simetrías espaciales garantizan que estos tres sectores evolucionen de manera completamente desacoplada a primer orden en la teoría de perturbaciones \cite{Baumann_2012, Weinberg, Doddelson}.
+
+\vspace{3cm}
 
 Al aplicar esta descomposición a la métrica, la perturbación geométrica $\delta g_{\mu\nu}$ se parametriza de la siguiente manera:
 \begin{equation}
@@ -101,6 +103,7 @@ La teoría de la Relatividad General es invariante ante difeomorfismos. A nivel 
 siendo los escalares de la Ecuación (\ref{eqn:Bardeen}) los potenciales de Bardeen, herramientas analíticas esenciales para el tratamiento unívoco de las fluctuaciones primordiales \cite{Doddelson, Peter_2009}. Se puede notar que la componente tensorial de la perturbación espacial ($h_{ij}$) es invariante de \textit{gauge} de manera automática a primer orden. 
 
 Al introducir estas perturbaciones invariantes en las ecuaciones de Einstein linealizadas, la simetría del espacio-tiempo garantiza el desacople de los sectores escalar, vectorial y tensorial. Si se evalúa este sistema en el límite estático de un espacio de Minkowski, las ecuaciones de campo adquieren la forma:
+\vspace{-0.25cm}
 \begin{equation}
     \begin{aligned}
         \nabla^2 \Theta &= - \frac{1}{m^2_p} \delta\rho, \\
@@ -115,7 +118,7 @@ Al introducir estas perturbaciones invariantes en las ecuaciones de Einstein lin
 \end{equation} 
 Si bien en este límite estático el desacople resulta evidente a través de las ecuaciones de Poisson y de onda, en una cosmología rigurosa basada en una métrica FLRW, la expansión del universo introduce términos de fricción de Hubble y acoplamientos con el factor de escala $a(t)$ que complejizan sustancialmente el sistema. Sin embargo, en virtud del teorema de descomposición, las ecuaciones de movimiento mantienen su propiedad de desacople sectorial de forma exacta.
 
-Dado que el objetivo central de esta tesis es el análisis analítico y numérico de las ondas gravitacionales, los capítulos siguientes se enfocarán exclusivamente en el sector tensorial, cuya dinámica está gobernada por la componente de estrés anisotrópico $\Pi_{ij}$. En las secciones siguientes se detallará cómo la introducción de las fluctuaciones cuánticas iniciales en la cosmología inflacionaria establece las condiciones de iniciales de los fenómenos que serán estudiados a lo largo de este trabajo \cite{Baumann_2012, Mishra_2024}.
+Dado que el objetivo central de esta tesis es el análisis analítico y numérico de las ondas gravitacionales, los capítulos siguientes se enfocarán exclusivamente en el sector tensorial, cuya dinámica está gobernada por la componente de estrés anisotrópico $\Pi_{ij}$. En las secciones siguientes se detallará cómo la introducción de las fluctuaciones cuánticas en la cosmología inflacionaria establece condiciones de iniciales para los fenómenos que serán estudiados en este trabajo \cite{Baumann_2012, Mishra_2024}.
 
 \section{Inflación}
 
@@ -136,7 +139,7 @@ Considerando que la homogeneidad exigida por el Principio Cosmológico implica q
 \begin{equation}
     P = \frac{1}{2} \dot{\phi}^2 - V(\phi).
 \end{equation}
-A partir de esto, y analizando la segunda ecuación de Friedmann (Ecuación (\ref{eqn:Friedmann2})), se observa que si la energía potencial es dominante frente a la cinética ($\dot{\phi}^2 \ll V(\phi)$), la presión del fluido efectivo se vuelve negativa ($P \simeq -V(\phi) \simeq -\rho$). Esta condición termodinámica produce una expansión acelerada del espacio-tiempo ($\ddot{a} > 0$). A esta exigencia cinemática se la conoce como condición de rodadura lenta o \textit{slow-roll}. En la Figura \ref{fig:slowroll} se muestra un esquema típico para un potencial inflacionario (como el modelo de Starobinsky), donde se puede pensar intuitivamente que el inflatón ``rueda'' lentamente sobre la región plana. Cuando la pendiente se vuelve pronunciada, el campo adquiere la energía cinética suficiente para romper la condición anterior, poniendo fin a la etapa inflacionaria. El marco teórico general de la dinámica de este único campo escalar forma la base predictiva de los modelos inflacionarios contemporáneos \cite{Baumann_2012, Doddelson, Weinberg}.
+A partir de esto, y analizando la segunda ecuación de Friedmann (Ecuación (\ref{eqn:Friedmann2})), se observa que si la energía potencial es dominante frente a la cinética ($\dot{\phi}^2 \ll V(\phi)$), la presión del fluido efectivo se vuelve negativa ($P \simeq -V(\phi) \simeq -\rho$). Esta condición termodinámica produce una expansión acelerada del espacio-tiempo ($\ddot{a} > 0$). A esta exigencia cinemática se la conoce como condición de rodadura lenta o \textit{slow-roll}. En la Figura \ref{fig:slowroll} se muestra un esquema típico para un potencial inflacionario (como el modelo de Starobinsky), donde se puede pensar intuitivamente que el inflatón ``rueda'' lentamente sobre la región plana. Cuando la pendiente se vuelve pronunciada, el campo adquiere la energía cinética suficiente para romper la condición anterior, poniendo fin a la etapa inflacionaria. El marco teórico general de la dinámica de este único campo escalar forma la base predictiva de los modelos inflacionarios contemporáneos \cite{Baumann_2012, Weinberg, Doddelson}.
 
 \begin{figure}[htbp]
     \centering

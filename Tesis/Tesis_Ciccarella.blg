@@ -1,46 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Tesis_Ciccarella.aux
-The style file: apalike.bst
+The style file: ieeetr.bst
 Database file #1: references.bib
-You've used 53 entries,
-            1935 wiz_defined-function locations,
-            783 strings with 12864 characters,
-and the built_in function-call counts, 19205 in all, are:
-= -- 1761
-> -- 1057
-< -- 30
-+ -- 378
-- -- 366
-* -- 1603
-:= -- 3614
-add.period$ -- 161
-call.type$ -- 53
-change.case$ -- 442
-chr.to.int$ -- 51
-cite$ -- 53
-duplicate$ -- 691
-empty$ -- 1136
-format.name$ -- 443
-if$ -- 3564
-int.to.chr$ -- 3
-int.to.str$ -- 0
-missing$ -- 54
-newline$ -- 270
-num.names$ -- 159
-pop$ -- 384
+You've used 55 entries,
+            1876 wiz_defined-function locations,
+            802 strings with 13164 characters,
+and the built_in function-call counts, 10710 in all, are:
+= -- 879
+> -- 675
+< -- 0
++ -- 249
+- -- 194
+* -- 766
+:= -- 1755
+add.period$ -- 63
+call.type$ -- 55
+change.case$ -- 51
+chr.to.int$ -- 0
+cite$ -- 55
+duplicate$ -- 576
+empty$ -- 1015
+format.name$ -- 194
+if$ -- 2512
+int.to.chr$ -- 0
+int.to.str$ -- 55
+missing$ -- 56
+newline$ -- 176
+num.names$ -- 55
+pop$ -- 198
 preamble$ -- 1
-purify$ -- 446
+purify$ -- 0
 quote$ -- 0
-skip$ -- 555
+skip$ -- 230
 stack$ -- 0
-substring$ -- 794
-swap$ -- 48
+substring$ -- 123
+swap$ -- 152
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 306
+type$ -- 0
 warning$ -- 0
-while$ -- 116
-width$ -- 0
-write$ -- 666
+while$ -- 68
+width$ -- 57
+write$ -- 500
