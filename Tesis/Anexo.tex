@@ -27,7 +27,7 @@ siendo $\mathcal{G} (k, \tau, \tau^\prime) = k^{-1} \sin \left[k \left( \tau - \
 \begin{equation}
     h_{ij}^{TT} (k, \tau) = \frac{1}{a(\tau) ~ m_p^2} \int_{\tau_i}^{\tau} \frac{a \left( \tau^\prime \right)}{k} ~ \sin \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime.
 \end{equation}
-Para calcular el espectro requiero las derivadas en tiempo propio, entonces calculemos esto último:
+Para calcular el espectro es necesario calcular las derivadas en tiempo propio, entonces calculemos esto último:
 \begin{equation*}
     \begin{split}
         h^\prime_{ij} =& \frac{dh_{ij}}{d\tau}\\
@@ -36,10 +36,6 @@ Para calcular el espectro requiero las derivadas en tiempo propio, entonces calc
         &\quad - \cos (k \tau) \sin \left( k \tau^\prime \right) \Big] ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime \Bigg\}\\
         =& -\mathcal{H} h_{ij} + \frac{1}{a(\tau) ~ m_p^2} \frac{d}{d\tau} \left[ \sin (k \tau) \int_{\tau_i}^{\tau} \frac{a \left( \tau^\prime \right)}{k} ~ \cos \left( k \tau^\prime \right) ~ \Pi^{TT}_{ij} \left( k, \tau^\prime \right) ~ d\tau^\prime \right]\\
         &\quad - \frac{1}{a(\tau) ~ m_p^2} \frac{d}{d\tau} \left[ \cos (k \tau) \int_{\tau_i}^\tau \frac{a \left( \tau^\prime \right)}{k} \sin \left( k \tau^\prime \right) ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime \right]\\
-        =& -\mathcal{H} h_{ij} + \frac{1}{a(\tau) ~ m_p^2} \cos (k \tau) \int_{\tau_i}^{\tau} a \left( \tau^\prime \right) ~ \cos \left( k \tau^\prime \right) ~ \Pi^{TT}_{ij} \left( k, \tau^\prime \right) ~ d\tau^\prime \\
-        &\quad + \colorcancel{red}{\frac{1}{k m_p^2} ~ \sin (k \tau) ~ \cos \left( k \tau \right) ~ \Pi^{TT}_{ij} \left( k, \tau \right)}\\
-        &\quad + \frac{1}{a(\tau) ~ m_p^2} \sin (k \tau) \int_{\tau_i}^\tau a \left( \tau^\prime \right) \sin \left( k \tau^\prime \right) ~ \Pi_{ij}^{TT} (k, \tau^\prime) ~ d\tau^\prime \\
-        &\quad - \colorcancel{red}{\frac{1}{k m_p^2} ~ \cos (k \tau) ~ \sin \left( k \tau \right) ~ \Pi^{TT}_{ij} \left( k, \tau \right)}\\
         =& -\mathcal{H} h_{ij} + \frac{1}{a(\tau) ~ m_p^2} \int_{\tau_i}^{\tau} a \left( \tau^\prime \right) ~ \cos \left[ k \left( \tau - \tau^\prime \right) \right] ~ \Pi^{TT}_{ij} \left( k, \tau^\prime \right) ~ d\tau^\prime
     \end{split}
 \end{equation*}
@@ -176,7 +172,7 @@ A la hora de querer calcular las condiciones iniciales para el campo inflatón a
 \begin{equation}
     \epsilon = \frac{m_p^2}{2} \left[ \frac{V^{\prime} \left( \phi \right)}{V \left( \phi \right)} \right]^2,
 \end{equation}
-dado que considerar $\epsilon \simeq 1$ denota el final de la etapa inflacionaria. A su vez, para calular la velocidad de los campos se pidió que la energía cinética del campo sea comparable con la energía potencial, dando como condición\footnote{El signo negativo en la velocidad está dado ya que se espera que el campo decaiga y por tanto su amplitud debe disminuir.}
+dado que considerar $\epsilon \simeq 1$ denota el final de la etapa inflacionaria. A su vez, para calcular la velocidad de los campos se pidió que la energía cinética del campo sea comparable con la energía potencial, dando como condición\footnote{El signo negativo en la velocidad está dado ya que se espera que el campo decaiga y por tanto su amplitud debe disminuir.}
 \begin{equation}
     \dot{\phi}_0 = - \sqrt{2 V \left( \phi_0 \right)}. 
 \end{equation}
