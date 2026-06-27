@@ -39,7 +39,7 @@ Other parameters:
              OccNumb       true                
     spectraVerbosity       0                   
 
-The simulation started on the d30 m5 y2026 around h4m28.
-It will be running on a grid of (1,1,1) cores.The simulation finished on the d30 m5 y2026 around h4m37.
-The timer indicates that it ran for 541.458s.
-As it ran on 1 cores, this corresponds to 0.150405 core hours.
+The simulation started on the d27 m6 y2026 around h2m25.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d27 m6 y2026 around h2m35.
+The timer indicates that it ran for 573.217s.
+As it ran on 1 cores, this corresponds to 0.159227 core hours.

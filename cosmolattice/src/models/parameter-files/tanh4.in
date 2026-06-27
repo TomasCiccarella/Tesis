@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/lambda_9e-14/L4_6.078e62/
+outputfile = ./data/DEF/lambda_9e-14/L4_1e72/
 
 #Evolution
 expansion = true
@@ -22,9 +22,9 @@ initial_amplitudes = 6.5645e18 0 # homogeneous amplitudes in GeV
 initial_momenta = -2.07694e31 0    # homogeneous amplitudes in GeV2
 
 #Model Parameters
-M = 9.065245012827533e+18
-Lambda4 = 6.078e62
-q = 64.64
+M = 1.8257418583505536e+21
+Lambda4 = 1e72
+q = 5050
 
 #GWs
 GWprojectorType = 1

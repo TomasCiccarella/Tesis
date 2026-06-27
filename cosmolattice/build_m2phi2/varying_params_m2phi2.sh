@@ -7,7 +7,7 @@ param_file="../src/models/parameter-files/m2phi2.in"
 q_fixed=16000
 
 # Valores de m para variar (en notación científica o decimal)
-ms=(2.435e11 2.435e15 2.435e16)
+ms=(2.435e12 2.435e13 2.435e14 2.435e15)
 
 for m in "${ms[@]}"
 do
