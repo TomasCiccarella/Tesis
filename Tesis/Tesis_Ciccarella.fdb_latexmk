@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Tesis_Ciccarella"] 1782597916.89844 "Tesis_Ciccarella.aux" "Tesis_Ciccarella.bbl" "Tesis_Ciccarella" 1782598516.9327 0
+["bibtex Tesis_Ciccarella"] 1782597916.89844 "Tesis_Ciccarella.aux" "Tesis_Ciccarella.bbl" "Tesis_Ciccarella" 1782599618.05144 0
   "./references.bib" 1782514792.66596 27254 d073eff629c21afc031bb1c65631f479 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Tesis_Ciccarella.aux" 1782598516.15534 46314 4c989ad5f1743b8a6514ee74c50a0417 "pdflatex"
+  "Tesis_Ciccarella.aux" 1782599617.31926 46314 4c989ad5f1743b8a6514ee74c50a0417 "pdflatex"
   (generated)
   "Tesis_Ciccarella.bbl"
   "Tesis_Ciccarella.blg"
   (rewritten before read)
-["pdflatex"] 1782598505.62127 "/home/tomy/Desktop/UBA/Tesis/Git/Tesis/Tesis_Ciccarella.tex" "Tesis_Ciccarella.pdf" "Tesis_Ciccarella" 1782598516.93312 0
+["pdflatex"] 1782599607.18444 "/home/tomy/Desktop/UBA/Tesis/Git/Tesis/Tesis_Ciccarella.tex" "Tesis_Ciccarella.pdf" "Tesis_Ciccarella" 1782599618.05191 0
   "/etc/texmf/web2c/texmf.cnf" 1754028040.36857 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/tomy/Desktop/UBA/Tesis/Git/Tesis/Tesis_Ciccarella.tex" 1782596703.85601 11330 bdd18b9142670267626bf6081787ba28 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -261,11 +261,11 @@
   "4.cap4.tex" 1782597643.80599 56094 4be6f9ff5c54969148e67eefe1843c2d ""
   "5.conclusiones.tex" 1782598505.03212 3835 f5e282c3cc43d97260fd0a35a75fcde3 ""
   "Anexo.tex" 1782485310.2679 36563 4d33656a9ada3d8db1421856c8ed0fa5 ""
-  "Tesis_Ciccarella.aux" 1782598516.15534 46314 4c989ad5f1743b8a6514ee74c50a0417 "pdflatex"
+  "Tesis_Ciccarella.aux" 1782599617.31926 46314 4c989ad5f1743b8a6514ee74c50a0417 "pdflatex"
   "Tesis_Ciccarella.bbl" 1782597917.14529 11349 24b6ee35f6bd69321689a9d615405898 "bibtex Tesis_Ciccarella"
-  "Tesis_Ciccarella.out" 1782598516.16434 5863 eeea946b9e327b66082516010128dbed "pdflatex"
+  "Tesis_Ciccarella.out" 1782599617.32826 5863 eeea946b9e327b66082516010128dbed "pdflatex"
   "Tesis_Ciccarella.tex" 1782596703.85601 11330 bdd18b9142670267626bf6081787ba28 ""
-  "Tesis_Ciccarella.toc" 1782598516.16536 2772 177fcc70b7b71c1e8e2849438b3099fa "pdflatex"
+  "Tesis_Ciccarella.toc" 1782599617.32926 2772 177fcc70b7b71c1e8e2849438b3099fa "pdflatex"
   "UBA.jpg" 1699360384 23467 e98f0acf684eb82f4d30e124cc0a2db2 ""
   "figures/Background_lphi4.pdf" 1782319017.20034 15250 f4e296a80d6376c27125d67e149fb987 ""
   "figures/Broad_Resonance_lphi4.pdf" 1781701077.39997 24563 45394399d219f45b93bee6741517a9ed ""
@@ -275,7 +275,7 @@
   "figures/CosmoLattice_GW_Scale_Analysis_lphi4tanh4.pdf" 1780940458.27519 36442 422f52b05e1e3f9ad2bed40f216c3092 ""
   "figures/CosmoLattice_GW_Scale_Analysis_m2phi2tanh2starobinsky.pdf" 1781023005.8135 44050 3c113944621a1c59187d5532be91f00b ""
   "figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf" 1782594802.76281 134390 58d39cc5821e623c4ce9c5197f56a4bb ""
-  "figures/CosmoLattice_GW_Spectra_today_m2phi2tanh2starobinsky.pdf" 1781905636.60241 177161 befd47beae4bcc9377e55e679395f01c ""
+  "figures/CosmoLattice_GW_Spectra_today_m2phi2tanh2starobinsky.pdf" 1782563733.43887 183919 3092b76c121240847026c3357463e159 ""
   "figures/CosmoLattice_background_a_lphi4tanh4.pdf" 1780940436.62875 16276 491017f5450c9a2b8f80fa4d948f1071 ""
   "figures/CosmoLattice_background_a_m2phi2tanh2Starobinsky.pdf" 1781022983.9492 20683 79b42ac7c0046cbb48d4e4a8e6f4c3da ""
   "figures/CosmoLattice_background_phi_lphi4tanh4.pdf" 1780940438.33697 54184 38a00b6903b5f3d8d5cf6f2e7a5d67cd ""
@@ -295,7 +295,7 @@
   "figures/Omega_lphi4_varq.pdf" 1782470626.55661 152320 6b4ba2265f37c518439ca093e67d60e7 ""
   "figures/Omega_m2phi2_varm.pdf" 1782588059.44939 228309 dffd9577a110b468aa601a9275541264 ""
   "figures/Omega_m2phi2_varq.pdf" 1782576263.7038 224465 febddfb898efed3382a36ae4f7fd13e3 ""
-  "figures/Omega_tanh2_varM.pdf" 1782589596.81722 182193 0b514d1648273213053224edbd2bf4e2 ""
+  "figures/Omega_tanh2_varM.pdf" 1782599474.78659 183661 6806fdcced089bd670536ee84f1f06d8 ""
   "figures/Omega_tanh4_varL4.pdf" 1782564455.93241 378894 947ebc7dee4ee6c1b683a5fa0d403fa4 ""
   "figures/Pchi_lineal.pdf" 1782521549.58129 37808 3ed4bbfae509631bb222ba48ae972db5 ""
   "figures/background_m2phi2.pdf" 1782316723.46736 17573 ec0fe8c6eb52f579255a552a04c043c4 ""
