@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {3.1}Resonancia Paramétrica}{27}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Análisis de Floquet}{31}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Dinámica con expansión}{36}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Producción de ondas gravitacionales en el régimen lineal}{39}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Producción de ondas gravitacionales en el régimen lineal de la evolución de los campos}{39}{section.3.4}%
 \contentsline {chapter}{\numberline {4}\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{43}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Discretización y parámetros de la red}{46}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Estudio del potencial $\lambda \phi ^4$ a tiempos cortos}{47}{section.4.2}%
