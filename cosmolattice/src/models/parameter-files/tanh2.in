@@ -1,5 +1,5 @@
 #Output
-outputfile = ./data/Def/
+outputfile = ./data/varM/M_2.435e20/
 
 #Evolution
 expansion = true
@@ -22,8 +22,8 @@ initial_amplitudes = 3.39928e18 0 # homogeneous amplitudes in GeV
 initial_momenta = -3.0714e31 0    # homogeneous amplitudes in GeV2
 
 #Model Parameters
-M = 2.435e19
-Lambda4 = 1.7996e69
+M = 2.435e20
+Lambda4 = 1.7996e71
 q = 16000
 
 #GWs
