@@ -1,0 +1,307 @@
+\documentclass{beamer}
+\input{Librerias.tex}
+\usepackage{multicol,booktabs,calligra}
+\usepackage{chancery}
+\usepackage{contour}
+\usepackage{xspace}
+\usepackage{bm}
+\contourlength{0.4pt}
+
+% 1. Creamos el interruptor (por defecto está encendido)
+\newif\ifmostrarindice
+\mostrarindicetrue
+
+% 2. Modificamos el comando para que respete el interruptor
+\AtBeginSection[]
+{
+  \ifmostrarindice
+    \begin{frame}
+      \frametitle{Índice}
+      \tableofcontents[currentsection, hideothersubsections]
+    \end{frame}
+  \fi
+  \mostrarindicetrue % Importante: se vuelve a encender para la próxima sección
+}
+
+\newcommand{\CosmoLattice}{\ensuremath{\mathcal{C}}\text{osmo}\ensuremath{\mathcal{L}}\text{attice}\xspace}
+
+\definecolor{ForestGreen}{rgb}{0.13, 0.55, 0.13}
+\definecolor{esmerald}{RGB}{80, 200, 120}
+\definecolor{gold}{RGB}{212, 175, 55}
+\definecolor{silver}{RGB}{192, 192, 192}
+
+\begin{document}
+    \begin{frame}
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                \node at (-0.5,0) {\bfseries \LARGE \color{black}\contour{gold}{\shortstack{Producción de ondas gravitacionales\\durante el Recalentamiento: análisis\\ teórico y simulaciones con\\\CosmoLattice}}};
+
+                \node at (-0.5,-2.25) {\texttt{\color{black}\contour{silver}{Tomás Alejandro Ciccarella}}};
+
+                \node at (-2.75, -4.5) {\texttt{\textbf{Director:} Nahuel Miron Granese}};
+                \node at (-2.975, -5) {\texttt{\textbf{Codirector:} Esteban Calzetta}};
+
+                %\draw[fill = red, rounded corners = 2] (2.4,-4.35) rectangle ++(2.2,-0.7);
+                %\draw[fill = white, rounded corners = 2] (2.5,-4.45) rectangle ++(2,-0.5);
+                \node at (-5,-5.5) {\textrm{08/07/2026}};
+
+                %\node at (-3.5,-5.5) {\includegraphics[scale = 0.2]{Figures/logo_DF.png}};
+                \node at (3,-4.5) {\includegraphics[scale = 0.15]{Figures/logo_UBA.png}};
+            \end{tikzpicture}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}{\bf \textcolor{black}{Hoja de ruta}}
+        \tableofcontents[hideallsubsections]
+    \end{frame}
+
+    \begin{frame}
+        \begin{figure}[H]
+            \begin{tikzpicture}
+                \node at (0,0) {\Huge \color{black}\contour{gold}{\uppercase{Introducción}}};                
+            \end{tikzpicture}
+        \end{figure}
+    \end{frame}
+
+    \section{Introducción}
+
+        \subsection{Cosmología}
+
+            \begin{frame}{Historia del Universo}
+                \begin{center}
+                    \textrm{``Our whole Universe was in a hot dense state. Then nearly 14 billion years ago expansion started...''}
+                    
+                    \textrm{``...And all started with a Big Bang''}
+                \end{center}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = 0.8\linewidth]{Figures/Cosmologia_etapas.png}
+                \end{figure}
+            \end{frame}
+
+            \begin{frame}{Marco teórico: FLRW + Ecuaciones de Friedmann}
+                
+            \end{frame}
+
+            \begin{frame}{Marco teórico: Perturbaciones Cosmológicas y SVT}
+                
+            \end{frame}
+
+            \begin{frame}{Inflación}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = \linewidth]{Figures/slow-roll.pdf}
+                \end{figure}
+            \end{frame}
+
+            \begin{frame}{Recalentamiento}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = \linewidth]{Figures/Reheating.png}
+                \end{figure}
+            \end{frame}
+
+        \subsection{Ondas Gravitacionales}
+
+            \begin{frame}{¿Que son las GWs?}
+
+            \end{frame}
+
+            \begin{frame}{Polarizaciones}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = 0.6\linewidth]{Figures/Polarizaciones_GWs.png}
+                \end{figure}
+            \end{frame}
+
+            \begin{frame}{GWs en espacios curvos}
+                
+            \end{frame}
+
+            \begin{frame}{Fondos estocásticos}
+                
+            \end{frame}
+
+            \begin{frame}{Fuentes y detectores}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = 0.9\linewidth]{Figures/GW_detectors.png}
+                \end{figure}
+            \end{frame}
+            
+    \begin{frame}
+        \begin{figure}[H]
+            \begin{tikzpicture}
+                \node at (0,0) {\Huge \color{black}\contour{gold}{\uppercase{\textit{Preheating} Lineal}}};                
+            \end{tikzpicture}
+        \end{figure}
+    \end{frame}
+
+    \section{\textit{Preheating} lineal}
+
+        \subsection{Resonancia Paramétrica}
+
+            \begin{frame}{\textit{Preheating}}
+            
+            \end{frame}
+
+            \begin{frame}{\textit{Background}}
+                
+            \end{frame}
+
+            \begin{frame}{Perturbaciones}
+                
+            \end{frame}
+
+        \subsection{Dinámica de los campos sin expansión: análisis de Floquet}
+
+            \begin{frame}{Matriz de monodromía}
+                
+            \end{frame}
+
+            \begin{frame}{Tablas de inestabilidades}
+                
+            \end{frame}
+
+            \begin{frame}{Amplificación por bandas: analisis exponente de Floquet}
+                
+            \end{frame}
+
+            \begin{frame}{Tipos de resonancia: \textit{Narrow resonance}}
+                
+            \end{frame}
+
+            \begin{frame}{Tipos de resonancia: \textit{Broad resonance}}
+                
+            \end{frame}
+
+        \subsection{Dinámica de los campos con expansión del universo}
+
+            \begin{frame}{Caso $m^2 \phi^2$: \textit{Stochastic resonance}}
+
+            \end{frame}
+
+            \begin{frame}{Caso $\lambda \phi^4$}
+            
+            \end{frame}
+
+        \subsection{Producción de ondas gravitacionales}
+
+            \begin{frame}{Espectro de potencias de $\chi$}
+                
+            \end{frame}
+
+            \begin{frame}{Espectro de potencias para las ondas gravitacionales}
+                
+            \end{frame}
+
+    \begin{frame}
+        \begin{figure}[H]
+            \begin{tikzpicture}
+                \node at (0,0) {\Huge \color{black}\contour{gold}{\uppercase{\CosmoLattice}}};                
+            \end{tikzpicture}
+        \end{figure}
+    \end{frame}
+
+    \section{\CosmoLattice}
+
+        \subsection{¿Qué es?}
+
+            \begin{frame}{¿Qué es?}
+                
+            \end{frame}
+
+            \begin{frame}{Ecuaciones}
+                
+            \end{frame}
+
+        \subsection{Comparación a tiempos cortos}
+
+            \begin{frame}{Espectro de potencias para $\chi$}
+                
+            \end{frame}
+
+            \begin{frame}{Número de partículas $\chi$}
+                
+            \end{frame}
+
+            \begin{frame}{Espectros de potencias para las ondas gravitacionales}
+                
+            \end{frame}
+        
+        \subsection{Modelos de estudio}
+
+            \begin{frame}{General}
+                
+            \end{frame}
+
+            \begin{frame}{Modelos de tipo radiación}
+                
+            \end{frame}
+
+            \begin{frame}{Modelos de tipo materia}
+                
+            \end{frame}
+
+        \subsection{Comparación para modelos de tipo radiación}
+
+            \begin{frame}{Comparación general 1}
+                
+            \end{frame}
+
+            \begin{frame}{Comparación general 2}
+                
+            \end{frame}
+
+            \begin{frame}{Barrido en los parámetros}
+                
+            \end{frame}
+
+        \subsection{Comparación para modelos de tipo materia}
+
+            \begin{frame}{Comparación general 1}
+                
+            \end{frame}
+
+            \begin{frame}{Comparación general 2}
+                
+            \end{frame}
+
+            \begin{frame}{Barrido en los parámetros}
+                
+            \end{frame}
+
+        \subsection{Sensibilidad observacional y perspectivas de detección}
+
+            \begin{frame}{Deformación característica}
+                
+            \end{frame}
+
+            \begin{frame}{Perspectivas de detección}
+                
+            \end{frame}
+
+    \mostrarindicefalse % Apagamos el índice solo para la que viene
+
+    \begin{frame}
+        \begin{figure}[H]
+            \begin{tikzpicture}
+                \node at (0,0) {\Huge \color{black}\contour{gold}{\uppercase{Conclusiones}}};                
+            \end{tikzpicture}
+        \end{figure}
+    \end{frame}
+
+    \section{Conclusiones}
+
+        \begin{frame}
+            
+        \end{frame}
+
+    \begin{frame}
+        \begin{center}
+            \Huge{Muchas Gracias}
+        \end{center}
+    \end{frame}
+
+\end{document}
