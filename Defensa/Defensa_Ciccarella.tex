@@ -3,6 +3,7 @@
 \usepackage{multicol,booktabs,calligra}
 \usepackage{chancery}
 \usepackage{contour}
+\usepackage{subcaption}
 \usepackage{xspace}
 \usepackage{bm}
 \contourlength{0.4pt}
@@ -30,6 +31,9 @@
 \definecolor{gold}{RGB}{212, 175, 55}
 \definecolor{silver}{RGB}{192, 192, 192}
 
+\pagecolor{black}
+\color{white}
+
 \begin{document}
     \begin{frame}
         \begin{figure}[H]
@@ -39,8 +43,8 @@
 
                 \node at (-0.5,-2.25) {\texttt{\color{black}\contour{silver}{Tomás Alejandro Ciccarella}}};
 
-                \node at (-2.75, -4.5) {\texttt{\textbf{Director:} Nahuel Miron Granese}};
-                \node at (-2.975, -5) {\texttt{\textbf{Codirector:} Esteban Calzetta}};
+                \node at (-3, -4.5) {\texttt{\textbf{Director:} Nahuel Mirón Granese}};
+                \node at (-3.175, -5) {\texttt{\textbf{Codirector:} Esteban Calzetta}};
 
                 %\draw[fill = red, rounded corners = 2] (2.4,-4.35) rectangle ++(2.2,-0.7);
                 %\draw[fill = white, rounded corners = 2] (2.5,-4.45) rectangle ++(2,-0.5);
@@ -69,22 +73,48 @@
         \subsection{Cosmología}
 
             \begin{frame}{Historia del Universo}
-                \begin{center}
-                    \textrm{``Our whole Universe was in a hot dense state. Then nearly 14 billion years ago expansion started...''}
+                %\begin{center}
+                %    \textrm{``Our whole Universe was in a hot dense state. Then nearly 14 billion years ago expansion started...''}
                     
-                    \textrm{``...And all started with a Big Bang''}
-                \end{center}
+                %    \textrm{``...And all started with a Big Bang''}
+                %\end{center}
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width = 0.8\linewidth]{Figures/Cosmologia_etapas.png}
+                    \begin{tikzpicture}
+                        \node at (0,0) {\includegraphics[width = 0.9\linewidth]{Figures/Cosmologia_etapas.png}};
+                    \end{tikzpicture}
                 \end{figure}
             \end{frame}
 
-            \begin{frame}{Marco teórico: FLRW + Ecuaciones de Friedmann}
-                
+            \begin{frame}{FLRW + Ecuaciones de Friedmann}
+                \small{
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] La geometría del espacio-tiempo está descripta por 
+                        \begin{equation*}
+                            ds^2 = - dt^2 + a^2 (t) ~ \left[ \frac{dr^2}{1 - K r^2} + r^2 \left( d\theta^2 + \sin^2 \theta ~ d\varphi^2 \right) \right]
+                        \end{equation*}
+
+                    \item[\textcolor{brown}{$\bullet$}] La energía y materia se puede describir como un fluido ideal
+                        \begin{equation*}
+                            T_{\mu\nu} = (\rho + P) u_\mu u_\nu + P ~ g_{\mu\nu}
+                        \end{equation*}
+                        
+                    \item[\textcolor{brown}{$\bullet$}] Las ecuaciones que describen la dinámica del universo seran
+                        \begin{equation*}
+                            \left( \frac{\dot{a}}{a} \right)^2 = \frac{8 \pi G}{3} \rho \hspace{2cm} \frac{\ddot{a}}{a} = - \frac{4 \pi G}{3} (\rho + 3 P)
+                        \end{equation*}
+                        \begin{equation*}
+                            \dot{\rho} + 3 H (\rho + P) = 0
+                        \end{equation*}
+                        \vspace{-0.4cm}
+                        \begin{itemize}
+                            \item[\textcolor{cyan}{$\Longrightarrow$}] Se agrega una ecuación de estado: $P = \omega \rho$, siendo $\omega = 0$ para materia, $\omega = \frac{1}{3}$ para radiación y $\omega = -1$ para energía oscura.
+                        \end{itemize}
+                \end{itemize}
+                }                
             \end{frame}
 
-            \begin{frame}{Marco teórico: Perturbaciones Cosmológicas y SVT}
+            \begin{frame}{Perturbaciones Cosmológicas y SVT}
                 
             \end{frame}
 
@@ -129,6 +159,15 @@
                     \includegraphics[width = 0.9\linewidth]{Figures/GW_detectors.png}
                 \end{figure}
             \end{frame}
+
+            \begin{frame}{Métodos de detección}
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \node at (0,0) {\includegraphics[scale = 0.4]{Figures/LIGO.jpg}};
+                    \end{tikzpicture}
+                \end{figure}                
+            \end{frame}
             
     \begin{frame}
         \begin{figure}[H]
@@ -147,7 +186,20 @@
             \end{frame}
 
             \begin{frame}{\textit{Background}}
-                
+                \begin{figure}[H]
+                    \centering
+                    \begin{subfigure}[t]{0.7\linewidth}
+                        \centering
+                        \includegraphics[width = \linewidth]{Figures/background_m2phi2.pdf}
+                        \subcaption{$m^2 \phi^2$}
+                    \end{subfigure}
+
+                    \begin{subfigure}[b]{0.7\linewidth}
+                        \centering
+                        \includegraphics[width = \linewidth]{Figures/background_lphi4.pdf}
+                        \subcaption{$\lambda \phi^4$}
+                    \end{subfigure}
+                \end{figure}
             \end{frame}
 
             \begin{frame}{Perturbaciones}
@@ -156,30 +208,57 @@
 
         \subsection{Dinámica de los campos sin expansión: análisis de Floquet}
 
-            \begin{frame}{Matriz de monodromía}
+            \begin{frame}{Análisis de Floquet}
                 
             \end{frame}
 
             \begin{frame}{Tablas de inestabilidades}
-                
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \node at (0,0) {\includegraphics[width = \linewidth]{Figures/Floquet_lphi4.pdf}};
+                    \end{tikzpicture}
+                \end{figure}
             \end{frame}
 
             \begin{frame}{Amplificación por bandas: analisis exponente de Floquet}
-                
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \node at (0,0) {\includegraphics[width = 0.9\linewidth]{Figures/muk_lphi4.pdf}};
+                    \end{tikzpicture}
+                \end{figure}
             \end{frame}
 
             \begin{frame}{Tipos de resonancia: \textit{Narrow resonance}}
-                
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \node at (-3,2) {\includegraphics[width = 0.5\linewidth]{Figures/narrow_resonance_m2phi2.pdf}};
+                        \node at (1.5,-2) {\includegraphics[width = 0.6\linewidth]{Figures/nk_Narrow_Resonance_m2phi2.pdf}};
+                    \end{tikzpicture}
+                \end{figure}
             \end{frame}
 
             \begin{frame}{Tipos de resonancia: \textit{Broad resonance}}
-                
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \node at (-3,2) {\includegraphics[width = 0.5\linewidth]{Figures/Broad_resonance_m2phi2.pdf}};
+                        \node at (1.5,-2) {\includegraphics[width = 0.6\linewidth]{Figures/nk_Broad_Resonance_m2phi2.pdf}};
+                    \end{tikzpicture}
+                \end{figure}
             \end{frame}
 
         \subsection{Dinámica de los campos con expansión del universo}
 
             \begin{frame}{Caso $m^2 \phi^2$: \textit{Stochastic resonance}}
-
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \node at (0,0) {\includegraphics[width = 0.85\linewidth]{Figures/nk_Broad_resonance_expansion_m2phi2.pdf}};
+                    \end{tikzpicture}
+                \end{figure}
             \end{frame}
 
             \begin{frame}{Caso $\lambda \phi^4$}
@@ -189,11 +268,21 @@
         \subsection{Producción de ondas gravitacionales}
 
             \begin{frame}{Espectro de potencias de $\chi$}
-                
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \node at (0,0) {\includegraphics[width = 0.85\linewidth]{Figures/Pchi_lineal.pdf}};
+                    \end{tikzpicture}
+                \end{figure}
             \end{frame}
 
             \begin{frame}{Espectro de potencias para las ondas gravitacionales}
-                
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \node at (0,0) {\includegraphics[width = 0.85\linewidth]{Figures/Omega_lineal.pdf}};
+                    \end{tikzpicture}
+                \end{figure}
             \end{frame}
 
     \begin{frame}
@@ -209,7 +298,12 @@
         \subsection{¿Qué es?}
 
             \begin{frame}{¿Qué es?}
-                
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \node at (0,0) {\includegraphics[scale = 0.4]{Figures/CL_Icon.png}};
+                    \end{tikzpicture}
+                \end{figure}
             \end{frame}
 
             \begin{frame}{Ecuaciones}
@@ -218,30 +312,46 @@
 
         \subsection{Comparación a tiempos cortos}
 
-            \begin{frame}{Espectro de potencias para $\chi$}
-                
-            \end{frame}
-
-            \begin{frame}{Número de partículas $\chi$}
-                
+            \begin{frame}{Estudio de Floquet - tiempos cortos}
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \node at (-2.25,2) {\includegraphics[width = 0.35\linewidth]{Figures/CL_Pchi_short1.png}};
+                        \node at (2.25,2) {\includegraphics[width = 0.35\linewidth]{Figures/CL_Pchi_short2.png}};
+                        \node at (-2.25,-2) {\includegraphics[width = 0.35\linewidth]{Figures/CL_nk_short1.png}};
+                        \node at (2.25,-2) {\includegraphics[width = 0.35\linewidth]{Figures/CL_nk_short2.png}};
+                    \end{tikzpicture}
+                \end{figure}
             \end{frame}
 
             \begin{frame}{Espectros de potencias para las ondas gravitacionales}
-                
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                        \node at (-2.5,0) {\includegraphics[width = 0.4\linewidth]{Figures/CL_Omega_short1.png}};
+                        \node at (2.5,0) {\includegraphics[width = 0.4\linewidth]{Figures/CL_Omega_short2.png}};
+                    \end{tikzpicture}
+                \end{figure}
             \end{frame}
         
         \subsection{Modelos de estudio}
 
             \begin{frame}{General}
-                
+                    
             \end{frame}
 
             \begin{frame}{Modelos de tipo radiación}
-                
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = 0.7\linewidth]{Figures/comparacion_w13.pdf}
+                \end{figure}    
             \end{frame}
 
             \begin{frame}{Modelos de tipo materia}
-                
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = 0.7\linewidth]{Figures/comparacion_w0.pdf}
+                \end{figure}    
             \end{frame}
 
         \subsection{Comparación para modelos de tipo radiación}
@@ -279,7 +389,10 @@
             \end{frame}
 
             \begin{frame}{Perspectivas de detección}
-                
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = 0.8\linewidth]{Figures/GW_Strain_Spectrum.pdf}
+                \end{figure}
             \end{frame}
 
     \mostrarindicefalse % Apagamos el índice solo para la que viene
@@ -294,9 +407,17 @@
 
     \section{Conclusiones}
 
-        \begin{frame}
-            
-        \end{frame}
+        \subsection{Conclusiones}
+
+            \begin{frame}
+                
+            \end{frame}
+
+        \subsection{Perspectivas a futuro}
+        
+            \begin{frame}
+                
+            \end{frame}
 
     \begin{frame}
         \begin{center}
