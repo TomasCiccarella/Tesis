@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  2 JUL 2026 14:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  3 JUL 2026 04:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1264,265 +1264,295 @@ Package pdftex.def Info: Figures/Cosmologia_etapas.png  used on input line 87.
 
 ] [7
 
+] [8
+
+] [9
+
 ]
-<Figures/slow-roll.pdf, id=340, 1806.75pt x 722.7pt>
+<Figures/slow-roll.pdf, id=401, 1806.75pt x 722.7pt>
 File: Figures/slow-roll.pdf Graphic file (type pdf)
 <use Figures/slow-roll.pdf>
-Package pdftex.def Info: Figures/slow-roll.pdf  used on input line 126.
-(pdftex.def)             Requested size: 335.74263pt x 134.2929pt.
- [8
+Package pdftex.def Info: Figures/slow-roll.pdf  used on input line 199.
+(pdftex.def)             Requested size: 285.38327pt x 114.14565pt.
+ [10
 
  <./Figures/slow-roll.pdf>]
-<Figures/Reheating.png, id=376, 1072.005pt x 582.175pt>
+<Figures/Reheating.png, id=442, 1072.005pt x 582.175pt>
 File: Figures/Reheating.png Graphic file (type png)
 <use Figures/Reheating.png>
-Package pdftex.def Info: Figures/Reheating.png  used on input line 133.
-(pdftex.def)             Requested size: 335.74263pt x 182.32898pt.
- [9
-
- <./Figures/Reheating.png>] [10
-
-]
-<Figures/Polarizaciones_GWs.png, id=428, 548.0475pt x 530.98375pt>
-File: Figures/Polarizaciones_GWs.png Graphic file (type png)
-<use Figures/Polarizaciones_GWs.png>
-Package pdftex.def Info: Figures/Polarizaciones_GWs.png  used on input line 146.
-(pdftex.def)             Requested size: 201.44762pt x 195.17265pt.
+Package pdftex.def Info: Figures/Reheating.png  used on input line 210.
+(pdftex.def)             Requested size: 285.38327pt x 154.97742pt.
  [11
 
- <./Figures/Polarizaciones_GWs.png>] [12
+ <./Figures/Reheating.png>] [12
 
 ] [13
 
+] [14
+
 ]
-<Figures/GW_detectors.png, id=506, 844.15375pt x 672.5125pt>
-File: Figures/GW_detectors.png Graphic file (type png)
-<use Figures/GW_detectors.png>
-Package pdftex.def Info: Figures/GW_detectors.png  used on input line 161.
-(pdftex.def)             Requested size: 302.1663pt x 240.72925pt.
-
-Overfull \vbox (12.15738pt too high) detected at line 161
- []
-
-[14
-
- <./Figures/GW_detectors.png>]
-<Figures/LIGO.jpg, id=534, 630.355pt x 317.185pt>
-File: Figures/LIGO.jpg Graphic file (type jpg)
-<use Figures/LIGO.jpg>
-Package pdftex.def Info: Figures/LIGO.jpg  used on input line 170.
-(pdftex.def)             Requested size: 252.13753pt x 126.87173pt.
+<Figures/Polarizaciones_GWs.png, id=545, 548.0475pt x 530.98375pt>
+File: Figures/Polarizaciones_GWs.png Graphic file (type png)
+<use Figures/Polarizaciones_GWs.png>
+Package pdftex.def Info: Figures/Polarizaciones_GWs.png  used on input line 313.
+(pdftex.def)             Requested size: 137.01154pt x 132.7456pt.
  [15
 
- <./Figures/LIGO.jpg>]
-contour: Using 16 copies for `\uppercase {\textit {Preheating} Lineal}' on input line 178.
-[16
+ <./Figures/Polarizaciones_GWs.png>] [16
 
-] (./Defensa_Ciccarella.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [17
+] [17
 
 ] [18
 
 ]
-<Figures/background_m2phi2.pdf, id=649, 1300.86pt x 578.16pt>
-File: Figures/background_m2phi2.pdf Graphic file (type pdf)
-<use Figures/background_m2phi2.pdf>
-Package pdftex.def Info: Figures/background_m2phi2.pdf  used on input line 203.
-(pdftex.def)             Requested size: 235.01881pt x 104.45247pt.
-<Figures/background_lphi4.pdf, id=650, 1300.86pt x 433.62pt>
-File: Figures/background_lphi4.pdf Graphic file (type pdf)
-<use Figures/background_lphi4.pdf>
-Package pdftex.def Info: Figures/background_lphi4.pdf  used on input line 203.
-(pdftex.def)             Requested size: 235.01881pt x 78.33936pt.
+<Figures/GW_detectors.png, id=651, 844.15375pt x 672.5125pt>
+File: Figures/GW_detectors.png Graphic file (type png)
+<use Figures/GW_detectors.png>
+Package pdftex.def Info: Figures/GW_detectors.png  used on input line 376.
+(pdftex.def)             Requested size: 295.45824pt x 235.38289pt.
 
-Overfull \vbox (3.2824pt too high) detected at line 203
+Overfull \vbox (6.81102pt too high) detected at line 376
  []
 
 [19
 
- <./Figures/background_m2phi2.pdf> <./Figures/Background_lphi4.pdf>] [20
+ <./Figures/GW_detectors.png>]
+<Figures/EMRC.jpg, id=679, 166.92451pt x 119.59726pt>
+File: Figures/EMRC.jpg Graphic file (type jpg)
+<use Figures/EMRC.jpg>
+Package pdftex.def Info: Figures/EMRC.jpg  used on input line 398.
+(pdftex.def)             Requested size: 100.15547pt x 71.7589pt.
+<Figures/LIGO.jpg, id=680, 630.355pt x 317.185pt>
+File: Figures/LIGO.jpg Graphic file (type jpg)
+<use Figures/LIGO.jpg>
+Package pdftex.def Info: Figures/LIGO.jpg  used on input line 398.
+(pdftex.def)             Requested size: 126.06876pt x 63.43587pt.
+<Figures/PTA.png, id=681, 177.66376pt x 237.88875pt>
+File: Figures/PTA.png Graphic file (type png)
+<use Figures/PTA.png>
+Package pdftex.def Info: Figures/PTA.png  used on input line 398.
+(pdftex.def)             Requested size: 71.06424pt x 95.15381pt.
+<Figures/LISA.png, id=682, 361.35pt x 280.04625pt>
+File: Figures/LISA.png Graphic file (type png)
+<use Figures/LISA.png>
+Package pdftex.def Info: Figures/LISA.png  used on input line 398.
+(pdftex.def)             Requested size: 90.33728pt x 70.01138pt.
+<Figures/CMB.jpg, id=683, 2168.1pt x 1084.05pt>
+File: Figures/CMB.jpg Graphic file (type jpg)
+<use Figures/CMB.jpg>
+Package pdftex.def Info: Figures/CMB.jpg  used on input line 398.
+(pdftex.def)             Requested size: 108.41135pt x 54.20567pt.
+ [20
 
-] [21
-
-]
-<Figures/Floquet_lphi4.pdf, id=787, 722.7pt x 433.62pt>
-File: Figures/Floquet_lphi4.pdf Graphic file (type pdf)
-<use Figures/Floquet_lphi4.pdf>
-Package pdftex.def Info: Figures/Floquet_lphi4.pdf  used on input line 222.
-(pdftex.def)             Requested size: 335.74263pt x 201.44595pt.
-
-Overfull \hbox (7.25255pt too wide) in paragraph at lines 222--222
- [] 
- []
-
-[22
-
- <./Figures/Floquet_lphi4.pdf>]
-<Figures/muk_lphi4.pdf, id=846, 1084.05pt x 578.16pt>
-File: Figures/muk_lphi4.pdf Graphic file (type pdf)
-<use Figures/muk_lphi4.pdf>
-Package pdftex.def Info: Figures/muk_lphi4.pdf  used on input line 231.
-(pdftex.def)             Requested size: 302.1663pt x 161.15146pt.
- [23
-
- <./Figures/muk_lphi4.pdf>]
-<Figures/narrow_resonance_m2phi2.pdf, id=908, 867.24pt x 578.16pt>
-File: Figures/narrow_resonance_m2phi2.pdf Graphic file (type pdf)
-<use Figures/narrow_resonance_m2phi2.pdf>
-Package pdftex.def Info: Figures/narrow_resonance_m2phi2.pdf  used on input line 241.
-(pdftex.def)             Requested size: 167.8713pt x 111.90706pt.
-<Figures/nk_Narrow_Resonance_m2phi2.pdf, id=909, 867.24pt x 433.62pt>
-File: Figures/nk_Narrow_Resonance_m2phi2.pdf Graphic file (type pdf)
-<use Figures/nk_Narrow_Resonance_m2phi2.pdf>
-Package pdftex.def Info: Figures/nk_Narrow_Resonance_m2phi2.pdf  used on input line 241.
-(pdftex.def)             Requested size: 201.44762pt x 100.72298pt.
- [24
-
- <./Figures/narrow_resonance_m2phi2.pdf> <./Figures/nk_Narrow_Resonance_m2phi2.pdf>]
-<Figures/Broad_resonance_m2phi2.pdf, id=977, 867.24pt x 578.16pt>
-File: Figures/Broad_resonance_m2phi2.pdf Graphic file (type pdf)
-<use Figures/Broad_resonance_m2phi2.pdf>
-Package pdftex.def Info: Figures/Broad_resonance_m2phi2.pdf  used on input line 251.
-(pdftex.def)             Requested size: 167.8713pt x 111.90706pt.
-<Figures/nk_Broad_Resonance_m2phi2.pdf, id=978, 867.24pt x 433.62pt>
-File: Figures/nk_Broad_Resonance_m2phi2.pdf Graphic file (type pdf)
-<use Figures/nk_Broad_Resonance_m2phi2.pdf>
-Package pdftex.def Info: Figures/nk_Broad_Resonance_m2phi2.pdf  used on input line 251.
-(pdftex.def)             Requested size: 201.44762pt x 100.72298pt.
- [25
-
- <./Figures/broad_resonance_m2phi2.pdf> <./Figures/nk_Broad_Resonance_m2phi2.pdf>]
-<Figures/nk_Broad_resonance_expansion_m2phi2.pdf, id=1043, 1300.86pt x 578.16pt>
-File: Figures/nk_Broad_resonance_expansion_m2phi2.pdf Graphic file (type pdf)
-<use Figures/nk_Broad_resonance_expansion_m2phi2.pdf>
-Package pdftex.def Info: Figures/nk_Broad_resonance_expansion_m2phi2.pdf  used on input line 262.
-(pdftex.def)             Requested size: 285.38327pt x 126.83388pt.
- [26
-
- <./Figures/nk_Broad_resonance_expansion_m2phi2.pdf>] [27
-
-]
-<Figures/Pchi_lineal.pdf, id=1123, 1300.86pt x 578.16pt>
-File: Figures/Pchi_lineal.pdf Graphic file (type pdf)
-<use Figures/Pchi_lineal.pdf>
-Package pdftex.def Info: Figures/Pchi_lineal.pdf  used on input line 277.
-(pdftex.def)             Requested size: 285.38327pt x 126.83388pt.
- [28
-
- <./Figures/Pchi_lineal.pdf>]
-<Figures/Omega_lineal.pdf, id=1174, 1300.86pt x 578.16pt>
-File: Figures/Omega_lineal.pdf Graphic file (type pdf)
-<use Figures/Omega_lineal.pdf>
-Package pdftex.def Info: Figures/Omega_lineal.pdf  used on input line 286.
-(pdftex.def)             Requested size: 285.38327pt x 126.83388pt.
- [29
-
- <./Figures/Omega_lineal.pdf>]
-contour: Using 16 copies for `\uppercase {\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }' on input line 294.
-[30
+ <./Figures/EMRC.jpg> <./Figures/LIGO.jpg> <./Figures/PTA.png> <./Figures/LISA.png> <./Figures/CMB.jpg>]
+contour: Using 16 copies for `\uppercase {\textit {Preheating} Lineal}' on input line 406.
+[21
 
 ] (./Defensa_Ciccarella.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [31
+) [22
+
+] [23
 
 ]
-<Figures/CL_Icon.png, id=1293, 227.85126pt x 227.85126pt>
-File: Figures/CL_Icon.png Graphic file (type png)
-<use Figures/CL_Icon.png>
-Package pdftex.def Info: Figures/CL_Icon.png  used on input line 307.
-(pdftex.def)             Requested size: 91.13889pt x 91.13889pt.
- [32
+<Figures/background_m2phi2.pdf, id=799, 1300.86pt x 578.16pt>
+File: Figures/background_m2phi2.pdf Graphic file (type pdf)
+<use Figures/background_m2phi2.pdf>
+Package pdftex.def Info: Figures/background_m2phi2.pdf  used on input line 431.
+(pdftex.def)             Requested size: 235.01881pt x 104.45247pt.
+<Figures/background_lphi4.pdf, id=800, 1300.86pt x 433.62pt>
+File: Figures/background_lphi4.pdf Graphic file (type pdf)
+<use Figures/background_lphi4.pdf>
+Package pdftex.def Info: Figures/background_lphi4.pdf  used on input line 431.
+(pdftex.def)             Requested size: 235.01881pt x 78.33936pt.
 
- <./Figures/CL_Icon.png>] [33
+Overfull \vbox (3.2824pt too high) detected at line 431
+ []
+
+[24
+
+ <./Figures/background_m2phi2.pdf> <./Figures/Background_lphi4.pdf>] [25
+
+] [26
 
 ]
-<Figures/CL_Pchi_short1.png, id=1345, 342.27875pt x 302.12875pt>
-File: Figures/CL_Pchi_short1.png Graphic file (type png)
-<use Figures/CL_Pchi_short1.png>
-Package pdftex.def Info: Figures/CL_Pchi_short1.png  used on input line 325.
-(pdftex.def)             Requested size: 117.51196pt x 103.72742pt.
-<Figures/CL_Pchi_short2.png, id=1346, 346.29375pt x 302.12875pt>
-File: Figures/CL_Pchi_short2.png Graphic file (type png)
-<use Figures/CL_Pchi_short2.png>
-Package pdftex.def Info: Figures/CL_Pchi_short2.png  used on input line 325.
-(pdftex.def)             Requested size: 117.51196pt x 102.52417pt.
-<Figures/CL_nk_short1.png, id=1347, 327.2225pt x 292.09125pt>
-File: Figures/CL_nk_short1.png Graphic file (type png)
-<use Figures/CL_nk_short1.png>
-Package pdftex.def Info: Figures/CL_nk_short1.png  used on input line 325.
-(pdftex.def)             Requested size: 117.51196pt x 104.89426pt.
-<Figures/CL_nk_short2.png, id=1348, 327.2225pt x 292.09125pt>
-File: Figures/CL_nk_short2.png Graphic file (type png)
-<use Figures/CL_nk_short2.png>
-Package pdftex.def Info: Figures/CL_nk_short2.png  used on input line 325.
-(pdftex.def)             Requested size: 117.51196pt x 104.89426pt.
+<Figures/Floquet_lphi4.pdf, id=934, 722.7pt x 433.62pt>
+File: Figures/Floquet_lphi4.pdf Graphic file (type pdf)
+<use Figures/Floquet_lphi4.pdf>
+Package pdftex.def Info: Figures/Floquet_lphi4.pdf  used on input line 450.
+(pdftex.def)             Requested size: 335.74263pt x 201.44595pt.
+
+Overfull \hbox (7.25255pt too wide) in paragraph at lines 450--450
+ [] 
+ []
+
+[27
+
+ <./Figures/Floquet_lphi4.pdf>]
+<Figures/muk_lphi4.pdf, id=993, 1084.05pt x 578.16pt>
+File: Figures/muk_lphi4.pdf Graphic file (type pdf)
+<use Figures/muk_lphi4.pdf>
+Package pdftex.def Info: Figures/muk_lphi4.pdf  used on input line 459.
+(pdftex.def)             Requested size: 302.1663pt x 161.15146pt.
+ [28
+
+ <./Figures/muk_lphi4.pdf>]
+<Figures/narrow_resonance_m2phi2.pdf, id=1056, 867.24pt x 578.16pt>
+File: Figures/narrow_resonance_m2phi2.pdf Graphic file (type pdf)
+<use Figures/narrow_resonance_m2phi2.pdf>
+Package pdftex.def Info: Figures/narrow_resonance_m2phi2.pdf  used on input line 469.
+(pdftex.def)             Requested size: 167.8713pt x 111.90706pt.
+<Figures/nk_Narrow_Resonance_m2phi2.pdf, id=1057, 867.24pt x 433.62pt>
+File: Figures/nk_Narrow_Resonance_m2phi2.pdf Graphic file (type pdf)
+<use Figures/nk_Narrow_Resonance_m2phi2.pdf>
+Package pdftex.def Info: Figures/nk_Narrow_Resonance_m2phi2.pdf  used on input line 469.
+(pdftex.def)             Requested size: 201.44762pt x 100.72298pt.
+ [29
+
+ <./Figures/narrow_resonance_m2phi2.pdf> <./Figures/nk_Narrow_Resonance_m2phi2.pdf>]
+<Figures/Broad_resonance_m2phi2.pdf, id=1124, 867.24pt x 578.16pt>
+File: Figures/Broad_resonance_m2phi2.pdf Graphic file (type pdf)
+<use Figures/Broad_resonance_m2phi2.pdf>
+Package pdftex.def Info: Figures/Broad_resonance_m2phi2.pdf  used on input line 479.
+(pdftex.def)             Requested size: 167.8713pt x 111.90706pt.
+<Figures/nk_Broad_Resonance_m2phi2.pdf, id=1125, 867.24pt x 433.62pt>
+File: Figures/nk_Broad_Resonance_m2phi2.pdf Graphic file (type pdf)
+<use Figures/nk_Broad_Resonance_m2phi2.pdf>
+Package pdftex.def Info: Figures/nk_Broad_Resonance_m2phi2.pdf  used on input line 479.
+(pdftex.def)             Requested size: 201.44762pt x 100.72298pt.
+ [30
+
+ <./Figures/broad_resonance_m2phi2.pdf> <./Figures/nk_Broad_Resonance_m2phi2.pdf>]
+<Figures/nk_Broad_resonance_expansion_m2phi2.pdf, id=1190, 1300.86pt x 578.16pt>
+File: Figures/nk_Broad_resonance_expansion_m2phi2.pdf Graphic file (type pdf)
+<use Figures/nk_Broad_resonance_expansion_m2phi2.pdf>
+Package pdftex.def Info: Figures/nk_Broad_resonance_expansion_m2phi2.pdf  used on input line 490.
+(pdftex.def)             Requested size: 285.38327pt x 126.83388pt.
+ [31
+
+ <./Figures/nk_Broad_resonance_expansion_m2phi2.pdf>] [32
+
+]
+<Figures/Pchi_lineal.pdf, id=1270, 1300.86pt x 578.16pt>
+File: Figures/Pchi_lineal.pdf Graphic file (type pdf)
+<use Figures/Pchi_lineal.pdf>
+Package pdftex.def Info: Figures/Pchi_lineal.pdf  used on input line 505.
+(pdftex.def)             Requested size: 285.38327pt x 126.83388pt.
+ [33
+
+ <./Figures/Pchi_lineal.pdf>]
+<Figures/Omega_lineal.pdf, id=1321, 1300.86pt x 578.16pt>
+File: Figures/Omega_lineal.pdf Graphic file (type pdf)
+<use Figures/Omega_lineal.pdf>
+Package pdftex.def Info: Figures/Omega_lineal.pdf  used on input line 514.
+(pdftex.def)             Requested size: 285.38327pt x 126.83388pt.
  [34
 
- <./Figures/CL_Pchi_short1.png> <./Figures/CL_Pchi_short2.png> <./Figures/CL_nk_short1.png> <./Figures/CL_nk_short2.png>]
-<Figures/CL_Omega_short1.png, id=1378, 355.3275pt x 302.12875pt>
-File: Figures/CL_Omega_short1.png Graphic file (type png)
-<use Figures/CL_Omega_short1.png>
-Package pdftex.def Info: Figures/CL_Omega_short1.png  used on input line 335.
-(pdftex.def)             Requested size: 134.295pt x 114.19235pt.
-<Figures/CL_Omega_short2.png, id=1379, 355.3275pt x 302.12875pt>
-File: Figures/CL_Omega_short2.png Graphic file (type png)
-<use Figures/CL_Omega_short2.png>
-Package pdftex.def Info: Figures/CL_Omega_short2.png  used on input line 335.
-(pdftex.def)             Requested size: 134.295pt x 114.19235pt.
- [35
+ <./Figures/Omega_lineal.pdf>]
+contour: Using 16 copies for `\uppercase {\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }' on input line 522.
+[35
 
- <./Figures/CL_Omega_short1.png> <./Figures/CL_Omega_short2.png>] [36
+] (./Defensa_Ciccarella.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [36
 
 ]
-<Figures/comparacion_w13.pdf, id=1432, 860.66783pt x 422.76006pt>
-File: Figures/comparacion_w13.pdf Graphic file (type pdf)
-<use Figures/comparacion_w13.pdf>
-Package pdftex.def Info: Figures/comparacion_w13.pdf  used on input line 348.
-(pdftex.def)             Requested size: 235.01881pt x 115.43689pt.
+<Figures/CL_Icon.png, id=1439, 227.85126pt x 227.85126pt>
+File: Figures/CL_Icon.png Graphic file (type png)
+<use Figures/CL_Icon.png>
+Package pdftex.def Info: Figures/CL_Icon.png  used on input line 535.
+(pdftex.def)             Requested size: 91.13889pt x 91.13889pt.
  [37
 
+ <./Figures/CL_Icon.png>] [38
+
+]
+<Figures/CL_Pchi_short1.png, id=1492, 342.27875pt x 302.12875pt>
+File: Figures/CL_Pchi_short1.png Graphic file (type png)
+<use Figures/CL_Pchi_short1.png>
+Package pdftex.def Info: Figures/CL_Pchi_short1.png  used on input line 553.
+(pdftex.def)             Requested size: 117.51196pt x 103.72742pt.
+<Figures/CL_Pchi_short2.png, id=1493, 346.29375pt x 302.12875pt>
+File: Figures/CL_Pchi_short2.png Graphic file (type png)
+<use Figures/CL_Pchi_short2.png>
+Package pdftex.def Info: Figures/CL_Pchi_short2.png  used on input line 553.
+(pdftex.def)             Requested size: 117.51196pt x 102.52417pt.
+<Figures/CL_nk_short1.png, id=1494, 327.2225pt x 292.09125pt>
+File: Figures/CL_nk_short1.png Graphic file (type png)
+<use Figures/CL_nk_short1.png>
+Package pdftex.def Info: Figures/CL_nk_short1.png  used on input line 553.
+(pdftex.def)             Requested size: 117.51196pt x 104.89426pt.
+<Figures/CL_nk_short2.png, id=1495, 327.2225pt x 292.09125pt>
+File: Figures/CL_nk_short2.png Graphic file (type png)
+<use Figures/CL_nk_short2.png>
+Package pdftex.def Info: Figures/CL_nk_short2.png  used on input line 553.
+(pdftex.def)             Requested size: 117.51196pt x 104.89426pt.
+ [39
+
+ <./Figures/CL_Pchi_short1.png> <./Figures/CL_Pchi_short2.png> <./Figures/CL_nk_short1.png> <./Figures/CL_nk_short2.png>]
+<Figures/CL_Omega_short1.png, id=1525, 355.3275pt x 302.12875pt>
+File: Figures/CL_Omega_short1.png Graphic file (type png)
+<use Figures/CL_Omega_short1.png>
+Package pdftex.def Info: Figures/CL_Omega_short1.png  used on input line 563.
+(pdftex.def)             Requested size: 134.295pt x 114.19235pt.
+<Figures/CL_Omega_short2.png, id=1526, 355.3275pt x 302.12875pt>
+File: Figures/CL_Omega_short2.png Graphic file (type png)
+<use Figures/CL_Omega_short2.png>
+Package pdftex.def Info: Figures/CL_Omega_short2.png  used on input line 563.
+(pdftex.def)             Requested size: 134.295pt x 114.19235pt.
+ [40
+
+ <./Figures/CL_Omega_short1.png> <./Figures/CL_Omega_short2.png>] [41
+
+]
+<Figures/comparacion_w13.pdf, id=1580, 860.66783pt x 422.76006pt>
+File: Figures/comparacion_w13.pdf Graphic file (type pdf)
+<use Figures/comparacion_w13.pdf>
+Package pdftex.def Info: Figures/comparacion_w13.pdf  used on input line 576.
+(pdftex.def)             Requested size: 235.01881pt x 115.43689pt.
+ [42
+
  <./Figures/comparacion_w13.pdf>]
-<Figures/comparacion_w0.pdf, id=1488, 860.53012pt x 422.76006pt>
+<Figures/comparacion_w0.pdf, id=1634, 860.53012pt x 422.76006pt>
 File: Figures/comparacion_w0.pdf Graphic file (type pdf)
 <use Figures/comparacion_w0.pdf>
-Package pdftex.def Info: Figures/comparacion_w0.pdf  used on input line 355.
+Package pdftex.def Info: Figures/comparacion_w0.pdf  used on input line 583.
 (pdftex.def)             Requested size: 235.01881pt x 115.45624pt.
- [38
+ [43
 
- <./Figures/comparacion_w0.pdf>] [39
-
-] [40
-
-] [41
-
-] [42
-
-] [43
-
-] [44
+ <./Figures/comparacion_w0.pdf>] [44
 
 ] [45
 
-]
-<Figures/GW_Strain_Spectrum.pdf, id=1725, 701.79916pt x 407.05754pt>
-File: Figures/GW_Strain_Spectrum.pdf Graphic file (type pdf)
-<use Figures/GW_Strain_Spectrum.pdf>
-Package pdftex.def Info: Figures/GW_Strain_Spectrum.pdf  used on input line 396.
-(pdftex.def)             Requested size: 268.59512pt x 155.78905pt.
- [46
+] [46
 
- <./Figures/GW_Strain_Spectrum.pdf>]
-contour: Using 16 copies for `\uppercase {Conclusiones}' on input line 406.
-[47
+] [47
 
 ] [48
 
 ] [49
 
 ] [50
+
+]
+<Figures/GW_Strain_Spectrum.pdf, id=1872, 701.79916pt x 407.05754pt>
+File: Figures/GW_Strain_Spectrum.pdf Graphic file (type pdf)
+<use Figures/GW_Strain_Spectrum.pdf>
+Package pdftex.def Info: Figures/GW_Strain_Spectrum.pdf  used on input line 624.
+(pdftex.def)             Requested size: 268.59512pt x 155.78905pt.
+ [51
+
+ <./Figures/GW_Strain_Spectrum.pdf>]
+contour: Using 16 copies for `\uppercase {Conclusiones}' on input line 634.
+[52
+
+] [53
+
+] [54
+
+] [55
 
 ]
 \tf@nav=\write6
@@ -1547,21 +1577,21 @@ L3 programming layer <2024-01-22>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Defensa_Ciccarella.out' has not changed.
-(rerunfilecheck)             Checksum: 7C6C047BB0865EED87E75FF036BEEF74;3522.
+(rerunfilecheck)             Checksum: 04912DA82AE0F8CE39D63645EDC78A41;3522.
  ) 
 Here is how much of TeX's memory you used:
- 59158 strings out of 474222
- 1374991 string characters out of 5748734
- 2081622 words of memory out of 5000000
- 80419 multiletter control sequences out of 15000+600000
- 610450 words of font info for 184 fonts, out of 8000000 for 9000
+ 59263 strings out of 474222
+ 1377311 string characters out of 5748734
+ 2081621 words of memory out of 5000000
+ 80507 multiletter control sequences out of 15000+600000
+ 615929 words of font info for 191 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,14n,131p,476b,829s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on Defensa_Ciccarella.pdf (50 pages, 7821038 bytes).
+ 128i,18n,131p,476b,829s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
+Output written on Defensa_Ciccarella.pdf (55 pages, 9756665 bytes).
 PDF statistics:
- 2186 PDF objects out of 2487 (max. 8388607)
- 1731 compressed objects within 18 object streams
- 119 named destinations out of 1000 (max. 500000)
- 471 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2391 PDF objects out of 2487 (max. 8388607)
+ 1896 compressed objects within 19 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 491 words of extra memory for PDF output out of 10000 (max. 10000000)
 
