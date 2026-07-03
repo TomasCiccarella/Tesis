@@ -48,7 +48,7 @@
 
                 %\draw[fill = red, rounded corners = 2] (2.4,-4.35) rectangle ++(2.2,-0.7);
                 %\draw[fill = white, rounded corners = 2] (2.5,-4.45) rectangle ++(2,-0.5);
-                \node at (-5,-5.5) {\textrm{08/07/2026}};
+                \node at (-5.15,-5.5) {\textrm{08/07/2026}};
 
                 %\node at (-3.5,-5.5) {\includegraphics[scale = 0.2]{Figures/logo_DF.png}};
                 \node at (3,-4.5) {\includegraphics[scale = 0.15]{Figures/logo_UBA.png}};
@@ -548,7 +548,8 @@
                         \node at (1.5,-2) {\includegraphics[width = 0.6\linewidth]{Figures/nk_Narrow_Resonance_m2phi2.pdf}};
 
                         \node at (2.5, 2) {\textcolor{brown}{$\bullet$} Ocurre cuando $q \ll 1$};
-                        \node at (-3.5, -2.5) {\shortstack{El número de ocupación\\aumenta monótonamente\\con cada ciclo del inflatón}};
+                        \node at (-4, -2.5) {\shortstack{El número de ocupación\\aumenta monótonamente\\con cada ciclo del inflatón}};
+                        \node at (-3,-1.75) {\Huge\textcolor{red}{$\looparrowright$}};
                     \end{tikzpicture}
                 \end{figure}
             \end{frame}
@@ -559,28 +560,59 @@
                     \begin{tikzpicture}
                         \node at (-3,2) {\includegraphics[width = 0.5\linewidth]{Figures/Broad_resonance_m2phi2.pdf}};
                         \node at (1.5,-2) {\includegraphics[width = 0.6\linewidth]{Figures/nk_Broad_Resonance_m2phi2.pdf}};
+
+                        \node at (2.5, 2) {\textcolor{brown}{$\bullet$} Ocurre cuando $q \gg 1$};
+                        \node at (-4, -2.5) {\shortstack{El número de ocupación\\aumenta de forma\\escalonada siendo\\cada salto una\\ruptura adiabática}};
+                        \node at (-3,-1.25) {\Huge\textcolor{red}{$\looparrowright$}};
                     \end{tikzpicture}
                 \end{figure}
             \end{frame}
 
         \subsection{Dinámica de los campos con expansión del universo}
 
-            \begin{frame}{Caso $m^2 \phi^2$: \textit{Stochastic resonance}}
+            \begin{frame}{\textit{Stochastic resonance}}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Al agregar la expansión del universo, para el potencial cuadrático se puede definir $\varphi = a^{3/2} (t) \, \phi (t)$ y $X = a^{3/2} (t) \, \delta \chi (t)$ tal que
+                        \begin{equation*}
+                            \ddot{X}_k + \left( \frac{k^2}{a^2} + \frac{g^2 \varphi^2}{a^3} \right) X_k = 0
+                        \end{equation*}
+                    \begin{itemize}
+                        \item[\textcolor{cyan}{$\Longrightarrow$}] Esta dependencia con $a$ en la frecuencia causa lo que se conoce como \textit{Stochastic resonance}.
+                    \end{itemize}
+                \end{itemize}
+                
                 \begin{figure}[H]
                     \centering
-                    \begin{tikzpicture}
-                        \node at (0,0) {\includegraphics[width = 0.85\linewidth]{Figures/nk_Broad_resonance_expansion_m2phi2.pdf}};
-                    \end{tikzpicture}
+                    \includegraphics[width = 0.85\linewidth]{Figures/nk_Broad_resonance_expansion_m2phi2.pdf}
                 \end{figure}
             \end{frame}
 
-            \begin{frame}{Caso $\lambda \phi^4$}
-            
+            \begin{frame}{Caso $\lambda \phi^4$ con expansión}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Al agregar expansión del universo tenemos
+                        \begin{equation*}
+                            \delta \ddot{\chi}_k + 3 H \, \delta \dot{\chi}_k + \left( g^2 \bar{\phi} + \frac{k^2}{a^2} \right) \delta \chi_k = 0  
+                        \end{equation*}
+                    \item[\textcolor{brown}{$\bullet$}] Se pueden definir $\varphi = a (\eta) \, \phi (\eta)$ y $X_k = a (\eta) \, \delta \chi_k (\eta)$ para absorber el término de fricción 
+                    \begin{equation*}
+                        X^{\prime \prime}_k + \left( \kappa^2 + q \varphi^2 \right) X_k = 0
+                    \end{equation*}
+                    \begin{itemize}
+                        \item[\textcolor{cyan}{$\Longrightarrow$}] Se puede observar que la teoría es conforme dado que este cambio induce la misma dinámica que para $\delta \chi_k$ sin expansión del universo
+                    \end{itemize}
+                \end{itemize}
             \end{frame}
 
         \subsection{Producción de ondas gravitacionales}
 
             \begin{frame}{Espectro de potencias de $\chi$}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] El espectro de potencias para el campo hijo es
+                        \begin{equation*}
+                            \left\langle \chi (\textbf{k}, \tau) \, \chi^* \left( \textbf{k}^\prime, \tau \right) \right\rangle = (2\pi)^3 \, P_\chi (k, \tau) \, \delta ( \textbf{k} - \textbf{k}^\prime)
+                        \end{equation*}
+                \end{itemize}
+                
                 \begin{figure}[H]
                     \centering
                     \begin{tikzpicture}
@@ -589,12 +621,35 @@
                 \end{figure}
             \end{frame}
 
-            \begin{frame}{Espectro de potencias para las ondas gravitacionales}
+            \begin{frame}{Producción de ondas gravitacionales}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Como fuente de ondas gravitacionales usaremos
+                        \begin{equation*}
+                            \Pi_{ij}^{TT} = \left\{ \partial_i \phi \partial_j \phi + \partial_i \chi \partial_j \chi \right\}^{TT}
+                        \end{equation*}
+                    \item[\textcolor{brown}{$\bullet$}] El espectro de ondas gravitacionales estará dado por
+                        \small{\begin{equation*}
+                            \Omega_{GW} = \frac{k^3}{16 \pi^4 m_p^2 \rho_c a^4} \int p^6 \sin^5 \theta \left[ | I_c (k, p, \theta, \tau)|^2 + | I_s (k, p, \theta, \tau)|^2 \right] \, dp \, d\theta
+                        \end{equation*}}
+                        \begin{equation*}
+                            I_s (k, p, \theta, \tau) = \int \frac{\sin \left( k \tau^\prime \right)}{a \left( \tau^\prime \right)} \chi_p \left( \tau^\prime \right) \, \chi_{k - p} \left( \tau^\prime \right) \, d\tau^\prime
+                        \end{equation*}
+                        \begin{equation*}
+                            I_c (k, p, \theta, \tau) = \int \frac{\cos \left( k \tau^\prime \right)}{a \left( \tau^\prime \right)} \chi_p \left( \tau^\prime \right) \, \chi_{k - p} \left( \tau^\prime \right) \, d\tau^\prime
+                        \end{equation*}
+                \end{itemize}
+            \end{frame}
+
+            \begin{frame}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] El espectro de potencias para las ondas gravitacionales es
+                        \small{\begin{equation*}
+                            \Omega_{GW} = \frac{k^3}{16 \pi^4 m_p^2 \rho_c a^4} \int p^6 \sin^5 \theta \left[ | I_c (k, p, \theta, \tau)|^2 + | I_s (k, p, \theta, \tau)|^2 \right] \, dp \, d\theta
+                        \end{equation*}}
+                \end{itemize}
                 \begin{figure}[H]
                     \centering
-                    \begin{tikzpicture}
-                        \node at (0,0) {\includegraphics[width = 0.85\linewidth]{Figures/Omega_lineal.pdf}};
-                    \end{tikzpicture}
+                    \includegraphics[width = 0.8\linewidth]{Figures/Omega_lineal.pdf}
                 \end{figure}
             \end{frame}
 
