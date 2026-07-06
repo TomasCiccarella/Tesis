@@ -219,9 +219,9 @@
                     \includegraphics[width = 0.85\linewidth]{Figures/Reheating.png}
                 \end{figure}
 
-                \begin{textblock*}{5cm}(3.725cm,2.75cm) % {ancho} (posición x,y)
+                \begin{textblock*}{5cm}(2.55cm,2.75cm) % {ancho} (posición x,y)
                     \begin{tikzpicture}
-                        \draw[dashed, color = ForestGreen] (0,0) -- ++(0,1.5) [-{Latex}] -- ++(-1,0) node[left, color = black] {\footnotesize (BBN) $10^2 < T_{reh} < 10^{15}$ $(r)$};
+                        \draw[dashed, color = ForestGreen] (0,0) -- ++(0,1.5) [-{Latex}] -- ++(-1,0) node[left, color = black] {\footnotesize (BBN) $10 \, \text{MeV} < T_{reh} < 10^{15} \, \text{GeV}$ $(r)$};
                     \end{tikzpicture}
                 \end{textblock*}
             \end{frame}
@@ -285,19 +285,22 @@
                 \begin{itemize}
                     \item[\textcolor{brown}{$\bullet$}] Un fondo cosmológico utiliza una distribución de energía-materia para las ondas gravitacionales dada por
                     \begin{equation*}
-                        T^{GW}_{\mu\nu} = \frac{1}{32 \pi G} \left\langle \nabla_\mu h_{\alpha \beta} \nabla_\nu h^{\alpha \beta} \right\rangle \hspace{0.2cm} \textcolor{cyan}{\Longrightarrow} \hspace{0.2cm} \rho_{GW} = \frac{1}{32 \pi G} \left\langle \dot{h}_{\alpha \beta} \dot{h}^{\alpha \beta} \right\rangle
+                        T^{GW}_{\mu\nu} = \frac{1}{32 \pi G} \left\langle \nabla_\mu h_{\alpha \beta} \nabla_\nu h^{\alpha \beta} \right\rangle \hspace{0.2cm} \textcolor{cyan}{\Longrightarrow} \hspace{0.2cm} \Omega_{GW} = \frac{1}{32 \pi G \rho_c} \left\langle \dot{h}_{\alpha \beta} \dot{h}^{\alpha \beta} \right\rangle
                     \end{equation*} 
+                    \item[\textcolor{brown}{$\bullet$}] Estas ondas se decomponen en sus polarizaciones a partir de
+                        \begin{equation*}
+                            h_{ij} (\textbf{x}, t) = \frac{1}{(2\pi)^3} \int \sum_{r = +, \times} h_r (\textbf{x}, t) \, \hat{e}^r_{ij} \left( \hat{\textbf{k}} \right) \, e^{-i \textbf{k} \cdot \textbf{x}} \, d^3 \textbf{k}  
+                        \end{equation*}
                     \item[\textcolor{brown}{$\bullet$}] La ecuación de ondas para un fondo tipo FLRW es
                         \begin{equation*}
-                            \left( h_{ij}^{TT} \right)^{\prime \prime} (\textbf{k}, \eta) + 2 \mathcal{H} \left( h_{ij}^{TT} \right)^\prime (\textbf{k}, \eta) + k^2 h_{ij}^{TT} (\textbf{k}, \eta) = \frac{2}{m_p^2} \Pi_{ij}^{TT} (\textbf{k}, \eta)
+                            h_{r}^{\prime \prime} (\textbf{k}, \eta) + 2 \mathcal{H} \, h_{r}^\prime (\textbf{k}, \eta) + k^2 h_{r} (\textbf{k}, \eta) = \frac{1}{m_p^2} \Pi_{r}^{TT} (\textbf{k}, \eta)
                         \end{equation*}
-                        \begin{itemize}
-                            \item[\textcolor{cyan}{$\bullet$}] El término de Hubble puede ser absorbido en un reescalado del campo de la forma $H_{ij} = a h_{ij}^{TT}$, y la ecuación para la dinámica de cada polarización $r = +, \times$ es 
-                                \begin{equation*}
-                                    H^{\prime \prime}_r (\textbf{k}, \eta) + \left( k^2 - \frac{a^{\prime \prime}}{a} \right) H_r (\textbf{k}, \eta) = \frac{a}{m_p^2} \Pi_r (\textbf{k}, \eta)
-                                \end{equation*} 
-                        \end{itemize}
                 \end{itemize}
+                \begin{textblock*}{5cm}(1cm, 1cm)
+                    \begin{tikzpicture}
+                        \draw[color = red, dotted] (0,0) circle (15pt);
+                    \end{tikzpicture}
+                \end{textblock*}
             \end{frame}
 
             \begin{frame}{Fondos estocásticos}
@@ -362,16 +365,15 @@
             %    \end{figure}                
             %\end{frame}
             
-            \begin{frame}{EMRC}
+            \begin{frame}{EMRC (\textit{ElectroMagnetic Resonant Cavities})}
                 \begin{itemize}
                     \item[\textcolor{brown}{$\bullet$}] Utilizan el efecto Gertsenshtein inverso para detectar las GWs.
-                    \item[\textcolor{brown}{$\bullet$}] Se introduce un campo electromagnético en una cavidad y al interaccionar con la GW produce fotones.
+                    \item[\textcolor{brown}{$\bullet$}] En una cavidad se introduce un campo electromagnético estático que al interactuar con la GW, induce una corriente $\vec{j}_{eff} \propto \dot{h} \times \vec{B}$. Si la frecuencia de la onda coincide con un modo de resonancia, la señal se amplifica y emite fotones. 
                     \begin{figure}[H]
                         \centering
                         \includegraphics[scale = 0.8]{Figures/EMRC.jpg}
                     \end{figure}
-                    \item[\textcolor{brown}{$\bullet$}] El paso de la onda induce una corriente $j_{eff} \propto \dot{h} \times \vec{B}$ que si coincide con un modo de la cavidad amplifica la señal.
-                    \item[\textcolor{brown}{$\bullet$}] Para el funcionamiento de estos detectores se requiere de temperaturas criogénicas.
+                    \item[\textcolor{brown}{$\bullet$}] Estos detectores permiten medir fondos estocásticos a través de la autocorrelación o el uso de multiples detectores.
                 \end{itemize}
             \end{frame}
 
@@ -539,6 +541,22 @@
                 \end{itemize}}
             \end{frame}
 
+            \begin{frame}{}
+                \begin{infobox}[ForestGreen]{}
+                    A partir de lo mencionado hasta ahora surgen las siguientes preguntas:
+                        \begin{itemize}
+                            \item[\textcolor{cyan}{$\bullet$}] ¿Es posible estudiar efectos no lineales sobre los campos? \vspace{0.35cm} 
+                            \item[\textcolor{cyan}{$\bullet$}] ¿Es posible estudiar como esta dinámica produce ondas gravitacionales? 
+                        \end{itemize}
+                \end{infobox}
+                \vspace{1cm}
+                \only<2->{\begin{infobox}[orange]{}
+                    \begin{center}
+                        La respuesta es sí, pero se requieren de simulaciones de tipo \textit{lattice} como \CosmoLattice.
+                    \end{center}
+                \end{infobox}}
+            \end{frame}
+
         %\subsection{Producción de ondas gravitacionales}
 
          %   \begin{frame}{Espectro de potencias de $\chi$}
@@ -618,10 +636,7 @@
                         \end{equation*}}
                         \vspace{-0.75cm}
                     \begin{itemize}
-                        \item[\textcolor{cyan}{$\Longrightarrow$}] $\alpha = 0$ representa a usar tiempo coordenado y $\alpha = 1$ corresponde a usar tiempo conforme
-                        \begin{equation*}
-                            \alpha = 3 \frac{p - 2}{p + 2} \hspace{2cm} \left( V(\phi) = \phi^{p} \right)
-                        \end{equation*}
+                        \item[\textcolor{cyan}{$\Longrightarrow$}] $\alpha = 0$ representa a usar tiempo coordenado y $\alpha = 1$ corresponde a usar tiempo conforme.
                     \end{itemize}
                 \end{itemize}
 
@@ -638,7 +653,7 @@
                         \end{equation*}
                     \item[\textcolor{brown}{$\bullet$}] La evolución del universo está dada por
                         \begin{equation*}
-                            \frac{a^{\prime \prime}}{a} - \alpha \left( \frac{a^\prime}{a} \right)^2 = \frac{a^{2 \alpha}}{6 m_p^2} (\rho - 3 P)
+                            \frac{a^{\prime \prime}}{a} - \alpha \left( \frac{a^\prime}{a} \right)^2 = \frac{a^{2 \alpha}}{6 m_p^2} (\bar{\rho} - 3 \bar{P})
                         \end{equation*} 
                     \item[\textcolor{brown}{$\bullet$}] La presión y densidad de energía se calculan a partir de 
                         \begin{equation*}
@@ -656,22 +671,17 @@
                         \begin{equation*}
                             h_{ij} \left( \textbf{k}, t \right) = \Lambda_{ij,kl} \left( \hat{\textbf{k}} \right) \, u_{kl} \left( \textbf{k}, t \right)
                         \end{equation*}
+                        \begin{itemize}
+                            \item[\textcolor{cyan}{$\Longrightarrow$}] con $\Lambda^{TT}_{ij,kl}$ el proyector del campo $u_{kl}$ en el gauge TT.
+                        \end{itemize}
                     \item[\textcolor{brown}{$\bullet$}] La evolución del campo auxiliar está determinada por
                         \begin{equation*}
                             u_{ij}^{\prime \prime} + (3 - \alpha) \frac{a^\prime}{a} u_{ij}^\prime - a^{2\alpha - 2} \nabla^2 u_{ij} = \frac{2}{m_p^2} a^{2 \alpha} \Pi_{ij}^{eff}
                         \end{equation*}
-                    \item<3->[\textcolor{brown}{$\bullet$}] El espectro de potencias para la densidad de energía de las ondas se calcula a partir de
-                        \begin{equation*}
-                            \Omega_{GW} (n, t) = \frac{1}{\rho_c} \frac{m_p^2 l k_{IR}}{8 \pi} \frac{\delta x}{N^5} \#_l \left\langle \dot{h}_{ij} (n, t) \, \dot{h}^*_{ij} (n,t) \right\rangle  
-                        \end{equation*}
+                        \begin{itemize}
+                            \item[\textcolor{cyan}{$\Longrightarrow$}] donde $\displaystyle \Pi_{ij}^{TT} = \sum_n \partial_i \phi_n \partial_j \phi_n$. 
+                        \end{itemize}
                 \end{itemize}
-
-                \only<2->{\begin{textblock*}{5cm}(9.725cm,2.7cm) % {ancho} (posición x,y)
-                    \begin{tikzpicture}
-                        \draw[dashed, color = ForestGreen] (0,0) circle (12pt);
-                        \draw[dashed, color = ForestGreen] (0,12pt) -- ++(0,1.25) [-{Latex}, solid] -- ++(0.2,0) node[right, color = black] {\small $\sum_n \partial_i \phi_n \partial_j \phi_n$};
-                    \end{tikzpicture}
-                \end{textblock*}}
             \end{frame}
 
         \subsection{Modelos de estudio}
@@ -695,26 +705,43 @@
 
             \begin{frame}{Modelos de tipo radiación}
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] $\displaystyle V(\phi) = \frac{\Lambda^4}{4} \tanh^4 \left( \frac{\phi}{M} \right) \approx \frac{\Lambda^4}{4 M^4} \phi^4 + \cdots$
+                    \item[\textcolor{brown}{$\bullet$}] $\displaystyle V(\phi) = \frac{\Lambda^4}{4} \tanh^4 \left( \frac{\phi}{M} \right) \approx \frac{1}{4} \frac{\Lambda^4}{M^4} \phi^4 + \cdots$
                 \end{itemize}
+                \vspace{0.5cm}
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width = \linewidth]{Figures/comparacion_w13.pdf}
-                \end{figure}    
+                \end{figure}
+                \begin{textblock*}{5cm}(5.85cm,0.9cm)
+                    \begin{tikzpicture}
+                        \draw[color = ForestGreen, dashed] (0,0) ellipse (0.38 and 0.55);
+                        \draw[color = ForestGreen, dashed] (0,-0.55) -- ++(0,-0.25) [-{Latex}] -- ++(1,0) node[right] {\textcolor{black}{$\lambda = \frac{\Lambda^4}{M^4}$}};
+                    \end{tikzpicture}                    
+                \end{textblock*}    
             \end{frame}
 
             \begin{frame}{Modelos de tipo materia}
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] $\displaystyle V(\phi) = \frac{\Lambda^4}{2} \tanh^2 \left( \frac{\phi}{M} \right) \approx \frac{\Lambda^4}{2 M^2} \phi^2 + \cdots$
-                    \item[\textcolor{brown}{$\bullet$}] $\displaystyle V(\phi) = \frac{\Lambda^4}{2} \left[ 1 - \exp \left( - \frac{\phi}{M} \right) \right]^2 \approx \frac{\Lambda^4}{2 M^2} \phi^2 + \cdots$
+                    \item[\textcolor{brown}{$\bullet$}] $\displaystyle V(\phi) = \frac{\Lambda^4}{2} \tanh^2 \left( \frac{\phi}{M} \right) \approx \frac{1}{2} \frac{\Lambda^4}{M^2} \phi^2 + \cdots$
+                    \item[\textcolor{brown}{$\bullet$}] $\displaystyle V(\phi) = \frac{\Lambda^4}{2} \left[ 1 - \exp \left( - \frac{\phi}{M} \right) \right]^2 \approx \frac{1}{2} \frac{\Lambda^4}{M^2} \phi^2 + \cdots$
                 \end{itemize}
+                \vspace{0.5cm}
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width = \linewidth]{Figures/comparacion_w0.pdf}
-                \end{figure}    
+                \end{figure}  
+                
+                \begin{textblock*}{5cm}(5.85cm,0.7cm)
+                    \begin{tikzpicture}
+                        \draw[color = ForestGreen, dashed] (0,0) ellipse (0.38 and 0.55);
+                        \draw[color = ForestGreen, dashed] (1.2,-1.05) ellipse (0.38 and 0.55);
+                        \draw[color = ForestGreen, dashed, -{Latex}] (0,0.55) -- (3,0) node[right, color = black] {$m^2 = \frac{\Lambda^4}{M^2}$};
+                        \draw[color = ForestGreen, dashed, -{Latex}] (1.58,-1.05) -- (3,0);
+                    \end{tikzpicture}                    
+                \end{textblock*}    
             \end{frame}
 
-            \begin{frame}{Estudio preliminar: formación de GWs}
+            \begin{frame}{Formación de GWs}
                 \begin{figure}
                     \centering
                     \includegraphics[width = 0.8\linewidth]{Figures/energy_evolution.pdf}
@@ -726,23 +753,45 @@
                 \end{figure}
             \end{frame}
 
-            \begin{frame}{Estudio preliminar: transformación de los espectros a los medibles hoy}
-                \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Para poder evaluar los espectros con las mediciones actuales, se necesita transformar la salida de \CosmoLattice a lo que se observaría hoy: 
-                    \begin{equation*}
-                        \begin{split} 
-                            \Omega_{GW} \left( f_0, a_0 \right) =& \Omega_{RAD,0} \frac{g_{reh}}{g_0} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left( \frac{\pi^2 g_{reh} T^4_{reh}}{60 V_i} \right)^{\frac{1 - 3 \omega_{eff}}{3 (1 + \omega_{eff})}}\\
-                            &\times \left( \frac{a_f}{a_i} \right)^{1 - 3 \omega_{eff}} \Omega_{GW} \left( f_0, a_f \right)
-                        \end{split}
-                    \end{equation*}
-                    \begin{equation*}
-                        f_0 = \frac{k}{2\pi} \frac{g_{s,0} T_0}{g_{s,reh}} \left( \frac{\pi^2 g_{reh}}{60 V_i} \right)^{\frac{1}{3(1 + \omega_{eff})}} T_{reh}^{\frac{1 - 3 \omega_{eff}}{3 (1 + \omega_{eff})}}
-                    \end{equation*}
-                    \begin{itemize}
-                        \item[\textcolor{cyan}{$\Longrightarrow$}] Se puede observar que para modelos de tipo materia se tendrá una dependencia con $T_{reh}$ que no se tendrá en el caso de radiación.
-                    \end{itemize}
-                \end{itemize}
+            \begin{frame}{Reescaleo de los espectros}
+                \begin{tikzpicture}
+                    \filldraw[color = orange, opacity = 0.3] (1.25,-2) rectangle (5,2);
+                    \filldraw[color = esmerald, opacity = 0.3] (0.25,-2) rectangle (1.25,2);
+                    \filldraw[color = violet, opacity = 0.3] (5,-2) rectangle (6.5,2);
+                    \draw[-{Latex}] (0,0) -- (7,0);
+                    
+                    \draw (1.25,0.1) -- (1.25,-0.1) node[below] {\rm \footnotesize I};
+                    \draw (5,0.1) -- (5,-0.1) node[below] {\rm \footnotesize $T_{reh}$};
+                    \draw (1.5,0.1) -- (1.5,-0.1);
+                    \draw (2.25,0.1) -- (2.25,-0.1);
+                    \draw[{Latex}-, color = blue] (1.5,0.1) -- (1.5,0.8) node[above, color = black] {\footnotesize \shortstack{Inicio de\\producción de\\GWs}};
+                    \draw[{Latex}-, color = blue] (2.25,-0.1) -- (2.25,-0.8) node[below, color = black] {\footnotesize \shortstack{Fin de\\producción de\\GWs}};
+
+                    \draw[decorate, decoration={brace, amplitude = 5pt, mirror}] (1.25, -2) -- (5, -2);
+                    \node at (3.125,-3) {\footnotesize $\omega_{eff} = \begin{cases}
+                    1/3 \hspace{0.25cm} &\text{RAD}\\
+                    0 \hspace{0.25cm} &\text{MAT}
+                    \end{cases}$};
+                \end{tikzpicture}
             \end{frame}
+
+            %\begin{frame}{Reescaleo de los espectros}
+               % \begin{itemize}
+              %      \item[\textcolor{brown}{$\bullet$}] Para poder evaluar los espectros con las mediciones actuales, se necesita transformar la salida de \CosmoLattice a lo que se observaría hoy: 
+             %       \begin{equation*}
+            %            \begin{split} 
+           %                 \Omega_{GW} \left( f_0, a_0 \right) =& \Omega_{RAD,0} \frac{g_{reh}}{g_0} \left( \frac{g_{s,0}}{g_{s,reh}} \right)^{4/3} \left( \frac{\pi^2 g_{reh} T^4_{reh}}{60 V_i} \right)^{\frac{1 - 3 \omega_{eff}}{3 (1 + \omega_{eff})}}\\
+          %                  &\times \left( \frac{a_f}{a_i} \right)^{1 - 3 \omega_{eff}} \Omega_{GW} \left( f_0, a_f \right)
+         %               \end{split}
+        %            \end{equation*}
+       %             \begin{equation*}
+      %                  f_0 = \frac{k}{2\pi} \frac{g_{s,0} T_0}{g_{s,reh}} \left( \frac{\pi^2 g_{reh}}{60 V_i} \right)^{\frac{1}{3(1 + \omega_{eff})}} T_{reh}^{\frac{1 - 3 \omega_{eff}}{3 (1 + \omega_{eff})}}
+     %               \end{equation*}
+    %                \begin{itemize}
+   %                     \item[\textcolor{cyan}{$\Longrightarrow$}] Se puede observar que para modelos de tipo materia se tendrá una dependencia con $T_{reh}$ que no se tendrá en el caso de radiación.
+  %                  \end{itemize}
+ %               \end{itemize}
+%            \end{frame}
 
         \subsection{Comparación para modelos de tipo radiación}
 

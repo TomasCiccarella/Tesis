@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  6 JUL 2026 00:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.1)  6 JUL 2026 16:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1279,7 +1279,7 @@ File: Figures/Reheating.png Graphic file (type png)
 Package pdftex.def Info: Figures/Reheating.png  used on input line 227.
 (pdftex.def)             Requested size: 285.38327pt x 154.97742pt.
 
-Overfull \hbox (7.36655pt too wide) in paragraph at lines 227--227
+Overfull \hbox (39.71112pt too wide) in paragraph at lines 227--227
 [][]  
  []
 
@@ -1313,10 +1313,10 @@ Package pdftex.def Info: Figures/Polarizaciones_GWs.png  used on input line 282.
 <Figures/GW_detectors.png, id=578, 844.15375pt x 672.5125pt>
 File: Figures/GW_detectors.png Graphic file (type png)
 <use Figures/GW_detectors.png>
-Package pdftex.def Info: Figures/GW_detectors.png  used on input line 341.
+Package pdftex.def Info: Figures/GW_detectors.png  used on input line 344.
 (pdftex.def)             Requested size: 295.45824pt x 235.38289pt.
 
-Overfull \vbox (6.81102pt too high) detected at line 341
+Overfull \vbox (6.81102pt too high) detected at line 344
  []
 
 [16
@@ -1325,12 +1325,12 @@ Overfull \vbox (6.81102pt too high) detected at line 341
 <Figures/EMRC.jpg, id=605, 166.92451pt x 119.59726pt>
 File: Figures/EMRC.jpg Graphic file (type jpg)
 <use Figures/EMRC.jpg>
-Package pdftex.def Info: Figures/EMRC.jpg  used on input line 376.
+Package pdftex.def Info: Figures/EMRC.jpg  used on input line 378.
 (pdftex.def)             Requested size: 133.53978pt x 95.67792pt.
  [17
 
  <./Figures/EMRC.jpg>]
-contour: Using 16 copies for `\uppercase {\textit {Preheating} Lineal}' on input line 384.
+contour: Using 16 copies for `\uppercase {\textit {Preheating} Lineal}' on input line 386.
 [18
 
 ] (./Defensa_Ciccarella.toc
@@ -1346,10 +1346,10 @@ LaTeX Info: Redefining \% on input line 1.
 <Figures/Floquet_lphi4.pdf, id=741, 722.7pt x 433.62pt>
 File: Figures/Floquet_lphi4.pdf Graphic file (type pdf)
 <use Figures/Floquet_lphi4.pdf>
-Package pdftex.def Info: Figures/Floquet_lphi4.pdf  used on input line 476.
+Package pdftex.def Info: Figures/Floquet_lphi4.pdf  used on input line 478.
 (pdftex.def)             Requested size: 318.95447pt x 191.36902pt.
 
-Overfull \vbox (0.37889pt too high) detected at line 476
+Overfull \vbox (0.37889pt too high) detected at line 478
  []
 
 [22
@@ -1358,7 +1358,7 @@ Overfull \vbox (0.37889pt too high) detected at line 476
 <Figures/muk_lphi4.pdf, id=802, 1084.05pt x 578.16pt>
 File: Figures/muk_lphi4.pdf Graphic file (type pdf)
 <use Figures/muk_lphi4.pdf>
-Package pdftex.def Info: Figures/muk_lphi4.pdf  used on input line 489.
+Package pdftex.def Info: Figures/muk_lphi4.pdf  used on input line 491.
 (pdftex.def)             Requested size: 302.1663pt x 161.15146pt.
  [23
 
@@ -1366,12 +1366,12 @@ Package pdftex.def Info: Figures/muk_lphi4.pdf  used on input line 489.
 <Figures/narrow_resonance_m2phi2.pdf, id=864, 867.24pt x 578.16pt>
 File: Figures/narrow_resonance_m2phi2.pdf Graphic file (type pdf)
 <use Figures/narrow_resonance_m2phi2.pdf>
-Package pdftex.def Info: Figures/narrow_resonance_m2phi2.pdf  used on input line 503.
+Package pdftex.def Info: Figures/narrow_resonance_m2phi2.pdf  used on input line 505.
 (pdftex.def)             Requested size: 167.8713pt x 111.90706pt.
 <Figures/nk_Narrow_Resonance_m2phi2.pdf, id=865, 867.24pt x 433.62pt>
 File: Figures/nk_Narrow_Resonance_m2phi2.pdf Graphic file (type pdf)
 <use Figures/nk_Narrow_Resonance_m2phi2.pdf>
-Package pdftex.def Info: Figures/nk_Narrow_Resonance_m2phi2.pdf  used on input line 503.
+Package pdftex.def Info: Figures/nk_Narrow_Resonance_m2phi2.pdf  used on input line 505.
 (pdftex.def)             Requested size: 201.44762pt x 100.72298pt.
  [24
 
@@ -1379,12 +1379,12 @@ Package pdftex.def Info: Figures/nk_Narrow_Resonance_m2phi2.pdf  used on input l
 <Figures/Broad_resonance_m2phi2.pdf, id=934, 867.24pt x 578.16pt>
 File: Figures/Broad_resonance_m2phi2.pdf Graphic file (type pdf)
 <use Figures/Broad_resonance_m2phi2.pdf>
-Package pdftex.def Info: Figures/Broad_resonance_m2phi2.pdf  used on input line 517.
+Package pdftex.def Info: Figures/Broad_resonance_m2phi2.pdf  used on input line 519.
 (pdftex.def)             Requested size: 167.8713pt x 111.90706pt.
 <Figures/nk_Broad_Resonance_m2phi2.pdf, id=935, 867.24pt x 433.62pt>
 File: Figures/nk_Broad_Resonance_m2phi2.pdf Graphic file (type pdf)
 <use Figures/nk_Broad_Resonance_m2phi2.pdf>
-Package pdftex.def Info: Figures/nk_Broad_Resonance_m2phi2.pdf  used on input line 517.
+Package pdftex.def Info: Figures/nk_Broad_Resonance_m2phi2.pdf  used on input line 519.
 (pdftex.def)             Requested size: 201.44762pt x 100.72298pt.
  [25
 
@@ -1392,41 +1392,41 @@ Package pdftex.def Info: Figures/nk_Broad_Resonance_m2phi2.pdf  used on input li
 <Figures/nk_Broad_resonance_expansion_m2phi2.pdf, id=1000, 1300.86pt x 578.16pt>
 File: Figures/nk_Broad_resonance_expansion_m2phi2.pdf Graphic file (type pdf)
 <use Figures/nk_Broad_resonance_expansion_m2phi2.pdf>
-Package pdftex.def Info: Figures/nk_Broad_resonance_expansion_m2phi2.pdf  used on input line 540.
+Package pdftex.def Info: Figures/nk_Broad_resonance_expansion_m2phi2.pdf  used on input line 542.
 (pdftex.def)             Requested size: 201.44762pt x 89.52565pt.
 
-Overfull \hbox (2.7758pt too wide) in paragraph at lines 540--540
+Overfull \hbox (2.7758pt too wide) in paragraph at lines 542--542
 []\T1/cmss/m/n/10 Para el po-ten-cial cuár-ti-co se pue-den de-fi-nir $\OML/cmm/m/it/10 ' \OT1/cmss/m/n/10 = \OT1/mathkerncmss/m/sl/10 a\OT1/cmss/m/n/10 (\OML/cmm/m/it/10 ^^Q\OT1/cmss/m/n/10 ) \OML/cmm/m/it/10 ^^^\OT1/cmss/m/n/10 (\OML/cmm/m/it/10 ^^Q\OT1/cmss/m/n/10 )$ \T1/cmss/m/n/10 y $\OT1/mathkerncmss/m/sl/10 X[] \OT1/cmss/m/n/10 = \OT1/mathkerncmss/m/sl/10 a\OT1/cmss/m/n/10 (\OML/cmm/m/it/10 ^^Q\OT1/cmss/m/n/10 ) \OML/cmm/m/it/10 ^^N^^_[]\OT1/cmss/m/n/10 (\OML/cmm/m/it/10 ^^Q\OT1/cmss/m/n/10 )$
  []
 
 
-Overfull \vbox (3.4685pt too high) detected at line 540
+Overfull \vbox (3.4685pt too high) detected at line 542
  []
 
 [26
 
- <./Figures/nk_Broad_resonance_expansion_m2phi2.pdf>]
-contour: Using 16 copies for `\uppercase {\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }' on input line 598.
-[27
+ <./Figures/nk_Broad_resonance_expansion_m2phi2.pdf>] [27
+
+] [28
+
+]
+contour: Using 16 copies for `\uppercase {\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }' on input line 616.
+[29
 
 ] (./Defensa_Ciccarella.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [28
+) [30
 
 ]
-<Figures/CL_Icon.png, id=1116, 227.85126pt x 227.85126pt>
+<Figures/CL_Icon.png, id=1167, 227.85126pt x 227.85126pt>
 File: Figures/CL_Icon.png Graphic file (type png)
 <use Figures/CL_Icon.png>
-Package pdftex.def Info: Figures/CL_Icon.png  used on input line 631.
+Package pdftex.def Info: Figures/CL_Icon.png  used on input line 646.
 (pdftex.def)             Requested size: 45.56944pt x 45.56944pt.
- [29
+ [31
 
- <./Figures/CL_Icon.png>] [30
-
-] [31
-
-] [32
+ <./Figures/CL_Icon.png>] [32
 
 ] [33
 
@@ -1436,7 +1436,7 @@ Package pdftex.def Info: Figures/CL_Icon.png  used on input line 631.
 <Figures/comparacion_w13.pdf, id=1272, 860.66783pt x 422.76006pt>
 File: Figures/comparacion_w13.pdf Graphic file (type pdf)
 <use Figures/comparacion_w13.pdf>
-Package pdftex.def Info: Figures/comparacion_w13.pdf  used on input line 704.
+Package pdftex.def Info: Figures/comparacion_w13.pdf  used on input line 721.
 (pdftex.def)             Requested size: 335.74263pt x 164.91446pt.
  [35
 
@@ -1444,34 +1444,46 @@ Package pdftex.def Info: Figures/comparacion_w13.pdf  used on input line 704.
 <Figures/comparacion_w0.pdf, id=1328, 860.53012pt x 422.76006pt>
 File: Figures/comparacion_w0.pdf Graphic file (type pdf)
 <use Figures/comparacion_w0.pdf>
-Package pdftex.def Info: Figures/comparacion_w0.pdf  used on input line 715.
+Package pdftex.def Info: Figures/comparacion_w0.pdf  used on input line 742.
 (pdftex.def)             Requested size: 335.74263pt x 164.94672pt.
- [36
+
+Overfull \hbox (4.28008pt too wide) in paragraph at lines 742--742
+[][]  
+ []
+
+
+Overfull \vbox (8.96852pt too high) detected at line 742
+ []
+
+[36
 
  <./Figures/comparacion_w0.pdf>]
 <Figures/energy_evolution.pdf, id=1390, 1282.87337pt x 515.15735pt>
 File: Figures/energy_evolution.pdf Graphic file (type pdf)
 <use Figures/energy_evolution.pdf>
-Package pdftex.def Info: Figures/energy_evolution.pdf  used on input line 727.
+Package pdftex.def Info: Figures/energy_evolution.pdf  used on input line 754.
 (pdftex.def)             Requested size: 268.59512pt x 107.85608pt.
 <Figures/Energy_study.pdf, id=1391, 996.05861pt x 417.59299pt>
 File: Figures/Energy_study.pdf Graphic file (type pdf)
 <use Figures/Energy_study.pdf>
-Package pdftex.def Info: Figures/Energy_study.pdf  used on input line 727.
+Package pdftex.def Info: Figures/Energy_study.pdf  used on input line 754.
 (pdftex.def)             Requested size: 268.59512pt x 112.60504pt.
 
-Overfull \vbox (0.88925pt too high) detected at line 727
+Overfull \vbox (0.88925pt too high) detected at line 754
  []
 
 [37
 
- <./Figures/energy_evolution.pdf> <./Figures/Energy_study.pdf>] [38
+ <./Figures/energy_evolution.pdf> <./Figures/Energy_study.pdf>]
+LaTeX Font Info:    Font shape `T1/pzc/m/n' in size <9> not available
+(Font)              Font shape `T1/pzc/m/it' tried instead on input line 776.
+ [38
 
 ]
 <Figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf, id=1553, 867.24pt x 433.62pt>
 File: Figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf Graphic file (type pdf)
 <use Figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf>
-Package pdftex.def Info: Figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf  used on input line 753.
+Package pdftex.def Info: Figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf  used on input line 802.
 (pdftex.def)             Requested size: 335.74263pt x 167.87383pt.
  [39
 
@@ -1479,7 +1491,7 @@ Package pdftex.def Info: Figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf  u
 <Figures/CL_tanh4_varM.png, id=1624, 968.61874pt x 627.34375pt>
 File: Figures/CL_tanh4_varM.png Graphic file (type png)
 <use Figures/CL_tanh4_varM.png>
-Package pdftex.def Info: Figures/CL_tanh4_varM.png  used on input line 762.
+Package pdftex.def Info: Figures/CL_tanh4_varM.png  used on input line 811.
 (pdftex.def)             Requested size: 290.58786pt x 188.20457pt.
  [40
 
@@ -1487,20 +1499,20 @@ Package pdftex.def Info: Figures/CL_tanh4_varM.png  used on input line 762.
 <Figures/CL_m2phi2.png, id=1651, 415.5525pt x 385.44pt>
 File: Figures/CL_m2phi2.png Graphic file (type png)
 <use Figures/CL_m2phi2.png>
-Package pdftex.def Info: Figures/CL_m2phi2.png  used on input line 775.
+Package pdftex.def Info: Figures/CL_m2phi2.png  used on input line 824.
 (pdftex.def)             Requested size: 145.44554pt x 134.90602pt.
 <Figures/CL_tanh2.png, id=1652, 390.45876pt x 385.44pt>
 File: Figures/CL_tanh2.png Graphic file (type png)
 <use Figures/CL_tanh2.png>
-Package pdftex.def Info: Figures/CL_tanh2.png  used on input line 775.
+Package pdftex.def Info: Figures/CL_tanh2.png  used on input line 824.
 (pdftex.def)             Requested size: 136.6626pt x 134.90602pt.
 <Figures/CL_Starobinsky.png, id=1653, 390.45876pt x 385.44pt>
 File: Figures/CL_Starobinsky.png Graphic file (type png)
 <use Figures/CL_Starobinsky.png>
-Package pdftex.def Info: Figures/CL_Starobinsky.png  used on input line 775.
+Package pdftex.def Info: Figures/CL_Starobinsky.png  used on input line 824.
 (pdftex.def)             Requested size: 136.6626pt x 134.90602pt.
 
-Overfull \vbox (27.39767pt too high) detected at line 775
+Overfull \vbox (27.39767pt too high) detected at line 824
  []
 
 [41
@@ -1508,17 +1520,17 @@ Overfull \vbox (27.39767pt too high) detected at line 775
  <./Figures/CL_m2phi2.png> <./Figures/CL_tanh2.png> <./Figures/CL_Starobinsky.png>]
 File: Figures/CL_m2phi2.png Graphic file (type png)
 <use Figures/CL_m2phi2.png>
-Package pdftex.def Info: Figures/CL_m2phi2.png  used on input line 786.
+Package pdftex.def Info: Figures/CL_m2phi2.png  used on input line 835.
 (pdftex.def)             Requested size: 83.10902pt x 77.08662pt.
 <Figures/CL_tanh2_varM.png, id=1682, 1116.17pt x 436.63126pt>
 File: Figures/CL_tanh2_varM.png Graphic file (type png)
 <use Figures/CL_tanh2_varM.png>
-Package pdftex.def Info: Figures/CL_tanh2_varM.png  used on input line 786.
+Package pdftex.def Info: Figures/CL_tanh2_varM.png  used on input line 835.
 (pdftex.def)             Requested size: 256.7137pt x 100.42307pt.
 <Figures/CL_Starobinsky_varM.png, id=1683, 1116.17pt x 432.61626pt>
 File: Figures/CL_Starobinsky_varM.png Graphic file (type png)
 <use Figures/CL_Starobinsky_varM.png>
-Package pdftex.def Info: Figures/CL_Starobinsky_varM.png  used on input line 786.
+Package pdftex.def Info: Figures/CL_Starobinsky_varM.png  used on input line 835.
 (pdftex.def)             Requested size: 256.7137pt x 99.49963pt.
  [42
 
@@ -1526,12 +1538,12 @@ Package pdftex.def Info: Figures/CL_Starobinsky_varM.png  used on input line 786
 <Figures/GW_Strain_Spectrum.pdf, id=1710, 701.79916pt x 407.05754pt>
 File: Figures/GW_Strain_Spectrum.pdf Graphic file (type pdf)
 <use Figures/GW_Strain_Spectrum.pdf>
-Package pdftex.def Info: Figures/GW_Strain_Spectrum.pdf  used on input line 802.
+Package pdftex.def Info: Figures/GW_Strain_Spectrum.pdf  used on input line 851.
 (pdftex.def)             Requested size: 285.38327pt x 165.5282pt.
  [43
 
  <./Figures/GW_Strain_Spectrum.pdf>]
-contour: Using 16 copies for `\uppercase {Conclusiones}' on input line 812.
+contour: Using 16 copies for `\uppercase {Conclusiones}' on input line 861.
 [44
 
 ] [45
@@ -1567,18 +1579,18 @@ L3 programming layer <2024-01-22>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Defensa_Ciccarella.out' has not changed.
-(rerunfilecheck)             Checksum: FCF67A03F837F35EC0E830506BC793FD;3065.
+(rerunfilecheck)             Checksum: 18BDD31C68AB310A125D173D580CB9C9;3065.
  ) 
 Here is how much of TeX's memory you used:
- 59179 strings out of 474222
- 1376064 string characters out of 5748734
- 2081620 words of memory out of 5000000
- 80437 multiletter control sequences out of 15000+600000
- 612848 words of font info for 180 fonts, out of 8000000 for 9000
+ 59220 strings out of 474222
+ 1377170 string characters out of 5748734
+ 2081622 words of memory out of 5000000
+ 80480 multiletter control sequences out of 15000+600000
+ 612665 words of font info for 179 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,131p,476b,829s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on Defensa_Ciccarella.pdf (49 pages, 8995893 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
+Output written on Defensa_Ciccarella.pdf (49 pages, 9015875 bytes).
 PDF statistics:
  2281 PDF objects out of 2487 (max. 8388607)
  1746 compressed objects within 18 object streams
