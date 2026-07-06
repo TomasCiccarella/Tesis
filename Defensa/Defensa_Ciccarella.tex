@@ -63,7 +63,7 @@
     \begin{frame}
         \begin{figure}[H]
             \begin{tikzpicture}
-                \node at (0,0) {\Huge \color{black}\contour{gold}{\uppercase{Introducción}}};                
+                \node at (0,0) {\Huge \color{black}\contour{gold}{\uppercase{Introducción}}};             
             \end{tikzpicture}
         \end{figure}
     \end{frame}
@@ -73,94 +73,90 @@
         \subsection{Cosmología}
 
             \begin{frame}{Historia del Universo}
-                %\begin{center}
-                %    \textrm{``Our whole Universe was in a hot dense state. Then nearly 14 billion years ago expansion started...''}
-                    
-                %    \textrm{``...And all started with a Big Bang''}
-                %\end{center}
                 \begin{figure}[H]
                     \centering
                     \begin{tikzpicture}
                         \node at (0,0) {\includegraphics[width = 0.9\linewidth]{Figures/Cosmologia_etapas.png}};
+                        \draw[color = green, pattern=north east lines, pattern color = green, dashed] (-4,-1.9) rectangle ++(1.5,2.5);
                     \end{tikzpicture}
                 \end{figure}
             \end{frame}
 
-            \begin{frame}{FLRW + Ecuaciones de Friedmann}
-                \small{
-                \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] La geometría del espacio-tiempo está descripta por 
-                        \begin{equation*}
-                            ds^2 = - dt^2 + a^2 (t) ~ \left[ \frac{dr^2}{1 - K r^2} + r^2 \left( d\theta^2 + \sin^2 \theta ~ d\varphi^2 \right) \right]
-                        \end{equation*}
+            %\begin{frame}{FLRW + Ecuaciones de Friedmann}
+            %    \small{
+            %    \begin{itemize}
+            %        \item[\textcolor{brown}{$\bullet$}] La geometría del espacio-tiempo está descripta por 
+            %            \begin{equation*}
+            %                ds^2 = - dt^2 + a^2 (t) ~ \left[ \frac{dr^2}{1 - K r^2} + r^2 \left( d\theta^2 + \sin^2 \theta ~ d\varphi^2 \right) \right]
+            %            \end{equation*}
 
-                    \item[\textcolor{brown}{$\bullet$}] La energía y materia se puede describir como un fluido ideal
-                        \begin{equation*}
-                            T_{\mu\nu} = (\rho + P) u_\mu u_\nu + P ~ g_{\mu\nu}
-                        \end{equation*}
+            %        \item[\textcolor{brown}{$\bullet$}] La energía y materia se puede describir como un fluido ideal
+            %            \begin{equation*}
+            %                T_{\mu\nu} = (\rho + P) u_\mu u_\nu + P ~ g_{\mu\nu}
+            %            \end{equation*}
                         
-                    \item[\textcolor{brown}{$\bullet$}] Las ecuaciones que describen la dinámica del universo seran
-                        \begin{equation*}
-                            \left( \frac{\dot{a}}{a} \right)^2 = \frac{8 \pi G}{3} \rho \hspace{2cm} \frac{\ddot{a}}{a} = - \frac{4 \pi G}{3} (\rho + 3 P)
-                        \end{equation*}
-                        \begin{equation*}
-                            \dot{\rho} + 3 H (\rho + P) = 0
-                        \end{equation*}
-                        \vspace{-0.4cm}
-                        \begin{itemize}
-                            \item[\textcolor{cyan}{$\Longrightarrow$}] Se agrega una ecuación de estado: $P = \omega \rho$, siendo $\omega = 0$ para materia, $\omega = \frac{1}{3}$ para radiación y $\omega = -1$ para energía oscura.
-                        \end{itemize}
-                \end{itemize}
-                }                
-            \end{frame}
+            %        \item[\textcolor{brown}{$\bullet$}] Las ecuaciones que describen la dinámica del universo seran
+            %            \begin{equation*}
+            %                \left( \frac{\dot{a}}{a} \right)^2 = \frac{8 \pi G}{3} \rho \hspace{2cm} \frac{\ddot{a}}{a} = - \frac{4 \pi G}{3} (\rho + 3 P)
+            %            \end{equation*}
+            %            \begin{equation*}
+            %                \dot{\rho} + 3 H (\rho + P) = 0
+            %            \end{equation*}
+            %            \vspace{-0.4cm}
+            %            \begin{itemize}
+            %                \item[\textcolor{cyan}{$\Longrightarrow$}] Se agrega una ecuación de estado: $P = \omega \rho$, siendo $\omega = 0$ para materia, $\omega = \frac{1}{3}$ para radiación y $\omega = -1$ para energía oscura.
+            %            \end{itemize}
+            %    \end{itemize}
+            %    }                
+            %\end{frame}
 
-            \begin{frame}{Perturbaciones Cosmológicas y la descomposición \textcolor{ForestGreen}{S}\textcolor{red}{V}\textcolor{blue}{T}}
-                \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] El estudio del origen y evolución de las estrcturas requiere perturbar al tensor métrico y a la distribución de energía-materia
-                        \begin{equation*}
-                            g_{\mu\nu} = \bar{g}_{\mu\nu} + \delta g_{\mu\nu} \hspace{2cm} T_{\mu\nu} = \bar{T}_{\mu\nu} + \delta T_{\mu\nu}
-                        \end{equation*}
-                    \item[\textcolor{brown}{$\bullet$}] El estudio de las perturbaciones se hace con la descomposición \textcolor{ForestGreen}{S}\textcolor{red}{V}\textcolor{blue}{T}
-                        \begin{equation*}
-                            \delta g_{\mu\nu} = \begin{cases}
-                                \delta g_{00} = - 2 \textcolor{ForestGreen}{\phi}\\
-                                \delta g_{i0} = \partial_i \textcolor{ForestGreen}{B} + \textcolor{red}{S_i}\\
-                                \delta g_{ij} = - 2 \textcolor{ForestGreen}{\psi} \delta_{ij} + \left( \partial_i \partial_i - \frac{\delta_{ij}}{3} \nabla^2 \right) \textcolor{ForestGreen}{E} + 2 \partial_{(i} \textcolor{red}{F_{j)}} + \textcolor{blue}{h_{ij}} 
-                            \end{cases}
-                        \end{equation*}
-                        \begin{equation*}
-                            \delta T_{\mu\nu} = \begin{cases}
-                                \delta T_{00} = \textcolor{ForestGreen}{\delta \rho}\\
-                                \delta T_{i0} = \partial_i (\textcolor{ForestGreen}{\delta u}) + \textcolor{red}{u_i}\\
-                                \delta T_{ij} = \textcolor{ForestGreen}{\delta P} \delta_{ij} + \left( \partial_i \partial_i - \frac{\delta_{ij}}{3} \nabla^2 \right) \textcolor{ForestGreen}{\delta \sigma} + 2 \partial_{(i} \textcolor{red}{v_{j)}} + \textcolor{blue}{\Pi_{ij}} 
-                            \end{cases}
-                        \end{equation*}
-                \end{itemize}
-            \end{frame}
+            %\begin{frame}{Perturbaciones Cosmológicas y la descomposición \textcolor{ForestGreen}{S}\textcolor{red}{V}\textcolor{blue}{T}}
+            %    \begin{itemize}
+            %        \item[\textcolor{brown}{$\bullet$}] El estudio del origen y evolución de las estrcturas requiere perturbar al tensor métrico y a la distribución de energía-materia
+            %            \begin{equation*}
+            %                g_{\mu\nu} = \bar{g}_{\mu\nu} + \delta g_{\mu\nu} \hspace{2cm} T_{\mu\nu} = \bar{T}_{\mu\nu} + \delta T_{\mu\nu}
+            %            \end{equation*}
+            %        \item[\textcolor{brown}{$\bullet$}] El estudio de las perturbaciones se hace con la descomposición \textcolor{ForestGreen}{S}\textcolor{red}{V}\textcolor{blue}{T}
+            %            \begin{equation*}
+            %                \delta g_{\mu\nu} = \begin{cases}
+            %                    \delta g_{00} = - 2 \textcolor{ForestGreen}{\phi}\\
+            %                    \delta g_{i0} = \partial_i \textcolor{ForestGreen}{B} + \textcolor{red}{S_i}\\
+            %                    \delta g_{ij} = - 2 \textcolor{ForestGreen}{\psi} \delta_{ij} + \left( \partial_i \partial_i - \frac{\delta_{ij}}{3} \nabla^2 \right) \textcolor{ForestGreen}{E} + 2 \partial_{(i} \textcolor{red}{F_{j)}} + \textcolor{blue}{h_{ij}} 
+            %                \end{cases}
+            %            \end{equation*}
+            %            \begin{equation*}
+            %                \delta T_{\mu\nu} = \begin{cases}
+            %                    \delta T_{00} = \textcolor{ForestGreen}{\delta \rho}\\
+            %                    \delta T_{i0} = \partial_i (\textcolor{ForestGreen}{\delta u}) + \textcolor{red}{u_i}\\
+            %                    \delta T_{ij} = \textcolor{ForestGreen}{\delta P} \delta_{ij} + \left( \partial_i \partial_i - \frac{\delta_{ij}}{3} \nabla^2 \right) \textcolor{ForestGreen}{\delta \sigma} + 2 \partial_{(i} \textcolor{red}{v_{j)}} + \textcolor{blue}{\Pi_{ij}} 
+            %                \end{cases}
+            %            \end{equation*}
+            %    \end{itemize}
+            %\end{frame}
 
-            \begin{frame}{Perturbaciones Cosmológicas y la descomposición \textcolor{ForestGreen}{S}\textcolor{red}{V}\textcolor{blue}{T}}
-                \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Se definen variables invariantes de gauge ante difeomorfismos
-                        \begin{equation*}
-                            \begin{split}
-                                \textcolor{ForestGreen}{\Phi} &= \textcolor{ForestGreen}{\phi} + \dot{\textcolor{ForestGreen}{B}} - \frac{1}{2} \ddot{\textcolor{ForestGreen}{E}} \hspace{2cm} \textcolor{red}{\Sigma_i} = \textcolor{red}{S_i} - \dot{\textcolor{red}{F_i}}\\
-                                \textcolor{ForestGreen}{\Theta} &= - 2 \textcolor{ForestGreen}{\psi} + - \frac{1}{3} \nabla^2 \textcolor{ForestGreen}{E} \hspace{1.55cm} \textcolor{blue}{h_{ij}} = \textcolor{blue}{h_{ij}}\\
-                            \end{split}
-                        \end{equation*}
-                    \item[\textcolor{brown}{$\bullet$}] Ante una métrica de fondo isótropa y homogenea, los sectores se desacoplan. En particular, con un fondo de tipo Minkowski, las ecuaciones para cada sector son
-                        \begin{equation*}
-                            \nabla^2 \textcolor{ForestGreen}{\Theta} = - \frac{1}{m_p^2} \textcolor{ForestGreen}{\delta \rho} \hspace{1cm} \nabla^2 \textcolor{ForestGreen}{\Phi} = - \frac{1}{2 m_p^2} \left( \textcolor{ForestGreen}{\delta \rho} + 3 \textcolor{ForestGreen}{\delta P} - 3 \textcolor{ForestGreen}{\delta \dot{u}} \right)
-                        \end{equation*}
-                        \begin{equation*}
-                            \nabla^2 \textcolor{red}{\Sigma_i} = - \frac{2}{m_p^2} \textcolor{red}{v_i} \hspace{2cm} \Box \textcolor{blue}{h_{ij}} = - \frac{2}{m_p^2} \textcolor{blue}{\Pi_{ij}} 
-                        \end{equation*}
-                \end{itemize}
-            \end{frame}
+            %\begin{frame}{Perturbaciones Cosmológicas y la descomposición \textcolor{ForestGreen}{S}\textcolor{red}{V}\textcolor{blue}{T}}
+            %    \begin{itemize}
+            %        \item[\textcolor{brown}{$\bullet$}] Se definen variables invariantes de gauge ante difeomorfismos
+            %            \begin{equation*}
+            %                \begin{split}
+            %                    \textcolor{ForestGreen}{\Phi} &= \textcolor{ForestGreen}{\phi} + \dot{\textcolor{ForestGreen}{B}} - \frac{1}{2} \ddot{\textcolor{ForestGreen}{E}} \hspace{2cm} \textcolor{red}{\Sigma_i} = \textcolor{red}{S_i} - \dot{\textcolor{red}{F_i}}\\
+            %                    \textcolor{ForestGreen}{\Theta} &= - 2 \textcolor{ForestGreen}{\psi} + - \frac{1}{3} \nabla^2 \textcolor{ForestGreen}{E} \hspace{1.55cm} \textcolor{blue}{h_{ij}} = \textcolor{blue}{h_{ij}}\\
+            %                \end{split}
+            %            \end{equation*}
+            %        \item[\textcolor{brown}{$\bullet$}] Ante una métrica de fondo isótropa y homogenea, los sectores se desacoplan. En particular, con un fondo de tipo Minkowski, las ecuaciones para cada sector son
+            %            \begin{equation*}
+            %                \nabla^2 \textcolor{ForestGreen}{\Theta} = - \frac{1}{m_p^2} \textcolor{ForestGreen}{\delta \rho} \hspace{1cm} \nabla^2 \textcolor{ForestGreen}{\Phi} = - \frac{1}{2 m_p^2} \left( \textcolor{ForestGreen}{\delta \rho} + 3 \textcolor{ForestGreen}{\delta P} - 3 \textcolor{ForestGreen}{\delta \dot{u}} \right)
+            %            \end{equation*}
+            %            \begin{equation*}
+            %                \nabla^2 \textcolor{red}{\Sigma_i} = - \frac{2}{m_p^2} \textcolor{red}{v_i} \hspace{2cm} \Box \textcolor{blue}{h_{ij}} = - \frac{2}{m_p^2} \textcolor{blue}{\Pi_{ij}} 
+             %           \end{equation*}
+             %   \end{itemize}
+            %\end{frame}
 
             \begin{frame}{Inflación}
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] La etapa de Inflación se define como un período de expansión acelerada en el universo muy temprano
-                    \item[\textcolor{brown}{$\bullet$}] El modelo inflacionario más sencillo considera la dinámica de un único campo: el inflatón
+                    \item[\textcolor{brown}{$\bullet$}] La etapa de Inflación se define como un período de expansión acelerada y permite resolver los problemas del horizonte, planitud y sobrepoblación de defectos topológicos.
+                    \item[\textcolor{brown}{$\bullet$}] El modelo inflacionario más sencillo considera la dinámica de un único campo: el inflatón.
                         \begin{equation*}
                             S = - \int \sqrt{-g} \left[ \frac{1}{2} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi + V(\phi) \right] ~ d^4 x
                         \end{equation*}
@@ -174,7 +170,7 @@
                                     \rho = \frac{1}{2} \dot{\phi}^2 + V(\phi) \hspace{1.5cm} P = \frac{1}{2} \dot{\phi}^2 - V(\phi)
                                 \end{equation*}
                             \begin{itemize}
-                                \item[\textcolor{red}{$\Longrightarrow$}] Si $\dot{\phi}^2 \ll V(\phi)$ la presión efectiva se vuelve negativa, generando una expansión acelerada del universo. A esta condición se la conoce como \textit{slow-roll}
+                                \item[\textcolor{red}{$\Longrightarrow$}] Si $\dot{\phi}^2 \ll V(\phi)$ la presión efectiva se vuelve negativa, generando una expansión acelerada del universo. A esta condición se la conoce como \textit{slow-roll}.
                             \end{itemize}
                         \end{itemize}  
                 \end{itemize}
@@ -198,15 +194,36 @@
                 \end{figure}
             \end{frame}
 
+            \begin{frame}{Inflación: perturbaciones}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Durante la expansión, las fluctuaciones cuánticas del vacío  son amplificadas, cruzando el horizonte de Hubble y quedando ``congeladas'' como perturbaciones clásicas.
+                    \item[\textcolor{brown}{$\bullet$}] Las perturbaciones se pueden separar en escalares y tensoriales:
+                        \begin{equation*}
+                            P_\mathcal{R} (k) = \mathcal{A}_S \left( \frac{k}{k_p} \right)^{n_s - 1}
+                        \end{equation*} 
+                        \begin{equation*}
+                            P_T (k) = \mathcal{A}_T \left( \frac{k}{k_p} \right)^{n_T} = r \mathcal{A}_S \left( \frac{k}{k_p} \right)^{n_T}
+                        \end{equation*} 
+
+                    \item[\textcolor{brown}{$\bullet$}] Estas perturbaciones servirán de semilla para la formación de galaxias y anisotropías en el CMB.
+                \end{itemize}
+            \end{frame}
+
             \begin{frame}{Recalentamiento}
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Luego de inflación, el universo tiene un período de transición hacia la época dominada por radiación, conocido como Recalentamiento.
+                    \item[\textcolor{brown}{$\bullet$}] Luego de Inflación, el universo tiene un período de transición hacia la termalización del plasma a una temperatura $T_{reh}$.
                     \item[\textcolor{brown}{$\bullet$}] Durante esta etapa, el inflatón oscila alrededor del mínimo de potencial.
                 \end{itemize}
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width = 0.85\linewidth]{Figures/Reheating.png}
                 \end{figure}
+
+                \begin{textblock*}{5cm}(3.725cm,2.75cm) % {ancho} (posición x,y)
+                    \begin{tikzpicture}
+                        \draw[dashed, color = ForestGreen] (0,0) -- ++(0,1.5) [-{Latex}] -- ++(-1,0) node[left, color = black] {\footnotesize (BBN) $10^2 < T_{reh} < 10^{15}$ $(r)$};
+                    \end{tikzpicture}
+                \end{textblock*}
             \end{frame}
 
             \begin{frame}{\textit{Preheating}}
@@ -225,9 +242,18 @@
                             \omega_{eff} = \frac{n - 1}{n + 1}
                         \end{equation*}
                         \begin{itemize}
-                            \item[\textcolor{cyan}{$\bullet$}] Para potenciales cuadráticos $(n = 1)$ se tiene $\omega_{eff} = 0$ y para potenciales cuárticos $(n = 2)$ se tiene $\omega_{eff} = 1/3$.
-                            \item[\textcolor{cyan}{$\bullet$}] Cuando las oscilaciones dejan de ser coherentes, la ecuación de estado se equilibra en $\omega = 1/3$ para acoplarse a la siguiente etapa. 
+                            \item[\textcolor{cyan}{$\bullet$}] Para potenciales cuadráticos $(n = 1)$ se tiene $\omega_{eff} = 0$ y para potenciales cuárticos $(n = 2)$ se tiene $\omega_{eff} = 1/3$
                         \end{itemize}
+                \end{itemize}
+            \end{frame}
+
+            \begin{frame}{\textit{Preheating}: equilibrio de la ecuación de estado}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width = 0.8\linewidth]{Figures/omega_eff.png}
+                \end{figure}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] A excepción del caso $V(\phi) \propto \phi^2$, todos los potenciales monomiales a tiempos largos tienden a $\omega_{eff} \to 1/3$ cuando se dejan de tener oscilaciones coherentes.
                 \end{itemize}
             \end{frame}
 
@@ -239,77 +265,20 @@
                         \begin{equation*}
                             g_{\mu\nu} = \bar{g}_{\mu\nu} + h_{\mu\nu}
                         \end{equation*}
-                    \item[\textcolor{brown}{$\bullet$}] Al armarse una teoría lineal de la gravedad se toma $|h_\mu\nu| \ll 1$ y las ecuaciones de Einstein bajo un espacio-tiempo de Minkowski son
-                        \begin{equation*}
-                            \partial_\alpha \partial_\nu \bar{h}^\alpha_\mu + \partial^\alpha \partial_\mu \bar{h}_{\alpha\nu} - \Box \bar{h}_{\mu\nu} - \eta_{\mu\nu} \partial_\alpha \partial^\beta \bar{h}_\beta^\alpha = \frac{2}{m_p^2} \Pi_{\mu\nu}
-                        \end{equation*}
-                        \vspace{-0.4cm}
-                        \begin{itemize}
-                            \item[\textcolor{cyan}{$\Longrightarrow$}] con $\bar{h}_{\mu\nu} = h_{\mu\nu} - \frac{1}{2} g_{\mu\nu} h$ el inverso de traza de $h_{\mu\nu}$ y $h$ la traza de la perturbación
-                        \end{itemize}
-                \end{itemize}
-            \end{frame}
-
-            \begin{frame}{Polarizaciones: El \textit{gauge} TT}
-                \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] El \textit{gauge} TT (\textit{Transverse-Traceless}) considera por condiciones:
-                    \begin{itemize}
-                        \item[\textcolor{cyan}{$\bullet$}] Transversalidad: $\partial^\nu h_{\mu\nu} = 0$
-                        \item[\textcolor{cyan}{$\bullet$}] Sin traza: $h = 0$
-                        \item[\textcolor{cyan}{$\bullet$}] Sin componentes temporales: $h_{\mu 0} = 0$  
-                    \end{itemize} 
-                    \vspace{0.25cm}
-                    \item[\textcolor{brown}{$\bullet$}] Aplicar el \textit{gauge} TT permite escribir a las ondas a partir de dos componentes independientes $(h_+, h_\times)$ llamadas polarizaciones
+                    \item[\textcolor{brown}{$\bullet$}] A través del \textit{gauge} TT (\textit{Transverse-Traceless}) la perturbación se escribe como suma de dos polarizaciones
                         \small{\begin{equation*}
                             h_{\mu\nu} = \begin{pmatrix}
                                 0 & 0 & 0 & 0\\
                                 0 & h_+ & h_\times & 0\\
                                 0 & h_\times & - h_+ & 0\\
                                 0 & 0 & 0 & 0 
-                            \end{pmatrix} = h_+ \begin{pmatrix}
-                                0 & 0 & 0 & 0\\
-                                0 & 1 & 0 & 0\\
-                                0 & 0 & -1 & 0\\
-                                0 & 0 & 0 & 0 
-                            \end{pmatrix} + h_\times \begin{pmatrix}
-                                0 & 0 & 0 & 0\\
-                                0 & 0 & 1 & 0\\
-                                0 & 1 & 0 & 0\\
-                                0 & 0 & 0 & 0 
-                            \end{pmatrix} 
+                            \end{pmatrix} = \hspace{3.75cm}
                         \end{equation*}}
-                    \vspace{0.25cm}
-                    \item[\textcolor{brown}{$\bullet$}] El uso del \textit{gauge} TT permite escribir la ecuación de ondas (en el espacio de Minkowski) como
-                        \begin{equation*}
-                            \Box h_{ij}^{TT} = - \frac{2}{m_p^2} \Pi_{ij}^{TT}
-                        \end{equation*}
                 \end{itemize}
-            \end{frame}
 
-            \begin{frame}{Polarizaciones: El \textit{gauge} TT}
-                \small{\begin{equation*}
-                    h_{\mu\nu} = \begin{pmatrix}
-                        0 & 0 & 0 & 0\\
-                        0 & h_+ & h_\times & 0\\
-                        0 & h_\times & - h_+ & 0\\
-                        0 & 0 & 0 & 0 
-                    \end{pmatrix} = h_+ \begin{pmatrix}
-                        0 & 0 & 0 & 0\\
-                        0 & 1 & 0 & 0\\
-                        0 & 0 & -1 & 0\\
-                        0 & 0 & 0 & 0 
-                    \end{pmatrix} + h_\times \begin{pmatrix}
-                        0 & 0 & 0 & 0\\
-                        0 & 0 & 1 & 0\\
-                        0 & 1 & 0 & 0\\
-                        0 & 0 & 0 & 0 
-                    \end{pmatrix} 
-                \end{equation*}}
-
-                \begin{figure}
-                    \centering
-                    \includegraphics[scale = 0.25]{Figures/Polarizaciones_GWs.png}
-                \end{figure}
+                \begin{textblock*}{5cm}(8cm,5cm)
+                    \includegraphics[scale = 0.2]{Figures/Polarizaciones_GWs.png}
+                \end{textblock*}
             \end{frame}
 
             \begin{frame}{GWs en un fondo cosmológico}
@@ -325,7 +294,7 @@
                         \begin{itemize}
                             \item[\textcolor{cyan}{$\bullet$}] El término de Hubble puede ser absorbido en un reescalado del campo de la forma $H_{ij} = a h_{ij}^{TT}$, y la ecuación para la dinámica de cada polarización $r = +, \times$ es 
                                 \begin{equation*}
-                                    H^{\prime \prime}_r (\textbf{k}, \eta) + \left( k^2 - \frac{a^{\prime \prime}}{a} \right) = H_r (\textbf{k}, \eta) = \frac{a}{m_p^2} \Pi_r (\textbf{k}, \eta)
+                                    H^{\prime \prime}_r (\textbf{k}, \eta) + \left( k^2 - \frac{a^{\prime \prime}}{a} \right) H_r (\textbf{k}, \eta) = \frac{a}{m_p^2} \Pi_r (\textbf{k}, \eta)
                                 \end{equation*} 
                         \end{itemize}
                 \end{itemize}
@@ -361,10 +330,6 @@
                                 &= \left\langle h_1 (t) \, h_2 (t) \right\rangle
                             \end{split}
                         \end{equation*}
-                    \item[\textcolor{brown}{$\bullet$}] La densidad espectral de potencia $(S_h)$ que mide un detector se relaciona con la deformación característica del espacio-tiempo como 
-                        \begin{equation*}
-                            S_h = \frac{h_c^2}{f}
-                        \end{equation*}
                 \end{itemize}
             \end{frame}
 
@@ -375,28 +340,41 @@
                 \end{figure}
             \end{frame}
 
-            \begin{frame}{Métodos de detección}
-                \begin{figure}[H]
-                    \centering
-                    \begin{tikzpicture}
-                        \node at (0,0) {\includegraphics[scale = 0.6]{Figures/EMRC.jpg}};
-                        \node at (-3,2) {\includegraphics[scale = 0.2]{Figures/LIGO.jpg}};
-                        \node at (-3,-2) {\includegraphics[scale = 0.4]{Figures/PTA.png}};
-                        \node at (4,-2) {\includegraphics[scale = 0.25]{Figures/LISA.png}};
-                        \node at (4,2) {\includegraphics[scale = 0.05]{Figures/CMB.jpg}};
+            %\begin{frame}{Métodos de detección}
+            %    \begin{figure}[H]
+            %        \centering
+            %        \begin{tikzpicture}
+            %            \node at (0,0) {\includegraphics[scale = 0.6]{Figures/EMRC.jpg}};
+            %            \node at (-3,2) {\includegraphics[scale = 0.2]{Figures/LIGO.jpg}};
+            %            \node at (-3,-2) {\includegraphics[scale = 0.4]{Figures/PTA.png}};
+            %            \node at (4,-2) {\includegraphics[scale = 0.25]{Figures/LISA.png}};
+            %            \node at (4,2) {\includegraphics[scale = 0.05]{Figures/CMB.jpg}};
 
-                        \filldraw[color = white] (-0.5,1.05) rectangle ++(2,1);
-                        \filldraw (-4.25,-3.67) rectangle ++(2.5,0.25);
+            %            \filldraw[color = white] (-0.5,1.05) rectangle ++(2,1);
+            %            \filldraw (-4.25,-3.67) rectangle ++(2.5,0.25);
 
-                        \node at (-3,3.25) {LIGO};
-                        \node at (4,3.25) {CMB: Modos B};
-                        \node at (0.5,1.5) {EMRC};
-                        \node at (3.9,-3.65) {LISA};
-                        \node at (-3,-3.9) {PTA};
-                    \end{tikzpicture}
-                \end{figure}                
-            \end{frame}
+            %            \node at (-3,3.25) {LIGO};
+            %            \node at (4,3.25) {CMB: Modos B};
+            %            \node at (0.5,1.5) {EMRC};
+            %            \node at (3.9,-3.65) {LISA};
+            %            \node at (-3,-3.9) {PTA};
+            %        \end{tikzpicture}
+            %    \end{figure}                
+            %\end{frame}
             
+            \begin{frame}{EMRC}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Utilizan el efecto Gertsenshtein inverso para detectar las GWs.
+                    \item[\textcolor{brown}{$\bullet$}] Se introduce un campo electromagnético en una cavidad y al interaccionar con la GW produce fotones.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[scale = 0.8]{Figures/EMRC.jpg}
+                    \end{figure}
+                    \item[\textcolor{brown}{$\bullet$}] El paso de la onda induce una corriente $j_{eff} \propto \dot{h} \times \vec{B}$ que si coincide con un modo de la cavidad amplifica la señal.
+                    \item[\textcolor{brown}{$\bullet$}] Para el funcionamiento de estos detectores se requiere de temperaturas criogénicas.
+                \end{itemize}
+            \end{frame}
+
     \begin{frame}
         \begin{figure}[H]
             \begin{tikzpicture}
@@ -417,7 +395,7 @@
                     \end{itemize}
                     \item[\textcolor{brown}{$\bullet$}] La dinámica está regida por
                         \small{\begin{equation*}
-                            S = \int \sqrt{-g} \left[ \frac{m_p^2}{2} R - \frac{1}{2} \partial_\mu \phi \partial^\mu \phi - - \frac{1}{2} \partial_\mu \chi \partial^\mu \chi - V(\phi) - \frac{1}{2} g^2 \phi^2 \chi^2 \right] \, d^4 x 
+                            S = \int \sqrt{-g} \left[ \frac{m_p^2}{2} R - \frac{1}{2} \partial_\mu \phi \partial^\mu \phi - \frac{1}{2} \partial_\mu \chi \partial^\mu \chi - V(\phi) - \frac{1}{2} g^2 \phi^2 \chi^2 \right] \, d^4 x 
                         \end{equation*}}
                     \begin{itemize}
                         \item[\textcolor{cyan}{$\Longrightarrow$}] Utilizando una métrica de tipo FLRW, las ecuaciones de los campos se escriben como
@@ -432,63 +410,50 @@
                 \end{itemize}
             \end{frame}
 
-            \begin{frame}{\textit{Background}}
-                \only<-1>{\begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Las ecuaciones que rigen el \textit{Background} son
-                        \begin{equation*}
-                            \ddot{\bar{\phi}} + 3 H \dot{\bar{\phi}} + V^\prime \left( \bar{\phi} \right) = 0
-                        \end{equation*}
-                        \begin{equation*}
-                            H^2 = \frac{1}{3 m_p^2} \left[ \frac{1}{2} \dot{\phi}^2 + V(\phi) \right]
-                        \end{equation*}
-                \end{itemize}}
+            %\begin{frame}{\textit{Background}}
+            %    \only<-1>{\begin{itemize}
+            %        \item[\textcolor{brown}{$\bullet$}] Las ecuaciones que rigen el \textit{Background} son
+            %            \begin{equation*}
+%                            \ddot{\bar{\phi}} + 3 H \dot{\bar{\phi}} + V^\prime \left( \bar{\phi} \right) = 0
+ %                       \end{equation*}
+  %                      \begin{equation*}
+   %                         H^2 = \frac{1}{3 m_p^2} \left[ \frac{1}{2} \dot{\phi}^2 + V(\phi) \right]
+    %                    \end{equation*}
+     %           \end{itemize}}
 
-                \only<2->{\begin{infobox}[ForestGreen]{}
-                    Durante esta época los modelos inflacionarios monomiales ($\phi^{2n}$) hacen que el universo se comporte según
-                    \begin{equation*}
-                        \omega_{eff} = \frac{n - 1}{n + 1}
-                    \end{equation*}
-                \end{infobox}}
+ %               \only<2->{\begin{infobox}[ForestGreen]{}
+%                    Durante esta época los modelos inflacionarios monomiales ($\phi^{2n}$) hacen que el universo se comporte según
+ %                   \begin{equation*}
+  %                      \omega_{eff} = \frac{n - 1}{n + 1}
+   %                 \end{equation*}
+    %            \end{infobox}}
 
-                \begin{figure}[H]
-                    \centering
-                    \begin{tikzpicture}
-                        \node at (-4,0) {\includegraphics[scale = 0.15]{Figures/background_a_m2phi2.png}};
-                        \node at (0,0) {\includegraphics[scale = 0.15]{Figures/background_phi.png}};
-                        \node at (4,0) {\includegraphics[scale = 0.2]{Figures/background_a_lphi4.png}};
-
-                        \node at (-4,-1.75) {\small$m^2 \phi^2$};
-                        \node at (4.5,-1.75) {\small$\lambda \phi^4$};
-                    \end{tikzpicture}
-                \end{figure}
-            \end{frame}
+     %           \begin{figure}[H]
+      %              \centering
+       %             \begin{tikzpicture}
+        %                \node at (-4,0) {\includegraphics[scale = 0.15]{Figures/background_a_m2phi2.png}};
+        %                \node at (0,0) {\includegraphics[scale = 0.15]{Figures/background_phi.png}};
+         %               \node at (4,0) {\includegraphics[scale = 0.2]{Figures/background_a_lphi4.png}};
+%
+ %                       \node at (-4,-1.75) {\small$m^2 \phi^2$};
+  %                      \node at (4.5,-1.75) {\small$\lambda \phi^4$};
+   %                 \end{tikzpicture}
+    %            \end{figure}
+     %       \end{frame}
 
             \begin{frame}{Perturbaciones}
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Para las perturbaciones, las ecuaciones dinámicas son
-                        \begin{equation*}
-                            \delta \ddot{\phi}_k + 3 H \delta \dot{\phi}_k + \left[ \frac{k^2}{a^2} + \frac{\partial^2 V(\bar{\phi})}{\partial \phi^2} \right] \delta \phi_k = 0
-                        \end{equation*}
+                    \item[\textcolor{brown}{$\bullet$}] Para las perturbaciones, la dinámica está dada por 
                         \begin{equation*}
                             \delta \ddot{\chi}_k + 3 H \delta \dot{\chi}_k + \left[ \frac{k^2}{a^2} + g^2 \bar{\phi}^2 \right] \delta \chi_k = 0
                         \end{equation*}
-                    \vspace{0.5cm}
                     \item[\textcolor{brown}{$\bullet$}] Si no se considera la expansión del universo, las ecuaciones para el campo hijo se pueden escribir en términos de dos parámetros: $\kappa$ y $q$
                         \begin{equation*}
                             \delta \ddot{\chi}_k + \left( \kappa^2 + q \bar{\phi}^2 \right) \delta \chi_k = 0
                         \end{equation*}
-                \end{itemize}
-            \end{frame}
-
-            \begin{frame}{Perturbaciones: Ecuación de Mathieu y Lamé}
-                \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Si no se considera la expansión del universo, las ecuaciones para el campo hijo se pueden escribir en términos de dos parámetros: $\kappa$ y $q$
+                    \item[\textcolor{brown}{$\bullet$}] Para un potencial cuadrático y uno cuártico esta ecuación se puede escribir como
                         \begin{equation*}
-                            \delta \ddot{\chi}_k + \left( \kappa^2 + q \bar{\phi}^2 \right) \delta \chi_k = 0
-                        \end{equation*}
-                    \item[\textcolor{brown}{$\bullet$}] Para un potencial cuadrático y uno cuártico estas ecuaciones se pueden escribir como
-                        \begin{equation*}
-                            \delta \ddot{\chi}_k + \left[ A_k - 2 q \cos (2T) \right] \delta \chi_k
+                            \delta \ddot{\chi}_k + \left[ A_k - 2 q \cos (2T) \right] \delta \chi_k = 0
                         \end{equation*}
                         \begin{equation*}
                             \delta \chi_k^{\prime \prime} + \left[ \kappa^2 + q \, \text{cn}^2 \left( x, \frac{1}{\sqrt{2}} \right) \right] \delta \chi_k = 0
@@ -501,28 +466,11 @@
             \begin{frame}{Análisis de Floquet}
                 \begin{itemize}
                     \item[\textcolor{brown}{$\bullet$}] Las ecuaciones de Mathieu y Lamé admiten soluciones de la forma $\delta \chi \propto e^{\mu_k t}$
-                    \item[\textcolor{brown}{$\bullet$}] El coeficiente de Floquet se calcula a partir de la matriz de monodromía
-                        \begin{equation*}
-                            \mathcal{O} (t_0, t_0 + T) = \begin{pmatrix}
-                                u^{(1)} (t_0 + T) & u^{(2)} (t_0 + T)\\
-                                v^{(1)} (t_0 + T) & v^{(2)} (t_0 + T)
-                            \end{pmatrix}
-                        \end{equation*}
-                        \begin{equation*}
-                            \mu_k = \frac{1}{T} \cosh^{-1} \left[ \frac{\text{Tr} (\mathcal{O})}{2} \right]
-                        \end{equation*} 
-                    \item[\textcolor{brown}{$\bullet$}] Y el período se extrae de la conservación de la energia 
-                        \begin{equation*}
-                            T = \frac{4}{\sqrt{2 E}} \bigints_{0}^{\phi_{max}} \frac{d\phi}{\displaystyle \sqrt{1- \frac{V \left( \phi \right)}{E}}}
-                        \end{equation*}
                 \end{itemize}
-            \end{frame}
-
-            \begin{frame}{Tablas de inestabilidades}
                 \begin{figure}[H]
                     \centering
                     \begin{tikzpicture}
-                        \node at (0,0) {\includegraphics[width = \linewidth]{Figures/Floquet_lphi4.pdf}};
+                        \node at (0,0) {\includegraphics[width = 0.95\linewidth]{Figures/Floquet_lphi4.pdf}};
                     \end{tikzpicture}
                 \end{figure}
             \end{frame}
@@ -570,37 +518,25 @@
 
         \subsection{Dinámica de los campos con expansión del universo}
 
-            \begin{frame}{\textit{Stochastic resonance}}
-                \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Al agregar la expansión del universo, para el potencial cuadrático se puede definir $\varphi = a^{3/2} (t) \, \phi (t)$ y $X = a^{3/2} (t) \, \delta \chi (t)$ tal que
+            \begin{frame}{Dinámica con expansión}
+                \small{\begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Para el potencial cuadrático se puede definir $\varphi = a^{3/2} (t) \, \phi (t)$ y $X = a^{3/2} (t) \, \delta \chi (t)$ tal que
                         \begin{equation*}
                             \ddot{X}_k + \left( \frac{k^2}{a^2} + \frac{g^2 \varphi^2}{a^3} \right) X_k = 0
                         \end{equation*}
                     \begin{itemize}
-                        \item[\textcolor{cyan}{$\Longrightarrow$}] Esta dependencia con $a$ en la frecuencia causa lo que se conoce como \textit{Stochastic resonance}.
+                        \item[\textcolor{cyan}{$\Longrightarrow$}] Como la frecuencia depende de $a$, se conoce como \textit{Stochastic resonance}.
                     \end{itemize}
                 \end{itemize}
                 
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width = 0.85\linewidth]{Figures/nk_Broad_resonance_expansion_m2phi2.pdf}
+                    \includegraphics[width = 0.6\linewidth]{Figures/nk_Broad_resonance_expansion_m2phi2.pdf}
                 \end{figure}
-            \end{frame}
-
-            \begin{frame}{Caso $\lambda \phi^4$ con expansión}
+            
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Al agregar expansión del universo tenemos
-                        \begin{equation*}
-                            \delta \ddot{\chi}_k + 3 H \, \delta \dot{\chi}_k + \left( g^2 \bar{\phi} + \frac{k^2}{a^2} \right) \delta \chi_k = 0  
-                        \end{equation*}
-                    \item[\textcolor{brown}{$\bullet$}] Se pueden definir $\varphi = a (\eta) \, \phi (\eta)$ y $X_k = a (\eta) \, \delta \chi_k (\eta)$ para absorber el término de fricción 
-                    \begin{equation*}
-                        X^{\prime \prime}_k + \left( \kappa^2 + q \varphi^2 \right) X_k = 0
-                    \end{equation*}
-                    \begin{itemize}
-                        \item[\textcolor{cyan}{$\Longrightarrow$}] Se puede observar que la teoría es conforme dado que este cambio induce la misma dinámica que para $\delta \chi_k$ sin expansión del universo
-                    \end{itemize}
-                \end{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Para el potencial cuártico se pueden definir $\varphi = a (\eta) \, \phi (\eta)$ y $X_k = a (\eta) \, \delta \chi_k (\eta)$ tal que se recupera la dinámica sin expansión por lo que se observa que la teoría es conforme.
+                \end{itemize}}
             \end{frame}
 
         %\subsection{Producción de ondas gravitacionales}
@@ -730,7 +666,7 @@
                         \end{equation*}
                 \end{itemize}
 
-                \only<2->{\begin{textblock*}{5cm}(9.75cm,2.8cm) % {ancho} (posición x,y)
+                \only<2->{\begin{textblock*}{5cm}(9.725cm,2.7cm) % {ancho} (posición x,y)
                     \begin{tikzpicture}
                         \draw[dashed, color = ForestGreen] (0,0) circle (12pt);
                         \draw[dashed, color = ForestGreen] (0,12pt) -- ++(0,1.25) [-{Latex}, solid] -- ++(0.2,0) node[right, color = black] {\small $\sum_n \partial_i \phi_n \partial_j \phi_n$};
@@ -831,6 +767,7 @@
                 \begin{figure}[H]
                     \centering
                     \begin{tikzpicture}
+                        \node at (0,0) {\includegraphics[scale = 0.35]{Figures/CL_m2phi2.png}};
                         \node at (6,0) {\includegraphics[scale = 0.35]{Figures/CL_tanh2.png}};
                         \node at (3,-4) {\includegraphics[scale = 0.35]{Figures/CL_Starobinsky.png}};
                     \end{tikzpicture}
