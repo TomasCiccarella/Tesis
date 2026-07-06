@@ -683,18 +683,17 @@
 
             \begin{frame}{Modelos de estudio}
                 \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Los potenciales que estudiaremos se pueden separar según la evolución efectiva del universo en modelos de tipo radiación y materia
+                        \begin{equation*}
+                            \omega_{eff} = \frac{n - 1}{n + 1} \hspace{2cm} \left( V(\phi) \sim \phi^{2n} \right)
+                        \end{equation*}
                     \item[\textcolor{brown}{$\bullet$}] Estudiaremos 2 familias de potenciales:
                         \begin{itemize}
-                            \item[\textcolor{cyan}{$\bullet$}] Modelos monomiales: $\lambda \phi^4$ y $m^2 \phi^2$
-                            \item[\textcolor{cyan}{$\bullet$}] $\alpha$-\textit{attractors}: $\tanh^4 (\phi/M)$, $\tanh^2 (\phi/M)$ y Starobinsky 
+                            \item[\textcolor{cyan}{$\bullet$}] Tipo radiación: $\frac{1}{4} \lambda \phi^4$ y $\frac{\Lambda^4}{4} \tanh^4 \left( \frac{\phi}{M} \right)$
+                            \item[\textcolor{cyan}{$\bullet$}] Tipo materia: $\frac{1}{2} m^2 \phi^2$ y $\frac{\Lambda^4}{2} \tanh^2 \left( \frac{\phi}{M} \right)$ y $\frac{\Lambda^4}{2} \left[ 1 - \exp \left( - \frac{\phi}{M} \right) \right]^2$
                         \end{itemize}
-                    \vspace{0.5cm}
-                    \item[\textcolor{brown}{$\bullet$}] Los modelos monomiales son más sencillos pero los otros resultan más favorecidos por las observaciones.
-                    \vspace{0.5cm}
-                    \item[\textcolor{brown}{$\bullet$}] Se puede separar a estos potenciales según la evolución efectiva del universo en modelos de tipo radiación y materia
-                        \begin{equation*}
-                            \omega_{eff} = \frac{n - 1}{n + 1} \hspace{2cm} \left( V(\phi) = \phi^{2n} \right)
-                        \end{equation*}
+                    \item[\textcolor{brown}{$\bullet$}] Los modelos monomiales son los más implementados por su sencillez, mientras que los $E$ y $T$ models resultan los más favorecidos por las observaciones en los parámetros inflacionarios.
+                    \item[\textcolor{brown}{$\bullet$}] Los E y T models se conocen como $\alpha$-\textit{attractors}, y usan $M \simeq \sqrt{\alpha} m_{pl}$ con $0.1 < \alpha < 10$ fijada por $r$ y $n_s$. Mientras que la normalización $\Lambda^4$ está dada por la amplitud del espectro escalar.
                 \end{itemize}
             \end{frame}
 
@@ -736,7 +735,7 @@
                 \end{textblock*}    
             \end{frame}
 
-            \begin{frame}{Formación de GWs}
+            \begin{frame}{Evolución de la energía y formación de GWs}
                 \begin{figure}
                     \centering
                     \includegraphics[width = 0.8\linewidth]{Figures/energy_evolution.pdf}
@@ -748,7 +747,7 @@
                 \end{figure}
             \end{frame}
 
-            \begin{frame}{Reescaleo de los espectros}
+            \begin{frame}{Reescaleo de los espectros de GWs}
                 \begin{tikzpicture}
                     \filldraw[color = orange, opacity = 0.3] (1.25,-2) rectangle (4,2);
                     \filldraw[color = esmerald, opacity = 0.3] (0.25,-2) rectangle (1.25,2);
@@ -804,7 +803,7 @@
 
         \subsection{Comparación para modelos de tipo radiación}
 
-            \begin{frame}{Comparación de espectros: modelos tipo radiación}
+            \begin{frame}{Comparación de espectros de GWs: modelos tipo radiación}
                 \begin{figure}[H]
                     \includegraphics[width = \linewidth]{Figures/CosmoLattice_GW_Spectra_today_lphi4tanh4.pdf}
                 \end{figure}
@@ -813,40 +812,50 @@
                 \end{infobox}
             \end{frame}
 
-            \begin{frame}{Comparación tipo radiación: variación de parámetros}
+            \begin{frame}{Comparación para tipo radiación: variación de parámetros}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Se deja fija la concavidad del potencial dada por $\lambda = 9 \times 10^{-14}$. Y se varía $\Lambda^4$ para ver si los distintos valores para este parámetro representan la misma producción de ondas gravitacionales.
+                \end{itemize}
                 \begin{figure}[H]
                     \centering
                     \begin{tikzpicture}
-                        \node at (0,0) {\includegraphics[scale = 0.3]{Figures/CL_tanh4_varM.png}};
+                        \node at (0,0) {\includegraphics[scale = 0.25]{Figures/CL_tanh4_varM.png}};
                     \end{tikzpicture}
                 \end{figure}
             \end{frame}
 
         \subsection{Comparación para modelos de tipo materia}
 
-            \begin{frame}{Comparación de espectros: modelos tipo materia}
+            \begin{frame}{Comparación de espectros de GWs: modelos tipo materia}
                 \begin{figure}[H]
                     \centering
                     \begin{tikzpicture}
-                        \node at (0,0) {\includegraphics[scale = 0.32]{Figures/CL_m2phi2.png}};
-                        \node at (6,0) {\includegraphics[scale = 0.32]{Figures/CL_tanh2.png}};
-                        \node at (6,-4) {\includegraphics[scale = 0.32]{Figures/CL_Starobinsky.png}};
+                        \node at (0,0) {\includegraphics[scale = 0.3]{Figures/CL_m2phi2.png}};
+                        \node at (6,0) {\includegraphics[scale = 0.3]{Figures/CL_tanh2.png}};
+                        \node at (6,-4) {\includegraphics[scale = 0.3]{Figures/CL_Starobinsky.png}};
                     \end{tikzpicture}
                 \end{figure}
-                \begin{textblock*}{5.5cm}(1cm, 6cm)
+                \begin{textblock*}{5.5cm}(1cm, 5.5cm)
                     \begin{infobox}[ForestGreen]{}
                         \shortstack{Se puede observar que para\\un mismo valor de $m^2 = \frac{\Lambda^4}{M^2}$,\\los espectros para tiempos\\tardíos son semejantes\\aunque a tiempos cortos no.}
                     \end{infobox}
                 \end{textblock*}
             \end{frame}
 
-            \begin{frame}{Comparación tipo materia: variación de parámetros}
+            \begin{frame}{Comparación para tipo materia: variación de parámetros}
+                \begin{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Se deja fija la concavidad del potencial dada por $m = 2.435 \times 10^{19}$ GeV. Y se varía $M$ para ver si los distintos valores para este parámetro representan la misma producción de ondas gravitacionales.
+                \end{itemize}
                 \begin{figure}[H]
                     \centering
                     \begin{tikzpicture}
                         %\node at (0,0) {\includegraphics[scale = 0.2]{Figures/CL_m2phi2.png}};
-                        \node at (5.5,1.75) {\includegraphics[scale = 0.23]{Figures/CL_tanh2_varM.png}};
-                        \node at (5.5,-1.75) {\includegraphics[scale = 0.23]{Figures/CL_Starobinsky_varM.png}};
+                        \node at (5.5,1.75) {\includegraphics[scale = 0.21]{Figures/CL_tanh2_varM.png}};
+                        \node at (0.35,1.75) {\footnotesize $\tanh^2$};
+                        \node at (0.3,1.3) {\LARGE \textcolor{cyan}{$\hookrightarrow$}};
+                        \node at (5.5,-1.5) {\includegraphics[scale = 0.21]{Figures/CL_Starobinsky_varM.png}};
+                        \node at (0.35,-1.5) {\footnotesize Starobinsky};
+                        \node at (0.1,-1.95) {\LARGE \textcolor{cyan}{$\hookrightarrow$}};
                     \end{tikzpicture}
                 \end{figure}
             \end{frame}
