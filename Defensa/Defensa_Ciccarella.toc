@@ -2,16 +2,16 @@
 \beamer@sectionintoc {1}{Introducción}{4}{0}{1}
 \beamer@subsectionintoc {1}{1}{Cosmología}{5}{0}{1}
 \beamer@subsectionintoc {1}{2}{Ondas Gravitacionales}{13}{0}{1}
-\beamer@sectionintoc {2}{\textit {Preheating} lineal}{20}{0}{2}
-\beamer@subsectionintoc {2}{1}{Resonancia Paramétrica}{21}{0}{2}
-\beamer@subsectionintoc {2}{2}{Dinámica de los campos sin expansión: análisis de Floquet}{23}{0}{2}
-\beamer@subsectionintoc {2}{3}{Dinámica de los campos con expansión del universo}{27}{0}{2}
-\beamer@sectionintoc {3}{\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{31}{0}{3}
-\beamer@subsectionintoc {3}{1}{¿Qué es?}{32}{0}{3}
-\beamer@subsectionintoc {3}{2}{Modelos de estudio}{35}{0}{3}
-\beamer@subsectionintoc {3}{3}{Comparación para modelos de tipo radiación}{40}{0}{3}
-\beamer@subsectionintoc {3}{4}{Comparación para modelos de tipo materia}{42}{0}{3}
-\beamer@subsectionintoc {3}{5}{Sensibilidad observacional y perspectivas de detección}{44}{0}{3}
-\beamer@sectionintoc {4}{Conclusiones}{46}{0}{4}
-\beamer@subsectionintoc {4}{1}{Conclusiones}{46}{0}{4}
-\beamer@subsectionintoc {4}{2}{Perspectivas a futuro}{49}{0}{4}
+\beamer@sectionintoc {2}{\textit {Preheating} lineal}{21}{0}{2}
+\beamer@subsectionintoc {2}{1}{Resonancia Paramétrica}{22}{0}{2}
+\beamer@subsectionintoc {2}{2}{Dinámica de los campos sin expansión: análisis de Floquet}{24}{0}{2}
+\beamer@subsectionintoc {2}{3}{Dinámica de los campos con expansión del universo}{28}{0}{2}
+\beamer@sectionintoc {3}{\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{32}{0}{3}
+\beamer@subsectionintoc {3}{1}{¿Qué es?}{33}{0}{3}
+\beamer@subsectionintoc {3}{2}{Modelos de estudio}{36}{0}{3}
+\beamer@subsectionintoc {3}{3}{Comparación para modelos de tipo radiación}{41}{0}{3}
+\beamer@subsectionintoc {3}{4}{Comparación para modelos de tipo materia}{43}{0}{3}
+\beamer@subsectionintoc {3}{5}{Sensibilidad observacional y perspectivas de detección}{45}{0}{3}
+\beamer@sectionintoc {4}{Conclusiones}{47}{0}{4}
+\beamer@subsectionintoc {4}{1}{Conclusiones}{47}{0}{4}
+\beamer@subsectionintoc {4}{2}{Perspectivas a futuro}{50}{0}{4}

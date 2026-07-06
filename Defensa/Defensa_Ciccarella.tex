@@ -285,16 +285,43 @@
                 \begin{itemize}
                     \item[\textcolor{brown}{$\bullet$}] Un fondo cosmológico utiliza una distribución de energía-materia para las ondas gravitacionales dada por
                     \begin{equation*}
-                        T^{GW}_{\mu\nu} = \frac{1}{32 \pi G} \left\langle \nabla_\mu h_{\alpha \beta} \nabla_\nu h^{\alpha \beta} \right\rangle \hspace{0.2cm} \textcolor{cyan}{\Longrightarrow} \hspace{0.2cm} \Omega_{GW} = \frac{1}{32 \pi G \rho_c} \left\langle \dot{h}_{\alpha \beta} \dot{h}^{\alpha \beta} \right\rangle
-                    \end{equation*} 
+                        T^{GW}_{\mu\nu} = \frac{1}{32 \pi G} \left\langle \nabla_\mu h_{\alpha \beta} \nabla_\nu h^{\alpha \beta} \right\rangle \hspace{0.2cm} \textcolor{cyan}{\Longrightarrow}
+                    \end{equation*}
+                    \begin{itemize}
+                        \item[\textcolor{cyan}{$\Longrightarrow$}] con lo que se puede definir a la densidad de energía fraccionaria para las ondas gravitacionales como
+                        \begin{equation*}
+                            \Omega_{\text{GW}} = \frac{\rho_{GW}}{\rho_c} = \frac{1}{32 \pi G \rho_c} \left\langle \dot{h}_{\alpha \beta} \dot{h}^{\alpha \beta} \right\rangle
+                        \end{equation*}
+                    \end{itemize}
                     \item[\textcolor{brown}{$\bullet$}] Estas ondas se decomponen en sus polarizaciones a partir de
                         \begin{equation*}
                             h_{ij} (\textbf{x}, t) = \frac{1}{(2\pi)^3} \int \sum_{r = +, \times} h_r (\textbf{x}, t) \, \hat{e}^r_{ij} \left( \hat{\textbf{k}} \right) \, e^{-i \textbf{k} \cdot \textbf{x}} \, d^3 \textbf{k}  
                         \end{equation*}
+                \end{itemize}
+            \end{frame}
+
+            \begin{frame}{Ecuación de ondas en un fondo cosmológico}
+                \begin{itemize}
                     \item[\textcolor{brown}{$\bullet$}] La ecuación de ondas para un fondo tipo FLRW es
                         \begin{equation*}
                             h_{r}^{\prime \prime} (\textbf{k}, \eta) + 2 \mathcal{H} \, h_{r}^\prime (\textbf{k}, \eta) + k^2 h_{r} (\textbf{k}, \eta) = \frac{1}{m_p^2} \Pi_{r}^{TT} (\textbf{k}, \eta)
                         \end{equation*}
+                    \begin{itemize}
+                        \item[\textcolor{cyan}{$\Longrightarrow$}] Donde $\Pi$ representa a las perturbaciones tensoriales en el tensor de energía-momento
+                            \begin{equation*}
+                                \Pi_{ij} = T_{ij} - a^2 P \left( \delta_{ij} + h_{ij} \right)
+                            \end{equation*} 
+                        \item[\textcolor{cyan}{$\Longrightarrow$}] A su vez se definen sus proyecciones
+                            \begin{equation*}
+                                \Pi^{TT}_{r} = e_{ij}^r \left( \hat{\textbf{k}} \right) \, \Pi^{TT}_{ij}
+                            \end{equation*}
+                            \begin{equation*}
+                                \Pi^{TT}_{ij} = \Lambda_{ij,lm} \left( \hat{\textbf{k}} \right) \, \Pi_{lm} 
+                            \end{equation*}
+                            \begin{itemize}
+                                \item[\textcolor{red}{$\Longrightarrow$}] $\displaystyle \Lambda_{ij,lm} \left( \hat{\textbf{k}} \right) = P_{il} \left( \hat{\textbf{k}} \right) \, P_{jm} \left( \hat{\textbf{k}} \right) - \frac{1}{2} P_{ij} \left( \hat{\textbf{k}} \right) \, P_{lm} \left( \hat{\textbf{k}} \right)$
+                            \end{itemize}
+                    \end{itemize}
                 \end{itemize}
             \end{frame}
 
