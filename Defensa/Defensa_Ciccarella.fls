@@ -633,6 +633,10 @@ INPUT ./Figures/Cosmologia_etapas.png
 INPUT ./Figures/Cosmologia_etapas.png
 INPUT ./Figures/Cosmologia_etapas.png
 INPUT ./Figures/Cosmologia_etapas.png
+INPUT ./Figures/Cosmologia_etapas.png
+INPUT ./Figures/Cosmologia_etapas.png
+INPUT ./Figures/Cosmologia_etapas.png
+INPUT ./Figures/Cosmologia_etapas.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -818,10 +822,6 @@ INPUT ./Figures/CL_Starobinsky.png
 INPUT ./Figures/CL_Starobinsky.png
 INPUT ./Figures/CL_Starobinsky.png
 INPUT ./Figures/CL_Starobinsky.png
-INPUT ./Figures/CL_m2phi2.png
-INPUT ./Figures/CL_m2phi2.png
-INPUT ./Figures/CL_m2phi2.png
-INPUT ./Figures/CL_m2phi2.png
 INPUT ./Figures/CL_tanh2_varM.png
 INPUT ./Figures/CL_tanh2_varM.png
 INPUT ./Figures/CL_tanh2_varM.png
@@ -849,6 +849,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
@@ -861,6 +862,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
@@ -871,6 +873,7 @@ INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfsi2488.pfb
+INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb
