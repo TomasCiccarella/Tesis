@@ -158,7 +158,7 @@
                     \item[\textcolor{brown}{$\bullet$}] La etapa de Inflación se define como un período de expansión acelerada y permite resolver los problemas del horizonte, planitud y sobrepoblación de defectos topológicos.
                     \item[\textcolor{brown}{$\bullet$}] El modelo inflacionario más sencillo considera la dinámica de un único campo: el inflatón.
                         \begin{equation*}
-                            S = - \int \sqrt{-g} \left[ \frac{1}{2} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi + V(\phi) \right] ~ d^4 x
+                            S_m = - \int \sqrt{-g} \left[ \frac{1}{2} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi + V(\phi) \right] ~ d^4 x
                         \end{equation*}
                         \begin{itemize}
                             \item[\textcolor{cyan}{$\bullet$}] De esta acción se deriva el tensor de energía-momento
@@ -170,7 +170,7 @@
                                     \rho = \frac{1}{2} \dot{\phi}^2 + V(\phi) \hspace{1.5cm} P = \frac{1}{2} \dot{\phi}^2 - V(\phi)
                                 \end{equation*}
                             \begin{itemize}
-                                \item[\textcolor{red}{$\Longrightarrow$}] Si $\dot{\phi}^2 \ll V(\phi)$ la presión efectiva se vuelve negativa, generando una expansión acelerada del universo. A esta condición se la conoce como \textit{slow-roll}.
+                                \item[\textcolor{red}{$\Longrightarrow$}] La condición de \textit{slow-roll} es $\dot{\phi}^2 \ll V(\phi)$, cuando se cumple la presión efectiva se vuelve negativa $(P = - \rho)$, generando una expansión acelerada del universo.
                             \end{itemize}
                         \end{itemize}  
                 \end{itemize}
@@ -197,15 +197,39 @@
             \begin{frame}{Inflación: perturbaciones}
                 \begin{itemize}
                     \item[\textcolor{brown}{$\bullet$}] Durante la expansión, las fluctuaciones cuánticas del vacío  son amplificadas, cruzando el horizonte de Hubble y quedando ``congeladas'' como perturbaciones clásicas.
-                    \item[\textcolor{brown}{$\bullet$}] Las perturbaciones se pueden separar en escalares y tensoriales:
-                        \begin{equation*}
-                            P_\mathcal{R} (k) = \mathcal{A}_S \left( \frac{k}{k_p} \right)^{n_s - 1}
-                        \end{equation*} 
-                        \begin{equation*}
-                            P_T (k) = \mathcal{A}_T \left( \frac{k}{k_p} \right)^{n_T} = r \mathcal{A}_S \left( \frac{k}{k_p} \right)^{n_T}
-                        \end{equation*} 
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                            \draw (-2,0) -- (4,0);
+                            \draw (4,0) -- (6,2);
+                            \draw (6,2) -- (7.5,2.75);
 
-                    \item[\textcolor{brown}{$\bullet$}] Estas perturbaciones servirán de semilla para la formación de galaxias y anisotropías en el CMB.
+                            \draw[-{Latex}] (0,-0.5) -- (0,3) node[right] {\footnotesize $H^{-1}$};
+                            \draw[-{Latex}] (-2,-0.5) -- (8,-0.5) node[right] {\footnotesize $a^{-1}$};
+                            \draw[-{Latex}] (-1,2) -- (-1,1) node[right, midway] {\footnotesize $k$};
+
+                            \draw[dashed, fill = white] (4,0) circle (5pt) node[above left] {\footnotesize \textit{Reheating}};
+                            \draw[dashed] (4,0)++(-5pt,0) -- ++(0,-0.5) node[below] {\footnotesize $a_I$};
+                            \draw[dashed] (6,2) -- ++(0,-2.5) node[below] {\footnotesize $a_{eq}$};
+                            \draw[dashed] (7.5,2.75) -- ++(0,-3.25) node[below] {\footnotesize $a_{0}$};
+
+                            \draw[color = ForestGreen] (-1,-0.83) -- (8,2.16);
+                            \draw[color = ForestGreen] (-1,-0.66) -- (8,2.33);
+                            \draw[color = ForestGreen] (-1,-0.49) -- (8,2.5);
+                            \draw[color = ForestGreen] (-1,-0.33) -- (8,2.66);
+                            \draw[color = ForestGreen] (-1,-0.17) -- (8,2.87);
+
+                            \draw[color = red] (1,-1.1) -- (8,1.23);
+                            \draw[color = red] (1.5,-1.1) -- (8,1.07);
+                            \draw[color = red] (2,-1.1) -- (8,0.91);
+                            \draw[color = red] (2.5,-1.1) -- (8,0.75);
+                            \draw[color = red] (3,-1.1) -- (8,0.59);
+                        \end{tikzpicture}
+                    \end{figure}
+                    \item[\textcolor{brown}{$\bullet$}] Los espectros de potencia para las perturbaciones se escriben como
+                        \begin{equation*}
+                            P_\mathcal{R} (k) = \mathcal{A}_S \left( \frac{k}{k_p} \right)^{n_s - 1} \hspace{0.75cm} P_T (k) = \mathcal{A}_T \left( \frac{k}{k_p} \right)^{n_T} = r \mathcal{A}_S \left( \frac{k}{k_p} \right)^{n_T}
+                        \end{equation*}
                 \end{itemize}
             \end{frame}
 
@@ -228,7 +252,7 @@
 
             \begin{frame}{\textit{Preheating}}
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] El decaimiento del inflatón se puede modelar de diferentes formas y se destacan las siguientes:
+                    \item[\textcolor{brown}{$\bullet$}] El potencial del inflatón se puede modelar de diferentes formas y se destacan las siguientes:
                         \begin{itemize}
                             \item[\textcolor{cyan}{$\bullet$}] Modelos monomiales: $\phi^{2n}$
                             \item[\textcolor{cyan}{$\bullet$}] Modelos T: $\tanh^{2n} (\phi/\mu)$
@@ -255,6 +279,18 @@
                 \begin{itemize}
                     \item[\textcolor{brown}{$\bullet$}] A excepción del caso $V(\phi) \propto \phi^2$, todos los potenciales monomiales a tiempos largos tienden a $\omega_{eff} \to 1/3$ cuando se dejan de tener oscilaciones coherentes.
                 \end{itemize}
+
+                \begin{textblock*}{5cm}(3.075cm,3cm)
+                    \begin{tikzpicture}
+                        \draw[color = gold,thick] (0,0) ellipse (0.55 and 0.2);
+                    \end{tikzpicture}
+                \end{textblock*}
+
+                \begin{textblock*}{5cm}(3.8cm,5.55cm)
+                    \begin{tikzpicture}
+                        \draw[color = gold,thick] (0,0) ellipse (0.55 and 0.2);
+                    \end{tikzpicture}
+                \end{textblock*}
             \end{frame}
 
         \subsection{Ondas Gravitacionales}
@@ -265,6 +301,10 @@
                         \begin{equation*}
                             g_{\mu\nu} = \bar{g}_{\mu\nu} + h_{\mu\nu}
                         \end{equation*}
+                        \vspace{-0.5cm}
+                        \begin{itemize}
+                            \item[\textcolor{cyan}{$\Longrightarrow$}] La métrica de fondo estará descripta por la métrica de FLRW plana $(ds^2 = - dt^2 + a^2 \, \delta_{ij} \, dx^i \, dx^j)$
+                        \end{itemize}
                     \item[\textcolor{brown}{$\bullet$}] A través del \textit{gauge} TT (\textit{Transverse-Traceless}) la perturbación se escribe como suma de dos polarizaciones
                         \small{\begin{equation*}
                             h_{\mu\nu} = \begin{pmatrix}
@@ -276,8 +316,8 @@
                         \end{equation*}}
                 \end{itemize}
 
-                \begin{textblock*}{5cm}(8cm,5cm)
-                    \includegraphics[scale = 0.2]{Figures/Polarizaciones_GWs.png}
+                \begin{textblock*}{5cm}(8cm,5.5cm)
+                    \includegraphics[scale = 0.175]{Figures/Polarizaciones_GWs.png}
                 \end{textblock*}
             \end{frame}
 
@@ -285,24 +325,28 @@
                 \begin{itemize}
                     \item[\textcolor{brown}{$\bullet$}] Un fondo cosmológico utiliza una distribución de energía-materia para las ondas gravitacionales dada por
                     \begin{equation*}
-                        T^{GW}_{\mu\nu} = \frac{1}{32 \pi G} \left\langle \nabla_\mu h_{\alpha \beta} \nabla_\nu h^{\alpha \beta} \right\rangle \hspace{0.2cm} \textcolor{cyan}{\Longrightarrow}
+                        T^{GW}_{\mu\nu} = \frac{1}{32 \pi G} \left\langle \nabla_\mu h_{\alpha \beta} \nabla_\nu h^{\alpha \beta} \right\rangle
                     \end{equation*}
                     \begin{itemize}
                         \item[\textcolor{cyan}{$\Longrightarrow$}] con lo que se puede definir a la densidad de energía fraccionaria para las ondas gravitacionales como
                         \begin{equation*}
                             \Omega_{\text{GW}} = \frac{\rho_{GW}}{\rho_c} = \frac{1}{32 \pi G \rho_c} \left\langle \dot{h}_{\alpha \beta} \dot{h}^{\alpha \beta} \right\rangle
                         \end{equation*}
-                    \end{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Estas ondas se decomponen en sus polarizaciones a partir de
+                        \item[\textcolor{cyan}{$\Longrightarrow$}] Y al espectro de potencias para la densidad de energía fraccionaria a partir de
                         \begin{equation*}
-                            h_{ij} (\textbf{x}, t) = \frac{1}{(2\pi)^3} \int \sum_{r = +, \times} h_r (\textbf{x}, t) \, \hat{e}^r_{ij} \left( \hat{\textbf{k}} \right) \, e^{-i \textbf{k} \cdot \textbf{x}} \, d^3 \textbf{k}  
+                            \Omega_{GW} = \int \Omega_{GW} (k) \, d \log k
                         \end{equation*}
+                    \end{itemize}
                 \end{itemize}
             \end{frame}
 
             \begin{frame}{Ecuación de ondas en un fondo cosmológico}
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] La ecuación de ondas para un fondo tipo FLRW es
+                    \item[\textcolor{brown}{$\bullet$}] Las ondas se pueden escribir como
+                        \begin{equation*}
+                            h_{ij}^{TT} (\textbf{k}, t) = \Lambda_{ij,kl} h_{ij} \left( \textbf{k}, t \right) = \sum_{r = +, \times} h_r (\textbf{k}, t) \, \hat{e}_{ij}^r \left( \hat{\textbf{k}} \right)
+                        \end{equation*}
+                    \item[\textcolor{brown}{$\bullet$}] La de Einstein para una métrica FLRW perturbada da la ecuación de ondas
                         \begin{equation*}
                             h_{r}^{\prime \prime} (\textbf{k}, \eta) + 2 \mathcal{H} \, h_{r}^\prime (\textbf{k}, \eta) + k^2 h_{r} (\textbf{k}, \eta) = \frac{1}{m_p^2} \Pi_{r}^{TT} (\textbf{k}, \eta)
                         \end{equation*}
@@ -310,17 +354,7 @@
                         \item[\textcolor{cyan}{$\Longrightarrow$}] Donde $\Pi$ representa a las perturbaciones tensoriales en el tensor de energía-momento
                             \begin{equation*}
                                 \Pi_{ij} = T_{ij} - a^2 P \left( \delta_{ij} + h_{ij} \right)
-                            \end{equation*} 
-                        \item[\textcolor{cyan}{$\Longrightarrow$}] A su vez se definen sus proyecciones
-                            \begin{equation*}
-                                \Pi^{TT}_{r} = e_{ij}^r \left( \hat{\textbf{k}} \right) \, \Pi^{TT}_{ij}
                             \end{equation*}
-                            \begin{equation*}
-                                \Pi^{TT}_{ij} = \Lambda_{ij,lm} \left( \hat{\textbf{k}} \right) \, \Pi_{lm} 
-                            \end{equation*}
-                            \begin{itemize}
-                                \item[\textcolor{red}{$\Longrightarrow$}] $\displaystyle \Lambda_{ij,lm} \left( \hat{\textbf{k}} \right) = P_{il} \left( \hat{\textbf{k}} \right) \, P_{jm} \left( \hat{\textbf{k}} \right) - \frac{1}{2} P_{ij} \left( \hat{\textbf{k}} \right) \, P_{lm} \left( \hat{\textbf{k}} \right)$
-                            \end{itemize}
                     \end{itemize}
                 \end{itemize}
             \end{frame}
@@ -335,7 +369,7 @@
                         \end{equation*}
                     \item[\textcolor{brown}{$\bullet$}] La densidad fraccionaria de ondas gravitacionales puede ser determinado a partir de
                         \begin{equation*}
-                            h_c^2 (f) = \frac{3 H_0^2}{2 \pi^2 f^2} \Omega_{GW} (f)
+                            \Omega_{GW} (f) = \frac{2 \pi^2 f^2 h_c^2 (f)}{3 H_0^2}
                         \end{equation*}
                 \end{itemize}
             \end{frame}
@@ -358,11 +392,18 @@
                 \end{itemize}
             \end{frame}
 
-            \begin{frame}{Fuentes y detectores}
+            \begin{frame}{Fuentes y detectores de SGWB}
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[scale = 0.35]{Figures/GW_detectors.png}
+                    \begin{tikzpicture}
+                        \node at (0,0) {\includegraphics[scale = 0.4]{Figures/GW-detectors.pdf}};
+                        \node at (0,-4) {\includegraphics[scale = 0.2]{Figures/GW-detectors-references.png}};
+                    \end{tikzpicture}
                 \end{figure}
+%                \begin{figure}[H]
+ %                   \centering
+  %                  \includegraphics[scale = 0.35]{Figures/GW_detectors.png}
+   %             \end{figure}
             \end{frame}
 
             %\begin{frame}{Métodos de detección}
@@ -395,6 +436,7 @@
                         \centering
                         \includegraphics[scale = 0.8]{Figures/EMRC.jpg}
                     \end{figure}
+                    \item[\textcolor{brown}{$\bullet$}] Estas cavidades tienen tamaños característicos del orden de $\sim 1$ m, permitiendo resonar con frecuencias del orden de $\sim 10^8$ Hz.
                     \item[\textcolor{brown}{$\bullet$}] Estos detectores permiten medir fondos estocásticos a través de la autocorrelación o el uso de multiples detectores.
                 \end{itemize}
             \end{frame}
@@ -477,11 +519,19 @@
                         \end{equation*}
                     \item[\textcolor{brown}{$\bullet$}] Para un potencial cuadrático y uno cuártico esta ecuación se puede escribir como
                         \begin{equation*}
-                            \delta \ddot{\chi}_k + \left[ A_k - 2 q \cos (2T) \right] \delta \chi_k = 0
+                            \delta \ddot{\chi}_k + \left[ \kappa^2 + 2 q \left( 1 - \cos (2T) \right) \right] \delta \chi_k = 0, \hspace{0.25cm} q = \frac{g^2}{4} \left( \frac{\phi_0}{m} \right)^2 
                         \end{equation*}
                         \begin{equation*}
-                            \delta \chi_k^{\prime \prime} + \left[ \kappa^2 + q \, \text{cn}^2 \left( x, \frac{1}{\sqrt{2}} \right) \right] \delta \chi_k = 0
+                            \delta \chi_k^{\prime \prime} + \left[ \kappa^2 + q \, \text{cn}^2 \left( x, \frac{1}{\sqrt{2}} \right) \right] \delta \chi_k = 0, \hspace{0.5cm} q = \frac{g^2}{\lambda}
                         \end{equation*}
+
+                        \begin{textblock*}{5cm}(0.5cm,7cm)
+                            \footnotesize{Mathieu \textcolor{red}{$\rightarrow$}}
+                        \end{textblock*}
+
+                        \begin{textblock*}{5cm}(0.75cm,8.35cm)
+                            \footnotesize{Lamé \textcolor{red}{$\rightarrow$}}
+                        \end{textblock*}
                 \end{itemize}
             \end{frame}
 
@@ -645,6 +695,7 @@
                 \begin{itemize}
                     \item[\textcolor{brown}{$\bullet$}] \CosmoLattice es un código público escrito en \texttt{C++} 
                     \item[\textcolor{brown}{$\bullet$}] Permite simular la dinámica no lineal de campos clásicos en un universo en expansión
+                    \item[\textcolor{brown}{$\bullet$}] La facilidad de utilizar \CosmoLattice radica en tener por separado la incorporación de la física de la parte numérica. 
                     \item[\textcolor{brown}{$\bullet$}] La dinámica general está descripta por
                         \footnotesize{\begin{equation*}
                             \begin{split}
@@ -675,7 +726,7 @@
                         \end{equation*}
                     \item[\textcolor{brown}{$\bullet$}] La evolución del universo está dada por
                         \begin{equation*}
-                            \frac{a^{\prime \prime}}{a} - \alpha \left( \frac{a^\prime}{a} \right)^2 = \frac{a^{2 \alpha}}{6 m_p^2} (\bar{\rho} - 3 \bar{P})
+                            \frac{a^{\prime \prime}}{a} - \alpha \left( \frac{a^\prime}{a} \right)^2 = \frac{a^{2 \alpha}}{6 m_p^2} (\langle \rho \rangle - 3 \langle P \rangle)
                         \end{equation*} 
                     \item[\textcolor{brown}{$\bullet$}] La presión y densidad de energía se calculan a partir de 
                         \begin{equation*}
@@ -720,7 +771,7 @@
                             \item[\textcolor{cyan}{$\bullet$}] Tipo materia: $\frac{1}{2} m^2 \phi^2$ y $\frac{\Lambda^4}{2} \tanh^2 \left( \frac{\phi}{M} \right)$ y $\frac{\Lambda^4}{2} \left[ 1 - \exp \left( - \frac{\phi}{M} \right) \right]^2$
                         \end{itemize}
                     \item[\textcolor{brown}{$\bullet$}] Los modelos monomiales son los más implementados por su sencillez, mientras que los $E$ y $T$ models resultan los más favorecidos por las observaciones en los parámetros inflacionarios.
-                    \item[\textcolor{brown}{$\bullet$}] Los E y T models se conocen como $\alpha$-\textit{attractors}, y usan $M \simeq \sqrt{\alpha} m_{pl}$ con $0.1 < \alpha < 10$ fijada por $r$ y $n_s$. Mientras que la normalización $\Lambda^4$ está dada por la amplitud del espectro escalar.
+                    \item[\textcolor{brown}{$\bullet$}] Los E y T models se conocen como $\alpha$-\textit{attractors}, y usan $M \simeq \sqrt{\alpha} m_{pl}$ con $0.1 < \alpha < 10$ fijada por las cotas y observaciones en $r$ y $n_s$. Mientras que la normalización $\Lambda^4$ está dada por la amplitud del espectro escalar $\mathcal{A}_S$.
                 \end{itemize}
             \end{frame}
 
@@ -737,8 +788,28 @@
                     \begin{tikzpicture}
                         \draw[color = ForestGreen, dashed] (0,0) ellipse (0.38 and 0.55);
                         \draw[color = ForestGreen, dashed] (0,-0.55) -- ++(0,-0.25) [-{Latex}] -- ++(1,0) node[right] {\textcolor{black}{$\lambda = \frac{\Lambda^4}{M^4}$}};
-                    \end{tikzpicture}                    
-                \end{textblock*}    
+                    \end{tikzpicture}    
+                \end{textblock*}
+                \begin{textblock*}{5cm}(9cm,5cm)
+                    \begin{tikzpicture}
+                        \draw[fill = white, thick] (-0.25,0) rectangle (2.25,-1.75);
+                        \node at (0.1,-0.25) {\small \textcolor{red}{\underline{\textcolor{black}{CI:}}}};
+                        \node at (1,-0.75) {\footnotesize $\phi_0$: $\epsilon = 1$};
+                        \node at (1,-1.25) {\footnotesize $\dot{\phi}_0 = \sqrt{2 V(\phi_0)}$};
+                    \end{tikzpicture}
+                \end{textblock*}
+                \begin{textblock*}{5cm}(11.125cm,3.125cm)
+                    \begin{tikzpicture}
+                        \draw[color = ForestGreen] (0,0) circle (5pt);
+                        \draw[color = ForestGreen, -{Latex}] (0,-5pt) -- ++(-0.25,-1.5);
+                    \end{tikzpicture}
+                \end{textblock*}
+                \begin{textblock*}{5cm}(7.95cm,3.6cm)
+                    \begin{tikzpicture}
+                        \draw[color = ForestGreen] (0,0) circle (5pt);
+                        \draw[color = ForestGreen, -{Latex}] (0,-5pt) -- ++(1,-1);
+                    \end{tikzpicture}
+                \end{textblock*}
             \end{frame}
 
             \begin{frame}{Modelos de tipo materia}
@@ -797,12 +868,13 @@
 
                     \draw[dashed, color = red] (5.75,0) -- (5.75,2.25) node[above, color = black]{\footnotesize $\Omega_{GW} (f, a_0)$};
                     \draw[dashed, color = red] (2.25,0) -- (2.25,2.25) node[above, color = black]{\footnotesize $\Omega_{GW} (k, a_f)$};
+                    \node[color = black] at (2.25,3.2) {\footnotesize \shortstack{(Extraido de\\ \CosmoLattice)}};
                     \draw[-{Latex}] (3.25,2.6) -- (4.75,2.6);
 
 
                     \node at (7.75, 1.5) {\footnotesize \textcolor{brown}{$\bullet$} $\displaystyle f_0 = \frac{k_i}{2 \pi} \frac{a_i}{a_0}$};
                     \node at (9.75,0.5) {\footnotesize $\displaystyle \simeq \frac{k}{2\pi} \left( \frac{\rho_{c,reh}}{\rho_{c,i}} \right)^{\frac{1}{3(1 + \omega_{eff})}} \left( \frac{\rho_{c,0}}{\rho_{c,reh}} \right)^{1/4}$};
-                    \node at (8.5, -0.5) {\footnotesize \textcolor{brown}{$\bullet$} $\displaystyle \Omega_{GW} (k, a_0) \simeq \Omega_{RAD,0}$};
+                    \node at (9.25, -0.5) {\footnotesize \textcolor{brown}{$\bullet$} $\displaystyle \Omega_{GW} (k, a_0) \simeq \Omega_{RAD,0} \, \Omega_{GW} (k, a_f)$};
                     \node at (9.75,-1.5) {\footnotesize$\displaystyle \times \left( \frac{\rho_{c,i}}{\rho_{c,reh}} \right)^{\frac{1 - 3 \omega_{eff}}{3 (1 + \omega_{eff})}} \left( \frac{a_f}{a_i} \right)^{1 - 3 \omega_{eff}}$};
 
                     \node at (7, -3) {\footnotesize \textcolor{cyan}{$\bullet$} $\displaystyle \rho_{c,reh} \simeq T^4_{reh}$};
@@ -841,7 +913,7 @@
 
             \begin{frame}{Comparación para tipo radiación: variación de parámetros}
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Se deja fija la concavidad del potencial dada por $\lambda = 9 \times 10^{-14}$. Y se varía $\Lambda^4$ para ver si los distintos valores para este parámetro representan la misma producción de ondas gravitacionales.
+                    \item[\textcolor{brown}{$\bullet$}] Se deja fija la concavidad del potencial dada por $\lambda = 9 \times 10^{-14}$. Y se varía $\Lambda^4$ para ver si los distintos valores para este parámetro representan la misma producción de ondas gravitacionales. También se deja fijo $q = 5050$.
                 \end{itemize}
                 \begin{figure}[H]
                     \centering
@@ -871,7 +943,7 @@
 
             \begin{frame}{Comparación para tipo materia: variación de parámetros}
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Se deja fija la concavidad del potencial dada por $m = 2.435 \times 10^{19}$ GeV. Y se varía $M$ para ver si los distintos valores para este parámetro representan la misma producción de ondas gravitacionales.
+                    \item[\textcolor{brown}{$\bullet$}] Se deja fija la concavidad del potencial dada por $m = 2.435 \times 10^{19}$ GeV. Y se varía $M$ para ver si los distintos valores para este parámetro representan la misma producción de ondas gravitacionales. También se deja fijo $q = 16000$.
                 \end{itemize}
                 \begin{figure}[H]
                     \centering
@@ -930,9 +1002,11 @@
         
             \begin{frame}{Perspectivas a futuro}
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Estudiar cómo delimitar los regímenes temporales y paramétricos para los cuales la fuente tensorial puede representarse a través de una teoría eectiva
-                    \item[\textcolor{brown}{$\bullet$}] Restringir \CosmoLattice a la resolución dinámica de los campos solo a orden lineal
-                    \item[\textcolor{brown}{$\bullet$}] Extender el análisis en \CosmoLattice de otros tipos de modelos inflacionarios actualmente en estudio
+                    \item[\textcolor{brown}{$\bullet$}] Estudiar cómo delimitar los regímenes temporales y paramétricos para los cuales la fuente tensorial puede representarse a través de una teoría efectiva linealizada.
+                    \begin{itemize}
+                        \item[\textcolor{cyan}{$\Longrightarrow$}] Restringir \CosmoLattice a la resolución dinámica de los campos solo a orden lineal.
+                    \end{itemize}
+                    \item[\textcolor{brown}{$\bullet$}] Utilizando \CosmoLattice, armar una enciclopediopedia con los espectros de GWs para los distintos tipos de modelos inflacionarios actualmente en estudio favorecidos por las observaciones.
                 \end{itemize}                
             \end{frame}
 

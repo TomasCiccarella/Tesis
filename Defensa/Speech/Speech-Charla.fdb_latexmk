@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1783348621.98973 "/home/tomy/Desktop/UBA/Tesis/Git/Defensa/Speech/Speech-Charla.tex" "Speech-Charla.pdf" "Speech-Charla" 1783348623.25355 0
+["pdflatex"] 1783393495.14084 "/home/tomy/Desktop/UBA/Tesis/Git/Defensa/Speech/Speech-Charla.tex" "Speech-Charla.pdf" "Speech-Charla" 1783393496.89947 0
   "/etc/texmf/web2c/texmf.cnf" 1754028040.36857 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/tomy/Desktop/UBA/Tesis/Git/Defensa/Speech/Speech-Charla.tex" 1783348620.46603 6706 d216bea60706f08d5ca1a8b6e0e269e5 ""
+  "/home/tomy/Desktop/UBA/Tesis/Git/Defensa/Speech/Speech-Charla.tex" 1783393493.13773 19179 9a212ffb50f7aeb93499af95c503d050 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -24,7 +24,11 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1136768653 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -216,9 +220,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1754028071.58514 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1754028237 8214163 21be332c6a420f73e121fd2e39b05413 ""
-  "Speech-Charla.aux" 1783348623.13708 454 5e62acaa6a730b5acba9c48e926ef43c "pdflatex"
-  "Speech-Charla.out" 1783348623.13908 83 f3c46f2b464312f83eb7c0dd7cb4b521 "pdflatex"
-  "Speech-Charla.tex" 1783348620.46603 6706 d216bea60706f08d5ca1a8b6e0e269e5 ""
+  "Speech-Charla.aux" 1783393496.76231 3581 aba440273a19f643f30e6fe3c2ce91b3 "pdflatex"
+  "Speech-Charla.out" 1783393496.76631 3698 d00954aebbc4bd4878254bf89d96612d "pdflatex"
+  "Speech-Charla.tex" 1783393493.13773 19179 9a212ffb50f7aeb93499af95c503d050 ""
   (generated)
   "Speech-Charla.aux"
   "Speech-Charla.log"
