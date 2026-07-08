@@ -9,9 +9,9 @@
 \beamer@sectionintoc {3}{\ensuremath {\mathcal {C}}\text {osmo}\ensuremath {\mathcal {L}}\text {attice}\xspace }{32}{0}{3}
 \beamer@subsectionintoc {3}{1}{¿Qué es?}{33}{0}{3}
 \beamer@subsectionintoc {3}{2}{Modelos de estudio}{36}{0}{3}
-\beamer@subsectionintoc {3}{3}{Comparación para modelos de tipo radiación}{42}{0}{3}
-\beamer@subsectionintoc {3}{4}{Comparación para modelos de tipo materia}{44}{0}{3}
-\beamer@subsectionintoc {3}{5}{Sensibilidad observacional y perspectivas de detección}{46}{0}{3}
-\beamer@sectionintoc {4}{Conclusiones}{48}{0}{4}
-\beamer@subsectionintoc {4}{1}{Conclusiones}{48}{0}{4}
-\beamer@subsectionintoc {4}{2}{Perspectivas a futuro}{51}{0}{4}
+\beamer@subsectionintoc {3}{3}{Comparación para modelos de tipo radiación}{43}{0}{3}
+\beamer@subsectionintoc {3}{4}{Comparación para modelos de tipo materia}{45}{0}{3}
+\beamer@subsectionintoc {3}{5}{Sensibilidad observacional y perspectivas de detección}{47}{0}{3}
+\beamer@sectionintoc {4}{Conclusiones}{49}{0}{4}
+\beamer@subsectionintoc {4}{1}{Conclusiones}{49}{0}{4}
+\beamer@subsectionintoc {4}{2}{Perspectivas a futuro}{52}{0}{4}
