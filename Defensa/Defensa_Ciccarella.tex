@@ -196,7 +196,7 @@
 
             \begin{frame}{Inflación: perturbaciones}
                 \begin{itemize}
-                    \item[\textcolor{brown}{$\bullet$}] Durante la expansión, las fluctuaciones cuánticas del vacío  son amplificadas, cruzando el horizonte de Hubble y quedando ``congeladas'' como perturbaciones clásicas.
+                    \item[\textcolor{brown}{$\bullet$}] Durante la expansión, las fluctuaciones cuánticas del vacío  son amplificadas, saliendo del horizonte de Hubble y quedando ``congeladas'' como perturbaciones clásicas.
                     \begin{figure}[H]
                         \centering
                         \begin{tikzpicture}
@@ -205,7 +205,7 @@
                             \draw (6,2) -- (7.5,2.75);
 
                             \draw[-{Latex}] (0,-0.5) -- (0,3) node[right] {\footnotesize $H^{-1}$};
-                            \draw[-{Latex}] (-2,-0.5) -- (8,-0.5) node[right] {\footnotesize $a^{-1}$};
+                            \draw[-{Latex}] (-2,-0.5) -- (8,-0.5) node[right] {\footnotesize $a$};
                             \draw[-{Latex}] (-1,2) -- (-1,1) node[right, midway] {\footnotesize $k$};
 
                             \draw[dashed, fill = white] (4,0) circle (5pt) node[above left] {\footnotesize \textit{Reheating}};
@@ -225,13 +225,13 @@
                             \draw[color = red] (2.5,-1.1) -- (8,0.75);
                             \draw[color = red] (3,-1.1) -- (8,0.59);
 
-                            \node[color = red] at (8,0) {\tiny \shortstack{Fluctuaciones\\de vacío\\de Minkowski}};
+                            \node[color = red] at (8,0) {\tiny \shortstack{Fluctuaciones\\de vacío\\tipo Minkowski}};
                         \end{tikzpicture}
                     \end{figure}
-                    \item[\textcolor{brown}{$\bullet$}] Los espectros de potencia para las perturbaciones se escriben como
-                        \begin{equation*}
+                    \item[\textcolor{brown}{$\bullet$}] Los espectros de potencia para las perturbaciones que salen del horizonte se escriben como
+                        \small{\begin{equation*}
                             P_\mathcal{R} (k) = \mathcal{A}_S \left( \frac{k}{k_p} \right)^{n_s - 1} \hspace{0.75cm} P_T (k) = \mathcal{A}_T \left( \frac{k}{k_p} \right)^{n_T} = r \mathcal{A}_S \left( \frac{k}{k_p} \right)^{n_T}
-                        \end{equation*}
+                        \end{equation*}}
                 \end{itemize}
             \end{frame}
 
@@ -723,9 +723,14 @@
             \begin{frame}{Ecuaciones dinámicas}
                 \begin{itemize}
                     \item[\textcolor{brown}{$\bullet$}] La evolución de los campos está dada por
-                        \begin{equation*}
+                        \small{\begin{equation*}
                             \phi^{\prime \prime}_n + (3 - \alpha) \frac{a^{\prime}}{a} \phi^\prime_n - a^{2 \alpha - 2} \nabla^2 \phi_n + a^{2 \alpha} \frac{\partial V}{\partial \phi_n} = 0
                         \end{equation*}
+                        \vspace{-0.5cm}
+                        \begin{itemize}
+                            \item[\textcolor{cyan}{$\Longrightarrow$}] $\phi_n (\tau_I, x) = \bar{\phi}_n (\tau_I, x) + \delta \phi_n (\tau_I, x)$, siendo $\bar{\phi} (\tau_I)$ tal que $\epsilon = 1$ y 
+                            \item[] $\displaystyle \left\langle \delta \phi^2_n (\tau_I, x) \right\rangle \textcolor{red}{\to} P_{\delta \phi_n} = \frac{1}{2a^2 \omega_{k,\phi}}$ (fluctuaciones de vacío).
+                        \end{itemize}
                     \item[\textcolor{brown}{$\bullet$}] La evolución del universo está dada por
                         \begin{equation*}
                             \frac{a^{\prime \prime}}{a} - \alpha \left( \frac{a^\prime}{a} \right)^2 = \frac{a^{2 \alpha}}{6 m_p^2} (\langle \rho \rangle - 3 \langle P \rangle)
@@ -736,7 +741,7 @@
                         \end{equation*}
                         \begin{equation*}
                             K_n = \frac{1}{2 a^{2\alpha}} \left( \phi^\prime_n \right)^2 \hspace{2cm} G_n = \frac{1}{2a^2} \sum_{i = 1}^3 \left( \partial_i \phi_n \right)^2
-                        \end{equation*}
+                        \end{equation*}}
                 \end{itemize}
             \end{frame}
 
@@ -744,8 +749,9 @@
                 \begin{itemize}
                     \item[\textcolor{brown}{$\bullet$}] La evolución de las ondas se hace a través de un campo auxiliar $u_{ij}$
                         \begin{equation*}
-                            h_{ij} \left( \textbf{k}, t \right) = \Lambda_{ij,kl} \left( \hat{\textbf{k}} \right) \, u_{kl} \left( \textbf{k}, t \right)
+                            h_{ij}^{TT} \left( \textbf{k}, t \right) = \Lambda_{ij,kl}^{TT} \left( \hat{\textbf{k}} \right) \, u_{kl} \left( \textbf{k}, t \right)
                         \end{equation*}
+                        \vspace{-0.5cm}
                         \begin{itemize}
                             \item[\textcolor{cyan}{$\Longrightarrow$}] con $\Lambda^{TT}_{ij,kl}$ el proyector del campo $u_{kl}$ en el gauge TT.
                         \end{itemize}
@@ -753,8 +759,10 @@
                         \begin{equation*}
                             u_{ij}^{\prime \prime} + (3 - \alpha) \frac{a^\prime}{a} u_{ij}^\prime - a^{2\alpha - 2} \nabla^2 u_{ij} = \frac{2}{m_p^2} a^{2 \alpha} \Pi_{ij}^{eff}
                         \end{equation*}
+                        \vspace{-0.5cm}
                         \begin{itemize}
-                            \item[\textcolor{cyan}{$\Longrightarrow$}] donde $\displaystyle \Pi_{ij}^{TT} = \sum_n \partial_i \phi_n \partial_j \phi_n$. 
+                            \item[\textcolor{cyan}{$\Longrightarrow$}] donde $\displaystyle \Pi_{ij}^{eff} = \sum_n \partial_i \phi_n \partial_j \phi_n$.
+                            \item[\textcolor{cyan}{$\Longrightarrow$}] Las condiciones iniciales para estos campos son: $u_{ij}(\tau_I) = u_{ij}^\prime(\tau_I) = 0$. Esto implica que las ondas que vemos en \CosmoLattice son solo las producidas por la fuente $\Pi_{ij}$. 
                         \end{itemize}
                 \end{itemize}
             \end{frame}

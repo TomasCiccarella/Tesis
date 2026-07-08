@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1783466010.97416 "/home/tomy/Desktop/UBA/Tesis/Git/Defensa/Defensa_Ciccarella.tex" "Defensa_Ciccarella.pdf" "Defensa_Ciccarella" 1783466024.12572 0
+["pdflatex"] 1783514547.77859 "/home/tomy/Desktop/UBA/Tesis/Git/Defensa/Defensa_Ciccarella.tex" "Defensa_Ciccarella.pdf" "Defensa_Ciccarella" 1783514564.36655 0
   "/etc/texmf/web2c/texmf.cnf" 1754028040.36857 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/tomy/Desktop/UBA/Tesis/Git/Defensa/Defensa_Ciccarella.tex" 1783466010.51648 65390 eec1d074ea48d0f8109617c3072d058a ""
+  "/home/tomy/Desktop/UBA/Tesis/Git/Defensa/Defensa_Ciccarella.tex" 1783514547.38849 66316 bfbc3900ac5bdb573423b835075c3be3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi8r.tfm" 1136768653 3520 74c182562270529cb43f51d7c7d9f1d9 ""
@@ -405,11 +405,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1754028071.58514 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1754028237 8214163 21be332c6a420f73e121fd2e39b05413 ""
-  "Defensa_Ciccarella.aux" 1783466023.73996 12635 c826af851b5add326d554b3051c99550 "pdflatex"
-  "Defensa_Ciccarella.nav" 1783466023.74418 8183 567e0cae1bf306858fa73da95437a210 "pdflatex"
-  "Defensa_Ciccarella.out" 1783466023.74358 3065 9fcbf19ed6ddf415237921755d7a741a "pdflatex"
-  "Defensa_Ciccarella.tex" 1783466010.51648 65390 eec1d074ea48d0f8109617c3072d058a ""
-  "Defensa_Ciccarella.toc" 1783466023.74418 1197 15749d1c6e740baa3c8d6f05576ef864 "pdflatex"
+  "Defensa_Ciccarella.aux" 1783514563.68549 12635 c826af851b5add326d554b3051c99550 "pdflatex"
+  "Defensa_Ciccarella.nav" 1783514563.69545 8183 567e0cae1bf306858fa73da95437a210 "pdflatex"
+  "Defensa_Ciccarella.out" 1783514563.69449 3065 9fcbf19ed6ddf415237921755d7a741a "pdflatex"
+  "Defensa_Ciccarella.tex" 1783514547.38849 66316 bfbc3900ac5bdb573423b835075c3be3 ""
+  "Defensa_Ciccarella.toc" 1783514563.69545 1197 15749d1c6e740baa3c8d6f05576ef864 "pdflatex"
   "Figures/CL_Icon.png" 1782997892.73974 12903 8a6187ca0f2eb4729598af70c8802ee5 ""
   "Figures/CL_Starobinsky.png" 1783290039.97432 108182 a32493e8dea64b902362c4b18b59cbe6 ""
   "Figures/CL_Starobinsky_varM.png" 1783290830.97663 243953 8b12362541149347cde8744e752485df ""
