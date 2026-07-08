@@ -7,6 +7,7 @@
 \usepackage{xspace}
 \usepackage{bm}
 \contourlength{0.4pt}
+\usepackage{appendixnumberbeamer}
 
 % 1. Creamos el interruptor (por defecto está encendido)
 \newif\ifmostrarindice
@@ -631,56 +632,6 @@
                 \end{infobox}}
             \end{frame}
 
-        %\subsection{Producción de ondas gravitacionales}
-
-         %   \begin{frame}{Espectro de potencias de $\chi$}
-         %       \begin{itemize}
-         %           \item[\textcolor{brown}{$\bullet$}] El espectro de potencias para el campo hijo es
-         %               \begin{equation*}
-         %                   \left\langle \chi (\textbf{k}, \tau) \, \chi^* \left( \textbf{k}^\prime, \tau \right) \right\rangle = (2\pi)^3 \, P_\chi (k, \tau) \, \delta ( \textbf{k} - \textbf{k}^\prime)
-         %               \end{equation*}
-         %       \end{itemize}
-                
-         %       \begin{figure}[H]
-         %           \centering
-         %           \begin{tikzpicture}
-         %               \node at (0,0) {\includegraphics[width = 0.85\linewidth]{Figures/Pchi_lineal.pdf}};
-         %           \end{tikzpicture}
-         %       \end{figure}
-         %   \end{frame}
-
-            %\begin{frame}{Producción de ondas gravitacionales}
-            %    \begin{itemize}
-            %        \item[\textcolor{brown}{$\bullet$}] Como fuente de ondas gravitacionales usaremos
-            %            \begin{equation*}
-            %                \Pi_{ij}^{TT} = \left\{ \partial_i \phi \partial_j \phi + \partial_i \chi \partial_j \chi \right\}^{TT}
-            %            \end{equation*}
-            %        \item[\textcolor{brown}{$\bullet$}] El espectro de ondas gravitacionales estará dado por
-            %            \small{\begin{equation*}
-            %                \Omega_{GW} = \frac{k^3}{16 \pi^4 m_p^2 \rho_c a^4} \int p^6 \sin^5 \theta \left[ | I_c (k, p, \theta, \tau)|^2 + | I_s (k, p, \theta, \tau)|^2 \right] \, dp \, d\theta
-            %            \end{equation*}}
-            %            \begin{equation*}
-            %                I_s (k, p, \theta, \tau) = \int \frac{\sin \left( k \tau^\prime \right)}{a \left( \tau^\prime \right)} \chi_p \left( \tau^\prime \right) \, \chi_{k - p} \left( \tau^\prime \right) \, d\tau^\prime
-            %            \end{equation*}
-            %            \begin{equation*}
-            %                I_c (k, p, \theta, \tau) = \int \frac{\cos \left( k \tau^\prime \right)}{a \left( \tau^\prime \right)} \chi_p \left( \tau^\prime \right) \, \chi_{k - p} \left( \tau^\prime \right) \, d\tau^\prime
-            %            \end{equation*}
-            %    \end{itemize}
-            %\end{frame}
-
-            %\begin{frame}
-            %    \begin{itemize}
-            %        \item[\textcolor{brown}{$\bullet$}] El espectro de potencias para las ondas gravitacionales es
-            %            \small{\begin{equation*}
-            %                \Omega_{GW} = \frac{k^3}{16 \pi^4 m_p^2 \rho_c a^4} \int p^6 \sin^5 \theta \left[ | I_c (k, p, \theta, \tau)|^2 + | I_s (k, p, \theta, \tau)|^2 \right] \, dp \, d\theta
-            %            \end{equation*}}
-            %    \end{itemize}
-            %    \begin{figure}[H]
-            %        \centering
-            %        \includegraphics[width = 0.8\linewidth]{Figures/Omega_lineal.pdf}
-            %    \end{figure}
-            %\end{frame}
-
     \begin{frame}
         \begin{figure}[H]
             \begin{tikzpicture}
@@ -1056,4 +1007,124 @@
         \end{center}
     \end{frame}
 
+    %----------------------BACK UP-----------%
+    \appendix
+
+    \begin{frame}
+        \begin{center}
+            \Huge{BACK-UP}
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width = \linewidth]{Figures/CLVariablesAdimensionales.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width = \linewidth]{Figures/CLDiscretizacion.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}{Cotas dadas por las observaciones inflacionarias}
+        \begin{figure}[H]
+            \includegraphics[width = 0.8\linewidth]{Figures/BackUp-constrains1.png}
+        \end{figure}
+        \begin{minipage}{0.45\linewidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = \linewidth]{Figures/BackUp-constrains2.png}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}{0.45\linewidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = \linewidth]{Figures/BackUp-Mishra.png}
+            \end{figure}
+        \end{minipage}
+    \end{frame}
+
+    \begin{frame}{Espectro de potencias de $\chi$ en \textit{Preheating} Lineal}
+        \begin{itemize}
+            \item[\textcolor{brown}{$\bullet$}] El espectro de potencias para el campo hijo es
+                \begin{equation*}
+                    \left\langle \chi (\textbf{k}, \tau) \, \chi^* \left( \textbf{k}^\prime, \tau \right) \right\rangle = (2\pi)^3 \, P_\chi (k, \tau) \, \delta ( \textbf{k} - \textbf{k}^\prime)
+                \end{equation*}
+        \end{itemize}
+        
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                \node at (0,0) {\includegraphics[width = 0.85\linewidth]{Figures/Pchi_lineal.pdf}};
+            \end{tikzpicture}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}{Producción de ondas gravitacionales en \textit{Preheating} Lineal}
+        \begin{itemize}
+            \item[\textcolor{brown}{$\bullet$}] Como fuente de ondas gravitacionales usaremos
+                \begin{equation*}
+                    \Pi_{ij}^{TT} = \left\{ \partial_i \phi \partial_j \phi + \partial_i \chi \partial_j \chi \right\}^{TT}
+                \end{equation*}
+            \item[\textcolor{brown}{$\bullet$}] El espectro de ondas gravitacionales estará dado por
+                \small{\begin{equation*}
+                    \Omega_{GW} = \frac{k^3}{16 \pi^4 m_p^2 \rho_c a^4} \int p^6 \sin^5 \theta \left[ | I_c (k, p, \theta, \tau)|^2 + | I_s (k, p, \theta, \tau)|^2 \right] \, dp \, d\theta
+                \end{equation*}}
+                \begin{equation*}
+                    I_s (k, p, \theta, \tau) = \int \frac{\sin \left( k \tau^\prime \right)}{a \left( \tau^\prime \right)} \chi_p \left( \tau^\prime \right) \, \chi_{k - p} \left( \tau^\prime \right) \, d\tau^\prime
+                \end{equation*}
+                \begin{equation*}
+                    I_c (k, p, \theta, \tau) = \int \frac{\cos \left( k \tau^\prime \right)}{a \left( \tau^\prime \right)} \chi_p \left( \tau^\prime \right) \, \chi_{k - p} \left( \tau^\prime \right) \, d\tau^\prime
+                \end{equation*}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Espectro de GWs en \textit{Preheating} Lineal}
+        \begin{itemize}
+            \item[\textcolor{brown}{$\bullet$}] El espectro de potencias para las ondas gravitacionales es
+                \small{\begin{equation*}
+                    \Omega_{GW} = \frac{k^3}{16 \pi^4 m_p^2 \rho_c a^4} \int p^6 \sin^5 \theta \left[ | I_c (k, p, \theta, \tau)|^2 + | I_s (k, p, \theta, \tau)|^2 \right] \, dp \, d\theta
+                \end{equation*}}
+        \end{itemize}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.8\linewidth]{Figures/Omega_lineal.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}{\CosmoLattice comparado con \textit{Preheating} lineal}
+        \begin{minipage}{0.45\linewidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = 0.75\linewidth]{Figures/CL_Pchi_short1.png}
+                \includegraphics[width = 0.75\linewidth]{Figures/CL_Pchi_short2.png}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}{0.45\linewidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = 0.75\linewidth]{Figures/CL_nk_short1.png}
+                \includegraphics[width = 0.75\linewidth]{Figures/CL_nk_short2.png}
+            \end{figure}
+        \end{minipage}
+    \end{frame}
+
+    \begin{frame}{\CosmoLattice comparado con \textit{Preheating} lineal}
+        \begin{minipage}{0.45\linewidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = \linewidth]{Figures/CL_Omega_short1.png}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}{0.45\linewidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = \linewidth]{Figures/CL_Omega_short2.png}
+            \end{figure}
+        \end{minipage}
+    \end{frame}
 \end{document}
